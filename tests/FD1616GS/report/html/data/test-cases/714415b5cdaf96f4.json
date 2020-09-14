@@ -1,0 +1,283 @@
+{
+  "uid" : "714415b5cdaf96f4",
+  "name" : "测试mapping-mode为pri",
+  "fullName" : "test_onu_gemport#test_gemport_pri",
+  "historyId" : "dbf42a453f8de6f0b758b3cca56f8175",
+  "time" : {
+    "start" : 1594122172299,
+    "stop" : 1594122201822,
+    "duration" : 29523
+  },
+  "description" : "\n    mapping-mode is pri ,config gem mapping pri 2\n    测试方法：上下行各发送两条流：vlan2000 pri2和 vlan2000 pri3\n    结果：pri2的上下行都能通；pri3下行能通，上行不通\n    ",
+  "descriptionHtml" : "<pre><code>mapping-mode is pri ,config gem mapping pri 2\n测试方法：上下行各发送两条流：vlan2000 pri2和 vlan2000 pri3\n结果：pri2的上下行都能通；pri3下行能通，上行不通\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1594122144596,
+      "stop" : 1594122144597,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1594121599227,
+      "stop" : 1594121599227,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "login",
+    "time" : {
+      "start" : 1594122144597,
+      "stop" : 1594122157647,
+      "duration" : 13050
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1594121599227,
+      "stop" : 1594121599227,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1594121599227,
+      "stop" : 1594121599227,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "gemport_pri_suit",
+    "time" : {
+      "start" : 1594122157647,
+      "stop" : 1594122172299,
+      "duration" : 14652
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "步骤1:发现未注册的ONU。",
+      "time" : {
+        "start" : 1594122157647,
+        "stop" : 1594122158773,
+        "duration" : 1126
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤2:在OLT上通过SN的方式将ONU注册上线。",
+      "time" : {
+        "start" : 1594122158773,
+        "stop" : 1594122168170,
+        "duration" : 9397
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤3:修改gemport配置为pri 2",
+      "time" : {
+        "start" : 1594122168170,
+        "stop" : 1594122170285,
+        "duration" : 2115
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤4:配置虚端口vlan2000透传",
+      "time" : {
+        "start" : 1594122170285,
+        "stop" : 1594122172298,
+        "duration" : 2013
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 4,
+    "hasContent" : true
+  } ],
+  "testStage" : {
+    "description" : "\n    mapping-mode is pri ,config gem mapping pri 2\n    测试方法：上下行各发送两条流：vlan2000 pri2和 vlan2000 pri3\n    结果：pri2的上下行都能通；pri3下行能通，上行不通\n    ",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "步骤5:打流测试",
+      "time" : {
+        "start" : 1594122172299,
+        "stop" : 1594122201822,
+        "duration" : 29523
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "2efee3a8348ccd40",
+      "name" : "log",
+      "source" : "2efee3a8348ccd40.txt",
+      "type" : "text/plain",
+      "size" : 882
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 1,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "login::0",
+    "time" : {
+      "start" : 1594122201979,
+      "stop" : 1594122216115,
+      "duration" : 14136
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "gemport_pri_suit::0",
+    "time" : {
+      "start" : 1594122201823,
+      "stop" : 1594122201978,
+      "duration" : 155
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "步骤6:gemport恢复默认配置",
+      "time" : {
+        "start" : 1594122201823,
+        "stop" : 1594122201978,
+        "duration" : 155
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 1,
+    "hasContent" : true
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "gemport测试"
+  }, {
+    "name" : "story",
+    "value" : "gemport测试"
+  }, {
+    "name" : "suite",
+    "value" : "test_onu_gemport"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-2JV12RE"
+  }, {
+    "name" : "thread",
+    "value" : "23776-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_onu_gemport"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "714415b5cdaf96f4.json",
+  "parameterValues" : [ ]
+}

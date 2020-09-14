@@ -1,0 +1,341 @@
+{
+  "uid" : "eda34fed2f7ca5de",
+  "name" : "SN认证",
+  "fullName" : "test_onu_auth_type#test_auth_by_sn",
+  "historyId" : "0d7a39e8d2561c12d0fbb4913b78b9b1",
+  "time" : {
+    "start" : 1594193969769,
+    "stop" : 1594194013682,
+    "duration" : 43913
+  },
+  "description" : "\n    用例描述：\n    ONU通过SN的方式认证。\n    例如：\n    ont add 1 1 sn-auth TEST12345678 ont-lineprofile-id 1 ont-srvprofile-id 1\n    ",
+  "descriptionHtml" : "<pre><code>用例描述：\nONU通过SN的方式认证。\n例如：\nont add 1 1 sn-auth TEST12345678 ont-lineprofile-id 1 ont-srvprofile-id 1\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1594193956716,
+      "stop" : 1594193956716,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1594193956716,
+      "stop" : 1594193956716,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1594193956716,
+      "stop" : 1594193956716,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "login",
+    "time" : {
+      "start" : 1594193956716,
+      "stop" : 1594193969768,
+      "duration" : 13052
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1594193956716,
+      "stop" : 1594193956716,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n    用例描述：\n    ONU通过SN的方式认证。\n    例如：\n    ont add 1 1 sn-auth TEST12345678 ont-lineprofile-id 1 ont-srvprofile-id 1\n    ",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "步骤1:发现未注册的ONU。",
+      "time" : {
+        "start" : 1594193969770,
+        "stop" : 1594193970906,
+        "duration" : 1136
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤2:在OLT上通过SN的方式将ONU注册上线。",
+      "time" : {
+        "start" : 1594193970907,
+        "stop" : 1594193982587,
+        "duration" : 11680
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤3:添加service_port",
+      "time" : {
+        "start" : 1594193982588,
+        "stop" : 1594193987613,
+        "duration" : 5025
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤4:ONU的以太网口1添加NATIVE-VLAN",
+      "time" : {
+        "start" : 1594193987613,
+        "stop" : 1594193987795,
+        "duration" : 182
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤5:ONU的以太网口2添加NATIVE-VLAN",
+      "time" : {
+        "start" : 1594193987795,
+        "stop" : 1594193987938,
+        "duration" : 143
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤6:测试仪发送双向100000个报文",
+      "time" : {
+        "start" : 1594193987938,
+        "stop" : 1594194013682,
+        "duration" : 25744
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "5c3f09bc692ca3a8",
+      "name" : "log",
+      "source" : "5c3f09bc692ca3a8.txt",
+      "type" : "text/plain",
+      "size" : 2189
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 6,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "login::0",
+    "time" : {
+      "start" : 1594194013684,
+      "stop" : 1594194024904,
+      "duration" : 11220
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "ONU认证方式"
+  }, {
+    "name" : "feature",
+    "value" : "ONU认证"
+  }, {
+    "name" : "suite",
+    "value" : "test_onu_auth_type"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-2JV12RE"
+  }, {
+    "name" : "thread",
+    "value" : "22216-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_onu_auth_type"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "cb7fd0dc6d42fdfc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594171437629,
+        "stop" : 1594171481463,
+        "duration" : 43834
+      }
+    }, {
+      "uid" : "dfb8f29d8e76e410",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594170133811,
+        "stop" : 1594170172673,
+        "duration" : 38862
+      }
+    }, {
+      "uid" : "c453df2cc4bab997",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000002E21D31F3C8>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594125970638,
+        "stop" : 1594126030137,
+        "duration" : 59499
+      }
+    }, {
+      "uid" : "30be71f9b92a19fa",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594121645442,
+        "stop" : 1594121684655,
+        "duration" : 39213
+      }
+    }, {
+      "uid" : "6fb097f2cad29f9e",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = stream_test('10', '100000', '10000', ['//192.168.0.180/1/9', '//192.168.0.180/1/10'])",
+      "time" : {
+        "start" : 1594113182674,
+        "stop" : 1594113226086,
+        "duration" : 43412
+      }
+    }, {
+      "uid" : "c80cb1e4f6fdc37c",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x0000027E355CC320>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594112348613,
+        "stop" : 1594112353728,
+        "duration" : 5115
+      }
+    }, {
+      "uid" : "777ba1d0b39a27ad",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = auth_by_sn(<telnetlib.Telnet object at 0x00000208E2901748>, '16', '2', '200', '200', '5A54453171200033')",
+      "time" : {
+        "start" : 1594032660257,
+        "stop" : 1594032723812,
+        "duration" : 63555
+      }
+    }, {
+      "uid" : "ca9a791fec268d23",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = auth_by_sn(<telnetlib.Telnet object at 0x00000208E2910E10>, '16', '2', '200', '200', '5A54453171200033')",
+      "time" : {
+        "start" : 1594032572414,
+        "stop" : 1594032636014,
+        "duration" : 63600
+      }
+    }, {
+      "uid" : "2297bd8d84cf40bc",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = auth_by_sn(<telnetlib.Telnet object at 0x00000208E2901DA0>, '16', '2', '200', '200', '5A54453171200033')",
+      "time" : {
+        "start" : 1594032484369,
+        "stop" : 1594032548065,
+        "duration" : 63696
+      }
+    }, {
+      "uid" : "3ad9ffd5d7323796",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593770687631,
+        "stop" : 1593770736266,
+        "duration" : 48635
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "eda34fed2f7ca5de.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,321 @@
+{
+  "uid" : "8d0a955cc56c7dae",
+  "name" : "测试onu端口vlan为transparent",
+  "fullName" : "test_onu_vlan#test_onu_transparent",
+  "historyId" : "636b26624db9af152cf9fc0959f367fd",
+  "time" : {
+    "start" : 1599822539693,
+    "stop" : 1599822587179,
+    "duration" : 47486
+  },
+  "description" : "\n    用例描述\n    测试目的： 测试onu端口为transparent，测试上下行流vlan2000-2001是否正常\n    测试步骤：\n    步骤1: 发现未注册的ONU\n    步骤2: 在OLT上通过Gpon_SN的方式将ONU注册上线\n    步骤3: 配置onu端口vlan为transparent\n    步骤4: 添加虚端口vlan透传2000,2001\n    步骤5：打流测试\n    1）上下行发vlan2000和2001的流两条\n    down_stream_header = (\n        'ethernetII_1.sourceMacAdd=00:00:00:11:11:11 vlan_1.id=2000  ethernetII_1.destMacAdd=00:00:00:22:22:21',\n        'ethernetII_1.sourceMacAdd=00:00:00:11:11:12 vlan_1.id=2001  ethernetII_1.destMacAdd=00:00:00:22:22:22',)\n    up_stream_header = (\n        'ethernetII_1.sourceMacAdd=00:00:00:22:22:21 vlan_1.id=2000  ethernetII_1.destMacAdd=00:00:00:11:11:11',\n        'ethernetII_1.sourceMacAdd=00:00:00:22:22:22 vlan_1.id=2001  ethernetII_1.destMacAdd=00:00:00:11:11:12',)\n    预期结果: 上下行vlan2000-2001的流量正常通\n    ",
+  "descriptionHtml" : "<pre><code>用例描述\n测试目的： 测试onu端口为transparent，测试上下行流vlan2000-2001是否正常\n测试步骤：\n步骤1: 发现未注册的ONU\n步骤2: 在OLT上通过Gpon_SN的方式将ONU注册上线\n步骤3: 配置onu端口vlan为transparent\n步骤4: 添加虚端口vlan透传2000,2001\n步骤5：打流测试\n1）上下行发vlan2000和2001的流两条\ndown_stream_header = (\n    'ethernetII_1.sourceMacAdd=00:00:00:11:11:11 vlan_1.id=2000  ethernetII_1.destMacAdd=00:00:00:22:22:21',\n    'ethernetII_1.sourceMacAdd=00:00:00:11:11:12 vlan_1.id=2001  ethernetII_1.destMacAdd=00:00:00:22:22:22',)\nup_stream_header = (\n    'ethernetII_1.sourceMacAdd=00:00:00:22:22:21 vlan_1.id=2000  ethernetII_1.destMacAdd=00:00:00:11:11:11',\n    'ethernetII_1.sourceMacAdd=00:00:00:22:22:22 vlan_1.id=2001  ethernetII_1.destMacAdd=00:00:00:11:11:12',)\n预期结果: 上下行vlan2000-2001的流量正常通\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "login",
+    "time" : {
+      "start" : 1599822526615,
+      "stop" : 1599822539692,
+      "duration" : 13077
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1599821387651,
+      "stop" : 1599821387651,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1599821387651,
+      "stop" : 1599821387651,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1599822526615,
+      "stop" : 1599822526615,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1599821387651,
+      "stop" : 1599821387651,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "__pytest_repeat_step_number",
+    "time" : {
+      "start" : 1599822526614,
+      "stop" : 1599822526614,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "\n    用例描述\n    测试目的： 测试onu端口为transparent，测试上下行流vlan2000-2001是否正常\n    测试步骤：\n    步骤1: 发现未注册的ONU\n    步骤2: 在OLT上通过Gpon_SN的方式将ONU注册上线\n    步骤3: 配置onu端口vlan为transparent\n    步骤4: 添加虚端口vlan透传2000,2001\n    步骤5：打流测试\n    1）上下行发vlan2000和2001的流两条\n    down_stream_header = (\n        'ethernetII_1.sourceMacAdd=00:00:00:11:11:11 vlan_1.id=2000  ethernetII_1.destMacAdd=00:00:00:22:22:21',\n        'ethernetII_1.sourceMacAdd=00:00:00:11:11:12 vlan_1.id=2001  ethernetII_1.destMacAdd=00:00:00:22:22:22',)\n    up_stream_header = (\n        'ethernetII_1.sourceMacAdd=00:00:00:22:22:21 vlan_1.id=2000  ethernetII_1.destMacAdd=00:00:00:11:11:11',\n        'ethernetII_1.sourceMacAdd=00:00:00:22:22:22 vlan_1.id=2001  ethernetII_1.destMacAdd=00:00:00:11:11:12',)\n    预期结果: 上下行vlan2000-2001的流量正常通\n    ",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "步骤1:发现未注册的ONU。",
+      "time" : {
+        "start" : 1599822539693,
+        "stop" : 1599822540786,
+        "duration" : 1093
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "步骤2:在OLT上通过Gpon_SN的方式将ONU注册上线。",
+      "time" : {
+        "start" : 1599822540786,
+        "stop" : 1599822550069,
+        "duration" : 9283
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "步骤3:配置onu端口vlan为transparent",
+      "time" : {
+        "start" : 1599822550069,
+        "stop" : 1599822558129,
+        "duration" : 8060
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "步骤4:添加虚端口vlan透传2000,2001",
+      "time" : {
+        "start" : 1599822558129,
+        "stop" : 1599822561134,
+        "duration" : 3005
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "步骤5:打流测试",
+      "time" : {
+        "start" : 1599822561134,
+        "stop" : 1599822587179,
+        "duration" : 26045
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "2bd8b16fc9ca09ea",
+      "name" : "log",
+      "source" : "2bd8b16fc9ca09ea.txt",
+      "type" : "text/plain",
+      "size" : 3333
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 5,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "login::0",
+    "time" : {
+      "start" : 1599822587180,
+      "stop" : 1599822599273,
+      "duration" : 12093
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "onu端口vlan测试"
+  }, {
+    "name" : "story",
+    "value" : "onu端口vlan测试"
+  }, {
+    "name" : "suite",
+    "value" : "test_onu_vlan"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-2JV12RE"
+  }, {
+    "name" : "thread",
+    "value" : "19156-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_onu_vlan"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 6,
+        "unknown" : 0,
+        "total" : 7
+      },
+      "items" : [ {
+        "uid" : "3b7ac0be9313548b",
+        "reportUrl" : "http://192.168.0.182:8080/job/cdata_test1/370/allure/#testresult/3b7ac0be9313548b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1599728715058,
+          "stop" : 1599728766932,
+          "duration" : 51874
+        }
+      }, {
+        "uid" : "7099da5a872c6f5e",
+        "reportUrl" : "http://192.168.0.182:8080/job/cdata_test1/361/allure/#testresult/7099da5a872c6f5e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1599620638901,
+          "stop" : 1599620696656,
+          "duration" : 57755
+        }
+      }, {
+        "uid" : "dfaa4e3604577559",
+        "reportUrl" : "http://192.168.0.182:8080/job/cdata_test1/280/allure/#testresult/dfaa4e3604577559",
+        "status" : "passed",
+        "time" : {
+          "start" : 1598837931346,
+          "stop" : 1598837985634,
+          "duration" : 54288
+        }
+      }, {
+        "uid" : "f80a79389a5229dd",
+        "reportUrl" : "http://192.168.0.182:8080/job/cdata_test1/276/allure/#testresult/f80a79389a5229dd",
+        "status" : "broken",
+        "statusDetails" : "Exception: 设备登录失败",
+        "time" : {
+          "start" : 1598617906873,
+          "stop" : 1598617906873,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "9758965a71abc59c",
+        "reportUrl" : "http://192.168.0.182:8080/job/cdata_test1/272/allure/#testresult/9758965a71abc59c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1598594612932,
+          "stop" : 1598594669463,
+          "duration" : 56531
+        }
+      }, {
+        "uid" : "ddfba6d8fa08e256",
+        "reportUrl" : "http://192.168.0.182:8080/job/cdata_test1/270/allure/#testresult/ddfba6d8fa08e256",
+        "status" : "passed",
+        "time" : {
+          "start" : 1598579766371,
+          "stop" : 1598579824707,
+          "duration" : 58336
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "8d0a955cc56c7dae.json",
+  "parameterValues" : [ ]
+}

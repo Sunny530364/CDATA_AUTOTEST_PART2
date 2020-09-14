@@ -1,0 +1,44 @@
+[INFO] 2020-08-31 10:36:55,982  Receive Msg: listen_port 9003
+
+[INFO] 2020-08-31 10:36:56,076  Renix api initialization finished
+[INFO] 2020-08-31 10:37:38,956  create ports with location:
+[INFO] 2020-08-31 10:37:40,620  StreamPortConfig_1 has lower: InterFrameGapProfile_1
+[INFO] 2020-08-31 10:37:40,628  StreamPortConfig_2 has lower: InterFrameGapProfile_2
+[INFO] 2020-08-31 10:37:40,661  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-08-31 10:37:40,942  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-08-31 10:37:41,592  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-08-31 10:37:41,841  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-08-31 10:37:42,695  PageResultView_1 has lower: ResultQuery_1
+[INFO] 2020-08-31 10:37:58,718  ResultQuery_1 has lower: StreamBlockStats_1 StreamBlockStats_2 StreamBlockStats_3 StreamBlockStats_4
+[INFO] 2020-08-31 10:37:58,863  [test pass] [sourceMacAdd=00:00:00:11:11:11] rx packet (100316)is  equal to tx packets (100316)
+[INFO] 2020-08-31 10:37:58,870  [test pass] [sourceMacAdd=00:00:00:11:11:12] rx packet (100315)is  equal to tx packets (100315)
+[INFO] 2020-08-31 10:37:58,878  [test pass] [sourceMacAdd=00:00:00:22:22:21] rx packet (100316)is  equal to tx packets (100316)
+[INFO] 2020-08-31 10:37:58,884  [test pass] [sourceMacAdd=00:00:00:22:22:22] rx packet (100316)is  equal to tx packets (100316)
+[INFO] 2020-08-31 10:39:01,828  create ports with location:
+[INFO] 2020-08-31 10:39:10,425  StreamPortConfig_3 has lower: InterFrameGapProfile_3
+[INFO] 2020-08-31 10:39:10,431  StreamPortConfig_4 has lower: InterFrameGapProfile_4
+[INFO] 2020-08-31 10:39:10,462  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-08-31 10:39:10,715  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-08-31 10:39:11,376  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-08-31 10:39:11,637  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-08-31 10:39:12,449  PageResultView_2 has lower: ResultQuery_2
+[INFO] 2020-08-31 10:39:28,308  ResultQuery_2 has lower: StreamBlockStats_5 StreamBlockStats_6 StreamBlockStats_7 StreamBlockStats_8
+[INFO] 2020-08-31 10:39:28,487  [test pass] [sourceMacAdd=00:00:00:11:11:11] rx packet (107363)is  equal to tx packets (107363)
+[INFO] 2020-08-31 10:39:28,493  [test Pass] [sourceMacAdd=00:00:00:11:11:12]rx(0), realtime loss packet (107363)is  equal to  tx packet(107363)
+[INFO] 2020-08-31 10:39:28,500  [test pass] [sourceMacAdd=00:00:00:22:22:21] rx packet (107364)is  equal to tx packets (107364)
+[INFO] 2020-08-31 10:39:28,507  [test Pass] [sourceMacAdd=00:00:00:22:22:22]rx(0), realtime loss packet (107363)is  equal to  tx packet(107363)
+[INFO] 2020-08-31 10:40:24,447  create ports with location:
+[INFO] 2020-08-31 10:40:32,793  StreamPortConfig_5 has lower: InterFrameGapProfile_5
+[INFO] 2020-08-31 10:40:32,801  StreamPortConfig_6 has lower: InterFrameGapProfile_6
+[INFO] 2020-08-31 10:40:32,834  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-08-31 10:40:33,091  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-08-31 10:40:33,809  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-08-31 10:40:34,083  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-08-31 10:40:34,796  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-08-31 10:40:35,053  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-08-31 10:40:35,834  PageResultView_3 has lower: ResultQuery_3
+[INFO] 2020-08-31 10:40:51,574  ResultQuery_3 has lower: StreamBlockStats_9 StreamBlockStats_10 StreamBlockStats_11
+[ERROR] 2020-08-31 10:40:51,701  [test fail] [sourceMacAdd=00:00:00:11:11:12] rx packet (0) or tx packets (98999) is 0
+[INFO] 2020-08-31 10:40:51,709  [test Pass] [sourceMacAdd=00:00:00:11:11:13]rx(0), realtime loss packet (98999)is  equal to  tx packet(98999)
+[ERROR] 2020-08-31 10:40:51,716  [test fail] [sourceMacAdd=00:00:00:11:11:11] rx packet (1196)is not equal to  tx packets (98999)
+[INFO] 2020-08-31 10:41:09,276  close connection to CL

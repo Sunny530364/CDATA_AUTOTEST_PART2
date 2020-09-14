@@ -1,0 +1,27 @@
+[INFO] 2020-08-17 09:03:47,427  Receive Msg: listen_port 9002
+
+[INFO] 2020-08-17 09:03:47,540  Renix api initialization finished
+[INFO] 2020-08-17 09:05:29,657  Create ports with locations:['//192.168.0.180/1/9', '//192.168.0.180/1/8']
+[INFO] 2020-08-17 09:05:31,520  EthCopper_1 has lower: EthCopperConfig_1
+[INFO] 2020-08-17 09:05:31,526  EthCopper_2 has lower: EthCopperConfig_2
+[INFO] 2020-08-17 09:05:31,532  StreamPortConfig_1 has lower: InterFrameGapProfile_1
+[INFO] 2020-08-17 09:05:31,540  StreamPortConfig_2 has lower: InterFrameGapProfile_2
+[INFO] 2020-08-17 09:05:31,564  port(['//192.168.0.180/1/9', '//192.168.0.180/1/8']) create streams
+[INFO] 2020-08-17 09:05:31,849  port(['//192.168.0.180/1/9', '//192.168.0.180/1/8']) create streams
+[INFO] 2020-08-17 09:05:34,583  PageResultView_1 has lower: ResultQuery_1
+[INFO] 2020-08-17 09:05:34,586  EthCopper_2 has lower: EthCopperConfig_2
+[INFO] 2020-08-17 09:05:34,589  EthCopper_1 has lower: EthCopperConfig_1
+[INFO] 2020-08-17 09:05:44,970  ResultQuery_1 has lower: StreamBlockStats_1 StreamBlockStats_2
+[INFO] 2020-08-17 09:05:44,998  EthCopper_2 has lower: EthCopperConfig_2
+[INFO] 2020-08-17 09:05:45,002  EthCopper_1 has lower: EthCopperConfig_1
+[INFO] 2020-08-17 09:05:55,363  ResultQuery_1 has lower: StreamBlockStats_1 StreamBlockStats_2
+[INFO] 2020-08-17 09:05:55,387  EthCopper_2 has lower: EthCopperConfig_2
+[INFO] 2020-08-17 09:05:55,392  EthCopper_1 has lower: EthCopperConfig_1
+[INFO] 2020-08-17 09:06:05,755  ResultQuery_1 has lower: StreamBlockStats_1 StreamBlockStats_2
+[INFO] 2020-08-17 09:06:05,791  EthCopper_2 has lower: EthCopperConfig_2
+[INFO] 2020-08-17 09:06:05,794  EthCopper_1 has lower: EthCopperConfig_1
+[INFO] 2020-08-17 09:06:16,138  ResultQuery_1 has lower: StreamBlockStats_1 StreamBlockStats_2
+[INFO] 2020-08-17 09:06:16,158  EthCopper_2 has lower: EthCopperConfig_2
+[INFO] 2020-08-17 09:06:16,161  EthCopper_1 has lower: EthCopperConfig_1
+[INFO] 2020-08-17 09:06:26,262  ResultQuery_1 has lower: StreamBlockStats_1 StreamBlockStats_2
+[INFO] 2020-08-17 09:06:41,158  close connection to CL

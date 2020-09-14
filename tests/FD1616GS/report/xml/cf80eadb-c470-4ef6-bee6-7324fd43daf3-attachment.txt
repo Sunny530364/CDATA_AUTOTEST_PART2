@@ -1,0 +1,64 @@
+INFO     CDATA:Cdata_loggers.py:105 =========查看onu的信息上报=========
+INFO     CDATA:Cdata_loggers.py:105 ONU在OLT上被重新被发现。
+INFO     CDATA:Cdata_loggers.py:105 当前ONU_ID没有被占用。
+INFO     CDATA:Cdata_loggers.py:105 ONU在OLT上添加成功。
+INFO     CDATA:Cdata_loggers.py:105 ONU在OLT上通过SN注册成功。
+INFO     CDATA:Cdata_loggers.py:105 ==========================================================
+INFO     CDATA:Cdata_loggers.py:105                ONU的基本信息：
+INFO     CDATA:Cdata_loggers.py:105 ==========================================================
+INFO     CDATA:Cdata_loggers.py:105 机箱号和槽位号   ：0/0
+INFO     CDATA:Cdata_loggers.py:105 PON口号          ：16
+INFO     CDATA:Cdata_loggers.py:105 ONU ID           ：2
+INFO     CDATA:Cdata_loggers.py:105 控制标志位       ：active
+INFO     CDATA:Cdata_loggers.py:105 运行状态         ：online
+INFO     CDATA:Cdata_loggers.py:105 配置状态         ：success
+INFO     CDATA:Cdata_loggers.py:105 能力匹配状态     ：match
+INFO     CDATA:Cdata_loggers.py:105 DBA类型          ：SR
+INFO     CDATA:Cdata_loggers.py:105 测距距离         ：1
+INFO     CDATA:Cdata_loggers.py:105 认证方式         ：sn-auth
+INFO     CDATA:Cdata_loggers.py:105 SN号             ：ZTE171200033
+INFO     CDATA:Cdata_loggers.py:105 ==========================================================
+INFO     CDATA:Cdata_loggers.py:105 
+
+INFO     CDATA:Cdata_loggers.py:105 ==========================================================
+INFO     CDATA:Cdata_loggers.py:105                ONU上报的版本信息：
+INFO     CDATA:Cdata_loggers.py:105 ==========================================================
+INFO     CDATA:Cdata_loggers.py:105 硬件版本号       ：RTL960x
+INFO     CDATA:Cdata_loggers.py:105 主分区软件版本号 ：V1.0.9
+INFO     CDATA:Cdata_loggers.py:105 备分区软件版本号 ：V1.0.9
+INFO     CDATA:Cdata_loggers.py:105 Vendor ID        ：ZTEE
+INFO     CDATA:Cdata_loggers.py:105 Product ID       ：0000
+INFO     CDATA:Cdata_loggers.py:105 Equipment ID     ：D400
+INFO     CDATA:Cdata_loggers.py:105 ==========================================================
+INFO     CDATA:Cdata_loggers.py:105 
+
+INFO     CDATA:Cdata_loggers.py:105 ==========================================================
+INFO     CDATA:Cdata_loggers.py:105                ONU上报的能力集信息：
+INFO     CDATA:Cdata_loggers.py:105 ==========================================================
+INFO     CDATA:Cdata_loggers.py:105 ONU类型          ：SFU 
+INFO     CDATA:Cdata_loggers.py:105 OMCC版本号       ：0x80
+INFO     CDATA:Cdata_loggers.py:105 PON口数量        ：1
+INFO     CDATA:Cdata_loggers.py:105 语音口数量       ：0
+INFO     CDATA:Cdata_loggers.py:105 IP_HOST数量      ：2
+INFO     CDATA:Cdata_loggers.py:105 以太网口数量     ：4
+INFO     CDATA:Cdata_loggers.py:105 VEIP口数量       ：0
+INFO     CDATA:Cdata_loggers.py:105 CATV口数量       ：1
+INFO     CDATA:Cdata_loggers.py:105 Gemport数量      ：127
+INFO     CDATA:Cdata_loggers.py:105 Tcont数量        ：8
+INFO     CDATA:Cdata_loggers.py:105 支持的流控方式   ：PQ
+INFO     CDATA:Cdata_loggers.py:105 ==========================================================
+INFO     CDATA:Cdata_loggers.py:105 
+
+INFO     CDATA:Cdata_loggers.py:105 ==========================================================
+INFO     CDATA:Cdata_loggers.py:105                ONU上报的光参数信息：
+INFO     CDATA:Cdata_loggers.py:105 ==========================================================
+INFO     CDATA:Cdata_loggers.py:105 电压(V)             ：3.30
+INFO     CDATA:Cdata_loggers.py:105 TX光功率(dBm)       ：2.57
+INFO     CDATA:Cdata_loggers.py:105 RX光功率(dBm)       ：-16.38
+INFO     CDATA:Cdata_loggers.py:105 电流(mA)            ：9.60
+INFO     CDATA:Cdata_loggers.py:105 温度(℃)            ：22.70
+INFO     CDATA:Cdata_loggers.py:105 CATV_RX光功率(dBm)  ：-41.74
+INFO     CDATA:Cdata_loggers.py:105 ==========================================================
+INFO     CDATA:Cdata_loggers.py:105
+INFO     CDATA:Cdata_loggers.py:105 ONU在OLT上删除成功
+INFO     CDATA:Cdata_loggers.py:105 ONU在OLT上被重新被发现。

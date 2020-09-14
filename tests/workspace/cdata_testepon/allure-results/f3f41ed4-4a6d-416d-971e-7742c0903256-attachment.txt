@@ -1,0 +1,14 @@
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 192.168.3.140 登录成功
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 pon 5 端口使能成功
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 =========查看onu的信息上报=========
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ==========================================
+[31m[1mERROR   [0m CDATA:Cdata_loggers.py:98 ===============ERROR!!!===================
+[31m[1mERROR   [0m CDATA:Cdata_loggers.py:98 ONU在OLT上发现失败。
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ==========================================
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU在OLT上删除成功
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ==========================================
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ===============ERROR!!!===================
+[31m[1mERROR   [0m CDATA:Cdata_loggers.py:98 ONU在OLT上不能被重新被发现
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ===============ERROR!!!===================
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 pon 5 端口去使能
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 退出登录

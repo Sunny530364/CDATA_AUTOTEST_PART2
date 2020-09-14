@@ -1,0 +1,338 @@
+{
+  "uid" : "9666a5fcbf9ea8f0",
+  "name" : "去激活ONU",
+  "fullName" : "test_onu_mgt#test_deactive_onu",
+  "historyId" : "186af74b8996f52f6de2c4d894d64c0d",
+  "time" : {
+    "start" : 1599823532709,
+    "stop" : 1599823631110,
+    "duration" : 98401
+  },
+  "description" : "\n    用例描述：\n    再OLT上将ONU去激活后，再重新激活。\n    例如：\n    ont deactivate 1 1\n    ont activate 1 1\n    ",
+  "descriptionHtml" : "<pre><code>用例描述：\n再OLT上将ONU去激活后，再重新激活。\n例如：\nont deactivate 1 1\nont activate 1 1\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert False\n +  where False = stream_test('10', '100000', '100000', ['//192.168.0.180/1/7', '//192.168.0.180/1/8'])",
+  "statusTrace" : "login = <telnetlib.Telnet object at 0x000001904C203DD8>\n\n    @allure.feature(\"ONU远程管理\")\n    @allure.story(\"远程管理ONU\")\n    @allure.title(\"去激活ONU\")\n    @pytest.mark.run(order=1627)\n    def test_deactive_onu(login):\n        '''\n        用例描述：\n        再OLT上将ONU去激活后，再重新激活。\n        例如：\n        ont deactivate 1 1\n        ont activate 1 1\n        '''\n        cdata_info(\"=========去激活ONU=========\")\n        tn = login\n        with allure.step('步骤1:发现未注册的ONU。'):\n            assert autofind_onu(tn, Gpon_PonID, Gpon_OnuID, Gpon_SN)\n        with allure.step('步骤2:在OLT上通过Gpon_SN的方式将ONU注册上线。'):\n            assert auth_by_sn(tn, Gpon_PonID, Gpon_OnuID, Ont_Lineprofile_ID, Ont_Srvprofile_ID, Gpon_SN)\n        with allure.step('步骤3:添加service_port'):\n            assert add_service_port(tn, Gpon_PonID,Gpon_OnuID , Gemport_ID, [2000, 4001])\n        with allure.step('步骤4:ONU的以太网口1添加NATIVE-VLAN'):\n            assert ont_native_vlan(tn, Gpon_PonID, Gpon_OnuID, '1', '2000')\n        with allure.step('步骤5:ONU的以太网口2添加NATIVE-VLAN'):\n            assert ont_native_vlan(tn, Gpon_PonID,Gpon_OnuID, '2', '4001')\n        with allure.step('步骤6:测试仪发送双向100000个报文。'):\n>           assert stream_test(stream_rate, stream_num, download_capture_num, port_location)\nE           AssertionError: assert False\nE            +  where False = stream_test('10', '100000', '100000', ['//192.168.0.180/1/7', '//192.168.0.180/1/8'])\n\nFD1616GS\\test_onu_mgt.py:41: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "login",
+    "time" : {
+      "start" : 1599823519636,
+      "stop" : 1599823532708,
+      "duration" : 13072
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1599823519636,
+      "stop" : 1599823519636,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "__pytest_repeat_step_number",
+    "time" : {
+      "start" : 1599823519636,
+      "stop" : 1599823519636,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1599821387651,
+      "stop" : 1599821387651,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1599821387651,
+      "stop" : 1599821387651,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1599821387651,
+      "stop" : 1599821387651,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "\n    用例描述：\n    再OLT上将ONU去激活后，再重新激活。\n    例如：\n    ont deactivate 1 1\n    ont activate 1 1\n    ",
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert False\n +  where False = stream_test('10', '100000', '100000', ['//192.168.0.180/1/7', '//192.168.0.180/1/8'])",
+    "statusTrace" : "login = <telnetlib.Telnet object at 0x000001904C203DD8>\n\n    @allure.feature(\"ONU远程管理\")\n    @allure.story(\"远程管理ONU\")\n    @allure.title(\"去激活ONU\")\n    @pytest.mark.run(order=1627)\n    def test_deactive_onu(login):\n        '''\n        用例描述：\n        再OLT上将ONU去激活后，再重新激活。\n        例如：\n        ont deactivate 1 1\n        ont activate 1 1\n        '''\n        cdata_info(\"=========去激活ONU=========\")\n        tn = login\n        with allure.step('步骤1:发现未注册的ONU。'):\n            assert autofind_onu(tn, Gpon_PonID, Gpon_OnuID, Gpon_SN)\n        with allure.step('步骤2:在OLT上通过Gpon_SN的方式将ONU注册上线。'):\n            assert auth_by_sn(tn, Gpon_PonID, Gpon_OnuID, Ont_Lineprofile_ID, Ont_Srvprofile_ID, Gpon_SN)\n        with allure.step('步骤3:添加service_port'):\n            assert add_service_port(tn, Gpon_PonID,Gpon_OnuID , Gemport_ID, [2000, 4001])\n        with allure.step('步骤4:ONU的以太网口1添加NATIVE-VLAN'):\n            assert ont_native_vlan(tn, Gpon_PonID, Gpon_OnuID, '1', '2000')\n        with allure.step('步骤5:ONU的以太网口2添加NATIVE-VLAN'):\n            assert ont_native_vlan(tn, Gpon_PonID,Gpon_OnuID, '2', '4001')\n        with allure.step('步骤6:测试仪发送双向100000个报文。'):\n>           assert stream_test(stream_rate, stream_num, download_capture_num, port_location)\nE           AssertionError: assert False\nE            +  where False = stream_test('10', '100000', '100000', ['//192.168.0.180/1/7', '//192.168.0.180/1/8'])\n\nFD1616GS\\test_onu_mgt.py:41: AssertionError",
+    "steps" : [ {
+      "name" : "步骤1:发现未注册的ONU。",
+      "time" : {
+        "start" : 1599823532709,
+        "stop" : 1599823533802,
+        "duration" : 1093
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "步骤2:在OLT上通过Gpon_SN的方式将ONU注册上线。",
+      "time" : {
+        "start" : 1599823533802,
+        "stop" : 1599823554157,
+        "duration" : 20355
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "步骤3:添加service_port",
+      "time" : {
+        "start" : 1599823554157,
+        "stop" : 1599823559164,
+        "duration" : 5007
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "步骤4:ONU的以太网口1添加NATIVE-VLAN",
+      "time" : {
+        "start" : 1599823559164,
+        "stop" : 1599823559292,
+        "duration" : 128
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "步骤5:ONU的以太网口2添加NATIVE-VLAN",
+      "time" : {
+        "start" : 1599823559292,
+        "stop" : 1599823559420,
+        "duration" : 128
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "步骤6:测试仪发送双向100000个报文。",
+      "time" : {
+        "start" : 1599823559420,
+        "stop" : 1599823631106,
+        "duration" : 71686
+      },
+      "status" : "failed",
+      "statusMessage" : "AssertionError: assert False\n +  where False = stream_test('10', '100000', '100000', ['//192.168.0.180/1/7', '//192.168.0.180/1/8'])\n",
+      "statusTrace" : "  File \"E:\\CDATA\\自动化测试\\Cdata_part11\\tests\\FD1616GS\\test_onu_mgt.py\", line 41, in test_deactive_onu\n    assert stream_test(stream_rate, stream_num, download_capture_num, port_location)\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : true,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "8a2cb21e0b3443b4",
+      "name" : "log",
+      "source" : "8a2cb21e0b3443b4.txt",
+      "type" : "text/plain",
+      "size" : 4636
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 6,
+    "hasContent" : true,
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "login::0",
+    "time" : {
+      "start" : 1599823631119,
+      "stop" : 1599823639216,
+      "duration" : 8097
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "ONU远程管理"
+  }, {
+    "name" : "story",
+    "value" : "远程管理ONU"
+  }, {
+    "name" : "suite",
+    "value" : "test_onu_mgt"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-2JV12RE"
+  }, {
+    "name" : "thread",
+    "value" : "19156-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_onu_mgt"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 2,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 3,
+        "unknown" : 0,
+        "total" : 6
+      },
+      "items" : [ {
+        "uid" : "b52be7e5f9710cfe",
+        "reportUrl" : "http://192.168.0.182:8080/job/cdata_test1/370/allure/#testresult/b52be7e5f9710cfe",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x00000223AB3BCC18>, '16', '2', '52544B4711111111')",
+        "time" : {
+          "start" : 1599730712088,
+          "stop" : 1599730771193,
+          "duration" : 59105
+        }
+      }, {
+        "uid" : "cb9bcedcc9e230b9",
+        "reportUrl" : "http://192.168.0.182:8080/job/cdata_test1/361/allure/#testresult/cb9bcedcc9e230b9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1599621646408,
+          "stop" : 1599621748113,
+          "duration" : 101705
+        }
+      }, {
+        "uid" : "79375a919eada929",
+        "reportUrl" : "http://192.168.0.182:8080/job/cdata_test1/280/allure/#testresult/79375a919eada929",
+        "status" : "passed",
+        "time" : {
+          "start" : 1598838971506,
+          "stop" : 1598839111691,
+          "duration" : 140185
+        }
+      }, {
+        "uid" : "d350e24944ab9cbd",
+        "reportUrl" : "http://192.168.0.182:8080/job/cdata_test1/276/allure/#testresult/d350e24944ab9cbd",
+        "status" : "broken",
+        "statusDetails" : "Exception: 设备登录失败",
+        "time" : {
+          "start" : 1598618117143,
+          "stop" : 1598618117143,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "ca58e4fb81b40ce0",
+        "reportUrl" : "http://192.168.0.182:8080/job/cdata_test1/272/allure/#testresult/ca58e4fb81b40ce0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1598595653024,
+          "stop" : 1598595770595,
+          "duration" : 117571
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "9666a5fcbf9ea8f0.json",
+  "parameterValues" : [ ]
+}

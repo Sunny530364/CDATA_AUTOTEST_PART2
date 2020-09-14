@@ -1,0 +1,4 @@
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 192.168.3.138 登录成功
+[32mINFO    [0m script:renix_common_api.py:84 =========ONU端口出口限速测试=========
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 =========ONU端口出口限速测试=========
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 删除onu入口限速失败

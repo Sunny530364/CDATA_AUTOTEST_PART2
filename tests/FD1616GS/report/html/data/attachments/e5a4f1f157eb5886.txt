@@ -1,0 +1,13 @@
+[32mINFO    [0m logger11:logger11.py:102 配置gemport为transparent
+[32mINFO    [0m logger11:logger11.py:102 线路模板:mapping_mode设置成vlan正常
+[32mINFO    [0m logger11:logger11.py:102 线路模板:配置gemport 1为transparent成功
+[32mINFO    [0m script:renix_common_api.py:84 create ports with location:
+[32mINFO    [0m script:renix_common_api.py:84 StreamPortConfig_1 has lower: InterFrameGapProfile_1
+[32mINFO    [0m script:renix_common_api.py:84 StreamPortConfig_2 has lower: InterFrameGapProfile_2
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/9) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/10) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/9) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/10) create streams
+[32mINFO    [0m script:renix_common_api.py:84 PageResultView_1 has lower: ResultQuery_1
+[32mINFO    [0m script:renix_common_api.py:84 ResultQuery_1 has lower: StreamBlockStats_1 StreamBlockStats_2 StreamBlockStats_3 StreamBlockStats_4
+[32mINFO    [0m logger11:logger11.py:102 打流测试正常

@@ -1,0 +1,22 @@
+[INFO] 2020-08-19 15:06:50,786  Receive Msg: listen_port 9002
+
+[INFO] 2020-08-19 15:06:50,868  Renix api initialization finished
+[INFO] 2020-08-19 15:07:31,426  =========ONU MACµÿ÷∑…œ±®≤‚ ‘=========
+[INFO] 2020-08-19 15:08:52,244  create ports with location:
+[INFO] 2020-08-19 15:08:53,902  StreamPortConfig_1 has lower: InterFrameGapProfile_1
+[INFO] 2020-08-19 15:08:53,909  StreamPortConfig_2 has lower: InterFrameGapProfile_2
+[INFO] 2020-08-19 15:08:53,939  port(//192.168.0.180/1/1) create streams
+[INFO] 2020-08-19 15:08:54,218  port(//192.168.0.180/1/2) create streams
+[INFO] 2020-08-19 15:08:55,002  port(//192.168.0.180/1/1) create streams
+[INFO] 2020-08-19 15:08:55,282  port(//192.168.0.180/1/2) create streams
+[INFO] 2020-08-19 15:08:56,074  port(//192.168.0.180/1/1) create streams
+[INFO] 2020-08-19 15:08:56,362  port(//192.168.0.180/1/2) create streams
+[INFO] 2020-08-19 15:08:57,165  port(//192.168.0.180/1/1) create streams
+[INFO] 2020-08-19 15:08:57,454  port(//192.168.0.180/1/2) create streams
+[INFO] 2020-08-19 15:08:58,272  port(//192.168.0.180/1/1) create streams
+[INFO] 2020-08-19 15:08:58,582  port(//192.168.0.180/1/2) create streams
+[INFO] 2020-08-19 15:08:59,488  PageResultView_1 has lower: ResultQuery_1
+[INFO] 2020-08-19 15:09:10,557  ResultQuery_1 has lower: PortStats_1 PortStats_2
+[INFO] 2020-08-19 15:09:10,686  [test pass] [Port_1] rx packet (198568)is  equal to port2_stats tx packets (198568)
+[INFO] 2020-08-19 15:09:10,693  [test pass] [Port_2] rx packet (198575)is equal to  port1_stats tx packets (198568)
+[INFO] 2020-08-19 15:09:28,988  close connection to CL

@@ -1,0 +1,2 @@
+[32mINFO    [0m script:renix_common_api.py:84 Create ports with locations:['//192.168.0.180/1/9', '//192.168.0.180/1/10']
+[1m[31mERROR   [0m script:renix_common_api.py:74 b'_TCLERROR:Hardware port (//192.168.0.180/1/9) has been attached to another logical port (Port_23)'

@@ -1,0 +1,197 @@
+{
+  "uid" : "d3e85562837fe3e7",
+  "name" : "mapping为transaprent",
+  "fullName" : "test_onu_gemport#test_gemport_transparent",
+  "historyId" : "2d66ba5643622279420b529e22d2458f",
+  "time" : {
+    "start" : 1594033815038,
+    "stop" : 1594033815038,
+    "duration" : 0
+  },
+  "description" : "\n    mapping-mode is vlan ,config gem mapping  transparent\n    测试方法：上下行发送2条流量,vlan2000,2001\n    结果：上下行都是通的\n    ",
+  "descriptionHtml" : "<pre><code>mapping-mode is vlan ,config gem mapping  transparent\n测试方法：上下行发送2条流量,vlan2000,2001\n结果：上下行都是通的\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert False\n +  where False = auth_by_sn(<telnetlib.Telnet object at 0x00000208E2928668>, '16', '2', '200', '200', '5A54453171200033')",
+  "statusTrace" : "login = <telnetlib.Telnet object at 0x00000208E2928668>\n\n    @pytest.fixture(scope='function')\n    def gemport_transparent_suit(login):\n        Vlan_list=[2000,2001]\n        tn = login\n        with allure.step('步骤1:发现未注册的ONU。'):\n            assert autofind_onu(tn, PonID, SN)\n        with allure.step('步骤2:在OLT上通过SN的方式将ONU注册上线。'):\n>           assert auth_by_sn(tn ,PonID, OnuID, Ont_Lineprofile_ID, Ont_Srvprofile_ID, SN)\nE           AssertionError: assert False\nE            +  where False = auth_by_sn(<telnetlib.Telnet object at 0x00000208E2928668>, '16', '2', '200', '200', '5A54453171200033')\n\ntest_onu_gemport.py:20: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1594032210026,
+      "stop" : 1594032210026,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "gemport_transparent_suit",
+    "time" : {
+      "start" : 1594033828084,
+      "stop" : 1594033891779,
+      "duration" : 63695
+    },
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert False\n +  where False = auth_by_sn(<telnetlib.Telnet object at 0x00000208E2928668>, '16', '2', '200', '200', '5A54453171200033')\n",
+    "statusTrace" : "  File \"d:\\program files\\python37\\lib\\site-packages\\pluggy\\callers.py\", line 187, in _multicall\n    res = hook_impl.function(*args)\n  File \"d:\\program files\\python37\\lib\\site-packages\\_pytest\\fixtures.py\", line 958, in pytest_fixture_setup\n    result = call_fixture_func(fixturefunc, request, kwargs)\n  File \"d:\\program files\\python37\\lib\\site-packages\\_pytest\\fixtures.py\", line 788, in call_fixture_func\n    res = fixturefunc(**kwargs)\n  File \"E:\\CDATA\\自动化测试\\Cdata_part11\\tests\\GponSfu\\test_onu_gemport.py\", line 20, in gemport_transparent_suit\n    assert auth_by_sn(tn ,PonID, OnuID, Ont_Lineprofile_ID, Ont_Srvprofile_ID, SN)\n",
+    "steps" : [ {
+      "name" : "步骤1:发现未注册的ONU。",
+      "time" : {
+        "start" : 1594033828085,
+        "stop" : 1594033828159,
+        "duration" : 74
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤2:在OLT上通过SN的方式将ONU注册上线。",
+      "time" : {
+        "start" : 1594033828159,
+        "stop" : 1594033891779,
+        "duration" : 63620
+      },
+      "status" : "failed",
+      "statusMessage" : "AssertionError: assert False\n +  where False = auth_by_sn(<telnetlib.Telnet object at 0x00000208E2928668>, '16', '2', '200', '200', '5A54453171200033')\n",
+      "statusTrace" : "  File \"E:\\CDATA\\自动化测试\\Cdata_part11\\tests\\GponSfu\\test_onu_gemport.py\", line 20, in gemport_transparent_suit\n    assert auth_by_sn(tn ,PonID, OnuID, Ont_Lineprofile_ID, Ont_Srvprofile_ID, SN)\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 2,
+    "hasContent" : true
+  }, {
+    "name" : "login",
+    "time" : {
+      "start" : 1594033815039,
+      "stop" : 1594033828084,
+      "duration" : 13045
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1594032210026,
+      "stop" : 1594032210027,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1594033815039,
+      "stop" : 1594033815039,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1594032210026,
+      "stop" : 1594032210026,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "login::0",
+    "time" : {
+      "start" : 1594033891793,
+      "stop" : 1594033902903,
+      "duration" : 11110
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "gemport测试"
+  }, {
+    "name" : "story",
+    "value" : "gemport测试"
+  }, {
+    "name" : "suite",
+    "value" : "test_onu_gemport"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-2JV12RE"
+  }, {
+    "name" : "thread",
+    "value" : "16888-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_onu_gemport"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d3e85562837fe3e7.json",
+  "parameterValues" : [ ]
+}

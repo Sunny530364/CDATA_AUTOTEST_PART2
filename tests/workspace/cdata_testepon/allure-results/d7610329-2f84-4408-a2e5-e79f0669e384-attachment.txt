@@ -1,0 +1,41 @@
+INFO     CDATA:Cdata_loggers.py:106 192.168.3.140 登录成功
+INFO     CDATA:Cdata_loggers.py:106 pon 5 端口使能成功
+INFO     script:renix_common_api.py:84 =========ONU端口组播snooping测试=========
+INFO     CDATA:Cdata_loggers.py:106 =========ONU端口组播snooping测试=========
+INFO     CDATA:Cdata_loggers.py:106 ONU在OLT上被重新被发现。
+INFO     CDATA:Cdata_loggers.py:106 当前ONU_ID没有被占用。
+INFO     CDATA:Cdata_loggers.py:106 ONU在OLT上添加成功。
+INFO     CDATA:Cdata_loggers.py:106 ONU在OLT上通过MAC注册成功。
+INFO     CDATA:Cdata_loggers.py:106 onu配置组播模式为imgp-snooping正常
+INFO     script:renix_common_api.py:84 create ports with location:
+INFO     script:renix_common_api.py:84 StreamPortConfig_23 has lower: InterFrameGapProfile_21
+INFO     script:renix_common_api.py:84 port(//192.168.0.180/1/7) create streams
+INFO     script:renix_common_api.py:84 PageResultView_11 has lower: ResultQuery_15
+INFO     script:renix_common_api.py:84 ——————————————report test————————————
+INFO     script:renix_common_api.py:84 igmp_client: IgmpTxFrames is 1，IgmpTxV2Reports is 1，IgmpTxLeaveGroups is 0
+INFO     script:renix_common_api.py:84 imgp_client: IgmpRxFrame is 0,IgmpRxGeneralQueries is 0,IgmpRxGroupSpecificQueries is 0
+INFO     script:renix_common_api.py:84 igmp_server:  QuerierTxFrames is 1,QuerierRxFrames is 1
+INFO     script:renix_common_api.py:84 [igmp_report test pass][Stream_239.1.1.1] igmp_server tx igmp packet:750572,igmp_client rx igmp packet:0
+INFO     script:renix_common_api.py:84 ——————————————leave test————————————
+INFO     script:renix_common_api.py:84 igmp_client: IgmpTxFrames is 2，IgmpTxV2Reports is 1，IgmpTxLeaveGroups is 1
+INFO     script:renix_common_api.py:84 [igmp_leave test pass]Stream_239.1.1.1 igmp_client tx leave packet ,result:igmp_server tx:282387,igmp_client rx：0
+INFO     CDATA:Cdata_loggers.py:106 测试onu组播snooping(未配置组播mvlan)不通的情况:打流测试正常
+INFO     CDATA:Cdata_loggers.py:106 onu端口配置组播mvlan正常
+INFO     script:renix_common_api.py:84 create ports with location:
+INFO     script:renix_common_api.py:84 StreamPortConfig_25 has lower: InterFrameGapProfile_23
+INFO     script:renix_common_api.py:84 port(//192.168.0.180/1/7) create streams
+INFO     script:renix_common_api.py:84 PageResultView_12 has lower: ResultQuery_18
+INFO     script:renix_common_api.py:84 ——————————————report test————————————
+INFO     script:renix_common_api.py:84 igmp_client: IgmpTxFrames is 1，IgmpTxV2Reports is 1，IgmpTxLeaveGroups is 0
+INFO     script:renix_common_api.py:84 imgp_client: IgmpRxFrame is 0,IgmpRxGeneralQueries is 0,IgmpRxGroupSpecificQueries is 0
+INFO     script:renix_common_api.py:84 igmp_server:  QuerierTxFrames is 1,QuerierRxFrames is 1
+INFO     script:renix_common_api.py:84 [igmp_report test pass][Stream_239.1.1.1] igmp_server tx igmp packet:743728,igmp_client rx igmp packet:743728
+INFO     script:renix_common_api.py:84 ——————————————leave test————————————
+INFO     script:renix_common_api.py:84 igmp_client: IgmpTxFrames is 2，IgmpTxV2Reports is 1，IgmpTxLeaveGroups is 1
+INFO     script:renix_common_api.py:84 [igmp_leave test pass]Stream_239.1.1.1 igmp_client tx leave packet ,result:igmp_server tx:274662,igmp_client rx：0
+INFO     CDATA:Cdata_loggers.py:106 测试onu组播snooping(配置组播mvlan)通的情况:打流测试正常
+INFO     CDATA:Cdata_loggers.py:106 onu配置组播模式为transparent正常
+INFO     CDATA:Cdata_loggers.py:106 ONU在OLT上删除成功
+INFO     CDATA:Cdata_loggers.py:106 ONU在OLT上被重新被发现。
+INFO     CDATA:Cdata_loggers.py:106 pon 5 端口去使能
+INFO     CDATA:Cdata_loggers.py:106 退出登录

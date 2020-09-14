@@ -1,0 +1,358 @@
+{
+  "uid" : "3d1e37b03293766b",
+  "name" : "查看ONU的信息上报",
+  "fullName" : "test_get_ont_info#test_get_info",
+  "historyId" : "141cbe5703378d48aa0fdc458abcc3fd",
+  "time" : {
+    "start" : 1594693954097,
+    "stop" : 1594693965698,
+    "duration" : 11601
+  },
+  "description" : "\n    用例描述：\n    查看ONU上报的基本信息。\n    例如：\n    show ont info 1 1\n    show ont version 1 1\n    show ont capability 1 1\n    show ont optical-info 1 1\n    ",
+  "descriptionHtml" : "<pre><code>用例描述：\n查看ONU上报的基本信息。\n例如：\nshow ont info 1 1\nshow ont version 1 1\nshow ont capability 1 1\nshow ont optical-info 1 1\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1594693941051,
+      "stop" : 1594693941051,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1594693941051,
+      "stop" : 1594693941051,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "login",
+    "time" : {
+      "start" : 1594693941051,
+      "stop" : 1594693954095,
+      "duration" : 13044
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1594693941051,
+      "stop" : 1594693941051,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1594693941051,
+      "stop" : 1594693941051,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "__pytest_repeat_step_number",
+    "time" : {
+      "start" : 1594693941051,
+      "stop" : 1594693941051,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n    用例描述：\n    查看ONU上报的基本信息。\n    例如：\n    show ont info 1 1\n    show ont version 1 1\n    show ont capability 1 1\n    show ont optical-info 1 1\n    ",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "步骤1:发现未注册的ONU。",
+      "time" : {
+        "start" : 1594693954097,
+        "stop" : 1594693955192,
+        "duration" : 1095
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤2:在OLT上通过SN的方式将ONU注册上线。",
+      "time" : {
+        "start" : 1594693955192,
+        "stop" : 1594693964490,
+        "duration" : 9298
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤3:获取ONU的基本信息。",
+      "time" : {
+        "start" : 1594693964490,
+        "stop" : 1594693965698,
+        "duration" : 1208
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "4a3035436eedd20c",
+      "name" : "log",
+      "source" : "4a3035436eedd20c.txt",
+      "type" : "text/plain",
+      "size" : 4324
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 3,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "login::0",
+    "time" : {
+      "start" : 1594693965699,
+      "stop" : 1594693974808,
+      "duration" : 9109
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "信息上报"
+  }, {
+    "name" : "story",
+    "value" : "ONU信息上报"
+  }, {
+    "name" : "suite",
+    "value" : "test_get_ont_info"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-2JV12RE"
+  }, {
+    "name" : "thread",
+    "value" : "29004-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_get_ont_info"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "fa43ac13de68214d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594692427068,
+        "stop" : 1594692442478,
+        "duration" : 15410
+      }
+    }, {
+      "uid" : "e26d6d350eefd63a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594193125838,
+        "stop" : 1594193141910,
+        "duration" : 16072
+      }
+    }, {
+      "uid" : "5b5b0f6d4c55deb0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594191960394,
+        "stop" : 1594191977508,
+        "duration" : 17114
+      }
+    }, {
+      "uid" : "cd081584443d61ce",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594191651417,
+        "stop" : 1594191665390,
+        "duration" : 13973
+      }
+    }, {
+      "uid" : "b27fe14f90e6d4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594191565779,
+        "stop" : 1594191576728,
+        "duration" : 10949
+      }
+    }, {
+      "uid" : "a0a8a72418d266eb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594171393952,
+        "stop" : 1594171412407,
+        "duration" : 18455
+      }
+    }, {
+      "uid" : "7ed37f58c0f9bbc6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594170096016,
+        "stop" : 1594170110563,
+        "duration" : 14547
+      }
+    }, {
+      "uid" : "4467ed486a68345d",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000002E21D31F048>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594125838313,
+        "stop" : 1594125897794,
+        "duration" : 59481
+      }
+    }, {
+      "uid" : "27a531484ecc05e4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594121612272,
+        "stop" : 1594121623265,
+        "duration" : 10993
+      }
+    }, {
+      "uid" : "f6c5a4039f98fd05",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594114020870,
+        "stop" : 1594114040143,
+        "duration" : 19273
+      }
+    }, {
+      "uid" : "650f3f9c24e4dd34",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594113136712,
+        "stop" : 1594113157459,
+        "duration" : 20747
+      }
+    }, {
+      "uid" : "129fc321e851ae98",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x0000027E355E9940>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594112321974,
+        "stop" : 1594112327290,
+        "duration" : 5316
+      }
+    }, {
+      "uid" : "e3ef351994fd6d9f",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = auth_by_sn(<telnetlib.Telnet object at 0x00000208E28E9BE0>, '16', '2', '200', '200', '5A54453171200033')",
+      "time" : {
+        "start" : 1594032395867,
+        "stop" : 1594032460030,
+        "duration" : 64163
+      }
+    }, {
+      "uid" : "c5be015ae32aa193",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = auth_by_sn(<telnetlib.Telnet object at 0x00000208E28E9898>, '16', '2', '200', '200', '5A54453171200033')",
+      "time" : {
+        "start" : 1594032308044,
+        "stop" : 1594032371561,
+        "duration" : 63517
+      }
+    }, {
+      "uid" : "4d3969070690312c",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = auth_by_sn(<telnetlib.Telnet object at 0x00000208E28212B0>, '16', '2', '200', '200', '5A54453171200033')",
+      "time" : {
+        "start" : 1594032223104,
+        "stop" : 1594032286549,
+        "duration" : 63445
+      }
+    }, {
+      "uid" : "3d7de88a83553886",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593770650459,
+        "stop" : 1593770664428,
+        "duration" : 13969
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "3d1e37b03293766b.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,244 @@
+{
+  "uid" : "154d55356a0e58c7",
+  "name" : "test_dhcp",
+  "fullName" : "test_onu_internet_type#test_dhcp",
+  "historyId" : "db832e99f05acfc6b54920af235d2225",
+  "time" : {
+    "start" : 1594000589978,
+    "stop" : 1594000612087,
+    "duration" : 22109
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert False\n +  where False = dhcp_test('ASIX AX88772C USB2.0 to Fast Ethernet Adapter')",
+  "statusTrace" : "login = <telnetlib.Telnet object at 0x00000193761E6518>\n\n    def test_dhcp(login):\n        tn = login\n        with allure.step('步骤1:发现未注册的ONU。'):\n            assert autofind_onu(tn, PonID, SN)\n        with allure.step('步骤2:在OLT上通过SN的方式将ONU注册上线。'):\n            assert auth_by_sn(tn ,PonID, OnuID, Ont_Lineprofile_ID, Ont_Srvprofile_ID, SN)\n        with allure.step('步骤3:添加service_port'):\n            assert add_service_port(tn, PonID, OnuID, Gemport_ID, [2000, 4001])\n        with allure.step('步骤4:ONU的以太网口1添加NATIVE-VLAN'):\n            assert ont_native_vlan(tn, PonID, OnuID, '1', '2000')\n        with allure.step('步骤5:ONU的以太网口2添加NATIVE-VLAN'):\n            assert ont_native_vlan(tn, PonID, OnuID, '2', '4001')\n        with allure.step('步骤6:PC重新获取IP地址'):\n>           assert dhcp_test(Network_car_name)\nE           AssertionError: assert False\nE            +  where False = dhcp_test('ASIX AX88772C USB2.0 to Fast Ethernet Adapter')\n\ntest_onu_internet_type.py:27: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1594000576924,
+      "stop" : 1594000576924,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "login",
+    "time" : {
+      "start" : 1594000576925,
+      "stop" : 1594000589976,
+      "duration" : 13051
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1594000576924,
+      "stop" : 1594000576924,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1594000576924,
+      "stop" : 1594000576924,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1594000576924,
+      "stop" : 1594000576924,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert False\n +  where False = dhcp_test('ASIX AX88772C USB2.0 to Fast Ethernet Adapter')",
+    "statusTrace" : "login = <telnetlib.Telnet object at 0x00000193761E6518>\n\n    def test_dhcp(login):\n        tn = login\n        with allure.step('步骤1:发现未注册的ONU。'):\n            assert autofind_onu(tn, PonID, SN)\n        with allure.step('步骤2:在OLT上通过SN的方式将ONU注册上线。'):\n            assert auth_by_sn(tn ,PonID, OnuID, Ont_Lineprofile_ID, Ont_Srvprofile_ID, SN)\n        with allure.step('步骤3:添加service_port'):\n            assert add_service_port(tn, PonID, OnuID, Gemport_ID, [2000, 4001])\n        with allure.step('步骤4:ONU的以太网口1添加NATIVE-VLAN'):\n            assert ont_native_vlan(tn, PonID, OnuID, '1', '2000')\n        with allure.step('步骤5:ONU的以太网口2添加NATIVE-VLAN'):\n            assert ont_native_vlan(tn, PonID, OnuID, '2', '4001')\n        with allure.step('步骤6:PC重新获取IP地址'):\n>           assert dhcp_test(Network_car_name)\nE           AssertionError: assert False\nE            +  where False = dhcp_test('ASIX AX88772C USB2.0 to Fast Ethernet Adapter')\n\ntest_onu_internet_type.py:27: AssertionError",
+    "steps" : [ {
+      "name" : "步骤1:发现未注册的ONU。",
+      "time" : {
+        "start" : 1594000589978,
+        "stop" : 1594000590081,
+        "duration" : 103
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤2:在OLT上通过SN的方式将ONU注册上线。",
+      "time" : {
+        "start" : 1594000590081,
+        "stop" : 1594000604909,
+        "duration" : 14828
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤3:添加service_port",
+      "time" : {
+        "start" : 1594000604909,
+        "stop" : 1594000609935,
+        "duration" : 5026
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤4:ONU的以太网口1添加NATIVE-VLAN",
+      "time" : {
+        "start" : 1594000609935,
+        "stop" : 1594000610110,
+        "duration" : 175
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤5:ONU的以太网口2添加NATIVE-VLAN",
+      "time" : {
+        "start" : 1594000610110,
+        "stop" : 1594000610270,
+        "duration" : 160
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤6:PC重新获取IP地址",
+      "time" : {
+        "start" : 1594000610270,
+        "stop" : 1594000612087,
+        "duration" : 1817
+      },
+      "status" : "failed",
+      "statusMessage" : "AssertionError: assert False\n +  where False = dhcp_test('ASIX AX88772C USB2.0 to Fast Ethernet Adapter')\n",
+      "statusTrace" : "  File \"E:\\CDATA\\自动化测试\\Cdata_part11\\tests\\GponSfu\\test_onu_internet_type.py\", line 27, in test_dhcp\n    assert dhcp_test(Network_car_name)\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 6,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "login::0",
+    "time" : {
+      "start" : 1594000612218,
+      "stop" : 1594000623350,
+      "duration" : 11132
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "test_onu_internet_type"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-2JV12RE"
+  }, {
+    "name" : "thread",
+    "value" : "15652-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_onu_internet_type"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "154d55356a0e58c7.json",
+  "parameterValues" : [ ]
+}

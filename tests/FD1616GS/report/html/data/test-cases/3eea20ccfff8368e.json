@@ -1,0 +1,253 @@
+{
+  "uid" : "3eea20ccfff8368e",
+  "name" : "测试onu组播正常通的情况",
+  "fullName" : "test_onu_multicast#test_ont_snooping_001",
+  "historyId" : "728f1e173e08f34ab8fbb27ff2f72749",
+  "time" : {
+    "start" : 1594019682191,
+    "stop" : 1594019731509,
+    "duration" : 49318
+  },
+  "description" : "\n    test1:测试onu为snooping模式下组播正常通的情况\n    目的：ont为snooping模式（mvlan为3000，ip 239.1.1.1），没有加入报文前，客户端收不到组播数据报，加入报文之后，形成组播表现，onu的端口可以收到组播数据流\n    ",
+  "descriptionHtml" : "<pre><code>test1:测试onu为snooping模式下组播正常通的情况\n目的：ont为snooping模式（mvlan为3000，ip 239.1.1.1），没有加入报文前，客户端收不到组播数据报，加入报文之后，形成组播表现，onu的端口可以收到组播数据流\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "login",
+    "time" : {
+      "start" : 1594019654730,
+      "stop" : 1594019667770,
+      "duration" : 13040
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "ont_snooping_suit",
+    "time" : {
+      "start" : 1594019667771,
+      "stop" : 1594019682190,
+      "duration" : 14419
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "步骤1:发现未注册的ONU。",
+      "time" : {
+        "start" : 1594019667771,
+        "stop" : 1594019667847,
+        "duration" : 76
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤2:在OLT上通过SN的方式将ONU注册上线。",
+      "time" : {
+        "start" : 1594019667847,
+        "stop" : 1594019675699,
+        "duration" : 7852
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤3：配置onu端口native-vlan为3000",
+      "time" : {
+        "start" : 1594019675700,
+        "stop" : 1594019675923,
+        "duration" : 223
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤4：添加虚端口vlan透传3000",
+      "time" : {
+        "start" : 1594019675923,
+        "stop" : 1594019679981,
+        "duration" : 4058
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤5:onu端口绑定组播模板",
+      "time" : {
+        "start" : 1594019679981,
+        "stop" : 1594019682190,
+        "duration" : 2209
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 5,
+    "hasContent" : true
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1594019631245,
+      "stop" : 1594019631245,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1594019631245,
+      "stop" : 1594019631245,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1594019631245,
+      "stop" : 1594019631245,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1594019654730,
+      "stop" : 1594019654730,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n    test1:测试onu为snooping模式下组播正常通的情况\n    目的：ont为snooping模式（mvlan为3000，ip 239.1.1.1），没有加入报文前，客户端收不到组播数据报，加入报文之后，形成组播表现，onu的端口可以收到组播数据流\n    ",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "cf2ce6a8b30f549e",
+      "name" : "log",
+      "source" : "cf2ce6a8b30f549e.txt",
+      "type" : "text/plain",
+      "size" : 355
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "login::0",
+    "time" : {
+      "start" : 1594019731511,
+      "stop" : 1594019742728,
+      "duration" : 11217
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "onu 组播测试"
+  }, {
+    "name" : "story",
+    "value" : "onu 组播snooping测试"
+  }, {
+    "name" : "suite",
+    "value" : "test_onu_multicast"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-2JV12RE"
+  }, {
+    "name" : "thread",
+    "value" : "22572-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_onu_multicast"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "3eea20ccfff8368e.json",
+  "parameterValues" : [ ]
+}

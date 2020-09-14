@@ -1,0 +1,66 @@
+INFO     CDATA:Cdata_loggers.py:106 192.168.0.181 登录成功
+INFO     CDATA:Cdata_loggers.py:106 =========查看onu的信息上报=========
+INFO     CDATA:Cdata_loggers.py:106 ONU在OLT上被重新被发现。
+INFO     CDATA:Cdata_loggers.py:106 当前ONU_ID没有被占用。
+INFO     CDATA:Cdata_loggers.py:106 ONU在OLT上添加成功。
+INFO     CDATA:Cdata_loggers.py:106 ONU在OLT上通过SN注册成功。
+INFO     CDATA:Cdata_loggers.py:106 ==========================================================
+INFO     CDATA:Cdata_loggers.py:106                ONU的基本信息：
+INFO     CDATA:Cdata_loggers.py:106 ==========================================================
+INFO     CDATA:Cdata_loggers.py:106 机箱号和槽位号   ：0/0
+INFO     CDATA:Cdata_loggers.py:106 PON口号          ：16
+INFO     CDATA:Cdata_loggers.py:106 ONU ID           ：2
+INFO     CDATA:Cdata_loggers.py:106 控制标志位       ：active
+INFO     CDATA:Cdata_loggers.py:106 运行状态         ：online
+INFO     CDATA:Cdata_loggers.py:106 配置状态         ：success
+INFO     CDATA:Cdata_loggers.py:106 能力匹配状态     ：match
+INFO     CDATA:Cdata_loggers.py:106 DBA类型          ：SR
+INFO     CDATA:Cdata_loggers.py:106 测距距离         ：1
+INFO     CDATA:Cdata_loggers.py:106 认证方式         ：sn-auth
+INFO     CDATA:Cdata_loggers.py:106 SN号             ：CMDC9C110111
+INFO     CDATA:Cdata_loggers.py:106 ==========================================================
+INFO     CDATA:Cdata_loggers.py:106 
+
+INFO     CDATA:Cdata_loggers.py:106 ==========================================================
+INFO     CDATA:Cdata_loggers.py:106                ONU上报的版本信息：
+INFO     CDATA:Cdata_loggers.py:106 ==========================================================
+INFO     CDATA:Cdata_loggers.py:106 硬件版本号       ：RTL960x
+INFO     CDATA:Cdata_loggers.py:106 主分区软件版本号 ：V4.0.0-200910
+INFO     CDATA:Cdata_loggers.py:106 备分区软件版本号 ：V4.0.0-200730
+INFO     CDATA:Cdata_loggers.py:106 Vendor ID        ：RTKG
+INFO     CDATA:Cdata_loggers.py:106 Product ID       ：0000
+INFO     CDATA:Cdata_loggers.py:106 Equipment ID     ：IGD
+INFO     CDATA:Cdata_loggers.py:106 ==========================================================
+INFO     CDATA:Cdata_loggers.py:106 
+
+INFO     CDATA:Cdata_loggers.py:106 ==========================================================
+INFO     CDATA:Cdata_loggers.py:106                ONU上报的能力集信息：
+INFO     CDATA:Cdata_loggers.py:106 ==========================================================
+INFO     CDATA:Cdata_loggers.py:106 ONU类型          ：SFU/HGU 
+INFO     CDATA:Cdata_loggers.py:106 OMCC版本号       ：0xA1
+INFO     CDATA:Cdata_loggers.py:106 PON口数量        ：1
+INFO     CDATA:Cdata_loggers.py:106 语音口数量       ：1
+INFO     CDATA:Cdata_loggers.py:106 IP_HOST数量      ：2
+INFO     CDATA:Cdata_loggers.py:106 以太网口数量     ：4
+INFO     CDATA:Cdata_loggers.py:106 VEIP口数量       ：1
+INFO     CDATA:Cdata_loggers.py:106 CATV口数量       ：0
+INFO     CDATA:Cdata_loggers.py:106 Gemport数量      ：127
+INFO     CDATA:Cdata_loggers.py:106 Tcont数量        ：16
+INFO     CDATA:Cdata_loggers.py:106 支持的流控方式   ：PQ
+INFO     CDATA:Cdata_loggers.py:106 ==========================================================
+INFO     CDATA:Cdata_loggers.py:106 
+
+INFO     CDATA:Cdata_loggers.py:106 ==========================================================
+INFO     CDATA:Cdata_loggers.py:106                ONU上报的光参数信息：
+INFO     CDATA:Cdata_loggers.py:106 ==========================================================
+INFO     CDATA:Cdata_loggers.py:106 电压(V)             ：3.36
+INFO     CDATA:Cdata_loggers.py:106 TX光功率(dBm)       ：2.82
+INFO     CDATA:Cdata_loggers.py:106 RX光功率(dBm)       ：-10.75
+INFO     CDATA:Cdata_loggers.py:106 电流(mA)            ：16.55
+INFO     CDATA:Cdata_loggers.py:106 温度(℃)            ：56.82
+INFO     CDATA:Cdata_loggers.py:106 CATV_RX光功率(dBm)  ：--
+INFO     CDATA:Cdata_loggers.py:106 ==========================================================
+INFO     CDATA:Cdata_loggers.py:106
+INFO     CDATA:Cdata_loggers.py:106 ONU在OLT上删除成功
+INFO     CDATA:Cdata_loggers.py:106 ONU在OLT上被重新被发现。
+INFO     CDATA:Cdata_loggers.py:106 退出登录

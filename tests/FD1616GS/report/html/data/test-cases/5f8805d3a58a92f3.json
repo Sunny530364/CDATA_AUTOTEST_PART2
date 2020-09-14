@@ -1,0 +1,273 @@
+{
+  "uid" : "5f8805d3a58a92f3",
+  "name" : "测试onu组播正常通的情况",
+  "fullName" : "test_onu_multicast#test_ont_snooping_001",
+  "historyId" : "d69348f9f4da1bba8839e2b199a8ef1f",
+  "time" : {
+    "start" : 1594288305392,
+    "stop" : 1594288371097,
+    "duration" : 65705
+  },
+  "description" : "\n    用例描述\n    测试目的：ont为snooping模式（mvlan为3000，ip 239.1.1.1）,onu的native-vlan为3000，测试onu为snooping模式下组播239.1.1.1是否通\n    测试步骤：\n    步骤1:发现未注册的ONU\n    步骤2:在OLT上通过SN的方式将ONU注册上线\n    步骤3:配置onu端口native-vlan为3000\n    步骤4:添加虚端口vlan透传3000\n    步骤5:onu端口绑定组播模板200（mvlan3000 ,ip 239.1.1.1 ,dynamic acl）\n    步骤6:打流测试\n    1）服务端发送数据流239.1.1.1，查看onu端口是否收到组播数据流239.1.1.1\n    预期结果:onu端口无法收到组播数据流\n    2）客户端发送report报文加入组播239.1.1.1 ，然后服务端口发送组播239.1.1.1的数据流(带tag3000)，10秒后，停止发流\n    预期结果:服务端收到report报文，客户端收到组播数据流239.1.1.1\n    3)客户端端口发送离开报文，离开组播组239.1.1.1\n    预期结果：客户端接收不到数据\n    ",
+  "descriptionHtml" : "<pre><code>用例描述\n测试目的：ont为snooping模式（mvlan为3000，ip 239.1.1.1）,onu的native-vlan为3000，测试onu为snooping模式下组播239.1.1.1是否通\n测试步骤：\n步骤1:发现未注册的ONU\n步骤2:在OLT上通过SN的方式将ONU注册上线\n步骤3:配置onu端口native-vlan为3000\n步骤4:添加虚端口vlan透传3000\n步骤5:onu端口绑定组播模板200（mvlan3000 ,ip 239.1.1.1 ,dynamic acl）\n步骤6:打流测试\n1）服务端发送数据流239.1.1.1，查看onu端口是否收到组播数据流239.1.1.1\n预期结果:onu端口无法收到组播数据流\n2）客户端发送report报文加入组播239.1.1.1 ，然后服务端口发送组播239.1.1.1的数据流(带tag3000)，10秒后，停止发流\n预期结果:服务端收到report报文，客户端收到组播数据流239.1.1.1\n3)客户端端口发送离开报文，离开组播组239.1.1.1\n预期结果：客户端接收不到数据\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1594287682354,
+      "stop" : 1594287682354,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1594287682354,
+      "stop" : 1594287682354,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "__pytest_repeat_step_number",
+    "time" : {
+      "start" : 1594288292317,
+      "stop" : 1594288292317,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1594288292317,
+      "stop" : 1594288292317,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "login",
+    "time" : {
+      "start" : 1594288292318,
+      "stop" : 1594288305392,
+      "duration" : 13074
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1594287682354,
+      "stop" : 1594287682354,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n    用例描述\n    测试目的：ont为snooping模式（mvlan为3000，ip 239.1.1.1）,onu的native-vlan为3000，测试onu为snooping模式下组播239.1.1.1是否通\n    测试步骤：\n    步骤1:发现未注册的ONU\n    步骤2:在OLT上通过SN的方式将ONU注册上线\n    步骤3:配置onu端口native-vlan为3000\n    步骤4:添加虚端口vlan透传3000\n    步骤5:onu端口绑定组播模板200（mvlan3000 ,ip 239.1.1.1 ,dynamic acl）\n    步骤6:打流测试\n    1）服务端发送数据流239.1.1.1，查看onu端口是否收到组播数据流239.1.1.1\n    预期结果:onu端口无法收到组播数据流\n    2）客户端发送report报文加入组播239.1.1.1 ，然后服务端口发送组播239.1.1.1的数据流(带tag3000)，10秒后，停止发流\n    预期结果:服务端收到report报文，客户端收到组播数据流239.1.1.1\n    3)客户端端口发送离开报文，离开组播组239.1.1.1\n    预期结果：客户端接收不到数据\n    ",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "步骤1:发现未注册的ONU。",
+      "time" : {
+        "start" : 1594288305393,
+        "stop" : 1594288306530,
+        "duration" : 1137
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤2:在OLT上通过SN的方式将ONU注册上线。",
+      "time" : {
+        "start" : 1594288306531,
+        "stop" : 1594288313922,
+        "duration" : 7391
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤3:配置onu端口native-vlan为3000",
+      "time" : {
+        "start" : 1594288313922,
+        "stop" : 1594288314092,
+        "duration" : 170
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤4:添加虚端口vlan透传3000",
+      "time" : {
+        "start" : 1594288314092,
+        "stop" : 1594288318111,
+        "duration" : 4019
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤5:onu端口绑定组播模板",
+      "time" : {
+        "start" : 1594288318111,
+        "stop" : 1594288320337,
+        "duration" : 2226
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤6:onu组播打流测试",
+      "time" : {
+        "start" : 1594288320337,
+        "stop" : 1594288371096,
+        "duration" : 50759
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "c19e82419d6481f3",
+      "name" : "log",
+      "source" : "c19e82419d6481f3.txt",
+      "type" : "text/plain",
+      "size" : 1239
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 6,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "login::0",
+    "time" : {
+      "start" : 1594288371098,
+      "stop" : 1594288380283,
+      "duration" : 9185
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "onu 组播snooping测试"
+  }, {
+    "name" : "feature",
+    "value" : "onu 组播测试"
+  }, {
+    "name" : "suite",
+    "value" : "test_onu_multicast"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-2JV12RE"
+  }, {
+    "name" : "thread",
+    "value" : "31404-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_onu_multicast"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "__pytest_repeat_step_number",
+    "value" : "6"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5f8805d3a58a92f3.json",
+  "parameterValues" : [ "6" ]
+}

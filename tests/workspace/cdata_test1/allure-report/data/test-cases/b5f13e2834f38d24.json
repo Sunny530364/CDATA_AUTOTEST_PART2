@@ -1,0 +1,329 @@
+{
+  "uid" : "b5f13e2834f38d24",
+  "name" : "测试onu组播正常通的情况",
+  "fullName" : "test_onu_multicast#test_ont_snooping_001",
+  "historyId" : "728f1e173e08f34ab8fbb27ff2f72749",
+  "time" : {
+    "start" : 1599823220692,
+    "stop" : 1599823299513,
+    "duration" : 78821
+  },
+  "description" : "\n    用例描述\n    测试目的：ont为snooping模式（mvlan为3000，ip 239.1.1.1）,onu的native-vlan为3000，测试onu为snooping模式下组播239.1.1.1是否通\n    测试步骤：\n    步骤1:发现未注册的ONU\n    步骤2:在OLT上通过Gpon_SN的方式将ONU注册上线\n    步骤3:配置onu端口native-vlan为3000\n    步骤4:添加虚端口vlan透传3000\n    步骤5:onu端口绑定组播模板200（mvlan3000 ,ip 239.1.1.1 ,dynamic acl）\n    步骤6:打流测试\n    1）服务端发送数据流239.1.1.1，查看onu端口是否收到组播数据流239.1.1.1\n    multicaststream_header=('ethernetII_1.destMacAdd=01:00:5e:01:01:01 vlan_1.id=3000 ipv4_1.destination=239.1.1.1')\n    预期结果:onu端口无法收到组播数据流\n    2）客户端发送report报文加入组播239.1.1.1 ，然后服务端口发送组播239.1.1.1的数据流(带tag3000)，10秒后，停止发流\n    预期结果:服务端收到report报文，客户端收到组播数据流239.1.1.1\n    3)客户端端口发送离开报文，离开组播组239.1.1.1\n    预期结果：客户端接收不到数据\n    ",
+  "descriptionHtml" : "<pre><code>用例描述\n测试目的：ont为snooping模式（mvlan为3000，ip 239.1.1.1）,onu的native-vlan为3000，测试onu为snooping模式下组播239.1.1.1是否通\n测试步骤：\n步骤1:发现未注册的ONU\n步骤2:在OLT上通过Gpon_SN的方式将ONU注册上线\n步骤3:配置onu端口native-vlan为3000\n步骤4:添加虚端口vlan透传3000\n步骤5:onu端口绑定组播模板200（mvlan3000 ,ip 239.1.1.1 ,dynamic acl）\n步骤6:打流测试\n1）服务端发送数据流239.1.1.1，查看onu端口是否收到组播数据流239.1.1.1\nmulticaststream_header=('ethernetII_1.destMacAdd=01:00:5e:01:01:01 vlan_1.id=3000 ipv4_1.destination=239.1.1.1')\n预期结果:onu端口无法收到组播数据流\n2）客户端发送report报文加入组播239.1.1.1 ，然后服务端口发送组播239.1.1.1的数据流(带tag3000)，10秒后，停止发流\n预期结果:服务端收到report报文，客户端收到组播数据流239.1.1.1\n3)客户端端口发送离开报文，离开组播组239.1.1.1\n预期结果：客户端接收不到数据\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "login",
+    "time" : {
+      "start" : 1599823207623,
+      "stop" : 1599823220692,
+      "duration" : 13069
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1599821387651,
+      "stop" : 1599821387651,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1599821387651,
+      "stop" : 1599821387651,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1599821387651,
+      "stop" : 1599821387651,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "__pytest_repeat_step_number",
+    "time" : {
+      "start" : 1599823207623,
+      "stop" : 1599823207623,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1599823207623,
+      "stop" : 1599823207623,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "\n    用例描述\n    测试目的：ont为snooping模式（mvlan为3000，ip 239.1.1.1）,onu的native-vlan为3000，测试onu为snooping模式下组播239.1.1.1是否通\n    测试步骤：\n    步骤1:发现未注册的ONU\n    步骤2:在OLT上通过Gpon_SN的方式将ONU注册上线\n    步骤3:配置onu端口native-vlan为3000\n    步骤4:添加虚端口vlan透传3000\n    步骤5:onu端口绑定组播模板200（mvlan3000 ,ip 239.1.1.1 ,dynamic acl）\n    步骤6:打流测试\n    1）服务端发送数据流239.1.1.1，查看onu端口是否收到组播数据流239.1.1.1\n    multicaststream_header=('ethernetII_1.destMacAdd=01:00:5e:01:01:01 vlan_1.id=3000 ipv4_1.destination=239.1.1.1')\n    预期结果:onu端口无法收到组播数据流\n    2）客户端发送report报文加入组播239.1.1.1 ，然后服务端口发送组播239.1.1.1的数据流(带tag3000)，10秒后，停止发流\n    预期结果:服务端收到report报文，客户端收到组播数据流239.1.1.1\n    3)客户端端口发送离开报文，离开组播组239.1.1.1\n    预期结果：客户端接收不到数据\n    ",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "步骤1:发现未注册的ONU。",
+      "time" : {
+        "start" : 1599823220694,
+        "stop" : 1599823221792,
+        "duration" : 1098
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "步骤2:在OLT上通过Gpon_SN的方式将ONU注册上线。",
+      "time" : {
+        "start" : 1599823221792,
+        "stop" : 1599823241151,
+        "duration" : 19359
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "步骤3:配置onu端口native-vlan为3000",
+      "time" : {
+        "start" : 1599823241151,
+        "stop" : 1599823241304,
+        "duration" : 153
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "步骤4:添加虚端口vlan透传3000",
+      "time" : {
+        "start" : 1599823241304,
+        "stop" : 1599823245320,
+        "duration" : 4016
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "步骤5:onu端口绑定组播模板",
+      "time" : {
+        "start" : 1599823245320,
+        "stop" : 1599823247495,
+        "duration" : 2175
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "步骤6:onu组播打流测试",
+      "time" : {
+        "start" : 1599823247495,
+        "stop" : 1599823299513,
+        "duration" : 52018
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "90b2a5b77875b108",
+      "name" : "log",
+      "source" : "90b2a5b77875b108.txt",
+      "type" : "text/plain",
+      "size" : 2772
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 6,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "login::0",
+    "time" : {
+      "start" : 1599823299514,
+      "stop" : 1599823311606,
+      "duration" : 12092
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "onu 组播snooping测试"
+  }, {
+    "name" : "feature",
+    "value" : "onu 组播测试"
+  }, {
+    "name" : "suite",
+    "value" : "test_onu_multicast"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-2JV12RE"
+  }, {
+    "name" : "thread",
+    "value" : "19156-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_onu_multicast"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 2,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 3,
+        "unknown" : 0,
+        "total" : 6
+      },
+      "items" : [ {
+        "uid" : "55c7bf259d2823ba",
+        "reportUrl" : "http://192.168.0.182:8080/job/cdata_test1/370/allure/#testresult/55c7bf259d2823ba",
+        "status" : "passed",
+        "time" : {
+          "start" : 1599729702619,
+          "stop" : 1599729780250,
+          "duration" : 77631
+        }
+      }, {
+        "uid" : "8876b3a371b412e9",
+        "reportUrl" : "http://192.168.0.182:8080/job/cdata_test1/361/allure/#testresult/8876b3a371b412e9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1599621343079,
+          "stop" : 1599621423132,
+          "duration" : 80053
+        }
+      }, {
+        "uid" : "9b1a20ba381fb770",
+        "reportUrl" : "http://192.168.0.182:8080/job/cdata_test1/280/allure/#testresult/9b1a20ba381fb770",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: assert 'FAIL' == 'PASS'\n  - FAIL\n  + PASS",
+        "time" : {
+          "start" : 1598838651924,
+          "stop" : 1598838730267,
+          "duration" : 78343
+        }
+      }, {
+        "uid" : "50a988b05d112031",
+        "reportUrl" : "http://192.168.0.182:8080/job/cdata_test1/276/allure/#testresult/50a988b05d112031",
+        "status" : "broken",
+        "statusDetails" : "Exception: 设备登录失败",
+        "time" : {
+          "start" : 1598618054067,
+          "stop" : 1598618054067,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "67ad8e22f08df860",
+        "reportUrl" : "http://192.168.0.182:8080/job/cdata_test1/272/allure/#testresult/67ad8e22f08df860",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: assert 'FAIL' == 'PASS'\n  - FAIL\n  + PASS",
+        "time" : {
+          "start" : 1598595341436,
+          "stop" : 1598595419705,
+          "duration" : 78269
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "b5f13e2834f38d24.json",
+  "parameterValues" : [ ]
+}

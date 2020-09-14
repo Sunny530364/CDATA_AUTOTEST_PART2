@@ -1,0 +1,259 @@
+{
+  "uid" : "dfa1bc323fcd1696",
+  "name" : "测试onu组播正常通的情况",
+  "fullName" : "test_onu_multicast#test_ont_snooping_001",
+  "historyId" : "728f1e173e08f34ab8fbb27ff2f72749",
+  "time" : {
+    "start" : 1594272572702,
+    "stop" : 1594272605545,
+    "duration" : 32843
+  },
+  "description" : "\n    用例描述\n    测试目的：ont为snooping模式（mvlan为3000，ip 239.1.1.1）,onu的native-vlan为3000，测试onu为snooping模式下组播239.1.1.1是否通\n    测试步骤：\n    步骤1:发现未注册的ONU\n    步骤2:在OLT上通过SN的方式将ONU注册上线\n    步骤3:配置onu端口native-vlan为3000\n    步骤4:添加虚端口vlan透传3000\n    步骤5:onu端口绑定组播模板200（mvlan3000 ,ip 239.1.1.1 ,dynamic acl）\n    步骤6:打流测试\n    1）服务端发送数据流239.1.1.1，查看onu端口是否收到组播数据流239.1.1.1\n    预期结果:onu端口无法收到组播数据流\n    2）客户端发送report报文加入组播239.1.1.1 ，然后服务端口发送组播239.1.1.1的数据流，10秒后，停止发流\n    预期结果:服务端收到report报文，客户端收到组播数据流239.1.1.1\n    3)客户端端口发送离开报文，离开组播组239.1.1.1\n    预期结果：客户端接收不到数据\n    ",
+  "descriptionHtml" : "<pre><code>用例描述\n测试目的：ont为snooping模式（mvlan为3000，ip 239.1.1.1）,onu的native-vlan为3000，测试onu为snooping模式下组播239.1.1.1是否通\n测试步骤：\n步骤1:发现未注册的ONU\n步骤2:在OLT上通过SN的方式将ONU注册上线\n步骤3:配置onu端口native-vlan为3000\n步骤4:添加虚端口vlan透传3000\n步骤5:onu端口绑定组播模板200（mvlan3000 ,ip 239.1.1.1 ,dynamic acl）\n步骤6:打流测试\n1）服务端发送数据流239.1.1.1，查看onu端口是否收到组播数据流239.1.1.1\n预期结果:onu端口无法收到组播数据流\n2）客户端发送report报文加入组播239.1.1.1 ，然后服务端口发送组播239.1.1.1的数据流，10秒后，停止发流\n预期结果:服务端收到report报文，客户端收到组播数据流239.1.1.1\n3)客户端端口发送离开报文，离开组播组239.1.1.1\n预期结果：客户端接收不到数据\n</code></pre>\n",
+  "status" : "broken",
+  "statusMessage" : "Exception: bring online port(Port_1) failed",
+  "statusTrace" : "login = <telnetlib.Telnet object at 0x000001CEDF71E160>\n\n    @allure.feature(\"onu 组播测试\")\n    @allure.story(\"onu 组播snooping测试\")\n    @allure.title(\"测试onu组播正常通的情况\")\n    @pytest.mark.run(order=22)\n    def test_ont_snooping_001(login):\n        '''\n        用例描述\n        测试目的：ont为snooping模式（mvlan为3000，ip 239.1.1.1）,onu的native-vlan为3000，测试onu为snooping模式下组播239.1.1.1是否通\n        测试步骤：\n        步骤1:发现未注册的ONU\n        步骤2:在OLT上通过SN的方式将ONU注册上线\n        步骤3:配置onu端口native-vlan为3000\n        步骤4:添加虚端口vlan透传3000\n        步骤5:onu端口绑定组播模板200（mvlan3000 ,ip 239.1.1.1 ,dynamic acl）\n        步骤6:打流测试\n        1）服务端发送数据流239.1.1.1，查看onu端口是否收到组播数据流239.1.1.1\n        预期结果:onu端口无法收到组播数据流\n        2）客户端发送report报文加入组播239.1.1.1 ，然后服务端口发送组播239.1.1.1的数据流，10秒后，停止发流\n        预期结果:服务端收到report报文，客户端收到组播数据流239.1.1.1\n        3)客户端端口发送离开报文，离开组播组239.1.1.1\n        预期结果：客户端接收不到数据\n        '''\n    \n        cdata_info(\"=========ONU组播snooping测试:组播正常通=========\")\n        tn = login\n        Vlan_list=[3000]\n        User_Vlan = \"3000\"\n        with allure.step('步骤1:发现未注册的ONU。'):\n            assert autofind_onu(tn, PonID,  OnuID, SN)\n        with allure.step('步骤2:在OLT上通过SN的方式将ONU注册上线。'):\n            assert auth_by_sn(tn ,PonID, OnuID, Ont_Lineprofile_ID, Ont_Srvprofile_ID, SN)\n        with allure.step(\"步骤3:配置onu端口native-vlan为3000\"):\n            assert ont_native_vlan(tn, PonID, OnuID, Ont_Port_ID, User_Vlan)\n        with allure.step(\"步骤4:添加虚端口vlan透传3000\"):\n            assert add_service_port(tn, PonID, OnuID, Gemport_ID, Vlan_list)\n        with allure.step(\"步骤5:onu端口绑定组播模板\"):\n            assert ont_multicast(tn, ponid=PonID, ontid=OnuID, ethid=Ont_Port_ID, ont_igmpprofile_id=200)\n        with allure.step(\"步骤6:onu组播打流测试\"):\n            # 配置ont端口native-vlan为3000，onu端口1绑定组播模板（mvlan3000,ip 239.1.1.1）\n    \n            time.sleep(3)\n            reset_rom_cmd = ResetROMCommand()\n            reset_rom_cmd.execute()\n            #发流测试\n            result = multicast_test(port_location=['//192.168.0.180/1/9', '//192.168.0.180/1/10'],\n                           multicaststream_header=('ethernetII_1.destMacAdd=01:00:5e:01:01:01 vlan_1.id=3000 ipv4_1.destination=239.1.1.1'),\n                           multicastgroupip='239.1.1.1',\n>                          duration=10)\n\ntest_onu_multicast.py:97: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n..\\..\\src\\xinertel\\muticast11.py:311: in multicast_test\n    port1,port2 = create_ports(sys_entry,port_location)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nsys_entry = <renix_py_api.api_gen.SysEntry_Autogen.SysEntry object at 0x000001CEDCBE1160>\nlocation = ['//192.168.0.180/1/9', '//192.168.0.180/1/10']\n\n    def create_ports(sys_entry, location):\n        '''\n        连接测试仪，预约端口并且使端口上线\n        :param sys_entry:创建测试仪的根节点\n        :param location: 存放端口\n        :return:port\n        '''\n        renix_info('create ports with location:'.format(location))\n        port1 = Port(upper=sys_entry, location=location[0])\n        port2 = Port(upper=sys_entry, location=location[1])\n        assert port1.handle\n        assert port2.handle\n        bring_port_online_cmd = BringPortsOnlineCommand(portlist=[port1.handle, port2.handle])\n        bring_port_online_cmd.execute()\n        if not wait_port_online(port1):\n>           raise Exception('bring online port({}) failed'.format(port1.handle))\nE           Exception: bring online port(Port_1) failed\n\n..\\..\\src\\xinertel\\muticast11.py:31: Exception",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1594272559626,
+      "stop" : 1594272559626,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1594272559626,
+      "stop" : 1594272559626,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1594272559626,
+      "stop" : 1594272559626,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1594272559626,
+      "stop" : 1594272559626,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "login",
+    "time" : {
+      "start" : 1594272559626,
+      "stop" : 1594272572698,
+      "duration" : 13072
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n    用例描述\n    测试目的：ont为snooping模式（mvlan为3000，ip 239.1.1.1）,onu的native-vlan为3000，测试onu为snooping模式下组播239.1.1.1是否通\n    测试步骤：\n    步骤1:发现未注册的ONU\n    步骤2:在OLT上通过SN的方式将ONU注册上线\n    步骤3:配置onu端口native-vlan为3000\n    步骤4:添加虚端口vlan透传3000\n    步骤5:onu端口绑定组播模板200（mvlan3000 ,ip 239.1.1.1 ,dynamic acl）\n    步骤6:打流测试\n    1）服务端发送数据流239.1.1.1，查看onu端口是否收到组播数据流239.1.1.1\n    预期结果:onu端口无法收到组播数据流\n    2）客户端发送report报文加入组播239.1.1.1 ，然后服务端口发送组播239.1.1.1的数据流，10秒后，停止发流\n    预期结果:服务端收到report报文，客户端收到组播数据流239.1.1.1\n    3)客户端端口发送离开报文，离开组播组239.1.1.1\n    预期结果：客户端接收不到数据\n    ",
+    "status" : "broken",
+    "statusMessage" : "Exception: bring online port(Port_1) failed",
+    "statusTrace" : "login = <telnetlib.Telnet object at 0x000001CEDF71E160>\n\n    @allure.feature(\"onu 组播测试\")\n    @allure.story(\"onu 组播snooping测试\")\n    @allure.title(\"测试onu组播正常通的情况\")\n    @pytest.mark.run(order=22)\n    def test_ont_snooping_001(login):\n        '''\n        用例描述\n        测试目的：ont为snooping模式（mvlan为3000，ip 239.1.1.1）,onu的native-vlan为3000，测试onu为snooping模式下组播239.1.1.1是否通\n        测试步骤：\n        步骤1:发现未注册的ONU\n        步骤2:在OLT上通过SN的方式将ONU注册上线\n        步骤3:配置onu端口native-vlan为3000\n        步骤4:添加虚端口vlan透传3000\n        步骤5:onu端口绑定组播模板200（mvlan3000 ,ip 239.1.1.1 ,dynamic acl）\n        步骤6:打流测试\n        1）服务端发送数据流239.1.1.1，查看onu端口是否收到组播数据流239.1.1.1\n        预期结果:onu端口无法收到组播数据流\n        2）客户端发送report报文加入组播239.1.1.1 ，然后服务端口发送组播239.1.1.1的数据流，10秒后，停止发流\n        预期结果:服务端收到report报文，客户端收到组播数据流239.1.1.1\n        3)客户端端口发送离开报文，离开组播组239.1.1.1\n        预期结果：客户端接收不到数据\n        '''\n    \n        cdata_info(\"=========ONU组播snooping测试:组播正常通=========\")\n        tn = login\n        Vlan_list=[3000]\n        User_Vlan = \"3000\"\n        with allure.step('步骤1:发现未注册的ONU。'):\n            assert autofind_onu(tn, PonID,  OnuID, SN)\n        with allure.step('步骤2:在OLT上通过SN的方式将ONU注册上线。'):\n            assert auth_by_sn(tn ,PonID, OnuID, Ont_Lineprofile_ID, Ont_Srvprofile_ID, SN)\n        with allure.step(\"步骤3:配置onu端口native-vlan为3000\"):\n            assert ont_native_vlan(tn, PonID, OnuID, Ont_Port_ID, User_Vlan)\n        with allure.step(\"步骤4:添加虚端口vlan透传3000\"):\n            assert add_service_port(tn, PonID, OnuID, Gemport_ID, Vlan_list)\n        with allure.step(\"步骤5:onu端口绑定组播模板\"):\n            assert ont_multicast(tn, ponid=PonID, ontid=OnuID, ethid=Ont_Port_ID, ont_igmpprofile_id=200)\n        with allure.step(\"步骤6:onu组播打流测试\"):\n            # 配置ont端口native-vlan为3000，onu端口1绑定组播模板（mvlan3000,ip 239.1.1.1）\n    \n            time.sleep(3)\n            reset_rom_cmd = ResetROMCommand()\n            reset_rom_cmd.execute()\n            #发流测试\n            result = multicast_test(port_location=['//192.168.0.180/1/9', '//192.168.0.180/1/10'],\n                           multicaststream_header=('ethernetII_1.destMacAdd=01:00:5e:01:01:01 vlan_1.id=3000 ipv4_1.destination=239.1.1.1'),\n                           multicastgroupip='239.1.1.1',\n>                          duration=10)\n\ntest_onu_multicast.py:97: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n..\\..\\src\\xinertel\\muticast11.py:311: in multicast_test\n    port1,port2 = create_ports(sys_entry,port_location)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nsys_entry = <renix_py_api.api_gen.SysEntry_Autogen.SysEntry object at 0x000001CEDCBE1160>\nlocation = ['//192.168.0.180/1/9', '//192.168.0.180/1/10']\n\n    def create_ports(sys_entry, location):\n        '''\n        连接测试仪，预约端口并且使端口上线\n        :param sys_entry:创建测试仪的根节点\n        :param location: 存放端口\n        :return:port\n        '''\n        renix_info('create ports with location:'.format(location))\n        port1 = Port(upper=sys_entry, location=location[0])\n        port2 = Port(upper=sys_entry, location=location[1])\n        assert port1.handle\n        assert port2.handle\n        bring_port_online_cmd = BringPortsOnlineCommand(portlist=[port1.handle, port2.handle])\n        bring_port_online_cmd.execute()\n        if not wait_port_online(port1):\n>           raise Exception('bring online port({}) failed'.format(port1.handle))\nE           Exception: bring online port(Port_1) failed\n\n..\\..\\src\\xinertel\\muticast11.py:31: Exception",
+    "steps" : [ {
+      "name" : "步骤1:发现未注册的ONU。",
+      "time" : {
+        "start" : 1594272572703,
+        "stop" : 1594272573860,
+        "duration" : 1157
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤2:在OLT上通过SN的方式将ONU注册上线。",
+      "time" : {
+        "start" : 1594272573860,
+        "stop" : 1594272585677,
+        "duration" : 11817
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤3:配置onu端口native-vlan为3000",
+      "time" : {
+        "start" : 1594272585677,
+        "stop" : 1594272585820,
+        "duration" : 143
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤4:添加虚端口vlan透传3000",
+      "time" : {
+        "start" : 1594272585820,
+        "stop" : 1594272589869,
+        "duration" : 4049
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤5:onu端口绑定组播模板",
+      "time" : {
+        "start" : 1594272589870,
+        "stop" : 1594272592061,
+        "duration" : 2191
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤6:onu组播打流测试",
+      "time" : {
+        "start" : 1594272592061,
+        "stop" : 1594272605538,
+        "duration" : 13477
+      },
+      "status" : "broken",
+      "statusMessage" : "Exception: bring online port(Port_1) failed\n",
+      "statusTrace" : "  File \"E:\\CDATA\\自动化测试\\Cdata_part11\\tests\\GponSfu\\test_onu_multicast.py\", line 97, in test_ont_snooping_001\n    duration=10)\n  File \"E:\\CDATA\\自动化测试\\Cdata_part11\\src\\xinertel\\muticast11.py\", line 311, in multicast_test\n    port1,port2 = create_ports(sys_entry,port_location)\n  File \"E:\\CDATA\\自动化测试\\Cdata_part11\\src\\xinertel\\muticast11.py\", line 31, in create_ports\n    raise Exception('bring online port({}) failed'.format(port1.handle))\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "ae4b01161e91eb52",
+      "name" : "log",
+      "source" : "ae4b01161e91eb52.txt",
+      "type" : "text/plain",
+      "size" : 779
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 6,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "login::0",
+    "time" : {
+      "start" : 1594272605784,
+      "stop" : 1594272620014,
+      "duration" : 14230
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "onu 组播测试"
+  }, {
+    "name" : "story",
+    "value" : "onu 组播snooping测试"
+  }, {
+    "name" : "suite",
+    "value" : "test_onu_multicast"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-2JV12RE"
+  }, {
+    "name" : "thread",
+    "value" : "28720-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_onu_multicast"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "dfa1bc323fcd1696.json",
+  "parameterValues" : [ ]
+}

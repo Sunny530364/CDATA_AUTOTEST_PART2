@@ -1,0 +1,35 @@
+[INFO] 2020-08-08 11:26:00,783  Receive Msg: listen_port 9002
+
+[INFO] 2020-08-08 11:26:00,909  Renix api initialization finished
+[INFO] 2020-08-08 11:27:20,899  create ports with location:
+[INFO] 2020-08-08 11:27:22,668  StreamPortConfig_1 has lower: InterFrameGapProfile_1
+[INFO] 2020-08-08 11:27:22,676  StreamPortConfig_2 has lower: InterFrameGapProfile_2
+[INFO] 2020-08-08 11:27:22,709  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-08-08 11:27:23,047  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-08-08 11:27:23,971  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-08-08 11:27:24,337  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-08-08 11:27:25,422  PageResultView_1 has lower: ResultQuery_1
+[INFO] 2020-08-08 11:27:41,497  ResultQuery_1 has lower: StreamBlockStats_1 StreamBlockStats_2 StreamBlockStats_3 StreamBlockStats_4
+[INFO] 2020-08-08 11:27:41,651  [test pass] [sourceMacAdd=00:00:00:11:11:11] rx packet (107656)is  equal to tx packets (107656)
+[INFO] 2020-08-08 11:27:41,660  [test pass] [sourceMacAdd=00:00:00:11:11:12] rx packet (107656)is  equal to tx packets (107656)
+[INFO] 2020-08-08 11:27:41,669  [test pass] [sourceMacAdd=00:00:00:22:22:21] rx packet (107656)is  equal to tx packets (107656)
+[INFO] 2020-08-08 11:27:41,681  [test pass] [sourceMacAdd=00:00:00:22:22:22] rx packet (107656)is  equal to tx packets (107656)
+[INFO] 2020-08-08 11:29:11,214  create ports with location:
+[INFO] 2020-08-08 11:29:14,602  StreamPortConfig_3 has lower: InterFrameGapProfile_3
+[INFO] 2020-08-08 11:29:14,610  StreamPortConfig_4 has lower: InterFrameGapProfile_4
+[INFO] 2020-08-08 11:29:14,645  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-08-08 11:29:14,955  port(//192.168.0.180/1/8) create streams
+[ERROR] 2020-08-08 11:29:15,325  b'_TCLERROR:update header failed No have this Node[src]----<?xml version=\\"1.0\\" encoding=\\"UTF-8\\" standalone=\\"no\\" ?><XetRoot display=\\"User Configure Template\\" name=\\"usertemplate\\" version=\\"2.0\\" xmlns:xsi=\\"http://www.w3.org/2001/XMLSchema-instance\\" xsi:noNamespaceSchemaLocation=\\"Instance.xsd\\"><XetProtocol name=\\"ethernetII_1\\" type=\\"Ethernet.ethernetII\\"/><XetProtocol name=\\"ipv4_1\\" type=\\"IPv4.ipv4\\"><tos><tos/></tos></XetProtocol></XetRoot>'
+[INFO] 2020-08-08 11:31:05,982  create ports with location:
+[INFO] 2020-08-08 11:31:09,712  StreamPortConfig_5 has lower: InterFrameGapProfile_5
+[INFO] 2020-08-08 11:31:09,722  StreamPortConfig_6 has lower: InterFrameGapProfile_6
+[INFO] 2020-08-08 11:31:09,754  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-08-08 11:31:10,056  port(//192.168.0.180/1/8) create streams
+[ERROR] 2020-08-08 11:31:10,408  b'_TCLERROR:update header failed No have this Node[src]----<?xml version=\\"1.0\\" encoding=\\"UTF-8\\" standalone=\\"no\\" ?><XetRoot display=\\"User Configure Template\\" name=\\"usertemplate\\" version=\\"2.0\\" xmlns:xsi=\\"http://www.w3.org/2001/XMLSchema-instance\\" xsi:noNamespaceSchemaLocation=\\"Instance.xsd\\"><XetProtocol name=\\"ethernetII_1\\" type=\\"Ethernet.ethernetII\\"/><XetProtocol name=\\"vlan_1\\" type=\\"VLAN.vlan\\"/><XetProtocol name=\\"ipv4_1\\" type=\\"IPv4.ipv4\\"><tos><tos/></tos></XetProtocol><XetProtocol name=\\"udp_1\\" type=\\"UDP.udp\\"/></XetRoot>'
+[INFO] 2020-08-08 11:33:00,766  create ports with location:
+[INFO] 2020-08-08 11:33:03,480  StreamPortConfig_7 has lower: InterFrameGapProfile_7
+[INFO] 2020-08-08 11:33:03,488  StreamPortConfig_8 has lower: InterFrameGapProfile_8
+[INFO] 2020-08-08 11:33:03,527  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-08-08 11:33:03,894  port(//192.168.0.180/1/8) create streams
+[ERROR] 2020-08-08 11:33:04,385  b'_TCLERROR:update header failed No have this Node[src]----<?xml version=\\"1.0\\" encoding=\\"UTF-8\\" standalone=\\"no\\" ?><XetRoot display=\\"User Configure Template\\" name=\\"usertemplate\\" version=\\"2.0\\" xmlns:xsi=\\"http://www.w3.org/2001/XMLSchema-instance\\" xsi:noNamespaceSchemaLocation=\\"Instance.xsd\\"><XetProtocol name=\\"ethernetII_1\\" type=\\"Ethernet.ethernetII\\"/><XetProtocol name=\\"vlan_1\\" type=\\"VLAN.vlan\\"/><XetProtocol name=\\"ipv4_1\\" type=\\"IPv4.ipv4\\"><tos><tos/></tos></XetProtocol><XetProtocol name=\\"udp_1\\" type=\\"UDP.udp\\"/></XetRoot>'
+[INFO] 2020-08-08 11:33:23,337  close connection to CL

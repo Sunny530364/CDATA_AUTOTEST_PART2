@@ -1,0 +1,56 @@
+九月 10, 2020 4:01:08 下午 org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver resolve
+信息: Remoting server accepts the following protocols: [JNLP4-connect, Ping]
+九月 10, 2020 5:47:21 下午 org.jenkinsci.remoting.util.AnonymousClassWarnings warn
+警告: Attempt to (de-)serialize anonymous class ru.yandex.qatools.allure.jenkins.utils.BuildUtils$1; see: https://jenkins.io/redirect/serialization-of-anonymous-classes/
+九月 10, 2020 5:47:21 下午 org.jenkinsci.remoting.util.AnonymousClassWarnings warn
+警告: Attempt to (de-)serialize anonymous class ru.yandex.qatools.allure.jenkins.tools.AllureCommandlineInstallation$2; see: https://jenkins.io/redirect/serialization-of-anonymous-classes/
+九月 10, 2020 5:47:21 下午 org.jenkinsci.remoting.util.AnonymousClassWarnings warn
+警告: Attempt to (de-)serialize anonymous class ru.yandex.qatools.allure.jenkins.tools.AllureCommandlineInstallation$1; see: https://jenkins.io/redirect/serialization-of-anonymous-classes/
+九月 10, 2020 5:52:57 下午 org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver waitForReady
+信息: Master isn't ready to talk to us on http://192.168.0.182:8080/tcpSlaveAgentListener/. Will try again: response code=503
+九月 10, 2020 5:53:09 下午 org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver waitForReady
+信息: Master isn't ready to talk to us on http://192.168.0.182:8080/tcpSlaveAgentListener/. Will try again: response code=503
+九月 10, 2020 5:53:19 下午 org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver resolve
+信息: Remoting server accepts the following protocols: [JNLP4-connect, Ping]
+九月 11, 2020 1:13:01 下午 org.jenkinsci.remoting.util.AnonymousClassWarnings warn
+警告: Attempt to (de-)serialize anonymous class ru.yandex.qatools.allure.jenkins.utils.BuildUtils$1; see: https://jenkins.io/redirect/serialization-of-anonymous-classes/
+九月 11, 2020 1:13:01 下午 org.jenkinsci.remoting.util.AnonymousClassWarnings warn
+警告: Attempt to (de-)serialize anonymous class ru.yandex.qatools.allure.jenkins.tools.AllureCommandlineInstallation$2; see: https://jenkins.io/redirect/serialization-of-anonymous-classes/
+九月 11, 2020 1:13:02 下午 org.jenkinsci.remoting.util.AnonymousClassWarnings warn
+警告: Attempt to (de-)serialize anonymous class ru.yandex.qatools.allure.jenkins.tools.AllureCommandlineInstallation$1; see: https://jenkins.io/redirect/serialization-of-anonymous-classes/
+九月 11, 2020 1:13:09 下午 org.jvnet.winp.Native loadByUrl
+警告: Failed to load DLL from static location
+java.lang.UnsatisfiedLinkError: Native Library E:\CDATA\自动化测试\Cdata_part11\tests\remoting\jarCache\44\winp.x64.BFFE30B3B50581290B1866EF8D48C609.dll already loaded in another classloader
+	at java.lang.ClassLoader.loadLibrary0(Unknown Source)
+	at java.lang.ClassLoader.loadLibrary(Unknown Source)
+	at java.lang.Runtime.load0(Unknown Source)
+	at java.lang.System.load(Unknown Source)
+	at org.jvnet.winp.Native.loadDll(Native.java:242)
+	at org.jvnet.winp.Native.loadByUrl(Native.java:162)
+	at org.jvnet.winp.Native.load(Native.java:124)
+	at org.jvnet.winp.Native.<clinit>(Native.java:93)
+	at org.jvnet.winp.WinProcess.enableDebugPrivilege(WinProcess.java:245)
+	at hudson.util.ProcessTree$Windows.<clinit>(ProcessTree.java:701)
+	at hudson.util.ProcessTree.get(ProcessTree.java:447)
+	at hudson.Proc$LocalProc.destroy(Proc.java:387)
+	at hudson.Proc$LocalProc.join(Proc.java:360)
+	at hudson.Launcher$RemoteLaunchCallable$1.join(Launcher.java:1321)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at hudson.remoting.RemoteInvocationHandler$RPCRequest.perform(RemoteInvocationHandler.java:931)
+	at hudson.remoting.RemoteInvocationHandler$RPCRequest.call(RemoteInvocationHandler.java:905)
+	at hudson.remoting.RemoteInvocationHandler$RPCRequest.call(RemoteInvocationHandler.java:857)
+	at hudson.remoting.UserRequest.perform(UserRequest.java:211)
+	at hudson.remoting.UserRequest.perform(UserRequest.java:54)
+	at hudson.remoting.Request$2.run(Request.java:369)
+	at hudson.remoting.InterceptingExecutorService$1.call(InterceptingExecutorService.java:72)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at hudson.remoting.Engine$1.lambda$newThread$0(Engine.java:117)
+	at java.lang.Thread.run(Unknown Source)
+
+九月 14, 2020 8:59:33 上午 org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver resolve
+信息: Remoting server accepts the following protocols: [JNLP4-connect, Ping]

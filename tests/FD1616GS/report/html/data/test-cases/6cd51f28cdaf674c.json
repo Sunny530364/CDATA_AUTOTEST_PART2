@@ -1,0 +1,208 @@
+{
+  "uid" : "6cd51f28cdaf674c",
+  "name" : "测试mapping-mode为vlan",
+  "fullName" : "test_onu_gemport#test_gemport_vlan",
+  "historyId" : "4c310b5fd587acd30ed165a44606cf80",
+  "time" : {
+    "start" : 1594302643171,
+    "stop" : 1594302702997,
+    "duration" : 59826
+  },
+  "description" : "\n    用例描述\n    测试目的： 测试mapping-mode is vlan , mapping 为vlan2000时，vlan2000的报文上下行是否都正常,vlan2001上下行报文是否不通\n    测试步骤：\n    步骤1:发现未注册的ONU\n    步骤2:在OLT上通过SN的方式将ONU注册上线\n    步骤3:修改gemport配置为vlan 2000\n    步骤4:配置虚端口vlan2000透传，vlan2001透传\n    步骤5:打流测试\n    测试方法：上下行发流量测试，发送两条流vlan 2000，和vlan2001\n    结果：vlan2000的能通，vlan2001的不通\n\n    ",
+  "descriptionHtml" : "<pre><code>用例描述\n测试目的： 测试mapping-mode is vlan , mapping 为vlan2000时，vlan2000的报文上下行是否都正常,vlan2001上下行报文是否不通\n测试步骤：\n步骤1:发现未注册的ONU\n步骤2:在OLT上通过SN的方式将ONU注册上线\n步骤3:修改gemport配置为vlan 2000\n步骤4:配置虚端口vlan2000透传，vlan2001透传\n步骤5:打流测试\n测试方法：上下行发流量测试，发送两条流vlan 2000，和vlan2001\n结果：vlan2000的能通，vlan2001的不通\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB18424D30>, '16', '2', '5A54453171200033')",
+  "statusTrace" : "login = <telnetlib.Telnet object at 0x000001EB18424D30>\n\n    @allure.feature(\"gemport测试\")\n    @allure.story(\"gemport测试\")\n    @allure.title(\"测试mapping-mode为vlan\")\n    @pytest.mark.run(order=11)\n    def test_gemport_vlan(login):\n        '''\n        用例描述\n        测试目的： 测试mapping-mode is vlan , mapping 为vlan2000时，vlan2000的报文上下行是否都正常,vlan2001上下行报文是否不通\n        测试步骤：\n        步骤1:发现未注册的ONU\n        步骤2:在OLT上通过SN的方式将ONU注册上线\n        步骤3:修改gemport配置为vlan 2000\n        步骤4:配置虚端口vlan2000透传，vlan2001透传\n        步骤5:打流测试\n        测试方法：上下行发流量测试，发送两条流vlan 2000，和vlan2001\n        结果：vlan2000的能通，vlan2001的不通\n    \n        '''\n    \n        # tn=login\n        # #修改配置\n        # gemport_vlan(tn)\n        cdata_info(\"=========mapping_mode为vlan测试=========\")\n        Vlan_list = [2000, 2001]\n        tn = login\n        with allure.step('步骤1:发现未注册的ONU。'):\n>           assert autofind_onu(tn, PonID, OnuID, SN)\nE           AssertionError: assert False\nE            +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB18424D30>, '16', '2', '5A54453171200033')\n\ntest_onu_gemport.py:198: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "__pytest_repeat_step_number",
+    "time" : {
+      "start" : 1594302630106,
+      "stop" : 1594302630106,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1594296062434,
+      "stop" : 1594296062434,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1594296062433,
+      "stop" : 1594296062433,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1594296062433,
+      "stop" : 1594296062433,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "login",
+    "time" : {
+      "start" : 1594302630106,
+      "stop" : 1594302643169,
+      "duration" : 13063
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1594302630106,
+      "stop" : 1594302630106,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n    用例描述\n    测试目的： 测试mapping-mode is vlan , mapping 为vlan2000时，vlan2000的报文上下行是否都正常,vlan2001上下行报文是否不通\n    测试步骤：\n    步骤1:发现未注册的ONU\n    步骤2:在OLT上通过SN的方式将ONU注册上线\n    步骤3:修改gemport配置为vlan 2000\n    步骤4:配置虚端口vlan2000透传，vlan2001透传\n    步骤5:打流测试\n    测试方法：上下行发流量测试，发送两条流vlan 2000，和vlan2001\n    结果：vlan2000的能通，vlan2001的不通\n\n    ",
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB18424D30>, '16', '2', '5A54453171200033')",
+    "statusTrace" : "login = <telnetlib.Telnet object at 0x000001EB18424D30>\n\n    @allure.feature(\"gemport测试\")\n    @allure.story(\"gemport测试\")\n    @allure.title(\"测试mapping-mode为vlan\")\n    @pytest.mark.run(order=11)\n    def test_gemport_vlan(login):\n        '''\n        用例描述\n        测试目的： 测试mapping-mode is vlan , mapping 为vlan2000时，vlan2000的报文上下行是否都正常,vlan2001上下行报文是否不通\n        测试步骤：\n        步骤1:发现未注册的ONU\n        步骤2:在OLT上通过SN的方式将ONU注册上线\n        步骤3:修改gemport配置为vlan 2000\n        步骤4:配置虚端口vlan2000透传，vlan2001透传\n        步骤5:打流测试\n        测试方法：上下行发流量测试，发送两条流vlan 2000，和vlan2001\n        结果：vlan2000的能通，vlan2001的不通\n    \n        '''\n    \n        # tn=login\n        # #修改配置\n        # gemport_vlan(tn)\n        cdata_info(\"=========mapping_mode为vlan测试=========\")\n        Vlan_list = [2000, 2001]\n        tn = login\n        with allure.step('步骤1:发现未注册的ONU。'):\n>           assert autofind_onu(tn, PonID, OnuID, SN)\nE           AssertionError: assert False\nE            +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB18424D30>, '16', '2', '5A54453171200033')\n\ntest_onu_gemport.py:198: AssertionError",
+    "steps" : [ {
+      "name" : "步骤1:发现未注册的ONU。",
+      "time" : {
+        "start" : 1594302643512,
+        "stop" : 1594302702997,
+        "duration" : 59485
+      },
+      "status" : "failed",
+      "statusMessage" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB18424D30>, '16', '2', '5A54453171200033')\n",
+      "statusTrace" : "  File \"E:\\CDATA\\自动化测试\\Cdata_part11\\tests\\GponSfu\\test_onu_gemport.py\", line 198, in test_gemport_vlan\n    assert autofind_onu(tn, PonID, OnuID, SN)\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "795c40ec913f5d21",
+      "name" : "log",
+      "source" : "795c40ec913f5d21.txt",
+      "type" : "text/plain",
+      "size" : 850
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 1,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "login::0",
+    "time" : {
+      "start" : 1594302703016,
+      "stop" : 1594302762365,
+      "duration" : 59349
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "gemport测试"
+  }, {
+    "name" : "feature",
+    "value" : "gemport测试"
+  }, {
+    "name" : "suite",
+    "value" : "test_onu_gemport"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-2JV12RE"
+  }, {
+    "name" : "thread",
+    "value" : "31328-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_onu_gemport"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "__pytest_repeat_step_number",
+    "value" : "1"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "6cd51f28cdaf674c.json",
+  "parameterValues" : [ "1" ]
+}

@@ -1,0 +1,108 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert 'FAIL' == 'PASS'\n  - FAIL\n  + PASS",
+      "children" : [ {
+        "name" : "测试mapping-mode为vlan",
+        "uid" : "eb05f59d58be38e2",
+        "parentUid" : "3cb6eb6475a7419eaf3ff869431443c5",
+        "status" : "failed",
+        "time" : {
+          "start" : 1598273349005,
+          "stop" : 1598273398712,
+          "duration" : 49707
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "测试mapping-mode为vlan_pri",
+        "uid" : "1dd0f4a98781d685",
+        "parentUid" : "3cb6eb6475a7419eaf3ff869431443c5",
+        "status" : "failed",
+        "time" : {
+          "start" : 1598273428450,
+          "stop" : 1598273487798,
+          "duration" : 59348
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "测试mapping-mode为pri",
+        "uid" : "2514ab53584e1ab1",
+        "parentUid" : "3cb6eb6475a7419eaf3ff869431443c5",
+        "status" : "failed",
+        "time" : {
+          "start" : 1598273517233,
+          "stop" : 1598273566510,
+          "duration" : 49277
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "测试onu端口vlan为translate",
+        "uid" : "39ff4f885cb8e157",
+        "parentUid" : "3cb6eb6475a7419eaf3ff869431443c5",
+        "status" : "failed",
+        "time" : {
+          "start" : 1598273877207,
+          "stop" : 1598273976817,
+          "duration" : 99610
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "测试onu组播正常通的情况",
+        "uid" : "3c87a4ef00cc14d5",
+        "parentUid" : "3cb6eb6475a7419eaf3ff869431443c5",
+        "status" : "failed",
+        "time" : {
+          "start" : 1598274404449,
+          "stop" : 1598274489839,
+          "duration" : 85390
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "测试onu跨组播vlan",
+        "uid" : "1f22660829505bb9",
+        "parentUid" : "3cb6eb6475a7419eaf3ff869431443c5",
+        "status" : "failed",
+        "time" : {
+          "start" : 1598274517133,
+          "stop" : 1598274602225,
+          "duration" : 85092
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "3cb6eb6475a7419eaf3ff869431443c5"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = ont_port_transparent(<telnetlib.Telnet object at 0x00000270246BAE48>, '200')",
+      "children" : [ {
+        "name" : "测试onu端口vlan为transparent",
+        "uid" : "f67f998cb1631da8",
+        "parentUid" : "b68b466d641f781233d7af88b952e6a1",
+        "status" : "failed",
+        "time" : {
+          "start" : 1598273708537,
+          "stop" : 1598273736939,
+          "duration" : 28402
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b68b466d641f781233d7af88b952e6a1"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

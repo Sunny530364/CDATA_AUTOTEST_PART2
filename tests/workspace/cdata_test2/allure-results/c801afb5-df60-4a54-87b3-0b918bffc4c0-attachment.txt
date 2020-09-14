@@ -1,0 +1,16 @@
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 192.168.0.181 登录成功
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 pon 16 端口使能成功
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 =========mapping_mode为vlan_pri测试=========
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ==========================================
+[31m[1mERROR   [0m CDATA:Cdata_loggers.py:98 ===============ERROR!!!===================
+[31m[1mERROR   [0m CDATA:Cdata_loggers.py:98 ONU在OLT上发现失败。
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ==========================================
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 配置gemport为transparent
+[31m[1mERROR   [0m CDATA:Cdata_loggers.py:98 线路模板:mapping_mode设置成vlan失败
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU在OLT上删除成功
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ==========================================
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ===============ERROR!!!===================
+[31m[1mERROR   [0m CDATA:Cdata_loggers.py:98 ONU在OLT上不能被重新被发现
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ===============ERROR!!!===================
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 pon 16 端口去使能成功
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 退出登录

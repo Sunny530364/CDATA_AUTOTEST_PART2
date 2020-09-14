@@ -1,0 +1,243 @@
+{
+  "uid" : "6c89d5587d6b0f57",
+  "name" : "onu mac地址上报测试",
+  "fullName" : "test_onu_mac_learn#test_ont_mac_learn",
+  "historyId" : "6a0cb01aef54e825db1e81e808a0e2dc",
+  "time" : {
+    "start" : 1594280002673,
+    "stop" : 1594280055884,
+    "duration" : 53211
+  },
+  "description" : "\n    用例描述\n    测试目的： 测试onu端口mac地址学习是否正常\n    测试步骤：\n    步骤1: 发现未注册的ONU\n    步骤2: 在OLT上通过SN的方式将ONU注册上线\n    步骤3: 配置虚端口vlan2000透传\n    步骤4: 打流测试,查看onu端口mac地址表\n    测试方法: 上下行各发送流00:00:00:22:22:21递增5条，在olt上查看onu端口mac地址表\n    预期结果: 上下行正常通，在olt上查看onu端口mac地址表有5条（00:00:00:22:22:21递增5条）\n    ",
+  "descriptionHtml" : "<pre><code>用例描述\n测试目的： 测试onu端口mac地址学习是否正常\n测试步骤：\n步骤1: 发现未注册的ONU\n步骤2: 在OLT上通过SN的方式将ONU注册上线\n步骤3: 配置虚端口vlan2000透传\n步骤4: 打流测试,查看onu端口mac地址表\n测试方法: 上下行各发送流00:00:00:22:22:21递增5条，在olt上查看onu端口mac地址表\n预期结果: 上下行正常通，在olt上查看onu端口mac地址表有5条（00:00:00:22:22:21递增5条）\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1594279989611,
+      "stop" : 1594279989611,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1594279989611,
+      "stop" : 1594279989611,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1594279989612,
+      "stop" : 1594279989612,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "__pytest_repeat_step_number",
+    "time" : {
+      "start" : 1594279989611,
+      "stop" : 1594279989611,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1594279989611,
+      "stop" : 1594279989611,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "login",
+    "time" : {
+      "start" : 1594279989612,
+      "stop" : 1594280002671,
+      "duration" : 13059
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n    用例描述\n    测试目的： 测试onu端口mac地址学习是否正常\n    测试步骤：\n    步骤1: 发现未注册的ONU\n    步骤2: 在OLT上通过SN的方式将ONU注册上线\n    步骤3: 配置虚端口vlan2000透传\n    步骤4: 打流测试,查看onu端口mac地址表\n    测试方法: 上下行各发送流00:00:00:22:22:21递增5条，在olt上查看onu端口mac地址表\n    预期结果: 上下行正常通，在olt上查看onu端口mac地址表有5条（00:00:00:22:22:21递增5条）\n    ",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "步骤1:发现未注册的ONU。",
+      "time" : {
+        "start" : 1594280002674,
+        "stop" : 1594280003852,
+        "duration" : 1178
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤2:在OLT上通过SN的方式将ONU注册上线。",
+      "time" : {
+        "start" : 1594280003852,
+        "stop" : 1594280024102,
+        "duration" : 20250
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤3:配置虚端口vlan2000透传",
+      "time" : {
+        "start" : 1594280024103,
+        "stop" : 1594280028126,
+        "duration" : 4023
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤4:打流测试,查看onu端口mac地址表",
+      "time" : {
+        "start" : 1594280028126,
+        "stop" : 1594280055884,
+        "duration" : 27758
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "b6d46e9949da67ac",
+      "name" : "log",
+      "source" : "b6d46e9949da67ac.txt",
+      "type" : "text/plain",
+      "size" : 2327
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 4,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "login::0",
+    "time" : {
+      "start" : 1594280055887,
+      "stop" : 1594280068078,
+      "duration" : 12191
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "onu mac地址上报测试"
+  }, {
+    "name" : "feature",
+    "value" : "onu mac地址上报测试"
+  }, {
+    "name" : "suite",
+    "value" : "test_onu_mac_learn"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-2JV12RE"
+  }, {
+    "name" : "thread",
+    "value" : "31136-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_onu_mac_learn"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "__pytest_repeat_step_number",
+    "value" : "0"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "6c89d5587d6b0f57.json",
+  "parameterValues" : [ "0" ]
+}

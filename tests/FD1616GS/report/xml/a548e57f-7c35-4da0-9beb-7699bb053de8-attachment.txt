@@ -1,0 +1,24 @@
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 =========ONT SNPASSWORD认证测试=========
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 ONU在OLT上被重新被发现。
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 当前ONU_ID没有被占用。
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 ONU在OLT上添加成功。
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 ONU在OLT上通过SN+PASSWORD注册成功。
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 SERVICE-PORT添加成功
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 ONT Native-vlan配置成功
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 ONT Native-vlan配置成功
+[32mINFO    [0m script:renix_common_api.py:84 Create ports with locations:['//192.168.0.180/1/9', '//192.168.0.180/1/10']
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 ===========================================================================
+[32mINFO    [0m script:renix_common_api.py:84 EthCopper_35 has lower: EthCopperConfig_35
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 当前端口1的协商速率为：EnumLineSpeed.SPEED_1G
+[32mINFO    [0m script:renix_common_api.py:84 EthCopper_36 has lower: EthCopperConfig_36
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 当前端口2的协商速率为：EnumLineSpeed.SPEED_1G
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 ===========================================================================
+[32mINFO    [0m script:renix_common_api.py:84 StreamPortConfig_35 has lower: InterFrameGapProfile_35
+[32mINFO    [0m script:renix_common_api.py:84 StreamPortConfig_36 has lower: InterFrameGapProfile_36
+[32mINFO    [0m script:renix_common_api.py:84 port(['//192.168.0.180/1/9', '//192.168.0.180/1/10']) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(['//192.168.0.180/1/9', '//192.168.0.180/1/10']) create streams
+[32mINFO    [0m script:renix_common_api.py:84 PageResultView_18 has lower: ResultQuery_18
+[32mINFO    [0m script:renix_common_api.py:84 ResultQuery_18 has lower: StreamBlockStats_35 StreamBlockStats_36
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 测试仪发流成功
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 ONU在OLT上删除成功
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 ONU在OLT上被重新被发现。

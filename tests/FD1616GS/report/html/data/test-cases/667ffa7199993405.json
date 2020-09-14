@@ -1,0 +1,283 @@
+{
+  "uid" : "667ffa7199993405",
+  "name" : "测试mapping-mode为vlan",
+  "fullName" : "test_onu_gemport#test_gemport_vlan",
+  "historyId" : "6d71a1e49807d436ecddffa6a2ca093d",
+  "time" : {
+    "start" : 1594170506636,
+    "stop" : 1594170533360,
+    "duration" : 26724
+  },
+  "description" : "\n    mapping-mode is vlan ,config gem mapping vlan 2000\n    测试方法：上下行发流量测试，发送两条流vlan 2000，和vlan2001\n    结果：vlan2000的能通，vlan2001的不通\n    ",
+  "descriptionHtml" : "<pre><code>mapping-mode is vlan ,config gem mapping vlan 2000\n测试方法：上下行发流量测试，发送两条流vlan 2000，和vlan2001\n结果：vlan2000的能通，vlan2001的不通\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "login",
+    "time" : {
+      "start" : 1594170480719,
+      "stop" : 1594170493789,
+      "duration" : 13070
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1594170082896,
+      "stop" : 1594170082896,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1594170480719,
+      "stop" : 1594170480719,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1594170082895,
+      "stop" : 1594170082895,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "gemport_vlan_suit",
+    "time" : {
+      "start" : 1594170493789,
+      "stop" : 1594170506636,
+      "duration" : 12847
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "步骤1:发现未注册的ONU。",
+      "time" : {
+        "start" : 1594170493789,
+        "stop" : 1594170494903,
+        "duration" : 1114
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤2:在OLT上通过SN的方式将ONU注册上线。",
+      "time" : {
+        "start" : 1594170494903,
+        "stop" : 1594170503458,
+        "duration" : 8555
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤3:修改gemport配置为vlan",
+      "time" : {
+        "start" : 1594170503458,
+        "stop" : 1594170503606,
+        "duration" : 148
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤4:配置虚端口vlan2000透传，vlan2001透传",
+      "time" : {
+        "start" : 1594170503606,
+        "stop" : 1594170506636,
+        "duration" : 3030
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 4,
+    "hasContent" : true
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1594170082894,
+      "stop" : 1594170082894,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n    mapping-mode is vlan ,config gem mapping vlan 2000\n    测试方法：上下行发流量测试，发送两条流vlan 2000，和vlan2001\n    结果：vlan2000的能通，vlan2001的不通\n    ",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "步骤5:打流测试",
+      "time" : {
+        "start" : 1594170506636,
+        "stop" : 1594170533360,
+        "duration" : 26724
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "b161a8ea8902a8a0",
+      "name" : "log",
+      "source" : "b161a8ea8902a8a0.txt",
+      "type" : "text/plain",
+      "size" : 882
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 1,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "login::0",
+    "time" : {
+      "start" : 1594170533486,
+      "stop" : 1594170544629,
+      "duration" : 11143
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "gemport_vlan_suit::0",
+    "time" : {
+      "start" : 1594170533361,
+      "stop" : 1594170533484,
+      "duration" : 123
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "步骤6:gemport恢复默认配置",
+      "time" : {
+        "start" : 1594170533361,
+        "stop" : 1594170533484,
+        "duration" : 123
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 1,
+    "hasContent" : true
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "gemport测试"
+  }, {
+    "name" : "feature",
+    "value" : "gemport测试"
+  }, {
+    "name" : "suite",
+    "value" : "test_onu_gemport"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-2JV12RE"
+  }, {
+    "name" : "thread",
+    "value" : "24936-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_onu_gemport"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "667ffa7199993405.json",
+  "parameterValues" : [ ]
+}

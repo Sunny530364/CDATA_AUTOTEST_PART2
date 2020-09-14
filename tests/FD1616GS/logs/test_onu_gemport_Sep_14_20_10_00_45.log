@@ -1,0 +1,28 @@
+[INFO] 2020-09-14 10:00:55,033  Receive Msg: listen_port 9002
+
+[INFO] 2020-09-14 10:00:55,151  Renix api initialization finished
+[INFO] 2020-09-14 10:01:39,802  create ports with location:
+[INFO] 2020-09-14 10:01:41,550  EthCopper_1 has lower: EthCopperConfig_1
+[INFO] 2020-09-14 10:01:41,556  EthCopper_2 has lower: EthCopperConfig_2
+[INFO] 2020-09-14 10:01:41,562  EthCopper_1 has lower: EthCopperConfig_1
+[INFO] 2020-09-14 10:01:41,567  EthCopper_2 has lower: EthCopperConfig_2
+[INFO] 2020-09-14 10:01:41,573  StreamPortConfig_1 has lower: InterFrameGapProfile_1
+[INFO] 2020-09-14 10:01:41,584  StreamPortConfig_2 has lower: InterFrameGapProfile_2
+[INFO] 2020-09-14 10:01:41,622  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-09-14 10:01:41,979  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-09-14 10:01:43,200  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-09-14 10:01:43,741  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-09-14 10:01:45,212  EthCopper_1 has lower: EthCopperConfig_1
+[INFO] 2020-09-14 10:01:45,216  EthCopper_2 has lower: EthCopperConfig_2
+[INFO] 2020-09-14 10:01:45,219  EthCopper_2 has lower: EthCopperConfig_2
+[INFO] 2020-09-14 10:01:55,221  EthCopper_1 has lower: EthCopperConfig_1
+[INFO] 2020-09-14 10:01:55,223  EthCopper_2 has lower: EthCopperConfig_2
+[INFO] 2020-09-14 10:01:55,226  EthCopper_2 has lower: EthCopperConfig_2
+[INFO] 2020-09-14 10:01:55,229  EthCopper_1 has lower: EthCopperConfig_1
+[INFO] 2020-09-14 10:01:55,451  PageResultView_1 has lower: ResultQuery_1
+[INFO] 2020-09-14 10:02:11,543  ResultQuery_1 has lower: StreamBlockStats_1 StreamBlockStats_2 StreamBlockStats_3 StreamBlockStats_4
+[INFO] 2020-09-14 10:02:11,689  [test pass] [sourceMacAdd=00:00:00:11:11:11] rx packet (109932)is  equal to tx packets (109932)
+[ERROR] 2020-09-14 10:02:11,694  [test fail] [sourceMacAdd=00:00:00:11:11:12] rx packet (0) or tx packets (109932) is 0
+[INFO] 2020-09-14 10:02:11,700  [test pass] [sourceMacAdd=00:00:00:22:22:21] rx packet (109932)is  equal to tx packets (109932)
+[INFO] 2020-09-14 10:02:11,707  [test Pass] [sourceMacAdd=00:00:00:22:22:22]rx(0), realtime loss packet (109932)is  equal to  tx packet(109932)
+[INFO] 2020-09-14 10:02:26,487  close connection to CL

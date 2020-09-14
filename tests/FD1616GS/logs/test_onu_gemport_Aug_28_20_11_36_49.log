@@ -1,0 +1,15 @@
+[INFO] 2020-08-28 11:36:58,529  Receive Msg: listen_port 9003
+
+[INFO] 2020-08-28 11:36:58,616  Renix api initialization finished
+[INFO] 2020-08-28 11:37:43,884  create ports with location:
+[INFO] 2020-08-28 11:37:50,796  StreamPortConfig_1 has lower: InterFrameGapProfile_1
+[INFO] 2020-08-28 11:37:50,805  StreamPortConfig_2 has lower: InterFrameGapProfile_2
+[INFO] 2020-08-28 11:37:50,843  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-08-28 11:37:51,138  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-08-28 11:37:51,943  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-08-28 11:37:52,223  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-08-28 11:37:53,984  PageResultView_1 has lower: ResultQuery_1
+[INFO] 2020-08-28 11:38:09,747  ResultQuery_1 has lower: StreamBlockStats_1 StreamBlockStats_2
+[ERROR] 2020-08-28 11:38:09,871  [test fail] [sourceMacAdd=00:00:00:11:11:11] rx packet (1417)is not equal to  tx packets (105164)
+[ERROR] 2020-08-28 11:38:09,874  [test fail] [sourceMacAdd=00:00:00:11:11:12] rx packet (0) or tx packets (105164) is 0
+[INFO] 2020-08-28 11:38:27,408  close connection to CL

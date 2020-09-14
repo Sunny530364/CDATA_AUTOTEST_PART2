@@ -1,0 +1,37 @@
+[INFO] 2020-08-25 15:05:52,432  Receive Msg: listen_port 9003
+
+[INFO] 2020-08-25 15:05:52,526  Renix api initialization finished
+[INFO] 2020-08-25 15:07:34,330  Create ports with locations:['//192.168.0.180/1/7', '//192.168.0.180/1/8']
+[INFO] 2020-08-25 15:07:36,065  EthCopper_1 has lower: EthCopperConfig_1
+[INFO] 2020-08-25 15:07:36,071  EthCopper_2 has lower: EthCopperConfig_2
+[INFO] 2020-08-25 15:07:36,076  StreamPortConfig_1 has lower: InterFrameGapProfile_1
+[INFO] 2020-08-25 15:07:36,081  StreamPortConfig_2 has lower: InterFrameGapProfile_2
+[INFO] 2020-08-25 15:07:36,102  port(['//192.168.0.180/1/7', '//192.168.0.180/1/8']) create streams
+[INFO] 2020-08-25 15:07:36,300  port(['//192.168.0.180/1/7', '//192.168.0.180/1/8']) create streams
+[INFO] 2020-08-25 15:07:37,628  PageResultView_1 has lower: ResultQuery_1
+[INFO] 2020-08-25 15:07:37,631  EthCopper_2 has lower: EthCopperConfig_2
+[INFO] 2020-08-25 15:07:37,636  EthCopper_1 has lower: EthCopperConfig_1
+[INFO] 2020-08-25 15:07:48,041  ResultQuery_1 has lower: StreamBlockStats_1 StreamBlockStats_2
+[INFO] 2020-08-25 15:09:53,502  Create ports with locations:['//192.168.0.180/1/7', '//192.168.0.180/1/8']
+[INFO] 2020-08-25 15:09:55,191  EthCopper_3 has lower: EthCopperConfig_3
+[INFO] 2020-08-25 15:09:55,196  EthCopper_4 has lower: EthCopperConfig_4
+[INFO] 2020-08-25 15:09:55,200  StreamPortConfig_3 has lower: InterFrameGapProfile_3
+[INFO] 2020-08-25 15:09:55,205  StreamPortConfig_4 has lower: InterFrameGapProfile_4
+[INFO] 2020-08-25 15:09:55,226  port(['//192.168.0.180/1/7', '//192.168.0.180/1/8']) create streams
+[INFO] 2020-08-25 15:09:55,410  port(['//192.168.0.180/1/7', '//192.168.0.180/1/8']) create streams
+[INFO] 2020-08-25 15:09:56,704  PageResultView_2 has lower: ResultQuery_2
+[INFO] 2020-08-25 15:09:56,706  EthCopper_4 has lower: EthCopperConfig_4
+[INFO] 2020-08-25 15:09:56,708  EthCopper_3 has lower: EthCopperConfig_3
+[INFO] 2020-08-25 15:10:07,145  ResultQuery_2 has lower: StreamBlockStats_3 StreamBlockStats_4
+[INFO] 2020-08-25 15:12:12,704  Create ports with locations:['//192.168.0.180/1/7', '//192.168.0.180/1/8']
+[INFO] 2020-08-25 15:12:14,319  EthCopper_5 has lower: EthCopperConfig_5
+[INFO] 2020-08-25 15:12:14,324  EthCopper_6 has lower: EthCopperConfig_6
+[INFO] 2020-08-25 15:12:14,328  StreamPortConfig_5 has lower: InterFrameGapProfile_5
+[INFO] 2020-08-25 15:12:14,339  StreamPortConfig_6 has lower: InterFrameGapProfile_6
+[INFO] 2020-08-25 15:12:14,358  port(['//192.168.0.180/1/7', '//192.168.0.180/1/8']) create streams
+[INFO] 2020-08-25 15:12:14,534  port(['//192.168.0.180/1/7', '//192.168.0.180/1/8']) create streams
+[INFO] 2020-08-25 15:12:15,805  PageResultView_3 has lower: ResultQuery_3
+[INFO] 2020-08-25 15:12:15,807  EthCopper_6 has lower: EthCopperConfig_6
+[INFO] 2020-08-25 15:12:15,811  EthCopper_5 has lower: EthCopperConfig_5
+[INFO] 2020-08-25 15:12:26,220  ResultQuery_3 has lower: StreamBlockStats_5 StreamBlockStats_6
+[INFO] 2020-08-25 15:12:40,775  close connection to CL

@@ -1,0 +1,16 @@
+[INFO] 2020-08-06 16:50:39,990  Receive Msg: listen_port 9002
+
+[INFO] 2020-08-06 16:50:40,091  Renix api initialization finished
+[INFO] 2020-08-06 16:50:58,211  create ports with location:
+[INFO] 2020-08-06 16:50:59,896  StreamPortConfig_1 has lower: InterFrameGapProfile_1
+[INFO] 2020-08-06 16:50:59,930  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-08-06 16:51:00,676  PageResultView_1 has lower: ResultQuery_3
+[INFO] 2020-08-06 16:51:22,528  ¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ªreport test¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+[INFO] 2020-08-06 16:51:22,536  igmp_client: IgmpTxFrames is 1£¬IgmpTxV2Reports is 1£¬IgmpTxLeaveGroups is 0
+[INFO] 2020-08-06 16:51:22,540  imgp_client: IgmpRxFrame is 0,IgmpRxGeneralQueries is 0,IgmpRxGroupSpecificQueries is 0
+[INFO] 2020-08-06 16:51:22,544  igmp_server:  QuerierTxFrames is 1,QuerierRxFrames is 1
+[INFO] 2020-08-06 16:51:22,548  [igmp_report test pass][Stream_239.1.1.1] igmp_server tx igmp packet:718925,igmp_client rx igmp packet:718925
+[INFO] 2020-08-06 16:51:22,548  ¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ªleave test¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+[INFO] 2020-08-06 16:51:43,941  igmp_client: IgmpTxFrames is 2£¬IgmpTxV2Reports is 1£¬IgmpTxLeaveGroups is 1
+[INFO] 2020-08-06 16:51:43,947  [igmp_leave test pass]Stream_239.1.1.1 igmp_client tx leave packet ,result:igmp_server tx:331134,igmp_client rx£º0
+[INFO] 2020-08-06 16:51:47,391  close connection to CL

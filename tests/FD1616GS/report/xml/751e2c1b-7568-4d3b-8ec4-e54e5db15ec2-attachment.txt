@@ -1,0 +1,64 @@
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 =========查看onu的信息上报=========
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 ONU在OLT上被重新被发现。
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 当前ONU_ID没有被占用。
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 ONU在OLT上添加成功。
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 ONU在OLT上通过SN注册成功。
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 ==========================================================
+[32mINFO    [0m CDATA:Cdata_loggers.py:105                ONU的基本信息：
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 ==========================================================
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 机箱号和槽位号   ：0/0
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 PON口号          ：16
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 ONU ID           ：2
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 控制标志位       ：active
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 运行状态         ：online
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 配置状态         ：success
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 能力匹配状态     ：match
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 DBA类型          ：SR
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 测距距离         ：1
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 认证方式         ：sn-auth
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 SN号             ：ZTE171200033
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 ==========================================================
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 
+
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 ==========================================================
+[32mINFO    [0m CDATA:Cdata_loggers.py:105                ONU上报的版本信息：
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 ==========================================================
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 硬件版本号       ：RTL960x
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 主分区软件版本号 ：V1.0.8
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 备分区软件版本号 ：V1.0.9
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 Vendor ID        ：ZTEE
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 Product ID       ：0000
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 Equipment ID     ：D400
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 ==========================================================
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 
+
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 ==========================================================
+[32mINFO    [0m CDATA:Cdata_loggers.py:105                ONU上报的能力集信息：
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 ==========================================================
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 ONU类型          ：SFU 
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 OMCC版本号       ：0x80
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 PON口数量        ：1
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 语音口数量       ：0
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 IP_HOST数量      ：2
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 以太网口数量     ：4
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 VEIP口数量       ：0
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 CATV口数量       ：1
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 Gemport数量      ：127
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 Tcont数量        ：8
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 支持的流控方式   ：PQ
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 ==========================================================
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 
+
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 ==========================================================
+[32mINFO    [0m CDATA:Cdata_loggers.py:105                ONU上报的光参数信息：
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 ==========================================================
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 电压(V)             ：3.30
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 TX光功率(dBm)       ：2.78
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 RX光功率(dBm)       ：-16.24
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 电流(mA)            ：9.35
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 温度(℃)            ：21.35
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 CATV_RX光功率(dBm)  ：-40.14
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 ==========================================================
+[32mINFO    [0m CDATA:Cdata_loggers.py:105
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 ONU在OLT上删除成功
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 ONU在OLT上被重新被发现。

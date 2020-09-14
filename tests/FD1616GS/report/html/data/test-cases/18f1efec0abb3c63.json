@@ -1,0 +1,459 @@
+{
+  "uid" : "18f1efec0abb3c63",
+  "name" : "测试mapping-mode为vlan_pri",
+  "fullName" : "test_onu_gemport#test_gemport_vlan_pri",
+  "historyId" : "0238e18c223e4297e096104360392dd8",
+  "time" : {
+    "start" : 1594694123501,
+    "stop" : 1594694164241,
+    "duration" : 40740
+  },
+  "description" : "\n    用例描述\n    测试目的： 测试mapping-mode is vlan+pri, mapping 为vlan2000+pri2时，vlan2000+2和vlan200+3和vlan2001+pri2的报文上下行是否都正常\n    测试步骤：\n    步骤1:发现未注册的ONU\n    步骤2:在OLT上通过SN的方式将ONU注册上线\n    步骤3:修改gemport配置为vlan 2000+pri2\n    步骤4:配置虚端口vlan2000透传，vlan2001透传\n    步骤5:打流测试\n    测试方法：上下行各发送三条流：vlan2000 pri2和 vlan2000 pri3 ；发送vlan 2001 pri2\n    结果：结果：vlan 2000 pri2的上下行都能通；vlan2000 pri3下行能通，vlan2000 pri3上行不通;vlan 2001上下行都不通\n    ",
+  "descriptionHtml" : "<pre><code>用例描述\n测试目的： 测试mapping-mode is vlan+pri, mapping 为vlan2000+pri2时，vlan2000+2和vlan200+3和vlan2001+pri2的报文上下行是否都正常\n测试步骤：\n步骤1:发现未注册的ONU\n步骤2:在OLT上通过SN的方式将ONU注册上线\n步骤3:修改gemport配置为vlan 2000+pri2\n步骤4:配置虚端口vlan2000透传，vlan2001透传\n步骤5:打流测试\n测试方法：上下行各发送三条流：vlan2000 pri2和 vlan2000 pri3 ；发送vlan 2001 pri2\n结果：结果：vlan 2000 pri2的上下行都能通；vlan2000 pri3下行能通，vlan2000 pri3上行不通;vlan 2001上下行都不通\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "login",
+    "time" : {
+      "start" : 1594694110446,
+      "stop" : 1594694123500,
+      "duration" : 13054
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1594693941051,
+      "stop" : 1594693941051,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "gemport_vlan_pri_suit",
+    "time" : {
+      "start" : 1594694123500,
+      "stop" : 1594694123500,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1594693941051,
+      "stop" : 1594693941051,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1594693941051,
+      "stop" : 1594693941051,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "__pytest_repeat_step_number",
+    "time" : {
+      "start" : 1594694110446,
+      "stop" : 1594694110446,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1594694110446,
+      "stop" : 1594694110446,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n    用例描述\n    测试目的： 测试mapping-mode is vlan+pri, mapping 为vlan2000+pri2时，vlan2000+2和vlan200+3和vlan2001+pri2的报文上下行是否都正常\n    测试步骤：\n    步骤1:发现未注册的ONU\n    步骤2:在OLT上通过SN的方式将ONU注册上线\n    步骤3:修改gemport配置为vlan 2000+pri2\n    步骤4:配置虚端口vlan2000透传，vlan2001透传\n    步骤5:打流测试\n    测试方法：上下行各发送三条流：vlan2000 pri2和 vlan2000 pri3 ；发送vlan 2001 pri2\n    结果：结果：vlan 2000 pri2的上下行都能通；vlan2000 pri3下行能通，vlan2000 pri3上行不通;vlan 2001上下行都不通\n    ",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "步骤1:发现未注册的ONU。",
+      "time" : {
+        "start" : 1594694123502,
+        "stop" : 1594694124655,
+        "duration" : 1153
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤2:在OLT上通过SN的方式将ONU注册上线。",
+      "time" : {
+        "start" : 1594694124655,
+        "stop" : 1594694132889,
+        "duration" : 8234
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤3:修改gemport配置为vlan 2000 priority 2",
+      "time" : {
+        "start" : 1594694132889,
+        "stop" : 1594694132988,
+        "duration" : 99
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤4:配置虚端口vlan2000和vlan 2001透传",
+      "time" : {
+        "start" : 1594694132989,
+        "stop" : 1594694135998,
+        "duration" : 3009
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤5:打流测试",
+      "time" : {
+        "start" : 1594694135998,
+        "stop" : 1594694164241,
+        "duration" : 28243
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "93360a079e7d705d",
+      "name" : "log",
+      "source" : "93360a079e7d705d.txt",
+      "type" : "text/plain",
+      "size" : 2943
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 5,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "login::0",
+    "time" : {
+      "start" : 1594694164348,
+      "stop" : 1594694174445,
+      "duration" : 10097
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "gemport_vlan_pri_suit::0",
+    "time" : {
+      "start" : 1594694164242,
+      "stop" : 1594694164345,
+      "duration" : 103
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "步骤6:gemport恢复默认配置",
+      "time" : {
+        "start" : 1594694164242,
+        "stop" : 1594694164345,
+        "duration" : 103
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 1,
+    "hasContent" : true
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "gemport测试"
+  }, {
+    "name" : "story",
+    "value" : "gemport测试"
+  }, {
+    "name" : "suite",
+    "value" : "test_onu_gemport"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-2JV12RE"
+  }, {
+    "name" : "thread",
+    "value" : "29004-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_onu_gemport"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "e1b9edc30b852a48",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594692627461,
+        "stop" : 1594692671707,
+        "duration" : 44246
+      }
+    }, {
+      "uid" : "e748231eebdccb73",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594368082974,
+        "stop" : 1594368136686,
+        "duration" : 53712
+      }
+    }, {
+      "uid" : "ee381053f7c897ce",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594276376765,
+        "stop" : 1594276422647,
+        "duration" : 45882
+      }
+    }, {
+      "uid" : "de2aa902ffb61e5",
+      "status" : "skipped",
+      "statusDetails" : "_pytest.outcomes.XFailed: [NOTRUN] yield tests were removed in pytest 4.0 - test_gemport_vlan_pri will be ignored",
+      "time" : {
+        "start" : 1594276084439,
+        "stop" : 1594276084439,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "1f582857f44617a4",
+      "status" : "skipped",
+      "statusDetails" : "_pytest.outcomes.XFailed: [NOTRUN] yield tests were removed in pytest 4.0 - test_gemport_vlan_pri will be ignored",
+      "time" : {
+        "start" : 1594275644296,
+        "stop" : 1594275644296,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "1a0913c3bb3c069f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594195084944,
+        "stop" : 1594195115643,
+        "duration" : 30699
+      }
+    }, {
+      "uid" : "b9e724fc37bdafdf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594187173382,
+        "stop" : 1594187201448,
+        "duration" : 28066
+      }
+    }, {
+      "uid" : "88da8b0e816ad784",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594186339450,
+        "stop" : 1594186367879,
+        "duration" : 28429
+      }
+    }, {
+      "uid" : "12f3e249324dc36f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594179791147,
+        "stop" : 1594179821960,
+        "duration" : 30813
+      }
+    }, {
+      "uid" : "fd0caccfe8b01f6c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594178860722,
+        "stop" : 1594178891053,
+        "duration" : 30331
+      }
+    }, {
+      "uid" : "8df792b160c4e643",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594171919873,
+        "stop" : 1594171949770,
+        "duration" : 29897
+      }
+    }, {
+      "uid" : "6aa40ef0ec2d6047",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594170570494,
+        "stop" : 1594170598770,
+        "duration" : 28276
+      }
+    }, {
+      "uid" : "b0759fe71cd3f04b",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000002E21D3D01D0>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594126882341,
+        "stop" : 1594126882341,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "2201e75913cacc0b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594122107065,
+        "stop" : 1594122135362,
+        "duration" : 28297
+      }
+    }, {
+      "uid" : "8459d2bf8fd29ef6",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x0000027E35686358>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594112519326,
+        "stop" : 1594112519326,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "a0186f2d5830170",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = auth_by_sn(<telnetlib.Telnet object at 0x00000208E297A438>, '16', '2', '200', '200', '5A54453171200033')",
+      "time" : {
+        "start" : 1594034430950,
+        "stop" : 1594034430950,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "ba08eca959943c05",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = auth_by_sn(<telnetlib.Telnet object at 0x00000208E2936D68>, '16', '2', '200', '200', '5A54453171200033')",
+      "time" : {
+        "start" : 1594034343421,
+        "stop" : 1594034343421,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "30a25143d9a4af57",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = auth_by_sn(<telnetlib.Telnet object at 0x00000208E2A30438>, '16', '2', '200', '200', '5A54453171200033')",
+      "time" : {
+        "start" : 1594034255366,
+        "stop" : 1594034255366,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "b3d96e8f716dbc02",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593771214844,
+        "stop" : 1593771243251,
+        "duration" : 28407
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "18f1efec0abb3c63.json",
+  "parameterValues" : [ ]
+}

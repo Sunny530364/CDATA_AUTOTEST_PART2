@@ -1,0 +1,54 @@
+INFO     CDATA:Cdata_loggers.py:106 192.168.0.181 登录成功
+INFO     CDATA:Cdata_loggers.py:106 =========ONT Gpon_SNPASSWORD认证测试=========
+INFO     CDATA:Cdata_loggers.py:106 ONU在OLT上被重新被发现。
+INFO     CDATA:Cdata_loggers.py:106 当前ONU_ID没有被占用。
+INFO     CDATA:Cdata_loggers.py:106 ONU在OLT上添加成功。
+INFO     CDATA:Cdata_loggers.py:106 ONU在OLT上通过SN+PASSWORD注册成功。
+INFO     CDATA:Cdata_loggers.py:106 SERVICE-PORT添加成功
+INFO     CDATA:Cdata_loggers.py:106 ONT Native-vlan配置成功
+INFO     CDATA:Cdata_loggers.py:106 ONT Native-vlan配置成功
+INFO     script:renix_common_api.py:84 Create ports with locations:['//192.168.0.180/1/7', '//192.168.0.180/1/8']
+INFO     CDATA:Cdata_loggers.py:106 ===========================================================================
+INFO     script:renix_common_api.py:84 EthCopper_3 has lower: EthCopperConfig_3
+INFO     CDATA:Cdata_loggers.py:106 当前端口1的协商速率为：SPEED_1G
+INFO     script:renix_common_api.py:84 EthCopper_4 has lower: EthCopperConfig_4
+INFO     CDATA:Cdata_loggers.py:106 当前端口2的协商速率为：SPEED_1G
+INFO     CDATA:Cdata_loggers.py:106 ===========================================================================
+INFO     script:renix_common_api.py:84 StreamPortConfig_3 has lower: InterFrameGapProfile_3
+INFO     script:renix_common_api.py:84 StreamPortConfig_4 has lower: InterFrameGapProfile_4
+INFO     script:renix_common_api.py:84 port(['//192.168.0.180/1/7', '//192.168.0.180/1/8']) create streams
+INFO     script:renix_common_api.py:84 port(['//192.168.0.180/1/7', '//192.168.0.180/1/8']) create streams
+INFO     script:renix_common_api.py:84 PageResultView_2 has lower: ResultQuery_2
+INFO     script:renix_common_api.py:84 EthCopper_3 has lower: EthCopperConfig_3
+INFO     script:renix_common_api.py:84 EthCopper_4 has lower: EthCopperConfig_4
+INFO     CDATA:Cdata_loggers.py:106 第1次查看状态：port1的端口状态：UP ;port2的端口状态：UP
+INFO     script:renix_common_api.py:84 EthCopper_4 has lower: EthCopperConfig_4
+INFO     script:renix_common_api.py:84 EthCopper_3 has lower: EthCopperConfig_3
+INFO     script:renix_common_api.py:84 ResultQuery_2 has lower: StreamBlockStats_3 StreamBlockStats_4
+INFO     script:renix_common_api.py:84 EthCopper_3 has lower: EthCopperConfig_3
+INFO     script:renix_common_api.py:84 EthCopper_4 has lower: EthCopperConfig_4
+INFO     CDATA:Cdata_loggers.py:106 第2次查看状态：port1的端口状态：UP ;port2的端口状态：UP
+INFO     script:renix_common_api.py:84 EthCopper_4 has lower: EthCopperConfig_4
+INFO     script:renix_common_api.py:84 EthCopper_3 has lower: EthCopperConfig_3
+INFO     script:renix_common_api.py:84 ResultQuery_2 has lower: StreamBlockStats_3 StreamBlockStats_4
+INFO     script:renix_common_api.py:84 EthCopper_3 has lower: EthCopperConfig_3
+INFO     script:renix_common_api.py:84 EthCopper_4 has lower: EthCopperConfig_4
+INFO     CDATA:Cdata_loggers.py:106 第3次查看状态：port1的端口状态：UP ;port2的端口状态：UP
+INFO     script:renix_common_api.py:84 EthCopper_4 has lower: EthCopperConfig_4
+INFO     script:renix_common_api.py:84 EthCopper_3 has lower: EthCopperConfig_3
+INFO     script:renix_common_api.py:84 ResultQuery_2 has lower: StreamBlockStats_3 StreamBlockStats_4
+INFO     script:renix_common_api.py:84 EthCopper_3 has lower: EthCopperConfig_3
+INFO     script:renix_common_api.py:84 EthCopper_4 has lower: EthCopperConfig_4
+INFO     CDATA:Cdata_loggers.py:106 第4次查看状态：port1的端口状态：UP ;port2的端口状态：UP
+INFO     script:renix_common_api.py:84 EthCopper_4 has lower: EthCopperConfig_4
+INFO     script:renix_common_api.py:84 EthCopper_3 has lower: EthCopperConfig_3
+INFO     script:renix_common_api.py:84 ResultQuery_2 has lower: StreamBlockStats_3 StreamBlockStats_4
+INFO     script:renix_common_api.py:84 EthCopper_3 has lower: EthCopperConfig_3
+INFO     script:renix_common_api.py:84 EthCopper_4 has lower: EthCopperConfig_4
+INFO     CDATA:Cdata_loggers.py:106 第5次查看状态：port1的端口状态：UP ;port2的端口状态：UP
+INFO     script:renix_common_api.py:84 EthCopper_4 has lower: EthCopperConfig_4
+INFO     script:renix_common_api.py:84 EthCopper_3 has lower: EthCopperConfig_3
+INFO     script:renix_common_api.py:84 ResultQuery_2 has lower: StreamBlockStats_3 StreamBlockStats_4
+INFO     CDATA:Cdata_loggers.py:106 ONU在OLT上删除成功
+INFO     CDATA:Cdata_loggers.py:106 ONU在OLT上被重新被发现。
+INFO     CDATA:Cdata_loggers.py:106 退出登录

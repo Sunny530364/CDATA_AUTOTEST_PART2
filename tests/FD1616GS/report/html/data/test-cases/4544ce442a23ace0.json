@@ -1,0 +1,182 @@
+{
+  "uid" : "4544ce442a23ace0",
+  "name" : "测试mapping-mode为vlan",
+  "fullName" : "test_onu_gemport#test_gemport_vlan",
+  "historyId" : "6d71a1e49807d436ecddffa6a2ca093d",
+  "time" : {
+    "start" : 1594126750238,
+    "stop" : 1594126750238,
+    "duration" : 0
+  },
+  "description" : "\n    mapping-mode is vlan ,config gem mapping vlan 2000\n    测试方法：上下行发流量测试，发送两条流vlan 2000，和vlan2001\n    结果：vlan2000的能通，vlan2001的不通\n    ",
+  "descriptionHtml" : "<pre><code>mapping-mode is vlan ,config gem mapping vlan 2000\n测试方法：上下行发流量测试，发送两条流vlan 2000，和vlan2001\n结果：vlan2000的能通，vlan2001的不通\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000002E21D3C7128>, '16', '2', '5A54453171200033')",
+  "statusTrace" : "login = <telnetlib.Telnet object at 0x000002E21D3C7128>\n\n    @pytest.fixture(scope='function')\n    def gemport_vlan_suit(login):\n        Vlan_list=[2000,2001]\n        tn = login\n        with allure.step('步骤1:发现未注册的ONU。'):\n>           assert autofind_onu(tn, PonID, OnuID, SN)\nE           AssertionError: assert False\nE            +  where False = autofind_onu(<telnetlib.Telnet object at 0x000002E21D3C7128>, '16', '2', '5A54453171200033')\n\ntest_onu_gemport.py:31: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "gemport_vlan_suit",
+    "time" : {
+      "start" : 1594126763287,
+      "stop" : 1594126822823,
+      "duration" : 59536
+    },
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000002E21D3C7128>, '16', '2', '5A54453171200033')\n",
+    "statusTrace" : "  File \"d:\\program files\\python37\\lib\\site-packages\\pluggy\\callers.py\", line 187, in _multicall\n    res = hook_impl.function(*args)\n  File \"d:\\program files\\python37\\lib\\site-packages\\_pytest\\fixtures.py\", line 958, in pytest_fixture_setup\n    result = call_fixture_func(fixturefunc, request, kwargs)\n  File \"d:\\program files\\python37\\lib\\site-packages\\_pytest\\fixtures.py\", line 784, in call_fixture_func\n    res = next(it)\n  File \"E:\\CDATA\\自动化测试\\Cdata_part11\\tests\\GponSfu\\test_onu_gemport.py\", line 31, in gemport_vlan_suit\n    assert autofind_onu(tn, PonID, OnuID, SN)\n",
+    "steps" : [ {
+      "name" : "步骤1:发现未注册的ONU。",
+      "time" : {
+        "start" : 1594126763288,
+        "stop" : 1594126822822,
+        "duration" : 59534
+      },
+      "status" : "failed",
+      "statusMessage" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000002E21D3C7128>, '16', '2', '5A54453171200033')\n",
+      "statusTrace" : "  File \"E:\\CDATA\\自动化测试\\Cdata_part11\\tests\\GponSfu\\test_onu_gemport.py\", line 31, in gemport_vlan_suit\n    assert autofind_onu(tn, PonID, OnuID, SN)\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 1,
+    "hasContent" : true
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1594125825236,
+      "stop" : 1594125825236,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1594125825236,
+      "stop" : 1594125825241,
+      "duration" : 5
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1594125825236,
+      "stop" : 1594125825236,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "login",
+    "time" : {
+      "start" : 1594126750239,
+      "stop" : 1594126763287,
+      "duration" : 13048
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1594126750239,
+      "stop" : 1594126750239,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "login::0",
+    "time" : {
+      "start" : 1594126822840,
+      "stop" : 1594126882334,
+      "duration" : 59494
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "gemport测试"
+  }, {
+    "name" : "story",
+    "value" : "gemport测试"
+  }, {
+    "name" : "suite",
+    "value" : "test_onu_gemport"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-2JV12RE"
+  }, {
+    "name" : "thread",
+    "value" : "22040-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_onu_gemport"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4544ce442a23ace0.json",
+  "parameterValues" : [ ]
+}

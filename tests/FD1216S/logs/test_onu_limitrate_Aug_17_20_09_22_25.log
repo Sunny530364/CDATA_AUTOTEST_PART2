@@ -1,0 +1,5 @@
+[INFO] 2020-08-17 09:22:35,246  Receive Msg: listen_port 9002
+
+[INFO] 2020-08-17 09:22:35,348  Renix api initialization finished
+[INFO] 2020-08-17 09:22:50,715  =========ONU端口入口限速测试=========
+[INFO] 2020-08-17 09:25:43,482  close connection to CL

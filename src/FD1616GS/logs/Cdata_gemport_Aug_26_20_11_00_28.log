@@ -1,0 +1,10 @@
+[INFO] 2020-08-26 11:00:39,962  192.168.0.181 登录成功
+[INFO] 2020-08-26 11:00:41,980  配置mapping_mode为vlan
+[INFO] 2020-08-26 11:00:44,106  线路模板:mapping_mode设置成vlan正常
+[INFO] 2020-08-26 11:00:46,130  线路模板:配置gem mapping 为2000成功
+[INFO] 2020-08-26 11:00:46,150  线路模板:配置gem mapping 为3000成功
+[INFO] 2020-08-26 11:00:46,150  线路模板:配置gem mapping 为[2000, 3000]成功
+[INFO] 2020-08-26 11:00:46,154  配置mapping_mode为vlan+pri
+[INFO] 2020-08-26 11:00:48,266  线路模板:mapping_mode设置成vlan+pri正常
+[INFO] 2020-08-26 11:00:48,290  线路模板:配置gem mapping 为vlan 2000+pri 2成功
+[ERROR] 2020-08-26 11:00:48,311  线路模板:配置gem mapping 为vlan 3000+pri 4失败

@@ -1,0 +1,369 @@
+{
+  "uid" : "6adc930d553cf922",
+  "name" : "测试dba限速(type4)",
+  "fullName" : "test_onu_limitrate#test_dba_limitrate",
+  "historyId" : "654b3fba71a845305f5dc56a62ba5e59",
+  "time" : {
+    "start" : 1599823148022,
+    "stop" : 1599823194947,
+    "duration" : 46925
+  },
+  "description" : "\n    用例描述\n    测试目的： 测试dba限速是否正常（type5）\n    测试步骤：\n    步骤1: 发现未注册的ONU\n    步骤2: 在OLT上通过Gpon_Gpon_SN的方式将ONU注册上线\n    步骤3: 配置dba模板(type5 fix 10240 assure 20480 max 51200)\n    步骤4: 配置虚端口vlan2000透传\n    步骤5: 打流测试\n    测试方法: 上下行各发送流：vlan2000 (如果onu端口为1000M,速率为端口速率的10%;如果onu端口为100M,速率为端口速率的100%)\n    down_stream_header = ('ethernetII_1.sourceMacAdd=00:00:00:11:11:11 vlan_1.id=2000  ethernetII_1.destMacAdd=00:00:00:22:22:21',)\n    up_stream_header = ('ethernetII_1.sourceMacAdd=00:00:00:22:22:21 vlan_1.id=2000  ethernetII_1.destMacAdd=00:00:00:11:11:11',)\n    预期结果: 上下行正常通，上行不限速，下行限速50M\n    步骤6: 配置dba模板(type4  max 1024000)\n\n    ",
+  "descriptionHtml" : "<pre><code>用例描述\n测试目的： 测试dba限速是否正常（type5）\n测试步骤：\n步骤1: 发现未注册的ONU\n步骤2: 在OLT上通过Gpon_Gpon_SN的方式将ONU注册上线\n步骤3: 配置dba模板(type5 fix 10240 assure 20480 max 51200)\n步骤4: 配置虚端口vlan2000透传\n步骤5: 打流测试\n测试方法: 上下行各发送流：vlan2000 (如果onu端口为1000M,速率为端口速率的10%;如果onu端口为100M,速率为端口速率的100%)\ndown_stream_header = ('ethernetII_1.sourceMacAdd=00:00:00:11:11:11 vlan_1.id=2000  ethernetII_1.destMacAdd=00:00:00:22:22:21',)\nup_stream_header = ('ethernetII_1.sourceMacAdd=00:00:00:22:22:21 vlan_1.id=2000  ethernetII_1.destMacAdd=00:00:00:11:11:11',)\n预期结果: 上下行正常通，上行不限速，下行限速50M\n步骤6: 配置dba模板(type4  max 1024000)\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 'FAIL' == 'PASS'\n  - FAIL\n  + PASS",
+  "statusTrace" : "dba_limitrate_suit = <telnetlib.Telnet object at 0x000001904C268A90>\n\n    @allure.feature(\"onu限速测试\")\n    @allure.story(\"dba限速测试\")\n    @allure.title(\"测试dba限速(type4)\")\n    @pytest.mark.run(order=1623)\n    def test_dba_limitrate(dba_limitrate_suit):\n        '''\n        用例描述\n        测试目的： 测试dba限速是否正常（type5）\n        测试步骤：\n        步骤1: 发现未注册的ONU\n        步骤2: 在OLT上通过Gpon_Gpon_SN的方式将ONU注册上线\n        步骤3: 配置dba模板(type5 fix 10240 assure 20480 max 51200)\n        步骤4: 配置虚端口vlan2000透传\n        步骤5: 打流测试\n        测试方法: 上下行各发送流：vlan2000 (如果onu端口为1000M,速率为端口速率的10%;如果onu端口为100M,速率为端口速率的100%)\n        down_stream_header = ('ethernetII_1.sourceMacAdd=00:00:00:11:11:11 vlan_1.id=2000  ethernetII_1.destMacAdd=00:00:00:22:22:21',)\n        up_stream_header = ('ethernetII_1.sourceMacAdd=00:00:00:22:22:21 vlan_1.id=2000  ethernetII_1.destMacAdd=00:00:00:11:11:11',)\n        预期结果: 上下行正常通，上行不限速，下行限速50M\n        步骤6: 配置dba模板(type4  max 1024000)\n    \n        '''\n    \n        # tn=login\n        # #配置dba模板\n        # dba_limitrate_type5(tn, dba_profile_id=100)\n        cdata_info(\"=========DBA限速测试=========\")\n        tn = dba_limitrate_suit\n        Vlan_list = [2000]\n    \n        with allure.step('步骤1:发现未注册的ONU。'):\n            assert autofind_onu(tn, Gpon_PonID,  Gpon_OnuID, Gpon_SN)\n        with allure.step('步骤2:在OLT上通过Gpon_Gpon_SN的方式将ONU注册上线。'):\n            assert auth_by_sn(tn ,Gpon_PonID, Gpon_OnuID, Ont_Lineprofile_ID, Ont_Srvprofile_ID, Gpon_SN)\n        with allure.step('步骤3:配置dba模板'):\n            assert dba_limitrate_type5(tn, Dba_Profile_ID,fix= '10240',assure = '20480',max='51200')\n        with allure.step('步骤4:添加虚端口vlan透传2000'):\n            assert add_service_port(tn, Gpon_PonID, Gpon_OnuID, Gemport_ID, Vlan_list)\n        with allure.step('步骤5:打流测试。'):\n            # 清除测试仪的对象，防止影响下个用例的执行\n            time.sleep(8)\n            reset_rom_cmd = ResetROMCommand()\n            reset_rom_cmd.execute()\n            ont_speed = check_ont_capability(tn,Gpon_PonID,Gpon_OnuID,Ont_Port_ID)\n            # 发流量测试，上下行发送流量，速率为100M\n            # port_location = ['//192.168.0.180/1/9', '//192.168.0.180/1/10']\n            duration = 10\n            down_stream_header = (\n                'ethernetII_1.sourceMacAdd=00:00:00:11:11:11 vlan_1.id=2000  ethernetII_1.destMacAdd=00:00:00:22:22:21 ipv4_1.source=192.168.1.11 ipv4_1.destination=192.168.1.21',)\n    \n            up_stream_header = (\n                'ethernetII_1.sourceMacAdd=00:00:00:22:22:21 vlan_1.id=2000  ethernetII_1.destMacAdd=00:00:00:11:11:11 ipv4_1.source=192.168.1.21 ipv4_1.destination=192.168.1.11',)\n            # 获取所有流量的统计值\n            result_stats = rate_test(port_location=port_location, down_stream_header=down_stream_header,\n                                     up_stream_header=up_stream_header,\n                                     rate=100,\n                                     duration=duration)\n    \n            if port2_speed == 'SPEED_100M' and port1_speed == 'SPEED_100M':\n                # onu端口为1000M，上下行都发送端口速率的100%，也就是100M,onu端口下行限10M,所以下行比例是（10/100）=0.1， 上行是（100/100）=1\n                result1 = check_stream_rate(result_stats[0], result_stats[1], inbound_percent=0.5, outbound_percent=1)\n            elif port2_speed == 'SPEED_100M' and port1_speed == 'SPEED_1G':\n                # onu端口为1000M，上下行都发送端口速率的10%，也就是100M,onu端口下行限10M,所以下行比例是（10/100）=0.1， 上行是（100/100）=1\n                result1 = check_stream_rate(result_stats[0], result_stats[1], inbound_percent=0.05, outbound_percent=1)\n            elif port2_speed == 'SPEED_1G' and port1_speed == 'SPEED_100M':\n                # onu端口为100M，上下行都发送端口速率的100%，也就是下行1000M,上行100M,onu端口下行限10M,所以下行比例是（10/1000）=0.01， 上行是（100/100）=1\n                result1 = check_stream_rate(result_stats[0], result_stats[1], inbound_percent=0.5, outbound_percent=0.1)\n            elif port2_speed == 'SPEED_1G' and port1_speed == 'SPEED_1G':\n                # onu端口为100M，上下行都发送端口速率的100%，也就是下行1000M,上行100M,onu端口下行限10M,所以下行比例是（10/1000）=0.01， 上行是（100/100）=1\n                result1 = check_stream_rate(result_stats[0], result_stats[1], inbound_percent=0.05, outbound_percent=1)\n    \n    \n            # 正确的结果pri2的能通，pri3的不通\n            if result1 == 'PASS' :\n                result = 'PASS'\n                cdata_info(\"DBA限速:打流测试正常\")\n            else:\n                result = 'FAIL'\n                cdata_error(\"DBA限速:打流测试失败\")\n            time.sleep(2)\n            reset_rom_cmd = ResetROMCommand()\n            reset_rom_cmd.execute()\n>           assert result == 'PASS'\nE           AssertionError: assert 'FAIL' == 'PASS'\nE             - FAIL\nE             + PASS\n\nFD1616GS\\test_onu_limitrate.py:278: AssertionError",
+  "flaky" : false,
+  "newFailed" : true,
+  "beforeStages" : [ {
+    "name" : "dba_limitrate_suit",
+    "time" : {
+      "start" : 1599823148022,
+      "stop" : 1599823148022,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "__pytest_repeat_step_number",
+    "time" : {
+      "start" : 1599823134944,
+      "stop" : 1599823134944,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1599821387651,
+      "stop" : 1599821387651,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1599821387651,
+      "stop" : 1599821387651,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1599821387651,
+      "stop" : 1599821387651,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "login",
+    "time" : {
+      "start" : 1599823134945,
+      "stop" : 1599823148022,
+      "duration" : 13077
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1599823134944,
+      "stop" : 1599823134945,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "\n    用例描述\n    测试目的： 测试dba限速是否正常（type5）\n    测试步骤：\n    步骤1: 发现未注册的ONU\n    步骤2: 在OLT上通过Gpon_Gpon_SN的方式将ONU注册上线\n    步骤3: 配置dba模板(type5 fix 10240 assure 20480 max 51200)\n    步骤4: 配置虚端口vlan2000透传\n    步骤5: 打流测试\n    测试方法: 上下行各发送流：vlan2000 (如果onu端口为1000M,速率为端口速率的10%;如果onu端口为100M,速率为端口速率的100%)\n    down_stream_header = ('ethernetII_1.sourceMacAdd=00:00:00:11:11:11 vlan_1.id=2000  ethernetII_1.destMacAdd=00:00:00:22:22:21',)\n    up_stream_header = ('ethernetII_1.sourceMacAdd=00:00:00:22:22:21 vlan_1.id=2000  ethernetII_1.destMacAdd=00:00:00:11:11:11',)\n    预期结果: 上下行正常通，上行不限速，下行限速50M\n    步骤6: 配置dba模板(type4  max 1024000)\n\n    ",
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert 'FAIL' == 'PASS'\n  - FAIL\n  + PASS",
+    "statusTrace" : "dba_limitrate_suit = <telnetlib.Telnet object at 0x000001904C268A90>\n\n    @allure.feature(\"onu限速测试\")\n    @allure.story(\"dba限速测试\")\n    @allure.title(\"测试dba限速(type4)\")\n    @pytest.mark.run(order=1623)\n    def test_dba_limitrate(dba_limitrate_suit):\n        '''\n        用例描述\n        测试目的： 测试dba限速是否正常（type5）\n        测试步骤：\n        步骤1: 发现未注册的ONU\n        步骤2: 在OLT上通过Gpon_Gpon_SN的方式将ONU注册上线\n        步骤3: 配置dba模板(type5 fix 10240 assure 20480 max 51200)\n        步骤4: 配置虚端口vlan2000透传\n        步骤5: 打流测试\n        测试方法: 上下行各发送流：vlan2000 (如果onu端口为1000M,速率为端口速率的10%;如果onu端口为100M,速率为端口速率的100%)\n        down_stream_header = ('ethernetII_1.sourceMacAdd=00:00:00:11:11:11 vlan_1.id=2000  ethernetII_1.destMacAdd=00:00:00:22:22:21',)\n        up_stream_header = ('ethernetII_1.sourceMacAdd=00:00:00:22:22:21 vlan_1.id=2000  ethernetII_1.destMacAdd=00:00:00:11:11:11',)\n        预期结果: 上下行正常通，上行不限速，下行限速50M\n        步骤6: 配置dba模板(type4  max 1024000)\n    \n        '''\n    \n        # tn=login\n        # #配置dba模板\n        # dba_limitrate_type5(tn, dba_profile_id=100)\n        cdata_info(\"=========DBA限速测试=========\")\n        tn = dba_limitrate_suit\n        Vlan_list = [2000]\n    \n        with allure.step('步骤1:发现未注册的ONU。'):\n            assert autofind_onu(tn, Gpon_PonID,  Gpon_OnuID, Gpon_SN)\n        with allure.step('步骤2:在OLT上通过Gpon_Gpon_SN的方式将ONU注册上线。'):\n            assert auth_by_sn(tn ,Gpon_PonID, Gpon_OnuID, Ont_Lineprofile_ID, Ont_Srvprofile_ID, Gpon_SN)\n        with allure.step('步骤3:配置dba模板'):\n            assert dba_limitrate_type5(tn, Dba_Profile_ID,fix= '10240',assure = '20480',max='51200')\n        with allure.step('步骤4:添加虚端口vlan透传2000'):\n            assert add_service_port(tn, Gpon_PonID, Gpon_OnuID, Gemport_ID, Vlan_list)\n        with allure.step('步骤5:打流测试。'):\n            # 清除测试仪的对象，防止影响下个用例的执行\n            time.sleep(8)\n            reset_rom_cmd = ResetROMCommand()\n            reset_rom_cmd.execute()\n            ont_speed = check_ont_capability(tn,Gpon_PonID,Gpon_OnuID,Ont_Port_ID)\n            # 发流量测试，上下行发送流量，速率为100M\n            # port_location = ['//192.168.0.180/1/9', '//192.168.0.180/1/10']\n            duration = 10\n            down_stream_header = (\n                'ethernetII_1.sourceMacAdd=00:00:00:11:11:11 vlan_1.id=2000  ethernetII_1.destMacAdd=00:00:00:22:22:21 ipv4_1.source=192.168.1.11 ipv4_1.destination=192.168.1.21',)\n    \n            up_stream_header = (\n                'ethernetII_1.sourceMacAdd=00:00:00:22:22:21 vlan_1.id=2000  ethernetII_1.destMacAdd=00:00:00:11:11:11 ipv4_1.source=192.168.1.21 ipv4_1.destination=192.168.1.11',)\n            # 获取所有流量的统计值\n            result_stats = rate_test(port_location=port_location, down_stream_header=down_stream_header,\n                                     up_stream_header=up_stream_header,\n                                     rate=100,\n                                     duration=duration)\n    \n            if port2_speed == 'SPEED_100M' and port1_speed == 'SPEED_100M':\n                # onu端口为1000M，上下行都发送端口速率的100%，也就是100M,onu端口下行限10M,所以下行比例是（10/100）=0.1， 上行是（100/100）=1\n                result1 = check_stream_rate(result_stats[0], result_stats[1], inbound_percent=0.5, outbound_percent=1)\n            elif port2_speed == 'SPEED_100M' and port1_speed == 'SPEED_1G':\n                # onu端口为1000M，上下行都发送端口速率的10%，也就是100M,onu端口下行限10M,所以下行比例是（10/100）=0.1， 上行是（100/100）=1\n                result1 = check_stream_rate(result_stats[0], result_stats[1], inbound_percent=0.05, outbound_percent=1)\n            elif port2_speed == 'SPEED_1G' and port1_speed == 'SPEED_100M':\n                # onu端口为100M，上下行都发送端口速率的100%，也就是下行1000M,上行100M,onu端口下行限10M,所以下行比例是（10/1000）=0.01， 上行是（100/100）=1\n                result1 = check_stream_rate(result_stats[0], result_stats[1], inbound_percent=0.5, outbound_percent=0.1)\n            elif port2_speed == 'SPEED_1G' and port1_speed == 'SPEED_1G':\n                # onu端口为100M，上下行都发送端口速率的100%，也就是下行1000M,上行100M,onu端口下行限10M,所以下行比例是（10/1000）=0.01， 上行是（100/100）=1\n                result1 = check_stream_rate(result_stats[0], result_stats[1], inbound_percent=0.05, outbound_percent=1)\n    \n    \n            # 正确的结果pri2的能通，pri3的不通\n            if result1 == 'PASS' :\n                result = 'PASS'\n                cdata_info(\"DBA限速:打流测试正常\")\n            else:\n                result = 'FAIL'\n                cdata_error(\"DBA限速:打流测试失败\")\n            time.sleep(2)\n            reset_rom_cmd = ResetROMCommand()\n            reset_rom_cmd.execute()\n>           assert result == 'PASS'\nE           AssertionError: assert 'FAIL' == 'PASS'\nE             - FAIL\nE             + PASS\n\nFD1616GS\\test_onu_limitrate.py:278: AssertionError",
+    "steps" : [ {
+      "name" : "步骤1:发现未注册的ONU。",
+      "time" : {
+        "start" : 1599823148023,
+        "stop" : 1599823149116,
+        "duration" : 1093
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "步骤2:在OLT上通过Gpon_Gpon_SN的方式将ONU注册上线。",
+      "time" : {
+        "start" : 1599823149116,
+        "stop" : 1599823160372,
+        "duration" : 11256
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "步骤3:配置dba模板",
+      "time" : {
+        "start" : 1599823160372,
+        "stop" : 1599823162937,
+        "duration" : 2565
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "步骤4:添加虚端口vlan透传2000",
+      "time" : {
+        "start" : 1599823162937,
+        "stop" : 1599823164941,
+        "duration" : 2004
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "步骤5:打流测试。",
+      "time" : {
+        "start" : 1599823164941,
+        "stop" : 1599823194946,
+        "duration" : 30005
+      },
+      "status" : "failed",
+      "statusMessage" : "AssertionError: assert 'FAIL' == 'PASS'\n  - FAIL\n  + PASS\n",
+      "statusTrace" : "  File \"E:\\CDATA\\自动化测试\\Cdata_part11\\tests\\FD1616GS\\test_onu_limitrate.py\", line 278, in test_dba_limitrate\n    assert result == 'PASS'\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : true,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "10eaa8a7048784f9",
+      "name" : "log",
+      "source" : "10eaa8a7048784f9.txt",
+      "type" : "text/plain",
+      "size" : 2948
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 5,
+    "hasContent" : true,
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "dba_limitrate_suit::0",
+    "time" : {
+      "start" : 1599823194964,
+      "stop" : 1599823197523,
+      "duration" : 2559
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "步骤6:dba模板恢复默认配置type4 max1024000",
+      "time" : {
+        "start" : 1599823194964,
+        "stop" : 1599823197523,
+        "duration" : 2559
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "login::0",
+    "time" : {
+      "start" : 1599823197525,
+      "stop" : 1599823207613,
+      "duration" : 10088
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "onu限速测试"
+  }, {
+    "name" : "story",
+    "value" : "dba限速测试"
+  }, {
+    "name" : "suite",
+    "value" : "test_onu_limitrate"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-2JV12RE"
+  }, {
+    "name" : "thread",
+    "value" : "19156-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_onu_limitrate"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 1,
+        "broken" : 3,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 6
+      },
+      "items" : [ {
+        "uid" : "24ae34292f74d2e8",
+        "reportUrl" : "http://192.168.0.182:8080/job/cdata_test1/370/allure/#testresult/24ae34292f74d2e8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1599729606714,
+          "stop" : 1599729668857,
+          "duration" : 62143
+        }
+      }, {
+        "uid" : "6033412ffb587843",
+        "reportUrl" : "http://192.168.0.182:8080/job/cdata_test1/361/allure/#testresult/6033412ffb587843",
+        "status" : "passed",
+        "time" : {
+          "start" : 1599621262455,
+          "stop" : 1599621312295,
+          "duration" : 49840
+        }
+      }, {
+        "uid" : "768cbf54c1566b3b",
+        "reportUrl" : "http://192.168.0.182:8080/job/cdata_test1/280/allure/#testresult/768cbf54c1566b3b",
+        "status" : "broken",
+        "statusDetails" : "IndexError: list index out of range",
+        "time" : {
+          "start" : 1598838571936,
+          "stop" : 1598838624189,
+          "duration" : 52253
+        }
+      }, {
+        "uid" : "b9b2aad66204106d",
+        "reportUrl" : "http://192.168.0.182:8080/job/cdata_test1/276/allure/#testresult/b9b2aad66204106d",
+        "status" : "broken",
+        "statusDetails" : "Exception: 设备登录失败",
+        "time" : {
+          "start" : 1598618033033,
+          "stop" : 1598618033033,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "a83f26cd74528d7f",
+        "reportUrl" : "http://192.168.0.182:8080/job/cdata_test1/272/allure/#testresult/a83f26cd74528d7f",
+        "status" : "broken",
+        "statusDetails" : "IndexError: list index out of range",
+        "time" : {
+          "start" : 1598595261005,
+          "stop" : 1598595312638,
+          "duration" : 51633
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "6adc930d553cf922.json",
+  "parameterValues" : [ ]
+}

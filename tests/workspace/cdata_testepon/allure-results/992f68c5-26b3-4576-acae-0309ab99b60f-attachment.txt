@@ -1,0 +1,12 @@
+INFO     CDATA:Cdata_loggers.py:106 192.168.3.140 登录成功
+INFO     CDATA:Cdata_loggers.py:106 pon 5 端口使能成功
+INFO     CDATA:Cdata_loggers.py:106 =========测试ONU端口vlan为tag模式=========
+INFO     CDATA:Cdata_loggers.py:106 ==========================================
+ERROR    CDATA:Cdata_loggers.py:98 ===============ERROR!!!===================
+ERROR    CDATA:Cdata_loggers.py:98 ONU在OLT上发现失败。
+INFO     CDATA:Cdata_loggers.py:106 ==========================================
+ERROR    CDATA:Cdata_loggers.py:98 配置onu eth1-4 vlan为transparent失败
+INFO     CDATA:Cdata_loggers.py:106 ONU在OLT上删除成功
+INFO     CDATA:Cdata_loggers.py:106 ONU在OLT上被重新被发现。
+INFO     CDATA:Cdata_loggers.py:106 pon 5 端口去使能
+INFO     CDATA:Cdata_loggers.py:106 退出登录

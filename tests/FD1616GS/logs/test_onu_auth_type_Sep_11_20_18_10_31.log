@@ -1,0 +1,37 @@
+[INFO] 2020-09-11 18:10:40,390  Receive Msg: listen_port 9003
+
+[INFO] 2020-09-11 18:10:40,458  Renix api initialization finished
+[INFO] 2020-09-11 18:11:35,647  Create ports with locations:['//192.168.0.180/1/7', '//192.168.0.180/1/8']
+[INFO] 2020-09-11 18:11:37,397  EthCopper_1 has lower: EthCopperConfig_1
+[INFO] 2020-09-11 18:11:37,403  EthCopper_2 has lower: EthCopperConfig_2
+[INFO] 2020-09-11 18:11:37,408  StreamPortConfig_1 has lower: InterFrameGapProfile_1
+[INFO] 2020-09-11 18:11:37,416  StreamPortConfig_2 has lower: InterFrameGapProfile_2
+[INFO] 2020-09-11 18:11:37,434  port(['//192.168.0.180/1/7', '//192.168.0.180/1/8']) create streams
+[INFO] 2020-09-11 18:11:37,674  port(['//192.168.0.180/1/7', '//192.168.0.180/1/8']) create streams
+[INFO] 2020-09-11 18:11:39,297  PageResultView_1 has lower: ResultQuery_1
+[INFO] 2020-09-11 18:11:39,300  EthCopper_1 has lower: EthCopperConfig_1
+[INFO] 2020-09-11 18:11:39,303  EthCopper_2 has lower: EthCopperConfig_2
+[INFO] 2020-09-11 18:11:39,305  EthCopper_2 has lower: EthCopperConfig_2
+[INFO] 2020-09-11 18:11:39,307  EthCopper_1 has lower: EthCopperConfig_1
+[INFO] 2020-09-11 18:11:49,670  ResultQuery_1 has lower: StreamBlockStats_1 StreamBlockStats_2
+[INFO] 2020-09-11 18:11:49,687  EthCopper_1 has lower: EthCopperConfig_1
+[INFO] 2020-09-11 18:11:49,690  EthCopper_2 has lower: EthCopperConfig_2
+[INFO] 2020-09-11 18:11:49,694  EthCopper_2 has lower: EthCopperConfig_2
+[INFO] 2020-09-11 18:11:49,696  EthCopper_1 has lower: EthCopperConfig_1
+[INFO] 2020-09-11 18:12:00,088  ResultQuery_1 has lower: StreamBlockStats_1 StreamBlockStats_2
+[INFO] 2020-09-11 18:12:00,107  EthCopper_1 has lower: EthCopperConfig_1
+[INFO] 2020-09-11 18:12:00,109  EthCopper_2 has lower: EthCopperConfig_2
+[INFO] 2020-09-11 18:12:00,112  EthCopper_2 has lower: EthCopperConfig_2
+[INFO] 2020-09-11 18:12:00,115  EthCopper_1 has lower: EthCopperConfig_1
+[INFO] 2020-09-11 18:12:10,472  ResultQuery_1 has lower: StreamBlockStats_1 StreamBlockStats_2
+[INFO] 2020-09-11 18:12:10,489  EthCopper_1 has lower: EthCopperConfig_1
+[INFO] 2020-09-11 18:12:10,492  EthCopper_2 has lower: EthCopperConfig_2
+[INFO] 2020-09-11 18:12:10,495  EthCopper_2 has lower: EthCopperConfig_2
+[INFO] 2020-09-11 18:12:10,498  EthCopper_1 has lower: EthCopperConfig_1
+[INFO] 2020-09-11 18:12:20,867  ResultQuery_1 has lower: StreamBlockStats_1 StreamBlockStats_2
+[INFO] 2020-09-11 18:12:20,884  EthCopper_1 has lower: EthCopperConfig_1
+[INFO] 2020-09-11 18:12:20,887  EthCopper_2 has lower: EthCopperConfig_2
+[INFO] 2020-09-11 18:12:20,889  EthCopper_2 has lower: EthCopperConfig_2
+[INFO] 2020-09-11 18:12:20,892  EthCopper_1 has lower: EthCopperConfig_1
+[INFO] 2020-09-11 18:12:31,248  ResultQuery_1 has lower: StreamBlockStats_1 StreamBlockStats_2
+[INFO] 2020-09-11 18:12:46,799  close connection to CL

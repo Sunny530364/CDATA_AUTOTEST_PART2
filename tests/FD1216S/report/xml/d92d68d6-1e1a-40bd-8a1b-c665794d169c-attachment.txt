@@ -1,0 +1,29 @@
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 192.168.3.138 登录成功
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 =========测试ONU端口vlan为tag模式=========
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU在OLT上被重新被发现。
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 当前ONU_ID没有被占用。
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU在OLT上添加成功。
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU在OLT上通过MAC注册成功。
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 配置onu eth1 为tag2000成功
+[32mINFO    [0m script:renix_common_api.py:84 create ports with location:
+[32mINFO    [0m script:renix_common_api.py:84 StreamPortConfig_19 has lower: InterFrameGapProfile_19
+[32mINFO    [0m script:renix_common_api.py:84 StreamPortConfig_20 has lower: InterFrameGapProfile_20
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/7) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/8) create streams
+[32mINFO    [0m script:renix_common_api.py:84 PageResultView_10 has lower: ResultQuery_18
+[32mINFO    [0m script:renix_common_api.py:84 ResultQuery_18 has lower: StreamBlockStats_15 StreamBlockStats_16
+[32mINFO    [0m script:renix_common_api.py:84 [test pass] [sourceMacAdd=00:00:00:11:11:11] rx packet (109619)is  equal to tx packets (109619)
+[32mINFO    [0m script:renix_common_api.py:84 [test pass] [sourceMacAdd=00:00:00:22:22:21] rx packet (109619)is  equal to tx packets (109619)
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU端口为tag:上行不带tag(通)打流测试正常
+[32mINFO    [0m script:renix_common_api.py:84 create ports with location:
+[32mINFO    [0m script:renix_common_api.py:84 StreamPortConfig_21 has lower: InterFrameGapProfile_21
+[32mINFO    [0m script:renix_common_api.py:84 StreamPortConfig_22 has lower: InterFrameGapProfile_22
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/7) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/8) create streams
+[32mINFO    [0m script:renix_common_api.py:84 PageResultView_11 has lower: ResultQuery_19
+[32mINFO    [0m script:renix_common_api.py:84 ResultQuery_19 has lower: StreamBlockStats_17 StreamBlockStats_18
+[32mINFO    [0m script:renix_common_api.py:84 [test Pass] [sourceMacAdd=00:00:00:22:22:22]rx(0), realtime loss packet (108370)is  equal to  tx packet(108370)
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU端口为tag:上行带tag(不通)打流测试正常
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 配置onu eth1-4 vlan为transparent成功
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU在OLT上删除成功
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU在OLT上被重新被发现。

@@ -1,0 +1,1 @@
+{"uuid": "cae3bcbc-6ea2-4d23-83e0-98567e08c93a", "children": ["1d27010d-f296-49e1-9aaa-332a53fda783"], "befores": [{"name": "onu_igmp_suit", "status": "passed", "start": 1597831020115, "stop": 1597831020116}], "afters": [{"name": "onu_igmp_suit::0", "status": "passed", "start": 1597831192964, "stop": 1597831193549}], "start": 1597831020115, "stop": 1597831193549}

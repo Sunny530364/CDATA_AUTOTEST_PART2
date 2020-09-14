@@ -1,0 +1,268 @@
+{
+  "uid" : "220616dcbd6e9dc9",
+  "name" : "测试dba限速(type4)",
+  "fullName" : "test_onu_limitrate#test_dba_limitrate",
+  "historyId" : "654b3fba71a845305f5dc56a62ba5e59",
+  "time" : {
+    "start" : 1594286489080,
+    "stop" : 1594286532236,
+    "duration" : 43156
+  },
+  "description" : "\n    用例描述\n    测试目的： 测试dba限速是否正常（type5）\n    测试步骤：\n    步骤1: 发现未注册的ONU\n    步骤2: 在OLT上通过SN的方式将ONU注册上线\n    步骤3: 配置dba模板(type5 fix 10240 assure 20480 max 51200)\n    步骤4: 配置虚端口vlan2000透传\n    步骤5: 打流测试\n    测试方法: 上下行各发送流：vlan2000 (速率为端口速率的%10)\n    预期结果: 上下行正常通，上行不限速，下行限速50M\n    步骤6: 配置dba模板(type4  max 1024000)\n\n    ",
+  "descriptionHtml" : "<pre><code>用例描述\n测试目的： 测试dba限速是否正常（type5）\n测试步骤：\n步骤1: 发现未注册的ONU\n步骤2: 在OLT上通过SN的方式将ONU注册上线\n步骤3: 配置dba模板(type5 fix 10240 assure 20480 max 51200)\n步骤4: 配置虚端口vlan2000透传\n步骤5: 打流测试\n测试方法: 上下行各发送流：vlan2000 (速率为端口速率的%10)\n预期结果: 上下行正常通，上行不限速，下行限速50M\n步骤6: 配置dba模板(type4  max 1024000)\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1594286476031,
+      "stop" : 1594286476031,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1594286234421,
+      "stop" : 1594286234421,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "login",
+    "time" : {
+      "start" : 1594286476031,
+      "stop" : 1594286489079,
+      "duration" : 13048
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1594286234421,
+      "stop" : 1594286234421,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "__pytest_repeat_step_number",
+    "time" : {
+      "start" : 1594286476031,
+      "stop" : 1594286476031,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1594286234421,
+      "stop" : 1594286234421,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n    用例描述\n    测试目的： 测试dba限速是否正常（type5）\n    测试步骤：\n    步骤1: 发现未注册的ONU\n    步骤2: 在OLT上通过SN的方式将ONU注册上线\n    步骤3: 配置dba模板(type5 fix 10240 assure 20480 max 51200)\n    步骤4: 配置虚端口vlan2000透传\n    步骤5: 打流测试\n    测试方法: 上下行各发送流：vlan2000 (速率为端口速率的%10)\n    预期结果: 上下行正常通，上行不限速，下行限速50M\n    步骤6: 配置dba模板(type4  max 1024000)\n\n    ",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "步骤1:发现未注册的ONU。",
+      "time" : {
+        "start" : 1594286489081,
+        "stop" : 1594286490209,
+        "duration" : 1128
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤2:在OLT上通过SN的方式将ONU注册上线。",
+      "time" : {
+        "start" : 1594286490209,
+        "stop" : 1594286501045,
+        "duration" : 10836
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤3:配置dba模板",
+      "time" : {
+        "start" : 1594286501045,
+        "stop" : 1594286503657,
+        "duration" : 2612
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤4:添加虚端口vlan透传2000",
+      "time" : {
+        "start" : 1594286503657,
+        "stop" : 1594286505708,
+        "duration" : 2051
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤5:打流测试。",
+      "time" : {
+        "start" : 1594286505708,
+        "stop" : 1594286529635,
+        "duration" : 23927
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤6:dba模板恢复默认配置type4 max1024000",
+      "time" : {
+        "start" : 1594286529635,
+        "stop" : 1594286532235,
+        "duration" : 2600
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "f732815d8beab88c",
+      "name" : "log",
+      "source" : "f732815d8beab88c.txt",
+      "type" : "text/plain",
+      "size" : 1814
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 6,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "login::0",
+    "time" : {
+      "start" : 1594286532238,
+      "stop" : 1594286540398,
+      "duration" : 8160
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "dba限速测试"
+  }, {
+    "name" : "feature",
+    "value" : "onu限速测试"
+  }, {
+    "name" : "suite",
+    "value" : "test_onu_limitrate"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-2JV12RE"
+  }, {
+    "name" : "thread",
+    "value" : "27684-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_onu_limitrate"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "220616dcbd6e9dc9.json",
+  "parameterValues" : [ ]
+}

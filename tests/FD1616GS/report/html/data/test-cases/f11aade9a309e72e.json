@@ -1,0 +1,118 @@
+{
+  "uid" : "f11aade9a309e72e",
+  "name" : "OMCI升级ONU",
+  "fullName" : "test_onu_mgt#test_upgrade_onu",
+  "historyId" : "79cd6492e10a3a0f7dae9f22ef66b292",
+  "time" : {
+    "start" : 1594122728274,
+    "stop" : 1594122728274,
+    "duration" : 0
+  },
+  "description" : "\n    用例描述：\n    通过OMCI升级ONU。\n    例如：\n    load file tftp 192.168.5.100 FD514GB-G_V1.0.1_190909_1158_X000.bin\n    ont load select 0/0 1 1\n    ont load start 0/0 FD514GB-G_V1.0.1_190909_1158_X000.bin activemode immediate\n    ",
+  "descriptionHtml" : "<pre><code>用例描述：\n通过OMCI升级ONU。\n例如：\nload file tftp 192.168.5.100 FD514GB-G_V1.0.1_190909_1158_X000.bin\nont load select 0/0 1 1\nont load start 0/0 FD514GB-G_V1.0.1_190909_1158_X000.bin activemode immediate\n</code></pre>\n",
+  "status" : "broken",
+  "statusMessage" : "_pytest.fixtures.FixtureLookupError: ('login_1', <FixtureRequest for <Function test_upgrade_onu>>)",
+  "statusTrace" : "file E:\\CDATA\\自动化测试\\Cdata_part11\\tests\\GponSfu\\test_onu_mgt.py, line 77\n  @allure.feature(\"ONU远程管理\")\n  @allure.story(\"远程管理ONU\")\n  @allure.title(\"OMCI升级ONU\")\n  @pytest.mark.run(order=27)\n  def test_upgrade_onu(login_1):\nE       fixture 'login_1' not found\n>       available fixtures: _skip_sensitive, _verify_url, base_url, cache, capabilities, capfd, capfdbinary, caplog, capsys, capsysbinary, chrome_options, doctest_namespace, driver, driver_args, driver_class, driver_kwargs, driver_log, driver_path, firefox_options, firefox_path, firefox_profile, login, metadata, monkeypatch, pytestconfig, record_property, record_testsuite_property, record_xml_attribute, recwarn, selenium, sensitive_url, session_capabilities, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory, variables, worker_id\n>       use 'pytest --fixtures [testpath]' for help on them.\n\nE:\\CDATA\\自动化测试\\Cdata_part11\\tests\\GponSfu\\test_onu_mgt.py:77",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1594121599227,
+      "stop" : 1594121599227,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1594121599227,
+      "stop" : 1594121599227,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1594122728275,
+      "stop" : 1594122728275,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1594121599227,
+      "stop" : 1594121599227,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "ONU远程管理"
+  }, {
+    "name" : "story",
+    "value" : "远程管理ONU"
+  }, {
+    "name" : "suite",
+    "value" : "test_onu_mgt"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-2JV12RE"
+  }, {
+    "name" : "thread",
+    "value" : "23776-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_onu_mgt"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f11aade9a309e72e.json",
+  "parameterValues" : [ ]
+}

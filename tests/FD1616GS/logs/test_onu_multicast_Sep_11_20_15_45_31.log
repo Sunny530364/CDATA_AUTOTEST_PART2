@@ -1,0 +1,53 @@
+[INFO] 2020-09-11 15:45:40,041  Receive Msg: listen_port 9002
+
+[INFO] 2020-09-11 15:45:40,122  Renix api initialization finished
+[INFO] 2020-09-11 15:45:54,240  =========ONU×é²¥snooping²âÊÔ:×é²¥Õý³£Í¨=========
+[INFO] 2020-09-11 15:46:20,342  create ports with location:
+[INFO] 2020-09-11 15:46:22,016  StreamPortConfig_1 has lower: InterFrameGapProfile_1
+[INFO] 2020-09-11 15:46:22,054  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-09-11 15:46:22,927  PageResultView_1 has lower: ResultQuery_3
+[INFO] 2020-09-11 15:46:22,931  EthCopper_2 has lower: EthCopperConfig_2
+[INFO] 2020-09-11 15:46:22,936  EthCopper_1 has lower: EthCopperConfig_1
+[INFO] 2020-09-11 15:46:44,877  EthCopper_1 has lower: EthCopperConfig_1
+[INFO] 2020-09-11 15:46:44,879  EthCopper_2 has lower: EthCopperConfig_2
+[INFO] 2020-09-11 15:46:44,880  ¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ªreport test¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+[INFO] 2020-09-11 15:46:44,884  igmp_client: IgmpTxFrames is 1£¬IgmpTxV2Reports is 1£¬IgmpTxLeaveGroups is 0
+[INFO] 2020-09-11 15:46:44,887  imgp_client: IgmpRxFrame is 0,IgmpRxGeneralQueries is 0,IgmpRxGroupSpecificQueries is 0
+[INFO] 2020-09-11 15:46:44,891  igmp_server:  QuerierTxFrames is 1,QuerierRxFrames is 0
+[ERROR] 2020-09-11 15:46:44,898  [igmp_report test fail][Stream_239.1.1.1] igmp_server tx igmp packet:723295,igmp_client rx igmp packet:0
+[INFO] 2020-09-11 15:46:44,899  ¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ªleave test¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+[INFO] 2020-09-11 15:47:06,277  igmp_client: IgmpTxFrames is 2£¬IgmpTxV2Reports is 1£¬IgmpTxLeaveGroups is 1
+[INFO] 2020-09-11 15:47:06,283  [igmp_leave test pass]Stream_239.1.1.1 igmp_client tx leave packet ,result:igmp_server tx:334381,igmp_client rx£º0
+[INFO] 2020-09-11 15:47:31,918  =========ONU×é²¥snooping²âÊÔ:×é²¥Õý³£²»Í¨=========
+[INFO] 2020-09-11 15:48:04,996  create ports with location:
+[INFO] 2020-09-11 15:48:06,680  StreamPortConfig_3 has lower: InterFrameGapProfile_3
+[INFO] 2020-09-11 15:48:06,716  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-09-11 15:48:07,727  PageResultView_2 has lower: ResultQuery_6
+[INFO] 2020-09-11 15:48:07,731  EthCopper_4 has lower: EthCopperConfig_4
+[INFO] 2020-09-11 15:48:07,733  EthCopper_3 has lower: EthCopperConfig_3
+[INFO] 2020-09-11 15:48:29,666  ¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ªreport test¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+[INFO] 2020-09-11 15:48:29,671  igmp_client: IgmpTxFrames is 1£¬IgmpTxV2Reports is 1£¬IgmpTxLeaveGroups is 0
+[INFO] 2020-09-11 15:48:29,675  imgp_client: IgmpRxFrame is 0,IgmpRxGeneralQueries is 0,IgmpRxGroupSpecificQueries is 0
+[INFO] 2020-09-11 15:48:29,679  igmp_server:  QuerierTxFrames is 1,QuerierRxFrames is 0
+[INFO] 2020-09-11 15:48:29,685  [igmp_report test pass][Stream_239.2.2.2] igmp_server tx igmp packet:705356,igmp_client rx igmp packet:0
+[INFO] 2020-09-11 15:48:29,685  ¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ªleave test¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+[INFO] 2020-09-11 15:48:51,027  igmp_client: IgmpTxFrames is 2£¬IgmpTxV2Reports is 1£¬IgmpTxLeaveGroups is 1
+[INFO] 2020-09-11 15:48:51,033  [igmp_leave test pass]Stream_239.2.2.2 igmp_client tx leave packet ,result:igmp_server tx:313036,igmp_client rx£º0
+[INFO] 2020-09-11 15:49:15,409  =========ONU×é²¥snooping²âÊÔ:¿ç×é²¥vlan²âÊÔ=========
+[INFO] 2020-09-11 15:49:41,381  create ports with location:
+[INFO] 2020-09-11 15:49:43,001  StreamPortConfig_5 has lower: InterFrameGapProfile_5
+[INFO] 2020-09-11 15:49:43,036  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-09-11 15:49:43,752  PageResultView_3 has lower: ResultQuery_9
+[INFO] 2020-09-11 15:49:43,756  EthCopper_6 has lower: EthCopperConfig_6
+[INFO] 2020-09-11 15:49:43,759  EthCopper_5 has lower: EthCopperConfig_5
+[INFO] 2020-09-11 15:50:05,683  EthCopper_5 has lower: EthCopperConfig_5
+[INFO] 2020-09-11 15:50:05,686  EthCopper_6 has lower: EthCopperConfig_6
+[INFO] 2020-09-11 15:50:05,686  ¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ªreport test¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+[INFO] 2020-09-11 15:50:05,691  igmp_client: IgmpTxFrames is 2£¬IgmpTxV2Reports is 2£¬IgmpTxLeaveGroups is 0
+[INFO] 2020-09-11 15:50:05,694  imgp_client: IgmpRxFrame is 66,IgmpRxGeneralQueries is 66,IgmpRxGroupSpecificQueries is 0
+[INFO] 2020-09-11 15:50:05,698  igmp_server:  QuerierTxFrames is 1,QuerierRxFrames is 0
+[ERROR] 2020-09-11 15:50:05,706  [igmp_report test fail][Stream_239.1.1.1] igmp_server tx igmp packet:706130,igmp_client rx igmp packet:0
+[INFO] 2020-09-11 15:50:05,706  ¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ªleave test¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+[INFO] 2020-09-11 15:50:27,056  igmp_client: IgmpTxFrames is 3£¬IgmpTxV2Reports is 2£¬IgmpTxLeaveGroups is 1
+[INFO] 2020-09-11 15:50:27,062  [igmp_leave test pass]Stream_239.1.1.1 igmp_client tx leave packet ,result:igmp_server tx:315142,igmp_client rx£º0
+[INFO] 2020-09-11 15:50:38,387  close connection to CL

@@ -1,0 +1,240 @@
+{
+  "uid" : "3ad7ddc0b5063d4",
+  "name" : "onu mac地址上报测试",
+  "fullName" : "test_onu_mac_learn#test_ont_mac_learn",
+  "historyId" : "efeb02a4d4f48f95e3052e2025676887",
+  "time" : {
+    "start" : 1598274013247,
+    "stop" : 1598274077532,
+    "duration" : 64285
+  },
+  "description" : "\n    用例描述\n    测试目的： 测试onu端口mac地址学习是否正常\n    测试步骤：\n    步骤1: 发现未注册的ONU\n    步骤2: 在OLT上通过Gpon_SN的方式将ONU注册上线\n    步骤3: 配置虚端口vlan2000透传\n    步骤4: 打流测试,查看onu端口mac地址表\n    1）上下行各发送流00:00:00:22:22:21递增5条，在olt上查看onu端口mac地址表\n    down_stream_header = (\n        'ethernetII_1.sourceMacAdd=00:00:00:11:11:11 vlan_1.id=2000 ethernetII_1.destMacAdd=00:00:00:22:22:21',\n        'ethernetII_1.sourceMacAdd=00:00:00:11:11:12 vlan_1.id=2001 ethernetII_1.destMacAdd=00:00:00:22:22:22')\n    up_stream_header = (\n        'ethernetII_1.sourceMacAdd=00:00:00:22:22:21 vlan_1.id=2000 ethernetII_1.destMacAdd=00:00:00:11:11:11',\n        'ethernetII_1.sourceMacAdd=00:00:00:22:22:22 vlan_1.id=2001 ethernetII_1.destMacAdd=00:00:00:11:11:12',)\n\n    预期结果: 上下行正常通，在olt上查看onu端口mac地址表有5条（00:00:00:22:22:21递增5条）\n    ",
+  "descriptionHtml" : "<pre><code>用例描述\n测试目的： 测试onu端口mac地址学习是否正常\n测试步骤：\n步骤1: 发现未注册的ONU\n步骤2: 在OLT上通过Gpon_SN的方式将ONU注册上线\n步骤3: 配置虚端口vlan2000透传\n步骤4: 打流测试,查看onu端口mac地址表\n1）上下行各发送流00:00:00:22:22:21递增5条，在olt上查看onu端口mac地址表\ndown_stream_header = (\n    'ethernetII_1.sourceMacAdd=00:00:00:11:11:11 vlan_1.id=2000 ethernetII_1.destMacAdd=00:00:00:22:22:21',\n    'ethernetII_1.sourceMacAdd=00:00:00:11:11:12 vlan_1.id=2001 ethernetII_1.destMacAdd=00:00:00:22:22:22')\nup_stream_header = (\n    'ethernetII_1.sourceMacAdd=00:00:00:22:22:21 vlan_1.id=2000 ethernetII_1.destMacAdd=00:00:00:11:11:11',\n    'ethernetII_1.sourceMacAdd=00:00:00:22:22:22 vlan_1.id=2001 ethernetII_1.destMacAdd=00:00:00:11:11:12',)\n\n预期结果: 上下行正常通，在olt上查看onu端口mac地址表有5条（00:00:00:22:22:21递增5条）\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1598272724833,
+      "stop" : 1598272724833,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1598272724833,
+      "stop" : 1598272724833,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1598273999253,
+      "stop" : 1598273999253,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "login",
+    "time" : {
+      "start" : 1598273999253,
+      "stop" : 1598274013246,
+      "duration" : 13993
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1598272724833,
+      "stop" : 1598272724833,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "__pytest_repeat_step_number",
+    "time" : {
+      "start" : 1598273999253,
+      "stop" : 1598273999253,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "\n    用例描述\n    测试目的： 测试onu端口mac地址学习是否正常\n    测试步骤：\n    步骤1: 发现未注册的ONU\n    步骤2: 在OLT上通过Gpon_SN的方式将ONU注册上线\n    步骤3: 配置虚端口vlan2000透传\n    步骤4: 打流测试,查看onu端口mac地址表\n    1）上下行各发送流00:00:00:22:22:21递增5条，在olt上查看onu端口mac地址表\n    down_stream_header = (\n        'ethernetII_1.sourceMacAdd=00:00:00:11:11:11 vlan_1.id=2000 ethernetII_1.destMacAdd=00:00:00:22:22:21',\n        'ethernetII_1.sourceMacAdd=00:00:00:11:11:12 vlan_1.id=2001 ethernetII_1.destMacAdd=00:00:00:22:22:22')\n    up_stream_header = (\n        'ethernetII_1.sourceMacAdd=00:00:00:22:22:21 vlan_1.id=2000 ethernetII_1.destMacAdd=00:00:00:11:11:11',\n        'ethernetII_1.sourceMacAdd=00:00:00:22:22:22 vlan_1.id=2001 ethernetII_1.destMacAdd=00:00:00:11:11:12',)\n\n    预期结果: 上下行正常通，在olt上查看onu端口mac地址表有5条（00:00:00:22:22:21递增5条）\n    ",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "步骤1:发现未注册的ONU。",
+      "time" : {
+        "start" : 1598274013256,
+        "stop" : 1598274014355,
+        "duration" : 1099
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "步骤2:在OLT上通过Gpon_SN的方式将ONU注册上线。",
+      "time" : {
+        "start" : 1598274014355,
+        "stop" : 1598274034614,
+        "duration" : 20259
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "步骤3:配置虚端口vlan2000透传",
+      "time" : {
+        "start" : 1598274034614,
+        "stop" : 1598274038633,
+        "duration" : 4019
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "步骤4:打流测试,查看onu端口mac地址表",
+      "time" : {
+        "start" : 1598274038633,
+        "stop" : 1598274077532,
+        "duration" : 38899
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "d734144abd134815",
+      "name" : "log",
+      "source" : "d734144abd134815.txt",
+      "type" : "text/plain",
+      "size" : 2787
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "login::0",
+    "time" : {
+      "start" : 1598274077533,
+      "stop" : 1598274094749,
+      "duration" : 17216
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "onu mac地址上报测试"
+  }, {
+    "name" : "feature",
+    "value" : "onu mac地址上报测试"
+  }, {
+    "name" : "suite",
+    "value" : "test_onu_mac_learn"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-2JV12RE"
+  }, {
+    "name" : "thread",
+    "value" : "14976-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_onu_mac_learn"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "3ad7ddc0b5063d4.json",
+  "parameterValues" : [ ]
+}

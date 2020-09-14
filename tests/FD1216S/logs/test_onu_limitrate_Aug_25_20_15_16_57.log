@@ -1,0 +1,45 @@
+[INFO] 2020-08-25 15:17:06,746  Receive Msg: listen_port 9003
+
+[INFO] 2020-08-25 15:17:06,821  Renix api initialization finished
+[INFO] 2020-08-25 15:17:21,991  =========ONU端口入口限速测试=========
+[INFO] 2020-08-25 15:18:21,328  create ports with location:
+[INFO] 2020-08-25 15:18:22,984  EthCopper_1 has lower: EthCopperConfig_1
+[INFO] 2020-08-25 15:18:22,989  EthCopper_2 has lower: EthCopperConfig_2
+[INFO] 2020-08-25 15:18:22,994  EthCopper_1 has lower: EthCopperConfig_1
+[INFO] 2020-08-25 15:18:22,998  EthCopper_2 has lower: EthCopperConfig_2
+[INFO] 2020-08-25 15:18:23,002  StreamPortConfig_1 has lower: InterFrameGapProfile_1
+[INFO] 2020-08-25 15:18:23,009  StreamPortConfig_2 has lower: InterFrameGapProfile_2
+[INFO] 2020-08-25 15:18:23,038  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-08-25 15:18:23,267  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-08-25 15:18:23,975  PageResultView_1 has lower: ResultQuery_1
+[INFO] 2020-08-25 15:18:36,937  ResultQuery_1 has lower: StreamBlockStats_1 StreamBlockStats_2
+[INFO] 2020-08-25 15:18:36,949  [test pass] [sourceMacAdd=00:00:00:11:11:11] rx rate (9.999849600000001)is  equal to tx rate (10.0006848) * 1
+[INFO] 2020-08-25 15:18:36,959  [test pass] [sourceMacAdd=00:00:00:22:22:21] rx rate (1.064128)is  equal to tx rate (10.0006848) * 0.1
+[INFO] 2020-08-25 15:19:02,656  =========ONU端口出口限速测试=========
+[INFO] 2020-08-25 15:20:01,603  create ports with location:
+[INFO] 2020-08-25 15:20:03,970  EthCopper_3 has lower: EthCopperConfig_3
+[INFO] 2020-08-25 15:20:03,977  EthCopper_4 has lower: EthCopperConfig_4
+[INFO] 2020-08-25 15:20:03,986  EthCopper_3 has lower: EthCopperConfig_3
+[INFO] 2020-08-25 15:20:03,995  EthCopper_4 has lower: EthCopperConfig_4
+[INFO] 2020-08-25 15:20:04,000  StreamPortConfig_3 has lower: InterFrameGapProfile_3
+[INFO] 2020-08-25 15:20:04,008  StreamPortConfig_4 has lower: InterFrameGapProfile_4
+[INFO] 2020-08-25 15:20:04,056  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-08-25 15:20:04,350  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-08-25 15:20:05,024  PageResultView_2 has lower: ResultQuery_2
+[INFO] 2020-08-25 15:20:18,007  ResultQuery_2 has lower: StreamBlockStats_3 StreamBlockStats_4
+[INFO] 2020-08-25 15:20:18,019  [test pass] [sourceMacAdd=00:00:00:11:11:11] rx rate (2.138112)is  equal to tx rate (9.999849600000001) * 0.2
+[INFO] 2020-08-25 15:20:18,027  [test pass] [sourceMacAdd=00:00:00:22:22:21] rx rate (9.964032)is  equal to tx rate (9.999849600000001) * 1
+[INFO] 2020-08-25 15:21:47,929  create ports with location:
+[INFO] 2020-08-25 15:21:50,740  EthCopper_5 has lower: EthCopperConfig_5
+[INFO] 2020-08-25 15:21:50,745  EthCopper_6 has lower: EthCopperConfig_6
+[INFO] 2020-08-25 15:21:50,753  EthCopper_5 has lower: EthCopperConfig_5
+[INFO] 2020-08-25 15:21:50,759  EthCopper_6 has lower: EthCopperConfig_6
+[INFO] 2020-08-25 15:21:50,765  StreamPortConfig_5 has lower: InterFrameGapProfile_5
+[INFO] 2020-08-25 15:21:50,772  StreamPortConfig_6 has lower: InterFrameGapProfile_6
+[INFO] 2020-08-25 15:21:50,813  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-08-25 15:21:51,053  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-08-25 15:21:51,714  PageResultView_3 has lower: ResultQuery_3
+[INFO] 2020-08-25 15:22:04,359  ResultQuery_3 has lower: StreamBlockStats_5 StreamBlockStats_6
+[INFO] 2020-08-25 15:22:04,372  [test pass] [sourceMacAdd=00:00:00:11:11:11] rx rate (10.0006848)is  equal to tx rate (9.999849600000001) * 1
+[INFO] 2020-08-25 15:22:04,380  [test pass] [sourceMacAdd=00:00:00:22:22:21] rx rate (5.101824)is  equal to tx rate (9.999849600000001) * 0.5
+[INFO] 2020-08-25 15:22:20,377  close connection to CL

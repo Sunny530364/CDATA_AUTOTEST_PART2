@@ -1,0 +1,30 @@
+[INFO] 2020-09-11 17:25:28,364  Receive Msg: listen_port 9002
+
+[INFO] 2020-09-11 17:25:28,474  Renix api initialization finished
+[INFO] 2020-09-11 17:25:42,959  =========ONU MACµÿ÷∑…œ±®≤‚ ‘=========
+[INFO] 2020-09-11 17:26:17,086  create ports with location:
+[INFO] 2020-09-11 17:26:18,784  EthCopper_1 has lower: EthCopperConfig_1
+[INFO] 2020-09-11 17:26:18,790  EthCopper_2 has lower: EthCopperConfig_2
+[INFO] 2020-09-11 17:26:18,796  EthCopper_1 has lower: EthCopperConfig_1
+[INFO] 2020-09-11 17:26:18,803  EthCopper_2 has lower: EthCopperConfig_2
+[INFO] 2020-09-11 17:26:18,811  StreamPortConfig_1 has lower: InterFrameGapProfile_1
+[INFO] 2020-09-11 17:26:18,818  StreamPortConfig_2 has lower: InterFrameGapProfile_2
+[INFO] 2020-09-11 17:26:18,858  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-09-11 17:26:19,148  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-09-11 17:26:19,834  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-09-11 17:26:20,103  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-09-11 17:26:20,784  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-09-11 17:26:21,049  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-09-11 17:26:21,743  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-09-11 17:26:22,095  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-09-11 17:26:22,903  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-09-11 17:26:23,191  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-09-11 17:26:23,856  EthCopper_1 has lower: EthCopperConfig_1
+[INFO] 2020-09-11 17:26:23,860  EthCopper_2 has lower: EthCopperConfig_2
+[INFO] 2020-09-11 17:26:23,862  EthCopper_2 has lower: EthCopperConfig_2
+[INFO] 2020-09-11 17:26:23,865  EthCopper_1 has lower: EthCopperConfig_1
+[INFO] 2020-09-11 17:26:24,046  PageResultView_1 has lower: ResultQuery_1
+[INFO] 2020-09-11 17:26:40,107  ResultQuery_1 has lower: PortStats_1 PortStats_2
+[INFO] 2020-09-11 17:26:40,236  [test pass] [Port_1] rx packet (514686)is  equal to port2_stats tx packets (514656)
+[INFO] 2020-09-11 17:26:40,243  [test pass] [Port_2] rx packet (514704)is equal to  port1_stats tx packets (514656)
+[INFO] 2020-09-11 17:26:54,400  close connection to CL

@@ -1,0 +1,25 @@
+INFO     CDATA:Cdata_loggers.py:105 =========mapping_mode为pri测试=========
+INFO     CDATA:Cdata_loggers.py:105 ONU在OLT上被重新被发现。
+INFO     CDATA:Cdata_loggers.py:105 当前ONU_ID没有被占用。
+INFO     CDATA:Cdata_loggers.py:105 ONU在OLT上添加成功。
+INFO     CDATA:Cdata_loggers.py:105 ONU在OLT上通过SN注册成功。
+INFO     CDATA:Cdata_loggers.py:105 配置mapping_mode为pri
+INFO     CDATA:Cdata_loggers.py:105 线路模板:mapping_mode设置成pri正常
+INFO     CDATA:Cdata_loggers.py:105 线路模板配置gem mapping 为pri2成功
+INFO     CDATA:Cdata_loggers.py:105 SERVICE-PORT添加成功
+INFO     script:renix_common_api.py:84 create ports with location:
+INFO     script:renix_common_api.py:84 StreamPortConfig_7 has lower: InterFrameGapProfile_7
+INFO     script:renix_common_api.py:84 StreamPortConfig_8 has lower: InterFrameGapProfile_8
+INFO     script:renix_common_api.py:84 port(//192.168.0.180/1/9) create streams
+INFO     script:renix_common_api.py:84 port(//192.168.0.180/1/10) create streams
+INFO     script:renix_common_api.py:84 port(//192.168.0.180/1/9) create streams
+INFO     script:renix_common_api.py:84 port(//192.168.0.180/1/10) create streams
+INFO     script:renix_common_api.py:84 PageResultView_4 has lower: ResultQuery_4
+INFO     script:renix_common_api.py:84 ResultQuery_4 has lower: StreamBlockStats_15 StreamBlockStats_16
+ERROR    script:renix_common_api.py:74 [test fail] [sourceMacAdd=00:00:00:11:11:11] rx packet (84)is not equal to  tx packets (102884)
+ERROR    script:renix_common_api.py:74 [test fail] [sourceMacAdd=00:00:00:11:11:12] rx packet (17)is not equal to  tx packets (102884)
+INFO     CDATA:Cdata_loggers.py:105 配置gemport为transparent
+INFO     CDATA:Cdata_loggers.py:105 线路模板:mapping_mode设置成vlan正常
+INFO     CDATA:Cdata_loggers.py:105 线路模板:配置gemport 1为transparent成功
+INFO     CDATA:Cdata_loggers.py:105 ONU在OLT上删除成功
+INFO     CDATA:Cdata_loggers.py:105 ONU在OLT上被重新被发现。

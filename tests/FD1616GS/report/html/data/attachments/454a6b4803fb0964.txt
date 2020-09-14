@@ -1,0 +1,9 @@
+[32mINFO    [0m script:renix_common_api.py:84 Create ports with locations:['//192.168.0.180/1/9', '//192.168.0.180/1/10']
+[32mINFO    [0m script:renix_common_api.py:84 EthCopper_7 has lower: EthCopperConfig_7
+[32mINFO    [0m script:renix_common_api.py:84 EthCopper_8 has lower: EthCopperConfig_8
+[32mINFO    [0m script:renix_common_api.py:84 StreamPortConfig_7 has lower: InterFrameGapProfile_7
+[32mINFO    [0m script:renix_common_api.py:84 StreamPortConfig_8 has lower: InterFrameGapProfile_8
+[32mINFO    [0m script:renix_common_api.py:84 port(['//192.168.0.180/1/9', '//192.168.0.180/1/10']) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(['//192.168.0.180/1/9', '//192.168.0.180/1/10']) create streams
+[32mINFO    [0m script:renix_common_api.py:84 PageResultView_1 has lower: ResultQuery_1
+[32mINFO    [0m script:renix_common_api.py:84 ResultQuery_1 has lower: StreamBlockStats_1 StreamBlockStats_2 StreamBlockStats_3 StreamBlockStats_4 StreamBlockStats_5 StreamBlockStats_6 StreamBlockStats_7 StreamBlockStats_8

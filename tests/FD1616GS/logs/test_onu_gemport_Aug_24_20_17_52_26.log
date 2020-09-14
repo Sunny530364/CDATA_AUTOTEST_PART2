@@ -1,0 +1,12 @@
+[INFO] 2020-08-24 17:52:37,171  Receive Msg: listen_port 9002
+
+[INFO] 2020-08-24 17:52:37,305  Renix api initialization finished
+[INFO] 2020-08-24 17:53:22,637  create ports with location:
+[INFO] 2020-08-24 17:53:24,382  StreamPortConfig_1 has lower: InterFrameGapProfile_1
+[INFO] 2020-08-24 17:53:24,390  StreamPortConfig_2 has lower: InterFrameGapProfile_2
+[INFO] 2020-08-24 17:53:24,426  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-08-24 17:53:24,723  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-08-24 17:53:25,850  PageResultView_1 has lower: ResultQuery_1
+[INFO] 2020-08-24 17:53:41,779  ResultQuery_1 has lower: StreamBlockStats_1
+[INFO] 2020-08-24 17:53:41,897  [test Pass] [sourceMacAdd=00:00:00:11:11:11]rx(0), realtime loss packet (104727)is  equal to  tx packet(104727)
+[INFO] 2020-08-24 17:53:58,471  close connection to CL

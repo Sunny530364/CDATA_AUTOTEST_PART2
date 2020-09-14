@@ -1,0 +1,45 @@
+[INFO] 2020-08-28 11:27:16,340  Receive Msg: listen_port 9003
+
+[INFO] 2020-08-28 11:27:16,443  Renix api initialization finished
+[INFO] 2020-08-28 11:28:27,441  create ports with location:
+[INFO] 2020-08-28 11:28:29,153  StreamPortConfig_1 has lower: InterFrameGapProfile_1
+[INFO] 2020-08-28 11:28:29,161  StreamPortConfig_2 has lower: InterFrameGapProfile_2
+[INFO] 2020-08-28 11:28:29,208  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-08-28 11:28:29,581  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-08-28 11:28:30,396  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-08-28 11:28:30,714  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-08-28 11:28:31,588  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-08-28 11:28:31,891  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-08-28 11:28:32,562  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-08-28 11:28:32,845  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-08-28 11:28:33,538  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-08-28 11:28:33,829  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-08-28 11:28:34,518  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-08-28 11:28:34,794  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-08-28 11:28:35,488  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-08-28 11:28:35,774  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-08-28 11:28:36,479  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-08-28 11:28:36,766  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-08-28 11:28:37,488  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-08-28 11:28:37,777  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-08-28 11:28:38,741  PageResultView_1 has lower: ResultQuery_1
+[INFO] 2020-08-28 11:28:55,025  ResultQuery_1 has lower: StreamBlockStats_1 StreamBlockStats_2 StreamBlockStats_3 StreamBlockStats_4 StreamBlockStats_5 StreamBlockStats_6 StreamBlockStats_7 StreamBlockStats_8 StreamBlockStats_9 StreamBlockStats_10 StreamBlockStats_11 StreamBlockStats_12 StreamBlockStats_13 StreamBlockStats_14 StreamBlockStats_15 StreamBlockStats_16 StreamBlockStats_17 StreamBlockStats_18
+[INFO] 2020-08-28 11:28:55,590  [test pass] [sourceMacAdd=00:00:00:11:11:11] rx packet (107825)is  equal to tx packets (107825)
+[INFO] 2020-08-28 11:28:55,597  [test pass] [sourceMacAdd=00:00:00:11:11:16] rx packet (107825)is  equal to tx packets (107825)
+[INFO] 2020-08-28 11:28:55,607  [test pass] [sourceMacAdd=00:00:00:11:11:17] rx packet (107825)is  equal to tx packets (107825)
+[INFO] 2020-08-28 11:28:55,615  [test pass] [sourceMacAdd=00:00:00:11:11:18] rx packet (107824)is  equal to tx packets (107824)
+[INFO] 2020-08-28 11:28:55,625  [test Pass] [sourceMacAdd=00:00:00:11:11:19]rx(0), realtime loss packet (107824)is  equal to  tx packet(107824)
+[INFO] 2020-08-28 11:28:55,634  [test pass] [sourceMacAdd=00:00:00:11:11:12] rx packet (107825)is  equal to tx packets (107825)
+[INFO] 2020-08-28 11:28:55,648  [test pass] [sourceMacAdd=00:00:00:11:11:13] rx packet (107825)is  equal to tx packets (107825)
+[INFO] 2020-08-28 11:28:55,655  [test pass] [sourceMacAdd=00:00:00:11:11:14] rx packet (107825)is  equal to tx packets (107825)
+[INFO] 2020-08-28 11:28:55,661  [test pass] [sourceMacAdd=00:00:00:11:11:15] rx packet (107825)is  equal to tx packets (107825)
+[INFO] 2020-08-28 11:28:55,668  [test pass] [sourceMacAdd=00:00:00:22:22:25] rx packet (107825)is  equal to tx packets (107825)
+[INFO] 2020-08-28 11:28:55,674  [test pass] [sourceMacAdd=00:00:00:22:22:26] rx packet (107825)is  equal to tx packets (107825)
+[INFO] 2020-08-28 11:28:55,682  [test pass] [sourceMacAdd=00:00:00:22:22:27] rx packet (107825)is  equal to tx packets (107825)
+[INFO] 2020-08-28 11:28:55,688  [test pass] [sourceMacAdd=00:00:00:22:22:28] rx packet (107824)is  equal to tx packets (107824)
+[INFO] 2020-08-28 11:28:55,695  [test Pass] [sourceMacAdd=00:00:00:22:22:29]rx(0), realtime loss packet (107824)is  equal to  tx packet(107824)
+[INFO] 2020-08-28 11:28:55,701  [test pass] [sourceMacAdd=00:00:00:22:22:21] rx packet (107825)is  equal to tx packets (107825)
+[INFO] 2020-08-28 11:28:55,707  [test pass] [sourceMacAdd=00:00:00:22:22:22] rx packet (107825)is  equal to tx packets (107825)
+[INFO] 2020-08-28 11:28:55,719  [test pass] [sourceMacAdd=00:00:00:22:22:23] rx packet (107825)is  equal to tx packets (107825)
+[INFO] 2020-08-28 11:28:55,725  [test pass] [sourceMacAdd=00:00:00:22:22:24] rx packet (107825)is  equal to tx packets (107825)
+[INFO] 2020-08-28 11:29:31,076  close connection to CL

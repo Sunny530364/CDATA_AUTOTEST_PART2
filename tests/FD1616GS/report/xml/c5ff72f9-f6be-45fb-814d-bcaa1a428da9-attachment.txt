@@ -1,0 +1,23 @@
+[32mINFO    [0m script:renix_common_api.py:84 create ports with location:
+[32mINFO    [0m script:renix_common_api.py:84 StreamPortConfig_39 has lower: InterFrameGapProfile_33
+[32mINFO    [0m script:renix_common_api.py:84 StreamPortConfig_40 has lower: InterFrameGapProfile_34
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/9) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/10) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/9) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/10) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/9) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/10) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/9) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/10) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/9) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/10) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/9) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/10) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/9) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/10) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/9) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/10) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/9) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/10) create streams
+[32mINFO    [0m script:renix_common_api.py:84 PageResultView_15 has lower: ResultQuery_21
+[32mINFO    [0m script:renix_common_api.py:84 ResultQuery_21 has lower: StreamBlockStats_40 StreamBlockStats_41 StreamBlockStats_42 StreamBlockStats_43 StreamBlockStats_44 StreamBlockStats_45 StreamBlockStats_46 StreamBlockStats_47 StreamBlockStats_48 StreamBlockStats_49 StreamBlockStats_50 StreamBlockStats_51 StreamBlockStats_52 StreamBlockStats_53 StreamBlockStats_54 StreamBlockStats_55 StreamBlockStats_56 StreamBlockStats_57

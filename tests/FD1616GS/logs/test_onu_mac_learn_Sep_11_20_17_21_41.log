@@ -1,0 +1,28 @@
+[INFO] 2020-09-11 17:21:50,590  Receive Msg: listen_port 9002
+
+[INFO] 2020-09-11 17:21:50,689  Renix api initialization finished
+[INFO] 2020-09-11 17:22:05,053  =========ONU MACµÿ÷∑…œ±®≤‚ ‘=========
+[INFO] 2020-09-11 17:22:40,741  create ports with location:
+[INFO] 2020-09-11 17:22:42,404  EthCopper_1 has lower: EthCopperConfig_1
+[INFO] 2020-09-11 17:22:42,409  EthCopper_2 has lower: EthCopperConfig_2
+[INFO] 2020-09-11 17:22:42,414  EthCopper_1 has lower: EthCopperConfig_1
+[INFO] 2020-09-11 17:22:42,419  EthCopper_2 has lower: EthCopperConfig_2
+[INFO] 2020-09-11 17:22:42,424  StreamPortConfig_1 has lower: InterFrameGapProfile_1
+[INFO] 2020-09-11 17:22:42,430  StreamPortConfig_2 has lower: InterFrameGapProfile_2
+[INFO] 2020-09-11 17:22:42,456  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-09-11 17:22:42,725  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-09-11 17:22:43,414  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-09-11 17:22:43,671  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-09-11 17:22:44,379  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-09-11 17:22:44,637  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-09-11 17:22:45,343  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-09-11 17:22:45,613  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-09-11 17:22:46,315  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-09-11 17:22:46,584  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-09-11 17:22:47,276  EthCopper_2 has lower: EthCopperConfig_2
+[INFO] 2020-09-11 17:22:47,278  EthCopper_1 has lower: EthCopperConfig_1
+[INFO] 2020-09-11 17:22:47,462  PageResultView_1 has lower: ResultQuery_1
+[INFO] 2020-09-11 17:23:03,523  ResultQuery_1 has lower: PortStats_1 PortStats_2
+[INFO] 2020-09-11 17:23:03,651  [test pass] [Port_1] rx packet (539926)is  equal to port2_stats tx packets (539916)
+[INFO] 2020-09-11 17:23:03,659  [test pass] [Port_2] rx packet (539959)is equal to  port1_stats tx packets (539915)
+[INFO] 2020-09-11 17:23:18,850  close connection to CL

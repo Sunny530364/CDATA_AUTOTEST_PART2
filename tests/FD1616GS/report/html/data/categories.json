@@ -1,0 +1,2024 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "RuntimeError: Issue BringPortsOnlineCommand -portlist {Port_27 Port_28 } failed: ERROR:Hardware port (//192.168.0.180/1/9) has been attached to another logical port (Port_25)",
+      "children" : [ {
+        "name" : "去激活ONU",
+        "uid" : "dbcceb156a75ae17",
+        "parentUid" : "78d5070d3934754282dc8ac586a03054",
+        "status" : "broken",
+        "time" : {
+          "start" : 1594172454435,
+          "stop" : 1594172485924,
+          "duration" : 31489
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "78d5070d3934754282dc8ac586a03054"
+    }, {
+      "name" : "RuntimeError: Issue BringPortsOnlineCommand -portlist {Port_29 Port_30 } failed: ERROR:Hardware port (//192.168.0.180/1/9) has been attached to another logical port (Port_25)",
+      "children" : [ {
+        "name" : "远程重启ONU",
+        "uid" : "6757096d5caead9",
+        "parentUid" : "f23536a0187cf04152955076bb9928e6",
+        "status" : "broken",
+        "time" : {
+          "start" : 1594172510416,
+          "stop" : 1594172541975,
+          "duration" : 31559
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f23536a0187cf04152955076bb9928e6"
+    }, {
+      "name" : "_pytest.fixtures.FixtureLookupError: ('msg', <FixtureRequest for <Function test_error>>)",
+      "children" : [ {
+        "name" : "test_error",
+        "uid" : "c1ce8c528cae34ce",
+        "parentUid" : "23d64d1965a16797c18ef6b5d378aadb",
+        "status" : "broken",
+        "time" : {
+          "start" : 1594179610060,
+          "stop" : 1594179610060,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "23d64d1965a16797c18ef6b5d378aadb"
+    }, {
+      "name" : "_pytest.fixtures.FixtureLookupError: ('msg', <FixtureRequest for <Function test_warn>>)",
+      "children" : [ {
+        "name" : "test_warn",
+        "uid" : "a38f5e9238d36514",
+        "parentUid" : "2d7654fe7dd53a484b0ca15f6059db0e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1594179610083,
+          "stop" : 1594179610083,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "2d7654fe7dd53a484b0ca15f6059db0e"
+    }, {
+      "name" : "_pytest.fixtures.FixtureLookupError: ('msg', <FixtureRequest for <Function test_info>>)",
+      "children" : [ {
+        "name" : "test_info",
+        "uid" : "31bf410523f8db85",
+        "parentUid" : "aadf0d59df6260c7977facda63355bba",
+        "status" : "broken",
+        "time" : {
+          "start" : 1594179610092,
+          "stop" : 1594179610092,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "aadf0d59df6260c7977facda63355bba"
+    }, {
+      "name" : "_pytest.fixtures.FixtureLookupError: ('msg', <FixtureRequest for <Function test_debug>>)",
+      "children" : [ {
+        "name" : "test_debug",
+        "uid" : "b16731ad17c5458a",
+        "parentUid" : "b05ce05c6b5909b663a9ed435da66d07",
+        "status" : "broken",
+        "time" : {
+          "start" : 1594179610098,
+          "stop" : 1594179610098,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b05ce05c6b5909b663a9ed435da66d07"
+    }, {
+      "name" : "TypeError: 'bool' object is not subscriptable",
+      "children" : [ {
+        "name" : "静态IP测试",
+        "uid" : "8adb8ddae1b303cb",
+        "parentUid" : "c592040e2306d463e6685639a7b719af",
+        "status" : "broken",
+        "time" : {
+          "start" : 1594309504426,
+          "stop" : 1594309504426,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "3" ]
+      }, {
+        "name" : "静态IP测试",
+        "uid" : "4aefa11656e8ecf1",
+        "parentUid" : "c592040e2306d463e6685639a7b719af",
+        "status" : "broken",
+        "time" : {
+          "start" : 1594343172107,
+          "stop" : 1594343172107,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "4" ]
+      }, {
+        "name" : "静态IP测试",
+        "uid" : "946a24a84e3efe83",
+        "parentUid" : "c592040e2306d463e6685639a7b719af",
+        "status" : "broken",
+        "time" : {
+          "start" : 1594343172182,
+          "stop" : 1594343172182,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "5" ]
+      }, {
+        "name" : "静态IP测试",
+        "uid" : "55927e9edb5abde5",
+        "parentUid" : "c592040e2306d463e6685639a7b719af",
+        "status" : "broken",
+        "time" : {
+          "start" : 1594343172278,
+          "stop" : 1594343172278,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "6" ]
+      }, {
+        "name" : "静态IP测试",
+        "uid" : "e3da3819705bb5b1",
+        "parentUid" : "c592040e2306d463e6685639a7b719af",
+        "status" : "broken",
+        "time" : {
+          "start" : 1594343172405,
+          "stop" : 1594343172405,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "7" ]
+      }, {
+        "name" : "静态IP测试",
+        "uid" : "2ed07a9a72df0f82",
+        "parentUid" : "c592040e2306d463e6685639a7b719af",
+        "status" : "broken",
+        "time" : {
+          "start" : 1594343172443,
+          "stop" : 1594343172443,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "8" ]
+      }, {
+        "name" : "静态IP测试",
+        "uid" : "c20c4c6a123c9079",
+        "parentUid" : "c592040e2306d463e6685639a7b719af",
+        "status" : "broken",
+        "time" : {
+          "start" : 1594343172503,
+          "stop" : 1594343172503,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "9" ]
+      }, {
+        "name" : "PPPoE拨号测试",
+        "uid" : "e6db49c438557de6",
+        "parentUid" : "c592040e2306d463e6685639a7b719af",
+        "status" : "broken",
+        "time" : {
+          "start" : 1594343172560,
+          "stop" : 1594343172560,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "0" ]
+      }, {
+        "name" : "PPPoE拨号测试",
+        "uid" : "32fed0cd5c589bbf",
+        "parentUid" : "c592040e2306d463e6685639a7b719af",
+        "status" : "broken",
+        "time" : {
+          "start" : 1594343172593,
+          "stop" : 1594343172593,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "1" ]
+      }, {
+        "name" : "PPPoE拨号测试",
+        "uid" : "9805a85dcddcb047",
+        "parentUid" : "c592040e2306d463e6685639a7b719af",
+        "status" : "broken",
+        "time" : {
+          "start" : 1594343172627,
+          "stop" : 1594343172627,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "2" ]
+      }, {
+        "name" : "PPPoE拨号测试",
+        "uid" : "8c78f27b05dcaba",
+        "parentUid" : "c592040e2306d463e6685639a7b719af",
+        "status" : "broken",
+        "time" : {
+          "start" : 1594343172664,
+          "stop" : 1594343172664,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "3" ]
+      }, {
+        "name" : "PPPoE拨号测试",
+        "uid" : "927f589756f66197",
+        "parentUid" : "c592040e2306d463e6685639a7b719af",
+        "status" : "broken",
+        "time" : {
+          "start" : 1594343172699,
+          "stop" : 1594343172699,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "4" ]
+      }, {
+        "name" : "PPPoE拨号测试",
+        "uid" : "14a97bdd278e02f1",
+        "parentUid" : "c592040e2306d463e6685639a7b719af",
+        "status" : "broken",
+        "time" : {
+          "start" : 1594343172728,
+          "stop" : 1594343172728,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "5" ]
+      }, {
+        "name" : "PPPoE拨号测试",
+        "uid" : "47f33ac3827b246b",
+        "parentUid" : "c592040e2306d463e6685639a7b719af",
+        "status" : "broken",
+        "time" : {
+          "start" : 1594343172758,
+          "stop" : 1594343172758,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "6" ]
+      }, {
+        "name" : "PPPoE拨号测试",
+        "uid" : "85ef9c5db1a277b2",
+        "parentUid" : "c592040e2306d463e6685639a7b719af",
+        "status" : "broken",
+        "time" : {
+          "start" : 1594343172786,
+          "stop" : 1594343172786,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "7" ]
+      }, {
+        "name" : "PPPoE拨号测试",
+        "uid" : "85a22d2fa2cf7586",
+        "parentUid" : "c592040e2306d463e6685639a7b719af",
+        "status" : "broken",
+        "time" : {
+          "start" : 1594343172823,
+          "stop" : 1594343172823,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "8" ]
+      }, {
+        "name" : "PPPoE拨号测试",
+        "uid" : "779665cac5cdf7ec",
+        "parentUid" : "c592040e2306d463e6685639a7b719af",
+        "status" : "broken",
+        "time" : {
+          "start" : 1594343172889,
+          "stop" : 1594343172889,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "9" ]
+      }, {
+        "name" : "测试onu端口入口限速",
+        "uid" : "e45c6607b7773f07",
+        "parentUid" : "c592040e2306d463e6685639a7b719af",
+        "status" : "broken",
+        "time" : {
+          "start" : 1594343172934,
+          "stop" : 1594343172934,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "0" ]
+      }, {
+        "name" : "测试onu端口入口限速",
+        "uid" : "d5d110808f7f69ee",
+        "parentUid" : "c592040e2306d463e6685639a7b719af",
+        "status" : "broken",
+        "time" : {
+          "start" : 1594343172973,
+          "stop" : 1594343172973,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "1" ]
+      } ],
+      "uid" : "c592040e2306d463e6685639a7b719af"
+    }, {
+      "name" : "Exception: bring online port(Port_65) failed",
+      "children" : [ {
+        "name" : "测试onu端口入口限速",
+        "uid" : "6574f1ce4e72d6ae",
+        "parentUid" : "1bb3ac88aae08ce4ef7c18733b43701e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1594343979171,
+          "stop" : 1594344067769,
+          "duration" : 88598
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "8" ]
+      } ],
+      "uid" : "1bb3ac88aae08ce4ef7c18733b43701e"
+    }, {
+      "name" : "ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。",
+      "children" : [ {
+        "name" : "测试onu端口出口限速",
+        "uid" : "c8cd6e2e99b1eb37",
+        "parentUid" : "f15128fc5420b6a43779e657fef529f2",
+        "status" : "broken",
+        "time" : {
+          "start" : 1594345164276,
+          "stop" : 1594345164276,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "9" ]
+      } ],
+      "uid" : "f15128fc5420b6a43779e657fef529f2"
+    }, {
+      "name" : "IndexError: list index out of range",
+      "children" : [ {
+        "name" : "测试mapping-mode为pri",
+        "uid" : "d7eb0cd902b95524",
+        "parentUid" : "cbf21ee610ffd376e0ce643a364ade80",
+        "status" : "broken",
+        "time" : {
+          "start" : 1594694187502,
+          "stop" : 1594694229937,
+          "duration" : 42435
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "cbf21ee610ffd376e0ce643a364ade80"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  }, {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert False\n +  where False = auth_by_loid_password(<telnetlib.Telnet object at 0x0000011F795A6358>, '16', '2', '200', '200', 'user', ' ', '5A54453171200033')",
+      "children" : [ {
+        "name" : "LOID+PASSWORD认证",
+        "uid" : "db317f301ddd033a",
+        "parentUid" : "d3ad04b15b9a54896fccabc248d982ac",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594194246627,
+          "stop" : 1594194257235,
+          "duration" : 10608
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d3ad04b15b9a54896fccabc248d982ac"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = dhcp_test('ASIX AX88772C USB2.0 to Fast Ethernet Adapter')",
+      "children" : [ {
+        "name" : "DHCP测试",
+        "uid" : "4f948311c601fc34",
+        "parentUid" : "cda852156d4b3fafa8b5bbb6d97cbe94",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594196143976,
+          "stop" : 1594196292905,
+          "duration" : 148929
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "cda852156d4b3fafa8b5bbb6d97cbe94"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = static_ip_test('ASIX AX88772C USB2.0 to Fast Ethernet Adapter')",
+      "children" : [ {
+        "name" : "静态IP测试",
+        "uid" : "91626dd70fdceae2",
+        "parentUid" : "885fa134b504a8b83bc8d6d4d4e7d1c7",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594196318350,
+          "stop" : 1594196452777,
+          "duration" : 134427
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "885fa134b504a8b83bc8d6d4d4e7d1c7"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = pppoe_connect('宽带连接', 'csb_1', 'csb_1')",
+      "children" : [ {
+        "name" : "PPPoE拨号测试",
+        "uid" : "69323f0015ba4c9",
+        "parentUid" : "c151c9c1095d65d341267104d4aae04d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594196477973,
+          "stop" : 1594196492960,
+          "duration" : 14987
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c151c9c1095d65d341267104d4aae04d"
+    }, {
+      "name" : "AssertionError: assert 'FAIL' == 'PASS'\n  - FAIL\n  + PASS",
+      "children" : [ {
+        "name" : "测试onu端口vlan为translate",
+        "uid" : "110c2bfd19fbf641",
+        "parentUid" : "3cb6eb6475a7419eaf3ff869431443c5",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594282957301,
+          "stop" : 1594283039325,
+          "duration" : 82024
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "1" ]
+      }, {
+        "name" : "测试onu组播正常不通的情况",
+        "uid" : "dd098d8519c5d5a",
+        "parentUid" : "3cb6eb6475a7419eaf3ff869431443c5",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594693275940,
+          "stop" : 1594693356768,
+          "duration" : 80828
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "3cb6eb6475a7419eaf3ff869431443c5"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = auth_by_sn(<telnetlib.Telnet object at 0x0000026C3BDB3B70>, '16', '2', '200', '200', '5A54453171200033')",
+      "children" : [ {
+        "name" : "测试onu端口vlan为translate",
+        "uid" : "2242a6f84245939d",
+        "parentUid" : "74927083717904c91170d7f251c1767a",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594283065834,
+          "stop" : 1594283084248,
+          "duration" : 18414
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "2" ]
+      } ],
+      "uid" : "74927083717904c91170d7f251c1767a"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = auth_by_sn(<telnetlib.Telnet object at 0x0000026C3BD4D9B0>, '16', '2', '200', '200', '5A54453171200033')",
+      "children" : [ {
+        "name" : "测试onu端口vlan为translate",
+        "uid" : "f57bd2aa4de80abc",
+        "parentUid" : "c8ba6fe13539ba419800a7150e94be3e",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594283109532,
+          "stop" : 1594283124668,
+          "duration" : 15136
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "3" ]
+      } ],
+      "uid" : "c8ba6fe13539ba419800a7150e94be3e"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = auth_by_loid(<telnetlib.Telnet object at 0x000001EB187A90F0>, '16', '2', '200', '200', 'user', '5A54453171200033')",
+      "children" : [ {
+        "name" : "LOID认证",
+        "uid" : "d14a780f17a02722",
+        "parentUid" : "372daefc427444b58708a7cacfc59a6b",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594298801955,
+          "stop" : 1594298866895,
+          "duration" : 64940
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "2" ]
+      } ],
+      "uid" : "372daefc427444b58708a7cacfc59a6b"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB187B24A8>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "LOID认证",
+        "uid" : "5f2eb30d8fb4baa7",
+        "parentUid" : "47f6c05b662f672a9b355d4f6d100358",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594298940237,
+          "stop" : 1594298999715,
+          "duration" : 59478
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "3" ]
+      } ],
+      "uid" : "47f6c05b662f672a9b355d4f6d100358"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB1886D470>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "LOID认证",
+        "uid" : "207cdc772211d13",
+        "parentUid" : "46f3b6e161a06d1e994e5105948ea118",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594299072251,
+          "stop" : 1594299131738,
+          "duration" : 59487
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "4" ]
+      } ],
+      "uid" : "46f3b6e161a06d1e994e5105948ea118"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB187BF6A0>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "LOID认证",
+        "uid" : "8019c3a2d443d9ff",
+        "parentUid" : "36e9ec0ac9faf9caa4a49cfa1bbc63d7",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594299204252,
+          "stop" : 1594299263738,
+          "duration" : 59486
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "5" ]
+      } ],
+      "uid" : "36e9ec0ac9faf9caa4a49cfa1bbc63d7"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB1886D2B0>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "LOID认证",
+        "uid" : "93fea33de2d26c77",
+        "parentUid" : "955de89d11be3212003c2f34495da579",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594299336156,
+          "stop" : 1594299396022,
+          "duration" : 59866
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "6" ]
+      } ],
+      "uid" : "955de89d11be3212003c2f34495da579"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB1888EE48>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "LOID认证",
+        "uid" : "8f2ea15bd5a128a8",
+        "parentUid" : "a24f3434f477b065f2dda001611be0e3",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594299469094,
+          "stop" : 1594299529173,
+          "duration" : 60079
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "7" ]
+      } ],
+      "uid" : "a24f3434f477b065f2dda001611be0e3"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB1889DC50>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "LOID认证",
+        "uid" : "e20c35c6368c057",
+        "parentUid" : "42e732a1e36ba9e30cea2a58c268463f",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594299601723,
+          "stop" : 1594299661107,
+          "duration" : 59384
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "8" ]
+      } ],
+      "uid" : "42e732a1e36ba9e30cea2a58c268463f"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB1888E7F0>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "LOID认证",
+        "uid" : "b641f6ef216dc510",
+        "parentUid" : "7ad9925610514a5c6095c2885a080126",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594299733595,
+          "stop" : 1594299793036,
+          "duration" : 59441
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "9" ]
+      } ],
+      "uid" : "7ad9925610514a5c6095c2885a080126"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB188EA4A8>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "LOID+PASSWORD认证",
+        "uid" : "c1a3292c3807b78c",
+        "parentUid" : "e6db6dcec8bb9965f7fafbecfa684471",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594299865453,
+          "stop" : 1594299924882,
+          "duration" : 59429
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "0" ]
+      } ],
+      "uid" : "e6db6dcec8bb9965f7fafbecfa684471"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB1888EF60>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "LOID+PASSWORD认证",
+        "uid" : "6355c451b0d83eda",
+        "parentUid" : "ecc60c2dd4c3c925407d2449559ac8be",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594299997390,
+          "stop" : 1594300056769,
+          "duration" : 59379
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "1" ]
+      } ],
+      "uid" : "ecc60c2dd4c3c925407d2449559ac8be"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB188F76A0>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "LOID+PASSWORD认证",
+        "uid" : "4ff9742e36748682",
+        "parentUid" : "47c92936a3c44f674f86822892404cb8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594300129284,
+          "stop" : 1594300189268,
+          "duration" : 59984
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "2" ]
+      }, {
+        "name" : "测试mapping-mode为pri",
+        "uid" : "c18720df2c6a61b8",
+        "parentUid" : "47c92936a3c44f674f86822892404cb8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594305684954,
+          "stop" : 1594305744722,
+          "duration" : 59768
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "4" ]
+      } ],
+      "uid" : "47c92936a3c44f674f86822892404cb8"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB188EAF98>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "LOID+PASSWORD认证",
+        "uid" : "e185572bed9bc534",
+        "parentUid" : "896c00505f7812f17cb8668f5df5761e",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594300261689,
+          "stop" : 1594300321799,
+          "duration" : 60110
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "3" ]
+      } ],
+      "uid" : "896c00505f7812f17cb8668f5df5761e"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB1889D550>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "LOID+PASSWORD认证",
+        "uid" : "cb067d2e889e5254",
+        "parentUid" : "4356811e63ae318011d8171f9093e0e0",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594300394718,
+          "stop" : 1594300454151,
+          "duration" : 59433
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "4" ]
+      } ],
+      "uid" : "4356811e63ae318011d8171f9093e0e0"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB18899630>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "LOID+PASSWORD认证",
+        "uid" : "b756604c9141f98e",
+        "parentUid" : "c894a075431dc74687359aa5c0c9553a",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594300526674,
+          "stop" : 1594300586565,
+          "duration" : 59891
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "5" ]
+      } ],
+      "uid" : "c894a075431dc74687359aa5c0c9553a"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB18903278>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "LOID+PASSWORD认证",
+        "uid" : "9dab592f25b3cfa9",
+        "parentUid" : "3426a04c63189bcbc70b028cfe7c8bb2",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594300658999,
+          "stop" : 1594300718494,
+          "duration" : 59495
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "6" ]
+      } ],
+      "uid" : "3426a04c63189bcbc70b028cfe7c8bb2"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB1843C0B8>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "LOID+PASSWORD认证",
+        "uid" : "3095bfa32bd5de36",
+        "parentUid" : "40e9da9915b975e91cb745e272ec90fd",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594300791063,
+          "stop" : 1594300850520,
+          "duration" : 59457
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "7" ]
+      } ],
+      "uid" : "40e9da9915b975e91cb745e272ec90fd"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB184756A0>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "LOID+PASSWORD认证",
+        "uid" : "1e3d144837037861",
+        "parentUid" : "74dbf5e22a6e37521702bfb682fba917",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594300923093,
+          "stop" : 1594300983174,
+          "duration" : 60081
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "8" ]
+      } ],
+      "uid" : "74dbf5e22a6e37521702bfb682fba917"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB185FC860>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "LOID+PASSWORD认证",
+        "uid" : "c49ea642c4a2e142",
+        "parentUid" : "fd3e8c61cc6bea3aeb185278d497f386",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594301055688,
+          "stop" : 1594301115122,
+          "duration" : 59434
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "9" ]
+      } ],
+      "uid" : "fd3e8c61cc6bea3aeb185278d497f386"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB184D9C18>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "测试mapping为transaprent",
+        "uid" : "9e555ae540cade77",
+        "parentUid" : "31c4a7e50665c75bf1ec87bcfa79808d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594301188064,
+          "stop" : 1594301247616,
+          "duration" : 59552
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "0" ]
+      } ],
+      "uid" : "31c4a7e50665c75bf1ec87bcfa79808d"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB1864E908>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "测试mapping为transaprent",
+        "uid" : "1185641de187dc0",
+        "parentUid" : "79f0ea589b74424552775e286e19d1bb",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594301320156,
+          "stop" : 1594301379481,
+          "duration" : 59325
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "1" ]
+      } ],
+      "uid" : "79f0ea589b74424552775e286e19d1bb"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB188EAAC8>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "测试mapping为transaprent",
+        "uid" : "481f224a4a601c81",
+        "parentUid" : "6a40df3cf5eb3f351a11bae94ac1b9a2",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594301452046,
+          "stop" : 1594301511469,
+          "duration" : 59423
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "2" ]
+      } ],
+      "uid" : "6a40df3cf5eb3f351a11bae94ac1b9a2"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB187C95F8>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "测试mapping为transaprent",
+        "uid" : "623ad51719f4450f",
+        "parentUid" : "d764498cb42cdf4b9cc60320e419451c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594301584001,
+          "stop" : 1594301643466,
+          "duration" : 59465
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "3" ]
+      } ],
+      "uid" : "d764498cb42cdf4b9cc60320e419451c"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB1844C908>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "测试mapping为transaprent",
+        "uid" : "1a166ed55f980045",
+        "parentUid" : "269d68757383cdcc6b0893ef309e38ff",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594301716376,
+          "stop" : 1594301776038,
+          "duration" : 59662
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "4" ]
+      } ],
+      "uid" : "269d68757383cdcc6b0893ef309e38ff"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB185AB5C0>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "测试mapping为transaprent",
+        "uid" : "1b3417a947a517f3",
+        "parentUid" : "216293b3140cea44a48814bb57459ac0",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594301848594,
+          "stop" : 1594301907897,
+          "duration" : 59303
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "5" ]
+      } ],
+      "uid" : "216293b3140cea44a48814bb57459ac0"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB1843CF60>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "测试mapping为transaprent",
+        "uid" : "b8459ab37f590f05",
+        "parentUid" : "3348eda5df8bd62d38c8a38c7ce32c26",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594301980432,
+          "stop" : 1594302040184,
+          "duration" : 59752
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "6" ]
+      } ],
+      "uid" : "3348eda5df8bd62d38c8a38c7ce32c26"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB18903390>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "测试mapping为transaprent",
+        "uid" : "4462a0fa33cdb7bb",
+        "parentUid" : "c97b2253e43e7760903f967609393b08",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594302112689,
+          "stop" : 1594302172378,
+          "duration" : 59689
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "7" ]
+      } ],
+      "uid" : "c97b2253e43e7760903f967609393b08"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB1889DCF8>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "测试mapping为transaprent",
+        "uid" : "dceb821a3b3570ac",
+        "parentUid" : "9c21cc9dd8a2d38b3c5bc5c1ff57a34a",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594302245348,
+          "stop" : 1594302305306,
+          "duration" : 59958
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "8" ]
+      } ],
+      "uid" : "9c21cc9dd8a2d38b3c5bc5c1ff57a34a"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB1886DA58>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "测试mapping为transaprent",
+        "uid" : "7742a8dff776312f",
+        "parentUid" : "ce59e934eb05e3e2541d04ba0ae0051f",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594302378222,
+          "stop" : 1594302438278,
+          "duration" : 60056
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "9" ]
+      } ],
+      "uid" : "ce59e934eb05e3e2541d04ba0ae0051f"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB1503AC50>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "测试mapping-mode为vlan",
+        "uid" : "bfec87dc292a19c5",
+        "parentUid" : "82827b7125c7a2cc3de9e4197ee09363",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594302510814,
+          "stop" : 1594302570624,
+          "duration" : 59810
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "0" ]
+      } ],
+      "uid" : "82827b7125c7a2cc3de9e4197ee09363"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB18424D30>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "测试mapping-mode为vlan",
+        "uid" : "6cd51f28cdaf674c",
+        "parentUid" : "363fb085ddb4e9724e78154be529d8ee",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594302643171,
+          "stop" : 1594302702997,
+          "duration" : 59826
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "1" ]
+      } ],
+      "uid" : "363fb085ddb4e9724e78154be529d8ee"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB188EADA0>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "测试mapping-mode为vlan",
+        "uid" : "8809bc1c1972c911",
+        "parentUid" : "f025ebbfd05b0a6c7a1976e8a6a70af0",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594302775422,
+          "stop" : 1594302835725,
+          "duration" : 60303
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "2" ]
+      } ],
+      "uid" : "f025ebbfd05b0a6c7a1976e8a6a70af0"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB18903F28>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "测试mapping-mode为vlan",
+        "uid" : "47cc37df36d0981e",
+        "parentUid" : "676c2a43b71c92e3a08ef805b3a00aa7",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594302908378,
+          "stop" : 1594302968063,
+          "duration" : 59685
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "3" ]
+      } ],
+      "uid" : "676c2a43b71c92e3a08ef805b3a00aa7"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB1888E160>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "测试mapping-mode为vlan",
+        "uid" : "301cd5609c8a1cfd",
+        "parentUid" : "6503fc52efaf2be55a122cfc72547a92",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594303040593,
+          "stop" : 1594303100594,
+          "duration" : 60001
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "4" ]
+      } ],
+      "uid" : "6503fc52efaf2be55a122cfc72547a92"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB1886DB00>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "测试mapping-mode为vlan",
+        "uid" : "c9d9badbdb281d5f",
+        "parentUid" : "3d2e3bd27c9c5b30f813910c98177341",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594303173142,
+          "stop" : 1594303232575,
+          "duration" : 59433
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "5" ]
+      } ],
+      "uid" : "3d2e3bd27c9c5b30f813910c98177341"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB188FB080>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "测试mapping-mode为vlan",
+        "uid" : "e960105f93c731fe",
+        "parentUid" : "92b63aaf42470a2dcbfd8d7fdce55000",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594303305159,
+          "stop" : 1594303364607,
+          "duration" : 59448
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "6" ]
+      } ],
+      "uid" : "92b63aaf42470a2dcbfd8d7fdce55000"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB188A7668>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "测试mapping-mode为vlan",
+        "uid" : "5b7c9affdb2c510",
+        "parentUid" : "f998a009cfa489780389794ce57ea67b",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594303437563,
+          "stop" : 1594303497403,
+          "duration" : 59840
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "7" ]
+      } ],
+      "uid" : "f998a009cfa489780389794ce57ea67b"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB18912C18>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "测试mapping-mode为vlan",
+        "uid" : "c9b76c584ba5be85",
+        "parentUid" : "4f967b0bbf23291dfb7aec341c8ca7bd",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594303569971,
+          "stop" : 1594303629563,
+          "duration" : 59592
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "8" ]
+      } ],
+      "uid" : "4f967b0bbf23291dfb7aec341c8ca7bd"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB1892FD68>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "测试mapping-mode为vlan",
+        "uid" : "3273e89a83fc345a",
+        "parentUid" : "f297d3175d75d59870bd039b76211ea8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594303702032,
+          "stop" : 1594303761540,
+          "duration" : 59508
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "9" ]
+      } ],
+      "uid" : "f297d3175d75d59870bd039b76211ea8"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB1886DF28>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "测试mapping-mode为vlan_pri",
+        "uid" : "17d14970d44e2e19",
+        "parentUid" : "0fd34772000e6e4258d5e7fc9dd643e5",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594303834078,
+          "stop" : 1594303893561,
+          "duration" : 59483
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "0" ]
+      } ],
+      "uid" : "0fd34772000e6e4258d5e7fc9dd643e5"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB18903A20>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "测试mapping-mode为vlan_pri",
+        "uid" : "a02a83026211cfd1",
+        "parentUid" : "eb49e55e3e8a72a6fe0d8c12ad27c3b2",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594303966124,
+          "stop" : 1594304025563,
+          "duration" : 59439
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "1" ]
+      } ],
+      "uid" : "eb49e55e3e8a72a6fe0d8c12ad27c3b2"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB188FB5C0>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "测试mapping-mode为vlan_pri",
+        "uid" : "8c23d2eaa9247c55",
+        "parentUid" : "6eb8f832eddaf7d1943b8a92d9c1c8ad",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594304098061,
+          "stop" : 1594304157836,
+          "duration" : 59775
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "2" ]
+      } ],
+      "uid" : "6eb8f832eddaf7d1943b8a92d9c1c8ad"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB1889DA90>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "测试mapping-mode为vlan_pri",
+        "uid" : "28d7dbe2a47fdd20",
+        "parentUid" : "7f112cf6e76b2dca9901e5864b668b28",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594304230344,
+          "stop" : 1594304290084,
+          "duration" : 59740
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "3" ]
+      } ],
+      "uid" : "7f112cf6e76b2dca9901e5864b668b28"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB188F7160>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "测试mapping-mode为vlan_pri",
+        "uid" : "a52ccc98973aed60",
+        "parentUid" : "987f0004f637bbe7aa59f9c92f5a97b4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594304362515,
+          "stop" : 1594304421974,
+          "duration" : 59459
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "4" ]
+      } ],
+      "uid" : "987f0004f637bbe7aa59f9c92f5a97b4"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB18929860>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "测试mapping-mode为vlan_pri",
+        "uid" : "42e78780a9f7d977",
+        "parentUid" : "53b2bebf5384ff1d4ea7618369299eb7",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594304494501,
+          "stop" : 1594304553995,
+          "duration" : 59494
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "5" ]
+      } ],
+      "uid" : "53b2bebf5384ff1d4ea7618369299eb7"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB189594E0>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "测试mapping-mode为vlan_pri",
+        "uid" : "4c36be5994d44565",
+        "parentUid" : "e5b0b05bfdb299e637d8425241d8cb47",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594304626578,
+          "stop" : 1594304686023,
+          "duration" : 59445
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "6" ]
+      } ],
+      "uid" : "e5b0b05bfdb299e637d8425241d8cb47"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB188B3BA8>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "测试mapping-mode为vlan_pri",
+        "uid" : "909a299b06350f17",
+        "parentUid" : "6867f096406826abe36da5adae8beaee",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594304758956,
+          "stop" : 1594304818471,
+          "duration" : 59515
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "7" ]
+      } ],
+      "uid" : "6867f096406826abe36da5adae8beaee"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB18424CC0>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "测试mapping-mode为vlan_pri",
+        "uid" : "3c303e790c582e50",
+        "parentUid" : "8ac05ff95f6c37d132899c215e8e5b8f",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594304891252,
+          "stop" : 1594304950697,
+          "duration" : 59445
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "8" ]
+      } ],
+      "uid" : "8ac05ff95f6c37d132899c215e8e5b8f"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB185FCA90>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "测试mapping-mode为vlan_pri",
+        "uid" : "2098379fdf5c544a",
+        "parentUid" : "e338f8f1e903ce7834d73420a3a1a9ea",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594305023372,
+          "stop" : 1594305082788,
+          "duration" : 59416
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "9" ]
+      } ],
+      "uid" : "e338f8f1e903ce7834d73420a3a1a9ea"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB1886D2E8>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "测试mapping-mode为pri",
+        "uid" : "230b1ffb63cae0d4",
+        "parentUid" : "da9d1af5c3cfd79e68c67765c8597099",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594305156331,
+          "stop" : 1594305215782,
+          "duration" : 59451
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "0" ]
+      } ],
+      "uid" : "da9d1af5c3cfd79e68c67765c8597099"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB150404E0>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "测试mapping-mode为pri",
+        "uid" : "65bc3cbf534b233d",
+        "parentUid" : "3fbeeb622bf93784cc01045e07a7c380",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594305288203,
+          "stop" : 1594305348215,
+          "duration" : 60012
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "1" ]
+      } ],
+      "uid" : "3fbeeb622bf93784cc01045e07a7c380"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB1892F908>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "测试mapping-mode为pri",
+        "uid" : "b8787569b30e8459",
+        "parentUid" : "13c0296c653b6bfd577c631ca56830ce",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594305420780,
+          "stop" : 1594305480539,
+          "duration" : 59759
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "2" ]
+      } ],
+      "uid" : "13c0296c653b6bfd577c631ca56830ce"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB18929DA0>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "测试mapping-mode为pri",
+        "uid" : "feda76e68d8b13e5",
+        "parentUid" : "2506d6e9051f7a67080556b6df2b6656",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594305553095,
+          "stop" : 1594305612391,
+          "duration" : 59296
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "3" ]
+      } ],
+      "uid" : "2506d6e9051f7a67080556b6df2b6656"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB1894F4E0>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "测试mapping-mode为pri",
+        "uid" : "77eaf29785f109f2",
+        "parentUid" : "0f7279fb3070957d3aa2bdce4c1133be",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594305817269,
+          "stop" : 1594305877124,
+          "duration" : 59855
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "5" ]
+      } ],
+      "uid" : "0f7279fb3070957d3aa2bdce4c1133be"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB1888E668>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "测试mapping-mode为pri",
+        "uid" : "2b890d81936dc2da",
+        "parentUid" : "59858e58b941f95653a72c985dc5a8f0",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594305949660,
+          "stop" : 1594306009664,
+          "duration" : 60004
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "6" ]
+      } ],
+      "uid" : "59858e58b941f95653a72c985dc5a8f0"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB18959240>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "测试mapping-mode为pri",
+        "uid" : "de1579a9571b7b25",
+        "parentUid" : "6dc993649f1f2f2d8a0f33570a90f047",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594306082284,
+          "stop" : 1594306142221,
+          "duration" : 59937
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "7" ]
+      } ],
+      "uid" : "6dc993649f1f2f2d8a0f33570a90f047"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB18903B00>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "测试mapping-mode为pri",
+        "uid" : "eedcb6fc251b21dd",
+        "parentUid" : "507250394bb9f225a19fe4f39db0c7bf",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594306214884,
+          "stop" : 1594306274298,
+          "duration" : 59414
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "8" ]
+      } ],
+      "uid" : "507250394bb9f225a19fe4f39db0c7bf"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB188A7588>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "测试mapping-mode为pri",
+        "uid" : "c46eead6eb1670aa",
+        "parentUid" : "607c20943d7897dd2ef2b88803d47a3c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594306346989,
+          "stop" : 1594306406425,
+          "duration" : 59436
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "9" ]
+      } ],
+      "uid" : "607c20943d7897dd2ef2b88803d47a3c"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB188FBE48>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "测试mapping-mode为port",
+        "uid" : "5f5c82ac515dd4e8",
+        "parentUid" : "dcc0d54db1552ad782209ded239e0d9f",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594306479329,
+          "stop" : 1594306538759,
+          "duration" : 59430
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "0" ]
+      } ],
+      "uid" : "dcc0d54db1552ad782209ded239e0d9f"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB18941160>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "测试mapping-mode为port",
+        "uid" : "be0ca36d0f7d0768",
+        "parentUid" : "5d11bd8194aaae9565650718fd7862db",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594306611657,
+          "stop" : 1594306671041,
+          "duration" : 59384
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "1" ]
+      } ],
+      "uid" : "5d11bd8194aaae9565650718fd7862db"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB188CB9E8>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "测试mapping-mode为port",
+        "uid" : "1c11edea62d874cb",
+        "parentUid" : "aa7f8053093a01b2261bce57adb50e32",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594306744218,
+          "stop" : 1594306801210,
+          "duration" : 56992
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "2" ]
+      } ],
+      "uid" : "aa7f8053093a01b2261bce57adb50e32"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB188D0208>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "测试mapping-mode为port",
+        "uid" : "c440e3b99b8a4f2",
+        "parentUid" : "d90ae9125708f237202ff55300c7f014",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594306873671,
+          "stop" : 1594306933575,
+          "duration" : 59904
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "3" ]
+      } ],
+      "uid" : "d90ae9125708f237202ff55300c7f014"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB1889DD68>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "测试mapping-mode为port",
+        "uid" : "ffb2f0a566644f39",
+        "parentUid" : "e2a01c6508c26d988e451dc7abda88c0",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594307007078,
+          "stop" : 1594307067011,
+          "duration" : 59933
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "4" ]
+      } ],
+      "uid" : "e2a01c6508c26d988e451dc7abda88c0"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB18912D30>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "测试mapping-mode为port",
+        "uid" : "cccce54a18ad8b5a",
+        "parentUid" : "f0942744c6cbd7692f37b5b5af7ea9d4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594307139561,
+          "stop" : 1594307198949,
+          "duration" : 59388
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "5" ]
+      } ],
+      "uid" : "f0942744c6cbd7692f37b5b5af7ea9d4"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB188FB400>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "测试mapping-mode为port",
+        "uid" : "c3841f6494b8bb1c",
+        "parentUid" : "aa6fc5cb4d85cb6690f54e83f72f92e9",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594307271546,
+          "stop" : 1594307330990,
+          "duration" : 59444
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "6" ]
+      } ],
+      "uid" : "aa6fc5cb4d85cb6690f54e83f72f92e9"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB188A7080>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "测试mapping-mode为port",
+        "uid" : "1da0385db13cf115",
+        "parentUid" : "05109b820921395f0e255697f97025cf",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594307403499,
+          "stop" : 1594307462970,
+          "duration" : 59471
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "7" ]
+      } ],
+      "uid" : "05109b820921395f0e255697f97025cf"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB188C5A90>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "测试mapping-mode为port",
+        "uid" : "7d88ea35a712ca57",
+        "parentUid" : "0ffe6ea013edfbb73c970b070365fb79",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594307535375,
+          "stop" : 1594307594849,
+          "duration" : 59474
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "8" ]
+      } ],
+      "uid" : "0ffe6ea013edfbb73c970b070365fb79"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB18944748>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "测试mapping-mode为port",
+        "uid" : "19ce85f398f7a820",
+        "parentUid" : "809a2e5ef17b469beca2c16cb1f7f29a",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594307667376,
+          "stop" : 1594307727064,
+          "duration" : 59688
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "9" ]
+      } ],
+      "uid" : "809a2e5ef17b469beca2c16cb1f7f29a"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB1892F0B8>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "DHCP测试",
+        "uid" : "78e9ef6ff44c1ef2",
+        "parentUid" : "dae1e66c6f173f3ff27f58b847ac9ef3",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594307799438,
+          "stop" : 1594307859019,
+          "duration" : 59581
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "0" ]
+      } ],
+      "uid" : "dae1e66c6f173f3ff27f58b847ac9ef3"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB15040400>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "DHCP测试",
+        "uid" : "521c1a4c73bf0411",
+        "parentUid" : "58fb3e09136a7c9f3e57a61275a00b42",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594307931466,
+          "stop" : 1594307990939,
+          "duration" : 59473
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "1" ]
+      } ],
+      "uid" : "58fb3e09136a7c9f3e57a61275a00b42"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB188CE4A8>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "DHCP测试",
+        "uid" : "447f08945e54c31c",
+        "parentUid" : "c0a9835a0069924f40a466ece9598b75",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594308063407,
+          "stop" : 1594308122794,
+          "duration" : 59387
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "2" ]
+      } ],
+      "uid" : "c0a9835a0069924f40a466ece9598b75"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB188D0FD0>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "DHCP测试",
+        "uid" : "280a018dc089f3c4",
+        "parentUid" : "7130407e81b6c8b86c27f22f4224295d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594308195705,
+          "stop" : 1594308255826,
+          "duration" : 60121
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "3" ]
+      } ],
+      "uid" : "7130407e81b6c8b86c27f22f4224295d"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB18941358>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "DHCP测试",
+        "uid" : "86b3911d4be0300b",
+        "parentUid" : "46f7d01715e45c2ca64a58c009ff0901",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594308328560,
+          "stop" : 1594308387902,
+          "duration" : 59342
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "4" ]
+      } ],
+      "uid" : "46f7d01715e45c2ca64a58c009ff0901"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB188F7CC0>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "DHCP测试",
+        "uid" : "b41ee9e43585bc97",
+        "parentUid" : "9b4a38e89005f1117a3d7f7ab63cba33",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594308460469,
+          "stop" : 1594308519873,
+          "duration" : 59404
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "5" ]
+      } ],
+      "uid" : "9b4a38e89005f1117a3d7f7ab63cba33"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB189125F8>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "DHCP测试",
+        "uid" : "8f14850b0af15a85",
+        "parentUid" : "83c9d2063af9d6b8e0f637b697fbf1bc",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594308592738,
+          "stop" : 1594308652636,
+          "duration" : 59898
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "6" ]
+      } ],
+      "uid" : "83c9d2063af9d6b8e0f637b697fbf1bc"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB1894F518>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "DHCP测试",
+        "uid" : "14c5dbef3b0f1b95",
+        "parentUid" : "f8e966878ec8b753e4c8f08b145e88d0",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594308725380,
+          "stop" : 1594308784851,
+          "duration" : 59471
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "7" ]
+      } ],
+      "uid" : "f8e966878ec8b753e4c8f08b145e88d0"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB15040518>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "DHCP测试",
+        "uid" : "7107592d16f6c2b6",
+        "parentUid" : "adb1bfb8991612010d7218a7de5f7b53",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594308857499,
+          "stop" : 1594308916970,
+          "duration" : 59471
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "8" ]
+      } ],
+      "uid" : "adb1bfb8991612010d7218a7de5f7b53"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB188996D8>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "DHCP测试",
+        "uid" : "24f9870f59b25294",
+        "parentUid" : "473099b1f9f0ad21df4b0b2b0e3fc13f",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594308989345,
+          "stop" : 1594309048907,
+          "duration" : 59562
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "9" ]
+      } ],
+      "uid" : "473099b1f9f0ad21df4b0b2b0e3fc13f"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB188CEE48>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "静态IP测试",
+        "uid" : "6b824cf7f66dcf9c",
+        "parentUid" : "987391fe598fc620fd6fcd0826ba31a1",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594309121349,
+          "stop" : 1594309180968,
+          "duration" : 59619
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "0" ]
+      } ],
+      "uid" : "987391fe598fc620fd6fcd0826ba31a1"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB188B3978>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "静态IP测试",
+        "uid" : "3e955b2d45c3e460",
+        "parentUid" : "ed97d8cb3dd1b0cb8b7b1a7d7d7abf74",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594309253419,
+          "stop" : 1594309312838,
+          "duration" : 59419
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "1" ]
+      } ],
+      "uid" : "ed97d8cb3dd1b0cb8b7b1a7d7d7abf74"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB188CBB70>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "静态IP测试",
+        "uid" : "e402a96f8d6c0e99",
+        "parentUid" : "abb4e36cdbfd8861462d66fe3cdfb991",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594309385408,
+          "stop" : 1594309444805,
+          "duration" : 59397
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "2" ]
+      } ],
+      "uid" : "abb4e36cdbfd8861462d66fe3cdfb991"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB189266A0>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "测试onu端口入口限速",
+        "uid" : "f14e4f403296d444",
+        "parentUid" : "3553c590577618fd01e0e9474051fb97",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594343186862,
+          "stop" : 1594343246307,
+          "duration" : 59445
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "2" ]
+      } ],
+      "uid" : "3553c590577618fd01e0e9474051fb97"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB189594A8>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "测试onu端口入口限速",
+        "uid" : "342bf01aee079e17",
+        "parentUid" : "34c43cc899423628e8df3fbae5ea7db5",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594343318670,
+          "stop" : 1594343377902,
+          "duration" : 59232
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "3" ]
+      } ],
+      "uid" : "34c43cc899423628e8df3fbae5ea7db5"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB18978B70>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "测试onu端口入口限速",
+        "uid" : "9e64747121cc7904",
+        "parentUid" : "ffbba69018635aadc6dca7d8b6a523f7",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594343450250,
+          "stop" : 1594343509730,
+          "duration" : 59480
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "4" ]
+      } ],
+      "uid" : "ffbba69018635aadc6dca7d8b6a523f7"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB18944A90>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "测试onu端口入口限速",
+        "uid" : "9fee7ece556288aa",
+        "parentUid" : "d76cf7dd1956088c10d9e67baa3119b8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594343584060,
+          "stop" : 1594343643409,
+          "duration" : 59349
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "5" ]
+      } ],
+      "uid" : "d76cf7dd1956088c10d9e67baa3119b8"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB18A71860>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "测试onu端口入口限速",
+        "uid" : "e0cfdcb2baa26249",
+        "parentUid" : "128e74ae483e3da0e4a5ff38fb67bae8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594343715751,
+          "stop" : 1594343775039,
+          "duration" : 59288
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "6" ]
+      } ],
+      "uid" : "128e74ae483e3da0e4a5ff38fb67bae8"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB18A64160>, '16', '2', '5A54453171200033')",
+      "children" : [ {
+        "name" : "测试onu端口入口限速",
+        "uid" : "996a3f6deb60d2ac",
+        "parentUid" : "26e10dcd80f4d5183693f3d247b1f08a",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594343847436,
+          "stop" : 1594343906743,
+          "duration" : 59307
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "7" ]
+      } ],
+      "uid" : "26e10dcd80f4d5183693f3d247b1f08a"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

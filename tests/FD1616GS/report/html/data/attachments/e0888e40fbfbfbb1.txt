@@ -1,0 +1,6 @@
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 ONT LOID+PASSWORD认证测试
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 ONU在OLT上被重新被发现。
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 当前ONU_ID没有被占用。
+[31m[1mERROR   [0m CDATA:Cdata_loggers.py:97 ONU在OLT上添加失败。
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 ONU在OLT上删除成功
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 ONU在OLT上被重新被发现。

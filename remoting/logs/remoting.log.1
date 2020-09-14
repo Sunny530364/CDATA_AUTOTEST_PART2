@@ -1,0 +1,217 @@
+七月 14, 2020 3:59:15 下午 org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver resolve
+信息: Remoting server accepts the following protocols: [JNLP4-connect, JNLP-connect, Ping, JNLP2-connect]
+七月 14, 2020 4:01:46 下午 org.jenkinsci.remoting.util.AnonymousClassWarnings warn
+警告: Attempt to (de-)serialize anonymous class ru.yandex.qatools.allure.jenkins.utils.BuildUtils$1; see: https://jenkins.io/redirect/serialization-of-anonymous-classes/
+七月 14, 2020 4:01:46 下午 org.jenkinsci.remoting.util.AnonymousClassWarnings warn
+警告: Attempt to (de-)serialize anonymous class ru.yandex.qatools.allure.jenkins.tools.AllureCommandlineInstallation$2; see: https://jenkins.io/redirect/serialization-of-anonymous-classes/
+七月 14, 2020 4:01:46 下午 org.jenkinsci.remoting.util.AnonymousClassWarnings warn
+警告: Attempt to (de-)serialize anonymous class ru.yandex.qatools.allure.jenkins.tools.AllureCommandlineInstallation$1; see: https://jenkins.io/redirect/serialization-of-anonymous-classes/
+七月 15, 2020 8:56:49 上午 hudson.Launcher$RemoteLaunchCallable$1 join
+信息: Failed to synchronize IO streams on the channel hudson.remoting.Channel@48e521e0:JNLP4-connect connection to 192.168.6.232/192.168.6.232:45571
+hudson.remoting.ChannelClosedException: Channel "hudson.remoting.Channel@48e521e0:JNLP4-connect connection to 192.168.6.232/192.168.6.232:45571": Remote call on JNLP4-connect connection to 192.168.6.232/192.168.6.232:45571 failed. The channel is closing down or has closed down
+	at hudson.remoting.Channel.call(Channel.java:948)
+	at hudson.remoting.Channel.syncIO(Channel.java:1683)
+	at hudson.Launcher$RemoteLaunchCallable$1.join(Launcher.java:1331)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at hudson.remoting.RemoteInvocationHandler$RPCRequest.perform(RemoteInvocationHandler.java:929)
+	at hudson.remoting.RemoteInvocationHandler$RPCRequest.call(RemoteInvocationHandler.java:903)
+	at hudson.remoting.RemoteInvocationHandler$RPCRequest.call(RemoteInvocationHandler.java:855)
+	at hudson.remoting.UserRequest.perform(UserRequest.java:211)
+	at hudson.remoting.UserRequest.perform(UserRequest.java:54)
+	at hudson.remoting.Request$2.run(Request.java:369)
+	at hudson.remoting.InterceptingExecutorService$1.call(InterceptingExecutorService.java:72)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at hudson.remoting.Engine$1.lambda$newThread$0(Engine.java:97)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.nio.channels.ClosedChannelException
+	at org.jenkinsci.remoting.protocol.NetworkLayer.onRecvClosed(NetworkLayer.java:154)
+	at org.jenkinsci.remoting.protocol.impl.BIONetworkLayer.access$1800(BIONetworkLayer.java:48)
+	at org.jenkinsci.remoting.protocol.impl.BIONetworkLayer$Reader.run(BIONetworkLayer.java:264)
+	... 4 more
+
+七月 15, 2020 8:56:49 上午 hudson.remoting.UserRequest perform
+警告: LinkageError while performing UserRequest:UserRPCRequest:hudson.Launcher$RemoteProcess.join[](52)
+java.lang.NoClassDefFoundError: org/jvnet/winp/CtrlCSender
+	at org.jvnet.winp.Native.sendCtrlC(Native.java:89)
+	at org.jvnet.winp.WinProcess.sendCtrlC(WinProcess.java:93)
+	at hudson.util.ProcessTree$WindowsOSProcess.killSoftly(ProcessTree.java:565)
+	at hudson.util.ProcessTree$WindowsOSProcess.killRecursively(ProcessTree.java:544)
+	at hudson.util.ProcessTree.killAll(ProcessTree.java:182)
+	at hudson.Proc$LocalProc.destroy(Proc.java:385)
+	at hudson.Proc$LocalProc.join(Proc.java:358)
+	at hudson.Launcher$RemoteLaunchCallable$1.join(Launcher.java:1324)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at hudson.remoting.RemoteInvocationHandler$RPCRequest.perform(RemoteInvocationHandler.java:929)
+	at hudson.remoting.RemoteInvocationHandler$RPCRequest.call(RemoteInvocationHandler.java:903)
+	at hudson.remoting.RemoteInvocationHandler$RPCRequest.call(RemoteInvocationHandler.java:855)
+	at hudson.remoting.UserRequest.perform(UserRequest.java:211)
+	at hudson.remoting.UserRequest.perform(UserRequest.java:54)
+	at hudson.remoting.Request$2.run(Request.java:369)
+	at hudson.remoting.InterceptingExecutorService$1.call(InterceptingExecutorService.java:72)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at hudson.remoting.Engine$1.lambda$newThread$0(Engine.java:97)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.ClassNotFoundException: org.jvnet.winp.CtrlCSender
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at hudson.remoting.RemoteClassLoader.findClass(RemoteClassLoader.java:171)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 24 more
+
+七月 15, 2020 8:56:49 上午 hudson.remoting.Request$2 run
+信息: Failed to send back a reply to the request hudson.remoting.Request$2@36ae93b2: hudson.remoting.ChannelClosedException: Channel "hudson.remoting.Channel@48e521e0:JNLP4-connect connection to 192.168.6.232/192.168.6.232:45571": channel is already closed
+七月 15, 2020 8:56:59 上午 org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver resolve
+信息: Remoting server accepts the following protocols: [JNLP4-connect, JNLP-connect, Ping, JNLP2-connect]
+七月 15, 2020 9:13:56 上午 org.jenkinsci.remoting.util.AnonymousClassWarnings warn
+警告: Attempt to (de-)serialize anonymous class ru.yandex.qatools.allure.jenkins.utils.BuildUtils$1; see: https://jenkins.io/redirect/serialization-of-anonymous-classes/
+七月 15, 2020 9:13:56 上午 org.jenkinsci.remoting.util.AnonymousClassWarnings warn
+警告: Attempt to (de-)serialize anonymous class ru.yandex.qatools.allure.jenkins.tools.AllureCommandlineInstallation$2; see: https://jenkins.io/redirect/serialization-of-anonymous-classes/
+七月 15, 2020 9:13:56 上午 org.jenkinsci.remoting.util.AnonymousClassWarnings warn
+警告: Attempt to (de-)serialize anonymous class ru.yandex.qatools.allure.jenkins.tools.AllureCommandlineInstallation$1; see: https://jenkins.io/redirect/serialization-of-anonymous-classes/
+七月 15, 2020 9:14:04 上午 org.jvnet.winp.Native loadByUrl
+警告: Failed to load DLL from static location
+java.lang.UnsatisfiedLinkError: Native Library E:\CDATA\自动化测试\Cdata_part11\remoting\jarCache\44\winp.x64.BFFE30B3B50581290B1866EF8D48C609.dll already loaded in another classloader
+	at java.lang.ClassLoader.loadLibrary0(Unknown Source)
+	at java.lang.ClassLoader.loadLibrary(Unknown Source)
+	at java.lang.Runtime.load0(Unknown Source)
+	at java.lang.System.load(Unknown Source)
+	at org.jvnet.winp.Native.loadDll(Native.java:242)
+	at org.jvnet.winp.Native.loadByUrl(Native.java:162)
+	at org.jvnet.winp.Native.load(Native.java:124)
+	at org.jvnet.winp.Native.<clinit>(Native.java:93)
+	at org.jvnet.winp.WinProcess.enableDebugPrivilege(WinProcess.java:245)
+	at hudson.util.ProcessTree$Windows.<clinit>(ProcessTree.java:701)
+	at hudson.util.ProcessTree.get(ProcessTree.java:447)
+	at hudson.Proc$LocalProc.destroy(Proc.java:385)
+	at hudson.Proc$LocalProc.join(Proc.java:358)
+	at hudson.Launcher$RemoteLaunchCallable$1.join(Launcher.java:1324)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at hudson.remoting.RemoteInvocationHandler$RPCRequest.perform(RemoteInvocationHandler.java:929)
+	at hudson.remoting.RemoteInvocationHandler$RPCRequest.call(RemoteInvocationHandler.java:903)
+	at hudson.remoting.RemoteInvocationHandler$RPCRequest.call(RemoteInvocationHandler.java:855)
+	at hudson.remoting.UserRequest.perform(UserRequest.java:211)
+	at hudson.remoting.UserRequest.perform(UserRequest.java:54)
+	at hudson.remoting.Request$2.run(Request.java:369)
+	at hudson.remoting.InterceptingExecutorService$1.call(InterceptingExecutorService.java:72)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at hudson.remoting.Engine$1.lambda$newThread$0(Engine.java:97)
+	at java.lang.Thread.run(Unknown Source)
+
+七月 16, 2020 9:06:44 上午 hudson.util.ProcessTree getKillers
+警告: Failed to obtain killers
+hudson.remoting.ChannelClosedException: Channel "hudson.remoting.Channel@472e725d:JNLP4-connect connection to 192.168.6.232/192.168.6.232:45571": Remote call on JNLP4-connect connection to 192.168.6.232/192.168.6.232:45571 failed. The channel is closing down or has closed down
+	at hudson.remoting.Channel.call(Channel.java:948)
+	at hudson.util.ProcessTree.getKillers(ProcessTree.java:198)
+	at hudson.util.ProcessTree$OSProcess.killByKiller(ProcessTree.java:261)
+	at hudson.util.ProcessTree$WindowsOSProcess.killRecursively(ProcessTree.java:546)
+	at hudson.util.ProcessTree.killAll(ProcessTree.java:182)
+	at hudson.Proc$LocalProc.destroy(Proc.java:385)
+	at hudson.Proc$LocalProc.join(Proc.java:358)
+	at hudson.Launcher$RemoteLaunchCallable$1.join(Launcher.java:1324)
+	at sun.reflect.GeneratedMethodAccessor28.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at hudson.remoting.RemoteInvocationHandler$RPCRequest.perform(RemoteInvocationHandler.java:929)
+	at hudson.remoting.RemoteInvocationHandler$RPCRequest.call(RemoteInvocationHandler.java:903)
+	at hudson.remoting.RemoteInvocationHandler$RPCRequest.call(RemoteInvocationHandler.java:855)
+	at hudson.remoting.UserRequest.perform(UserRequest.java:211)
+	at hudson.remoting.UserRequest.perform(UserRequest.java:54)
+	at hudson.remoting.Request$2.run(Request.java:369)
+	at hudson.remoting.InterceptingExecutorService$1.call(InterceptingExecutorService.java:72)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at hudson.remoting.Engine$1.lambda$newThread$0(Engine.java:97)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.nio.channels.ClosedChannelException
+	at org.jenkinsci.remoting.protocol.NetworkLayer.onRecvClosed(NetworkLayer.java:154)
+	at org.jenkinsci.remoting.protocol.impl.BIONetworkLayer.access$1800(BIONetworkLayer.java:48)
+	at org.jenkinsci.remoting.protocol.impl.BIONetworkLayer$Reader.run(BIONetworkLayer.java:264)
+	... 4 more
+
+七月 16, 2020 9:06:45 上午 hudson.Launcher$RemoteLaunchCallable$1 join
+信息: Failed to synchronize IO streams on the channel hudson.remoting.Channel@472e725d:JNLP4-connect connection to 192.168.6.232/192.168.6.232:45571
+hudson.remoting.ChannelClosedException: Channel "hudson.remoting.Channel@472e725d:JNLP4-connect connection to 192.168.6.232/192.168.6.232:45571": Remote call on JNLP4-connect connection to 192.168.6.232/192.168.6.232:45571 failed. The channel is closing down or has closed down
+	at hudson.remoting.Channel.call(Channel.java:948)
+	at hudson.remoting.Channel.syncIO(Channel.java:1683)
+	at hudson.Launcher$RemoteLaunchCallable$1.join(Launcher.java:1331)
+	at sun.reflect.GeneratedMethodAccessor28.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at hudson.remoting.RemoteInvocationHandler$RPCRequest.perform(RemoteInvocationHandler.java:929)
+	at hudson.remoting.RemoteInvocationHandler$RPCRequest.call(RemoteInvocationHandler.java:903)
+	at hudson.remoting.RemoteInvocationHandler$RPCRequest.call(RemoteInvocationHandler.java:855)
+	at hudson.remoting.UserRequest.perform(UserRequest.java:211)
+	at hudson.remoting.UserRequest.perform(UserRequest.java:54)
+	at hudson.remoting.Request$2.run(Request.java:369)
+	at hudson.remoting.InterceptingExecutorService$1.call(InterceptingExecutorService.java:72)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at hudson.remoting.Engine$1.lambda$newThread$0(Engine.java:97)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.nio.channels.ClosedChannelException
+	at org.jenkinsci.remoting.protocol.NetworkLayer.onRecvClosed(NetworkLayer.java:154)
+	at org.jenkinsci.remoting.protocol.impl.BIONetworkLayer.access$1800(BIONetworkLayer.java:48)
+	at org.jenkinsci.remoting.protocol.impl.BIONetworkLayer$Reader.run(BIONetworkLayer.java:264)
+	... 4 more
+
+七月 16, 2020 9:06:45 上午 hudson.remoting.Request$2 run
+信息: Failed to send back a reply to the request hudson.remoting.Request$2@4bca0216: hudson.remoting.ChannelClosedException: Channel "hudson.remoting.Channel@472e725d:JNLP4-connect connection to 192.168.6.232/192.168.6.232:45571": channel is already closed
+七月 16, 2020 9:06:51 上午 org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver resolve
+信息: Remoting server accepts the following protocols: [JNLP4-connect, JNLP-connect, Ping, JNLP2-connect]
+七月 16, 2020 9:10:43 上午 org.jenkinsci.remoting.util.AnonymousClassWarnings warn
+警告: Attempt to (de-)serialize anonymous class ru.yandex.qatools.allure.jenkins.utils.BuildUtils$1; see: https://jenkins.io/redirect/serialization-of-anonymous-classes/
+七月 16, 2020 9:10:44 上午 org.jenkinsci.remoting.util.AnonymousClassWarnings warn
+警告: Attempt to (de-)serialize anonymous class ru.yandex.qatools.allure.jenkins.tools.AllureCommandlineInstallation$2; see: https://jenkins.io/redirect/serialization-of-anonymous-classes/
+七月 16, 2020 9:10:44 上午 org.jenkinsci.remoting.util.AnonymousClassWarnings warn
+警告: Attempt to (de-)serialize anonymous class ru.yandex.qatools.allure.jenkins.tools.AllureCommandlineInstallation$1; see: https://jenkins.io/redirect/serialization-of-anonymous-classes/
+七月 16, 2020 9:10:51 上午 org.jvnet.winp.Native loadByUrl
+警告: Failed to load DLL from static location
+java.lang.UnsatisfiedLinkError: Native Library E:\CDATA\自动化测试\Cdata_part11\remoting\jarCache\44\winp.x64.BFFE30B3B50581290B1866EF8D48C609.dll already loaded in another classloader
+	at java.lang.ClassLoader.loadLibrary0(Unknown Source)
+	at java.lang.ClassLoader.loadLibrary(Unknown Source)
+	at java.lang.Runtime.load0(Unknown Source)
+	at java.lang.System.load(Unknown Source)
+	at org.jvnet.winp.Native.loadDll(Native.java:242)
+	at org.jvnet.winp.Native.loadByUrl(Native.java:162)
+	at org.jvnet.winp.Native.load(Native.java:124)
+	at org.jvnet.winp.Native.<clinit>(Native.java:93)
+	at org.jvnet.winp.WinProcess.enableDebugPrivilege(WinProcess.java:245)
+	at hudson.util.ProcessTree$Windows.<clinit>(ProcessTree.java:701)
+	at hudson.util.ProcessTree.get(ProcessTree.java:447)
+	at hudson.Proc$LocalProc.destroy(Proc.java:385)
+	at hudson.Proc$LocalProc.join(Proc.java:358)
+	at hudson.Launcher$RemoteLaunchCallable$1.join(Launcher.java:1324)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at hudson.remoting.RemoteInvocationHandler$RPCRequest.perform(RemoteInvocationHandler.java:929)
+	at hudson.remoting.RemoteInvocationHandler$RPCRequest.call(RemoteInvocationHandler.java:903)
+	at hudson.remoting.RemoteInvocationHandler$RPCRequest.call(RemoteInvocationHandler.java:855)
+	at hudson.remoting.UserRequest.perform(UserRequest.java:211)
+	at hudson.remoting.UserRequest.perform(UserRequest.java:54)
+	at hudson.remoting.Request$2.run(Request.java:369)
+	at hudson.remoting.InterceptingExecutorService$1.call(InterceptingExecutorService.java:72)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at hudson.remoting.Engine$1.lambda$newThread$0(Engine.java:97)
+	at java.lang.Thread.run(Unknown Source)
+

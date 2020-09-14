@@ -1,0 +1,26 @@
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 =========ONU MAC地址上报测试=========
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 ONU在OLT上被重新被发现。
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 当前ONU_ID没有被占用。
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 ONU在OLT上添加成功。
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 ONU在OLT上通过SN注册成功。
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 SERVICE-PORT添加成功
+[32mINFO    [0m script:renix_common_api.py:84 create ports with location:
+[32mINFO    [0m script:renix_common_api.py:84 StreamPortConfig_9 has lower: InterFrameGapProfile_9
+[32mINFO    [0m script:renix_common_api.py:84 StreamPortConfig_10 has lower: InterFrameGapProfile_10
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/9) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/10) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/9) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/10) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/9) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/10) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/9) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/10) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/9) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/10) create streams
+[32mINFO    [0m script:renix_common_api.py:84 PageResultView_5 has lower: ResultQuery_5
+[32mINFO    [0m script:renix_common_api.py:84 ResultQuery_5 has lower: PortStats_9 PortStats_10
+[32mINFO    [0m script:renix_common_api.py:84 [test pass] [Port_9] rx packet (236234)is  equal to port2_stats tx packets (236231)
+[32mINFO    [0m script:renix_common_api.py:84 [test pass] [Port_10] rx packet (236231)is equal to  port1_stats tx packets (236231)
+[31m[1mERROR   [0m CDATA:Cdata_loggers.py:97 ONT MAC地址上报:打流测试正常
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 ONU在OLT上删除成功
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 ONU在OLT上被重新被发现。

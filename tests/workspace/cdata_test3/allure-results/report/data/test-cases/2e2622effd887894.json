@@ -1,0 +1,255 @@
+{
+  "uid" : "2e2622effd887894",
+  "name" : "测试onu端口出口限速",
+  "fullName" : "test_onu_limitrate#test_ont_port_outbound_limitrate",
+  "historyId" : "ade4603e14026644d60b10661bddc14f",
+  "time" : {
+    "start" : 1598274188744,
+    "stop" : 1598274290504,
+    "duration" : 101760
+  },
+  "description" : "\n    用例描述\n    测试目的： 测试onu端口上行限速是否正常\n    测试步骤：\n    步骤1: 发现未注册的ONU\n    步骤2: 在OLT上通过Gpon_Gpon_SN的方式将ONU注册上线\n    步骤3: 配置onu端口的入口的速率（traffic-profile 2:\n           traffic-profile  profile-id 2 profile-name outbound_limit cir 10240 pir 20480 cbs 2000 pbs 2000)\n    步骤4: 配置虚端口vlan2000透传\n    步骤5: 打流测试\n    测试方法: 上下行各发送流：vlan2000 (如果onu端口为1000M,速率为端口速率的10%;如果onu端口为100M,速率为端口速率的100%)\n    down_stream_header = ('ethernetII_1.sourceMacAdd=00:00:00:11:11:11 vlan_1.id=2000 ethernetII_1.destMacAdd=00:00:00:22:22:21',)\n    up_stream_header = ('ethernetII_1.sourceMacAdd=00:00:00:22:22:21 vlan_1.id=2000 ethernetII_1.destMacAdd=00:00:00:11:11:11',)\n    预期结果: 上下行正常通，上行不限速，下行限速20M\n\n    ",
+  "descriptionHtml" : "<pre><code>用例描述\n测试目的： 测试onu端口上行限速是否正常\n测试步骤：\n步骤1: 发现未注册的ONU\n步骤2: 在OLT上通过Gpon_Gpon_SN的方式将ONU注册上线\n步骤3: 配置onu端口的入口的速率（traffic-profile 2:\n       traffic-profile  profile-id 2 profile-name outbound_limit cir 10240 pir 20480 cbs 2000 pbs 2000)\n步骤4: 配置虚端口vlan2000透传\n步骤5: 打流测试\n测试方法: 上下行各发送流：vlan2000 (如果onu端口为1000M,速率为端口速率的10%;如果onu端口为100M,速率为端口速率的100%)\ndown_stream_header = ('ethernetII_1.sourceMacAdd=00:00:00:11:11:11 vlan_1.id=2000 ethernetII_1.destMacAdd=00:00:00:22:22:21',)\nup_stream_header = ('ethernetII_1.sourceMacAdd=00:00:00:22:22:21 vlan_1.id=2000 ethernetII_1.destMacAdd=00:00:00:11:11:11',)\n预期结果: 上下行正常通，上行不限速，下行限速20M\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1598272724833,
+      "stop" : 1598272724833,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1598272724833,
+      "stop" : 1598272724833,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "__pytest_repeat_step_number",
+    "time" : {
+      "start" : 1598274174718,
+      "stop" : 1598274174718,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1598274174719,
+      "stop" : 1598274174720,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1598272724833,
+      "stop" : 1598272724833,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "login",
+    "time" : {
+      "start" : 1598274174720,
+      "stop" : 1598274188743,
+      "duration" : 14023
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "\n    用例描述\n    测试目的： 测试onu端口上行限速是否正常\n    测试步骤：\n    步骤1: 发现未注册的ONU\n    步骤2: 在OLT上通过Gpon_Gpon_SN的方式将ONU注册上线\n    步骤3: 配置onu端口的入口的速率（traffic-profile 2:\n           traffic-profile  profile-id 2 profile-name outbound_limit cir 10240 pir 20480 cbs 2000 pbs 2000)\n    步骤4: 配置虚端口vlan2000透传\n    步骤5: 打流测试\n    测试方法: 上下行各发送流：vlan2000 (如果onu端口为1000M,速率为端口速率的10%;如果onu端口为100M,速率为端口速率的100%)\n    down_stream_header = ('ethernetII_1.sourceMacAdd=00:00:00:11:11:11 vlan_1.id=2000 ethernetII_1.destMacAdd=00:00:00:22:22:21',)\n    up_stream_header = ('ethernetII_1.sourceMacAdd=00:00:00:22:22:21 vlan_1.id=2000 ethernetII_1.destMacAdd=00:00:00:11:11:11',)\n    预期结果: 上下行正常通，上行不限速，下行限速20M\n\n    ",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "步骤1:发现未注册的ONU。",
+      "time" : {
+        "start" : 1598274188750,
+        "stop" : 1598274189896,
+        "duration" : 1146
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "步骤2:在OLT上通过Gpon_Gpon_SN的方式将ONU注册上线。",
+      "time" : {
+        "start" : 1598274189896,
+        "stop" : 1598274214267,
+        "duration" : 24371
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "步骤3:配置onu端口的出口的速率（traffic-profile ）",
+      "time" : {
+        "start" : 1598274214267,
+        "stop" : 1598274214390,
+        "duration" : 123
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "步骤4:添加虚端口vlan透传2000",
+      "time" : {
+        "start" : 1598274214390,
+        "stop" : 1598274218414,
+        "duration" : 4024
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "步骤5:打流测试。",
+      "time" : {
+        "start" : 1598274218414,
+        "stop" : 1598274290504,
+        "duration" : 72090
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "d6bfd28ba7ea44d6",
+      "name" : "log",
+      "source" : "d6bfd28ba7ea44d6.txt",
+      "type" : "text/plain",
+      "size" : 2926
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 5,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "login::0",
+    "time" : {
+      "start" : 1598274290505,
+      "stop" : 1598274302727,
+      "duration" : 12222
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "onu端口限速测试"
+  }, {
+    "name" : "feature",
+    "value" : "onu限速测试"
+  }, {
+    "name" : "suite",
+    "value" : "test_onu_limitrate"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-2JV12RE"
+  }, {
+    "name" : "thread",
+    "value" : "14976-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_onu_limitrate"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "2e2622effd887894.json",
+  "parameterValues" : [ ]
+}

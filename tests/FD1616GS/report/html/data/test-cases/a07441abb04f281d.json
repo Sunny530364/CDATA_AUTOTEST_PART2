@@ -1,0 +1,182 @@
+{
+  "uid" : "a07441abb04f281d",
+  "name" : "onu mac地址上报测试",
+  "fullName" : "test_onu_mac_learn#test_ont_mac_learn",
+  "historyId" : "efeb02a4d4f48f95e3052e2025676887",
+  "time" : {
+    "start" : 1594127675744,
+    "stop" : 1594127675744,
+    "duration" : 0
+  },
+  "description" : "测试onu端口mac地址学习是否正常",
+  "descriptionHtml" : "<p>测试onu端口mac地址学习是否正常</p>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000002E21D4674A8>, '16', '2', '5A54453171200033')",
+  "statusTrace" : "login = <telnetlib.Telnet object at 0x000002E21D4674A8>\n\n    @pytest.fixture()\n    def ont_mac_learn_suit(login):\n        tn = login\n        Vlan_list = [2000]\n        with allure.step('步骤1:发现未注册的ONU。'):\n>           assert autofind_onu(tn, PonID,  OnuID, SN)\nE           AssertionError: assert False\nE            +  where False = autofind_onu(<telnetlib.Telnet object at 0x000002E21D4674A8>, '16', '2', '5A54453171200033')\n\ntest_onu_mac_learn.py:24: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1594127675747,
+      "stop" : 1594127675747,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1594125825236,
+      "stop" : 1594125825236,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "ont_mac_learn_suit",
+    "time" : {
+      "start" : 1594127688815,
+      "stop" : 1594127748427,
+      "duration" : 59612
+    },
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000002E21D4674A8>, '16', '2', '5A54453171200033')\n",
+    "statusTrace" : "  File \"d:\\program files\\python37\\lib\\site-packages\\pluggy\\callers.py\", line 187, in _multicall\n    res = hook_impl.function(*args)\n  File \"d:\\program files\\python37\\lib\\site-packages\\_pytest\\fixtures.py\", line 958, in pytest_fixture_setup\n    result = call_fixture_func(fixturefunc, request, kwargs)\n  File \"d:\\program files\\python37\\lib\\site-packages\\_pytest\\fixtures.py\", line 784, in call_fixture_func\n    res = next(it)\n  File \"E:\\CDATA\\自动化测试\\Cdata_part11\\tests\\GponSfu\\test_onu_mac_learn.py\", line 24, in ont_mac_learn_suit\n    assert autofind_onu(tn, PonID,  OnuID, SN)\n",
+    "steps" : [ {
+      "name" : "步骤1:发现未注册的ONU。",
+      "time" : {
+        "start" : 1594127688815,
+        "stop" : 1594127748424,
+        "duration" : 59609
+      },
+      "status" : "failed",
+      "statusMessage" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000002E21D4674A8>, '16', '2', '5A54453171200033')\n",
+      "statusTrace" : "  File \"E:\\CDATA\\自动化测试\\Cdata_part11\\tests\\GponSfu\\test_onu_mac_learn.py\", line 24, in ont_mac_learn_suit\n    assert autofind_onu(tn, PonID,  OnuID, SN)\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 1,
+    "hasContent" : true
+  }, {
+    "name" : "login",
+    "time" : {
+      "start" : 1594127675747,
+      "stop" : 1594127688814,
+      "duration" : 13067
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1594125825236,
+      "stop" : 1594125825241,
+      "duration" : 5
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1594125825236,
+      "stop" : 1594125825236,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "login::0",
+    "time" : {
+      "start" : 1594127748439,
+      "stop" : 1594127808025,
+      "duration" : 59586
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "onu mac地址上报测试"
+  }, {
+    "name" : "story",
+    "value" : "onu mac地址上报测试"
+  }, {
+    "name" : "suite",
+    "value" : "test_onu_mac_learn"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-2JV12RE"
+  }, {
+    "name" : "thread",
+    "value" : "22040-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_onu_mac_learn"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a07441abb04f281d.json",
+  "parameterValues" : [ ]
+}

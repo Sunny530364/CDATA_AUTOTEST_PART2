@@ -1,0 +1,5 @@
+[INFO] 2020-09-11 10:10:28,697  Receive Msg: listen_port 9003
+
+[INFO] 2020-09-11 10:10:28,784  Renix api initialization finished
+[INFO] 2020-09-11 10:11:10,948  port(//192.168.10.1/1/1) create streams
+[INFO] 2020-09-11 10:11:11,028  close connection to CL

@@ -1,0 +1,29 @@
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 192.168.3.138 登录成功
+[32mINFO    [0m script:renix_common_api.py:84 =========ONU端口出口限速测试=========
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 =========ONU端口出口限速测试=========
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU在OLT上被重新被发现。
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 当前ONU_ID没有被占用。
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU在OLT上添加成功。
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU在OLT上通过MAC注册成功。
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONT端口出口配置 cir:10240 pir:20480 成功
+[32mINFO    [0m script:renix_common_api.py:84 create ports with location:
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ===========================================================================
+[32mINFO    [0m script:renix_common_api.py:84 EthCopper_5 has lower: EthCopperConfig_5
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 当前端口1的协商速率为：EnumLineSpeed.SPEED_1G
+[32mINFO    [0m script:renix_common_api.py:84 EthCopper_6 has lower: EthCopperConfig_6
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 当前端口2的协商速率为：EnumLineSpeed.SPEED_1G
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ===========================================================================
+[32mINFO    [0m script:renix_common_api.py:84 EthCopper_5 has lower: EthCopperConfig_5
+[32mINFO    [0m script:renix_common_api.py:84 EthCopper_6 has lower: EthCopperConfig_6
+[32mINFO    [0m script:renix_common_api.py:84 StreamPortConfig_5 has lower: InterFrameGapProfile_5
+[32mINFO    [0m script:renix_common_api.py:84 StreamPortConfig_6 has lower: InterFrameGapProfile_6
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/7) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/8) create streams
+[32mINFO    [0m script:renix_common_api.py:84 PageResultView_3 has lower: ResultQuery_3
+[32mINFO    [0m script:renix_common_api.py:84 ResultQuery_3 has lower: StreamBlockStats_5 StreamBlockStats_6
+[32mINFO    [0m script:renix_common_api.py:84 [test pass] [sourceMacAdd=00:00:00:11:11:11] rx rate (2.138112)is  equal to tx rate (9.999849600000001) * 0.2
+[32mINFO    [0m script:renix_common_api.py:84 [test pass] [sourceMacAdd=00:00:00:22:22:21] rx rate (9.965696)is  equal to tx rate (9.999849600000001) * 1
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU端口入口限速:打流测试正常
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 删除onu入口限速正常
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU在OLT上删除成功
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU在OLT上被重新被发现。

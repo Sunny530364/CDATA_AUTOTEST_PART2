@@ -1,0 +1,53 @@
+[INFO] 2020-09-11 18:33:30,357  Receive Msg: listen_port 9002
+
+[INFO] 2020-09-11 18:33:30,454  Renix api initialization finished
+[INFO] 2020-09-11 18:34:35,360  create ports with location:
+[INFO] 2020-09-11 18:34:37,016  EthCopper_1 has lower: EthCopperConfig_1
+[INFO] 2020-09-11 18:34:37,021  EthCopper_2 has lower: EthCopperConfig_2
+[INFO] 2020-09-11 18:34:37,026  EthCopper_1 has lower: EthCopperConfig_1
+[INFO] 2020-09-11 18:34:37,031  EthCopper_2 has lower: EthCopperConfig_2
+[INFO] 2020-09-11 18:34:37,038  StreamPortConfig_1 has lower: InterFrameGapProfile_1
+[INFO] 2020-09-11 18:34:37,047  StreamPortConfig_2 has lower: InterFrameGapProfile_2
+[INFO] 2020-09-11 18:34:37,076  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-09-11 18:34:37,358  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-09-11 18:34:38,047  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-09-11 18:34:38,302  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-09-11 18:34:38,990  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-09-11 18:34:39,279  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-09-11 18:34:40,011  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-09-11 18:34:40,290  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-09-11 18:34:41,075  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-09-11 18:34:41,344  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-09-11 18:34:42,060  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-09-11 18:34:42,347  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-09-11 18:34:43,045  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-09-11 18:34:43,323  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-09-11 18:34:44,023  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-09-11 18:34:44,305  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-09-11 18:34:45,019  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-09-11 18:34:45,309  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-09-11 18:34:45,958  EthCopper_1 has lower: EthCopperConfig_1
+[INFO] 2020-09-11 18:34:45,961  EthCopper_2 has lower: EthCopperConfig_2
+[INFO] 2020-09-11 18:34:45,965  EthCopper_2 has lower: EthCopperConfig_2
+[INFO] 2020-09-11 18:34:45,968  EthCopper_1 has lower: EthCopperConfig_1
+[INFO] 2020-09-11 18:34:46,289  PageResultView_1 has lower: ResultQuery_1
+[INFO] 2020-09-11 18:35:02,579  ResultQuery_1 has lower: StreamBlockStats_1 StreamBlockStats_2 StreamBlockStats_3 StreamBlockStats_4 StreamBlockStats_5 StreamBlockStats_6 StreamBlockStats_7 StreamBlockStats_8 StreamBlockStats_9 StreamBlockStats_10 StreamBlockStats_11 StreamBlockStats_12 StreamBlockStats_13 StreamBlockStats_14 StreamBlockStats_15 StreamBlockStats_16 StreamBlockStats_17 StreamBlockStats_18
+[ERROR] 2020-09-11 18:35:03,116  [test fail] [sourceMacAdd=00:00:00:11:11:11] rx packet (0) or tx packets (107064) is 0
+[ERROR] 2020-09-11 18:35:03,121  [test fail] [sourceMacAdd=00:00:00:11:11:16] rx packet (0) or tx packets (107063) is 0
+[ERROR] 2020-09-11 18:35:03,124  [test fail] [sourceMacAdd=00:00:00:11:11:17] rx packet (0) or tx packets (107063) is 0
+[ERROR] 2020-09-11 18:35:03,128  [test fail] [sourceMacAdd=00:00:00:11:11:18] rx packet (0) or tx packets (107063) is 0
+[INFO] 2020-09-11 18:35:03,134  [test Pass] [sourceMacAdd=00:00:00:11:11:19]rx(0), realtime loss packet (107064)is  equal to  tx packet(107064)
+[ERROR] 2020-09-11 18:35:03,137  [test fail] [sourceMacAdd=00:00:00:11:11:12] rx packet (0) or tx packets (107064) is 0
+[ERROR] 2020-09-11 18:35:03,141  [test fail] [sourceMacAdd=00:00:00:11:11:13] rx packet (0) or tx packets (107065) is 0
+[ERROR] 2020-09-11 18:35:03,144  [test fail] [sourceMacAdd=00:00:00:11:11:14] rx packet (0) or tx packets (107063) is 0
+[ERROR] 2020-09-11 18:35:03,147  [test fail] [sourceMacAdd=00:00:00:11:11:15] rx packet (0) or tx packets (107063) is 0
+[ERROR] 2020-09-11 18:35:03,151  [test fail] [sourceMacAdd=00:00:00:22:22:25] rx packet (0) or tx packets (107063) is 0
+[ERROR] 2020-09-11 18:35:03,154  [test fail] [sourceMacAdd=00:00:00:22:22:26] rx packet (0) or tx packets (107063) is 0
+[ERROR] 2020-09-11 18:35:03,157  [test fail] [sourceMacAdd=00:00:00:22:22:27] rx packet (0) or tx packets (107063) is 0
+[ERROR] 2020-09-11 18:35:03,161  [test fail] [sourceMacAdd=00:00:00:22:22:28] rx packet (0) or tx packets (107063) is 0
+[INFO] 2020-09-11 18:35:03,168  [test Pass] [sourceMacAdd=00:00:00:22:22:29]rx(0), realtime loss packet (107064)is  equal to  tx packet(107064)
+[ERROR] 2020-09-11 18:35:03,171  [test fail] [sourceMacAdd=00:00:00:22:22:21] rx packet (0) or tx packets (107064) is 0
+[ERROR] 2020-09-11 18:35:03,174  [test fail] [sourceMacAdd=00:00:00:22:22:22] rx packet (0) or tx packets (107064) is 0
+[ERROR] 2020-09-11 18:35:03,178  [test fail] [sourceMacAdd=00:00:00:22:22:23] rx packet (0) or tx packets (107065) is 0
+[ERROR] 2020-09-11 18:35:03,181  [test fail] [sourceMacAdd=00:00:00:22:22:24] rx packet (0) or tx packets (107064) is 0
+[INFO] 2020-09-11 18:35:34,759  close connection to CL

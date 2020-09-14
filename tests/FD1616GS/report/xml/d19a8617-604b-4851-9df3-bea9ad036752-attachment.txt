@@ -1,0 +1,34 @@
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 =========测试ONU端口vlan为translate=========
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 ONU在OLT上被重新被发现。
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 当前ONU_ID没有被占用。
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 ONU在OLT上添加成功。
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 ONU在OLT上通过SN注册成功。
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 配置onu eth1-4 vlan为translate100-107转2000-2007成功
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 SERVICE-PORT添加成功
+[32mINFO    [0m script:renix_common_api.py:84 create ports with location:
+[32mINFO    [0m script:renix_common_api.py:84 StreamPortConfig_5 has lower: InterFrameGapProfile_5
+[32mINFO    [0m script:renix_common_api.py:84 StreamPortConfig_6 has lower: InterFrameGapProfile_6
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/9) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/10) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/9) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/10) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/9) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/10) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/9) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/10) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/9) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/10) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/9) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/10) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/9) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/10) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/9) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/10) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/9) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/10) create streams
+[32mINFO    [0m script:renix_common_api.py:84 PageResultView_3 has lower: ResultQuery_3
+[32mINFO    [0m script:renix_common_api.py:84 ResultQuery_3 has lower: StreamBlockStats_23 StreamBlockStats_24 StreamBlockStats_25 StreamBlockStats_26 StreamBlockStats_27 StreamBlockStats_28 StreamBlockStats_29 StreamBlockStats_30 StreamBlockStats_31 StreamBlockStats_32 StreamBlockStats_33 StreamBlockStats_34 StreamBlockStats_35 StreamBlockStats_36 StreamBlockStats_37 StreamBlockStats_38 StreamBlockStats_39 StreamBlockStats_40
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 ONU端口为translate:打流测试正常
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 删除onu eth1的vlan 成功
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 ONU在OLT上删除成功
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 ONU在OLT上被重新被发现。

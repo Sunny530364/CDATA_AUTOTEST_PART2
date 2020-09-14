@@ -1,0 +1,286 @@
+{
+  "uid" : "db317f301ddd033a",
+  "name" : "LOID+PASSWORD认证",
+  "fullName" : "test_onu_auth_type#test_auth_by_loid_password",
+  "historyId" : "171047ca473663ae83e72f52c7a9c72c",
+  "time" : {
+    "start" : 1594194246627,
+    "stop" : 1594194257235,
+    "duration" : 10608
+  },
+  "description" : "\n    用例描述：\n    ONU通过SN的方式认证。\n    例如：\n    ont add 1 1 loid-auth 12345678 password-auth 12345678 ont-lineprofile-id 1 ont-srvprofile-id 1\n    ",
+  "descriptionHtml" : "<pre><code>用例描述：\nONU通过SN的方式认证。\n例如：\nont add 1 1 loid-auth 12345678 password-auth 12345678 ont-lineprofile-id 1 ont-srvprofile-id 1\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert False\n +  where False = auth_by_loid_password(<telnetlib.Telnet object at 0x0000011F795A6358>, '16', '2', '200', '200', 'user', ' ', '5A54453171200033')",
+  "statusTrace" : "login = <telnetlib.Telnet object at 0x0000011F795A6358>\n\n    @allure.feature(\"ONU认证\")\n    @allure.story(\"ONU认证方式\")\n    @allure.title(\"LOID+PASSWORD认证\")\n    @pytest.mark.run(order=6)\n    def test_auth_by_loid_password(login):\n        '''\n        用例描述：\n        ONU通过SN的方式认证。\n        例如：\n        ont add 1 1 loid-auth 12345678 password-auth 12345678 ont-lineprofile-id 1 ont-srvprofile-id 1\n        '''\n        cdata_info(\"ONT LOID+PASSWORD认证测试\")\n        tn = login\n        with allure.step('步骤1:发现未注册的ONU。'):\n            assert autofind_onu(tn, PonID, OnuID, SN)\n        with allure.step('步骤2:在OLT上通过LOID+PASSWORD的方式将ONU注册上线。'):\n>           assert auth_by_loid_password(tn, PonID, OnuID, Ont_Lineprofile_ID, Ont_Srvprofile_ID, LOID, LOID_PASSWORD, SN)\nE           AssertionError: assert False\nE            +  where False = auth_by_loid_password(<telnetlib.Telnet object at 0x0000011F795A6358>, '16', '2', '200', '200', 'user', ' ', '5A54453171200033')\n\ntest_onu_auth_type.py:140: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1594194233573,
+      "stop" : 1594194233573,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1594193956716,
+      "stop" : 1594193956716,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1594193956716,
+      "stop" : 1594193956716,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "login",
+    "time" : {
+      "start" : 1594194233574,
+      "stop" : 1594194246626,
+      "duration" : 13052
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1594193956716,
+      "stop" : 1594193956716,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n    用例描述：\n    ONU通过SN的方式认证。\n    例如：\n    ont add 1 1 loid-auth 12345678 password-auth 12345678 ont-lineprofile-id 1 ont-srvprofile-id 1\n    ",
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert False\n +  where False = auth_by_loid_password(<telnetlib.Telnet object at 0x0000011F795A6358>, '16', '2', '200', '200', 'user', ' ', '5A54453171200033')",
+    "statusTrace" : "login = <telnetlib.Telnet object at 0x0000011F795A6358>\n\n    @allure.feature(\"ONU认证\")\n    @allure.story(\"ONU认证方式\")\n    @allure.title(\"LOID+PASSWORD认证\")\n    @pytest.mark.run(order=6)\n    def test_auth_by_loid_password(login):\n        '''\n        用例描述：\n        ONU通过SN的方式认证。\n        例如：\n        ont add 1 1 loid-auth 12345678 password-auth 12345678 ont-lineprofile-id 1 ont-srvprofile-id 1\n        '''\n        cdata_info(\"ONT LOID+PASSWORD认证测试\")\n        tn = login\n        with allure.step('步骤1:发现未注册的ONU。'):\n            assert autofind_onu(tn, PonID, OnuID, SN)\n        with allure.step('步骤2:在OLT上通过LOID+PASSWORD的方式将ONU注册上线。'):\n>           assert auth_by_loid_password(tn, PonID, OnuID, Ont_Lineprofile_ID, Ont_Srvprofile_ID, LOID, LOID_PASSWORD, SN)\nE           AssertionError: assert False\nE            +  where False = auth_by_loid_password(<telnetlib.Telnet object at 0x0000011F795A6358>, '16', '2', '200', '200', 'user', ' ', '5A54453171200033')\n\ntest_onu_auth_type.py:140: AssertionError",
+    "steps" : [ {
+      "name" : "步骤1:发现未注册的ONU。",
+      "time" : {
+        "start" : 1594194246628,
+        "stop" : 1594194247759,
+        "duration" : 1131
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤2:在OLT上通过LOID+PASSWORD的方式将ONU注册上线。",
+      "time" : {
+        "start" : 1594194247759,
+        "stop" : 1594194257234,
+        "duration" : 9475
+      },
+      "status" : "failed",
+      "statusMessage" : "AssertionError: assert False\n +  where False = auth_by_loid_password(<telnetlib.Telnet object at 0x0000011F795A6358>, '16', '2', '200', '200', 'user', ' ', '5A54453171200033')\n",
+      "statusTrace" : "  File \"E:\\CDATA\\自动化测试\\Cdata_part11\\tests\\GponSfu\\test_onu_auth_type.py\", line 140, in test_auth_by_loid_password\n    assert auth_by_loid_password(tn, PonID, OnuID, Ont_Lineprofile_ID, Ont_Srvprofile_ID, LOID, LOID_PASSWORD, SN)\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "e0888e40fbfbfbb1",
+      "name" : "log",
+      "source" : "e0888e40fbfbfbb1.txt",
+      "type" : "text/plain",
+      "size" : 454
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 2,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "login::0",
+    "time" : {
+      "start" : 1594194257483,
+      "stop" : 1594194258611,
+      "duration" : 1128
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "ONU认证方式"
+  }, {
+    "name" : "feature",
+    "value" : "ONU认证"
+  }, {
+    "name" : "suite",
+    "value" : "test_onu_auth_type"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-2JV12RE"
+  }, {
+    "name" : "thread",
+    "value" : "22216-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_onu_auth_type"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "e7a3be55b0cecb23",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = auth_by_loid_password(<telnetlib.Telnet object at 0x0000023826C8ABE0>, '16', '2', '200', '200', 'user', ' ', '5A54453171200033')",
+      "time" : {
+        "start" : 1594171718388,
+        "stop" : 1594171729110,
+        "duration" : 10722
+      }
+    }, {
+      "uid" : "cc47d65e7455a451",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = auth_by_loid_password(<telnetlib.Telnet object at 0x000001D70D05DF98>, '16', '2', '200', '200', 'user', ' ', '5A54453171200033')",
+      "time" : {
+        "start" : 1594170397623,
+        "stop" : 1594170408252,
+        "duration" : 10629
+      }
+    }, {
+      "uid" : "5b2c69bb9f4ff54",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000002E21D3C7B38>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594126498987,
+        "stop" : 1594126558464,
+        "duration" : 59477
+      }
+    }, {
+      "uid" : "9cd267a8ad15db5d",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = auth_by_loid_password(<telnetlib.Telnet object at 0x0000029FD3A5EDD8>, '16', '2', '200', '200', 'user', ' ', '5A54453171200033')",
+      "time" : {
+        "start" : 1594121918248,
+        "stop" : 1594121929055,
+        "duration" : 10807
+      }
+    }, {
+      "uid" : "ed1df02361f4d29f",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x0000027E3568C748>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594112453612,
+        "stop" : 1594112458728,
+        "duration" : 5116
+      }
+    }, {
+      "uid" : "d9d3af8c9d02cc89",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = auth_by_loid_password(<telnetlib.Telnet object at 0x00000208E297A518>, '16', '2', '200', '200', 'luhairui', 'xiaoqiang')",
+      "time" : {
+        "start" : 1594033659393,
+        "stop" : 1594033721921,
+        "duration" : 62528
+      }
+    }, {
+      "uid" : "9f0c559db62a0c3",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = auth_by_loid_password(<telnetlib.Telnet object at 0x00000208E2910160>, '16', '2', '200', '200', 'luhairui', 'xiaoqiang')",
+      "time" : {
+        "start" : 1594033582665,
+        "stop" : 1594033645249,
+        "duration" : 62584
+      }
+    }, {
+      "uid" : "d0bd5a9420a4ae8e",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = auth_by_loid_password(<telnetlib.Telnet object at 0x00000208E28E9400>, '16', '2', '200', '200', 'luhairui', 'xiaoqiang')",
+      "time" : {
+        "start" : 1594033505898,
+        "stop" : 1594033568483,
+        "duration" : 62585
+      }
+    }, {
+      "uid" : "dc4b8a213db1d03d",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = auth_by_loid_password(<telnetlib.Telnet object at 0x0000028D1755CBA8>, '16', '2', '200', '200', 'luhairui', 'xiaoqiang')",
+      "time" : {
+        "start" : 1593770979021,
+        "stop" : 1593771040118,
+        "duration" : 61097
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "db317f301ddd033a.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,9 @@
+[32mINFO    [0m script:renix_common_api.py:84 create ports with location:
+[32mINFO    [0m script:renix_common_api.py:84 StreamPortConfig_37 has lower: InterFrameGapProfile_31
+[32mINFO    [0m script:renix_common_api.py:84 StreamPortConfig_38 has lower: InterFrameGapProfile_32
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/9) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/10) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/9) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/10) create streams
+[32mINFO    [0m script:renix_common_api.py:84 PageResultView_14 has lower: ResultQuery_20
+[32mINFO    [0m script:renix_common_api.py:84 ResultQuery_20 has lower: StreamBlockStats_36 StreamBlockStats_37 StreamBlockStats_38 StreamBlockStats_39

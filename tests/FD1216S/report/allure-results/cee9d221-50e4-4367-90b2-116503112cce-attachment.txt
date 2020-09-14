@@ -1,0 +1,2 @@
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 192.168.3.138 登录成功
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 =========去激活ONU=========

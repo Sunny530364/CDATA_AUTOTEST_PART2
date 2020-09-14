@@ -1,0 +1,31 @@
+[INFO] 2020-09-11 17:36:24,419  Receive Msg: listen_port 9002
+
+[INFO] 2020-09-11 17:36:24,507  Renix api initialization finished
+[INFO] 2020-09-11 17:36:34,374  Receive Msg: listen_port 9003
+
+[INFO] 2020-09-11 17:36:34,427  Renix api initialization finished
+[INFO] 2020-09-11 17:37:13,661  create ports with location:
+[INFO] 2020-09-11 17:37:15,349  EthCopper_1 has lower: EthCopperConfig_1
+[INFO] 2020-09-11 17:37:15,357  EthCopper_2 has lower: EthCopperConfig_2
+[INFO] 2020-09-11 17:37:15,364  EthCopper_1 has lower: EthCopperConfig_1
+[INFO] 2020-09-11 17:37:15,373  EthCopper_2 has lower: EthCopperConfig_2
+[INFO] 2020-09-11 17:37:15,380  StreamPortConfig_1 has lower: InterFrameGapProfile_1
+[INFO] 2020-09-11 17:37:15,389  StreamPortConfig_2 has lower: InterFrameGapProfile_2
+[INFO] 2020-09-11 17:37:15,426  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-09-11 17:37:16,063  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-09-11 17:37:17,527  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-09-11 17:37:17,891  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-09-11 17:37:18,923  EthCopper_1 has lower: EthCopperConfig_1
+[INFO] 2020-09-11 17:37:18,926  EthCopper_2 has lower: EthCopperConfig_2
+[INFO] 2020-09-11 17:37:18,929  EthCopper_2 has lower: EthCopperConfig_2
+[INFO] 2020-09-11 17:37:28,931  EthCopper_1 has lower: EthCopperConfig_1
+[INFO] 2020-09-11 17:37:28,933  EthCopper_2 has lower: EthCopperConfig_2
+[INFO] 2020-09-11 17:37:28,936  EthCopper_2 has lower: EthCopperConfig_2
+[INFO] 2020-09-11 17:37:28,938  EthCopper_1 has lower: EthCopperConfig_1
+[INFO] 2020-09-11 17:37:29,107  PageResultView_1 has lower: ResultQuery_1
+[INFO] 2020-09-11 17:37:45,172  ResultQuery_1 has lower: StreamBlockStats_1 StreamBlockStats_2 StreamBlockStats_3 StreamBlockStats_4
+[INFO] 2020-09-11 17:37:45,308  [test pass] [sourceMacAdd=00:00:00:11:11:11] rx packet (103034)is  equal to tx packets (103034)
+[INFO] 2020-09-11 17:37:45,314  [test pass] [sourceMacAdd=00:00:00:11:11:12] rx packet (103034)is  equal to tx packets (103034)
+[INFO] 2020-09-11 17:37:45,322  [test pass] [sourceMacAdd=00:00:00:22:22:21] rx packet (103034)is  equal to tx packets (103034)
+[INFO] 2020-09-11 17:37:45,328  [test pass] [sourceMacAdd=00:00:00:22:22:22] rx packet (103034)is  equal to tx packets (103034)
+[INFO] 2020-09-11 17:37:58,553  close connection to CL

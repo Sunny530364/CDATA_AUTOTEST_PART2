@@ -1,0 +1,50 @@
+#控制台输出控制，一次性打印全部输出
+vty output global show-all
+#创建VLAN
+vlan 2000-2008,3000,4001
+#配置ge1和ge2口的VLAN
+interface ge 0/0
+vlan mode 1 trunk
+vlan trunk 1 3000,2001-2007
+vlan native-vlan 1 2000
+vlan native-vlan 2 4001
+exit
+#配置pon口认证模式为manual手动
+#创建流量模板200
+traffic-profile profile-id 200 profile-name cdata cir 20480 pir 40960 cbs 2000 pbs 2000
+#创建dba模板100
+dba-profile profile-id 100
+type4 max 1024000
+commit
+exit
+#创建线路模板200
+ont-lineprofile gpon profile-id 200
+tcont 1 dba-profile-id 100
+gem add 1 tcont 1
+gem mapping 1 1 vlan transparent
+commit
+exit
+#创建服务模板200
+ont-srvprofile gpon profile-id 200
+ont-port eth adaptive pots adaptive catv adaptive
+port vlan eth 1-4 transparent
+commit
+exit
+#创建组播ont-igmpacl 200
+ont-igmpacl gpon acl-id 200
+igmp rule add 1 3000 239.1.1.1 239.1.1.1
+commit
+exit
+#创建组播igmp-profile 200
+ont-igmpprofile gpon profile-id 200
+igmp control dynamic-acl 200
+commit
+exit
+#创建流量模板1(inbound)
+traffic-profile  profile-id 1 profile-name inbound_limit cir 20480 pir 30960 cbs 2000 pbs 2000
+#创建流量模板2(outbound)
+traffic-profile  profile-id 2 profile-name outbound_limit cir 10240 pir 20480 cbs 2000 pbs 2000
+
+#保存配置
+save
+

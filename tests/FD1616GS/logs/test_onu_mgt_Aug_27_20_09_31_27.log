@@ -1,0 +1,26 @@
+[INFO] 2020-08-27 09:31:37,333  Receive Msg: listen_port 9003
+
+[INFO] 2020-08-27 09:31:37,405  Renix api initialization finished
+[INFO] 2020-08-27 09:33:13,014  Create ports with locations:['//192.168.0.180/1/7', '//192.168.0.180/1/8']
+[INFO] 2020-08-27 09:33:14,789  EthCopper_1 has lower: EthCopperConfig_1
+[INFO] 2020-08-27 09:33:14,794  EthCopper_2 has lower: EthCopperConfig_2
+[INFO] 2020-08-27 09:33:14,799  StreamPortConfig_1 has lower: InterFrameGapProfile_1
+[INFO] 2020-08-27 09:33:14,805  StreamPortConfig_2 has lower: InterFrameGapProfile_2
+[INFO] 2020-08-27 09:33:14,824  port(['//192.168.0.180/1/7', '//192.168.0.180/1/8']) create streams
+[INFO] 2020-08-27 09:33:15,050  port(['//192.168.0.180/1/7', '//192.168.0.180/1/8']) create streams
+[INFO] 2020-08-27 09:33:16,730  PageResultView_1 has lower: ResultQuery_1
+[INFO] 2020-08-27 09:33:16,733  EthCopper_2 has lower: EthCopperConfig_2
+[INFO] 2020-08-27 09:33:16,735  EthCopper_1 has lower: EthCopperConfig_1
+[INFO] 2020-08-27 09:33:26,827  ResultQuery_1 has lower: StreamBlockStats_1 StreamBlockStats_2
+[INFO] 2020-08-27 09:36:45,128  Create ports with locations:['//192.168.0.180/1/7', '//192.168.0.180/1/8']
+[INFO] 2020-08-27 09:36:46,889  EthCopper_3 has lower: EthCopperConfig_3
+[INFO] 2020-08-27 09:36:46,894  EthCopper_4 has lower: EthCopperConfig_4
+[INFO] 2020-08-27 09:36:46,901  StreamPortConfig_3 has lower: InterFrameGapProfile_3
+[INFO] 2020-08-27 09:36:46,907  StreamPortConfig_4 has lower: InterFrameGapProfile_4
+[INFO] 2020-08-27 09:36:46,929  port(['//192.168.0.180/1/7', '//192.168.0.180/1/8']) create streams
+[INFO] 2020-08-27 09:36:47,184  port(['//192.168.0.180/1/7', '//192.168.0.180/1/8']) create streams
+[INFO] 2020-08-27 09:36:49,160  PageResultView_2 has lower: ResultQuery_2
+[INFO] 2020-08-27 09:36:49,162  EthCopper_4 has lower: EthCopperConfig_4
+[INFO] 2020-08-27 09:36:49,165  EthCopper_3 has lower: EthCopperConfig_3
+[INFO] 2020-08-27 09:36:59,578  ResultQuery_2 has lower: StreamBlockStats_3 StreamBlockStats_4
+[INFO] 2020-08-27 09:37:03,190  close connection to CL

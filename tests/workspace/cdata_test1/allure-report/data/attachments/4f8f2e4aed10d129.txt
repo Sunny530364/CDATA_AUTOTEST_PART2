@@ -1,0 +1,67 @@
+INFO     CDATA:Cdata_loggers.py:106 192.168.0.181 登录成功
+INFO     CDATA:Cdata_loggers.py:106 =========mapping_mode为port测试=========
+INFO     CDATA:Cdata_loggers.py:106 ONU在OLT上被重新被发现。
+INFO     CDATA:Cdata_loggers.py:106 当前ONU_ID没有被占用。
+INFO     CDATA:Cdata_loggers.py:106 ONU在OLT上添加成功。
+INFO     CDATA:Cdata_loggers.py:106 ONU在OLT上通过SN注册成功。
+INFO     CDATA:Cdata_loggers.py:106 配置mapping-mode为port
+INFO     CDATA:Cdata_loggers.py:106 线路模板:mapping_mode设置成port正常
+INFO     CDATA:Cdata_loggers.py:106 线路模板配置gem mapping 为port 2成功
+INFO     CDATA:Cdata_loggers.py:106 线路模板配置gem mapping 为port ['2']成功
+INFO     CDATA:Cdata_loggers.py:106 SERVICE-PORT添加成功
+INFO     script:renix_common_api.py:84 create ports with location:
+INFO     CDATA:Cdata_loggers.py:106 ===========================================================================
+INFO     script:renix_common_api.py:84 EthCopper_19 has lower: EthCopperConfig_19
+INFO     CDATA:Cdata_loggers.py:106 当前端口1的协商速率为：EnumLineSpeed.SPEED_1G
+INFO     script:renix_common_api.py:84 EthCopper_20 has lower: EthCopperConfig_20
+INFO     CDATA:Cdata_loggers.py:106 当前端口2的协商速率为：EnumLineSpeed.SPEED_1G
+INFO     CDATA:Cdata_loggers.py:106 ===========================================================================
+INFO     script:renix_common_api.py:84 EthCopper_19 has lower: EthCopperConfig_19
+INFO     script:renix_common_api.py:84 EthCopper_20 has lower: EthCopperConfig_20
+INFO     script:renix_common_api.py:84 StreamPortConfig_19 has lower: InterFrameGapProfile_19
+INFO     script:renix_common_api.py:84 StreamPortConfig_20 has lower: InterFrameGapProfile_20
+INFO     script:renix_common_api.py:84 port(//192.168.0.180/1/7) create streams
+INFO     script:renix_common_api.py:84 port(//192.168.0.180/1/8) create streams
+INFO     script:renix_common_api.py:84 EthCopper_19 has lower: EthCopperConfig_19
+INFO     script:renix_common_api.py:84 EthCopper_20 has lower: EthCopperConfig_20
+INFO     CDATA:Cdata_loggers.py:106 第1次查看状态：port1的端口状态：UP ;port2的端口状态：UP
+INFO     script:renix_common_api.py:84 EthCopper_20 has lower: EthCopperConfig_20
+INFO     script:renix_common_api.py:84 EthCopper_19 has lower: EthCopperConfig_19
+INFO     script:renix_common_api.py:84 PageResultView_10 has lower: ResultQuery_10
+INFO     script:renix_common_api.py:84 ResultQuery_10 has lower: StreamBlockStats_29 StreamBlockStats_30
+INFO     script:renix_common_api.py:84 [test Pass] [sourceMacAdd=00:00:00:11:11:11]rx(0), realtime loss packet (105560)is  equal to  tx packet(105560)
+INFO     script:renix_common_api.py:84 [test Pass] [sourceMacAdd=00:00:00:22:22:21]rx(0), realtime loss packet (105560)is  equal to  tx packet(105560)
+INFO     CDATA:Cdata_loggers.py:106 mapping_mode为port测试（正常不通）:打流测试正常
+INFO     CDATA:Cdata_loggers.py:106 配置mapping-mode为port
+INFO     CDATA:Cdata_loggers.py:106 线路模板:mapping_mode设置成port正常
+INFO     CDATA:Cdata_loggers.py:106 线路模板配置gem mapping 为port 1成功
+INFO     CDATA:Cdata_loggers.py:106 线路模板配置gem mapping 为port ['1']成功
+INFO     script:renix_common_api.py:84 create ports with location:
+INFO     CDATA:Cdata_loggers.py:106 ===========================================================================
+INFO     script:renix_common_api.py:84 EthCopper_21 has lower: EthCopperConfig_21
+INFO     CDATA:Cdata_loggers.py:106 当前端口1的协商速率为：EnumLineSpeed.SPEED_1G
+INFO     script:renix_common_api.py:84 EthCopper_22 has lower: EthCopperConfig_22
+INFO     CDATA:Cdata_loggers.py:106 当前端口2的协商速率为：EnumLineSpeed.SPEED_1G
+INFO     CDATA:Cdata_loggers.py:106 ===========================================================================
+INFO     script:renix_common_api.py:84 EthCopper_21 has lower: EthCopperConfig_21
+INFO     script:renix_common_api.py:84 EthCopper_22 has lower: EthCopperConfig_22
+INFO     script:renix_common_api.py:84 StreamPortConfig_21 has lower: InterFrameGapProfile_21
+INFO     script:renix_common_api.py:84 StreamPortConfig_22 has lower: InterFrameGapProfile_22
+INFO     script:renix_common_api.py:84 port(//192.168.0.180/1/7) create streams
+INFO     script:renix_common_api.py:84 port(//192.168.0.180/1/8) create streams
+INFO     script:renix_common_api.py:84 EthCopper_21 has lower: EthCopperConfig_21
+INFO     script:renix_common_api.py:84 EthCopper_22 has lower: EthCopperConfig_22
+INFO     CDATA:Cdata_loggers.py:106 第1次查看状态：port1的端口状态：UP ;port2的端口状态：UP
+INFO     script:renix_common_api.py:84 EthCopper_22 has lower: EthCopperConfig_22
+INFO     script:renix_common_api.py:84 EthCopper_21 has lower: EthCopperConfig_21
+INFO     script:renix_common_api.py:84 PageResultView_11 has lower: ResultQuery_11
+INFO     script:renix_common_api.py:84 ResultQuery_11 has lower: StreamBlockStats_31 StreamBlockStats_32
+INFO     script:renix_common_api.py:84 [test pass] [sourceMacAdd=00:00:00:11:11:11] rx packet (102806)is  equal to tx packets (102806)
+INFO     script:renix_common_api.py:84 [test pass] [sourceMacAdd=00:00:00:22:22:21] rx packet (102806)is  equal to tx packets (102806)
+INFO     CDATA:Cdata_loggers.py:106 mapping_mode为port测试（正常通）:打流测试正常
+INFO     CDATA:Cdata_loggers.py:106 配置gemport为transparent
+INFO     CDATA:Cdata_loggers.py:106 线路模板:mapping_mode设置成vlan正常
+INFO     CDATA:Cdata_loggers.py:106 线路模板:配置gemport 1为transparent成功
+INFO     CDATA:Cdata_loggers.py:106 ONU在OLT上删除成功
+INFO     CDATA:Cdata_loggers.py:106 ONU在OLT上被重新被发现。
+INFO     CDATA:Cdata_loggers.py:106 退出登录

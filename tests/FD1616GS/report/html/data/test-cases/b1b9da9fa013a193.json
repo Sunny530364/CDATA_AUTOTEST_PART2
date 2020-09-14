@@ -1,0 +1,533 @@
+{
+  "uid" : "b1b9da9fa013a193",
+  "name" : "测试mapping为transaprent",
+  "fullName" : "test_onu_gemport#test_gemport_transparent",
+  "historyId" : "2d66ba5643622279420b529e22d2458f",
+  "time" : {
+    "start" : 1594693987860,
+    "stop" : 1594694036369,
+    "duration" : 48509
+  },
+  "description" : "\n    用例描述\n    测试目的： 测试mapping-mode is vlan , mapping 为transparent时，vlan2000和vlan2001的报文上下行是都正常\n    测试步骤：\n    步骤1:发现未注册的ONU\n    步骤2:在OLT上通过SN的方式将ONU注册上线\n    步骤3:修改gemport配置为transparent\n    步骤4:配置虚端口vlan2000透传，vlan2001透传\n    步骤5:打流测试\n    1）上下行发vlan2000和vlan2001的报文\n    预期结果：上下行报文正常通\n\n    ",
+  "descriptionHtml" : "<pre><code>用例描述\n测试目的： 测试mapping-mode is vlan , mapping 为transparent时，vlan2000和vlan2001的报文上下行是都正常\n测试步骤：\n步骤1:发现未注册的ONU\n步骤2:在OLT上通过SN的方式将ONU注册上线\n步骤3:修改gemport配置为transparent\n步骤4:配置虚端口vlan2000透传，vlan2001透传\n步骤5:打流测试\n1）上下行发vlan2000和vlan2001的报文\n预期结果：上下行报文正常通\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "login",
+    "time" : {
+      "start" : 1594693974820,
+      "stop" : 1594693987860,
+      "duration" : 13040
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1594693941051,
+      "stop" : 1594693941051,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1594693941051,
+      "stop" : 1594693941051,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1594693941051,
+      "stop" : 1594693941051,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "__pytest_repeat_step_number",
+    "time" : {
+      "start" : 1594693974820,
+      "stop" : 1594693974820,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1594693974820,
+      "stop" : 1594693974820,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n    用例描述\n    测试目的： 测试mapping-mode is vlan , mapping 为transparent时，vlan2000和vlan2001的报文上下行是都正常\n    测试步骤：\n    步骤1:发现未注册的ONU\n    步骤2:在OLT上通过SN的方式将ONU注册上线\n    步骤3:修改gemport配置为transparent\n    步骤4:配置虚端口vlan2000透传，vlan2001透传\n    步骤5:打流测试\n    1）上下行发vlan2000和vlan2001的报文\n    预期结果：上下行报文正常通\n\n    ",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "步骤1:发现未注册的ONU。",
+      "time" : {
+        "start" : 1594693987861,
+        "stop" : 1594693988996,
+        "duration" : 1135
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤2:在OLT上通过SN的方式将ONU注册上线。",
+      "time" : {
+        "start" : 1594693988996,
+        "stop" : 1594694005327,
+        "duration" : 16331
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤3:修改gemport配置为transparent",
+      "time" : {
+        "start" : 1594694005327,
+        "stop" : 1594694005458,
+        "duration" : 131
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤4:配置虚端口vlan2000透传，vlan2001透传",
+      "time" : {
+        "start" : 1594694005459,
+        "stop" : 1594694008467,
+        "duration" : 3008
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤5:打流测试",
+      "time" : {
+        "start" : 1594694008467,
+        "stop" : 1594694036369,
+        "duration" : 27902
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "460930c0fc3f2790",
+      "name" : "log",
+      "source" : "460930c0fc3f2790.txt",
+      "type" : "text/plain",
+      "size" : 2192
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 5,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "login::0",
+    "time" : {
+      "start" : 1594694036370,
+      "stop" : 1594694046459,
+      "duration" : 10089
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "gemport测试"
+  }, {
+    "name" : "story",
+    "value" : "gemport测试"
+  }, {
+    "name" : "suite",
+    "value" : "test_onu_gemport"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-2JV12RE"
+  }, {
+    "name" : "thread",
+    "value" : "29004-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_onu_gemport"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "f7b24edbd0c4f2b8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594692467876,
+        "stop" : 1594692519109,
+        "duration" : 51233
+      }
+    }, {
+      "uid" : "8eee518409771841",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594367924555,
+        "stop" : 1594367975587,
+        "duration" : 51032
+      }
+    }, {
+      "uid" : "3ab43979753bb116",
+      "status" : "broken",
+      "statusDetails" : "Exception: bring online port(Port_1) failed",
+      "time" : {
+        "start" : 1594367720757,
+        "stop" : 1594367757375,
+        "duration" : 36618
+      }
+    }, {
+      "uid" : "245de522238fcc9a",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 'FAIL' == 'PASS'\n  - FAIL\n  + PASS",
+      "time" : {
+        "start" : 1594365119335,
+        "stop" : 1594365171075,
+        "duration" : 51740
+      }
+    }, {
+      "uid" : "a0102eabb35a972a",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = auth_by_sn(<telnetlib.Telnet object at 0x000001FCAA899A90>, '16', '2', '200', '200', '44443133B3180929')",
+      "time" : {
+        "start" : 1594364147007,
+        "stop" : 1594364211860,
+        "duration" : 64853
+      }
+    }, {
+      "uid" : "9d44a26b009c0b98",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = auth_by_sn(<telnetlib.Telnet object at 0x000001BDE7FAD8D0>, '16', '2', '200', '200', '44443133B3180929')",
+      "time" : {
+        "start" : 1594363774962,
+        "stop" : 1594363839807,
+        "duration" : 64845
+      }
+    }, {
+      "uid" : "d075b9dd6891459",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = auth_by_sn(<telnetlib.Telnet object at 0x000002B4A044E898>, '16', '2', '200', '200', '44443133B3180929')",
+      "time" : {
+        "start" : 1594363151662,
+        "stop" : 1594363216874,
+        "duration" : 65212
+      }
+    }, {
+      "uid" : "27dc2cd70fa3bec7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594276239299,
+        "stop" : 1594276284601,
+        "duration" : 45302
+      }
+    }, {
+      "uid" : "49babfbaf2c50855",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594275962940,
+        "stop" : 1594276011458,
+        "duration" : 48518
+      }
+    }, {
+      "uid" : "3c9cf5ac79e421b9",
+      "status" : "broken",
+      "statusDetails" : "UnboundLocalError: local variable 'port_location' referenced before assignment",
+      "time" : {
+        "start" : 1594275530597,
+        "stop" : 1594275557904,
+        "duration" : 27307
+      }
+    }, {
+      "uid" : "91a3775b5cc67461",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594194941044,
+        "stop" : 1594194967111,
+        "duration" : 26067
+      }
+    }, {
+      "uid" : "149ebc862a2a1739",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594189668776,
+        "stop" : 1594189694396,
+        "duration" : 25620
+      }
+    }, {
+      "uid" : "55e20cb6a0e7e3f4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594188898868,
+        "stop" : 1594188924363,
+        "duration" : 25495
+      }
+    }, {
+      "uid" : "d3083fa68008d6b7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594187984414,
+        "stop" : 1594188009975,
+        "duration" : 25561
+      }
+    }, {
+      "uid" : "a3a8b9f96337e3cb",
+      "status" : "broken",
+      "statusDetails" : "ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。",
+      "time" : {
+        "start" : 1594187732336,
+        "stop" : 1594187732336,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "7ad3a36dc78fe1d4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594187045166,
+        "stop" : 1594187071129,
+        "duration" : 25963
+      }
+    }, {
+      "uid" : "1f90f327fdb2fbb8",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001DA8EB6F5F8>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594186872498,
+        "stop" : 1594186872498,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "37682f85ebdda068",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = add_service_port(<telnetlib.Telnet object at 0x0000022A08A98908>, '16', '2', '1', [2000, 2001])",
+      "time" : {
+        "start" : 1594186228825,
+        "stop" : 1594186228825,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "9f01b85064d0627f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594179647673,
+        "stop" : 1594179673391,
+        "duration" : 25718
+      }
+    }, {
+      "uid" : "104bab3c19813511",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594178732566,
+        "stop" : 1594178758813,
+        "duration" : 26247
+      }
+    }, {
+      "uid" : "bfc0d2b769b26763",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594177729586,
+        "stop" : 1594177756542,
+        "duration" : 26956
+      }
+    }, {
+      "uid" : "92d992197c5b8fe8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594176998860,
+        "stop" : 1594177024622,
+        "duration" : 25762
+      }
+    }, {
+      "uid" : "afdb115d060fe86",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594176341434,
+        "stop" : 1594176367127,
+        "duration" : 25693
+      }
+    }, {
+      "uid" : "c73a4df4aadb23af",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594175692008,
+        "stop" : 1594175717638,
+        "duration" : 25630
+      }
+    }, {
+      "uid" : "550dfdc4aea74fb8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594171766994,
+        "stop" : 1594171794684,
+        "duration" : 27690
+      }
+    }, {
+      "uid" : "9b2c9373e4c19c1a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594170442878,
+        "stop" : 1594170471522,
+        "duration" : 28644
+      }
+    }, {
+      "uid" : "51d7dc03410c57ea",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000002E21D345668>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594126617994,
+        "stop" : 1594126617994,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "ee24c509c6ba6b3a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594121963415,
+        "stop" : 1594121994691,
+        "duration" : 31276
+      }
+    }, {
+      "uid" : "555ea455147244ff",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x0000027E3564DE48>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594112466797,
+        "stop" : 1594112466797,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "faccf6d7fe518739",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = auth_by_sn(<telnetlib.Telnet object at 0x00000208E291D588>, '16', '2', '200', '200', '5A54453171200033')",
+      "time" : {
+        "start" : 1594033902909,
+        "stop" : 1594033902909,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "d3e85562837fe3e7",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = auth_by_sn(<telnetlib.Telnet object at 0x00000208E2928668>, '16', '2', '200', '200', '5A54453171200033')",
+      "time" : {
+        "start" : 1594033815038,
+        "stop" : 1594033815038,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "1d560b8bec75b419",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = auth_by_sn(<telnetlib.Telnet object at 0x00000208E2923F28>, '16', '2', '200', '200', '5A54453171200033')",
+      "time" : {
+        "start" : 1594033723009,
+        "stop" : 1594033723009,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "ce9ffd98c2091b16",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593771070837,
+        "stop" : 1593771101555,
+        "duration" : 30718
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b1b9da9fa013a193.json",
+  "parameterValues" : [ ]
+}

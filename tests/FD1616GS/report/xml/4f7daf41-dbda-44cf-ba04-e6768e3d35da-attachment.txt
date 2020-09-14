@@ -1,0 +1,4 @@
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 步骤2：ONU在OLT上被重新被发现。
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 步骤3：当前ONU_ID没有被占用。
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 步骤2：ONU在OLT上添加成功。
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 步骤2：ONU在OLT上通过SN注册成功。

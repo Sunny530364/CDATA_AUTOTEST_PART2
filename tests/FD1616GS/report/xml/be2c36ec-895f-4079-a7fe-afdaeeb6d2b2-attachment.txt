@@ -1,0 +1,20 @@
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 步骤2：ONU在OLT上被重新被发现。
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 步骤3：当前ONU_ID没有被占用。
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 步骤2：ONU在OLT上添加成功。
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 步骤2：ONU在OLT上通过SN注册成功。
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 SERVICE-PORT添加成功
+[32mINFO    [0m script:renix_common_api.py:84 create ports with location:
+[32mINFO    [0m script:renix_common_api.py:84 StreamPortConfig_3 has lower: InterFrameGapProfile_3
+[32mINFO    [0m script:renix_common_api.py:84 StreamPortConfig_4 has lower: InterFrameGapProfile_4
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/9) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/10) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/9) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/10) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/9) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/10) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/9) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/10) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/9) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/10) create streams
+[32mINFO    [0m script:renix_common_api.py:84 PageResultView_2 has lower: ResultQuery_2
+[32mINFO    [0m script:renix_common_api.py:84 ResultQuery_2 has lower: PortStats_1 PortStats_2

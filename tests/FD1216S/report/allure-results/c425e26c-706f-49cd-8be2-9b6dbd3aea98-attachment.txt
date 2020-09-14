@@ -1,0 +1,10 @@
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 192.168.3.138 登录成功
+[32mINFO    [0m script:renix_common_api.py:84 =========ONU端口入口限速测试=========
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 =========ONU端口入口限速测试=========
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ==========================================
+[1m[31mERROR   [0m CDATA:Cdata_loggers.py:98 ===============ERROR!!!===================
+[1m[31mERROR   [0m CDATA:Cdata_loggers.py:98 ONU在OLT上发现失败。
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ==========================================
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 删除onu入口限速正常
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU在OLT上删除成功
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU在OLT上被重新被发现。

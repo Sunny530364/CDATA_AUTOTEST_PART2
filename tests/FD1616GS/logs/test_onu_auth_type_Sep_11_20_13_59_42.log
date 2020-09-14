@@ -1,0 +1,4 @@
+[INFO] 2020-09-11 13:59:52,231  Receive Msg: listen_port 9002
+
+[INFO] 2020-09-11 13:59:52,309  Renix api initialization finished
+[INFO] 2020-09-11 14:00:45,019  Create ports with locations:['//192.168.0.180/1/7', '//192.168.0.180/1/8']

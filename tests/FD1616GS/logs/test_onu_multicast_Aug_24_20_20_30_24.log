@@ -1,0 +1,8 @@
+[INFO] 2020-08-24 20:30:36,433  Receive Msg: listen_port 9002
+
+[INFO] 2020-08-24 20:30:36,521  Renix api initialization finished
+[INFO] 2020-08-24 20:30:51,856  =========ONU组播snooping测试:组播正常通=========
+[INFO] 2020-08-24 20:31:20,696  create ports with location:
+[INFO] 2020-08-24 20:31:22,487  StreamPortConfig_1 has lower: InterFrameGapProfile_1
+[INFO] 2020-08-24 20:31:22,526  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-08-24 20:31:34,388  close connection to CL

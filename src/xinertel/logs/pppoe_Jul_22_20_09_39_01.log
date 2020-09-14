@@ -1,0 +1,6 @@
+[INFO] 2020-07-22 09:39:09,948  Receive Msg: listen_port 9002
+
+[INFO] 2020-07-22 09:39:10,065  Renix api initialization finished
+[ERROR] 2020-07-22 09:39:11,635  b'_TCLERROR:list index out of range'
+[ERROR] 2020-07-22 09:39:11,635  Create ResultView failed, ERROR:list index out of range
+[INFO] 2020-07-22 09:39:11,637  close connection to CL

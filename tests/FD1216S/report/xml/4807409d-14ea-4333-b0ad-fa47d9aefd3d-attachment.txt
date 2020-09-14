@@ -1,0 +1,13 @@
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 192.168.3.138 登录成功
+[32mINFO    [0m script:renix_common_api.py:84 =========ONU端口跨vlan组播测试=========
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 =========ONU端口跨vlan组播测试=========
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU在OLT上被重新被发现。
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 当前ONU_ID没有被占用。
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU在OLT上添加成功。
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU在OLT上通过MAC注册成功。
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 onu配置组播模式为imgp-snooping正常
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 onu端口配置组播mvlan正常
+[1m[31mERROR   [0m CDATA:Cdata_loggers.py:98 配置onu eth1 vlan为tag 2000失败
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 onu配置组播模式为transparent正常
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU在OLT上删除成功
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU在OLT上被重新被发现。

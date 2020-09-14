@@ -1,0 +1,241 @@
+[ {
+  "buildOrder" : 377,
+  "reportUrl" : "http://192.168.0.182:8080/job/cdata_test1/377/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "failed" : 11,
+    "broken" : 1,
+    "skipped" : 0,
+    "passed" : 11,
+    "unknown" : 0,
+    "total" : 23
+  }
+}, {
+  "buildOrder" : 376,
+  "reportUrl" : "http://192.168.0.182:8080/job/cdata_test1/376/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "failed" : 1,
+    "broken" : 0,
+    "skipped" : 0,
+    "passed" : 1,
+    "unknown" : 0,
+    "total" : 2
+  }
+}, {
+  "buildOrder" : 375,
+  "reportUrl" : "http://192.168.0.182:8080/job/cdata_test1/375/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "failed" : 1,
+    "broken" : 0,
+    "skipped" : 0,
+    "passed" : 0,
+    "unknown" : 0,
+    "total" : 1
+  }
+}, {
+  "buildOrder" : 374,
+  "reportUrl" : "http://192.168.0.182:8080/job/cdata_test1/374/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "failed" : 1,
+    "broken" : 0,
+    "skipped" : 0,
+    "passed" : 2,
+    "unknown" : 0,
+    "total" : 3
+  }
+}, {
+  "buildOrder" : 373,
+  "reportUrl" : "http://192.168.0.182:8080/job/cdata_test1/373/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "failed" : 0,
+    "broken" : 0,
+    "skipped" : 0,
+    "passed" : 0,
+    "unknown" : 0,
+    "total" : 0
+  }
+}, {
+  "buildOrder" : 372,
+  "reportUrl" : "http://192.168.0.182:8080/job/cdata_test1/372/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "failed" : 0,
+    "broken" : 0,
+    "skipped" : 0,
+    "passed" : 5,
+    "unknown" : 0,
+    "total" : 5
+  }
+}, {
+  "buildOrder" : 371,
+  "reportUrl" : "http://192.168.0.182:8080/job/cdata_test1/371/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "failed" : 26,
+    "broken" : 0,
+    "skipped" : 0,
+    "passed" : 6,
+    "unknown" : 0,
+    "total" : 32
+  }
+}, {
+  "buildOrder" : 370,
+  "reportUrl" : "http://192.168.0.182:8080/job/cdata_test1/370/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "failed" : 4,
+    "broken" : 1,
+    "skipped" : 0,
+    "passed" : 21,
+    "unknown" : 0,
+    "total" : 26
+  }
+}, {
+  "buildOrder" : 367,
+  "reportUrl" : "http://192.168.0.182:8080/job/cdata_test1/367/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "failed" : 0,
+    "broken" : 0,
+    "skipped" : 0,
+    "passed" : 0,
+    "unknown" : 0,
+    "total" : 0
+  }
+}, {
+  "buildOrder" : 366,
+  "reportUrl" : "http://192.168.0.182:8080/job/cdata_test1/366/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "failed" : 4,
+    "broken" : 1,
+    "skipped" : 0,
+    "passed" : 41,
+    "unknown" : 0,
+    "total" : 46
+  }
+}, {
+  "buildOrder" : 365,
+  "reportUrl" : "http://192.168.0.182:8080/job/cdata_test1/365/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "failed" : 1,
+    "broken" : 0,
+    "skipped" : 0,
+    "passed" : 45,
+    "unknown" : 0,
+    "total" : 46
+  }
+}, {
+  "buildOrder" : 364,
+  "reportUrl" : "http://192.168.0.182:8080/job/cdata_test1/364/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "failed" : 2,
+    "broken" : 0,
+    "skipped" : 0,
+    "passed" : 44,
+    "unknown" : 0,
+    "total" : 46
+  }
+}, {
+  "buildOrder" : 363,
+  "reportUrl" : "http://192.168.0.182:8080/job/cdata_test1/363/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "failed" : 3,
+    "broken" : 0,
+    "skipped" : 0,
+    "passed" : 43,
+    "unknown" : 0,
+    "total" : 46
+  }
+}, {
+  "buildOrder" : 362,
+  "reportUrl" : "http://192.168.0.182:8080/job/cdata_test1/362/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "failed" : 1,
+    "broken" : 0,
+    "skipped" : 0,
+    "passed" : 45,
+    "unknown" : 0,
+    "total" : 46
+  }
+}, {
+  "buildOrder" : 361,
+  "reportUrl" : "http://192.168.0.182:8080/job/cdata_test1/361/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "failed" : 1,
+    "broken" : 0,
+    "skipped" : 0,
+    "passed" : 25,
+    "unknown" : 0,
+    "total" : 26
+  }
+}, {
+  "buildOrder" : 360,
+  "reportUrl" : "http://192.168.0.182:8080/job/cdata_test1/360/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "failed" : 0,
+    "broken" : 3,
+    "skipped" : 0,
+    "passed" : 1,
+    "unknown" : 0,
+    "total" : 4
+  }
+}, {
+  "buildOrder" : 359,
+  "reportUrl" : "http://192.168.0.182:8080/job/cdata_test1/359/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "failed" : 0,
+    "broken" : 3,
+    "skipped" : 0,
+    "passed" : 1,
+    "unknown" : 0,
+    "total" : 4
+  }
+}, {
+  "buildOrder" : 358,
+  "reportUrl" : "http://192.168.0.182:8080/job/cdata_test1/358/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "failed" : 0,
+    "broken" : 0,
+    "skipped" : 0,
+    "passed" : 1,
+    "unknown" : 0,
+    "total" : 1
+  }
+}, {
+  "buildOrder" : 357,
+  "reportUrl" : "http://192.168.0.182:8080/job/cdata_test1/357/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "failed" : 0,
+    "broken" : 2,
+    "skipped" : 0,
+    "passed" : 1,
+    "unknown" : 0,
+    "total" : 3
+  }
+}, {
+  "buildOrder" : 356,
+  "reportUrl" : "http://192.168.0.182:8080/job/cdata_test1/356/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "failed" : 0,
+    "broken" : 1,
+    "skipped" : 0,
+    "passed" : 1,
+    "unknown" : 0,
+    "total" : 2
+  }
+} ]

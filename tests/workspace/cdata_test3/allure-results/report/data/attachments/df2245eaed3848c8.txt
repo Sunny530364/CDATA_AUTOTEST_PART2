@@ -1,0 +1,52 @@
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 192.168.0.181 登录成功
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 pon 16 端口使能成功
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 =========去激活ONU=========
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU在OLT上被重新被发现。
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 当前ONU_ID没有被占用。
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU在OLT上添加成功。
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU在OLT上通过Gpon_SN注册成功。
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 SERVICE-PORT添加成功
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONT Native-vlan配置成功
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONT Native-vlan配置成功
+[32mINFO    [0m script:renix_common_api.py:84 Create ports with locations:['//192.168.0.180/1/7', '//192.168.0.180/1/8']
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ===========================================================================
+[32mINFO    [0m script:renix_common_api.py:84 EthCopper_39 has lower: EthCopperConfig_39
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 当前端口1的协商速率为：SPEED_1G
+[32mINFO    [0m script:renix_common_api.py:84 EthCopper_40 has lower: EthCopperConfig_40
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 当前端口2的协商速率为：SPEED_1G
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ===========================================================================
+[32mINFO    [0m script:renix_common_api.py:84 StreamPortConfig_39 has lower: InterFrameGapProfile_39
+[32mINFO    [0m script:renix_common_api.py:84 StreamPortConfig_40 has lower: InterFrameGapProfile_40
+[32mINFO    [0m script:renix_common_api.py:84 port(['//192.168.0.180/1/7', '//192.168.0.180/1/8']) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(['//192.168.0.180/1/7', '//192.168.0.180/1/8']) create streams
+[32mINFO    [0m script:renix_common_api.py:84 PageResultView_20 has lower: ResultQuery_24
+[32mINFO    [0m script:renix_common_api.py:84 EthCopper_40 has lower: EthCopperConfig_40
+[32mINFO    [0m script:renix_common_api.py:84 EthCopper_39 has lower: EthCopperConfig_39
+[32mINFO    [0m script:renix_common_api.py:84 ResultQuery_24 has lower: StreamBlockStats_79 StreamBlockStats_80
+[32mINFO    [0m script:renix_common_api.py:84 EthCopper_40 has lower: EthCopperConfig_40
+[32mINFO    [0m script:renix_common_api.py:84 EthCopper_39 has lower: EthCopperConfig_39
+[32mINFO    [0m script:renix_common_api.py:84 ResultQuery_24 has lower: StreamBlockStats_79 StreamBlockStats_80
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU离线成功。
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU重新上线成功。
+[32mINFO    [0m script:renix_common_api.py:84 Create ports with locations:['//192.168.0.180/1/7', '//192.168.0.180/1/8']
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ===========================================================================
+[32mINFO    [0m script:renix_common_api.py:84 EthCopper_41 has lower: EthCopperConfig_41
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 当前端口1的协商速率为：SPEED_1G
+[32mINFO    [0m script:renix_common_api.py:84 EthCopper_42 has lower: EthCopperConfig_42
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 当前端口2的协商速率为：SPEED_1G
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ===========================================================================
+[32mINFO    [0m script:renix_common_api.py:84 StreamPortConfig_41 has lower: InterFrameGapProfile_41
+[32mINFO    [0m script:renix_common_api.py:84 StreamPortConfig_42 has lower: InterFrameGapProfile_42
+[32mINFO    [0m script:renix_common_api.py:84 port(['//192.168.0.180/1/7', '//192.168.0.180/1/8']) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(['//192.168.0.180/1/7', '//192.168.0.180/1/8']) create streams
+[32mINFO    [0m script:renix_common_api.py:84 PageResultView_21 has lower: ResultQuery_25
+[32mINFO    [0m script:renix_common_api.py:84 EthCopper_42 has lower: EthCopperConfig_42
+[32mINFO    [0m script:renix_common_api.py:84 EthCopper_41 has lower: EthCopperConfig_41
+[32mINFO    [0m script:renix_common_api.py:84 ResultQuery_25 has lower: StreamBlockStats_81 StreamBlockStats_82
+[32mINFO    [0m script:renix_common_api.py:84 EthCopper_42 has lower: EthCopperConfig_42
+[32mINFO    [0m script:renix_common_api.py:84 EthCopper_41 has lower: EthCopperConfig_41
+[32mINFO    [0m script:renix_common_api.py:84 ResultQuery_25 has lower: StreamBlockStats_81 StreamBlockStats_82
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU在OLT上删除成功
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU在OLT上被重新被发现。
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 pon 16 端口去使能成功
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 退出登录

@@ -1,0 +1,45 @@
+[INFO] 2020-08-28 11:29:56,170  Receive Msg: listen_port 9003
+
+[INFO] 2020-08-28 11:29:56,268  Renix api initialization finished
+[INFO] 2020-08-28 11:31:05,435  create ports with location:
+[INFO] 2020-08-28 11:31:07,092  StreamPortConfig_1 has lower: InterFrameGapProfile_1
+[INFO] 2020-08-28 11:31:07,098  StreamPortConfig_2 has lower: InterFrameGapProfile_2
+[INFO] 2020-08-28 11:31:07,128  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-08-28 11:31:07,380  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-08-28 11:31:08,040  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-08-28 11:31:08,297  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-08-28 11:31:08,959  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-08-28 11:31:09,226  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-08-28 11:31:09,926  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-08-28 11:31:10,196  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-08-28 11:31:10,872  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-08-28 11:31:11,169  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-08-28 11:31:11,871  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-08-28 11:31:12,147  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-08-28 11:31:12,838  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-08-28 11:31:13,132  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-08-28 11:31:13,841  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-08-28 11:31:14,134  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-08-28 11:31:14,843  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-08-28 11:31:15,138  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-08-28 11:31:16,076  PageResultView_1 has lower: ResultQuery_1
+[INFO] 2020-08-28 11:31:32,405  ResultQuery_1 has lower: StreamBlockStats_1 StreamBlockStats_2 StreamBlockStats_3 StreamBlockStats_4 StreamBlockStats_5 StreamBlockStats_6 StreamBlockStats_7 StreamBlockStats_8 StreamBlockStats_9 StreamBlockStats_10 StreamBlockStats_11 StreamBlockStats_12 StreamBlockStats_13 StreamBlockStats_14 StreamBlockStats_15 StreamBlockStats_16 StreamBlockStats_17 StreamBlockStats_18
+[INFO] 2020-08-28 11:31:32,944  [test pass] [sourceMacAdd=00:00:00:11:11:11] rx packet (100246)is  equal to tx packets (100246)
+[INFO] 2020-08-28 11:31:32,950  [test pass] [sourceMacAdd=00:00:00:11:11:16] rx packet (100245)is  equal to tx packets (100245)
+[INFO] 2020-08-28 11:31:32,956  [test pass] [sourceMacAdd=00:00:00:11:11:17] rx packet (100245)is  equal to tx packets (100245)
+[INFO] 2020-08-28 11:31:32,964  [test pass] [sourceMacAdd=00:00:00:11:11:18] rx packet (100245)is  equal to tx packets (100245)
+[INFO] 2020-08-28 11:31:32,969  [test Pass] [sourceMacAdd=00:00:00:11:11:19]rx(0), realtime loss packet (100246)is  equal to  tx packet(100246)
+[INFO] 2020-08-28 11:31:32,977  [test pass] [sourceMacAdd=00:00:00:11:11:12] rx packet (100246)is  equal to tx packets (100246)
+[INFO] 2020-08-28 11:31:32,983  [test pass] [sourceMacAdd=00:00:00:11:11:13] rx packet (100245)is  equal to tx packets (100245)
+[INFO] 2020-08-28 11:31:32,990  [test pass] [sourceMacAdd=00:00:00:11:11:14] rx packet (100245)is  equal to tx packets (100245)
+[INFO] 2020-08-28 11:31:32,996  [test pass] [sourceMacAdd=00:00:00:11:11:15] rx packet (100245)is  equal to tx packets (100245)
+[ERROR] 2020-08-28 11:31:33,000  [test fail] [sourceMacAdd=00:00:00:22:22:25] rx packet (0) or tx packets (100245) is 0
+[ERROR] 2020-08-28 11:31:33,003  [test fail] [sourceMacAdd=00:00:00:22:22:26] rx packet (0) or tx packets (100245) is 0
+[ERROR] 2020-08-28 11:31:33,008  [test fail] [sourceMacAdd=00:00:00:22:22:27] rx packet (0) or tx packets (100245) is 0
+[ERROR] 2020-08-28 11:31:33,011  [test fail] [sourceMacAdd=00:00:00:22:22:28] rx packet (0) or tx packets (100245) is 0
+[INFO] 2020-08-28 11:31:33,018  [test Pass] [sourceMacAdd=00:00:00:22:22:29]rx(0), realtime loss packet (100246)is  equal to  tx packet(100246)
+[ERROR] 2020-08-28 11:31:33,023  [test fail] [sourceMacAdd=00:00:00:22:22:21] rx packet (0) or tx packets (100246) is 0
+[ERROR] 2020-08-28 11:31:33,026  [test fail] [sourceMacAdd=00:00:00:22:22:22] rx packet (0) or tx packets (100246) is 0
+[ERROR] 2020-08-28 11:31:33,029  [test fail] [sourceMacAdd=00:00:00:22:22:23] rx packet (0) or tx packets (100246) is 0
+[ERROR] 2020-08-28 11:31:33,034  [test fail] [sourceMacAdd=00:00:00:22:22:24] rx packet (0) or tx packets (100245) is 0
+[INFO] 2020-08-28 11:32:10,710  close connection to CL

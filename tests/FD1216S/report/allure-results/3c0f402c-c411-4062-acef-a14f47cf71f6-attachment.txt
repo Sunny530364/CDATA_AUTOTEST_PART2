@@ -1,0 +1,4 @@
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 192.168.3.138 登录成功
+[32mINFO    [0m script:renix_common_api.py:84 =========ONU端口组播snooping测试=========
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 =========ONU端口组播snooping测试=========
+[1m[31mERROR   [0m CDATA:Cdata_loggers.py:98 onu配置组播模式为transparent失败

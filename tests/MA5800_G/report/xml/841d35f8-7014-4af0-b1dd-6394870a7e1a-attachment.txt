@@ -1,0 +1,29 @@
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 192.168.5.82 登录成功
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 =========测试ONU端口vlan为transaprent=========
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU在OLT上被重新被发现。
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 当前ONU_ID没有被占用。
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU在OLT上添加成功。
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU在OLT上通过SN注册成功。
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 配置onu端口为transparent正常
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 线路模板:mapping_mode设置成vlan正常
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 线路模板:配置gem mapping 为2000成功
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 线路模板:配置gem mapping 为2001成功
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 线路模板:配置gem mapping 为[2000, 2001]成功
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 SERVICE-PORT添加成功
+[32mINFO    [0m script:renix_common_api.py:84 create ports with location:
+[32mINFO    [0m script:renix_common_api.py:84 StreamPortConfig_57 has lower: InterFrameGapProfile_57
+[32mINFO    [0m script:renix_common_api.py:84 StreamPortConfig_58 has lower: InterFrameGapProfile_58
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/1) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/2) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/1) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/2) create streams
+[32mINFO    [0m script:renix_common_api.py:84 PageResultView_29 has lower: ResultQuery_29
+[32mINFO    [0m script:renix_common_api.py:84 ResultQuery_29 has lower: StreamBlockStats_103 StreamBlockStats_104 StreamBlockStats_105 StreamBlockStats_106
+[32mINFO    [0m script:renix_common_api.py:84 [test pass] [sourceMacAdd=00:00:00:11:11:11] rx packet (99815)is  equal to tx packets (99815)
+[32mINFO    [0m script:renix_common_api.py:84 [test pass] [sourceMacAdd=00:00:00:11:11:12] rx packet (99815)is  equal to tx packets (99815)
+[32mINFO    [0m script:renix_common_api.py:84 [test pass] [sourceMacAdd=00:00:00:22:22:21] rx packet (99815)is  equal to tx packets (99815)
+[32mINFO    [0m script:renix_common_api.py:84 [test pass] [sourceMacAdd=00:00:00:22:22:22] rx packet (99815)is  equal to tx packets (99815)
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU端口为transparent:打流测试正常
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 service_port删除成功。
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU在OLT上删除成功
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU在OLT上被重新被发现。

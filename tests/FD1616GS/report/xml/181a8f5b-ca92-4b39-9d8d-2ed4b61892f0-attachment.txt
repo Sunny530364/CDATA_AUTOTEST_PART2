@@ -1,0 +1,4 @@
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 =========ONU端口入口限速测试=========
+[1m[31mERROR   [0m CDATA:Cdata_loggers.py:97 ONU在OLT上发现失败。
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 ONU在OLT上删除成功
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 ONU在OLT上被重新被发现。

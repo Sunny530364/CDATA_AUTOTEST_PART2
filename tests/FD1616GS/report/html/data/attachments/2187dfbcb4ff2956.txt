@@ -1,0 +1,3 @@
+[32mINFO    [0m CDATA:Cdata_loggers.py:102 配置gemport为transparent
+[32mINFO    [0m CDATA:Cdata_loggers.py:102 线路模板:mapping_mode设置成vlan正常
+[32mINFO    [0m CDATA:Cdata_loggers.py:102 线路模板:配置gemport 1为transparent成功

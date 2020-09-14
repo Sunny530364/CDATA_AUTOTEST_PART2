@@ -1,0 +1,363 @@
+{
+  "uid" : "6fa26482182494c",
+  "name" : "测试onu端口vlan为trunk",
+  "fullName" : "test_onu_vlan#test_trunk",
+  "historyId" : "1ec60c222a6f14dc52e26aa435b5771c",
+  "time" : {
+    "start" : 1594199345032,
+    "stop" : 1594199379952,
+    "duration" : 34920
+  },
+  "description" : "\n    测试 ont port 1 is trunk\n    测试方法：配置onu port  1 trunk 2000-2007\n    结果：上下行vlan2000-2007的流量正常通，vlan2008的上下行流量不通\n    ",
+  "descriptionHtml" : "<pre><code>测试 ont port 1 is trunk\n测试方法：配置onu port  1 trunk 2000-2007\n结果：上下行vlan2000-2007的流量正常通，vlan2008的上下行流量不通\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1594199238024,
+      "stop" : 1594199238024,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "vlan_trunk_suit",
+    "time" : {
+      "start" : 1594199318450,
+      "stop" : 1594199345031,
+      "duration" : 26581
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "步骤1:发现未注册的ONU。",
+      "time" : {
+        "start" : 1594199318451,
+        "stop" : 1594199319570,
+        "duration" : 1119
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤2:在OLT上通过SN的方式将ONU注册上线。",
+      "time" : {
+        "start" : 1594199319570,
+        "stop" : 1594199327771,
+        "duration" : 8201
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤3：配置onu端口vlan为trunk 2000-2007",
+      "time" : {
+        "start" : 1594199327771,
+        "stop" : 1594199334942,
+        "duration" : 7171
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤4：添加虚端口vlan透传2000,2001,2002,2003,2004,2005,2006,2007,2008",
+      "time" : {
+        "start" : 1594199334942,
+        "stop" : 1594199345031,
+        "duration" : 10089
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 4,
+    "hasContent" : true
+  }, {
+    "name" : "login",
+    "time" : {
+      "start" : 1594199305396,
+      "stop" : 1594199318450,
+      "duration" : 13054
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1594199238023,
+      "stop" : 1594199238023,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1594199305396,
+      "stop" : 1594199305396,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1594199238024,
+      "stop" : 1594199238024,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n    测试 ont port 1 is trunk\n    测试方法：配置onu port  1 trunk 2000-2007\n    结果：上下行vlan2000-2007的流量正常通，vlan2008的上下行流量不通\n    ",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "步骤5：打流测试",
+      "time" : {
+        "start" : 1594199345033,
+        "stop" : 1594199379952,
+        "duration" : 34919
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "ec3d2c9c04d6ae11",
+      "name" : "log",
+      "source" : "ec3d2c9c04d6ae11.txt",
+      "type" : "text/plain",
+      "size" : 3274
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 1,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "vlan_trunk_suit::0",
+    "time" : {
+      "start" : 1594199379953,
+      "stop" : 1594199387115,
+      "duration" : 7162
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "步骤6：onu端口vlan恢复为transparent",
+      "time" : {
+        "start" : 1594199379953,
+        "stop" : 1594199387115,
+        "duration" : 7162
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 1,
+    "hasContent" : true
+  }, {
+    "name" : "login::0",
+    "time" : {
+      "start" : 1594199387117,
+      "stop" : 1594199401260,
+      "duration" : 14143
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "onu端口vlan测试"
+  }, {
+    "name" : "story",
+    "value" : "onu端口vlan测试"
+  }, {
+    "name" : "suite",
+    "value" : "test_onu_vlan"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-2JV12RE"
+  }, {
+    "name" : "thread",
+    "value" : "26916-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_onu_vlan"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "ab83c24e994cf2c8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594172977662,
+        "stop" : 1594173014540,
+        "duration" : 36878
+      }
+    }, {
+      "uid" : "31b9a38e571b9229",
+      "status" : "broken",
+      "statusDetails" : "TypeError: 'bool' object is not subscriptable",
+      "time" : {
+        "start" : 1594171125727,
+        "stop" : 1594171125727,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "b00a4a3278c99ec0",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000002E21D4306D8>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594128598393,
+        "stop" : 1594128598393,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "5bb1872f18e54ef2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594123164592,
+        "stop" : 1594123201187,
+        "duration" : 36595
+      }
+    }, {
+      "uid" : "97bebd10434df527",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x0000027E35769898>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594112860576,
+        "stop" : 1594112860576,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "d99138e789d30f7c",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = auth_by_sn(<telnetlib.Telnet object at 0x00000208E2ACD9B0>, '16', '2', '200', '200', '5A54453171200033')",
+      "time" : {
+        "start" : 1594038918613,
+        "stop" : 1594038918613,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "942cc83a5c6ffbdc",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = auth_by_sn(<telnetlib.Telnet object at 0x00000208E29CE710>, '16', '2', '200', '200', '5A54453171200033')",
+      "time" : {
+        "start" : 1594038830886,
+        "stop" : 1594038830886,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "2b3d073998facaa9",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = auth_by_sn(<telnetlib.Telnet object at 0x00000208E29956A0>, '16', '2', '200', '200', '5A54453171200033')",
+      "time" : {
+        "start" : 1594038743308,
+        "stop" : 1594038743308,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "a47642f7983ce751",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593772488925,
+        "stop" : 1593772522934,
+        "duration" : 34009
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "6fa26482182494c.json",
+  "parameterValues" : [ ]
+}

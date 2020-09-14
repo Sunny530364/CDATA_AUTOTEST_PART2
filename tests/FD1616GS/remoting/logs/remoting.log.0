@@ -1,0 +1,8 @@
+八月 11, 2020 9:05:11 上午 org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver resolve
+信息: Remoting server accepts the following protocols: [JNLP4-connect, Ping]
+八月 11, 2020 9:11:46 上午 org.jenkinsci.remoting.util.AnonymousClassWarnings warn
+警告: Attempt to (de-)serialize anonymous class ru.yandex.qatools.allure.jenkins.utils.BuildUtils$1; see: https://jenkins.io/redirect/serialization-of-anonymous-classes/
+八月 11, 2020 9:11:46 上午 org.jenkinsci.remoting.util.AnonymousClassWarnings warn
+警告: Attempt to (de-)serialize anonymous class ru.yandex.qatools.allure.jenkins.tools.AllureCommandlineInstallation$2; see: https://jenkins.io/redirect/serialization-of-anonymous-classes/
+八月 11, 2020 9:11:46 上午 org.jenkinsci.remoting.util.AnonymousClassWarnings warn
+警告: Attempt to (de-)serialize anonymous class ru.yandex.qatools.allure.jenkins.tools.AllureCommandlineInstallation$1; see: https://jenkins.io/redirect/serialization-of-anonymous-classes/

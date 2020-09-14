@@ -1,0 +1,424 @@
+{
+  "uid" : "8e10993b9f5f2c8f",
+  "name" : "onu mac地址上报测试",
+  "fullName" : "test_onu_mac_learn#test_ont_mac_learn",
+  "historyId" : "efeb02a4d4f48f95e3052e2025676887",
+  "time" : {
+    "start" : 1594953981649,
+    "stop" : 1594954023875,
+    "duration" : 42226
+  },
+  "description" : "\n    用例描述\n    测试目的： 测试onu端口mac地址学习是否正常\n    测试步骤：\n    步骤1: 发现未注册的ONU\n    步骤2: 在OLT上通过SN的方式将ONU注册上线\n    步骤3: 配置虚端口vlan2000透传\n    步骤4: 打流测试,查看onu端口mac地址表\n    1）上下行各发送流00:00:00:22:22:21递增5条，在olt上查看onu端口mac地址表\n    down_stream_header = (\n        'ethernetII_1.sourceMacAdd=00:00:00:11:11:11 vlan_1.id=2000 ethernetII_1.destMacAdd=00:00:00:22:22:21',\n        'ethernetII_1.sourceMacAdd=00:00:00:11:11:12 vlan_1.id=2001 ethernetII_1.destMacAdd=00:00:00:22:22:22')\n    up_stream_header = (\n        'ethernetII_1.sourceMacAdd=00:00:00:22:22:21 vlan_1.id=2000 ethernetII_1.destMacAdd=00:00:00:11:11:11',\n        'ethernetII_1.sourceMacAdd=00:00:00:22:22:22 vlan_1.id=2001 ethernetII_1.destMacAdd=00:00:00:11:11:12',)\n\n    预期结果: 上下行正常通，在olt上查看onu端口mac地址表有5条（00:00:00:22:22:21递增5条）\n    ",
+  "descriptionHtml" : "<pre><code>用例描述\n测试目的： 测试onu端口mac地址学习是否正常\n测试步骤：\n步骤1: 发现未注册的ONU\n步骤2: 在OLT上通过SN的方式将ONU注册上线\n步骤3: 配置虚端口vlan2000透传\n步骤4: 打流测试,查看onu端口mac地址表\n1）上下行各发送流00:00:00:22:22:21递增5条，在olt上查看onu端口mac地址表\ndown_stream_header = (\n    'ethernetII_1.sourceMacAdd=00:00:00:11:11:11 vlan_1.id=2000 ethernetII_1.destMacAdd=00:00:00:22:22:21',\n    'ethernetII_1.sourceMacAdd=00:00:00:11:11:12 vlan_1.id=2001 ethernetII_1.destMacAdd=00:00:00:22:22:22')\nup_stream_header = (\n    'ethernetII_1.sourceMacAdd=00:00:00:22:22:21 vlan_1.id=2000 ethernetII_1.destMacAdd=00:00:00:11:11:11',\n    'ethernetII_1.sourceMacAdd=00:00:00:22:22:22 vlan_1.id=2001 ethernetII_1.destMacAdd=00:00:00:11:11:12',)\n\n预期结果: 上下行正常通，在olt上查看onu端口mac地址表有5条（00:00:00:22:22:21递增5条）\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1594953968591,
+      "stop" : 1594953968591,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1594953968591,
+      "stop" : 1594953968591,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1594953968591,
+      "stop" : 1594953968591,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1594953968591,
+      "stop" : 1594953968591,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "login",
+    "time" : {
+      "start" : 1594953968591,
+      "stop" : 1594953981647,
+      "duration" : 13056
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "__pytest_repeat_step_number",
+    "time" : {
+      "start" : 1594953968591,
+      "stop" : 1594953968591,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n    用例描述\n    测试目的： 测试onu端口mac地址学习是否正常\n    测试步骤：\n    步骤1: 发现未注册的ONU\n    步骤2: 在OLT上通过SN的方式将ONU注册上线\n    步骤3: 配置虚端口vlan2000透传\n    步骤4: 打流测试,查看onu端口mac地址表\n    1）上下行各发送流00:00:00:22:22:21递增5条，在olt上查看onu端口mac地址表\n    down_stream_header = (\n        'ethernetII_1.sourceMacAdd=00:00:00:11:11:11 vlan_1.id=2000 ethernetII_1.destMacAdd=00:00:00:22:22:21',\n        'ethernetII_1.sourceMacAdd=00:00:00:11:11:12 vlan_1.id=2001 ethernetII_1.destMacAdd=00:00:00:22:22:22')\n    up_stream_header = (\n        'ethernetII_1.sourceMacAdd=00:00:00:22:22:21 vlan_1.id=2000 ethernetII_1.destMacAdd=00:00:00:11:11:11',\n        'ethernetII_1.sourceMacAdd=00:00:00:22:22:22 vlan_1.id=2001 ethernetII_1.destMacAdd=00:00:00:11:11:12',)\n\n    预期结果: 上下行正常通，在olt上查看onu端口mac地址表有5条（00:00:00:22:22:21递增5条）\n    ",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "步骤1:发现未注册的ONU。",
+      "time" : {
+        "start" : 1594953981650,
+        "stop" : 1594953982745,
+        "duration" : 1095
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤2:在OLT上通过SN的方式将ONU注册上线。",
+      "time" : {
+        "start" : 1594953982745,
+        "stop" : 1594953993028,
+        "duration" : 10283
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤3:配置虚端口vlan2000透传",
+      "time" : {
+        "start" : 1594953993029,
+        "stop" : 1594953997050,
+        "duration" : 4021
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤4:打流测试,查看onu端口mac地址表",
+      "time" : {
+        "start" : 1594953997050,
+        "stop" : 1594954023874,
+        "duration" : 26824
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "e3762825f2686de2",
+      "name" : "log",
+      "source" : "e3762825f2686de2.txt",
+      "type" : "text/plain",
+      "size" : 2411
+    }, {
+      "uid" : "52db7a1b41b5436f",
+      "name" : "stdout",
+      "source" : "52db7a1b41b5436f.txt",
+      "type" : "text/plain",
+      "size" : 80130
+    }, {
+      "uid" : "cf3a62600ce48006",
+      "name" : "stderr",
+      "source" : "cf3a62600ce48006.txt",
+      "type" : "text/plain",
+      "size" : 2006
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 4,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "login::0",
+    "time" : {
+      "start" : 1594954023877,
+      "stop" : 1594954035981,
+      "duration" : 12104
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "onu mac地址上报测试"
+  }, {
+    "name" : "story",
+    "value" : "onu mac地址上报测试"
+  }, {
+    "name" : "suite",
+    "value" : "test_onu_mac_learn"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-2JV12RE"
+  }, {
+    "name" : "thread",
+    "value" : "5756-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_onu_mac_learn"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "85da02ada436a966",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594952646281,
+        "stop" : 1594952691841,
+        "duration" : 45560
+      }
+    }, {
+      "uid" : "33d4090b78dfbef2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594693099848,
+        "stop" : 1594693153979,
+        "duration" : 54131
+      }
+    }, {
+      "uid" : "5e03a82c1c63cbd2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594360389991,
+        "stop" : 1594360433011,
+        "duration" : 43020
+      }
+    }, {
+      "uid" : "c70d4ef28ecda9f8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594286119423,
+        "stop" : 1594286163338,
+        "duration" : 43915
+      }
+    }, {
+      "uid" : "2659f3b291e931a2",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert ('fail' == 'PASS'\n  - fail\n  + PASS)",
+      "time" : {
+        "start" : 1594285762141,
+        "stop" : 1594285809823,
+        "duration" : 47682
+      }
+    }, {
+      "uid" : "9886a76594ae6322",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert ('fail' == 'PASS'\n  - fail\n  + PASS)",
+      "time" : {
+        "start" : 1594285470499,
+        "stop" : 1594285511814,
+        "duration" : 41315
+      }
+    }, {
+      "uid" : "5a27b2870fc2bd2b",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = auth_by_sn(<telnetlib.Telnet object at 0x00000144CF62BC88>, '16', '2', '200', '200', '5A54453171200033')",
+      "time" : {
+        "start" : 1594285280297,
+        "stop" : 1594285290990,
+        "duration" : 10693
+      }
+    }, {
+      "uid" : "feb161ab9da38821",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = auth_by_sn(<telnetlib.Telnet object at 0x000001D675E55C18>, '16', '2', '200', '200', '5A54453171200033')",
+      "time" : {
+        "start" : 1594284728225,
+        "stop" : 1594284745455,
+        "duration" : 17230
+      }
+    }, {
+      "uid" : "c1750c6c53de8800",
+      "status" : "broken",
+      "statusDetails" : "NameError: name 'ont_mac_learn_suit' is not defined",
+      "time" : {
+        "start" : 1594279833033,
+        "stop" : 1594279873624,
+        "duration" : 40591
+      }
+    }, {
+      "uid" : "d235db7dce601a1b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594198425146,
+        "stop" : 1594198454274,
+        "duration" : 29128
+      }
+    }, {
+      "uid" : "7e3afe957fdf122e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594189741732,
+        "stop" : 1594189772538,
+        "duration" : 30806
+      }
+    }, {
+      "uid" : "db17f956a8486d2f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594172401903,
+        "stop" : 1594172432237,
+        "duration" : 30334
+      }
+    }, {
+      "uid" : "9335655f68aec49c",
+      "status" : "broken",
+      "statusDetails" : "TypeError: 'bool' object is not subscriptable",
+      "time" : {
+        "start" : 1594170978526,
+        "stop" : 1594170978526,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "a07441abb04f281d",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000002E21D4674A8>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594127675744,
+        "stop" : 1594127675744,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "1bf2b20ff6a42126",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594122573608,
+        "stop" : 1594122604311,
+        "duration" : 30703
+      }
+    }, {
+      "uid" : "6329637611fd765d",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x0000027E3576DB70>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594112676890,
+        "stop" : 1594112676890,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "a3f9c744422a47f1",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = auth_by_sn(<telnetlib.Telnet object at 0x00000208E297F668>, '16', '2', '200', '200', '5A54453171200033')",
+      "time" : {
+        "start" : 1594036807405,
+        "stop" : 1594036807405,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "469b2df9e14664d0",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = auth_by_sn(<telnetlib.Telnet object at 0x00000208E29CD400>, '16', '2', '200', '200', '5A54453171200033')",
+      "time" : {
+        "start" : 1594036719494,
+        "stop" : 1594036719494,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "790519a4a4695c42",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = auth_by_sn(<telnetlib.Telnet object at 0x00000208E2910F28>, '16', '2', '200', '200', '5A54453171200033')",
+      "time" : {
+        "start" : 1594036631114,
+        "stop" : 1594036631114,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "5be8a71904bed9fb",
+      "status" : "broken",
+      "statusDetails" : "IndexError: list index out of range",
+      "time" : {
+        "start" : 1593771871078,
+        "stop" : 1593771894358,
+        "duration" : 23280
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "8e10993b9f5f2c8f.json",
+  "parameterValues" : [ ]
+}

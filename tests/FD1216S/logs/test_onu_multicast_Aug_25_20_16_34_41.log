@@ -1,0 +1,8 @@
+[INFO] 2020-08-25 16:34:50,364  Receive Msg: listen_port 9003
+
+[INFO] 2020-08-25 16:34:50,449  Renix api initialization finished
+[INFO] 2020-08-25 16:35:05,795  =========ONU¶Ë¿Ú¿çvlan×é²¥²âÊÔ=========
+[INFO] 2020-08-25 16:36:04,116  create ports with location:
+[INFO] 2020-08-25 16:36:05,807  StreamPortConfig_1 has lower: InterFrameGapProfile_1
+[INFO] 2020-08-25 16:36:05,838  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-08-25 16:36:06,461  PageResultView_1 has lower: ResultQuery_3

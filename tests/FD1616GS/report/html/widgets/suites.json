@@ -1,0 +1,103 @@
+{
+  "total" : 9,
+  "items" : [ {
+    "uid" : "f528ed09fd2719151bc5696637e087f4",
+    "name" : "test_onu_gemport",
+    "statistic" : {
+      "failed" : 50,
+      "broken" : 5,
+      "skipped" : 0,
+      "passed" : 4,
+      "unknown" : 0,
+      "total" : 59
+    }
+  }, {
+    "uid" : "a91d8ecacfbd1ffa12bbf9d0c2ac31b2",
+    "name" : "test_onu_auth_type",
+    "statistic" : {
+      "failed" : 19,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 36,
+      "unknown" : 0,
+      "total" : 55
+    }
+  }, {
+    "uid" : "e9220140de3532b2d13e008f7a2a2df6",
+    "name" : "test_onu_internet_type",
+    "statistic" : {
+      "failed" : 16,
+      "broken" : 17,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 33
+    }
+  }, {
+    "uid" : "3a4a3aa742e1481aaeb93564db6b4602",
+    "name" : "test_onu_limitrate",
+    "statistic" : {
+      "failed" : 6,
+      "broken" : 4,
+      "skipped" : 0,
+      "passed" : 13,
+      "unknown" : 0,
+      "total" : 23
+    }
+  }, {
+    "uid" : "e9cd04eddb4a5b3a38c2af772d0cdf72",
+    "name" : "test_onu_vlan",
+    "statistic" : {
+      "failed" : 3,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 24,
+      "unknown" : 0,
+      "total" : 27
+    }
+  }, {
+    "uid" : "433fe9a613facaf72b9d388c4af356f9",
+    "name" : "test_onu_multicast",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 22,
+      "unknown" : 0,
+      "total" : 23
+    }
+  }, {
+    "uid" : "b10fe25a73371169de01c3dbd3312400",
+    "name" : "test_onu_mgt",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 2,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 3
+    }
+  }, {
+    "uid" : "37260ab063a63f2c0cf3e50d19ad40a0",
+    "name" : "test_onu_mac_learn",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 11,
+      "unknown" : 0,
+      "total" : 11
+    }
+  }, {
+    "uid" : "cf62f7887ade9f5dcd08d31ee288442b",
+    "name" : "test_get_ont_info",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 11,
+      "unknown" : 0,
+      "total" : 11
+    }
+  } ]
+}

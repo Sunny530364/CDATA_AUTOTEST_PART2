@@ -1,0 +1,56 @@
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 192.168.0.181 登录成功
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 pon 16 端口使能成功
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 =========测试ONU端口vlan为translate=========
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU在OLT上被重新被发现。
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 当前ONU_ID没有被占用。
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU在OLT上添加成功。
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU在OLT上通过Gpon_SN注册成功。
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 配置onu eth1-4 vlan为translate100-107转2000-2007成功
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 SERVICE-PORT添加成功
+[32mINFO    [0m script:renix_common_api.py:84 create ports with location:
+[32mINFO    [0m script:renix_common_api.py:84 StreamPortConfig_25 has lower: InterFrameGapProfile_25
+[32mINFO    [0m script:renix_common_api.py:84 StreamPortConfig_26 has lower: InterFrameGapProfile_26
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/7) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/8) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/7) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/8) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/7) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/8) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/7) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/8) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/7) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/8) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/7) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/8) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/7) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/8) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/7) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/8) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/7) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/8) create streams
+[32mINFO    [0m script:renix_common_api.py:84 PageResultView_13 has lower: ResultQuery_13
+[32mINFO    [0m script:renix_common_api.py:84 ResultQuery_13 has lower: StreamBlockStats_53 StreamBlockStats_54 StreamBlockStats_55 StreamBlockStats_56 StreamBlockStats_57 StreamBlockStats_58 StreamBlockStats_59 StreamBlockStats_60 StreamBlockStats_61 StreamBlockStats_62 StreamBlockStats_63 StreamBlockStats_64 StreamBlockStats_65 StreamBlockStats_66 StreamBlockStats_67 StreamBlockStats_68 StreamBlockStats_69 StreamBlockStats_70
+[32mINFO    [0m script:renix_common_api.py:84 [test pass] [sourceMacAdd=00:00:00:11:11:11] rx packet (107286)is  equal to tx packets (107286)
+[32mINFO    [0m script:renix_common_api.py:84 [test pass] [sourceMacAdd=00:00:00:11:11:12] rx packet (107286)is  equal to tx packets (107286)
+[32mINFO    [0m script:renix_common_api.py:84 [test pass] [sourceMacAdd=00:00:00:11:11:13] rx packet (107287)is  equal to tx packets (107287)
+[32mINFO    [0m script:renix_common_api.py:84 [test pass] [sourceMacAdd=00:00:00:11:11:14] rx packet (107286)is  equal to tx packets (107286)
+[32mINFO    [0m script:renix_common_api.py:84 [test pass] [sourceMacAdd=00:00:00:11:11:15] rx packet (107286)is  equal to tx packets (107286)
+[32mINFO    [0m script:renix_common_api.py:84 [test pass] [sourceMacAdd=00:00:00:11:11:16] rx packet (107286)is  equal to tx packets (107286)
+[32mINFO    [0m script:renix_common_api.py:84 [test pass] [sourceMacAdd=00:00:00:11:11:17] rx packet (107286)is  equal to tx packets (107286)
+[32mINFO    [0m script:renix_common_api.py:84 [test pass] [sourceMacAdd=00:00:00:11:11:18] rx packet (107285)is  equal to tx packets (107285)
+[32mINFO    [0m script:renix_common_api.py:84 [test Pass] [sourceMacAdd=00:00:00:11:11:19]rx(0), realtime loss packet (107286)is  equal to  tx packet(107286)
+[1m[31mERROR   [0m script:renix_common_api.py:74 [test fail] [sourceMacAdd=00:00:00:22:22:21] rx packet (0) or tx packets (107286) is 0
+[1m[31mERROR   [0m script:renix_common_api.py:74 [test fail] [sourceMacAdd=00:00:00:22:22:22] rx packet (0) or tx packets (107286) is 0
+[1m[31mERROR   [0m script:renix_common_api.py:74 [test fail] [sourceMacAdd=00:00:00:22:22:23] rx packet (0) or tx packets (107287) is 0
+[1m[31mERROR   [0m script:renix_common_api.py:74 [test fail] [sourceMacAdd=00:00:00:22:22:24] rx packet (0) or tx packets (107286) is 0
+[1m[31mERROR   [0m script:renix_common_api.py:74 [test fail] [sourceMacAdd=00:00:00:22:22:25] rx packet (0) or tx packets (107286) is 0
+[1m[31mERROR   [0m script:renix_common_api.py:74 [test fail] [sourceMacAdd=00:00:00:22:22:26] rx packet (0) or tx packets (107286) is 0
+[1m[31mERROR   [0m script:renix_common_api.py:74 [test fail] [sourceMacAdd=00:00:00:22:22:27] rx packet (0) or tx packets (107286) is 0
+[1m[31mERROR   [0m script:renix_common_api.py:74 [test fail] [sourceMacAdd=00:00:00:22:22:28] rx packet (0) or tx packets (107285) is 0
+[32mINFO    [0m script:renix_common_api.py:84 [test Pass] [sourceMacAdd=00:00:00:22:22:29]rx(0), realtime loss packet (107286)is  equal to  tx packet(107286)
+[1m[31mERROR   [0m CDATA:Cdata_loggers.py:98 ONU端口为translate:打流测试失败
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 删除onu eth1的vlan 成功
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU在OLT上删除成功
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU在OLT上被重新被发现。
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 pon 16 端口去使能成功
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 退出登录

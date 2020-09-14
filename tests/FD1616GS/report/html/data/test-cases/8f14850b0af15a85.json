@@ -1,0 +1,208 @@
+{
+  "uid" : "8f14850b0af15a85",
+  "name" : "DHCP测试",
+  "fullName" : "test_onu_internet_type#test_dhcp",
+  "historyId" : "2c9984aa74247b7da75bf14bfa735fde",
+  "time" : {
+    "start" : 1594308592738,
+    "stop" : 1594308652636,
+    "duration" : 59898
+  },
+  "description" : "\n    用例描述：\n    测试PC是否可以通过DHCP方式上网。\n    ",
+  "descriptionHtml" : "<pre><code>用例描述：\n测试PC是否可以通过DHCP方式上网。\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB189125F8>, '16', '2', '5A54453171200033')",
+  "statusTrace" : "login = <telnetlib.Telnet object at 0x000001EB189125F8>\n\n    @allure.feature(\"ONU业务测试\")\n    @allure.story(\"ONU上网方式测试\")\n    @allure.title(\"DHCP测试\")\n    @pytest.mark.run(order=7)\n    # @pytest.mark.skip(\"暂时不执行\")\n    def test_dhcp(login):\n        '''\n        用例描述：\n        测试PC是否可以通过DHCP方式上网。\n        '''\n        cdata_info(\"=========ONU业务测试：DHCP测试=========\")\n        tn = login\n        with allure.step('步骤1:发现未注册的ONU。'):\n>           assert autofind_onu(tn, PonID, OnuID, SN)\nE           AssertionError: assert False\nE            +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB189125F8>, '16', '2', '5A54453171200033')\n\ntest_onu_internet_type.py:29: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "login",
+    "time" : {
+      "start" : 1594308579666,
+      "stop" : 1594308592737,
+      "duration" : 13071
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "__pytest_repeat_step_number",
+    "time" : {
+      "start" : 1594308579666,
+      "stop" : 1594308579666,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1594296062434,
+      "stop" : 1594296062434,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1594308579666,
+      "stop" : 1594308579666,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1594296062433,
+      "stop" : 1594296062433,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1594296062433,
+      "stop" : 1594296062433,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n    用例描述：\n    测试PC是否可以通过DHCP方式上网。\n    ",
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB189125F8>, '16', '2', '5A54453171200033')",
+    "statusTrace" : "login = <telnetlib.Telnet object at 0x000001EB189125F8>\n\n    @allure.feature(\"ONU业务测试\")\n    @allure.story(\"ONU上网方式测试\")\n    @allure.title(\"DHCP测试\")\n    @pytest.mark.run(order=7)\n    # @pytest.mark.skip(\"暂时不执行\")\n    def test_dhcp(login):\n        '''\n        用例描述：\n        测试PC是否可以通过DHCP方式上网。\n        '''\n        cdata_info(\"=========ONU业务测试：DHCP测试=========\")\n        tn = login\n        with allure.step('步骤1:发现未注册的ONU。'):\n>           assert autofind_onu(tn, PonID, OnuID, SN)\nE           AssertionError: assert False\nE            +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB189125F8>, '16', '2', '5A54453171200033')\n\ntest_onu_internet_type.py:29: AssertionError",
+    "steps" : [ {
+      "name" : "步骤1:发现未注册的ONU。",
+      "time" : {
+        "start" : 1594308592740,
+        "stop" : 1594308652636,
+        "duration" : 59896
+      },
+      "status" : "failed",
+      "statusMessage" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB189125F8>, '16', '2', '5A54453171200033')\n",
+      "statusTrace" : "  File \"E:\\CDATA\\自动化测试\\Cdata_part11\\tests\\GponSfu\\test_onu_internet_type.py\", line 29, in test_dhcp\n    assert autofind_onu(tn, PonID, OnuID, SN)\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "492d22220fb2adc8",
+      "name" : "log",
+      "source" : "492d22220fb2adc8.txt",
+      "type" : "text/plain",
+      "size" : 853
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 1,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "login::0",
+    "time" : {
+      "start" : 1594308652656,
+      "stop" : 1594308712178,
+      "duration" : 59522
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "ONU上网方式测试"
+  }, {
+    "name" : "feature",
+    "value" : "ONU业务测试"
+  }, {
+    "name" : "suite",
+    "value" : "test_onu_internet_type"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-2JV12RE"
+  }, {
+    "name" : "thread",
+    "value" : "31328-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_onu_internet_type"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "__pytest_repeat_step_number",
+    "value" : "6"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "8f14850b0af15a85.json",
+  "parameterValues" : [ "6" ]
+}

@@ -1,0 +1,268 @@
+{
+  "uid" : "e748231eebdccb73",
+  "name" : "测试mapping-mode为vlan_pri",
+  "fullName" : "test_onu_gemport#test_gemport_vlan_pri",
+  "historyId" : "0238e18c223e4297e096104360392dd8",
+  "time" : {
+    "start" : 1594368082974,
+    "stop" : 1594368136686,
+    "duration" : 53712
+  },
+  "description" : "\n    用例描述\n    测试目的： 测试mapping-mode is vlan+pri, mapping 为vlan2000+pri2时，vlan2000+2和vlan200+3和vlan2001+pri2的报文上下行是否都正常\n    测试步骤：\n    步骤1:发现未注册的ONU\n    步骤2:在OLT上通过SN的方式将ONU注册上线\n    步骤3:修改gemport配置为vlan 2000\n    步骤4:配置虚端口vlan2000透传，vlan2001透传\n    步骤5:打流测试\n    测试方法：上下行各发送三条流：vlan2000 pri2和 vlan2000 pri3 ；发送vlan 2001 pri2\n    结果：结果：vlan 2000 pri2的上下行都能通；vlan2000 pri3下行能通，vlan2000 pri3上行不通;vlan 2001上下行都不通\n\n    ",
+  "descriptionHtml" : "<pre><code>用例描述\n测试目的： 测试mapping-mode is vlan+pri, mapping 为vlan2000+pri2时，vlan2000+2和vlan200+3和vlan2001+pri2的报文上下行是否都正常\n测试步骤：\n步骤1:发现未注册的ONU\n步骤2:在OLT上通过SN的方式将ONU注册上线\n步骤3:修改gemport配置为vlan 2000\n步骤4:配置虚端口vlan2000透传，vlan2001透传\n步骤5:打流测试\n测试方法：上下行各发送三条流：vlan2000 pri2和 vlan2000 pri3 ；发送vlan 2001 pri2\n结果：结果：vlan 2000 pri2的上下行都能通；vlan2000 pri3下行能通，vlan2000 pri3上行不通;vlan 2001上下行都不通\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1594368069933,
+      "stop" : 1594368069933,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1594367911510,
+      "stop" : 1594367911510,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1594367911510,
+      "stop" : 1594367911510,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "__pytest_repeat_step_number",
+    "time" : {
+      "start" : 1594368069933,
+      "stop" : 1594368069933,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1594367911510,
+      "stop" : 1594367911510,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "login",
+    "time" : {
+      "start" : 1594368069933,
+      "stop" : 1594368082974,
+      "duration" : 13041
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n    用例描述\n    测试目的： 测试mapping-mode is vlan+pri, mapping 为vlan2000+pri2时，vlan2000+2和vlan200+3和vlan2001+pri2的报文上下行是否都正常\n    测试步骤：\n    步骤1:发现未注册的ONU\n    步骤2:在OLT上通过SN的方式将ONU注册上线\n    步骤3:修改gemport配置为vlan 2000\n    步骤4:配置虚端口vlan2000透传，vlan2001透传\n    步骤5:打流测试\n    测试方法：上下行各发送三条流：vlan2000 pri2和 vlan2000 pri3 ；发送vlan 2001 pri2\n    结果：结果：vlan 2000 pri2的上下行都能通；vlan2000 pri3下行能通，vlan2000 pri3上行不通;vlan 2001上下行都不通\n\n    ",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "步骤1:发现未注册的ONU。",
+      "time" : {
+        "start" : 1594368082975,
+        "stop" : 1594368084122,
+        "duration" : 1147
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤2:在OLT上通过SN的方式将ONU注册上线。",
+      "time" : {
+        "start" : 1594368084122,
+        "stop" : 1594368105475,
+        "duration" : 21353
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤3:修改gemport配置为vlan 2000 priority 2",
+      "time" : {
+        "start" : 1594368105475,
+        "stop" : 1594368105664,
+        "duration" : 189
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤4:配置虚端口vlan2000和vlan 2001透传",
+      "time" : {
+        "start" : 1594368105665,
+        "stop" : 1594368108691,
+        "duration" : 3026
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤5:打流测试",
+      "time" : {
+        "start" : 1594368108691,
+        "stop" : 1594368136570,
+        "duration" : 27879
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤6:gemport恢复默认配置",
+      "time" : {
+        "start" : 1594368136570,
+        "stop" : 1594368136686,
+        "duration" : 116
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "91a8ac64f510ab9",
+      "name" : "log",
+      "source" : "91a8ac64f510ab9.txt",
+      "type" : "text/plain",
+      "size" : 3231
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 6,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "login::0",
+    "time" : {
+      "start" : 1594368136688,
+      "stop" : 1594368149830,
+      "duration" : 13142
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "gemport测试"
+  }, {
+    "name" : "feature",
+    "value" : "gemport测试"
+  }, {
+    "name" : "suite",
+    "value" : "test_onu_gemport"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-2JV12RE"
+  }, {
+    "name" : "thread",
+    "value" : "35744-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_onu_gemport"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e748231eebdccb73.json",
+  "parameterValues" : [ ]
+}

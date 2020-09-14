@@ -1,0 +1,29 @@
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 192.168.3.138 登录成功
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 =========OMCI升级ONU=========
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU在OLT上被重新被发现。
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 当前ONU_ID没有被占用。
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU在OLT上添加成功。
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU在OLT上通过MAC注册成功。
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONT Native-vlan配置成功
+[32mINFO    [0m script:renix_common_api.py:84 Create ports with locations:['//192.168.0.180/1/7', '//192.168.0.180/1/8']
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ===========================================================================
+[32mINFO    [0m script:renix_common_api.py:84 EthCopper_23 has lower: EthCopperConfig_23
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 当前端口1的协商速率为：EnumLineSpeed.SPEED_1G
+[32mINFO    [0m script:renix_common_api.py:84 EthCopper_24 has lower: EthCopperConfig_24
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 当前端口2的协商速率为：EnumLineSpeed.SPEED_1G
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ===========================================================================
+[32mINFO    [0m script:renix_common_api.py:84 StreamPortConfig_23 has lower: InterFrameGapProfile_23
+[32mINFO    [0m script:renix_common_api.py:84 StreamPortConfig_24 has lower: InterFrameGapProfile_24
+[32mINFO    [0m script:renix_common_api.py:84 port(['//192.168.0.180/1/7', '//192.168.0.180/1/8']) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(['//192.168.0.180/1/7', '//192.168.0.180/1/8']) create streams
+[32mINFO    [0m script:renix_common_api.py:84 PageResultView_12 has lower: ResultQuery_12
+[32mINFO    [0m script:renix_common_api.py:84 ResultQuery_12 has lower: StreamBlockStats_21 StreamBlockStats_22
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 测试仪发流成功
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 步骤1：升级文件已存在，不需要从TFTP加载升级文件。
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 选择升级的ONU成功
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ==========================================
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ===============ERROR!!!===================
+[31m[1mERROR   [0m CDATA:Cdata_loggers.py:98 ONU进入升级进程失败
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ==========================================
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU在OLT上删除成功
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU在OLT上被重新被发现。

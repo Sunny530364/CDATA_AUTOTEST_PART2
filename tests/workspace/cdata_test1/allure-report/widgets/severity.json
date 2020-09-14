@@ -1,0 +1,231 @@
+[ {
+  "uid" : "b5f13e2834f38d24",
+  "name" : "测试onu组播正常通的情况",
+  "time" : {
+    "start" : 1599823220692,
+    "stop" : 1599823299513,
+    "duration" : 78821
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6a600c891558d33a",
+  "name" : "onu mac地址上报测试",
+  "time" : {
+    "start" : 1599822876146,
+    "stop" : 1599822933677,
+    "duration" : 57531
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f94469b4f1fc1a01",
+  "name" : "测试mapping-mode为vlan_pri",
+  "time" : {
+    "start" : 1599822252601,
+    "stop" : 1599822324224,
+    "duration" : 71623
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "14127e67a620d693",
+  "name" : "LOID+PASSWORD认证",
+  "time" : {
+    "start" : 1599821939678,
+    "stop" : 1599822058877,
+    "duration" : 119199
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "c6f66bad3d5e15e3",
+  "name" : "测试mapping-mode为vlan",
+  "time" : {
+    "start" : 1599822156646,
+    "stop" : 1599822224270,
+    "duration" : 67624
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "44ee7e3304968d6c",
+  "name" : "测试onu端口vlan为translate",
+  "time" : {
+    "start" : 1599822748031,
+    "stop" : 1599822828761,
+    "duration" : 80730
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "757db57a3055096c",
+  "name" : "LOID认证",
+  "time" : {
+    "start" : 1599821812195,
+    "stop" : 1599821913481,
+    "duration" : 101286
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "a7cd7da56efa2eb8",
+  "name" : "测试mapping-mode为port",
+  "time" : {
+    "start" : 1599822428349,
+    "stop" : 1599822516381,
+    "duration" : 88032
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "439b6da0962895e6",
+  "name" : "测试onu端口入口限速",
+  "time" : {
+    "start" : 1599822955861,
+    "stop" : 1599822994174,
+    "duration" : 38313
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9666a5fcbf9ea8f0",
+  "name" : "去激活ONU",
+  "time" : {
+    "start" : 1599823532709,
+    "stop" : 1599823631110,
+    "duration" : 98401
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "afb16f8a008ffa01",
+  "name" : "Gpon_SN+PASSWORD认证",
+  "time" : {
+    "start" : 1599821691839,
+    "stop" : 1599821785004,
+    "duration" : 93165
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "22d14b36f3487da",
+  "name" : "测试onu组播正常不通的情况",
+  "time" : {
+    "start" : 1599823324693,
+    "stop" : 1599823403342,
+    "duration" : 78649
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6adc930d553cf922",
+  "name" : "测试dba限速(type4)",
+  "time" : {
+    "start" : 1599823148022,
+    "stop" : 1599823194947,
+    "duration" : 46925
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "8d0a955cc56c7dae",
+  "name" : "测试onu端口vlan为transparent",
+  "time" : {
+    "start" : 1599822539693,
+    "stop" : 1599822587179,
+    "duration" : 47486
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "887bf8eb6e382cb9",
+  "name" : "测试onu跨组播vlan",
+  "time" : {
+    "start" : 1599823430651,
+    "stop" : 1599823507499,
+    "duration" : 76848
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "d67c1dd9ce5d3de1",
+  "name" : "Gpon_SN的PASSWORD认证",
+  "time" : {
+    "start" : 1599821564302,
+    "stop" : 1599821664643,
+    "duration" : 100341
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "e7c134f8ecf9e2d5",
+  "name" : "远程重启ONU",
+  "time" : {
+    "start" : 1599823652303,
+    "stop" : 1599823750708,
+    "duration" : 98405
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "6bebfc30afc1c354",
+  "name" : "测试mapping为transaprent",
+  "time" : {
+    "start" : 1599822084092,
+    "stop" : 1599822134453,
+    "duration" : 50361
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ee334677a4929956",
+  "name" : "测试mapping-mode为pri",
+  "time" : {
+    "start" : 1599822348553,
+    "stop" : 1599822402037,
+    "duration" : 53484
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "8c687310d3643675",
+  "name" : "测试onu端口vlan为trunk",
+  "time" : {
+    "start" : 1599822612366,
+    "stop" : 1599822700642,
+    "duration" : 88276
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9b02f0a55604925",
+  "name" : "Gpon_SN认证",
+  "time" : {
+    "start" : 1599821443692,
+    "stop" : 1599821535855,
+    "duration" : 92163
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "7c898a3f1546e655",
+  "name" : "查看ONU的信息上报",
+  "time" : {
+    "start" : 1599821400727,
+    "stop" : 1599821420510,
+    "duration" : 19783
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a21fc18c0ed3c421",
+  "name" : "测试onu端口出口限速",
+  "time" : {
+    "start" : 1599823020349,
+    "stop" : 1599823125836,
+    "duration" : 105487
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

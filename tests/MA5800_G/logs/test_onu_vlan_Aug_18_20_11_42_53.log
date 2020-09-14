@@ -1,0 +1,41 @@
+[INFO] 2020-08-18 11:43:04,557  Receive Msg: listen_port 9002
+
+[INFO] 2020-08-18 11:43:04,692  Renix api initialization finished
+[INFO] 2020-08-18 11:45:58,563  create ports with location:
+[INFO] 2020-08-18 11:46:00,263  StreamPortConfig_1 has lower: InterFrameGapProfile_1
+[INFO] 2020-08-18 11:46:00,269  StreamPortConfig_2 has lower: InterFrameGapProfile_2
+[INFO] 2020-08-18 11:46:00,299  port(//192.168.0.180/1/1) create streams
+[INFO] 2020-08-18 11:46:00,582  port(//192.168.0.180/1/2) create streams
+[INFO] 2020-08-18 11:46:01,308  port(//192.168.0.180/1/1) create streams
+[INFO] 2020-08-18 11:46:01,588  port(//192.168.0.180/1/2) create streams
+[INFO] 2020-08-18 11:46:02,336  port(//192.168.0.180/1/1) create streams
+[INFO] 2020-08-18 11:46:02,624  port(//192.168.0.180/1/2) create streams
+[INFO] 2020-08-18 11:46:03,356  port(//192.168.0.180/1/1) create streams
+[INFO] 2020-08-18 11:46:03,652  port(//192.168.0.180/1/2) create streams
+[INFO] 2020-08-18 11:46:04,401  port(//192.168.0.180/1/1) create streams
+[INFO] 2020-08-18 11:46:04,695  port(//192.168.0.180/1/2) create streams
+[INFO] 2020-08-18 11:46:05,458  port(//192.168.0.180/1/1) create streams
+[INFO] 2020-08-18 11:46:05,777  port(//192.168.0.180/1/2) create streams
+[INFO] 2020-08-18 11:46:06,530  port(//192.168.0.180/1/1) create streams
+[INFO] 2020-08-18 11:46:06,837  port(//192.168.0.180/1/2) create streams
+[INFO] 2020-08-18 11:46:07,593  port(//192.168.0.180/1/1) create streams
+[INFO] 2020-08-18 11:46:07,921  port(//192.168.0.180/1/2) create streams
+[INFO] 2020-08-18 11:46:08,867  PageResultView_1 has lower: ResultQuery_1
+[INFO] 2020-08-18 11:46:25,136  ResultQuery_1 has lower: StreamBlockStats_1 StreamBlockStats_2 StreamBlockStats_3 StreamBlockStats_4 StreamBlockStats_5 StreamBlockStats_6 StreamBlockStats_7 StreamBlockStats_8 StreamBlockStats_9 StreamBlockStats_10 StreamBlockStats_11 StreamBlockStats_12 StreamBlockStats_13 StreamBlockStats_14 StreamBlockStats_15 StreamBlockStats_16
+[INFO] 2020-08-18 11:46:25,605  [test pass] [sourceMacAdd=00:00:00:11:11:11] rx packet (107777)is  equal to tx packets (107777)
+[INFO] 2020-08-18 11:46:25,611  [test pass] [sourceMacAdd=00:00:00:11:11:16] rx packet (107777)is  equal to tx packets (107777)
+[INFO] 2020-08-18 11:46:25,618  [test pass] [sourceMacAdd=00:00:00:11:11:17] rx packet (107777)is  equal to tx packets (107777)
+[INFO] 2020-08-18 11:46:25,626  [test Pass] [sourceMacAdd=00:00:00:11:11:18]rx(0), realtime loss packet (107777)is  equal to  tx packet(107777)
+[INFO] 2020-08-18 11:46:25,632  [test pass] [sourceMacAdd=00:00:00:11:11:12] rx packet (107777)is  equal to tx packets (107777)
+[INFO] 2020-08-18 11:46:25,640  [test pass] [sourceMacAdd=00:00:00:11:11:13] rx packet (107778)is  equal to tx packets (107778)
+[INFO] 2020-08-18 11:46:25,647  [test pass] [sourceMacAdd=00:00:00:11:11:14] rx packet (107777)is  equal to tx packets (107777)
+[INFO] 2020-08-18 11:46:25,657  [test pass] [sourceMacAdd=00:00:00:11:11:15] rx packet (107777)is  equal to tx packets (107777)
+[INFO] 2020-08-18 11:46:25,663  [test pass] [sourceMacAdd=00:00:00:22:22:25] rx packet (107777)is  equal to tx packets (107777)
+[INFO] 2020-08-18 11:46:25,671  [test pass] [sourceMacAdd=00:00:00:22:22:26] rx packet (107777)is  equal to tx packets (107777)
+[INFO] 2020-08-18 11:46:25,677  [test pass] [sourceMacAdd=00:00:00:22:22:27] rx packet (107777)is  equal to tx packets (107777)
+[INFO] 2020-08-18 11:46:25,685  [test Pass] [sourceMacAdd=00:00:00:22:22:28]rx(0), realtime loss packet (107777)is  equal to  tx packet(107777)
+[INFO] 2020-08-18 11:46:25,693  [test pass] [sourceMacAdd=00:00:00:22:22:21] rx packet (107777)is  equal to tx packets (107777)
+[INFO] 2020-08-18 11:46:25,701  [test pass] [sourceMacAdd=00:00:00:22:22:22] rx packet (107777)is  equal to tx packets (107777)
+[INFO] 2020-08-18 11:46:25,707  [test pass] [sourceMacAdd=00:00:00:22:22:23] rx packet (107778)is  equal to tx packets (107778)
+[INFO] 2020-08-18 11:46:25,714  [test pass] [sourceMacAdd=00:00:00:22:22:24] rx packet (107777)is  equal to tx packets (107777)
+[INFO] 2020-08-18 11:46:43,036  close connection to CL

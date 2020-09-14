@@ -1,0 +1,1 @@
+[32mINFO    [0m CDATA:Cdata_loggers.py:102 配置mapping-mode为port

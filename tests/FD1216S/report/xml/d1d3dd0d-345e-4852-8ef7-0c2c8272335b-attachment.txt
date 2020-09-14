@@ -1,0 +1,26 @@
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 192.168.3.138 登录成功
+[32mINFO    [0m script:renix_common_api.py:84 =========ONU端口跨vlan组播测试=========
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 =========ONU端口跨vlan组播测试=========
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU在OLT上被重新被发现。
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 当前ONU_ID没有被占用。
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU在OLT上添加成功。
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU在OLT上通过MAC注册成功。
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 onu配置组播模式为imgp-snooping正常
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 onu端口配置组播mvlan正常
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 配置 onu 端口1 vlan 为 tag 2000
+[32mINFO    [0m script:renix_common_api.py:84 create ports with location:
+[32mINFO    [0m script:renix_common_api.py:84 StreamPortConfig_15 has lower: InterFrameGapProfile_15
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/7) create streams
+[32mINFO    [0m script:renix_common_api.py:84 PageResultView_8 has lower: ResultQuery_16
+[32mINFO    [0m script:renix_common_api.py:84 ——————————————report test————————————
+[32mINFO    [0m script:renix_common_api.py:84 igmp_client: IgmpTxFrames is 1，IgmpTxV2Reports is 1，IgmpTxLeaveGroups is 0
+[32mINFO    [0m script:renix_common_api.py:84 imgp_client: IgmpRxFrame is 3,IgmpRxGeneralQueries is 2,IgmpRxGroupSpecificQueries is 0
+[32mINFO    [0m script:renix_common_api.py:84 igmp_server:  QuerierTxFrames is 1,QuerierRxFrames is 0
+[32mINFO    [0m script:renix_common_api.py:84 [igmp_report test pass][Stream_239.1.1.1] igmp_server tx igmp packet:734776,igmp_client rx igmp packet:0
+[32mINFO    [0m script:renix_common_api.py:84 ——————————————leave test————————————
+[32mINFO    [0m script:renix_common_api.py:84 igmp_client: IgmpTxFrames is 2，IgmpTxV2Reports is 1，IgmpTxLeaveGroups is 1
+[32mINFO    [0m script:renix_common_api.py:84 [igmp_leave test pass]Stream_239.1.1.1 igmp_client tx leave packet ,result:igmp_server tx:291752,igmp_client rx：0
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 测试onu组播transparent的情况:打流测试正常
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 onu配置组播模式为transparent正常
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU在OLT上删除成功
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU在OLT上被重新被发现。

@@ -1,0 +1,331 @@
+{
+  "uid" : "6bebfc30afc1c354",
+  "name" : "测试mapping为transaprent",
+  "fullName" : "test_onu_gemport#test_gemport_transparent",
+  "historyId" : "2d66ba5643622279420b529e22d2458f",
+  "time" : {
+    "start" : 1599822084092,
+    "stop" : 1599822134453,
+    "duration" : 50361
+  },
+  "description" : "\n    用例描述\n    测试目的： 测试mapping-mode is vlan , mapping 为transparent时，vlan2000和vlan2001的报文上下行是都正常\n    测试步骤：\n    步骤1:发现未注册的ONU\n    步骤2:在OLT上通过Gpon_SN的方式将ONU注册上线\n    步骤3:修改gemport配置为transparent\n    步骤4:配置虚端口vlan2000透传，vlan2001透传\n    步骤5:打流测试\n    1）上下行发vlan2000和vlan2001的报文\n    down_stream_header = (\n        'ethernetII_1.sourceMacAdd=00:00:00:11:11:11 vlan_1.id=2000 ethernetII_1.destMacAdd=00:00:00:22:22:21',\n        'ethernetII_1.sourceMacAdd=00:00:00:11:11:12 vlan_1.id=2001 ethernetII_1.destMacAdd=00:00:00:22:22:22')\n    up_stream_header = (\n        'ethernetII_1.sourceMacAdd=00:00:00:22:22:21 vlan_1.id=2000 ethernetII_1.destMacAdd=00:00:00:11:11:11',\n        'ethernetII_1.sourceMacAdd=00:00:00:22:22:22 vlan_1.id=2001 ethernetII_1.destMacAdd=00:00:00:11:11:12',)\n    预期结果：上下行报文正常通\n\n    ",
+  "descriptionHtml" : "<pre><code>用例描述\n测试目的： 测试mapping-mode is vlan , mapping 为transparent时，vlan2000和vlan2001的报文上下行是都正常\n测试步骤：\n步骤1:发现未注册的ONU\n步骤2:在OLT上通过Gpon_SN的方式将ONU注册上线\n步骤3:修改gemport配置为transparent\n步骤4:配置虚端口vlan2000透传，vlan2001透传\n步骤5:打流测试\n1）上下行发vlan2000和vlan2001的报文\ndown_stream_header = (\n    'ethernetII_1.sourceMacAdd=00:00:00:11:11:11 vlan_1.id=2000 ethernetII_1.destMacAdd=00:00:00:22:22:21',\n    'ethernetII_1.sourceMacAdd=00:00:00:11:11:12 vlan_1.id=2001 ethernetII_1.destMacAdd=00:00:00:22:22:22')\nup_stream_header = (\n    'ethernetII_1.sourceMacAdd=00:00:00:22:22:21 vlan_1.id=2000 ethernetII_1.destMacAdd=00:00:00:11:11:11',\n    'ethernetII_1.sourceMacAdd=00:00:00:22:22:22 vlan_1.id=2001 ethernetII_1.destMacAdd=00:00:00:11:11:12',)\n预期结果：上下行报文正常通\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "login",
+    "time" : {
+      "start" : 1599822071005,
+      "stop" : 1599822084092,
+      "duration" : 13087
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1599821387651,
+      "stop" : 1599821387651,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1599821387651,
+      "stop" : 1599821387651,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1599821387651,
+      "stop" : 1599821387651,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1599822071005,
+      "stop" : 1599822071005,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "__pytest_repeat_step_number",
+    "time" : {
+      "start" : 1599822071004,
+      "stop" : 1599822071005,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "\n    用例描述\n    测试目的： 测试mapping-mode is vlan , mapping 为transparent时，vlan2000和vlan2001的报文上下行是都正常\n    测试步骤：\n    步骤1:发现未注册的ONU\n    步骤2:在OLT上通过Gpon_SN的方式将ONU注册上线\n    步骤3:修改gemport配置为transparent\n    步骤4:配置虚端口vlan2000透传，vlan2001透传\n    步骤5:打流测试\n    1）上下行发vlan2000和vlan2001的报文\n    down_stream_header = (\n        'ethernetII_1.sourceMacAdd=00:00:00:11:11:11 vlan_1.id=2000 ethernetII_1.destMacAdd=00:00:00:22:22:21',\n        'ethernetII_1.sourceMacAdd=00:00:00:11:11:12 vlan_1.id=2001 ethernetII_1.destMacAdd=00:00:00:22:22:22')\n    up_stream_header = (\n        'ethernetII_1.sourceMacAdd=00:00:00:22:22:21 vlan_1.id=2000 ethernetII_1.destMacAdd=00:00:00:11:11:11',\n        'ethernetII_1.sourceMacAdd=00:00:00:22:22:22 vlan_1.id=2001 ethernetII_1.destMacAdd=00:00:00:11:11:12',)\n    预期结果：上下行报文正常通\n\n    ",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "步骤1:发现未注册的ONU。",
+      "time" : {
+        "start" : 1599822084092,
+        "stop" : 1599822085189,
+        "duration" : 1097
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "步骤2:在OLT上通过Gpon_SN的方式将ONU注册上线。",
+      "time" : {
+        "start" : 1599822085190,
+        "stop" : 1599822101508,
+        "duration" : 16318
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "步骤3:修改gemport配置为transparent",
+      "time" : {
+        "start" : 1599822101508,
+        "stop" : 1599822103628,
+        "duration" : 2120
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "步骤4:配置虚端口vlan2000透传，vlan2001透传",
+      "time" : {
+        "start" : 1599822103628,
+        "stop" : 1599822106634,
+        "duration" : 3006
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "步骤5:打流测试",
+      "time" : {
+        "start" : 1599822106634,
+        "stop" : 1599822134453,
+        "duration" : 27819
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "f23a53e7cc743bed",
+      "name" : "log",
+      "source" : "f23a53e7cc743bed.txt",
+      "type" : "text/plain",
+      "size" : 3487
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 5,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "login::0",
+    "time" : {
+      "start" : 1599822134454,
+      "stop" : 1599822143560,
+      "duration" : 9106
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "gemport测试"
+  }, {
+    "name" : "feature",
+    "value" : "gemport测试"
+  }, {
+    "name" : "suite",
+    "value" : "test_onu_gemport"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-2JV12RE"
+  }, {
+    "name" : "thread",
+    "value" : "19156-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_onu_gemport"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 1,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 6,
+        "unknown" : 0,
+        "total" : 8
+      },
+      "items" : [ {
+        "uid" : "d2068036df60efe9",
+        "reportUrl" : "http://192.168.0.182:8080/job/cdata_test1/370/allure/#testresult/d2068036df60efe9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1599728283994,
+          "stop" : 1599728335551,
+          "duration" : 51557
+        }
+      }, {
+        "uid" : "72c3fcbaf0b3bf85",
+        "reportUrl" : "http://192.168.0.182:8080/job/cdata_test1/361/allure/#testresult/72c3fcbaf0b3bf85",
+        "status" : "passed",
+        "time" : {
+          "start" : 1599620190752,
+          "stop" : 1599620242785,
+          "duration" : 52033
+        }
+      }, {
+        "uid" : "a382f690a627a519",
+        "reportUrl" : "http://192.168.0.182:8080/job/cdata_test1/355/allure/#testresult/a382f690a627a519",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x0000027570203550>, '16', '2', '52544B4711111111')",
+        "time" : {
+          "start" : 1599615238702,
+          "stop" : 1599615297801,
+          "duration" : 59099
+        }
+      }, {
+        "uid" : "543a53677baaa893",
+        "reportUrl" : "http://192.168.0.182:8080/job/cdata_test1/280/allure/#testresult/543a53677baaa893",
+        "status" : "passed",
+        "time" : {
+          "start" : 1598837499220,
+          "stop" : 1598837549627,
+          "duration" : 50407
+        }
+      }, {
+        "uid" : "acc434d500e8f35e",
+        "reportUrl" : "http://192.168.0.182:8080/job/cdata_test1/276/allure/#testresult/acc434d500e8f35e",
+        "status" : "broken",
+        "statusDetails" : "Exception: 设备登录失败",
+        "time" : {
+          "start" : 1598617801750,
+          "stop" : 1598617801750,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "a9f04f4cd14df5bd",
+        "reportUrl" : "http://192.168.0.182:8080/job/cdata_test1/272/allure/#testresult/a9f04f4cd14df5bd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1598594117106,
+          "stop" : 1598594165407,
+          "duration" : 48301
+        }
+      }, {
+        "uid" : "ae00be8348bb1715",
+        "reportUrl" : "http://192.168.0.182:8080/job/cdata_test1/270/allure/#testresult/ae00be8348bb1715",
+        "status" : "passed",
+        "time" : {
+          "start" : 1598579326507,
+          "stop" : 1598579375726,
+          "duration" : 49219
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "6bebfc30afc1c354.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,5 @@
+[INFO] 2020-09-11 10:20:27,284  Receive Msg: listen_port 9003
+
+[INFO] 2020-09-11 10:20:27,384  Renix api initialization finished
+[ERROR] 2020-09-11 10:21:09,612  b'_TCLERROR:Unknown property name stream_header'
+[INFO] 2020-09-11 10:21:09,617  close connection to CL

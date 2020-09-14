@@ -1,0 +1,22 @@
+[INFO] 2020-09-02 18:57:04,807  Receive Msg: listen_port 9002
+
+[INFO] 2020-09-02 18:57:04,878  Renix api initialization finished
+[INFO] 2020-09-02 18:58:45,499  Create ports with locations:['//192.168.0.180/1/1', '//192.168.0.180/1/2']
+[INFO] 2020-09-02 18:58:54,175  EthCopper_1 has lower: EthCopperConfig_1
+[INFO] 2020-09-02 18:58:54,182  EthCopper_2 has lower: EthCopperConfig_2
+[INFO] 2020-09-02 18:58:54,186  StreamPortConfig_1 has lower: InterFrameGapProfile_1
+[INFO] 2020-09-02 18:58:54,192  StreamPortConfig_2 has lower: InterFrameGapProfile_2
+[INFO] 2020-09-02 18:58:54,208  port(['//192.168.0.180/1/1', '//192.168.0.180/1/2']) create streams
+[INFO] 2020-09-02 18:58:54,411  port(['//192.168.0.180/1/1', '//192.168.0.180/1/2']) create streams
+[INFO] 2020-09-02 18:58:55,897  PageResultView_1 has lower: ResultQuery_1
+[INFO] 2020-09-02 18:58:55,899  EthCopper_2 has lower: EthCopperConfig_2
+[INFO] 2020-09-02 18:58:55,902  EthCopper_1 has lower: EthCopperConfig_1
+[INFO] 2020-09-02 18:59:05,904  EthCopper_2 has lower: EthCopperConfig_2
+[INFO] 2020-09-02 18:59:05,907  EthCopper_1 has lower: EthCopperConfig_1
+[INFO] 2020-09-02 18:59:15,910  EthCopper_2 has lower: EthCopperConfig_2
+[INFO] 2020-09-02 18:59:15,912  EthCopper_1 has lower: EthCopperConfig_1
+[INFO] 2020-09-02 18:59:25,915  EthCopper_2 has lower: EthCopperConfig_2
+[INFO] 2020-09-02 18:59:25,918  EthCopper_1 has lower: EthCopperConfig_1
+[INFO] 2020-09-02 18:59:35,922  EthCopper_2 has lower: EthCopperConfig_2
+[INFO] 2020-09-02 18:59:35,924  EthCopper_1 has lower: EthCopperConfig_1
+[INFO] 2020-09-02 18:59:59,635  close connection to CL

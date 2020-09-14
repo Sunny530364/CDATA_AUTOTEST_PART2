@@ -1,0 +1,31 @@
+INFO     CDATA:Cdata_loggers.py:106 192.168.3.140 登录成功
+INFO     CDATA:Cdata_loggers.py:106 pon 5 端口使能成功
+INFO     script:renix_common_api.py:84 =========ONU MAC地址上报测试=========
+INFO     CDATA:Cdata_loggers.py:106 =========ONU MAC地址上报测试=========
+INFO     CDATA:Cdata_loggers.py:106 ONU在OLT上被重新被发现。
+INFO     CDATA:Cdata_loggers.py:106 当前ONU_ID没有被占用。
+INFO     CDATA:Cdata_loggers.py:106 ONU在OLT上添加成功。
+INFO     CDATA:Cdata_loggers.py:106 ONU在OLT上通过MAC注册成功。
+INFO     script:renix_common_api.py:84 create ports with location:
+INFO     script:renix_common_api.py:84 StreamPortConfig_13 has lower: InterFrameGapProfile_11
+INFO     script:renix_common_api.py:84 StreamPortConfig_14 has lower: InterFrameGapProfile_12
+INFO     script:renix_common_api.py:84 port(//192.168.0.180/1/7) create streams
+INFO     script:renix_common_api.py:84 port(//192.168.0.180/1/8) create streams
+INFO     script:renix_common_api.py:84 port(//192.168.0.180/1/7) create streams
+INFO     script:renix_common_api.py:84 port(//192.168.0.180/1/8) create streams
+INFO     script:renix_common_api.py:84 port(//192.168.0.180/1/7) create streams
+INFO     script:renix_common_api.py:84 port(//192.168.0.180/1/8) create streams
+INFO     script:renix_common_api.py:84 port(//192.168.0.180/1/7) create streams
+INFO     script:renix_common_api.py:84 port(//192.168.0.180/1/8) create streams
+INFO     script:renix_common_api.py:84 port(//192.168.0.180/1/7) create streams
+INFO     script:renix_common_api.py:84 port(//192.168.0.180/1/8) create streams
+INFO     script:renix_common_api.py:84 PageResultView_6 has lower: ResultQuery_6
+INFO     script:renix_common_api.py:84 ResultQuery_6 has lower: PortStats_1 PortStats_2
+ERROR    script:renix_common_api.py:74 [test fail] [Port_13] rx packet (41231)is not equal to  port2_stats tx packets (196309)
+INFO     script:renix_common_api.py:84 [test pass] [Port_14] rx packet (196311)is equal to  port1_stats tx packets (196309)
+ERROR    CDATA:Cdata_loggers.py:98 ONT MAC地址上报:MAC地址学习正常
+ERROR    CDATA:Cdata_loggers.py:98 ONT MAC地址上报:打流失败
+INFO     CDATA:Cdata_loggers.py:106 ONU在OLT上删除成功
+INFO     CDATA:Cdata_loggers.py:106 ONU在OLT上被重新被发现。
+INFO     CDATA:Cdata_loggers.py:106 pon 5 端口去使能
+INFO     CDATA:Cdata_loggers.py:106 退出登录

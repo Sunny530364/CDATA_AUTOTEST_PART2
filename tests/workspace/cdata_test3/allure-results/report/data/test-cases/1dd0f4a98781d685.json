@@ -1,0 +1,310 @@
+{
+  "uid" : "1dd0f4a98781d685",
+  "name" : "测试mapping-mode为vlan_pri",
+  "fullName" : "test_onu_gemport#test_gemport_vlan_pri",
+  "historyId" : "0238e18c223e4297e096104360392dd8",
+  "time" : {
+    "start" : 1598273428450,
+    "stop" : 1598273487798,
+    "duration" : 59348
+  },
+  "description" : "\n    用例描述\n    测试目的： 测试mapping-mode is vlan+pri, mapping 为vlan2000+pri2时，vlan2000+2和vlan200+3和vlan2001+pri2的报文上下行是否都正常\n    测试步骤：\n    步骤1:发现未注册的ONU\n    步骤2:在OLT上通过Gpon_SN的方式将ONU注册上线\n    步骤3:修改gemport配置为vlan 2000+pri2\n    步骤4:配置虚端口vlan2000透传，vlan2001透传\n    步骤5:打流测试\n    测试方法：上下行各发送三条流：vlan2000 pri2和 vlan2000 pri3 ；发送vlan 2001 pri2\n    down_stream_header = (\n        'ethernetII_1.sourceMacAdd=00:00:00:11:11:11 vlan_1.id=2000 vlan_1.priority=2 ethernetII_1.destMacAdd=00:00:00:22:22:21',\n        'ethernetII_1.sourceMacAdd=00:00:00:11:11:12 vlan_1.id=2000 vlan_1.priority=3 ethernetII_1.destMacAdd=00:00:00:22:22:22',\n        'ethernetII_1.sourceMacAdd=00:00:00:11:11:13 vlan_1.id=2001 vlan_1.priority=2 ethernetII_1.destMacAdd=00:00:00:22:22:23',)\n    up_stream_header = (\n        'ethernetII_1.sourceMacAdd=00:00:00:22:22:21 vlan_1.id=2000 vlan_1.priority=2 ethernetII_1.destMacAdd=00:00:00:11:11:11',\n        'ethernetII_1.sourceMacAdd=00:00:00:22:22:22 vlan_1.id=2000 vlan_1.priority=3 ethernetII_1.destMacAdd=00:00:00:11:11:12',\n        'ethernetII_1.sourceMacAdd=00:00:00:22:22:23 vlan_1.id=2001 vlan_1.priority=2 ethernetII_1.destMacAdd=00:00:00:11:11:13',)\n    预期结果：vlan 2000 pri2的上下行都能通；vlan2000 pri3下行能通，vlan2000 pri3上行不通;vlan 2001上下行都不通\n    ",
+  "descriptionHtml" : "<pre><code>用例描述\n测试目的： 测试mapping-mode is vlan+pri, mapping 为vlan2000+pri2时，vlan2000+2和vlan200+3和vlan2001+pri2的报文上下行是否都正常\n测试步骤：\n步骤1:发现未注册的ONU\n步骤2:在OLT上通过Gpon_SN的方式将ONU注册上线\n步骤3:修改gemport配置为vlan 2000+pri2\n步骤4:配置虚端口vlan2000透传，vlan2001透传\n步骤5:打流测试\n测试方法：上下行各发送三条流：vlan2000 pri2和 vlan2000 pri3 ；发送vlan 2001 pri2\ndown_stream_header = (\n    'ethernetII_1.sourceMacAdd=00:00:00:11:11:11 vlan_1.id=2000 vlan_1.priority=2 ethernetII_1.destMacAdd=00:00:00:22:22:21',\n    'ethernetII_1.sourceMacAdd=00:00:00:11:11:12 vlan_1.id=2000 vlan_1.priority=3 ethernetII_1.destMacAdd=00:00:00:22:22:22',\n    'ethernetII_1.sourceMacAdd=00:00:00:11:11:13 vlan_1.id=2001 vlan_1.priority=2 ethernetII_1.destMacAdd=00:00:00:22:22:23',)\nup_stream_header = (\n    'ethernetII_1.sourceMacAdd=00:00:00:22:22:21 vlan_1.id=2000 vlan_1.priority=2 ethernetII_1.destMacAdd=00:00:00:11:11:11',\n    'ethernetII_1.sourceMacAdd=00:00:00:22:22:22 vlan_1.id=2000 vlan_1.priority=3 ethernetII_1.destMacAdd=00:00:00:11:11:12',\n    'ethernetII_1.sourceMacAdd=00:00:00:22:22:23 vlan_1.id=2001 vlan_1.priority=2 ethernetII_1.destMacAdd=00:00:00:11:11:13',)\n预期结果：vlan 2000 pri2的上下行都能通；vlan2000 pri3下行能通，vlan2000 pri3上行不通;vlan 2001上下行都不通\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 'FAIL' == 'PASS'\n  - FAIL\n  + PASS",
+  "statusTrace" : "gemport_vlan_pri_suit = <telnetlib.Telnet object at 0x00000270245B47B8>\n\n    @allure.feature(\"gemport测试\")\n    @allure.story(\"gemport测试\")\n    @allure.title(\"测试mapping-mode为vlan_pri\")\n    @pytest.mark.run(order=1614)\n    def test_gemport_vlan_pri(gemport_vlan_pri_suit):\n        '''\n        用例描述\n        测试目的： 测试mapping-mode is vlan+pri, mapping 为vlan2000+pri2时，vlan2000+2和vlan200+3和vlan2001+pri2的报文上下行是否都正常\n        测试步骤：\n        步骤1:发现未注册的ONU\n        步骤2:在OLT上通过Gpon_SN的方式将ONU注册上线\n        步骤3:修改gemport配置为vlan 2000+pri2\n        步骤4:配置虚端口vlan2000透传，vlan2001透传\n        步骤5:打流测试\n        测试方法：上下行各发送三条流：vlan2000 pri2和 vlan2000 pri3 ；发送vlan 2001 pri2\n        down_stream_header = (\n            'ethernetII_1.sourceMacAdd=00:00:00:11:11:11 vlan_1.id=2000 vlan_1.priority=2 ethernetII_1.destMacAdd=00:00:00:22:22:21',\n            'ethernetII_1.sourceMacAdd=00:00:00:11:11:12 vlan_1.id=2000 vlan_1.priority=3 ethernetII_1.destMacAdd=00:00:00:22:22:22',\n            'ethernetII_1.sourceMacAdd=00:00:00:11:11:13 vlan_1.id=2001 vlan_1.priority=2 ethernetII_1.destMacAdd=00:00:00:22:22:23',)\n        up_stream_header = (\n            'ethernetII_1.sourceMacAdd=00:00:00:22:22:21 vlan_1.id=2000 vlan_1.priority=2 ethernetII_1.destMacAdd=00:00:00:11:11:11',\n            'ethernetII_1.sourceMacAdd=00:00:00:22:22:22 vlan_1.id=2000 vlan_1.priority=3 ethernetII_1.destMacAdd=00:00:00:11:11:12',\n            'ethernetII_1.sourceMacAdd=00:00:00:22:22:23 vlan_1.id=2001 vlan_1.priority=2 ethernetII_1.destMacAdd=00:00:00:11:11:13',)\n        预期结果：vlan 2000 pri2的上下行都能通；vlan2000 pri3下行能通，vlan2000 pri3上行不通;vlan 2001上下行都不通\n        '''\n        # tn=login\n        # # 修改配置\n        # gemport_vlan_pri(tn)\n        cdata_info(\"=========mapping_mode为vlan_pri测试=========\")\n        tn = gemport_vlan_pri_suit\n        Vlan_list = [2000, 2001]\n        with allure.step('步骤1:发现未注册的ONU。'):\n            assert autofind_onu(tn, Gpon_PonID, Gpon_OnuID, Gpon_SN)\n        with allure.step('步骤2:在OLT上通过Gpon_SN的方式将ONU注册上线。'):\n            assert auth_by_sn(tn, Gpon_PonID, Gpon_OnuID, Ont_Lineprofile_ID, Ont_Srvprofile_ID, Gpon_SN)\n        with allure.step(\"步骤3:修改gemport配置为vlan 2000 priority 2\"):\n            assert gemport_vlan_pri(tn, Ont_Lineprofile_ID)\n        with allure.step(\"步骤4:配置虚端口vlan2000和vlan 2001透传\"):\n            assert add_service_port(tn, Gpon_PonID, Gpon_OnuID, Gemport_ID, Vlan_list)\n        with allure.step(\"步骤5:打流测试\"):\n            # 清除测试仪的对象，防止影响下个用例的执行\n            time.sleep(5)\n            reset_rom_cmd = ResetROMCommand()\n            reset_rom_cmd.execute()\n    \n            # 发流量测试，发送两条流vlan 2000+pri2，和vlan2000+pri3\n            # 配置参数：\n            # port_location = ['//192.168.0.180/1/9', '//192.168.0.180/1/10']\n            duration = 10\n            down_stream_header = (\n                'ethernetII_1.sourceMacAdd=00:00:00:11:11:11 vlan_1.id=2000 vlan_1.priority=2 ethernetII_1.destMacAdd=00:00:00:22:22:21',\n                'ethernetII_1.sourceMacAdd=00:00:00:11:11:12 vlan_1.id=2000 vlan_1.priority=3 ethernetII_1.destMacAdd=00:00:00:22:22:22',\n                'ethernetII_1.sourceMacAdd=00:00:00:11:11:13 vlan_1.id=2001 vlan_1.priority=2 ethernetII_1.destMacAdd=00:00:00:22:22:23',)\n    \n            up_stream_header = (\n                'ethernetII_1.sourceMacAdd=00:00:00:22:22:21 vlan_1.id=2000 vlan_1.priority=2 ethernetII_1.destMacAdd=00:00:00:11:11:11',\n                'ethernetII_1.sourceMacAdd=00:00:00:22:22:22 vlan_1.id=2000 vlan_1.priority=3 ethernetII_1.destMacAdd=00:00:00:11:11:12',\n                'ethernetII_1.sourceMacAdd=00:00:00:22:22:23 vlan_1.id=2001 vlan_1.priority=2 ethernetII_1.destMacAdd=00:00:00:11:11:13',\n            )\n            result_stats = unicast_test(port_location=port_location, down_stream_header=down_stream_header,\n                                   up_stream_header=up_stream_header, num=3, dataclassname=StreamBlockStats,\n                                   duration=duration)\n    \n            # # 判断vlan2000+pri2的上下行流量是否都是通的，如果是返回PASS，否则返回FAIL\n            # # 判断vlan2000+pri3的上行流量不通，下行流量能通，如果是返回PASS，否则返回FAIL\n    \n            for i in range(6):\n                if (result_stats[i].__dict__)['_StreamBlockID']=='sourceMacAdd=00:00:00:11:11:11':\n                    result11=check_stream_static1(result_stats[i])\n                elif (result_stats[i].__dict__)['_StreamBlockID']=='sourceMacAdd=00:00:00:11:11:12':\n                    result12 = check_stream_static1(result_stats[i])\n                elif (result_stats[i].__dict__)['_StreamBlockID']=='sourceMacAdd=00:00:00:11:11:13':\n                    result13 = check_stream_loss1(result_stats[i])\n    \n                elif (result_stats[i].__dict__)['_StreamBlockID']=='sourceMacAdd=00:00:00:22:22:21':\n                    result21 = check_stream_static1(result_stats[i])\n                elif (result_stats[i].__dict__)['_StreamBlockID']=='sourceMacAdd=00:00:00:22:22:22':\n                    result22 = check_stream_loss1(result_stats[i])\n                elif (result_stats[i].__dict__)['_StreamBlockID']=='sourceMacAdd=00:00:00:22:22:23':\n                    result23 = check_stream_loss1(result_stats[i])\n    \n    \n            # #恢复默认配置\n            # gemport_transparent(tn)\n    \n            # 正确的结果vlan2000+pri2的能通，vlan2000+pri3的不通\n            if result11 == 'PASS' and result12 == 'PASS' and result21=='PASS' and result22=='PASS' and result13=='PASS'\\\n                    and result23=='PASS':\n                result = 'PASS'\n                cdata_info(\"mapping_mode为vlan+pri测试:打流测试正常\")\n            else:\n                result = 'FAIL'\n                cdata_error(\"mapping_mode为vlan+pri测试:打流测试失败\")\n    \n>           assert result == 'PASS'\nE           AssertionError: assert 'FAIL' == 'PASS'\nE             - FAIL\nE             + PASS\n\nFD1616GS\\test_onu_gemport.py:390: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1598272724833,
+      "stop" : 1598272724833,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1598272724833,
+      "stop" : 1598272724833,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1598272724833,
+      "stop" : 1598272724833,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "__pytest_repeat_step_number",
+    "time" : {
+      "start" : 1598273414441,
+      "stop" : 1598273414441,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1598273414441,
+      "stop" : 1598273414441,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "login",
+    "time" : {
+      "start" : 1598273414441,
+      "stop" : 1598273428449,
+      "duration" : 14008
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "gemport_vlan_pri_suit",
+    "time" : {
+      "start" : 1598273428449,
+      "stop" : 1598273428449,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "\n    用例描述\n    测试目的： 测试mapping-mode is vlan+pri, mapping 为vlan2000+pri2时，vlan2000+2和vlan200+3和vlan2001+pri2的报文上下行是否都正常\n    测试步骤：\n    步骤1:发现未注册的ONU\n    步骤2:在OLT上通过Gpon_SN的方式将ONU注册上线\n    步骤3:修改gemport配置为vlan 2000+pri2\n    步骤4:配置虚端口vlan2000透传，vlan2001透传\n    步骤5:打流测试\n    测试方法：上下行各发送三条流：vlan2000 pri2和 vlan2000 pri3 ；发送vlan 2001 pri2\n    down_stream_header = (\n        'ethernetII_1.sourceMacAdd=00:00:00:11:11:11 vlan_1.id=2000 vlan_1.priority=2 ethernetII_1.destMacAdd=00:00:00:22:22:21',\n        'ethernetII_1.sourceMacAdd=00:00:00:11:11:12 vlan_1.id=2000 vlan_1.priority=3 ethernetII_1.destMacAdd=00:00:00:22:22:22',\n        'ethernetII_1.sourceMacAdd=00:00:00:11:11:13 vlan_1.id=2001 vlan_1.priority=2 ethernetII_1.destMacAdd=00:00:00:22:22:23',)\n    up_stream_header = (\n        'ethernetII_1.sourceMacAdd=00:00:00:22:22:21 vlan_1.id=2000 vlan_1.priority=2 ethernetII_1.destMacAdd=00:00:00:11:11:11',\n        'ethernetII_1.sourceMacAdd=00:00:00:22:22:22 vlan_1.id=2000 vlan_1.priority=3 ethernetII_1.destMacAdd=00:00:00:11:11:12',\n        'ethernetII_1.sourceMacAdd=00:00:00:22:22:23 vlan_1.id=2001 vlan_1.priority=2 ethernetII_1.destMacAdd=00:00:00:11:11:13',)\n    预期结果：vlan 2000 pri2的上下行都能通；vlan2000 pri3下行能通，vlan2000 pri3上行不通;vlan 2001上下行都不通\n    ",
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert 'FAIL' == 'PASS'\n  - FAIL\n  + PASS",
+    "statusTrace" : "gemport_vlan_pri_suit = <telnetlib.Telnet object at 0x00000270245B47B8>\n\n    @allure.feature(\"gemport测试\")\n    @allure.story(\"gemport测试\")\n    @allure.title(\"测试mapping-mode为vlan_pri\")\n    @pytest.mark.run(order=1614)\n    def test_gemport_vlan_pri(gemport_vlan_pri_suit):\n        '''\n        用例描述\n        测试目的： 测试mapping-mode is vlan+pri, mapping 为vlan2000+pri2时，vlan2000+2和vlan200+3和vlan2001+pri2的报文上下行是否都正常\n        测试步骤：\n        步骤1:发现未注册的ONU\n        步骤2:在OLT上通过Gpon_SN的方式将ONU注册上线\n        步骤3:修改gemport配置为vlan 2000+pri2\n        步骤4:配置虚端口vlan2000透传，vlan2001透传\n        步骤5:打流测试\n        测试方法：上下行各发送三条流：vlan2000 pri2和 vlan2000 pri3 ；发送vlan 2001 pri2\n        down_stream_header = (\n            'ethernetII_1.sourceMacAdd=00:00:00:11:11:11 vlan_1.id=2000 vlan_1.priority=2 ethernetII_1.destMacAdd=00:00:00:22:22:21',\n            'ethernetII_1.sourceMacAdd=00:00:00:11:11:12 vlan_1.id=2000 vlan_1.priority=3 ethernetII_1.destMacAdd=00:00:00:22:22:22',\n            'ethernetII_1.sourceMacAdd=00:00:00:11:11:13 vlan_1.id=2001 vlan_1.priority=2 ethernetII_1.destMacAdd=00:00:00:22:22:23',)\n        up_stream_header = (\n            'ethernetII_1.sourceMacAdd=00:00:00:22:22:21 vlan_1.id=2000 vlan_1.priority=2 ethernetII_1.destMacAdd=00:00:00:11:11:11',\n            'ethernetII_1.sourceMacAdd=00:00:00:22:22:22 vlan_1.id=2000 vlan_1.priority=3 ethernetII_1.destMacAdd=00:00:00:11:11:12',\n            'ethernetII_1.sourceMacAdd=00:00:00:22:22:23 vlan_1.id=2001 vlan_1.priority=2 ethernetII_1.destMacAdd=00:00:00:11:11:13',)\n        预期结果：vlan 2000 pri2的上下行都能通；vlan2000 pri3下行能通，vlan2000 pri3上行不通;vlan 2001上下行都不通\n        '''\n        # tn=login\n        # # 修改配置\n        # gemport_vlan_pri(tn)\n        cdata_info(\"=========mapping_mode为vlan_pri测试=========\")\n        tn = gemport_vlan_pri_suit\n        Vlan_list = [2000, 2001]\n        with allure.step('步骤1:发现未注册的ONU。'):\n            assert autofind_onu(tn, Gpon_PonID, Gpon_OnuID, Gpon_SN)\n        with allure.step('步骤2:在OLT上通过Gpon_SN的方式将ONU注册上线。'):\n            assert auth_by_sn(tn, Gpon_PonID, Gpon_OnuID, Ont_Lineprofile_ID, Ont_Srvprofile_ID, Gpon_SN)\n        with allure.step(\"步骤3:修改gemport配置为vlan 2000 priority 2\"):\n            assert gemport_vlan_pri(tn, Ont_Lineprofile_ID)\n        with allure.step(\"步骤4:配置虚端口vlan2000和vlan 2001透传\"):\n            assert add_service_port(tn, Gpon_PonID, Gpon_OnuID, Gemport_ID, Vlan_list)\n        with allure.step(\"步骤5:打流测试\"):\n            # 清除测试仪的对象，防止影响下个用例的执行\n            time.sleep(5)\n            reset_rom_cmd = ResetROMCommand()\n            reset_rom_cmd.execute()\n    \n            # 发流量测试，发送两条流vlan 2000+pri2，和vlan2000+pri3\n            # 配置参数：\n            # port_location = ['//192.168.0.180/1/9', '//192.168.0.180/1/10']\n            duration = 10\n            down_stream_header = (\n                'ethernetII_1.sourceMacAdd=00:00:00:11:11:11 vlan_1.id=2000 vlan_1.priority=2 ethernetII_1.destMacAdd=00:00:00:22:22:21',\n                'ethernetII_1.sourceMacAdd=00:00:00:11:11:12 vlan_1.id=2000 vlan_1.priority=3 ethernetII_1.destMacAdd=00:00:00:22:22:22',\n                'ethernetII_1.sourceMacAdd=00:00:00:11:11:13 vlan_1.id=2001 vlan_1.priority=2 ethernetII_1.destMacAdd=00:00:00:22:22:23',)\n    \n            up_stream_header = (\n                'ethernetII_1.sourceMacAdd=00:00:00:22:22:21 vlan_1.id=2000 vlan_1.priority=2 ethernetII_1.destMacAdd=00:00:00:11:11:11',\n                'ethernetII_1.sourceMacAdd=00:00:00:22:22:22 vlan_1.id=2000 vlan_1.priority=3 ethernetII_1.destMacAdd=00:00:00:11:11:12',\n                'ethernetII_1.sourceMacAdd=00:00:00:22:22:23 vlan_1.id=2001 vlan_1.priority=2 ethernetII_1.destMacAdd=00:00:00:11:11:13',\n            )\n            result_stats = unicast_test(port_location=port_location, down_stream_header=down_stream_header,\n                                   up_stream_header=up_stream_header, num=3, dataclassname=StreamBlockStats,\n                                   duration=duration)\n    \n            # # 判断vlan2000+pri2的上下行流量是否都是通的，如果是返回PASS，否则返回FAIL\n            # # 判断vlan2000+pri3的上行流量不通，下行流量能通，如果是返回PASS，否则返回FAIL\n    \n            for i in range(6):\n                if (result_stats[i].__dict__)['_StreamBlockID']=='sourceMacAdd=00:00:00:11:11:11':\n                    result11=check_stream_static1(result_stats[i])\n                elif (result_stats[i].__dict__)['_StreamBlockID']=='sourceMacAdd=00:00:00:11:11:12':\n                    result12 = check_stream_static1(result_stats[i])\n                elif (result_stats[i].__dict__)['_StreamBlockID']=='sourceMacAdd=00:00:00:11:11:13':\n                    result13 = check_stream_loss1(result_stats[i])\n    \n                elif (result_stats[i].__dict__)['_StreamBlockID']=='sourceMacAdd=00:00:00:22:22:21':\n                    result21 = check_stream_static1(result_stats[i])\n                elif (result_stats[i].__dict__)['_StreamBlockID']=='sourceMacAdd=00:00:00:22:22:22':\n                    result22 = check_stream_loss1(result_stats[i])\n                elif (result_stats[i].__dict__)['_StreamBlockID']=='sourceMacAdd=00:00:00:22:22:23':\n                    result23 = check_stream_loss1(result_stats[i])\n    \n    \n            # #恢复默认配置\n            # gemport_transparent(tn)\n    \n            # 正确的结果vlan2000+pri2的能通，vlan2000+pri3的不通\n            if result11 == 'PASS' and result12 == 'PASS' and result21=='PASS' and result22=='PASS' and result13=='PASS'\\\n                    and result23=='PASS':\n                result = 'PASS'\n                cdata_info(\"mapping_mode为vlan+pri测试:打流测试正常\")\n            else:\n                result = 'FAIL'\n                cdata_error(\"mapping_mode为vlan+pri测试:打流测试失败\")\n    \n>           assert result == 'PASS'\nE           AssertionError: assert 'FAIL' == 'PASS'\nE             - FAIL\nE             + PASS\n\nFD1616GS\\test_onu_gemport.py:390: AssertionError",
+    "steps" : [ {
+      "name" : "步骤1:发现未注册的ONU。",
+      "time" : {
+        "start" : 1598273428450,
+        "stop" : 1598273429540,
+        "duration" : 1090
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "步骤2:在OLT上通过Gpon_SN的方式将ONU注册上线。",
+      "time" : {
+        "start" : 1598273429540,
+        "stop" : 1598273451767,
+        "duration" : 22227
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "步骤3:修改gemport配置为vlan 2000 priority 2",
+      "time" : {
+        "start" : 1598273451767,
+        "stop" : 1598273451914,
+        "duration" : 147
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "步骤4:配置虚端口vlan2000和vlan 2001透传",
+      "time" : {
+        "start" : 1598273451914,
+        "stop" : 1598273454949,
+        "duration" : 3035
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "步骤5:打流测试",
+      "time" : {
+        "start" : 1598273454949,
+        "stop" : 1598273487797,
+        "duration" : 32848
+      },
+      "status" : "failed",
+      "statusMessage" : "AssertionError: assert 'FAIL' == 'PASS'\n  - FAIL\n  + PASS\n",
+      "statusTrace" : "  File \"E:\\CDATA\\自动化测试\\Cdata_part11\\tests\\FD1616GS\\test_onu_gemport.py\", line 390, in test_gemport_vlan_pri\n    assert result == 'PASS'\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "1b3e4229ef736b57",
+      "name" : "log",
+      "source" : "1b3e4229ef736b57.txt",
+      "type" : "text/plain",
+      "size" : 3529
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 5,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ {
+    "name" : "login::0",
+    "time" : {
+      "start" : 1598273487946,
+      "stop" : 1598273503181,
+      "duration" : 15235
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "gemport_vlan_pri_suit::0",
+    "time" : {
+      "start" : 1598273487826,
+      "stop" : 1598273487944,
+      "duration" : 118
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "步骤6:gemport恢复默认配置",
+      "time" : {
+        "start" : 1598273487826,
+        "stop" : 1598273487944,
+        "duration" : 118
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "gemport测试"
+  }, {
+    "name" : "story",
+    "value" : "gemport测试"
+  }, {
+    "name" : "suite",
+    "value" : "test_onu_gemport"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-2JV12RE"
+  }, {
+    "name" : "thread",
+    "value" : "14976-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_onu_gemport"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "1dd0f4a98781d685.json",
+  "parameterValues" : [ ]
+}

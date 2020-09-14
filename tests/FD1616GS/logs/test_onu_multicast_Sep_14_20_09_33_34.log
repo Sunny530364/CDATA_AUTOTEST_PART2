@@ -1,0 +1,18 @@
+[INFO] 2020-09-14 09:33:44,408  Receive Msg: listen_port 9002
+
+[INFO] 2020-09-14 09:33:44,480  Renix api initialization finished
+[INFO] 2020-09-14 09:33:58,614  =========ONU×é²¥snooping²âÊÔ:¿ç×é²¥vlan²âÊÔ=========
+[INFO] 2020-09-14 09:34:27,391  create ports with location:
+[INFO] 2020-09-14 09:34:29,055  StreamPortConfig_1 has lower: InterFrameGapProfile_1
+[INFO] 2020-09-14 09:34:29,098  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-09-14 09:34:29,802  PageResultView_1 has lower: ResultQuery_3
+[INFO] 2020-09-14 09:34:29,805  EthCopper_1 has lower: EthCopperConfig_1
+[INFO] 2020-09-14 09:34:29,811  EthCopper_2 has lower: EthCopperConfig_2
+[INFO] 2020-09-14 09:34:29,813  EthCopper_2 has lower: EthCopperConfig_2
+[INFO] 2020-09-14 09:34:29,816  EthCopper_1 has lower: EthCopperConfig_1
+[INFO] 2020-09-14 09:34:51,844  ¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ªreport test¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+[INFO] 2020-09-14 09:34:51,853  igmp_client: IgmpTxFrames is 2£¬IgmpTxV2Reports is 2£¬IgmpTxLeaveGroups is 0
+[INFO] 2020-09-14 09:34:51,863  imgp_client: IgmpRxFrame is 47,IgmpRxGeneralQueries is 47,IgmpRxGroupSpecificQueries is 0
+[INFO] 2020-09-14 09:34:51,867  igmp_server:  QuerierTxFrames is 1,QuerierRxFrames is 0
+[ERROR] 2020-09-14 09:34:51,875  [igmp_report test fail][Stream_239.1.1.1] igmp_server tx igmp packet:720560,igmp_client rx igmp packet:0
+[INFO] 2020-09-14 09:34:51,875  ¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ªleave test¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª

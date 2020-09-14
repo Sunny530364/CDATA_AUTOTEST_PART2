@@ -1,0 +1,15 @@
+[INFO] 2020-09-03 14:03:05,633  Receive Msg: listen_port 9002
+
+[INFO] 2020-09-03 14:03:05,697  Renix api initialization finished
+[INFO] 2020-09-03 14:05:36,591  Create ports with locations:['//192.168.0.180/1/1', '//192.168.0.180/1/2']
+[INFO] 2020-09-03 14:05:38,258  EthCopper_1 has lower: EthCopperConfig_1
+[INFO] 2020-09-03 14:05:38,263  EthCopper_2 has lower: EthCopperConfig_2
+[INFO] 2020-09-03 14:05:38,268  StreamPortConfig_1 has lower: InterFrameGapProfile_1
+[INFO] 2020-09-03 14:05:38,272  StreamPortConfig_2 has lower: InterFrameGapProfile_2
+[INFO] 2020-09-03 14:05:38,293  port(['//192.168.0.180/1/1', '//192.168.0.180/1/2']) create streams
+[INFO] 2020-09-03 14:05:38,511  port(['//192.168.0.180/1/1', '//192.168.0.180/1/2']) create streams
+[INFO] 2020-09-03 14:05:40,045  PageResultView_1 has lower: ResultQuery_1
+[INFO] 2020-09-03 14:05:40,047  EthCopper_2 has lower: EthCopperConfig_2
+[INFO] 2020-09-03 14:05:40,049  EthCopper_1 has lower: EthCopperConfig_1
+[INFO] 2020-09-03 14:05:50,230  ResultQuery_1 has lower: StreamBlockStats_1 StreamBlockStats_2
+[INFO] 2020-09-03 14:06:34,879  close connection to CL

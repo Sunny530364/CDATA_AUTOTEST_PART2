@@ -1,0 +1,103 @@
+七月 14, 2020 2:27:14 下午 hudson.remoting.jnlp.Main createEngine
+信息: Setting up agent: cdata_test_zq
+七月 14, 2020 2:27:14 下午 hudson.remoting.jnlp.Main$CuiListener <init>
+信息: Jenkins agent is running in headless mode.
+七月 14, 2020 2:27:14 下午 hudson.remoting.Engine startEngine
+信息: Using Remoting version: 3.36.1
+七月 14, 2020 2:27:14 下午 org.jenkinsci.remoting.engine.WorkDirManager initializeWorkDir
+信息: Using E:\CDATA\自动化测试\Cdata_part11\tests\GponSfu\remoting as a remoting work directory
+七月 14, 2020 2:27:15 下午 hudson.remoting.jnlp.Main$CuiListener status
+信息: Locating server among [http://192.168.6.232:8080/]
+七月 14, 2020 2:27:15 下午 org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver resolve
+信息: Remoting server accepts the following protocols: [JNLP4-connect, JNLP-connect, Ping, JNLP2-connect]
+七月 14, 2020 2:27:15 下午 hudson.remoting.jnlp.Main$CuiListener status
+信息: Agent discovery successful
+  Agent address: 192.168.6.232
+  Agent port:    45571
+  Identity:      cb:57:43:13:2f:f2:7a:32:8f:e7:cc:03:de:60:44:5f
+七月 14, 2020 2:27:15 下午 hudson.remoting.jnlp.Main$CuiListener status
+信息: Handshaking
+七月 14, 2020 2:27:15 下午 hudson.remoting.jnlp.Main$CuiListener status
+信息: Connecting to 192.168.6.232:45571
+七月 14, 2020 2:27:15 下午 hudson.remoting.jnlp.Main$CuiListener status
+信息: Trying protocol: JNLP4-connect
+七月 14, 2020 2:27:24 下午 hudson.remoting.jnlp.Main$CuiListener status
+信息: Remote identity confirmed: cb:57:43:13:2f:f2:7a:32:8f:e7:cc:03:de:60:44:5f
+七月 14, 2020 2:27:24 下午 org.jenkinsci.remoting.protocol.impl.ConnectionHeadersFilterLayer onRecv
+信息: [JNLP4-connect connection to 192.168.6.232/192.168.6.232:45571] Local headers refused by remote: cdata_test_zq is already connected to this master. Rejecting this connection.
+七月 14, 2020 2:27:24 下午 hudson.remoting.jnlp.Main$CuiListener status
+信息: Protocol JNLP4-connect encountered an unexpected exception
+java.util.concurrent.ExecutionException: org.jenkinsci.remoting.protocol.impl.ConnectionRefusalException: cdata_test_zq is already connected to this master. Rejecting this connection.
+	at org.jenkinsci.remoting.util.SettableFuture.get(SettableFuture.java:223)
+	at hudson.remoting.Engine.innerRun(Engine.java:577)
+	at hudson.remoting.Engine.run(Engine.java:488)
+Caused by: org.jenkinsci.remoting.protocol.impl.ConnectionRefusalException: cdata_test_zq is already connected to this master. Rejecting this connection.
+	at org.jenkinsci.remoting.protocol.impl.ConnectionHeadersFilterLayer.newAbortCause(ConnectionHeadersFilterLayer.java:378)
+	at org.jenkinsci.remoting.protocol.impl.ConnectionHeadersFilterLayer.onRecvClosed(ConnectionHeadersFilterLayer.java:433)
+	at org.jenkinsci.remoting.protocol.ProtocolStack$Ptr.onRecvClosed(ProtocolStack.java:816)
+	at org.jenkinsci.remoting.protocol.FilterLayer.onRecvClosed(FilterLayer.java:287)
+	at org.jenkinsci.remoting.protocol.impl.SSLEngineFilterLayer.onRecvClosed(SSLEngineFilterLayer.java:172)
+	at org.jenkinsci.remoting.protocol.ProtocolStack$Ptr.onRecvClosed(ProtocolStack.java:816)
+	at org.jenkinsci.remoting.protocol.NetworkLayer.onRecvClosed(NetworkLayer.java:154)
+	at org.jenkinsci.remoting.protocol.impl.BIONetworkLayer.access$1500(BIONetworkLayer.java:48)
+	at org.jenkinsci.remoting.protocol.impl.BIONetworkLayer$Reader.run(BIONetworkLayer.java:247)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at hudson.remoting.Engine$1.lambda$newThread$0(Engine.java:97)
+	at java.lang.Thread.run(Thread.java:748)
+	Suppressed: java.nio.channels.ClosedChannelException
+		... 7 more
+
+七月 14, 2020 2:27:24 下午 hudson.remoting.jnlp.Main$CuiListener status
+信息: Connecting to 192.168.6.232:45571
+七月 14, 2020 2:27:24 下午 hudson.remoting.jnlp.Main$CuiListener status
+信息: Server reports protocol JNLP4-plaintext not supported, skipping
+七月 14, 2020 2:27:24 下午 hudson.remoting.jnlp.Main$CuiListener status
+信息: Server reports protocol JNLP3-connect not supported, skipping
+七月 14, 2020 2:27:24 下午 hudson.remoting.jnlp.Main$CuiListener status
+信息: Trying protocol: JNLP2-connect
+七月 14, 2020 2:27:24 下午 hudson.remoting.jnlp.Main$CuiListener status
+信息: Protocol JNLP2-connect encountered an unexpected exception
+java.util.concurrent.ExecutionException: org.jenkinsci.remoting.protocol.impl.ConnectionRefusalException: Server didn't accept the handshake: 
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at hudson.remoting.Engine.innerRun(Engine.java:577)
+	at hudson.remoting.Engine.run(Engine.java:488)
+Caused by: org.jenkinsci.remoting.protocol.impl.ConnectionRefusalException: Server didn't accept the handshake: 
+	at org.jenkinsci.remoting.engine.JnlpProtocol2Handler.sendHandshake(JnlpProtocol2Handler.java:140)
+	at org.jenkinsci.remoting.engine.LegacyJnlpProtocolHandler$2.call(LegacyJnlpProtocolHandler.java:162)
+	at org.jenkinsci.remoting.engine.LegacyJnlpProtocolHandler$2.call(LegacyJnlpProtocolHandler.java:158)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at hudson.remoting.Engine$1.lambda$newThread$0(Engine.java:97)
+	at java.lang.Thread.run(Thread.java:748)
+
+七月 14, 2020 2:27:24 下午 hudson.remoting.jnlp.Main$CuiListener status
+信息: Connecting to 192.168.6.232:45571
+七月 14, 2020 2:27:24 下午 hudson.remoting.jnlp.Main$CuiListener status
+信息: Trying protocol: JNLP-connect
+七月 14, 2020 2:27:24 下午 hudson.remoting.jnlp.Main$CuiListener status
+信息: Protocol JNLP-connect encountered an unexpected exception
+java.util.concurrent.ExecutionException: org.jenkinsci.remoting.protocol.impl.ConnectionRefusalException: Server didn't accept the handshake: 
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at hudson.remoting.Engine.innerRun(Engine.java:577)
+	at hudson.remoting.Engine.run(Engine.java:488)
+Caused by: org.jenkinsci.remoting.protocol.impl.ConnectionRefusalException: Server didn't accept the handshake: 
+	at org.jenkinsci.remoting.engine.JnlpProtocol1Handler.sendHandshake(JnlpProtocol1Handler.java:125)
+	at org.jenkinsci.remoting.engine.LegacyJnlpProtocolHandler$2.call(LegacyJnlpProtocolHandler.java:162)
+	at org.jenkinsci.remoting.engine.LegacyJnlpProtocolHandler$2.call(LegacyJnlpProtocolHandler.java:158)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at hudson.remoting.Engine$1.lambda$newThread$0(Engine.java:97)
+	at java.lang.Thread.run(Thread.java:748)
+
+七月 14, 2020 2:27:24 下午 hudson.remoting.jnlp.Main$CuiListener error
+严重: The server rejected the connection: None of the protocols were accepted
+java.lang.Exception: The server rejected the connection: None of the protocols were accepted
+	at hudson.remoting.Engine.onConnectionRejected(Engine.java:662)
+	at hudson.remoting.Engine.innerRun(Engine.java:602)
+	at hudson.remoting.Engine.run(Engine.java:488)
+

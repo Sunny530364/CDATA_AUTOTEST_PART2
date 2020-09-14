@@ -1,0 +1,3266 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "ONU远程管理",
+    "children" : [ {
+      "name" : "远程管理ONU",
+      "children" : [ {
+        "name" : "去激活ONU",
+        "uid" : "dbcceb156a75ae17",
+        "parentUid" : "4d5dd68e0af88303430cb97476bb2ae0",
+        "status" : "broken",
+        "time" : {
+          "start" : 1594172454435,
+          "stop" : 1594172485924,
+          "duration" : 31489
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "远程重启ONU",
+        "uid" : "6757096d5caead9",
+        "parentUid" : "4d5dd68e0af88303430cb97476bb2ae0",
+        "status" : "broken",
+        "time" : {
+          "start" : 1594172510416,
+          "stop" : 1594172541975,
+          "duration" : 31559
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "OMCI升级ONU",
+        "uid" : "2bc4a5467148354b",
+        "parentUid" : "4d5dd68e0af88303430cb97476bb2ae0",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1594172553175,
+          "stop" : 1594172553175,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "4d5dd68e0af88303430cb97476bb2ae0"
+    } ],
+    "uid" : "cf822ca0fa84327fbe84230847d8dc58"
+  }, {
+    "name" : "test_error",
+    "uid" : "c1ce8c528cae34ce",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "broken",
+    "time" : {
+      "start" : 1594179610060,
+      "stop" : 1594179610060,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "test_warn",
+    "uid" : "a38f5e9238d36514",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "broken",
+    "time" : {
+      "start" : 1594179610083,
+      "stop" : 1594179610083,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "test_info",
+    "uid" : "31bf410523f8db85",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "broken",
+    "time" : {
+      "start" : 1594179610092,
+      "stop" : 1594179610092,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "test_debug",
+    "uid" : "b16731ad17c5458a",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "broken",
+    "time" : {
+      "start" : 1594179610098,
+      "stop" : 1594179610098,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "ONU认证",
+    "children" : [ {
+      "name" : "ONU认证方式",
+      "children" : [ {
+        "name" : "SN认证",
+        "uid" : "eda34fed2f7ca5de",
+        "parentUid" : "fcc9f769b54cb9d28e6f9c45b7eaae9f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594193969769,
+          "stop" : 1594194013682,
+          "duration" : 43913
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "SN的PASSWORD认证",
+        "uid" : "db3d72bd39828e8a",
+        "parentUid" : "fcc9f769b54cb9d28e6f9c45b7eaae9f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594194037955,
+          "stop" : 1594194076412,
+          "duration" : 38457
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "SN+PASSWORD认证",
+        "uid" : "5d484f69ed6a0c84",
+        "parentUid" : "fcc9f769b54cb9d28e6f9c45b7eaae9f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594194102627,
+          "stop" : 1594194149461,
+          "duration" : 46834
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "LOID认证",
+        "uid" : "ba163e6b60361432",
+        "parentUid" : "fcc9f769b54cb9d28e6f9c45b7eaae9f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594194174657,
+          "stop" : 1594194221429,
+          "duration" : 46772
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "LOID+PASSWORD认证",
+        "uid" : "db317f301ddd033a",
+        "parentUid" : "fcc9f769b54cb9d28e6f9c45b7eaae9f",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594194246627,
+          "stop" : 1594194257235,
+          "duration" : 10608
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "SN认证",
+        "uid" : "9e0137188113c22f",
+        "parentUid" : "fcc9f769b54cb9d28e6f9c45b7eaae9f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594296434517,
+          "stop" : 1594296484191,
+          "duration" : 49674
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "0" ]
+      }, {
+        "name" : "SN认证",
+        "uid" : "61654889f18af86",
+        "parentUid" : "fcc9f769b54cb9d28e6f9c45b7eaae9f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594296506375,
+          "stop" : 1594296557072,
+          "duration" : 50697
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "1" ]
+      }, {
+        "name" : "SN认证",
+        "uid" : "20359eff8b5e5238",
+        "parentUid" : "fcc9f769b54cb9d28e6f9c45b7eaae9f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594296578281,
+          "stop" : 1594296629116,
+          "duration" : 50835
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "2" ]
+      }, {
+        "name" : "SN认证",
+        "uid" : "d541517e11c9c83c",
+        "parentUid" : "fcc9f769b54cb9d28e6f9c45b7eaae9f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594296650304,
+          "stop" : 1594296701093,
+          "duration" : 50789
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "3" ]
+      }, {
+        "name" : "SN认证",
+        "uid" : "9aedd50dd381fe5b",
+        "parentUid" : "fcc9f769b54cb9d28e6f9c45b7eaae9f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594296722327,
+          "stop" : 1594296772970,
+          "duration" : 50643
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "4" ]
+      }, {
+        "name" : "SN认证",
+        "uid" : "5a78f8ae98f57441",
+        "parentUid" : "fcc9f769b54cb9d28e6f9c45b7eaae9f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594296794173,
+          "stop" : 1594296845835,
+          "duration" : 51662
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "5" ]
+      }, {
+        "name" : "SN认证",
+        "uid" : "c6ab074660c3dafb",
+        "parentUid" : "fcc9f769b54cb9d28e6f9c45b7eaae9f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594296874032,
+          "stop" : 1594296917301,
+          "duration" : 43269
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "6" ]
+      }, {
+        "name" : "SN认证",
+        "uid" : "878c138167bdb360",
+        "parentUid" : "fcc9f769b54cb9d28e6f9c45b7eaae9f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594296938515,
+          "stop" : 1594296990462,
+          "duration" : 51947
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "7" ]
+      }, {
+        "name" : "SN认证",
+        "uid" : "19b5485b9feae2d0",
+        "parentUid" : "fcc9f769b54cb9d28e6f9c45b7eaae9f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594297017719,
+          "stop" : 1594297062860,
+          "duration" : 45141
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "8" ]
+      }, {
+        "name" : "SN认证",
+        "uid" : "1eed872950f56ec8",
+        "parentUid" : "fcc9f769b54cb9d28e6f9c45b7eaae9f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594297090078,
+          "stop" : 1594297134599,
+          "duration" : 44521
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "9" ]
+      }, {
+        "name" : "SN的PASSWORD认证",
+        "uid" : "6a3a7925970c7dab",
+        "parentUid" : "fcc9f769b54cb9d28e6f9c45b7eaae9f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594297161828,
+          "stop" : 1594297206452,
+          "duration" : 44624
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "0" ]
+      }, {
+        "name" : "SN的PASSWORD认证",
+        "uid" : "39163079c5dbc08d",
+        "parentUid" : "fcc9f769b54cb9d28e6f9c45b7eaae9f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594297233726,
+          "stop" : 1594297279847,
+          "duration" : 46121
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "1" ]
+      }, {
+        "name" : "SN的PASSWORD认证",
+        "uid" : "47aabb6483fd4416",
+        "parentUid" : "fcc9f769b54cb9d28e6f9c45b7eaae9f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594297306095,
+          "stop" : 1594297351383,
+          "duration" : 45288
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "2" ]
+      }, {
+        "name" : "SN的PASSWORD认证",
+        "uid" : "faf4cd87e983cac8",
+        "parentUid" : "fcc9f769b54cb9d28e6f9c45b7eaae9f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594297378677,
+          "stop" : 1594297431728,
+          "duration" : 53051
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "3" ]
+      }, {
+        "name" : "SN的PASSWORD认证",
+        "uid" : "80614c4454b7b245",
+        "parentUid" : "fcc9f769b54cb9d28e6f9c45b7eaae9f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594297458039,
+          "stop" : 1594297503950,
+          "duration" : 45911
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "4" ]
+      }, {
+        "name" : "SN的PASSWORD认证",
+        "uid" : "2767ec6afe2cf3b7",
+        "parentUid" : "fcc9f769b54cb9d28e6f9c45b7eaae9f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594297530188,
+          "stop" : 1594297584575,
+          "duration" : 54387
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "5" ]
+      }, {
+        "name" : "SN的PASSWORD认证",
+        "uid" : "c34de2e81c5f32cf",
+        "parentUid" : "fcc9f769b54cb9d28e6f9c45b7eaae9f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594297609797,
+          "stop" : 1594297657046,
+          "duration" : 47249
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "6" ]
+      }, {
+        "name" : "SN的PASSWORD认证",
+        "uid" : "8c51b9afc8fe3b31",
+        "parentUid" : "fcc9f769b54cb9d28e6f9c45b7eaae9f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594297682328,
+          "stop" : 1594297736482,
+          "duration" : 54154
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "7" ]
+      }, {
+        "name" : "SN的PASSWORD认证",
+        "uid" : "232ccfa957a77b45",
+        "parentUid" : "fcc9f769b54cb9d28e6f9c45b7eaae9f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594297761766,
+          "stop" : 1594297808668,
+          "duration" : 46902
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "8" ]
+      }, {
+        "name" : "SN的PASSWORD认证",
+        "uid" : "77d42bee2752427b",
+        "parentUid" : "fcc9f769b54cb9d28e6f9c45b7eaae9f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594297833925,
+          "stop" : 1594297880918,
+          "duration" : 46993
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "9" ]
+      }, {
+        "name" : "SN+PASSWORD认证",
+        "uid" : "7d57531e48b7161b",
+        "parentUid" : "fcc9f769b54cb9d28e6f9c45b7eaae9f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594297906140,
+          "stop" : 1594297961396,
+          "duration" : 55256
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "0" ]
+      }, {
+        "name" : "SN+PASSWORD认证",
+        "uid" : "a50a1cb1fbac447b",
+        "parentUid" : "fcc9f769b54cb9d28e6f9c45b7eaae9f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594297986673,
+          "stop" : 1594298042302,
+          "duration" : 55629
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "1" ]
+      }, {
+        "name" : "SN+PASSWORD认证",
+        "uid" : "817c9ddc6b1ad497",
+        "parentUid" : "fcc9f769b54cb9d28e6f9c45b7eaae9f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594298066604,
+          "stop" : 1594298122008,
+          "duration" : 55404
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "2" ]
+      }, {
+        "name" : "SN+PASSWORD认证",
+        "uid" : "1cab6882080ae37f",
+        "parentUid" : "fcc9f769b54cb9d28e6f9c45b7eaae9f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594298146249,
+          "stop" : 1594298194182,
+          "duration" : 47933
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "3" ]
+      }, {
+        "name" : "SN+PASSWORD认证",
+        "uid" : "8b9564361c827361",
+        "parentUid" : "fcc9f769b54cb9d28e6f9c45b7eaae9f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594298218445,
+          "stop" : 1594298268403,
+          "duration" : 49958
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "4" ]
+      }, {
+        "name" : "SN+PASSWORD认证",
+        "uid" : "411cc35b90e72eaa",
+        "parentUid" : "fcc9f769b54cb9d28e6f9c45b7eaae9f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594298290676,
+          "stop" : 1594298338453,
+          "duration" : 47777
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "5" ]
+      }, {
+        "name" : "SN+PASSWORD认证",
+        "uid" : "614923343437",
+        "parentUid" : "fcc9f769b54cb9d28e6f9c45b7eaae9f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594298361705,
+          "stop" : 1594298403264,
+          "duration" : 41559
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "6" ]
+      }, {
+        "name" : "SN+PASSWORD认证",
+        "uid" : "d99ce5be64821c46",
+        "parentUid" : "fcc9f769b54cb9d28e6f9c45b7eaae9f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594298426590,
+          "stop" : 1594298475453,
+          "duration" : 48863
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "7" ]
+      }, {
+        "name" : "SN+PASSWORD认证",
+        "uid" : "f7eaada0dc980cd6",
+        "parentUid" : "fcc9f769b54cb9d28e6f9c45b7eaae9f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594298498687,
+          "stop" : 1594298547823,
+          "duration" : 49136
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "8" ]
+      }, {
+        "name" : "SN+PASSWORD认证",
+        "uid" : "d9cbd1dbb99472fe",
+        "parentUid" : "fcc9f769b54cb9d28e6f9c45b7eaae9f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594298570061,
+          "stop" : 1594298611514,
+          "duration" : 41453
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "9" ]
+      }, {
+        "name" : "LOID认证",
+        "uid" : "7e1a768e5f1edc13",
+        "parentUid" : "fcc9f769b54cb9d28e6f9c45b7eaae9f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594298635390,
+          "stop" : 1594298688383,
+          "duration" : 52993
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "0" ]
+      }, {
+        "name" : "LOID认证",
+        "uid" : "96157ba78cce643a",
+        "parentUid" : "fcc9f769b54cb9d28e6f9c45b7eaae9f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594298714612,
+          "stop" : 1594298777279,
+          "duration" : 62667
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "1" ]
+      }, {
+        "name" : "LOID认证",
+        "uid" : "d14a780f17a02722",
+        "parentUid" : "fcc9f769b54cb9d28e6f9c45b7eaae9f",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594298801955,
+          "stop" : 1594298866895,
+          "duration" : 64940
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "2" ]
+      }, {
+        "name" : "LOID认证",
+        "uid" : "5f2eb30d8fb4baa7",
+        "parentUid" : "fcc9f769b54cb9d28e6f9c45b7eaae9f",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594298940237,
+          "stop" : 1594298999715,
+          "duration" : 59478
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "3" ]
+      }, {
+        "name" : "LOID认证",
+        "uid" : "207cdc772211d13",
+        "parentUid" : "fcc9f769b54cb9d28e6f9c45b7eaae9f",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594299072251,
+          "stop" : 1594299131738,
+          "duration" : 59487
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "4" ]
+      }, {
+        "name" : "LOID认证",
+        "uid" : "8019c3a2d443d9ff",
+        "parentUid" : "fcc9f769b54cb9d28e6f9c45b7eaae9f",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594299204252,
+          "stop" : 1594299263738,
+          "duration" : 59486
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "5" ]
+      }, {
+        "name" : "LOID认证",
+        "uid" : "93fea33de2d26c77",
+        "parentUid" : "fcc9f769b54cb9d28e6f9c45b7eaae9f",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594299336156,
+          "stop" : 1594299396022,
+          "duration" : 59866
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "6" ]
+      }, {
+        "name" : "LOID认证",
+        "uid" : "8f2ea15bd5a128a8",
+        "parentUid" : "fcc9f769b54cb9d28e6f9c45b7eaae9f",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594299469094,
+          "stop" : 1594299529173,
+          "duration" : 60079
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "7" ]
+      }, {
+        "name" : "LOID认证",
+        "uid" : "e20c35c6368c057",
+        "parentUid" : "fcc9f769b54cb9d28e6f9c45b7eaae9f",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594299601723,
+          "stop" : 1594299661107,
+          "duration" : 59384
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "8" ]
+      }, {
+        "name" : "LOID认证",
+        "uid" : "b641f6ef216dc510",
+        "parentUid" : "fcc9f769b54cb9d28e6f9c45b7eaae9f",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594299733595,
+          "stop" : 1594299793036,
+          "duration" : 59441
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "9" ]
+      }, {
+        "name" : "LOID+PASSWORD认证",
+        "uid" : "c1a3292c3807b78c",
+        "parentUid" : "fcc9f769b54cb9d28e6f9c45b7eaae9f",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594299865453,
+          "stop" : 1594299924882,
+          "duration" : 59429
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "0" ]
+      }, {
+        "name" : "LOID+PASSWORD认证",
+        "uid" : "6355c451b0d83eda",
+        "parentUid" : "fcc9f769b54cb9d28e6f9c45b7eaae9f",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594299997390,
+          "stop" : 1594300056769,
+          "duration" : 59379
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "1" ]
+      }, {
+        "name" : "LOID+PASSWORD认证",
+        "uid" : "4ff9742e36748682",
+        "parentUid" : "fcc9f769b54cb9d28e6f9c45b7eaae9f",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594300129284,
+          "stop" : 1594300189268,
+          "duration" : 59984
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "2" ]
+      }, {
+        "name" : "LOID+PASSWORD认证",
+        "uid" : "e185572bed9bc534",
+        "parentUid" : "fcc9f769b54cb9d28e6f9c45b7eaae9f",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594300261689,
+          "stop" : 1594300321799,
+          "duration" : 60110
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "3" ]
+      }, {
+        "name" : "LOID+PASSWORD认证",
+        "uid" : "cb067d2e889e5254",
+        "parentUid" : "fcc9f769b54cb9d28e6f9c45b7eaae9f",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594300394718,
+          "stop" : 1594300454151,
+          "duration" : 59433
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "4" ]
+      }, {
+        "name" : "LOID+PASSWORD认证",
+        "uid" : "b756604c9141f98e",
+        "parentUid" : "fcc9f769b54cb9d28e6f9c45b7eaae9f",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594300526674,
+          "stop" : 1594300586565,
+          "duration" : 59891
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "5" ]
+      }, {
+        "name" : "LOID+PASSWORD认证",
+        "uid" : "9dab592f25b3cfa9",
+        "parentUid" : "fcc9f769b54cb9d28e6f9c45b7eaae9f",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594300658999,
+          "stop" : 1594300718494,
+          "duration" : 59495
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "6" ]
+      }, {
+        "name" : "LOID+PASSWORD认证",
+        "uid" : "3095bfa32bd5de36",
+        "parentUid" : "fcc9f769b54cb9d28e6f9c45b7eaae9f",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594300791063,
+          "stop" : 1594300850520,
+          "duration" : 59457
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "7" ]
+      }, {
+        "name" : "LOID+PASSWORD认证",
+        "uid" : "1e3d144837037861",
+        "parentUid" : "fcc9f769b54cb9d28e6f9c45b7eaae9f",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594300923093,
+          "stop" : 1594300983174,
+          "duration" : 60081
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "8" ]
+      }, {
+        "name" : "LOID+PASSWORD认证",
+        "uid" : "c49ea642c4a2e142",
+        "parentUid" : "fcc9f769b54cb9d28e6f9c45b7eaae9f",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594301055688,
+          "stop" : 1594301115122,
+          "duration" : 59434
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "9" ]
+      } ],
+      "uid" : "fcc9f769b54cb9d28e6f9c45b7eaae9f"
+    } ],
+    "uid" : "304415420421bd7c79e38c88ad916110"
+  }, {
+    "name" : "ONU业务测试",
+    "children" : [ {
+      "name" : "ONU上网方式测试",
+      "children" : [ {
+        "name" : "DHCP测试",
+        "uid" : "4f948311c601fc34",
+        "parentUid" : "6e455960dca2f2f9b428870a3ab9b053",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594196143976,
+          "stop" : 1594196292905,
+          "duration" : 148929
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "静态IP测试",
+        "uid" : "91626dd70fdceae2",
+        "parentUid" : "6e455960dca2f2f9b428870a3ab9b053",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594196318350,
+          "stop" : 1594196452777,
+          "duration" : 134427
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "PPPoE拨号测试",
+        "uid" : "69323f0015ba4c9",
+        "parentUid" : "6e455960dca2f2f9b428870a3ab9b053",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594196477973,
+          "stop" : 1594196492960,
+          "duration" : 14987
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "DHCP测试",
+        "uid" : "78e9ef6ff44c1ef2",
+        "parentUid" : "6e455960dca2f2f9b428870a3ab9b053",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594307799438,
+          "stop" : 1594307859019,
+          "duration" : 59581
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "0" ]
+      }, {
+        "name" : "DHCP测试",
+        "uid" : "521c1a4c73bf0411",
+        "parentUid" : "6e455960dca2f2f9b428870a3ab9b053",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594307931466,
+          "stop" : 1594307990939,
+          "duration" : 59473
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "1" ]
+      }, {
+        "name" : "DHCP测试",
+        "uid" : "447f08945e54c31c",
+        "parentUid" : "6e455960dca2f2f9b428870a3ab9b053",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594308063407,
+          "stop" : 1594308122794,
+          "duration" : 59387
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "2" ]
+      }, {
+        "name" : "DHCP测试",
+        "uid" : "280a018dc089f3c4",
+        "parentUid" : "6e455960dca2f2f9b428870a3ab9b053",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594308195705,
+          "stop" : 1594308255826,
+          "duration" : 60121
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "3" ]
+      }, {
+        "name" : "DHCP测试",
+        "uid" : "86b3911d4be0300b",
+        "parentUid" : "6e455960dca2f2f9b428870a3ab9b053",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594308328560,
+          "stop" : 1594308387902,
+          "duration" : 59342
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "4" ]
+      }, {
+        "name" : "DHCP测试",
+        "uid" : "b41ee9e43585bc97",
+        "parentUid" : "6e455960dca2f2f9b428870a3ab9b053",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594308460469,
+          "stop" : 1594308519873,
+          "duration" : 59404
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "5" ]
+      }, {
+        "name" : "DHCP测试",
+        "uid" : "8f14850b0af15a85",
+        "parentUid" : "6e455960dca2f2f9b428870a3ab9b053",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594308592738,
+          "stop" : 1594308652636,
+          "duration" : 59898
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "6" ]
+      }, {
+        "name" : "DHCP测试",
+        "uid" : "14c5dbef3b0f1b95",
+        "parentUid" : "6e455960dca2f2f9b428870a3ab9b053",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594308725380,
+          "stop" : 1594308784851,
+          "duration" : 59471
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "7" ]
+      }, {
+        "name" : "DHCP测试",
+        "uid" : "7107592d16f6c2b6",
+        "parentUid" : "6e455960dca2f2f9b428870a3ab9b053",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594308857499,
+          "stop" : 1594308916970,
+          "duration" : 59471
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "8" ]
+      }, {
+        "name" : "DHCP测试",
+        "uid" : "24f9870f59b25294",
+        "parentUid" : "6e455960dca2f2f9b428870a3ab9b053",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594308989345,
+          "stop" : 1594309048907,
+          "duration" : 59562
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "9" ]
+      }, {
+        "name" : "静态IP测试",
+        "uid" : "6b824cf7f66dcf9c",
+        "parentUid" : "6e455960dca2f2f9b428870a3ab9b053",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594309121349,
+          "stop" : 1594309180968,
+          "duration" : 59619
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "0" ]
+      }, {
+        "name" : "静态IP测试",
+        "uid" : "3e955b2d45c3e460",
+        "parentUid" : "6e455960dca2f2f9b428870a3ab9b053",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594309253419,
+          "stop" : 1594309312838,
+          "duration" : 59419
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "1" ]
+      }, {
+        "name" : "静态IP测试",
+        "uid" : "e402a96f8d6c0e99",
+        "parentUid" : "6e455960dca2f2f9b428870a3ab9b053",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594309385408,
+          "stop" : 1594309444805,
+          "duration" : 59397
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "2" ]
+      }, {
+        "name" : "静态IP测试",
+        "uid" : "8adb8ddae1b303cb",
+        "parentUid" : "6e455960dca2f2f9b428870a3ab9b053",
+        "status" : "broken",
+        "time" : {
+          "start" : 1594309504426,
+          "stop" : 1594309504426,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "3" ]
+      }, {
+        "name" : "静态IP测试",
+        "uid" : "4aefa11656e8ecf1",
+        "parentUid" : "6e455960dca2f2f9b428870a3ab9b053",
+        "status" : "broken",
+        "time" : {
+          "start" : 1594343172107,
+          "stop" : 1594343172107,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "4" ]
+      }, {
+        "name" : "静态IP测试",
+        "uid" : "946a24a84e3efe83",
+        "parentUid" : "6e455960dca2f2f9b428870a3ab9b053",
+        "status" : "broken",
+        "time" : {
+          "start" : 1594343172182,
+          "stop" : 1594343172182,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "5" ]
+      }, {
+        "name" : "静态IP测试",
+        "uid" : "55927e9edb5abde5",
+        "parentUid" : "6e455960dca2f2f9b428870a3ab9b053",
+        "status" : "broken",
+        "time" : {
+          "start" : 1594343172278,
+          "stop" : 1594343172278,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "6" ]
+      }, {
+        "name" : "静态IP测试",
+        "uid" : "e3da3819705bb5b1",
+        "parentUid" : "6e455960dca2f2f9b428870a3ab9b053",
+        "status" : "broken",
+        "time" : {
+          "start" : 1594343172405,
+          "stop" : 1594343172405,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "7" ]
+      }, {
+        "name" : "静态IP测试",
+        "uid" : "2ed07a9a72df0f82",
+        "parentUid" : "6e455960dca2f2f9b428870a3ab9b053",
+        "status" : "broken",
+        "time" : {
+          "start" : 1594343172443,
+          "stop" : 1594343172443,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "8" ]
+      }, {
+        "name" : "静态IP测试",
+        "uid" : "c20c4c6a123c9079",
+        "parentUid" : "6e455960dca2f2f9b428870a3ab9b053",
+        "status" : "broken",
+        "time" : {
+          "start" : 1594343172503,
+          "stop" : 1594343172503,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "9" ]
+      }, {
+        "name" : "PPPoE拨号测试",
+        "uid" : "e6db49c438557de6",
+        "parentUid" : "6e455960dca2f2f9b428870a3ab9b053",
+        "status" : "broken",
+        "time" : {
+          "start" : 1594343172560,
+          "stop" : 1594343172560,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "0" ]
+      }, {
+        "name" : "PPPoE拨号测试",
+        "uid" : "32fed0cd5c589bbf",
+        "parentUid" : "6e455960dca2f2f9b428870a3ab9b053",
+        "status" : "broken",
+        "time" : {
+          "start" : 1594343172593,
+          "stop" : 1594343172593,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "1" ]
+      }, {
+        "name" : "PPPoE拨号测试",
+        "uid" : "9805a85dcddcb047",
+        "parentUid" : "6e455960dca2f2f9b428870a3ab9b053",
+        "status" : "broken",
+        "time" : {
+          "start" : 1594343172627,
+          "stop" : 1594343172627,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "2" ]
+      }, {
+        "name" : "PPPoE拨号测试",
+        "uid" : "8c78f27b05dcaba",
+        "parentUid" : "6e455960dca2f2f9b428870a3ab9b053",
+        "status" : "broken",
+        "time" : {
+          "start" : 1594343172664,
+          "stop" : 1594343172664,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "3" ]
+      }, {
+        "name" : "PPPoE拨号测试",
+        "uid" : "927f589756f66197",
+        "parentUid" : "6e455960dca2f2f9b428870a3ab9b053",
+        "status" : "broken",
+        "time" : {
+          "start" : 1594343172699,
+          "stop" : 1594343172699,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "4" ]
+      }, {
+        "name" : "PPPoE拨号测试",
+        "uid" : "14a97bdd278e02f1",
+        "parentUid" : "6e455960dca2f2f9b428870a3ab9b053",
+        "status" : "broken",
+        "time" : {
+          "start" : 1594343172728,
+          "stop" : 1594343172728,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "5" ]
+      }, {
+        "name" : "PPPoE拨号测试",
+        "uid" : "47f33ac3827b246b",
+        "parentUid" : "6e455960dca2f2f9b428870a3ab9b053",
+        "status" : "broken",
+        "time" : {
+          "start" : 1594343172758,
+          "stop" : 1594343172758,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "6" ]
+      }, {
+        "name" : "PPPoE拨号测试",
+        "uid" : "85ef9c5db1a277b2",
+        "parentUid" : "6e455960dca2f2f9b428870a3ab9b053",
+        "status" : "broken",
+        "time" : {
+          "start" : 1594343172786,
+          "stop" : 1594343172786,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "7" ]
+      }, {
+        "name" : "PPPoE拨号测试",
+        "uid" : "85a22d2fa2cf7586",
+        "parentUid" : "6e455960dca2f2f9b428870a3ab9b053",
+        "status" : "broken",
+        "time" : {
+          "start" : 1594343172823,
+          "stop" : 1594343172823,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "8" ]
+      }, {
+        "name" : "PPPoE拨号测试",
+        "uid" : "779665cac5cdf7ec",
+        "parentUid" : "6e455960dca2f2f9b428870a3ab9b053",
+        "status" : "broken",
+        "time" : {
+          "start" : 1594343172889,
+          "stop" : 1594343172889,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "9" ]
+      } ],
+      "uid" : "6e455960dca2f2f9b428870a3ab9b053"
+    } ],
+    "uid" : "8b59b0465f57c34d044f670b16bca9db"
+  }, {
+    "name" : "onu端口vlan测试",
+    "children" : [ {
+      "name" : "onu端口vlan测试",
+      "children" : [ {
+        "name" : "测试onu端口vlan为transparent",
+        "uid" : "15d2af2ce29c7e1b",
+        "parentUid" : "9f73c0657d1eee0f2d214441e36bb4db",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594199274818,
+          "stop" : 1594199298269,
+          "duration" : 23451
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "测试onu端口vlan为trunk",
+        "uid" : "6fa26482182494c",
+        "parentUid" : "9f73c0657d1eee0f2d214441e36bb4db",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594199345032,
+          "stop" : 1594199379952,
+          "duration" : 34920
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "测试onu端口vlan为translate",
+        "uid" : "806dd6cf902e3974",
+        "parentUid" : "9f73c0657d1eee0f2d214441e36bb4db",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594199456249,
+          "stop" : 1594199490944,
+          "duration" : 34695
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "测试onu端口vlan为transparent",
+        "uid" : "de695e767eb83de1",
+        "parentUid" : "9f73c0657d1eee0f2d214441e36bb4db",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594281061072,
+          "stop" : 1594281109520,
+          "duration" : 48448
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "0" ]
+      }, {
+        "name" : "测试onu端口vlan为transparent",
+        "uid" : "fe634ca44c5d2541",
+        "parentUid" : "9f73c0657d1eee0f2d214441e36bb4db",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594281137801,
+          "stop" : 1594281193828,
+          "duration" : 56027
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "1" ]
+      }, {
+        "name" : "测试onu端口vlan为transparent",
+        "uid" : "cdbadfaf85be0b4b",
+        "parentUid" : "9f73c0657d1eee0f2d214441e36bb4db",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594281217033,
+          "stop" : 1594281265705,
+          "duration" : 48672
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "2" ]
+      }, {
+        "name" : "测试onu端口vlan为transparent",
+        "uid" : "214c8934b3682c93",
+        "parentUid" : "9f73c0657d1eee0f2d214441e36bb4db",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594281288954,
+          "stop" : 1594281339329,
+          "duration" : 50375
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "3" ]
+      }, {
+        "name" : "测试onu端口vlan为transparent",
+        "uid" : "9b926d006137d8a2",
+        "parentUid" : "9f73c0657d1eee0f2d214441e36bb4db",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594281361685,
+          "stop" : 1594281419103,
+          "duration" : 57418
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "4" ]
+      }, {
+        "name" : "测试onu端口vlan为transparent",
+        "uid" : "5d4a808d456cfe4e",
+        "parentUid" : "9f73c0657d1eee0f2d214441e36bb4db",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594281441391,
+          "stop" : 1594281499127,
+          "duration" : 57736
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "5" ]
+      }, {
+        "name" : "测试onu端口vlan为transparent",
+        "uid" : "12268e243de464a0",
+        "parentUid" : "9f73c0657d1eee0f2d214441e36bb4db",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594281521391,
+          "stop" : 1594281579103,
+          "duration" : 57712
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "6" ]
+      }, {
+        "name" : "测试onu端口vlan为transparent",
+        "uid" : "46c878ba6b73b4f4",
+        "parentUid" : "9f73c0657d1eee0f2d214441e36bb4db",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594281601330,
+          "stop" : 1594281660303,
+          "duration" : 58973
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "7" ]
+      }, {
+        "name" : "测试onu端口vlan为transparent",
+        "uid" : "579fca5be097619",
+        "parentUid" : "9f73c0657d1eee0f2d214441e36bb4db",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594281681519,
+          "stop" : 1594281740096,
+          "duration" : 58577
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "8" ]
+      }, {
+        "name" : "测试onu端口vlan为transparent",
+        "uid" : "c3e867916ba1beaa",
+        "parentUid" : "9f73c0657d1eee0f2d214441e36bb4db",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594281761330,
+          "stop" : 1594281820055,
+          "duration" : 58725
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "9" ]
+      }, {
+        "name" : "测试onu端口vlan为trunk",
+        "uid" : "b05d64a3c6b44b11",
+        "parentUid" : "9f73c0657d1eee0f2d214441e36bb4db",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594281841297,
+          "stop" : 1594281921680,
+          "duration" : 80383
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "0" ]
+      }, {
+        "name" : "测试onu端口vlan为trunk",
+        "uid" : "420a0523c49f7d84",
+        "parentUid" : "9f73c0657d1eee0f2d214441e36bb4db",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594281944907,
+          "stop" : 1594282019492,
+          "duration" : 74585
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "1" ]
+      }, {
+        "name" : "测试onu端口vlan为trunk",
+        "uid" : "68fb8b01b5cc8e12",
+        "parentUid" : "9f73c0657d1eee0f2d214441e36bb4db",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594282041749,
+          "stop" : 1594282122116,
+          "duration" : 80367
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "2" ]
+      }, {
+        "name" : "测试onu端口vlan为trunk",
+        "uid" : "beb5c78391fdb138",
+        "parentUid" : "9f73c0657d1eee0f2d214441e36bb4db",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594282145296,
+          "stop" : 1594282218196,
+          "duration" : 72900
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "3" ]
+      }, {
+        "name" : "测试onu端口vlan为trunk",
+        "uid" : "ec45048287cd218e",
+        "parentUid" : "9f73c0657d1eee0f2d214441e36bb4db",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594282241390,
+          "stop" : 1594282322805,
+          "duration" : 81415
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "4" ]
+      }, {
+        "name" : "测试onu端口vlan为trunk",
+        "uid" : "6588b1d94a8262e5",
+        "parentUid" : "9f73c0657d1eee0f2d214441e36bb4db",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594282345019,
+          "stop" : 1594282419069,
+          "duration" : 74050
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "5" ]
+      }, {
+        "name" : "测试onu端口vlan为trunk",
+        "uid" : "756553ba4f6bb69a",
+        "parentUid" : "9f73c0657d1eee0f2d214441e36bb4db",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594282441282,
+          "stop" : 1594282515195,
+          "duration" : 73913
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "6" ]
+      }, {
+        "name" : "测试onu端口vlan为trunk",
+        "uid" : "ba8909096cd6d4e9",
+        "parentUid" : "9f73c0657d1eee0f2d214441e36bb4db",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594282537409,
+          "stop" : 1594282619961,
+          "duration" : 82552
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "7" ]
+      }, {
+        "name" : "测试onu端口vlan为trunk",
+        "uid" : "3c9b3754a17b9ebb",
+        "parentUid" : "9f73c0657d1eee0f2d214441e36bb4db",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594282641220,
+          "stop" : 1594282716494,
+          "duration" : 75274
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "8" ]
+      }, {
+        "name" : "测试onu端口vlan为trunk",
+        "uid" : "b2885d1ba6c9db10",
+        "parentUid" : "9f73c0657d1eee0f2d214441e36bb4db",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594282737689,
+          "stop" : 1594282813680,
+          "duration" : 75991
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "9" ]
+      }, {
+        "name" : "测试onu端口vlan为translate",
+        "uid" : "dc73f4815320db2e",
+        "parentUid" : "9f73c0657d1eee0f2d214441e36bb4db",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594282841876,
+          "stop" : 1594282932008,
+          "duration" : 90132
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "0" ]
+      }, {
+        "name" : "测试onu端口vlan为translate",
+        "uid" : "110c2bfd19fbf641",
+        "parentUid" : "9f73c0657d1eee0f2d214441e36bb4db",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594282957301,
+          "stop" : 1594283039325,
+          "duration" : 82024
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "1" ]
+      }, {
+        "name" : "测试onu端口vlan为translate",
+        "uid" : "2242a6f84245939d",
+        "parentUid" : "9f73c0657d1eee0f2d214441e36bb4db",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594283065834,
+          "stop" : 1594283084248,
+          "duration" : 18414
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "2" ]
+      }, {
+        "name" : "测试onu端口vlan为translate",
+        "uid" : "f57bd2aa4de80abc",
+        "parentUid" : "9f73c0657d1eee0f2d214441e36bb4db",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594283109532,
+          "stop" : 1594283124668,
+          "duration" : 15136
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "3" ]
+      } ],
+      "uid" : "9f73c0657d1eee0f2d214441e36bb4db"
+    } ],
+    "uid" : "0287e8adbb4acb6b396819e1eaa2924f"
+  }, {
+    "name" : "onu 组播测试",
+    "children" : [ {
+      "name" : "onu 组播snooping测试",
+      "children" : [ {
+        "name" : "测试onu跨组播vlan",
+        "uid" : "747733734451e6cd",
+        "parentUid" : "9e0195bda11c4f43314d927deaddeda8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594274401203,
+          "stop" : 1594274483607,
+          "duration" : 82404
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "测试onu组播正常通的情况",
+        "uid" : "577651830f1dfd42",
+        "parentUid" : "9e0195bda11c4f43314d927deaddeda8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594287695406,
+          "stop" : 1594287768433,
+          "duration" : 73027
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "0" ]
+      }, {
+        "name" : "测试onu组播正常通的情况",
+        "uid" : "5cc03d0d7468e7d4",
+        "parentUid" : "9e0195bda11c4f43314d927deaddeda8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594287793704,
+          "stop" : 1594287875487,
+          "duration" : 81783
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "1" ]
+      }, {
+        "name" : "测试onu组播正常通的情况",
+        "uid" : "e6337057030f6574",
+        "parentUid" : "9e0195bda11c4f43314d927deaddeda8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594287897751,
+          "stop" : 1594287982370,
+          "duration" : 84619
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "2" ]
+      }, {
+        "name" : "测试onu组播正常通的情况",
+        "uid" : "e96a77599b301ad",
+        "parentUid" : "9e0195bda11c4f43314d927deaddeda8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594288009628,
+          "stop" : 1594288084886,
+          "duration" : 75258
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "3" ]
+      }, {
+        "name" : "测试onu组播正常通的情况",
+        "uid" : "eff96279525d5d7c",
+        "parentUid" : "9e0195bda11c4f43314d927deaddeda8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594288106094,
+          "stop" : 1594288181991,
+          "duration" : 75897
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "4" ]
+      }, {
+        "name" : "测试onu组播正常通的情况",
+        "uid" : "9991af94a3d2e228",
+        "parentUid" : "9e0195bda11c4f43314d927deaddeda8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594288209220,
+          "stop" : 1594288279096,
+          "duration" : 69876
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "5" ]
+      }, {
+        "name" : "测试onu组播正常通的情况",
+        "uid" : "5f8805d3a58a92f3",
+        "parentUid" : "9e0195bda11c4f43314d927deaddeda8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594288305392,
+          "stop" : 1594288371097,
+          "duration" : 65705
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "6" ]
+      }, {
+        "name" : "测试onu组播正常通的情况",
+        "uid" : "24580451d39c7916",
+        "parentUid" : "9e0195bda11c4f43314d927deaddeda8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594288393344,
+          "stop" : 1594288463046,
+          "duration" : 69702
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "7" ]
+      }, {
+        "name" : "测试onu组播正常通的情况",
+        "uid" : "a447acaf411b8fa2",
+        "parentUid" : "9e0195bda11c4f43314d927deaddeda8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594288489233,
+          "stop" : 1594288560109,
+          "duration" : 70876
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "8" ]
+      }, {
+        "name" : "测试onu组播正常通的情况",
+        "uid" : "ae345af674765289",
+        "parentUid" : "9e0195bda11c4f43314d927deaddeda8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594288585312,
+          "stop" : 1594288652037,
+          "duration" : 66725
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "9" ]
+      }, {
+        "name" : "测试onu跨组播vlan",
+        "uid" : "3c853bc70967d852",
+        "parentUid" : "9e0195bda11c4f43314d927deaddeda8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594292384109,
+          "stop" : 1594292454633,
+          "duration" : 70524
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "0" ]
+      }, {
+        "name" : "测试onu跨组播vlan",
+        "uid" : "8d249d46645d658b",
+        "parentUid" : "9e0195bda11c4f43314d927deaddeda8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594292481875,
+          "stop" : 1594292561585,
+          "duration" : 79710
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "1" ]
+      }, {
+        "name" : "测试onu跨组播vlan",
+        "uid" : "a68916cbd6be85b1",
+        "parentUid" : "9e0195bda11c4f43314d927deaddeda8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594292585812,
+          "stop" : 1594292658574,
+          "duration" : 72762
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "2" ]
+      }, {
+        "name" : "测试onu跨组播vlan",
+        "uid" : "e938078346abc056",
+        "parentUid" : "9e0195bda11c4f43314d927deaddeda8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594292681798,
+          "stop" : 1594292755346,
+          "duration" : 73548
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "3" ]
+      }, {
+        "name" : "测试onu跨组播vlan",
+        "uid" : "c2ccabcfd390d0f0",
+        "parentUid" : "9e0195bda11c4f43314d927deaddeda8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594292777579,
+          "stop" : 1594292852268,
+          "duration" : 74689
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "4" ]
+      }, {
+        "name" : "测试onu跨组播vlan",
+        "uid" : "ed641f6c2f82b2b3",
+        "parentUid" : "9e0195bda11c4f43314d927deaddeda8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594292873467,
+          "stop" : 1594292949170,
+          "duration" : 75703
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "5" ]
+      }, {
+        "name" : "测试onu跨组播vlan",
+        "uid" : "4c9943e8d6c2838f",
+        "parentUid" : "9e0195bda11c4f43314d927deaddeda8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594292970391,
+          "stop" : 1594293050860,
+          "duration" : 80469
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "6" ]
+      }, {
+        "name" : "测试onu跨组播vlan",
+        "uid" : "744ed43bad3675ee",
+        "parentUid" : "9e0195bda11c4f43314d927deaddeda8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594293074079,
+          "stop" : 1594293147784,
+          "duration" : 73705
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "7" ]
+      }, {
+        "name" : "测试onu跨组播vlan",
+        "uid" : "f4ec3b19e10ee4bb",
+        "parentUid" : "9e0195bda11c4f43314d927deaddeda8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594293170000,
+          "stop" : 1594293244770,
+          "duration" : 74770
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "8" ]
+      }, {
+        "name" : "测试onu跨组播vlan",
+        "uid" : "8c10bfff1b944c5e",
+        "parentUid" : "9e0195bda11c4f43314d927deaddeda8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594293265953,
+          "stop" : 1594293341706,
+          "duration" : 75753
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "9" ]
+      }, {
+        "name" : "测试onu组播正常通的情况",
+        "uid" : "b8c6a21fb91b6164",
+        "parentUid" : "9e0195bda11c4f43314d927deaddeda8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594693179174,
+          "stop" : 1594693254773,
+          "duration" : 75599
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "测试onu组播正常不通的情况",
+        "uid" : "dd098d8519c5d5a",
+        "parentUid" : "9e0195bda11c4f43314d927deaddeda8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594693275940,
+          "stop" : 1594693356768,
+          "duration" : 80828
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9e0195bda11c4f43314d927deaddeda8"
+    } ],
+    "uid" : "6eb954baa393f9595ea5cba8a187e1ba"
+  }, {
+    "name" : "onu mac地址上报测试",
+    "children" : [ {
+      "name" : "onu mac地址上报测试",
+      "children" : [ {
+        "name" : "onu mac地址上报测试",
+        "uid" : "6c89d5587d6b0f57",
+        "parentUid" : "197f938316c4f587706a6b11ae9cdeae",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594280002673,
+          "stop" : 1594280055884,
+          "duration" : 53211
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "0" ]
+      }, {
+        "name" : "onu mac地址上报测试",
+        "uid" : "1560a653fe67ec00",
+        "parentUid" : "197f938316c4f587706a6b11ae9cdeae",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594280081142,
+          "stop" : 1594280121666,
+          "duration" : 40524
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "1" ]
+      }, {
+        "name" : "onu mac地址上报测试",
+        "uid" : "191462374aa66cde",
+        "parentUid" : "197f938316c4f587706a6b11ae9cdeae",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594280144875,
+          "stop" : 1594280185618,
+          "duration" : 40743
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "2" ]
+      }, {
+        "name" : "onu mac地址上报测试",
+        "uid" : "fd18b8ea9eb32ea9",
+        "parentUid" : "197f938316c4f587706a6b11ae9cdeae",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594280208876,
+          "stop" : 1594280250556,
+          "duration" : 41680
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "3" ]
+      }, {
+        "name" : "onu mac地址上报测试",
+        "uid" : "fa45e5356e5a03a2",
+        "parentUid" : "197f938316c4f587706a6b11ae9cdeae",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594280273751,
+          "stop" : 1594280321711,
+          "duration" : 47960
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "4" ]
+      }, {
+        "name" : "onu mac地址上报测试",
+        "uid" : "df28fa98269375d0",
+        "parentUid" : "197f938316c4f587706a6b11ae9cdeae",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594280345110,
+          "stop" : 1594280386619,
+          "duration" : 41509
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "5" ]
+      }, {
+        "name" : "onu mac地址上报测试",
+        "uid" : "cc11031d3455ecec",
+        "parentUid" : "197f938316c4f587706a6b11ae9cdeae",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594280408797,
+          "stop" : 1594280450821,
+          "duration" : 42024
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "6" ]
+      }, {
+        "name" : "onu mac地址上报测试",
+        "uid" : "207085e561d77f65",
+        "parentUid" : "197f938316c4f587706a6b11ae9cdeae",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594280473046,
+          "stop" : 1594280515883,
+          "duration" : 42837
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "7" ]
+      }, {
+        "name" : "onu mac地址上报测试",
+        "uid" : "444ca615dd8a6481",
+        "parentUid" : "197f938316c4f587706a6b11ae9cdeae",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594280537047,
+          "stop" : 1594280578336,
+          "duration" : 41289
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "8" ]
+      }, {
+        "name" : "onu mac地址上报测试",
+        "uid" : "72419e8d12843f58",
+        "parentUid" : "197f938316c4f587706a6b11ae9cdeae",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594280601532,
+          "stop" : 1594280652117,
+          "duration" : 50585
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "9" ]
+      }, {
+        "name" : "onu mac地址上报测试",
+        "uid" : "8e10993b9f5f2c8f",
+        "parentUid" : "197f938316c4f587706a6b11ae9cdeae",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594953981649,
+          "stop" : 1594954023875,
+          "duration" : 42226
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "197f938316c4f587706a6b11ae9cdeae"
+    } ],
+    "uid" : "cab77c4b6b78d7b05aa11faf6f4a3484"
+  }, {
+    "name" : "信息上报",
+    "children" : [ {
+      "name" : "ONU信息上报",
+      "children" : [ {
+        "name" : "查看ONU的信息上报",
+        "uid" : "ccce1ca7c3f27d28",
+        "parentUid" : "6c17aaadf5a5dc5cc195e729d9757e9c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594296075485,
+          "stop" : 1594296092184,
+          "duration" : 16699
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "0" ]
+      }, {
+        "name" : "查看ONU的信息上报",
+        "uid" : "6075fa52e871f314",
+        "parentUid" : "6c17aaadf5a5dc5cc195e729d9757e9c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594296114413,
+          "stop" : 1594296131914,
+          "duration" : 17501
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "1" ]
+      }, {
+        "name" : "查看ONU的信息上报",
+        "uid" : "3476a7605c01aab6",
+        "parentUid" : "6c17aaadf5a5dc5cc195e729d9757e9c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594296154159,
+          "stop" : 1594296171701,
+          "duration" : 17542
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "2" ]
+      }, {
+        "name" : "查看ONU的信息上报",
+        "uid" : "46246087acd175de",
+        "parentUid" : "6c17aaadf5a5dc5cc195e729d9757e9c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594296193876,
+          "stop" : 1594296203714,
+          "duration" : 9838
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "3" ]
+      }, {
+        "name" : "查看ONU的信息上报",
+        "uid" : "e4eda65b9674b106",
+        "parentUid" : "6c17aaadf5a5dc5cc195e729d9757e9c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594296225938,
+          "stop" : 1594296235850,
+          "duration" : 9912
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "4" ]
+      }, {
+        "name" : "查看ONU的信息上报",
+        "uid" : "eaba1624685021b9",
+        "parentUid" : "6c17aaadf5a5dc5cc195e729d9757e9c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594296258080,
+          "stop" : 1594296276445,
+          "duration" : 18365
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "5" ]
+      }, {
+        "name" : "查看ONU的信息上报",
+        "uid" : "b466b9564a3b41d8",
+        "parentUid" : "6c17aaadf5a5dc5cc195e729d9757e9c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594296297704,
+          "stop" : 1594296308644,
+          "duration" : 10940
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "6" ]
+      }, {
+        "name" : "查看ONU的信息上报",
+        "uid" : "cce08a5d7f5be8b8",
+        "parentUid" : "6c17aaadf5a5dc5cc195e729d9757e9c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594296329875,
+          "stop" : 1594296340781,
+          "duration" : 10906
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "7" ]
+      }, {
+        "name" : "查看ONU的信息上报",
+        "uid" : "2313f81fb651f5ea",
+        "parentUid" : "6c17aaadf5a5dc5cc195e729d9757e9c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594296361969,
+          "stop" : 1594296372940,
+          "duration" : 10971
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "8" ]
+      }, {
+        "name" : "查看ONU的信息上报",
+        "uid" : "edd9755633bebdba",
+        "parentUid" : "6c17aaadf5a5dc5cc195e729d9757e9c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594296394113,
+          "stop" : 1594296412307,
+          "duration" : 18194
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "9" ]
+      }, {
+        "name" : "查看ONU的信息上报",
+        "uid" : "3d1e37b03293766b",
+        "parentUid" : "6c17aaadf5a5dc5cc195e729d9757e9c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594693954097,
+          "stop" : 1594693965698,
+          "duration" : 11601
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6c17aaadf5a5dc5cc195e729d9757e9c"
+    } ],
+    "uid" : "25f9a0cf0883bc28930f1f0d066b4567"
+  }, {
+    "name" : "gemport测试",
+    "children" : [ {
+      "name" : "gemport测试",
+      "children" : [ {
+        "name" : "测试mapping为transaprent",
+        "uid" : "9e555ae540cade77",
+        "parentUid" : "21340d76d9b4f2e2358345c831b9b8f4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594301188064,
+          "stop" : 1594301247616,
+          "duration" : 59552
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "0" ]
+      }, {
+        "name" : "测试mapping为transaprent",
+        "uid" : "1185641de187dc0",
+        "parentUid" : "21340d76d9b4f2e2358345c831b9b8f4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594301320156,
+          "stop" : 1594301379481,
+          "duration" : 59325
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "1" ]
+      }, {
+        "name" : "测试mapping为transaprent",
+        "uid" : "481f224a4a601c81",
+        "parentUid" : "21340d76d9b4f2e2358345c831b9b8f4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594301452046,
+          "stop" : 1594301511469,
+          "duration" : 59423
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "2" ]
+      }, {
+        "name" : "测试mapping为transaprent",
+        "uid" : "623ad51719f4450f",
+        "parentUid" : "21340d76d9b4f2e2358345c831b9b8f4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594301584001,
+          "stop" : 1594301643466,
+          "duration" : 59465
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "3" ]
+      }, {
+        "name" : "测试mapping为transaprent",
+        "uid" : "1a166ed55f980045",
+        "parentUid" : "21340d76d9b4f2e2358345c831b9b8f4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594301716376,
+          "stop" : 1594301776038,
+          "duration" : 59662
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "4" ]
+      }, {
+        "name" : "测试mapping为transaprent",
+        "uid" : "1b3417a947a517f3",
+        "parentUid" : "21340d76d9b4f2e2358345c831b9b8f4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594301848594,
+          "stop" : 1594301907897,
+          "duration" : 59303
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "5" ]
+      }, {
+        "name" : "测试mapping为transaprent",
+        "uid" : "b8459ab37f590f05",
+        "parentUid" : "21340d76d9b4f2e2358345c831b9b8f4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594301980432,
+          "stop" : 1594302040184,
+          "duration" : 59752
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "6" ]
+      }, {
+        "name" : "测试mapping为transaprent",
+        "uid" : "4462a0fa33cdb7bb",
+        "parentUid" : "21340d76d9b4f2e2358345c831b9b8f4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594302112689,
+          "stop" : 1594302172378,
+          "duration" : 59689
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "7" ]
+      }, {
+        "name" : "测试mapping为transaprent",
+        "uid" : "dceb821a3b3570ac",
+        "parentUid" : "21340d76d9b4f2e2358345c831b9b8f4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594302245348,
+          "stop" : 1594302305306,
+          "duration" : 59958
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "8" ]
+      }, {
+        "name" : "测试mapping为transaprent",
+        "uid" : "7742a8dff776312f",
+        "parentUid" : "21340d76d9b4f2e2358345c831b9b8f4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594302378222,
+          "stop" : 1594302438278,
+          "duration" : 60056
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "9" ]
+      }, {
+        "name" : "测试mapping-mode为vlan",
+        "uid" : "bfec87dc292a19c5",
+        "parentUid" : "21340d76d9b4f2e2358345c831b9b8f4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594302510814,
+          "stop" : 1594302570624,
+          "duration" : 59810
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "0" ]
+      }, {
+        "name" : "测试mapping-mode为vlan",
+        "uid" : "6cd51f28cdaf674c",
+        "parentUid" : "21340d76d9b4f2e2358345c831b9b8f4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594302643171,
+          "stop" : 1594302702997,
+          "duration" : 59826
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "1" ]
+      }, {
+        "name" : "测试mapping-mode为vlan",
+        "uid" : "8809bc1c1972c911",
+        "parentUid" : "21340d76d9b4f2e2358345c831b9b8f4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594302775422,
+          "stop" : 1594302835725,
+          "duration" : 60303
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "2" ]
+      }, {
+        "name" : "测试mapping-mode为vlan",
+        "uid" : "47cc37df36d0981e",
+        "parentUid" : "21340d76d9b4f2e2358345c831b9b8f4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594302908378,
+          "stop" : 1594302968063,
+          "duration" : 59685
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "3" ]
+      }, {
+        "name" : "测试mapping-mode为vlan",
+        "uid" : "301cd5609c8a1cfd",
+        "parentUid" : "21340d76d9b4f2e2358345c831b9b8f4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594303040593,
+          "stop" : 1594303100594,
+          "duration" : 60001
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "4" ]
+      }, {
+        "name" : "测试mapping-mode为vlan",
+        "uid" : "c9d9badbdb281d5f",
+        "parentUid" : "21340d76d9b4f2e2358345c831b9b8f4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594303173142,
+          "stop" : 1594303232575,
+          "duration" : 59433
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "5" ]
+      }, {
+        "name" : "测试mapping-mode为vlan",
+        "uid" : "e960105f93c731fe",
+        "parentUid" : "21340d76d9b4f2e2358345c831b9b8f4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594303305159,
+          "stop" : 1594303364607,
+          "duration" : 59448
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "6" ]
+      }, {
+        "name" : "测试mapping-mode为vlan",
+        "uid" : "5b7c9affdb2c510",
+        "parentUid" : "21340d76d9b4f2e2358345c831b9b8f4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594303437563,
+          "stop" : 1594303497403,
+          "duration" : 59840
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "7" ]
+      }, {
+        "name" : "测试mapping-mode为vlan",
+        "uid" : "c9b76c584ba5be85",
+        "parentUid" : "21340d76d9b4f2e2358345c831b9b8f4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594303569971,
+          "stop" : 1594303629563,
+          "duration" : 59592
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "8" ]
+      }, {
+        "name" : "测试mapping-mode为vlan",
+        "uid" : "3273e89a83fc345a",
+        "parentUid" : "21340d76d9b4f2e2358345c831b9b8f4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594303702032,
+          "stop" : 1594303761540,
+          "duration" : 59508
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "9" ]
+      }, {
+        "name" : "测试mapping-mode为vlan_pri",
+        "uid" : "17d14970d44e2e19",
+        "parentUid" : "21340d76d9b4f2e2358345c831b9b8f4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594303834078,
+          "stop" : 1594303893561,
+          "duration" : 59483
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "0" ]
+      }, {
+        "name" : "测试mapping-mode为vlan_pri",
+        "uid" : "a02a83026211cfd1",
+        "parentUid" : "21340d76d9b4f2e2358345c831b9b8f4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594303966124,
+          "stop" : 1594304025563,
+          "duration" : 59439
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "1" ]
+      }, {
+        "name" : "测试mapping-mode为vlan_pri",
+        "uid" : "8c23d2eaa9247c55",
+        "parentUid" : "21340d76d9b4f2e2358345c831b9b8f4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594304098061,
+          "stop" : 1594304157836,
+          "duration" : 59775
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "2" ]
+      }, {
+        "name" : "测试mapping-mode为vlan_pri",
+        "uid" : "28d7dbe2a47fdd20",
+        "parentUid" : "21340d76d9b4f2e2358345c831b9b8f4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594304230344,
+          "stop" : 1594304290084,
+          "duration" : 59740
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "3" ]
+      }, {
+        "name" : "测试mapping-mode为vlan_pri",
+        "uid" : "a52ccc98973aed60",
+        "parentUid" : "21340d76d9b4f2e2358345c831b9b8f4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594304362515,
+          "stop" : 1594304421974,
+          "duration" : 59459
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "4" ]
+      }, {
+        "name" : "测试mapping-mode为vlan_pri",
+        "uid" : "42e78780a9f7d977",
+        "parentUid" : "21340d76d9b4f2e2358345c831b9b8f4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594304494501,
+          "stop" : 1594304553995,
+          "duration" : 59494
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "5" ]
+      }, {
+        "name" : "测试mapping-mode为vlan_pri",
+        "uid" : "4c36be5994d44565",
+        "parentUid" : "21340d76d9b4f2e2358345c831b9b8f4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594304626578,
+          "stop" : 1594304686023,
+          "duration" : 59445
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "6" ]
+      }, {
+        "name" : "测试mapping-mode为vlan_pri",
+        "uid" : "909a299b06350f17",
+        "parentUid" : "21340d76d9b4f2e2358345c831b9b8f4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594304758956,
+          "stop" : 1594304818471,
+          "duration" : 59515
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "7" ]
+      }, {
+        "name" : "测试mapping-mode为vlan_pri",
+        "uid" : "3c303e790c582e50",
+        "parentUid" : "21340d76d9b4f2e2358345c831b9b8f4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594304891252,
+          "stop" : 1594304950697,
+          "duration" : 59445
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "8" ]
+      }, {
+        "name" : "测试mapping-mode为vlan_pri",
+        "uid" : "2098379fdf5c544a",
+        "parentUid" : "21340d76d9b4f2e2358345c831b9b8f4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594305023372,
+          "stop" : 1594305082788,
+          "duration" : 59416
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "9" ]
+      }, {
+        "name" : "测试mapping-mode为pri",
+        "uid" : "230b1ffb63cae0d4",
+        "parentUid" : "21340d76d9b4f2e2358345c831b9b8f4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594305156331,
+          "stop" : 1594305215782,
+          "duration" : 59451
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "0" ]
+      }, {
+        "name" : "测试mapping-mode为pri",
+        "uid" : "65bc3cbf534b233d",
+        "parentUid" : "21340d76d9b4f2e2358345c831b9b8f4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594305288203,
+          "stop" : 1594305348215,
+          "duration" : 60012
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "1" ]
+      }, {
+        "name" : "测试mapping-mode为pri",
+        "uid" : "b8787569b30e8459",
+        "parentUid" : "21340d76d9b4f2e2358345c831b9b8f4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594305420780,
+          "stop" : 1594305480539,
+          "duration" : 59759
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "2" ]
+      }, {
+        "name" : "测试mapping-mode为pri",
+        "uid" : "feda76e68d8b13e5",
+        "parentUid" : "21340d76d9b4f2e2358345c831b9b8f4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594305553095,
+          "stop" : 1594305612391,
+          "duration" : 59296
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "3" ]
+      }, {
+        "name" : "测试mapping-mode为pri",
+        "uid" : "c18720df2c6a61b8",
+        "parentUid" : "21340d76d9b4f2e2358345c831b9b8f4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594305684954,
+          "stop" : 1594305744722,
+          "duration" : 59768
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "4" ]
+      }, {
+        "name" : "测试mapping-mode为pri",
+        "uid" : "77eaf29785f109f2",
+        "parentUid" : "21340d76d9b4f2e2358345c831b9b8f4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594305817269,
+          "stop" : 1594305877124,
+          "duration" : 59855
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "5" ]
+      }, {
+        "name" : "测试mapping-mode为pri",
+        "uid" : "2b890d81936dc2da",
+        "parentUid" : "21340d76d9b4f2e2358345c831b9b8f4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594305949660,
+          "stop" : 1594306009664,
+          "duration" : 60004
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "6" ]
+      }, {
+        "name" : "测试mapping-mode为pri",
+        "uid" : "de1579a9571b7b25",
+        "parentUid" : "21340d76d9b4f2e2358345c831b9b8f4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594306082284,
+          "stop" : 1594306142221,
+          "duration" : 59937
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "7" ]
+      }, {
+        "name" : "测试mapping-mode为pri",
+        "uid" : "eedcb6fc251b21dd",
+        "parentUid" : "21340d76d9b4f2e2358345c831b9b8f4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594306214884,
+          "stop" : 1594306274298,
+          "duration" : 59414
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "8" ]
+      }, {
+        "name" : "测试mapping-mode为pri",
+        "uid" : "c46eead6eb1670aa",
+        "parentUid" : "21340d76d9b4f2e2358345c831b9b8f4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594306346989,
+          "stop" : 1594306406425,
+          "duration" : 59436
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "9" ]
+      }, {
+        "name" : "测试mapping-mode为port",
+        "uid" : "5f5c82ac515dd4e8",
+        "parentUid" : "21340d76d9b4f2e2358345c831b9b8f4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594306479329,
+          "stop" : 1594306538759,
+          "duration" : 59430
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "0" ]
+      }, {
+        "name" : "测试mapping-mode为port",
+        "uid" : "be0ca36d0f7d0768",
+        "parentUid" : "21340d76d9b4f2e2358345c831b9b8f4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594306611657,
+          "stop" : 1594306671041,
+          "duration" : 59384
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "1" ]
+      }, {
+        "name" : "测试mapping-mode为port",
+        "uid" : "1c11edea62d874cb",
+        "parentUid" : "21340d76d9b4f2e2358345c831b9b8f4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594306744218,
+          "stop" : 1594306801210,
+          "duration" : 56992
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "2" ]
+      }, {
+        "name" : "测试mapping-mode为port",
+        "uid" : "c440e3b99b8a4f2",
+        "parentUid" : "21340d76d9b4f2e2358345c831b9b8f4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594306873671,
+          "stop" : 1594306933575,
+          "duration" : 59904
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "3" ]
+      }, {
+        "name" : "测试mapping-mode为port",
+        "uid" : "ffb2f0a566644f39",
+        "parentUid" : "21340d76d9b4f2e2358345c831b9b8f4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594307007078,
+          "stop" : 1594307067011,
+          "duration" : 59933
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "4" ]
+      }, {
+        "name" : "测试mapping-mode为port",
+        "uid" : "cccce54a18ad8b5a",
+        "parentUid" : "21340d76d9b4f2e2358345c831b9b8f4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594307139561,
+          "stop" : 1594307198949,
+          "duration" : 59388
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "5" ]
+      }, {
+        "name" : "测试mapping-mode为port",
+        "uid" : "c3841f6494b8bb1c",
+        "parentUid" : "21340d76d9b4f2e2358345c831b9b8f4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594307271546,
+          "stop" : 1594307330990,
+          "duration" : 59444
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "6" ]
+      }, {
+        "name" : "测试mapping-mode为port",
+        "uid" : "1da0385db13cf115",
+        "parentUid" : "21340d76d9b4f2e2358345c831b9b8f4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594307403499,
+          "stop" : 1594307462970,
+          "duration" : 59471
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "7" ]
+      }, {
+        "name" : "测试mapping-mode为port",
+        "uid" : "7d88ea35a712ca57",
+        "parentUid" : "21340d76d9b4f2e2358345c831b9b8f4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594307535375,
+          "stop" : 1594307594849,
+          "duration" : 59474
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "8" ]
+      }, {
+        "name" : "测试mapping-mode为port",
+        "uid" : "19ce85f398f7a820",
+        "parentUid" : "21340d76d9b4f2e2358345c831b9b8f4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594307667376,
+          "stop" : 1594307727064,
+          "duration" : 59688
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "9" ]
+      }, {
+        "name" : "测试mapping-mode为port",
+        "uid" : "5f64640db18d2139",
+        "parentUid" : "21340d76d9b4f2e2358345c831b9b8f4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594692771706,
+          "stop" : 1594692821316,
+          "duration" : 49610
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "测试mapping为transaprent",
+        "uid" : "b1b9da9fa013a193",
+        "parentUid" : "21340d76d9b4f2e2358345c831b9b8f4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594693987860,
+          "stop" : 1594694036369,
+          "duration" : 48509
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "测试mapping-mode为vlan",
+        "uid" : "923768279c16ad6a",
+        "parentUid" : "21340d76d9b4f2e2358345c831b9b8f4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594694059518,
+          "stop" : 1594694102231,
+          "duration" : 42713
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "测试mapping-mode为vlan_pri",
+        "uid" : "18f1efec0abb3c63",
+        "parentUid" : "21340d76d9b4f2e2358345c831b9b8f4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594694123501,
+          "stop" : 1594694164241,
+          "duration" : 40740
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "测试mapping-mode为pri",
+        "uid" : "d7eb0cd902b95524",
+        "parentUid" : "21340d76d9b4f2e2358345c831b9b8f4",
+        "status" : "broken",
+        "time" : {
+          "start" : 1594694187502,
+          "stop" : 1594694229937,
+          "duration" : 42435
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "21340d76d9b4f2e2358345c831b9b8f4"
+    } ],
+    "uid" : "3b0e9458ce2057ac73e8982dac971aa6"
+  }, {
+    "name" : "onu限速测试",
+    "children" : [ {
+      "name" : "onu端口限速测试",
+      "children" : [ {
+        "name" : "测试onu端口入口限速",
+        "uid" : "e45c6607b7773f07",
+        "parentUid" : "b110806b5b5c7d5dfe8dd3acdfbb5f81",
+        "status" : "broken",
+        "time" : {
+          "start" : 1594343172934,
+          "stop" : 1594343172934,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "0" ]
+      }, {
+        "name" : "测试onu端口入口限速",
+        "uid" : "d5d110808f7f69ee",
+        "parentUid" : "b110806b5b5c7d5dfe8dd3acdfbb5f81",
+        "status" : "broken",
+        "time" : {
+          "start" : 1594343172973,
+          "stop" : 1594343172973,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "1" ]
+      }, {
+        "name" : "测试onu端口入口限速",
+        "uid" : "f14e4f403296d444",
+        "parentUid" : "b110806b5b5c7d5dfe8dd3acdfbb5f81",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594343186862,
+          "stop" : 1594343246307,
+          "duration" : 59445
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "2" ]
+      }, {
+        "name" : "测试onu端口入口限速",
+        "uid" : "342bf01aee079e17",
+        "parentUid" : "b110806b5b5c7d5dfe8dd3acdfbb5f81",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594343318670,
+          "stop" : 1594343377902,
+          "duration" : 59232
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "3" ]
+      }, {
+        "name" : "测试onu端口入口限速",
+        "uid" : "9e64747121cc7904",
+        "parentUid" : "b110806b5b5c7d5dfe8dd3acdfbb5f81",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594343450250,
+          "stop" : 1594343509730,
+          "duration" : 59480
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "4" ]
+      }, {
+        "name" : "测试onu端口入口限速",
+        "uid" : "9fee7ece556288aa",
+        "parentUid" : "b110806b5b5c7d5dfe8dd3acdfbb5f81",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594343584060,
+          "stop" : 1594343643409,
+          "duration" : 59349
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "5" ]
+      }, {
+        "name" : "测试onu端口入口限速",
+        "uid" : "e0cfdcb2baa26249",
+        "parentUid" : "b110806b5b5c7d5dfe8dd3acdfbb5f81",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594343715751,
+          "stop" : 1594343775039,
+          "duration" : 59288
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "6" ]
+      }, {
+        "name" : "测试onu端口入口限速",
+        "uid" : "996a3f6deb60d2ac",
+        "parentUid" : "b110806b5b5c7d5dfe8dd3acdfbb5f81",
+        "status" : "failed",
+        "time" : {
+          "start" : 1594343847436,
+          "stop" : 1594343906743,
+          "duration" : 59307
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "7" ]
+      }, {
+        "name" : "测试onu端口入口限速",
+        "uid" : "6574f1ce4e72d6ae",
+        "parentUid" : "b110806b5b5c7d5dfe8dd3acdfbb5f81",
+        "status" : "broken",
+        "time" : {
+          "start" : 1594343979171,
+          "stop" : 1594344067769,
+          "duration" : 88598
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "8" ]
+      }, {
+        "name" : "测试onu端口入口限速",
+        "uid" : "1b63743801e700b7",
+        "parentUid" : "b110806b5b5c7d5dfe8dd3acdfbb5f81",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594344090017,
+          "stop" : 1594344141071,
+          "duration" : 51054
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "9" ]
+      }, {
+        "name" : "测试onu端口出口限速",
+        "uid" : "2bb3fc7bd9bc17cf",
+        "parentUid" : "b110806b5b5c7d5dfe8dd3acdfbb5f81",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594344161266,
+          "stop" : 1594344244925,
+          "duration" : 83659
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "0" ]
+      }, {
+        "name" : "测试onu端口出口限速",
+        "uid" : "bd84692837bc2f69",
+        "parentUid" : "b110806b5b5c7d5dfe8dd3acdfbb5f81",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594344265092,
+          "stop" : 1594344350102,
+          "duration" : 85010
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "1" ]
+      }, {
+        "name" : "测试onu端口出口限速",
+        "uid" : "b59508c663912729",
+        "parentUid" : "b110806b5b5c7d5dfe8dd3acdfbb5f81",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594344377297,
+          "stop" : 1594344461846,
+          "duration" : 84549
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "2" ]
+      }, {
+        "name" : "测试onu端口出口限速",
+        "uid" : "2b2641b4b85994e7",
+        "parentUid" : "b110806b5b5c7d5dfe8dd3acdfbb5f81",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594344490029,
+          "stop" : 1594344582166,
+          "duration" : 92137
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "3" ]
+      }, {
+        "name" : "测试onu端口出口限速",
+        "uid" : "e28d77c23132d19e",
+        "parentUid" : "b110806b5b5c7d5dfe8dd3acdfbb5f81",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594344609392,
+          "stop" : 1594344694083,
+          "duration" : 84691
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "4" ]
+      }, {
+        "name" : "测试onu端口出口限速",
+        "uid" : "71b345de36d99090",
+        "parentUid" : "b110806b5b5c7d5dfe8dd3acdfbb5f81",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594344721356,
+          "stop" : 1594344807087,
+          "duration" : 85731
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "5" ]
+      }, {
+        "name" : "测试onu端口出口限速",
+        "uid" : "1932dbfecdc56bae",
+        "parentUid" : "b110806b5b5c7d5dfe8dd3acdfbb5f81",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594344833298,
+          "stop" : 1594344919914,
+          "duration" : 86616
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "6" ]
+      }, {
+        "name" : "测试onu端口出口限速",
+        "uid" : "211b633667babbae",
+        "parentUid" : "b110806b5b5c7d5dfe8dd3acdfbb5f81",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594344945172,
+          "stop" : 1594345031826,
+          "duration" : 86654
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "7" ]
+      }, {
+        "name" : "测试onu端口出口限速",
+        "uid" : "13c1116b91b8ad99",
+        "parentUid" : "b110806b5b5c7d5dfe8dd3acdfbb5f81",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594345058060,
+          "stop" : 1594345152112,
+          "duration" : 94052
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "8" ]
+      }, {
+        "name" : "测试onu端口出口限速",
+        "uid" : "c8cd6e2e99b1eb37",
+        "parentUid" : "b110806b5b5c7d5dfe8dd3acdfbb5f81",
+        "status" : "broken",
+        "time" : {
+          "start" : 1594345164276,
+          "stop" : 1594345164276,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "9" ]
+      }, {
+        "name" : "测试onu端口入口限速",
+        "uid" : "77f8d0a166dbc1e2",
+        "parentUid" : "b110806b5b5c7d5dfe8dd3acdfbb5f81",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594692843658,
+          "stop" : 1594692893042,
+          "duration" : 49384
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "测试onu端口出口限速",
+        "uid" : "90cc93fa09b1a140",
+        "parentUid" : "b110806b5b5c7d5dfe8dd3acdfbb5f81",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594692915205,
+          "stop" : 1594693005997,
+          "duration" : 90792
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b110806b5b5c7d5dfe8dd3acdfbb5f81"
+    }, {
+      "name" : "dba限速测试",
+      "children" : [ {
+        "name" : "测试dba限速(type4)",
+        "uid" : "3349daa2e13c37b3",
+        "parentUid" : "32fec321970bb06d21677d0b7208652c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594693027205,
+          "stop" : 1594693071055,
+          "duration" : 43850
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "32fec321970bb06d21677d0b7208652c"
+    } ],
+    "uid" : "4c1a2673d49b7101e2ab7b8f626a14f2"
+  } ]
+}

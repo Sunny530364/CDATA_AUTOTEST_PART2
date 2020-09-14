@@ -1,0 +1,20 @@
+[INFO] 2020-08-24 10:51:12,762  Receive Msg: listen_port 9002
+
+[INFO] 2020-08-24 10:51:12,869  Renix api initialization finished
+[INFO] 2020-08-24 10:51:28,241  =========ONU MACµÿ÷∑…œ±®≤‚ ‘=========
+[INFO] 2020-08-24 10:51:45,841  create ports with location:
+[INFO] 2020-08-24 10:51:54,766  StreamPortConfig_1 has lower: InterFrameGapProfile_1
+[INFO] 2020-08-24 10:51:54,774  StreamPortConfig_2 has lower: InterFrameGapProfile_2
+[INFO] 2020-08-24 10:51:54,807  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-08-24 10:51:55,126  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-08-24 10:51:55,895  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-08-24 10:51:56,180  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-08-24 10:51:56,941  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-08-24 10:51:57,312  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-08-24 10:51:58,107  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-08-24 10:51:58,412  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-08-24 10:51:59,174  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-08-24 10:51:59,474  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-08-24 10:52:00,402  PageResultView_1 has lower: ResultQuery_1
+[INFO] 2020-08-24 10:52:11,295  ResultQuery_1 has lower: PortStats_1 PortStats_2
+[INFO] 2020-08-24 10:52:21,870  close connection to CL

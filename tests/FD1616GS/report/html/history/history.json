@@ -1,0 +1,4781 @@
+{
+  "bc1cfcb2341affdaa352c5ae76d7811a" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ccce1ca7c3f27d28",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594296075485,
+        "stop" : 1594296092184,
+        "duration" : 16699
+      }
+    } ]
+  },
+  "80ce9a2ec1c978285197324d2e447e51" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "1b3417a947a517f3",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB185AB5C0>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594301848594,
+        "stop" : 1594301907897,
+        "duration" : 59303
+      }
+    } ]
+  },
+  "e69b524899f0726a0af5f00515850f46" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a52ccc98973aed60",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB188F7160>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594304362515,
+        "stop" : 1594304421974,
+        "duration" : 59459
+      }
+    } ]
+  },
+  "a440fa7d0bfe9d3a41f32131826e48b7" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "be0ca36d0f7d0768",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB18941160>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594306611657,
+        "stop" : 1594306671041,
+        "duration" : 59384
+      }
+    } ]
+  },
+  "b87d31ee3487c194389d0c4cdf1e46f9" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "55927e9edb5abde5",
+      "status" : "broken",
+      "statusDetails" : "TypeError: 'bool' object is not subscriptable",
+      "time" : {
+        "start" : 1594343172278,
+        "stop" : 1594343172278,
+        "duration" : 0
+      }
+    } ]
+  },
+  "da4d0bf5d5df525716cc18f15733cd66" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "dceb821a3b3570ac",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB1889DCF8>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594302245348,
+        "stop" : 1594302305306,
+        "duration" : 59958
+      }
+    } ]
+  },
+  "f46a26841d2c93da7b65906cac87d9c8" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6b824cf7f66dcf9c",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB188CEE48>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594309121349,
+        "stop" : 1594309180968,
+        "duration" : 59619
+      }
+    } ]
+  },
+  "7ab4693953532747bc6405b24bbdb4cf" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "eff96279525d5d7c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594288106094,
+        "stop" : 1594288181991,
+        "duration" : 75897
+      }
+    } ]
+  },
+  "d38ae2b8d2e4f2515bfa8468a960c1aa" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "2ed07a9a72df0f82",
+      "status" : "broken",
+      "statusDetails" : "TypeError: 'bool' object is not subscriptable",
+      "time" : {
+        "start" : 1594343172443,
+        "stop" : 1594343172443,
+        "duration" : 0
+      }
+    } ]
+  },
+  "79cd6492e10a3a0f7dae9f22ef66b292" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "2bc4a5467148354b",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: unconditional skip",
+      "time" : {
+        "start" : 1594172553175,
+        "stop" : 1594172553175,
+        "duration" : 0
+      }
+    } ]
+  },
+  "c22c2e063062fda48473d41adac29f07" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b41ee9e43585bc97",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB188F7CC0>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594308460469,
+        "stop" : 1594308519873,
+        "duration" : 59404
+      }
+    } ]
+  },
+  "14bd1e7dfb4ec746a44e56a2afa7a468" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5f2eb30d8fb4baa7",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB187B24A8>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594298940237,
+        "stop" : 1594298999715,
+        "duration" : 59478
+      }
+    } ]
+  },
+  "7dcd15b0e4a6b8d8a65f0330c8e88aa4" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "280a018dc089f3c4",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB188D0FD0>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594308195705,
+        "stop" : 1594308255826,
+        "duration" : 60121
+      }
+    } ]
+  },
+  "2a6911cef2df7f4c900f34081b6ebf56" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "1e3d144837037861",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB184756A0>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594300923093,
+        "stop" : 1594300983174,
+        "duration" : 60081
+      }
+    } ]
+  },
+  "b44ce1e7f380e45d9ee79da2910aacc3" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9aedd50dd381fe5b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594296722327,
+        "stop" : 1594296772970,
+        "duration" : 50643
+      }
+    } ]
+  },
+  "4fd173a116baf82b5eee0e5de5f058bc" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "1932dbfecdc56bae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594344833298,
+        "stop" : 1594344919914,
+        "duration" : 86616
+      }
+    } ]
+  },
+  "4d500c0caeb8f0522dd3e3c86c0b5e48" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b756604c9141f98e",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB18899630>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594300526674,
+        "stop" : 1594300586565,
+        "duration" : 59891
+      }
+    } ]
+  },
+  "b41df3217c52d0b5afc3d071a873e703" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6a3a7925970c7dab",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594297161828,
+        "stop" : 1594297206452,
+        "duration" : 44624
+      }
+    } ]
+  },
+  "099b25ad9e32c3c5b1260b62e372b460" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "3c303e790c582e50",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB18424CC0>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594304891252,
+        "stop" : 1594304950697,
+        "duration" : 59445
+      }
+    } ]
+  },
+  "fe7f53925201f348187dfbe2cdc5e9b5" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e4eda65b9674b106",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594296225938,
+        "stop" : 1594296235850,
+        "duration" : 9912
+      }
+    } ]
+  },
+  "099f071940b5cea9195502a3cdc012e9" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "24f9870f59b25294",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB188996D8>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594308989345,
+        "stop" : 1594309048907,
+        "duration" : 59562
+      }
+    } ]
+  },
+  "1ec60c222a6f14dc52e26aa435b5771c" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6fa26482182494c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594199345032,
+        "stop" : 1594199379952,
+        "duration" : 34920
+      }
+    } ]
+  },
+  "27004d088ff6652c6669f181bd930c59" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5d484f69ed6a0c84",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594194102627,
+        "stop" : 1594194149461,
+        "duration" : 46834
+      }
+    } ]
+  },
+  "89398d64a0d2baa7cf3cc50460a6148c" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9805a85dcddcb047",
+      "status" : "broken",
+      "statusDetails" : "TypeError: 'bool' object is not subscriptable",
+      "time" : {
+        "start" : 1594343172627,
+        "stop" : 1594343172627,
+        "duration" : 0
+      }
+    } ]
+  },
+  "8e5199b1c715b52a5890fbe532fdb600" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4aefa11656e8ecf1",
+      "status" : "broken",
+      "statusDetails" : "TypeError: 'bool' object is not subscriptable",
+      "time" : {
+        "start" : 1594343172107,
+        "stop" : 1594343172107,
+        "duration" : 0
+      }
+    } ]
+  },
+  "161ff73686201738283802986e5b3e3c" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "779665cac5cdf7ec",
+      "status" : "broken",
+      "statusDetails" : "TypeError: 'bool' object is not subscriptable",
+      "time" : {
+        "start" : 1594343172889,
+        "stop" : 1594343172889,
+        "duration" : 0
+      }
+    } ]
+  },
+  "285658ae1a13ac439b99890198ed151f" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6574f1ce4e72d6ae",
+      "status" : "broken",
+      "statusDetails" : "Exception: bring online port(Port_65) failed",
+      "time" : {
+        "start" : 1594343979171,
+        "stop" : 1594344067769,
+        "duration" : 88598
+      }
+    } ]
+  },
+  "8a58cec7fc42546a83d3e7c318adbbd0" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ba163e6b60361432",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594194174657,
+        "stop" : 1594194221429,
+        "duration" : 46772
+      }
+    } ]
+  },
+  "7ff6941eac215064d44704e42d526463" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "2b890d81936dc2da",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB1888E668>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594305949660,
+        "stop" : 1594306009664,
+        "duration" : 60004
+      }
+    } ]
+  },
+  "30306013278116eb3ca4355d27f5c7a1" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "eedcb6fc251b21dd",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB18903B00>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594306214884,
+        "stop" : 1594306274298,
+        "duration" : 59414
+      }
+    } ]
+  },
+  "14da7d7951aa4a9db9606dbd8b05013e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5d4a808d456cfe4e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594281441391,
+        "stop" : 1594281499127,
+        "duration" : 57736
+      }
+    } ]
+  },
+  "8de858b2738c5cc2f970be9c8dc622d4" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "91626dd70fdceae2",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = static_ip_test('ASIX AX88772C USB2.0 to Fast Ethernet Adapter')",
+      "time" : {
+        "start" : 1594196318350,
+        "stop" : 1594196452777,
+        "duration" : 134427
+      }
+    } ]
+  },
+  "dbf42a453f8de6f0b758b3cca56f8175" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d7eb0cd902b95524",
+      "status" : "broken",
+      "statusDetails" : "IndexError: list index out of range",
+      "time" : {
+        "start" : 1594694187502,
+        "stop" : 1594694229937,
+        "duration" : 42435
+      }
+    } ]
+  },
+  "6756fe65d84f019797b75c067862013a" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "946a24a84e3efe83",
+      "status" : "broken",
+      "statusDetails" : "TypeError: 'bool' object is not subscriptable",
+      "time" : {
+        "start" : 1594343172182,
+        "stop" : 1594343172182,
+        "duration" : 0
+      }
+    } ]
+  },
+  "2660b5a6de82db6f4b0a809de0ff1708" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d9cbd1dbb99472fe",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594298570061,
+        "stop" : 1594298611514,
+        "duration" : 41453
+      }
+    } ]
+  },
+  "ade4603e14026644d60b10661bddc14f" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "90cc93fa09b1a140",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594692915205,
+        "stop" : 1594693005997,
+        "duration" : 90792
+      }
+    } ]
+  },
+  "2854209709ea81ab853a9d8ce5ea8807" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9e0137188113c22f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594296434517,
+        "stop" : 1594296484191,
+        "duration" : 49674
+      }
+    } ]
+  },
+  "3486bfb3ca53a8002efc488d13c9316f" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "df28fa98269375d0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594280345110,
+        "stop" : 1594280386619,
+        "duration" : 41509
+      }
+    } ]
+  },
+  "2274d8ace87a567b35b1a32a94b8f349" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "13c1116b91b8ad99",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594345058060,
+        "stop" : 1594345152112,
+        "duration" : 94052
+      }
+    } ]
+  },
+  "1a531ef2cd6d1bbd30cf0e1e43e357b2" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f14e4f403296d444",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB189266A0>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594343186862,
+        "stop" : 1594343246307,
+        "duration" : 59445
+      }
+    } ]
+  },
+  "7b28a8a67cfdc0ac5417af41d9279709" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c440e3b99b8a4f2",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB188D0208>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594306873671,
+        "stop" : 1594306933575,
+        "duration" : 59904
+      }
+    } ]
+  },
+  "23257797b2fe5540173482ced8a97cb4" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "beb5c78391fdb138",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594282145296,
+        "stop" : 1594282218196,
+        "duration" : 72900
+      }
+    } ]
+  },
+  "a713f22b4fd5db923fd6d4e3ecdcb6d1" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "19ce85f398f7a820",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB18944748>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594307667376,
+        "stop" : 1594307727064,
+        "duration" : 59688
+      }
+    } ]
+  },
+  "c88fde60d549189dcf5a39ece99bb79a" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b59508c663912729",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594344377297,
+        "stop" : 1594344461846,
+        "duration" : 84549
+      }
+    } ]
+  },
+  "ad2151788d6fca691c9017352c7880e6" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "1eed872950f56ec8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594297090078,
+        "stop" : 1594297134599,
+        "duration" : 44521
+      }
+    } ]
+  },
+  "ae270fa5445a1e007ac9ba98ef374757" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "42e78780a9f7d977",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB18929860>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594304494501,
+        "stop" : 1594304553995,
+        "duration" : 59494
+      }
+    } ]
+  },
+  "654b3fba71a845305f5dc56a62ba5e59" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "3349daa2e13c37b3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594693027205,
+        "stop" : 1594693071055,
+        "duration" : 43850
+      }
+    } ]
+  },
+  "80c1685fe01c9d9940d526404a18b130" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e6db49c438557de6",
+      "status" : "broken",
+      "statusDetails" : "TypeError: 'bool' object is not subscriptable",
+      "time" : {
+        "start" : 1594343172560,
+        "stop" : 1594343172560,
+        "duration" : 0
+      }
+    } ]
+  },
+  "5bf4fa6c86604012e77ae245cc95a384" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "cdbadfaf85be0b4b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594281217033,
+        "stop" : 1594281265705,
+        "duration" : 48672
+      }
+    } ]
+  },
+  "141cbe5703378d48aa0fdc458abcc3fd" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "3d1e37b03293766b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594693954097,
+        "stop" : 1594693965698,
+        "duration" : 11601
+      }
+    } ]
+  },
+  "72c2fc3f56cf8d4d4bba2ddea938d319" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "cb067d2e889e5254",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB1889D550>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594300394718,
+        "stop" : 1594300454151,
+        "duration" : 59433
+      }
+    } ]
+  },
+  "50f2a8e20ce0222e045efbdb62938bb5" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "744ed43bad3675ee",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594293074079,
+        "stop" : 1594293147784,
+        "duration" : 73705
+      }
+    } ]
+  },
+  "9897aa8013bd11fe3f8b695aa0719a97" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c6ab074660c3dafb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594296874032,
+        "stop" : 1594296917301,
+        "duration" : 43269
+      }
+    } ]
+  },
+  "126dcc3d851a09166520eecc86b56dcd" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "8c10bfff1b944c5e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594293265953,
+        "stop" : 1594293341706,
+        "duration" : 75753
+      }
+    } ]
+  },
+  "e558d67dcd4201095315c6cff7aa7d91" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "cc11031d3455ecec",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594280408797,
+        "stop" : 1594280450821,
+        "duration" : 42024
+      }
+    } ]
+  },
+  "6adfc5b91f850e1905c404bd3a990485" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "8019c3a2d443d9ff",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB187BF6A0>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594299204252,
+        "stop" : 1594299263738,
+        "duration" : 59486
+      }
+    } ]
+  },
+  "edb6f116abd6731ae6d4bd944feffd77" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9dab592f25b3cfa9",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB18903278>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594300658999,
+        "stop" : 1594300718494,
+        "duration" : 59495
+      }
+    } ]
+  },
+  "dfbf63c709d3e221bbded0af94eca074" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "927f589756f66197",
+      "status" : "broken",
+      "statusDetails" : "TypeError: 'bool' object is not subscriptable",
+      "time" : {
+        "start" : 1594343172699,
+        "stop" : 1594343172699,
+        "duration" : 0
+      }
+    } ]
+  },
+  "df59151a83fc2150d91307b924d2b9f5" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "78e9ef6ff44c1ef2",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB1892F0B8>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594307799438,
+        "stop" : 1594307859019,
+        "duration" : 59581
+      }
+    } ]
+  },
+  "140bd1011868445d6ebf5507af389b4e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "8b9564361c827361",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594298218445,
+        "stop" : 1594298268403,
+        "duration" : 49958
+      }
+    } ]
+  },
+  "afd1a7fb88d741d13efa4415fda3b348" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "77f8d0a166dbc1e2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594692843658,
+        "stop" : 1594692893042,
+        "duration" : 49384
+      }
+    } ]
+  },
+  "0d7a39e8d2561c12d0fbb4913b78b9b1" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "eda34fed2f7ca5de",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594193969769,
+        "stop" : 1594194013682,
+        "duration" : 43913
+      }
+    } ]
+  },
+  "954b2ef0752aa66a581e362aab045d53" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "614923343437",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594298361705,
+        "stop" : 1594298403264,
+        "duration" : 41559
+      }
+    } ]
+  },
+  "d28486568db861fa97a0494fda4fc37b" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "1b63743801e700b7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594344090017,
+        "stop" : 1594344141071,
+        "duration" : 51054
+      }
+    } ]
+  },
+  "58c16867b84fa1fdf699d6688dfa58aa" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "447f08945e54c31c",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB188CE4A8>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594308063407,
+        "stop" : 1594308122794,
+        "duration" : 59387
+      }
+    } ]
+  },
+  "0ef58eb094699a81c4b560ef0ae127a9" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "85ef9c5db1a277b2",
+      "status" : "broken",
+      "statusDetails" : "TypeError: 'bool' object is not subscriptable",
+      "time" : {
+        "start" : 1594343172786,
+        "stop" : 1594343172786,
+        "duration" : 0
+      }
+    } ]
+  },
+  "d24e9d3e0af0ed936124265ee3a19563" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a447acaf411b8fa2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594288489233,
+        "stop" : 1594288560109,
+        "duration" : 70876
+      }
+    } ]
+  },
+  "fc72bfa9f720f15d141f8fbb60d8de78" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b641f6ef216dc510",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB1888E7F0>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594299733595,
+        "stop" : 1594299793036,
+        "duration" : 59441
+      }
+    } ]
+  },
+  "1b3c647391035101f0a66fa143501527" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e45c6607b7773f07",
+      "status" : "broken",
+      "statusDetails" : "TypeError: 'bool' object is not subscriptable",
+      "time" : {
+        "start" : 1594343172934,
+        "stop" : 1594343172934,
+        "duration" : 0
+      }
+    } ]
+  },
+  "dc89ff7af8a574ba4a66336cc0083b4c" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e402a96f8d6c0e99",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB188CBB70>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594309385408,
+        "stop" : 1594309444805,
+        "duration" : 59397
+      }
+    } ]
+  },
+  "0fb02f4dbc69e1a74cebdf51b1bbfe3f" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "71b345de36d99090",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594344721356,
+        "stop" : 1594344807087,
+        "duration" : 85731
+      }
+    } ]
+  },
+  "f9bf6d2a9c647a137461ef8f4e238ce4" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "8d249d46645d658b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594292481875,
+        "stop" : 1594292561585,
+        "duration" : 79710
+      }
+    } ]
+  },
+  "6479ce67a17231dadc5b5cd86f5ba05b" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "817c9ddc6b1ad497",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594298066604,
+        "stop" : 1594298122008,
+        "duration" : 55404
+      }
+    } ]
+  },
+  "a333db10a5c543f7707fe0571c8965b2" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d5d110808f7f69ee",
+      "status" : "broken",
+      "statusDetails" : "TypeError: 'bool' object is not subscriptable",
+      "time" : {
+        "start" : 1594343172973,
+        "stop" : 1594343172973,
+        "duration" : 0
+      }
+    } ]
+  },
+  "5c3a33b5d20e7b82085d7553117ab0c4" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "47f33ac3827b246b",
+      "status" : "broken",
+      "statusDetails" : "TypeError: 'bool' object is not subscriptable",
+      "time" : {
+        "start" : 1594343172758,
+        "stop" : 1594343172758,
+        "duration" : 0
+      }
+    } ]
+  },
+  "72af1eb768319287d3f9224cb648b65b" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d541517e11c9c83c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594296650304,
+        "stop" : 1594296701093,
+        "duration" : 50789
+      }
+    } ]
+  },
+  "040cbbf2fd358a068aa5bbc6115e72e9" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "69323f0015ba4c9",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = pppoe_connect('宽带连接', 'csb_1', 'csb_1')",
+      "time" : {
+        "start" : 1594196477973,
+        "stop" : 1594196492960,
+        "duration" : 14987
+      }
+    } ]
+  },
+  "0604e3080fea9e33d2ae3584ceb593d3" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "7d57531e48b7161b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594297906140,
+        "stop" : 1594297961396,
+        "duration" : 55256
+      }
+    } ]
+  },
+  "26a395456061ee20742a03af3443f677" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "77d42bee2752427b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594297833925,
+        "stop" : 1594297880918,
+        "duration" : 46993
+      }
+    } ]
+  },
+  "447a3c333bdc7cbebd3864042f0cbc1b" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "3476a7605c01aab6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594296154159,
+        "stop" : 1594296171701,
+        "duration" : 17542
+      }
+    } ]
+  },
+  "6308a7a2a76c9d1b269ac07badced53c" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5b7c9affdb2c510",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB188A7668>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594303437563,
+        "stop" : 1594303497403,
+        "duration" : 59840
+      }
+    } ]
+  },
+  "1b9ce8b32583d34b5aa8356f11c71b1d" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e185572bed9bc534",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB188EAF98>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594300261689,
+        "stop" : 1594300321799,
+        "duration" : 60110
+      }
+    } ]
+  },
+  "8c3f3371709256153f1ef7f2a7478ebb" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c2ccabcfd390d0f0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594292777579,
+        "stop" : 1594292852268,
+        "duration" : 74689
+      }
+    } ]
+  },
+  "0acd9991bc5646c91d0dab2345843ec7" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c8cd6e2e99b1eb37",
+      "status" : "broken",
+      "statusDetails" : "ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。",
+      "time" : {
+        "start" : 1594345164276,
+        "stop" : 1594345164276,
+        "duration" : 0
+      }
+    } ]
+  },
+  "f7335eac5628324852c1347a7f848867" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c49ea642c4a2e142",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB185FC860>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594301055688,
+        "stop" : 1594301115122,
+        "duration" : 59434
+      }
+    } ]
+  },
+  "f396751ae0ffe60fd485acef831da164" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "411cc35b90e72eaa",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594298290676,
+        "stop" : 1594298338453,
+        "duration" : 47777
+      }
+    } ]
+  },
+  "2d0c0726e79bfdf1300c3886ecfab2fe" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "806dd6cf902e3974",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594199456249,
+        "stop" : 1594199490944,
+        "duration" : 34695
+      }
+    } ]
+  },
+  "bde0c19e03022b1f0b8c2d6f1b48d2dc" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "2313f81fb651f5ea",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594296361969,
+        "stop" : 1594296372940,
+        "duration" : 10971
+      }
+    } ]
+  },
+  "19db67146f616aa2006a7473778c2d18" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "cccce54a18ad8b5a",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB18912D30>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594307139561,
+        "stop" : 1594307198949,
+        "duration" : 59388
+      }
+    } ]
+  },
+  "728f1e173e08f34ab8fbb27ff2f72749" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b8c6a21fb91b6164",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594693179174,
+        "stop" : 1594693254773,
+        "duration" : 75599
+      }
+    } ]
+  },
+  "b292205b0cacacb4b768128cd2a8e552" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c3e867916ba1beaa",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594281761330,
+        "stop" : 1594281820055,
+        "duration" : 58725
+      }
+    } ]
+  },
+  "c83c6646a19aa7c7ce0c57fa6fda5cef" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "20359eff8b5e5238",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594296578281,
+        "stop" : 1594296629116,
+        "duration" : 50835
+      }
+    } ]
+  },
+  "40afa9ddd1da446e1d99c099a45e3453" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9b926d006137d8a2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594281361685,
+        "stop" : 1594281419103,
+        "duration" : 57418
+      }
+    } ]
+  },
+  "69f8c7eed16ef3ae2f479f5667f08ac4" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "2b2641b4b85994e7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594344490029,
+        "stop" : 1594344582166,
+        "duration" : 92137
+      }
+    } ]
+  },
+  "47a12133e829e5d3df5f208e67068fa5" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6588b1d94a8262e5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594282345019,
+        "stop" : 1594282419069,
+        "duration" : 74050
+      }
+    } ]
+  },
+  "0087a5322ae78a560e8221168b0a6a2b" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f7eaada0dc980cd6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594298498687,
+        "stop" : 1594298547823,
+        "duration" : 49136
+      }
+    } ]
+  },
+  "ee51d900eaca16191241d3ee0633bdf3" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "32fed0cd5c589bbf",
+      "status" : "broken",
+      "statusDetails" : "TypeError: 'bool' object is not subscriptable",
+      "time" : {
+        "start" : 1594343172593,
+        "stop" : 1594343172593,
+        "duration" : 0
+      }
+    } ]
+  },
+  "e23f08cf27f1b9a821a2bdc37bd31e8b" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "1cab6882080ae37f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594298146249,
+        "stop" : 1594298194182,
+        "duration" : 47933
+      }
+    } ]
+  },
+  "94d92374dc2406b8c878caa6c0991286" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "3c9b3754a17b9ebb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594282641220,
+        "stop" : 1594282716494,
+        "duration" : 75274
+      }
+    } ]
+  },
+  "f33b86e8396caf5be9d9f491ac87b543" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d99ce5be64821c46",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594298426590,
+        "stop" : 1594298475453,
+        "duration" : 48863
+      }
+    } ]
+  },
+  "cb815323be52b937f8d1dea47113f001" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "1185641de187dc0",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB1864E908>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594301320156,
+        "stop" : 1594301379481,
+        "duration" : 59325
+      }
+    } ]
+  },
+  "0c756243e220ebe927e1fbe83ae33aec" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "3095bfa32bd5de36",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB1843C0B8>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594300791063,
+        "stop" : 1594300850520,
+        "duration" : 59457
+      }
+    } ]
+  },
+  "6df47ce3cdab6e1836407dd37ae83da4" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "47cc37df36d0981e",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB18903F28>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594302908378,
+        "stop" : 1594302968063,
+        "duration" : 59685
+      }
+    } ]
+  },
+  "9243f40ca1ff480677bc2d6ac7954ee9" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "747733734451e6cd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594274401203,
+        "stop" : 1594274483607,
+        "duration" : 82404
+      }
+    } ]
+  },
+  "ed6bebed10ea88cdce432ff84df5c25c" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "fa45e5356e5a03a2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594280273751,
+        "stop" : 1594280321711,
+        "duration" : 47960
+      }
+    } ]
+  },
+  "8cbdb4893c3d43a11ba1704906b8fd66" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "8c78f27b05dcaba",
+      "status" : "broken",
+      "statusDetails" : "TypeError: 'bool' object is not subscriptable",
+      "time" : {
+        "start" : 1594343172664,
+        "stop" : 1594343172664,
+        "duration" : 0
+      }
+    } ]
+  },
+  "076c3da4ef9799022cc5a483eba8a249" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "577651830f1dfd42",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594287695406,
+        "stop" : 1594287768433,
+        "duration" : 73027
+      }
+    } ]
+  },
+  "186af74b8996f52f6de2c4d894d64c0d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "dbcceb156a75ae17",
+      "status" : "broken",
+      "statusDetails" : "RuntimeError: Issue BringPortsOnlineCommand -portlist {Port_27 Port_28 } failed: ERROR:Hardware port (//192.168.0.180/1/9) has been attached to another logical port (Port_25)",
+      "time" : {
+        "start" : 1594172454435,
+        "stop" : 1594172485924,
+        "duration" : 31489
+      }
+    } ]
+  },
+  "3e1e27f75e58f63d0b54619878e771bf" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9fee7ece556288aa",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB18944A90>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594343584060,
+        "stop" : 1594343643409,
+        "duration" : 59349
+      }
+    } ]
+  },
+  "fad4b77257b59fc84a9f93834aabfc09" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "579fca5be097619",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594281681519,
+        "stop" : 1594281740096,
+        "duration" : 58577
+      }
+    } ]
+  },
+  "38de3f149774fda152c6c75dfaffa3cf" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "623ad51719f4450f",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB187C95F8>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594301584001,
+        "stop" : 1594301643466,
+        "duration" : 59465
+      }
+    } ]
+  },
+  "8cad83cd31bda797a3433d61a420d6ee" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "80614c4454b7b245",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594297458039,
+        "stop" : 1594297503950,
+        "duration" : 45911
+      }
+    } ]
+  },
+  "6ffe1346acc2fef86f25c8b63a31f325" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "fe634ca44c5d2541",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594281137801,
+        "stop" : 1594281193828,
+        "duration" : 56027
+      }
+    } ]
+  },
+  "7b51b6d18b8ad56a382ae8527f8fd976" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c18720df2c6a61b8",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB188F76A0>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594305684954,
+        "stop" : 1594305744722,
+        "duration" : 59768
+      }
+    } ]
+  },
+  "52f860868e29b8213b1ea81c41e89d2e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "96157ba78cce643a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594298714612,
+        "stop" : 1594298777279,
+        "duration" : 62667
+      }
+    } ]
+  },
+  "171047ca473663ae83e72f52c7a9c72c" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "db317f301ddd033a",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = auth_by_loid_password(<telnetlib.Telnet object at 0x0000011F795A6358>, '16', '2', '200', '200', 'user', ' ', '5A54453171200033')",
+      "time" : {
+        "start" : 1594194246627,
+        "stop" : 1594194257235,
+        "duration" : 10608
+      }
+    } ]
+  },
+  "9506ea21374c4ffe3bebd89caf02b26b" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "110c2bfd19fbf641",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 'FAIL' == 'PASS'\n  - FAIL\n  + PASS",
+      "time" : {
+        "start" : 1594282957301,
+        "stop" : 1594283039325,
+        "duration" : 82024
+      }
+    } ]
+  },
+  "c601968c9cf8031c584fd3e073a3770a" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "cce08a5d7f5be8b8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594296329875,
+        "stop" : 1594296340781,
+        "duration" : 10906
+      }
+    } ]
+  },
+  "6e058ceb298f79c5a384eed136e7bc1a" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9e64747121cc7904",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB18978B70>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594343450250,
+        "stop" : 1594343509730,
+        "duration" : 59480
+      }
+    } ]
+  },
+  "ecc4621caee64506e278f97ca4f9b26a" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "eaba1624685021b9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594296258080,
+        "stop" : 1594296276445,
+        "duration" : 18365
+      }
+    } ]
+  },
+  "926eaf57ac3d2ef1c1ac8223ef9fb590" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "24580451d39c7916",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594288393344,
+        "stop" : 1594288463046,
+        "duration" : 69702
+      }
+    } ]
+  },
+  "f899d1d32be8f77697133fcdd84d7454" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "230b1ffb63cae0d4",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB1886D2E8>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594305156331,
+        "stop" : 1594305215782,
+        "duration" : 59451
+      }
+    } ]
+  },
+  "75944d2e82fa72410c4753c9c121102f" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "7742a8dff776312f",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB1886DA58>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594302378222,
+        "stop" : 1594302438278,
+        "duration" : 60056
+      }
+    } ]
+  },
+  "b2716fd075e49bbebdd2a31a9a216849" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "8c51b9afc8fe3b31",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594297682328,
+        "stop" : 1594297736482,
+        "duration" : 54154
+      }
+    } ]
+  },
+  "3f0ffdc3c064465becd7665a86291745" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "301cd5609c8a1cfd",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB1888E160>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594303040593,
+        "stop" : 1594303100594,
+        "duration" : 60001
+      }
+    } ]
+  },
+  "b898054e73fa10d749cdfae90efae7a2" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ffb2f0a566644f39",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB1889DD68>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594307007078,
+        "stop" : 1594307067011,
+        "duration" : 59933
+      }
+    } ]
+  },
+  "36d811e17dab82a3692637cae405347b" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f57bd2aa4de80abc",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = auth_by_sn(<telnetlib.Telnet object at 0x0000026C3BD4D9B0>, '16', '2', '200', '200', '5A54453171200033')",
+      "time" : {
+        "start" : 1594283109532,
+        "stop" : 1594283124668,
+        "duration" : 15136
+      }
+    } ]
+  },
+  "e0944addaed3b6fee5f8c117508777a2" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c9b76c584ba5be85",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB18912C18>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594303569971,
+        "stop" : 1594303629563,
+        "duration" : 59592
+      }
+    } ]
+  },
+  "66586b62ba77106b0207b1a1f0d5c48d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e6337057030f6574",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594287897751,
+        "stop" : 1594287982370,
+        "duration" : 84619
+      }
+    } ]
+  },
+  "fe1e174459922f7d8baf999133caed3d" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "7107592d16f6c2b6",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB15040518>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594308857499,
+        "stop" : 1594308916970,
+        "duration" : 59471
+      }
+    } ]
+  },
+  "ba5e588121ead1c7a1766fb12070c4d9" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b05d64a3c6b44b11",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594281841297,
+        "stop" : 1594281921680,
+        "duration" : 80383
+      }
+    } ]
+  },
+  "93e7253bee1755db2368ee521c09215d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a50a1cb1fbac447b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594297986673,
+        "stop" : 1594298042302,
+        "duration" : 55629
+      }
+    } ]
+  },
+  "0b2cc8f2359fa07a2075b60222970b92" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "dc73f4815320db2e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594282841876,
+        "stop" : 1594282932008,
+        "duration" : 90132
+      }
+    } ]
+  },
+  "a12f1a3b61c8c08ca809b7944d7f50fe" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "85a22d2fa2cf7586",
+      "status" : "broken",
+      "statusDetails" : "TypeError: 'bool' object is not subscriptable",
+      "time" : {
+        "start" : 1594343172823,
+        "stop" : 1594343172823,
+        "duration" : 0
+      }
+    } ]
+  },
+  "b47e1dccb0b2dfa6797a0dfa93a77ac1" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "2bb3fc7bd9bc17cf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594344161266,
+        "stop" : 1594344244925,
+        "duration" : 83659
+      }
+    } ]
+  },
+  "2bd7ce7bbd597af5a460e86f732a61ab" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e20c35c6368c057",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB1889DC50>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594299601723,
+        "stop" : 1594299661107,
+        "duration" : 59384
+      }
+    } ]
+  },
+  "f97814b46bf336073da82b851ae2bb6f" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "909a299b06350f17",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB188B3BA8>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594304758956,
+        "stop" : 1594304818471,
+        "duration" : 59515
+      }
+    } ]
+  },
+  "ee40c40f3efc3bd4ca7201ee45d7441a" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "feda76e68d8b13e5",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB18929DA0>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594305553095,
+        "stop" : 1594305612391,
+        "duration" : 59296
+      }
+    } ]
+  },
+  "d6adc563b04929163ada41814e6148ac" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4462a0fa33cdb7bb",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB18903390>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594302112689,
+        "stop" : 1594302172378,
+        "duration" : 59689
+      }
+    } ]
+  },
+  "21a0e93536fd85680964d28271854223" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a02a83026211cfd1",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB18903A20>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594303966124,
+        "stop" : 1594304025563,
+        "duration" : 59439
+      }
+    } ]
+  },
+  "eae2b3ca4a1478a914053a357f63c757" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f4ec3b19e10ee4bb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594293170000,
+        "stop" : 1594293244770,
+        "duration" : 74770
+      }
+    } ]
+  },
+  "398e8af9adf39cd01e3173a51a82f609" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "47aabb6483fd4416",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594297306095,
+        "stop" : 1594297351383,
+        "duration" : 45288
+      }
+    } ]
+  },
+  "06599002120a71d36748aee5be50eda5" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "68fb8b01b5cc8e12",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594282041749,
+        "stop" : 1594282122116,
+        "duration" : 80367
+      }
+    } ]
+  },
+  "d694de097b58a171e3f881f32819fb27" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "77eaf29785f109f2",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB1894F4E0>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594305817269,
+        "stop" : 1594305877124,
+        "duration" : 59855
+      }
+    } ]
+  },
+  "c001a9738de2213b2d968d1035c3b8ca" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c9d9badbdb281d5f",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB1886DB00>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594303173142,
+        "stop" : 1594303232575,
+        "duration" : 59433
+      }
+    } ]
+  },
+  "6020bca9326585de980a9202be8e8463" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "19b5485b9feae2d0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594297017719,
+        "stop" : 1594297062860,
+        "duration" : 45141
+      }
+    } ]
+  },
+  "c0245f932973e3027235b159251f7347" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "207cdc772211d13",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB1886D470>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594299072251,
+        "stop" : 1594299131738,
+        "duration" : 59487
+      }
+    } ]
+  },
+  "ea751d53f2c086faf6cb2cd9782c344b" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "214c8934b3682c93",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594281288954,
+        "stop" : 1594281339329,
+        "duration" : 50375
+      }
+    } ]
+  },
+  "c47d0fd1be1d70410c7baa1bccbe4345" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "996a3f6deb60d2ac",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB18A64160>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594343847436,
+        "stop" : 1594343906743,
+        "duration" : 59307
+      }
+    } ]
+  },
+  "feba2cd57649668dc54c2d1c085f70f1" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e938078346abc056",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594292681798,
+        "stop" : 1594292755346,
+        "duration" : 73548
+      }
+    } ]
+  },
+  "c83ea03055794fb57667ef034a2399ab" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e960105f93c731fe",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB188FB080>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594303305159,
+        "stop" : 1594303364607,
+        "duration" : 59448
+      }
+    } ]
+  },
+  "1afb0f904b5da749ed9ddac74d089ce0" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "207085e561d77f65",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594280473046,
+        "stop" : 1594280515883,
+        "duration" : 42837
+      }
+    } ]
+  },
+  "f897002f82c9b5312a7a572390c6c745" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "de695e767eb83de1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594281061072,
+        "stop" : 1594281109520,
+        "duration" : 48448
+      }
+    } ]
+  },
+  "3859766bb846720c82dc8f750c0931e5" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e0cfdcb2baa26249",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB18A71860>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594343715751,
+        "stop" : 1594343775039,
+        "duration" : 59288
+      }
+    } ]
+  },
+  "9461177a60060a2bd3b841991f143f05" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "65bc3cbf534b233d",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB150404E0>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594305288203,
+        "stop" : 1594305348215,
+        "duration" : 60012
+      }
+    } ]
+  },
+  "6d71a1e49807d436ecddffa6a2ca093d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "923768279c16ad6a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594694059518,
+        "stop" : 1594694102231,
+        "duration" : 42713
+      }
+    } ]
+  },
+  "9c5c19b3bfaa9829884daee3b339d4ec" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a38f5e9238d36514",
+      "status" : "broken",
+      "statusDetails" : "_pytest.fixtures.FixtureLookupError: ('msg', <FixtureRequest for <Function test_warn>>)",
+      "time" : {
+        "start" : 1594179610083,
+        "stop" : 1594179610083,
+        "duration" : 0
+      }
+    } ]
+  },
+  "a501854bc4909ac1919edd91bb17e9d1" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "191462374aa66cde",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594280144875,
+        "stop" : 1594280185618,
+        "duration" : 40743
+      }
+    } ]
+  },
+  "1a9072bbfbefcc7d87bd4d581117019e" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9e555ae540cade77",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB184D9C18>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594301188064,
+        "stop" : 1594301247616,
+        "duration" : 59552
+      }
+    } ]
+  },
+  "a56b16574b99dcc62a15f1b6142d1bf8" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "7d88ea35a712ca57",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB188C5A90>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594307535375,
+        "stop" : 1594307594849,
+        "duration" : 59474
+      }
+    } ]
+  },
+  "21174dd30688938fb88537263077fb0d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "39163079c5dbc08d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594297233726,
+        "stop" : 1594297279847,
+        "duration" : 46121
+      }
+    } ]
+  },
+  "28b9e15df1ab032a80093d7ecc765365" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "1a166ed55f980045",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB1844C908>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594301716376,
+        "stop" : 1594301776038,
+        "duration" : 59662
+      }
+    } ]
+  },
+  "6bd93be4e8cb20e3b66aee59a725215c" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "61654889f18af86",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594296506375,
+        "stop" : 1594296557072,
+        "duration" : 50697
+      }
+    } ]
+  },
+  "900dfaa63627a03a69e641855ce1e40c" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6075fa52e871f314",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594296114413,
+        "stop" : 1594296131914,
+        "duration" : 17501
+      }
+    } ]
+  },
+  "2e231627aeee32f0fe0100037307e6b9" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "878c138167bdb360",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594296938515,
+        "stop" : 1594296990462,
+        "duration" : 51947
+      }
+    } ]
+  },
+  "9f012a6587decb22d0530cb926a8b3c4" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "db3d72bd39828e8a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594194037955,
+        "stop" : 1594194076412,
+        "duration" : 38457
+      }
+    } ]
+  },
+  "13d87b4c372301f2f731eda2dfd0bf90" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e28d77c23132d19e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594344609392,
+        "stop" : 1594344694083,
+        "duration" : 84691
+      }
+    } ]
+  },
+  "f6f6caeca7b2023c889b2fc840fac273" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "756553ba4f6bb69a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594282441282,
+        "stop" : 1594282515195,
+        "duration" : 73913
+      }
+    } ]
+  },
+  "87c1895c90a68a876731ce45c6c82c9c" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4c9943e8d6c2838f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594292970391,
+        "stop" : 1594293050860,
+        "duration" : 80469
+      }
+    } ]
+  },
+  "6291929b9024a02433c0c329fda23a90" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c1a3292c3807b78c",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB188EA4A8>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594299865453,
+        "stop" : 1594299924882,
+        "duration" : 59429
+      }
+    } ]
+  },
+  "81d2c7c4cfe11af13de32855d2505ed2" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "14a97bdd278e02f1",
+      "status" : "broken",
+      "statusDetails" : "TypeError: 'bool' object is not subscriptable",
+      "time" : {
+        "start" : 1594343172728,
+        "stop" : 1594343172728,
+        "duration" : 0
+      }
+    } ]
+  },
+  "1ef18c03bd9cba3b088051a63d9210a2" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4c36be5994d44565",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB189594E0>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594304626578,
+        "stop" : 1594304686023,
+        "duration" : 59445
+      }
+    } ]
+  },
+  "a30b45c87097a8b311638a476bd5cf35" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d14a780f17a02722",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = auth_by_loid(<telnetlib.Telnet object at 0x000001EB187A90F0>, '16', '2', '200', '200', 'user', '5A54453171200033')",
+      "time" : {
+        "start" : 1594298801955,
+        "stop" : 1594298866895,
+        "duration" : 64940
+      }
+    } ]
+  },
+  "25d5cb2bee72a17f8328ae48f17daae9" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b466b9564a3b41d8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594296297704,
+        "stop" : 1594296308644,
+        "duration" : 10940
+      }
+    } ]
+  },
+  "3ae0655f73bca51e6ba8d549733be630" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5f5c82ac515dd4e8",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB188FBE48>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594306479329,
+        "stop" : 1594306538759,
+        "duration" : 59430
+      }
+    } ]
+  },
+  "9cf11c48958aa028cecf1c16405cdff8" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "edd9755633bebdba",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594296394113,
+        "stop" : 1594296412307,
+        "duration" : 18194
+      }
+    } ]
+  },
+  "4baaf14d3061403f38d85a98103c73f9" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e96a77599b301ad",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594288009628,
+        "stop" : 1594288084886,
+        "duration" : 75258
+      }
+    } ]
+  },
+  "114e37ecb25cbb1d41908b565d298a4f" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "2242a6f84245939d",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = auth_by_sn(<telnetlib.Telnet object at 0x0000026C3BDB3B70>, '16', '2', '200', '200', '5A54453171200033')",
+      "time" : {
+        "start" : 1594283065834,
+        "stop" : 1594283084248,
+        "duration" : 18414
+      }
+    } ]
+  },
+  "13b9ddc4024073e6983a1af1f8f948b0" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "8f2ea15bd5a128a8",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB1888EE48>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594299469094,
+        "stop" : 1594299529173,
+        "duration" : 60079
+      }
+    } ]
+  },
+  "85da5cc12baba16fcb6f49eac372a074" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b8787569b30e8459",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB1892F908>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594305420780,
+        "stop" : 1594305480539,
+        "duration" : 59759
+      }
+    } ]
+  },
+  "5278996f13a25b357e2406be609894cc" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "17d14970d44e2e19",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB1886DF28>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594303834078,
+        "stop" : 1594303893561,
+        "duration" : 59483
+      }
+    } ]
+  },
+  "1223cbf5ab94b32260532e8b6f9a0ee0" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "1da0385db13cf115",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB188A7080>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594307403499,
+        "stop" : 1594307462970,
+        "duration" : 59471
+      }
+    } ]
+  },
+  "017a1e9a8832e1e002e5f1ce1517fb30" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "2767ec6afe2cf3b7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594297530188,
+        "stop" : 1594297584575,
+        "duration" : 54387
+      }
+    } ]
+  },
+  "6a0cb01aef54e825db1e81e808a0e2dc" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6c89d5587d6b0f57",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594280002673,
+        "stop" : 1594280055884,
+        "duration" : 53211
+      }
+    } ]
+  },
+  "e4e19f18d220b812d3eaed89b9b8697f" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5f64640db18d2139",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594692771706,
+        "stop" : 1594692821316,
+        "duration" : 49610
+      }
+    } ]
+  },
+  "1fca7f80ef13dcf77579c50e525a2d7c" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9991af94a3d2e228",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594288209220,
+        "stop" : 1594288279096,
+        "duration" : 69876
+      }
+    } ]
+  },
+  "f3ffbc5d3bd9ab9da2e1fff8c0bce26d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a68916cbd6be85b1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594292585812,
+        "stop" : 1594292658574,
+        "duration" : 72762
+      }
+    } ]
+  },
+  "9397543d554958d84f1b901938315c2e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ae345af674765289",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594288585312,
+        "stop" : 1594288652037,
+        "duration" : 66725
+      }
+    } ]
+  },
+  "47e0845317ff6284a67f7d8ba5db1be8" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "14c5dbef3b0f1b95",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB1894F518>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594308725380,
+        "stop" : 1594308784851,
+        "duration" : 59471
+      }
+    } ]
+  },
+  "2c3b1ffc82f50aa50f66e1a921103c23" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "7e1a768e5f1edc13",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594298635390,
+        "stop" : 1594298688383,
+        "duration" : 52993
+      }
+    } ]
+  },
+  "2d66ba5643622279420b529e22d2458f" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b1b9da9fa013a193",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594693987860,
+        "stop" : 1594694036369,
+        "duration" : 48509
+      }
+    } ]
+  },
+  "4bb61b97b6fd0b005455a7041bf57a60" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c3841f6494b8bb1c",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB188FB400>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594307271546,
+        "stop" : 1594307330990,
+        "duration" : 59444
+      }
+    } ]
+  },
+  "d8090803e3f6e2af34003d8de0560292" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c34de2e81c5f32cf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594297609797,
+        "stop" : 1594297657046,
+        "duration" : 47249
+      }
+    } ]
+  },
+  "09161483471b94f53176f7fe2cbbc1b5" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "3e955b2d45c3e460",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB188B3978>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594309253419,
+        "stop" : 1594309312838,
+        "duration" : 59419
+      }
+    } ]
+  },
+  "dee949f56823cb87e7fa5af8f67ba194" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6355c451b0d83eda",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB1888EF60>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594299997390,
+        "stop" : 1594300056769,
+        "duration" : 59379
+      }
+    } ]
+  },
+  "e4433575f60e1be6c791ac46d71aba56" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "232ccfa957a77b45",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594297761766,
+        "stop" : 1594297808668,
+        "duration" : 46902
+      }
+    } ]
+  },
+  "e13a618c6507d65182cb9d275ea58a94" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "1560a653fe67ec00",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594280081142,
+        "stop" : 1594280121666,
+        "duration" : 40524
+      }
+    } ]
+  },
+  "80a178a453d38aa7cc24d7d94712cd45" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c1ce8c528cae34ce",
+      "status" : "broken",
+      "statusDetails" : "_pytest.fixtures.FixtureLookupError: ('msg', <FixtureRequest for <Function test_error>>)",
+      "time" : {
+        "start" : 1594179610060,
+        "stop" : 1594179610060,
+        "duration" : 0
+      }
+    } ]
+  },
+  "6374883ab3b13f87d49ad68b61a2a0c6" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "bfec87dc292a19c5",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB1503AC50>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594302510814,
+        "stop" : 1594302570624,
+        "duration" : 59810
+      }
+    } ]
+  },
+  "dae2430511c60612288787b4785be99c" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b16731ad17c5458a",
+      "status" : "broken",
+      "statusDetails" : "_pytest.fixtures.FixtureLookupError: ('msg', <FixtureRequest for <Function test_debug>>)",
+      "time" : {
+        "start" : 1594179610098,
+        "stop" : 1594179610098,
+        "duration" : 0
+      }
+    } ]
+  },
+  "efeb02a4d4f48f95e3052e2025676887" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "8e10993b9f5f2c8f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594953981649,
+        "stop" : 1594954023875,
+        "duration" : 42226
+      }
+    } ]
+  },
+  "0b2c03102659e11d526f7d52f94135a3" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c46eead6eb1670aa",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB188A7588>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594306346989,
+        "stop" : 1594306406425,
+        "duration" : 59436
+      }
+    } ]
+  },
+  "4c310b5fd587acd30ed165a44606cf80" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6cd51f28cdaf674c",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB18424D30>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594302643171,
+        "stop" : 1594302702997,
+        "duration" : 59826
+      }
+    } ]
+  },
+  "6a1c17b6e2f1b731a95f006a4ba42a70" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "86b3911d4be0300b",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB18941358>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594308328560,
+        "stop" : 1594308387902,
+        "duration" : 59342
+      }
+    } ]
+  },
+  "4e679311abc42743ca7c858927ada9c8" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "1c11edea62d874cb",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB188CB9E8>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594306744218,
+        "stop" : 1594306801210,
+        "duration" : 56992
+      }
+    } ]
+  },
+  "b4d07c80def25817f67e51085933a932" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "12268e243de464a0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594281521391,
+        "stop" : 1594281579103,
+        "duration" : 57712
+      }
+    } ]
+  },
+  "a4e006b64c0720f308ec6faac4c5108e" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "93fea33de2d26c77",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB1886D2B0>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594299336156,
+        "stop" : 1594299396022,
+        "duration" : 59866
+      }
+    } ]
+  },
+  "5844671194f597fd0aba18482f29b306" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "8c23d2eaa9247c55",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB188FB5C0>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594304098061,
+        "stop" : 1594304157836,
+        "duration" : 59775
+      }
+    } ]
+  },
+  "b7c1df47d31ca222eb28cfb49780cc9d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "3c853bc70967d852",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594292384109,
+        "stop" : 1594292454633,
+        "duration" : 70524
+      }
+    } ]
+  },
+  "e00c38d86143966bc49cc1457efd3998" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6757096d5caead9",
+      "status" : "broken",
+      "statusDetails" : "RuntimeError: Issue BringPortsOnlineCommand -portlist {Port_29 Port_30 } failed: ERROR:Hardware port (//192.168.0.180/1/9) has been attached to another logical port (Port_25)",
+      "time" : {
+        "start" : 1594172510416,
+        "stop" : 1594172541975,
+        "duration" : 31559
+      }
+    } ]
+  },
+  "3ec8377eacfc4241f3b8ccbe18e69e89" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "fd18b8ea9eb32ea9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594280208876,
+        "stop" : 1594280250556,
+        "duration" : 41680
+      }
+    } ]
+  },
+  "b8ca0f91ebff99ebaa604e33a16b077f" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "31bf410523f8db85",
+      "status" : "broken",
+      "statusDetails" : "_pytest.fixtures.FixtureLookupError: ('msg', <FixtureRequest for <Function test_info>>)",
+      "time" : {
+        "start" : 1594179610092,
+        "stop" : 1594179610092,
+        "duration" : 0
+      }
+    } ]
+  },
+  "c2872f39531dc974a1130d28ea116aeb" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "bd84692837bc2f69",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594344265092,
+        "stop" : 1594344350102,
+        "duration" : 85010
+      }
+    } ]
+  },
+  "6716757c2e52ed61b2f7edafbe2cced8" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "521c1a4c73bf0411",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB15040400>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594307931466,
+        "stop" : 1594307990939,
+        "duration" : 59473
+      }
+    } ]
+  },
+  "f2cef5d14f63c77833c8554ab2dd3356" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "8809bc1c1972c911",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB188EADA0>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594302775422,
+        "stop" : 1594302835725,
+        "duration" : 60303
+      }
+    } ]
+  },
+  "b14ad8d10235015730ec581aa09513fe" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "211b633667babbae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594344945172,
+        "stop" : 1594345031826,
+        "duration" : 86654
+      }
+    } ]
+  },
+  "0238e18c223e4297e096104360392dd8" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "18f1efec0abb3c63",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594694123501,
+        "stop" : 1594694164241,
+        "duration" : 40740
+      }
+    } ]
+  },
+  "283115683fe77870166608cdba2a44e0" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ec45048287cd218e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594282241390,
+        "stop" : 1594282322805,
+        "duration" : 81415
+      }
+    } ]
+  },
+  "259fb051eb6759e59aaeb1c52d78f56c" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "3273e89a83fc345a",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB1892FD68>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594303702032,
+        "stop" : 1594303761540,
+        "duration" : 59508
+      }
+    } ]
+  },
+  "2f395f2f157329a94063fc2d6f87367c" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "72419e8d12843f58",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594280601532,
+        "stop" : 1594280652117,
+        "duration" : 50585
+      }
+    } ]
+  },
+  "721003d87e4b4cfbb9e9d6bc660abc89" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "46c878ba6b73b4f4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594281601330,
+        "stop" : 1594281660303,
+        "duration" : 58973
+      }
+    } ]
+  },
+  "4a045f6038f940a99fcba952eb1fcc5c" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "dd098d8519c5d5a",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 'FAIL' == 'PASS'\n  - FAIL\n  + PASS",
+      "time" : {
+        "start" : 1594693275940,
+        "stop" : 1594693356768,
+        "duration" : 80828
+      }
+    } ]
+  },
+  "24ced7116d6bff416e46112b90420665" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "481f224a4a601c81",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB188EAAC8>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594301452046,
+        "stop" : 1594301511469,
+        "duration" : 59423
+      }
+    } ]
+  },
+  "b2eb8102dff0bddf3961d889709a42a9" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "420a0523c49f7d84",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594281944907,
+        "stop" : 1594282019492,
+        "duration" : 74585
+      }
+    } ]
+  },
+  "23aa155deaf80a734c9653f902422292" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "28d7dbe2a47fdd20",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB1889DA90>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594304230344,
+        "stop" : 1594304290084,
+        "duration" : 59740
+      }
+    } ]
+  },
+  "d3660374a12ee6260211a439efb03f6c" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "2098379fdf5c544a",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB185FCA90>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594305023372,
+        "stop" : 1594305082788,
+        "duration" : 59416
+      }
+    } ]
+  },
+  "5a5f2a450bc00a6c7ff13100f4086a1d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "15d2af2ce29c7e1b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594199274818,
+        "stop" : 1594199298269,
+        "duration" : 23451
+      }
+    } ]
+  },
+  "318b0dc3a1e1639f550df010c15ae50b" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "8adb8ddae1b303cb",
+      "status" : "broken",
+      "statusDetails" : "TypeError: 'bool' object is not subscriptable",
+      "time" : {
+        "start" : 1594309504426,
+        "stop" : 1594309504426,
+        "duration" : 0
+      }
+    } ]
+  },
+  "96a1aa895516987c13aa9c6efd2891af" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5cc03d0d7468e7d4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594287793704,
+        "stop" : 1594287875487,
+        "duration" : 81783
+      }
+    } ]
+  },
+  "17f901e5cda2b4dc40684e852b2b902e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c20c4c6a123c9079",
+      "status" : "broken",
+      "statusDetails" : "TypeError: 'bool' object is not subscriptable",
+      "time" : {
+        "start" : 1594343172503,
+        "stop" : 1594343172503,
+        "duration" : 0
+      }
+    } ]
+  },
+  "d69348f9f4da1bba8839e2b199a8ef1f" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5f8805d3a58a92f3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594288305392,
+        "stop" : 1594288371097,
+        "duration" : 65705
+      }
+    } ]
+  },
+  "56a984ed4bf25906f6668c8eb7f5ac7c" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ba8909096cd6d4e9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594282537409,
+        "stop" : 1594282619961,
+        "duration" : 82552
+      }
+    } ]
+  },
+  "762a4d05bad9d0c5d4dfc5e62bfd96a0" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b8459ab37f590f05",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB1843CF60>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594301980432,
+        "stop" : 1594302040184,
+        "duration" : 59752
+      }
+    } ]
+  },
+  "2c9984aa74247b7da75bf14bfa735fde" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "8f14850b0af15a85",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB189125F8>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594308592738,
+        "stop" : 1594308652636,
+        "duration" : 59898
+      }
+    } ]
+  },
+  "e5f5dba84f6cd4b7003abe1e5ab81d6e" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "de1579a9571b7b25",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB18959240>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594306082284,
+        "stop" : 1594306142221,
+        "duration" : 59937
+      }
+    } ]
+  },
+  "db832e99f05acfc6b54920af235d2225" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4f948311c601fc34",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = dhcp_test('ASIX AX88772C USB2.0 to Fast Ethernet Adapter')",
+      "time" : {
+        "start" : 1594196143976,
+        "stop" : 1594196292905,
+        "duration" : 148929
+      }
+    } ]
+  },
+  "c08d8eebb136b1c5c70803224f31893e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "444ca615dd8a6481",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594280537047,
+        "stop" : 1594280578336,
+        "duration" : 41289
+      }
+    } ]
+  },
+  "8fce20ce2231c1baf3f49aad3f38d4e1" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "342bf01aee079e17",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB189594A8>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594343318670,
+        "stop" : 1594343377902,
+        "duration" : 59232
+      }
+    } ]
+  },
+  "5ed9aaef13a0d0ab6e29aaddb7abf19b" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5a78f8ae98f57441",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594296794173,
+        "stop" : 1594296845835,
+        "duration" : 51662
+      }
+    } ]
+  },
+  "9c45c22c3aa11f820ac497ff4dca377c" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ed641f6c2f82b2b3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594292873467,
+        "stop" : 1594292949170,
+        "duration" : 75703
+      }
+    } ]
+  },
+  "80db3e3f0ffa1efd9c7fb0db642393b1" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e3da3819705bb5b1",
+      "status" : "broken",
+      "statusDetails" : "TypeError: 'bool' object is not subscriptable",
+      "time" : {
+        "start" : 1594343172405,
+        "stop" : 1594343172405,
+        "duration" : 0
+      }
+    } ]
+  },
+  "cde59bf721d52341c4b39bae3361c3c0" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4ff9742e36748682",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000001EB188F76A0>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594300129284,
+        "stop" : 1594300189268,
+        "duration" : 59984
+      }
+    } ]
+  },
+  "bfa9c3c220f332a435bfa5cd15260cea" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b2885d1ba6c9db10",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594282737689,
+        "stop" : 1594282813680,
+        "duration" : 75991
+      }
+    } ]
+  },
+  "8e4d528f65bdd202165b6fd6f5ffc70c" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "46246087acd175de",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594296193876,
+        "stop" : 1594296203714,
+        "duration" : 9838
+      }
+    } ]
+  },
+  "f59a75ceb5be9ca4a1fb663a4aa6922f" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "faf4cd87e983cac8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594297378677,
+        "stop" : 1594297431728,
+        "duration" : 53051
+      }
+    } ]
+  }
+}

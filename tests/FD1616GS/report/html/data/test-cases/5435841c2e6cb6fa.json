@@ -1,0 +1,231 @@
+{
+  "uid" : "5435841c2e6cb6fa",
+  "name" : "测试mapping-mode为port",
+  "fullName" : "test_onu_gemport#test_gemport_port",
+  "historyId" : "e4e19f18d220b812d3eaed89b9b8697f",
+  "time" : {
+    "start" : 1594186441766,
+    "stop" : 1594186441766,
+    "duration" : 0
+  },
+  "description" : "\n    mapping-mode is port,config gem mapping port 2\n    测试方法：往onu的port1 上下行发送vlan 2000的报文\n    结果：上下行都不通\n    ",
+  "descriptionHtml" : "<pre><code>mapping-mode is port,config gem mapping port 2\n测试方法：往onu的port1 上下行发送vlan 2000的报文\n结果：上下行都不通\n</code></pre>\n",
+  "status" : "broken",
+  "statusMessage" : "NameError: name 'test_info' is not defined",
+  "statusTrace" : "login = <telnetlib.Telnet object at 0x0000022A08C2AA58>\n\n    @pytest.fixture(scope='function')\n    def gemport_port_suit(login):\n        tn = login\n        Vlan_list=[2000]\n        with allure.step('步骤1:发现未注册的ONU。'):\n            assert autofind_onu(tn, PonID,  OnuID, SN)\n        with allure.step('步骤2:在OLT上通过SN的方式将ONU注册上线。'):\n            assert auth_by_sn(tn ,PonID, OnuID, Ont_Lineprofile_ID, Ont_Srvprofile_ID, SN)\n        with allure.step(\"步骤3:修改gemport配置为port 2\"):\n>           assert gemport_port(tn,ont_lineprofile_id = Ont_Lineprofile_ID)\n\ntest_onu_gemport.py:83: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ntn = <telnetlib.Telnet object at 0x0000022A08C2AA58>, ont_lineprofile_id = '200', mapping_mode = 'port'\n\n    def gemport_port(tn,ont_lineprofile_id=200,mapping_mode='port'):\n        # 判断当前的视图是否正确。\n        # 进入线路模板视图下\n        cdata_info(\"配置mapping-mode为port\")\n        tn.write('ont-lineprofile gpon profile-id {} '.format(ont_lineprofile_id).encode() + b'\\n')\n        result = tn.read_until('OLT(config-ont-lineprofile-{})# '.format(ont_lineprofile_id).encode(), timeout=2)\n        if result:\n            pass\n        else:\n            print(\"==========================================\")\n            print(\"===============ERROR!!!===================\")\n            cdata_error('当前OLT所在的视图不正确，请检查上一个模块的代码。')\n            print(\"==========================================\")\n            tn.write(b\"commit\" + b'\\n')\n            tn.write(b\"exit\" + b\"\\n\")\n            result = tn.read_until(b\"OLT(config)#\", timeout=2)\n            return False\n        # 删除gem mapping 1\n        tn.write(b'no gem mapping  1  1 ' + b'\\n')\n        tn.read_until('OLT(config-ont-lineprofile-{})# '.format(ont_lineprofile_id).encode(), timeout=2)\n        # 修改mapping-mode is port\n        tn.write(' mapping-mode {0}'.format(mapping_mode).encode() + b'\\n')\n        tn.read_until('OLT(config-ont-lineprofile-{})# '.format(ont_lineprofile_id).encode(), timeout=2)\n        # 判断mapping_mode设置是否正常\n        tn.write(b'show ont-lineprofile current' + b'\\n')\n        result = tn.read_until('OLT(config-ont-lineprofile-{})# '.format(ont_lineprofile_id).encode(),\n                               timeout=2).decode(\"utf-8\")\n        if \" Mapping mode     : PORT\" in result:\n>           test_info(\"线路模板:mapping_mode设置成port正常\")\nE           NameError: name 'test_info' is not defined\n\n..\\..\\src\\Gpon\\gemport.py:327: NameError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "gemport_port_suit",
+    "time" : {
+      "start" : 1594186454815,
+      "stop" : 1594186473036,
+      "duration" : 18221
+    },
+    "status" : "broken",
+    "statusMessage" : "NameError: name 'test_info' is not defined\n",
+    "statusTrace" : "  File \"d:\\program files\\python37\\lib\\site-packages\\pluggy\\callers.py\", line 187, in _multicall\n    res = hook_impl.function(*args)\n  File \"d:\\program files\\python37\\lib\\site-packages\\_pytest\\fixtures.py\", line 958, in pytest_fixture_setup\n    result = call_fixture_func(fixturefunc, request, kwargs)\n  File \"d:\\program files\\python37\\lib\\site-packages\\_pytest\\fixtures.py\", line 784, in call_fixture_func\n    res = next(it)\n  File \"E:\\CDATA\\自动化测试\\Cdata_part11\\tests\\GponSfu\\test_onu_gemport.py\", line 83, in gemport_port_suit\n    assert gemport_port(tn,ont_lineprofile_id = Ont_Lineprofile_ID)\n  File \"E:\\CDATA\\自动化测试\\Cdata_part11\\src\\Gpon\\gemport.py\", line 327, in gemport_port\n    test_info(\"线路模板:mapping_mode设置成port正常\")\n",
+    "steps" : [ {
+      "name" : "步骤1:发现未注册的ONU。",
+      "time" : {
+        "start" : 1594186454815,
+        "stop" : 1594186455942,
+        "duration" : 1127
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤2:在OLT上通过SN的方式将ONU注册上线。",
+      "time" : {
+        "start" : 1594186455943,
+        "stop" : 1594186472941,
+        "duration" : 16998
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤3:修改gemport配置为port 2",
+      "time" : {
+        "start" : 1594186472941,
+        "stop" : 1594186473035,
+        "duration" : 94
+      },
+      "status" : "broken",
+      "statusMessage" : "NameError: name 'test_info' is not defined\n",
+      "statusTrace" : "  File \"E:\\CDATA\\自动化测试\\Cdata_part11\\tests\\GponSfu\\test_onu_gemport.py\", line 83, in gemport_port_suit\n    assert gemport_port(tn,ont_lineprofile_id = Ont_Lineprofile_ID)\n  File \"E:\\CDATA\\自动化测试\\Cdata_part11\\src\\Gpon\\gemport.py\", line 327, in gemport_port\n    test_info(\"线路模板:mapping_mode设置成port正常\")\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 3,
+    "hasContent" : true
+  }, {
+    "name" : "login",
+    "time" : {
+      "start" : 1594186441767,
+      "stop" : 1594186454814,
+      "duration" : 13047
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1594186228827,
+      "stop" : 1594186228827,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1594186228827,
+      "stop" : 1594186228827,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1594186441767,
+      "stop" : 1594186441767,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1594186228827,
+      "stop" : 1594186228827,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n    mapping-mode is port,config gem mapping port 2\n    测试方法：往onu的port1 上下行发送vlan 2000的报文\n    结果：上下行都不通\n    ",
+    "status" : "broken",
+    "statusMessage" : "NameError: name 'test_info' is not defined",
+    "statusTrace" : "login = <telnetlib.Telnet object at 0x0000022A08C2AA58>\n\n    @pytest.fixture(scope='function')\n    def gemport_port_suit(login):\n        tn = login\n        Vlan_list=[2000]\n        with allure.step('步骤1:发现未注册的ONU。'):\n            assert autofind_onu(tn, PonID,  OnuID, SN)\n        with allure.step('步骤2:在OLT上通过SN的方式将ONU注册上线。'):\n            assert auth_by_sn(tn ,PonID, OnuID, Ont_Lineprofile_ID, Ont_Srvprofile_ID, SN)\n        with allure.step(\"步骤3:修改gemport配置为port 2\"):\n>           assert gemport_port(tn,ont_lineprofile_id = Ont_Lineprofile_ID)\n\ntest_onu_gemport.py:83: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ntn = <telnetlib.Telnet object at 0x0000022A08C2AA58>, ont_lineprofile_id = '200', mapping_mode = 'port'\n\n    def gemport_port(tn,ont_lineprofile_id=200,mapping_mode='port'):\n        # 判断当前的视图是否正确。\n        # 进入线路模板视图下\n        cdata_info(\"配置mapping-mode为port\")\n        tn.write('ont-lineprofile gpon profile-id {} '.format(ont_lineprofile_id).encode() + b'\\n')\n        result = tn.read_until('OLT(config-ont-lineprofile-{})# '.format(ont_lineprofile_id).encode(), timeout=2)\n        if result:\n            pass\n        else:\n            print(\"==========================================\")\n            print(\"===============ERROR!!!===================\")\n            cdata_error('当前OLT所在的视图不正确，请检查上一个模块的代码。')\n            print(\"==========================================\")\n            tn.write(b\"commit\" + b'\\n')\n            tn.write(b\"exit\" + b\"\\n\")\n            result = tn.read_until(b\"OLT(config)#\", timeout=2)\n            return False\n        # 删除gem mapping 1\n        tn.write(b'no gem mapping  1  1 ' + b'\\n')\n        tn.read_until('OLT(config-ont-lineprofile-{})# '.format(ont_lineprofile_id).encode(), timeout=2)\n        # 修改mapping-mode is port\n        tn.write(' mapping-mode {0}'.format(mapping_mode).encode() + b'\\n')\n        tn.read_until('OLT(config-ont-lineprofile-{})# '.format(ont_lineprofile_id).encode(), timeout=2)\n        # 判断mapping_mode设置是否正常\n        tn.write(b'show ont-lineprofile current' + b'\\n')\n        result = tn.read_until('OLT(config-ont-lineprofile-{})# '.format(ont_lineprofile_id).encode(),\n                               timeout=2).decode(\"utf-8\")\n        if \" Mapping mode     : PORT\" in result:\n>           test_info(\"线路模板:mapping_mode设置成port正常\")\nE           NameError: name 'test_info' is not defined\n\n..\\..\\src\\Gpon\\gemport.py:327: NameError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "b28fec0fd6bee9cd",
+      "name" : "log",
+      "source" : "b28fec0fd6bee9cd.txt",
+      "type" : "text/plain",
+      "size" : 70
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "login::0",
+    "time" : {
+      "start" : 1594186473083,
+      "stop" : 1594186481129,
+      "duration" : 8046
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "gemport测试"
+  }, {
+    "name" : "feature",
+    "value" : "gemport测试"
+  }, {
+    "name" : "suite",
+    "value" : "test_onu_gemport"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-2JV12RE"
+  }, {
+    "name" : "thread",
+    "value" : "23872-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_onu_gemport"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5435841c2e6cb6fa.json",
+  "parameterValues" : [ ]
+}

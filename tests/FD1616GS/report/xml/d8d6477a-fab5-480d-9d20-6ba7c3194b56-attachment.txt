@@ -1,0 +1,27 @@
+[INFO] 2020-07-17 10:46:21,649  =========ONU MAC地址上报测试=========
+[INFO] 2020-07-17 10:46:22,716  ONU在OLT上被重新被发现。
+[INFO] 2020-07-17 10:46:22,740  当前ONU_ID没有被占用。
+[INFO] 2020-07-17 10:46:23,948  ONU在OLT上添加成功。
+[INFO] 2020-07-17 10:46:33,023  ONU在OLT上通过SN注册成功。
+[INFO] 2020-07-17 10:46:37,049  SERVICE-PORT添加成功
+[INFO] 2020-07-17 10:46:40,099  create ports with location:
+[INFO] 2020-07-17 10:46:41,865  StreamPortConfig_1 has lower: InterFrameGapProfile_1
+[INFO] 2020-07-17 10:46:41,872  StreamPortConfig_2 has lower: InterFrameGapProfile_2
+[INFO] 2020-07-17 10:46:41,903  port(//192.168.0.180/1/9) create streams
+[INFO] 2020-07-17 10:46:42,136  port(//192.168.0.180/1/10) create streams
+[INFO] 2020-07-17 10:46:42,749  port(//192.168.0.180/1/9) create streams
+[INFO] 2020-07-17 10:46:42,996  port(//192.168.0.180/1/10) create streams
+[INFO] 2020-07-17 10:46:43,611  port(//192.168.0.180/1/9) create streams
+[INFO] 2020-07-17 10:46:43,861  port(//192.168.0.180/1/10) create streams
+[INFO] 2020-07-17 10:46:44,482  port(//192.168.0.180/1/9) create streams
+[INFO] 2020-07-17 10:46:44,719  port(//192.168.0.180/1/10) create streams
+[INFO] 2020-07-17 10:46:45,348  port(//192.168.0.180/1/9) create streams
+[INFO] 2020-07-17 10:46:45,625  port(//192.168.0.180/1/10) create streams
+[INFO] 2020-07-17 10:46:46,383  PageResultView_1 has lower: ResultQuery_1
+[INFO] 2020-07-17 10:46:57,687  ResultQuery_1 has lower: PortStats_1 PortStats_2
+[INFO] 2020-07-17 10:46:57,809  [test pass] [Port_1] rx packet (201730)is  equal to port2_stats tx packets (201727)
+[INFO] 2020-07-17 10:46:57,816  [test pass] [Port_2] rx packet (201726)is equal to  port1_stats tx packets (201726)
+[ERROR] 2020-07-17 10:47:03,873  ONT MAC地址上报:MAC地址学习正常
+[ERROR] 2020-07-17 10:47:03,873  ONT MAC地址上报:打流正常
+[INFO] 2020-07-17 10:47:03,962  ONU在OLT上删除成功
+[INFO] 2020-07-17 10:47:15,975  ONU在OLT上被重新被发现。

@@ -1,0 +1,197 @@
+{
+  "uid" : "40e2efa9e1913107",
+  "name" : "测试onu跨组播vlan",
+  "fullName" : "test_onu_multicast#test_ont_cross_mvlan",
+  "historyId" : "9243f40ca1ff480677bc2d6ac7954ee9",
+  "time" : {
+    "start" : 1594038391152,
+    "stop" : 1594038391152,
+    "duration" : 0
+  },
+  "description" : "\n    test3:\n    目的：ont为snooping模式（mvlan为3000，ip 239.1.1.1）,onu的native-vlan为2000，实现onu的跨组播vlan是正常的\n    ",
+  "descriptionHtml" : "<pre><code>test3:\n目的：ont为snooping模式（mvlan为3000，ip 239.1.1.1）,onu的native-vlan为2000，实现onu的跨组播vlan是正常的\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert False\n +  where False = auth_by_sn(<telnetlib.Telnet object at 0x00000208DF55E860>, '16', '2', '200', '200', '5A54453171200033')",
+  "statusTrace" : "login = <telnetlib.Telnet object at 0x00000208DF55E860>\n\n    @pytest.fixture()\n    def ont_cross_mvlan_suit(login):\n        tn = login\n        Vlan_list=[2000]\n        User_Vlan = \"2000\"\n        with allure.step('步骤1:发现未注册的ONU。'):\n            assert autofind_onu(tn, PonID, SN)\n        with allure.step('步骤2:在OLT上通过SN的方式将ONU注册上线。'):\n>           assert auth_by_sn(tn, PonID, OnuID, Ont_Lineprofile_ID, Ont_Srvprofile_ID, SN)\nE           AssertionError: assert False\nE            +  where False = auth_by_sn(<telnetlib.Telnet object at 0x00000208DF55E860>, '16', '2', '200', '200', '5A54453171200033')\n\ntest_onu_multicast.py:37: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "ont_cross_mvlan_suit",
+    "time" : {
+      "start" : 1594038404200,
+      "stop" : 1594038467807,
+      "duration" : 63607
+    },
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert False\n +  where False = auth_by_sn(<telnetlib.Telnet object at 0x00000208DF55E860>, '16', '2', '200', '200', '5A54453171200033')\n",
+    "statusTrace" : "  File \"d:\\program files\\python37\\lib\\site-packages\\pluggy\\callers.py\", line 187, in _multicall\n    res = hook_impl.function(*args)\n  File \"d:\\program files\\python37\\lib\\site-packages\\_pytest\\fixtures.py\", line 958, in pytest_fixture_setup\n    result = call_fixture_func(fixturefunc, request, kwargs)\n  File \"d:\\program files\\python37\\lib\\site-packages\\_pytest\\fixtures.py\", line 788, in call_fixture_func\n    res = fixturefunc(**kwargs)\n  File \"E:\\CDATA\\自动化测试\\Cdata_part11\\tests\\GponSfu\\test_onu_multicast.py\", line 37, in ont_cross_mvlan_suit\n    assert auth_by_sn(tn, PonID, OnuID, Ont_Lineprofile_ID, Ont_Srvprofile_ID, SN)\n",
+    "steps" : [ {
+      "name" : "步骤1:发现未注册的ONU。",
+      "time" : {
+        "start" : 1594038404200,
+        "stop" : 1594038404276,
+        "duration" : 76
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤2:在OLT上通过SN的方式将ONU注册上线。",
+      "time" : {
+        "start" : 1594038404276,
+        "stop" : 1594038467807,
+        "duration" : 63531
+      },
+      "status" : "failed",
+      "statusMessage" : "AssertionError: assert False\n +  where False = auth_by_sn(<telnetlib.Telnet object at 0x00000208DF55E860>, '16', '2', '200', '200', '5A54453171200033')\n",
+      "statusTrace" : "  File \"E:\\CDATA\\自动化测试\\Cdata_part11\\tests\\GponSfu\\test_onu_multicast.py\", line 37, in ont_cross_mvlan_suit\n    assert auth_by_sn(tn, PonID, OnuID, Ont_Lineprofile_ID, Ont_Srvprofile_ID, SN)\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 2,
+    "hasContent" : true
+  }, {
+    "name" : "login",
+    "time" : {
+      "start" : 1594038391152,
+      "stop" : 1594038404199,
+      "duration" : 13047
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1594032210026,
+      "stop" : 1594032210026,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1594038391152,
+      "stop" : 1594038391152,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1594032210026,
+      "stop" : 1594032210027,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1594032210026,
+      "stop" : 1594032210026,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "login::0",
+    "time" : {
+      "start" : 1594038467823,
+      "stop" : 1594038478936,
+      "duration" : 11113
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "onu 组播snooping测试"
+  }, {
+    "name" : "feature",
+    "value" : "onu 组播测试"
+  }, {
+    "name" : "suite",
+    "value" : "test_onu_multicast"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-2JV12RE"
+  }, {
+    "name" : "thread",
+    "value" : "16888-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_onu_multicast"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "40e2efa9e1913107.json",
+  "parameterValues" : [ ]
+}

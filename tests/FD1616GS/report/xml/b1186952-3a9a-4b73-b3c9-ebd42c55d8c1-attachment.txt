@@ -1,0 +1,7 @@
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 =========测试ONU端口vlan为translate=========
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 ONU在OLT上被重新被发现。
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 当前ONU_ID没有被占用。
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 ONU在OLT上添加成功。
+[31m[1mERROR   [0m CDATA:Cdata_loggers.py:97 ONU配置失败,请检查ONU的配置。
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 ONU在OLT上删除成功
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 ONU在OLT上被重新被发现。

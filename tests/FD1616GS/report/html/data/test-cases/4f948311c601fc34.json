@@ -1,0 +1,372 @@
+{
+  "uid" : "4f948311c601fc34",
+  "name" : "DHCP测试",
+  "fullName" : "test_onu_internet_type#test_dhcp",
+  "historyId" : "db832e99f05acfc6b54920af235d2225",
+  "time" : {
+    "start" : 1594196143976,
+    "stop" : 1594196292905,
+    "duration" : 148929
+  },
+  "description" : "\n    用例描述：\n    测试PC是否可以通过DHCP方式上网。\n    ",
+  "descriptionHtml" : "<pre><code>用例描述：\n测试PC是否可以通过DHCP方式上网。\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert False\n +  where False = dhcp_test('ASIX AX88772C USB2.0 to Fast Ethernet Adapter')",
+  "statusTrace" : "login = <telnetlib.Telnet object at 0x0000013E0F292080>\n\n    @allure.feature(\"ONU业务测试\")\n    @allure.story(\"ONU上网方式测试\")\n    @allure.title(\"DHCP测试\")\n    @pytest.mark.run(order=7)\n    # @pytest.mark.skip(\"暂时不执行\")\n    def test_dhcp(login):\n        '''\n        用例描述：\n        测试PC是否可以通过DHCP方式上网。\n        '''\n        cdata_info(\"=========ONU业务测试：DHCP测试=========\")\n        tn = login\n        with allure.step('步骤1:发现未注册的ONU。'):\n            assert autofind_onu(tn, PonID, OnuID, SN)\n        with allure.step('步骤2:在OLT上通过SN的方式将ONU注册上线。'):\n            assert auth_by_sn(tn, PonID, OnuID, Ont_Lineprofile_ID, Ont_Srvprofile_ID, SN)\n        with allure.step('步骤3:添加service_port'):\n            assert add_service_port(tn, PonID, OnuID, Gemport_ID, [2000, 4001])\n        with allure.step('步骤4:ONU的以太网口1添加NATIVE-VLAN'):\n            assert ont_native_vlan(tn, PonID, OnuID, '1', '2000')\n        with allure.step('步骤5:ONU的以太网口2添加NATIVE-VLAN'):\n            assert ont_native_vlan(tn, PonID, OnuID, '2', '4001')\n        with allure.step('步骤6:PC重新获取IP地址'):\n>           assert dhcp_test(Network_car_name)\nE           AssertionError: assert False\nE            +  where False = dhcp_test('ASIX AX88772C USB2.0 to Fast Ethernet Adapter')\n\ntest_onu_internet_type.py:39: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1594196130926,
+      "stop" : 1594196130926,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1594196130926,
+      "stop" : 1594196130926,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1594196130926,
+      "stop" : 1594196130926,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "login",
+    "time" : {
+      "start" : 1594196130926,
+      "stop" : 1594196143974,
+      "duration" : 13048
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1594196130926,
+      "stop" : 1594196130926,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n    用例描述：\n    测试PC是否可以通过DHCP方式上网。\n    ",
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert False\n +  where False = dhcp_test('ASIX AX88772C USB2.0 to Fast Ethernet Adapter')",
+    "statusTrace" : "login = <telnetlib.Telnet object at 0x0000013E0F292080>\n\n    @allure.feature(\"ONU业务测试\")\n    @allure.story(\"ONU上网方式测试\")\n    @allure.title(\"DHCP测试\")\n    @pytest.mark.run(order=7)\n    # @pytest.mark.skip(\"暂时不执行\")\n    def test_dhcp(login):\n        '''\n        用例描述：\n        测试PC是否可以通过DHCP方式上网。\n        '''\n        cdata_info(\"=========ONU业务测试：DHCP测试=========\")\n        tn = login\n        with allure.step('步骤1:发现未注册的ONU。'):\n            assert autofind_onu(tn, PonID, OnuID, SN)\n        with allure.step('步骤2:在OLT上通过SN的方式将ONU注册上线。'):\n            assert auth_by_sn(tn, PonID, OnuID, Ont_Lineprofile_ID, Ont_Srvprofile_ID, SN)\n        with allure.step('步骤3:添加service_port'):\n            assert add_service_port(tn, PonID, OnuID, Gemport_ID, [2000, 4001])\n        with allure.step('步骤4:ONU的以太网口1添加NATIVE-VLAN'):\n            assert ont_native_vlan(tn, PonID, OnuID, '1', '2000')\n        with allure.step('步骤5:ONU的以太网口2添加NATIVE-VLAN'):\n            assert ont_native_vlan(tn, PonID, OnuID, '2', '4001')\n        with allure.step('步骤6:PC重新获取IP地址'):\n>           assert dhcp_test(Network_car_name)\nE           AssertionError: assert False\nE            +  where False = dhcp_test('ASIX AX88772C USB2.0 to Fast Ethernet Adapter')\n\ntest_onu_internet_type.py:39: AssertionError",
+    "steps" : [ {
+      "name" : "步骤1:发现未注册的ONU。",
+      "time" : {
+        "start" : 1594196143977,
+        "stop" : 1594196145100,
+        "duration" : 1123
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤2:在OLT上通过SN的方式将ONU注册上线。",
+      "time" : {
+        "start" : 1594196145100,
+        "stop" : 1594196166533,
+        "duration" : 21433
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤3:添加service_port",
+      "time" : {
+        "start" : 1594196166533,
+        "stop" : 1594196171554,
+        "duration" : 5021
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤4:ONU的以太网口1添加NATIVE-VLAN",
+      "time" : {
+        "start" : 1594196171554,
+        "stop" : 1594196171727,
+        "duration" : 173
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤5:ONU的以太网口2添加NATIVE-VLAN",
+      "time" : {
+        "start" : 1594196171727,
+        "stop" : 1594196171867,
+        "duration" : 140
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤6:PC重新获取IP地址",
+      "time" : {
+        "start" : 1594196171867,
+        "stop" : 1594196292905,
+        "duration" : 121038
+      },
+      "status" : "failed",
+      "statusMessage" : "AssertionError: assert False\n +  where False = dhcp_test('ASIX AX88772C USB2.0 to Fast Ethernet Adapter')\n",
+      "statusTrace" : "  File \"E:\\CDATA\\自动化测试\\Cdata_part11\\tests\\GponSfu\\test_onu_internet_type.py\", line 39, in test_dhcp\n    assert dhcp_test(Network_car_name)\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "5eae4568415f4b8b",
+      "name" : "log",
+      "source" : "5eae4568415f4b8b.txt",
+      "type" : "text/plain",
+      "size" : 839
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 6,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "login::0",
+    "time" : {
+      "start" : 1594196293132,
+      "stop" : 1594196305291,
+      "duration" : 12159
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "ONU上网方式测试"
+  }, {
+    "name" : "feature",
+    "value" : "ONU业务测试"
+  }, {
+    "name" : "suite",
+    "value" : "test_onu_internet_type"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-2JV12RE"
+  }, {
+    "name" : "thread",
+    "value" : "30544-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_onu_internet_type"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "ed5584bb6654f80c",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: 暂时不执行",
+      "time" : {
+        "start" : 1594172120853,
+        "stop" : 1594172120853,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "13640fd064676ad0",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: 暂时不执行",
+      "time" : {
+        "start" : 1594170744440,
+        "stop" : 1594170744440,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "a71b304c53f198c2",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: 暂时不执行",
+      "time" : {
+        "start" : 1594127278930,
+        "stop" : 1594127278930,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "3380e03db17e9a97",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: 暂时不执行",
+      "time" : {
+        "start" : 1594122280723,
+        "stop" : 1594122280723,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "418278e06cc5713e",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: 暂时不执行",
+      "time" : {
+        "start" : 1594112598124,
+        "stop" : 1594112598124,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "7d77c6427dc25719",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = auth_by_sn(<telnetlib.Telnet object at 0x00000208E2A30C88>, '16', '2', '200', '200', '5A54453171200033')",
+      "time" : {
+        "start" : 1594035235944,
+        "stop" : 1594035299311,
+        "duration" : 63367
+      }
+    }, {
+      "uid" : "22372ff5197ba5c1",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = auth_by_sn(<telnetlib.Telnet object at 0x00000208DF5862B0>, '16', '2', '200', '200', '5A54453171200033')",
+      "time" : {
+        "start" : 1594035148493,
+        "stop" : 1594035211765,
+        "duration" : 63272
+      }
+    }, {
+      "uid" : "e2dd76eafc225f92",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = auth_by_sn(<telnetlib.Telnet object at 0x00000208E29CD400>, '16', '2', '200', '200', '5A54453171200033')",
+      "time" : {
+        "start" : 1594035060538,
+        "stop" : 1594035124296,
+        "duration" : 63758
+      }
+    }, {
+      "uid" : "a7209e1e9967099d",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = dhcp_test('ASIX AX88772C USB2.0 to Fast Ethernet Adapter')",
+      "time" : {
+        "start" : 1594000900209,
+        "stop" : 1594001035374,
+        "duration" : 135165
+      }
+    }, {
+      "uid" : "154d55356a0e58c7",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = dhcp_test('ASIX AX88772C USB2.0 to Fast Ethernet Adapter')",
+      "time" : {
+        "start" : 1594000589978,
+        "stop" : 1594000612087,
+        "duration" : 22109
+      }
+    }, {
+      "uid" : "9f7cfe96cece806",
+      "status" : "broken",
+      "statusDetails" : "TypeError: 'bool' object is not subscriptable",
+      "time" : {
+        "start" : 1593999870975,
+        "stop" : 1593999870975,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "44aee568d505d9f6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593771415099,
+        "stop" : 1593771497948,
+        "duration" : 82849
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "4f948311c601fc34.json",
+  "parameterValues" : [ ]
+}

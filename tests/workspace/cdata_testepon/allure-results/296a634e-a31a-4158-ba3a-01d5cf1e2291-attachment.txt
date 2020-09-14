@@ -1,0 +1,22 @@
+INFO     CDATA:Cdata_loggers.py:106 192.168.3.140 登录成功
+INFO     CDATA:Cdata_loggers.py:106 pon 5 端口使能成功
+INFO     CDATA:Cdata_loggers.py:106 =========测试ONU端口vlan为transaprent=========
+INFO     CDATA:Cdata_loggers.py:106 ONU在OLT上被重新被发现。
+INFO     CDATA:Cdata_loggers.py:106 当前ONU_ID没有被占用。
+INFO     CDATA:Cdata_loggers.py:106 ONU在OLT上添加成功。
+INFO     CDATA:Cdata_loggers.py:106 ONU在OLT上通过MAC注册成功。
+INFO     CDATA:Cdata_loggers.py:106 配置onu eth1-4 vlan为transparent成功
+INFO     script:renix_common_api.py:84 create ports with location:
+INFO     script:renix_common_api.py:84 StreamPortConfig_7 has lower: InterFrameGapProfile_5
+INFO     script:renix_common_api.py:84 StreamPortConfig_8 has lower: InterFrameGapProfile_6
+INFO     script:renix_common_api.py:84 port(//192.168.0.180/1/7) create streams
+INFO     script:renix_common_api.py:84 port(//192.168.0.180/1/8) create streams
+INFO     script:renix_common_api.py:84 port(//192.168.0.180/1/7) create streams
+INFO     script:renix_common_api.py:84 port(//192.168.0.180/1/8) create streams
+INFO     script:renix_common_api.py:84 PageResultView_3 has lower: ResultQuery_3
+INFO     script:renix_common_api.py:84 ResultQuery_3 has lower: StreamBlockStats_5 StreamBlockStats_6 StreamBlockStats_7 StreamBlockStats_8
+INFO     script:renix_common_api.py:84 [test pass] [sourceMacAdd=00:00:00:11:11:11] rx packet (109924)is  equal to tx packets (109924)
+INFO     script:renix_common_api.py:84 [test pass] [sourceMacAdd=00:00:00:11:11:12] rx packet (109924)is  equal to tx packets (109924)
+ERROR    script:renix_common_api.py:74 [test fail] [sourceMacAdd=00:00:00:22:22:21] rx packet (57399)is not equal to  tx packets (109924)
+ERROR    script:renix_common_api.py:74 [test fail] [sourceMacAdd=00:00:00:22:22:22] rx packet (56173)is not equal to  tx packets (109924)
+ERROR    CDATA:Cdata_loggers.py:98 ONU端口为transparent:打流测试失败

@@ -1,0 +1,2445 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Thu Jul 09 15:43:21 CST 2020","Thu Jul 09 15:44:12 CST 2020","50585","","test_onu_mac_learn","","","","onu mac地址上报测试","
+    用例描述
+    测试目的： 测试onu端口mac地址学习是否正常
+    测试步骤：
+    步骤1: 发现未注册的ONU
+    步骤2: 在OLT上通过SN的方式将ONU注册上线
+    步骤3: 配置虚端口vlan2000透传
+    步骤4: 打流测试,查看onu端口mac地址表
+    测试方法: 上下行各发送流00:00:00:22:22:21递增5条，在olt上查看onu端口mac地址表
+    预期结果: 上下行正常通，在olt上查看onu端口mac地址表有5条（00:00:00:22:22:21递增5条）
+    "
+"failed","Thu Jul 09 22:06:09 CST 2020","Thu Jul 09 22:07:09 CST 2020","59592","","test_onu_gemport","","","","测试mapping-mode为vlan","
+    用例描述
+    测试目的： 测试mapping-mode is vlan , mapping 为vlan2000时，vlan2000的报文上下行是否都正常,vlan2001上下行报文是否不通
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:修改gemport配置为vlan 2000
+    步骤4:配置虚端口vlan2000透传，vlan2001透传
+    步骤5:打流测试
+    测试方法：上下行发流量测试，发送两条流vlan 2000，和vlan2001
+    结果：vlan2000的能通，vlan2001的不通
+
+    "
+"passed","Thu Jul 09 16:05:44 CST 2020","Thu Jul 09 16:06:59 CST 2020","74585","","test_onu_vlan","","","","测试onu端口vlan为trunk","
+    用例描述
+    测试目的： 测试onu端口为trunk，测试上下行流vlan2000-2007是否正常
+    测试步骤：
+    步骤1: 发现未注册的ONU
+    步骤2: 在OLT上通过SN的方式将ONU注册上线
+    步骤3：配置onu端口vlan为trunk 2000-2007
+    步骤4：添加虚端口vlan透传2000,2001,2002,2003,2004,2005,2006,2007,2008
+    步骤5：打流测试
+    1）上下行发vlan2000-2008的流9条
+    预期结果: 上下行vlan2000-2008的流量正常通,2009流上下行不通
+    步骤6：onu端口vlan恢复为transparent
+    "
+"passed","Thu Jul 09 15:53:37 CST 2020","Thu Jul 09 15:54:25 CST 2020","48672","","test_onu_vlan","","","","测试onu端口vlan为transparent","
+    用例描述
+    测试目的： 测试onu端口为transparent，测试上下行流vlan2000-2001是否正常
+    测试步骤：
+    步骤1: 发现未注册的ONU
+    步骤2: 在OLT上通过SN的方式将ONU注册上线
+    步骤3: 配置onu端口vlan为transparent
+    步骤4: 添加虚端口vlan透传2000,2001
+    步骤5：打流测试
+    1）上下行发vlan2000和2001的流两条
+    预期结果: 上下行vlan2000-2001的流量正常通
+    "
+"broken","Fri Jul 10 09:06:12 CST 2020","Fri Jul 10 09:06:12 CST 2020","0","","test_onu_internet_type","","","","PPPoE拨号测试","
+    用例描述：
+    测试PC是否可以通过PPPoE方式上网。
+    "
+"failed","Thu Jul 09 21:24:15 CST 2020","Thu Jul 09 21:25:15 CST 2020","59434","","test_onu_auth_type","","","","LOID+PASSWORD认证","
+    用例描述：
+    ONU通过SN的方式认证。
+    例如：
+    ont add 1 1 loid-auth 12345678 password-auth 12345678 ont-lineprofile-id 1 ont-srvprofile-id 1
+    "
+"failed","Wed Jul 08 16:18:38 CST 2020","Wed Jul 08 16:20:52 CST 2020","134427","","test_onu_internet_type","","","","静态IP测试","
+    用例描述：
+    测试PC是否可以通过静态IP的方式上网。
+    "
+"failed","Thu Jul 09 21:13:14 CST 2020","Thu Jul 09 21:14:14 CST 2020","59433","","test_onu_auth_type","","","","LOID+PASSWORD认证","
+    用例描述：
+    ONU通过SN的方式认证。
+    例如：
+    ont add 1 1 loid-auth 12345678 password-auth 12345678 ont-lineprofile-id 1 ont-srvprofile-id 1
+    "
+"passed","Thu Jul 09 16:07:21 CST 2020","Thu Jul 09 16:08:42 CST 2020","80367","","test_onu_vlan","","","","测试onu端口vlan为trunk","
+    用例描述
+    测试目的： 测试onu端口为trunk，测试上下行流vlan2000-2007是否正常
+    测试步骤：
+    步骤1: 发现未注册的ONU
+    步骤2: 在OLT上通过SN的方式将ONU注册上线
+    步骤3：配置onu端口vlan为trunk 2000-2007
+    步骤4：添加虚端口vlan透传2000,2001,2002,2003,2004,2005,2006,2007,2008
+    步骤5：打流测试
+    1）上下行发vlan2000-2008的流9条
+    预期结果: 上下行vlan2000-2008的流量正常通,2009流上下行不通
+    步骤6：onu端口vlan恢复为transparent
+    "
+"passed","Thu Jul 09 20:16:57 CST 2020","Thu Jul 09 20:17:42 CST 2020","45141","","test_onu_auth_type","","","","SN认证","
+    用例描述：
+    ONU通过SN的方式认证。
+    例如：
+    ont add 1 1 sn-auth TEST12345678 ont-lineprofile-id 1 ont-srvprofile-id 1
+    "
+"failed","Thu Jul 09 20:51:12 CST 2020","Thu Jul 09 20:52:11 CST 2020","59487","","test_onu_auth_type","","","","LOID认证","
+    用例描述：
+    ONU通过LOID的方式认证。
+    例如：
+    ont add 1 1 loid-auth 12345678 ont-lineprofile-id 1 ont-srvprofile-id 1
+    "
+"failed","Thu Jul 09 22:19:22 CST 2020","Thu Jul 09 22:20:21 CST 2020","59459","","test_onu_gemport","","","","测试mapping-mode为vlan_pri","
+    用例描述
+    测试目的： 测试mapping-mode is vlan+pri, mapping 为vlan2000+pri2时，vlan2000+2和vlan200+3和vlan2001+pri2的报文上下行是否都正常
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:修改gemport配置为vlan 2000
+    步骤4:配置虚端口vlan2000透传，vlan2001透传
+    步骤5:打流测试
+    测试方法：上下行各发送三条流：vlan2000 pri2和 vlan2000 pri3 ；发送vlan 2001 pri2
+    结果：结果：vlan 2000 pri2的上下行都能通；vlan2000 pri3下行能通，vlan2000 pri3上行不通;vlan 2001上下行都不通
+
+    "
+"passed","Thu Jul 09 16:18:57 CST 2020","Thu Jul 09 16:20:13 CST 2020","75991","","test_onu_vlan","","","","测试onu端口vlan为trunk","
+    用例描述
+    测试目的： 测试onu端口为trunk，测试上下行流vlan2000-2007是否正常
+    测试步骤：
+    步骤1: 发现未注册的ONU
+    步骤2: 在OLT上通过SN的方式将ONU注册上线
+    步骤3：配置onu端口vlan为trunk 2000-2007
+    步骤4：添加虚端口vlan透传2000,2001,2002,2003,2004,2005,2006,2007,2008
+    步骤5：打流测试
+    1）上下行发vlan2000-2008的流9条
+    预期结果: 上下行vlan2000-2008的流量正常通,2009流上下行不通
+    步骤6：onu端口vlan恢复为transparent
+    "
+"passed","Fri Jul 10 09:24:25 CST 2020","Fri Jul 10 09:25:50 CST 2020","85010","","test_onu_limitrate","","","","测试onu端口出口限速","
+    用例描述
+    测试目的： 测试onu端口上行限速是否正常
+    测试步骤：
+    步骤1: 发现未注册的ONU
+    步骤2: 在OLT上通过SN的方式将ONU注册上线
+    步骤3: 配置onu端口的入口的速率（traffic-profile 2:
+           traffic-profile  profile-id 2 profile-name outbound_limit cir 10240 pir 20480 cbs 2000 pbs 2000)
+    步骤4: 配置虚端口vlan2000透传
+    步骤5: 打流测试
+    测试方法: 上下行各发送流：vlan2000 (速率为端口速率的10%)
+    预期结果: 上下行正常通，上行不限速，下行限速20M
+
+    "
+"failed","Thu Jul 09 21:33:04 CST 2020","Thu Jul 09 21:34:03 CST 2020","59465","","test_onu_gemport","","","","测试mapping为transaprent","
+    用例描述
+    测试目的： 测试mapping-mode is vlan , mapping 为transparent时，vlan2000和vlan2001的报文上下行是都正常
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:修改gemport配置为transparent
+    步骤4:配置虚端口vlan2000透传，vlan2001透传
+    步骤5:打流测试
+    1）上下行发vlan2000和vlan2001的报文
+    预期结果：上下行报文正常通
+
+    "
+"broken","Tue Jul 14 10:36:27 CST 2020","Tue Jul 14 10:37:09 CST 2020","42435","","test_onu_gemport","","","","测试mapping-mode为pri","
+    用例描述
+    测试目的： 测试mapping-mode is pri, mapping 为pri2时，vlan2000+2和vlan2000+3报文上下行是否都正常
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:修改gemport配置为pri2
+    步骤4:配置虚端口vlan2000透传
+    步骤5:打流测试
+    测试方法：上下行各发送两条流：vlan2000 pri2和 vlan2000 pri3
+    结果：pri2的上下行都能通；pri3下行能通，上行不通
+
+    "
+"passed","Thu Jul 09 20:06:01 CST 2020","Thu Jul 09 20:06:12 CST 2020","10971","","test_get_ont_info","","","","查看ONU的信息上报","
+    用例描述：
+    查看ONU上报的基本信息。
+    例如：
+    show ont info 1 1
+    show ont version 1 1
+    show ont capability 1 1
+    show ont optical-info 1 1
+    "
+"passed","Thu Jul 09 20:36:58 CST 2020","Thu Jul 09 20:37:48 CST 2020","49958","","test_onu_auth_type","","","","SN+PASSWORD认证","
+    用例描述：
+    ONU通过SN+PASSWORD的方式认证。
+    例如：
+    ont add 1 1 sn-auth TEST12345678 password-auth 12345678 ont-lineprofile-id 1 ont-srvprofile-id 1
+    "
+"passed","Thu Jul 09 20:35:46 CST 2020","Thu Jul 09 20:36:34 CST 2020","47933","","test_onu_auth_type","","","","SN+PASSWORD认证","
+    用例描述：
+    ONU通过SN+PASSWORD的方式认证。
+    例如：
+    ont add 1 1 sn-auth TEST12345678 password-auth 12345678 ont-lineprofile-id 1 ont-srvprofile-id 1
+    "
+"passed","Thu Jul 09 17:46:49 CST 2020","Thu Jul 09 17:48:04 CST 2020","75258","","test_onu_multicast","","","","测试onu组播正常通的情况","
+    用例描述
+    测试目的：ont为snooping模式（mvlan为3000，ip 239.1.1.1）,onu的native-vlan为3000，测试onu为snooping模式下组播239.1.1.1是否通
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:配置onu端口native-vlan为3000
+    步骤4:添加虚端口vlan透传3000
+    步骤5:onu端口绑定组播模板200（mvlan3000 ,ip 239.1.1.1 ,dynamic acl）
+    步骤6:打流测试
+    1）服务端发送数据流239.1.1.1，查看onu端口是否收到组播数据流239.1.1.1
+    预期结果:onu端口无法收到组播数据流
+    2）客户端发送report报文加入组播239.1.1.1 ，然后服务端口发送组播239.1.1.1的数据流(带tag3000)，10秒后，停止发流
+    预期结果:服务端收到report报文，客户端收到组播数据流239.1.1.1
+    3)客户端端口发送离开报文，离开组播组239.1.1.1
+    预期结果：客户端接收不到数据
+    "
+"passed","Tue Jul 14 10:34:19 CST 2020","Tue Jul 14 10:35:02 CST 2020","42713","","test_onu_gemport","","","","测试mapping-mode为vlan","
+    用例描述
+    测试目的： 测试mapping-mode is vlan , mapping 为vlan2000时，vlan2000的报文上下行是否都正常,vlan2001上下行报文是否不通
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:修改gemport配置为vlan 2000
+    步骤4:配置虚端口vlan2000透传，vlan2001透传
+    步骤5:打流测试
+    测试方法：上下行发流量测试，发送两条流vlan 2000，和vlan2001
+    结果：vlan2000的能通，vlan2001的不通
+
+    "
+"passed","Thu Jul 09 19:01:21 CST 2020","Thu Jul 09 19:02:41 CST 2020","79710","","test_onu_multicast","","","","测试onu跨组播vlan","
+    用例描述
+    测试目的：ont为snooping模式（mvlan为3000，ip 239.1.1.1）,onu的native-vlan为2000，测试onu的跨组播vlan是否正常的
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:配置onu端口native-vlan为2000
+    步骤4:添加虚端口vlan透传2000
+    步骤5:onu端口绑定组播模板200（mvlan3000 ,ip 239.1.1.1 ,dynamic acl）
+    步骤6:打流测试
+    1）客户端发送report报文加入组播239.1.1.1 ，然后服务端口发送组播239.1.1.1的数据流，10秒后，停止发流
+    预期结果：服务端收到report报文，客户端收到组播数据流239.1.1.1
+    2)服务端发送组播数据流，客户端发送离开报文，离开组播组239.1.1.1
+    预期结果：客户端接收不到数据
+
+    "
+"failed","Thu Jul 09 23:23:15 CST 2020","Thu Jul 09 23:24:15 CST 2020","60121","","test_onu_internet_type","","","","DHCP测试","
+    用例描述：
+    测试PC是否可以通过DHCP方式上网。
+    "
+"passed","Thu Jul 09 20:41:38 CST 2020","Thu Jul 09 20:42:27 CST 2020","49136","","test_onu_auth_type","","","","SN+PASSWORD认证","
+    用例描述：
+    ONU通过SN+PASSWORD的方式认证。
+    例如：
+    ont add 1 1 sn-auth TEST12345678 password-auth 12345678 ont-lineprofile-id 1 ont-srvprofile-id 1
+    "
+"failed","Thu Jul 09 21:28:40 CST 2020","Thu Jul 09 21:29:39 CST 2020","59325","","test_onu_gemport","","","","测试mapping为transaprent","
+    用例描述
+    测试目的： 测试mapping-mode is vlan , mapping 为transparent时，vlan2000和vlan2001的报文上下行是都正常
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:修改gemport配置为transparent
+    步骤4:配置虚端口vlan2000透传，vlan2001透传
+    步骤5:打流测试
+    1）上下行发vlan2000和vlan2001的报文
+    预期结果：上下行报文正常通
+
+    "
+"passed","Thu Jul 09 20:19:21 CST 2020","Thu Jul 09 20:20:06 CST 2020","44624","","test_onu_auth_type","","","","SN的PASSWORD认证","
+    用例描述：
+    SN的PASSWORD认证。
+    例如：
+    ont add 1 1 password-auth 12345678 ont-lineprofile-id 1 ont-srvprofile-id 1
+    "
+"failed","Thu Jul 09 21:59:33 CST 2020","Thu Jul 09 22:00:32 CST 2020","59433","","test_onu_gemport","","","","测试mapping-mode为vlan","
+    用例描述
+    测试目的： 测试mapping-mode is vlan , mapping 为vlan2000时，vlan2000的报文上下行是否都正常,vlan2001上下行报文是否不通
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:修改gemport配置为vlan 2000
+    步骤4:配置虚端口vlan2000透传，vlan2001透传
+    步骤5:打流测试
+    测试方法：上下行发流量测试，发送两条流vlan 2000，和vlan2001
+    结果：vlan2000的能通，vlan2001的不通
+
+    "
+"passed","Thu Jul 09 17:53:13 CST 2020","Thu Jul 09 17:54:23 CST 2020","69702","","test_onu_multicast","","","","测试onu组播正常通的情况","
+    用例描述
+    测试目的：ont为snooping模式（mvlan为3000，ip 239.1.1.1）,onu的native-vlan为3000，测试onu为snooping模式下组播239.1.1.1是否通
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:配置onu端口native-vlan为3000
+    步骤4:添加虚端口vlan透传3000
+    步骤5:onu端口绑定组播模板200（mvlan3000 ,ip 239.1.1.1 ,dynamic acl）
+    步骤6:打流测试
+    1）服务端发送数据流239.1.1.1，查看onu端口是否收到组播数据流239.1.1.1
+    预期结果:onu端口无法收到组播数据流
+    2）客户端发送report报文加入组播239.1.1.1 ，然后服务端口发送组播239.1.1.1的数据流(带tag3000)，10秒后，停止发流
+    预期结果:服务端收到report报文，客户端收到组播数据流239.1.1.1
+    3)客户端端口发送离开报文，离开组播组239.1.1.1
+    预期结果：客户端接收不到数据
+    "
+"failed","Thu Jul 09 23:27:40 CST 2020","Thu Jul 09 23:28:39 CST 2020","59404","","test_onu_internet_type","","","","DHCP测试","
+    用例描述：
+    测试PC是否可以通过DHCP方式上网。
+    "
+"passed","Thu Jul 09 15:41:13 CST 2020","Thu Jul 09 15:41:55 CST 2020","42837","","test_onu_mac_learn","","","","onu mac地址上报测试","
+    用例描述
+    测试目的： 测试onu端口mac地址学习是否正常
+    测试步骤：
+    步骤1: 发现未注册的ONU
+    步骤2: 在OLT上通过SN的方式将ONU注册上线
+    步骤3: 配置虚端口vlan2000透传
+    步骤4: 打流测试,查看onu端口mac地址表
+    测试方法: 上下行各发送流00:00:00:22:22:21递增5条，在olt上查看onu端口mac地址表
+    预期结果: 上下行正常通，在olt上查看onu端口mac地址表有5条（00:00:00:22:22:21递增5条）
+    "
+"passed","Thu Jul 09 16:20:41 CST 2020","Thu Jul 09 16:22:12 CST 2020","90132","","test_onu_vlan","","","","测试onu端口vlan为translate","
+    用例描述
+    测试目的： 测试onu端口为translate，translate100-107 转2000-2007,测试上下行流量是否正常
+    测试步骤：
+    步骤1: 发现未注册的ONU
+    步骤2: 在OLT上通过SN的方式将ONU注册上线
+    步骤3：配置onu端口translate(100-800)转成（2000-2007）
+    步骤4：添加虚端口vlan透传2000,2001,2002, 2003, 2004, 2005, 2006, 2007, 2008
+    步骤5：打流测试
+    1）下行发vlan2000-2008的流，上行发vlan100-108的流
+    预期结果: 下行vlan2000-2007的通，下行vlan2008的不通；上行vlan100-107的通，下行vlan108的不通
+    步骤6：onu端口vlan恢复为transparent
+    "
+"failed","Thu Jul 09 23:36:29 CST 2020","Thu Jul 09 23:37:28 CST 2020","59562","","test_onu_internet_type","","","","DHCP测试","
+    用例描述：
+    测试PC是否可以通过DHCP方式上网。
+    "
+"failed","Thu Jul 09 16:24:25 CST 2020","Thu Jul 09 16:24:44 CST 2020","18414","","test_onu_vlan","","","","测试onu端口vlan为translate","
+    用例描述
+    测试目的： 测试onu端口为translate，translate100-107 转2000-2007,测试上下行流量是否正常
+    测试步骤：
+    步骤1: 发现未注册的ONU
+    步骤2: 在OLT上通过SN的方式将ONU注册上线
+    步骤3：配置onu端口translate(100-800)转成（2000-2007）
+    步骤4：添加虚端口vlan透传2000,2001,2002, 2003, 2004, 2005, 2006, 2007, 2008
+    步骤5：打流测试
+    1）下行发vlan2000-2008的流，上行发vlan100-108的流
+    预期结果: 下行vlan2000-2007的通，下行vlan2008的不通；上行vlan100-107的通，下行vlan108的不通
+    步骤6：onu端口vlan恢复为transparent
+    "
+"passed","Fri Jul 10 09:22:41 CST 2020","Fri Jul 10 09:24:04 CST 2020","83659","","test_onu_limitrate","","","","测试onu端口出口限速","
+    用例描述
+    测试目的： 测试onu端口上行限速是否正常
+    测试步骤：
+    步骤1: 发现未注册的ONU
+    步骤2: 在OLT上通过SN的方式将ONU注册上线
+    步骤3: 配置onu端口的入口的速率（traffic-profile 2:
+           traffic-profile  profile-id 2 profile-name outbound_limit cir 10240 pir 20480 cbs 2000 pbs 2000)
+    步骤4: 配置虚端口vlan2000透传
+    步骤5: 打流测试
+    测试方法: 上下行各发送流：vlan2000 (速率为端口速率的10%)
+    预期结果: 上下行正常通，上行不限速，下行限速20M
+
+    "
+"broken","Fri Jul 10 09:06:12 CST 2020","Fri Jul 10 09:06:12 CST 2020","0","","test_onu_internet_type","","","","PPPoE拨号测试","
+    用例描述：
+    测试PC是否可以通过PPPoE方式上网。
+    "
+"failed","Thu Jul 09 22:25:58 CST 2020","Thu Jul 09 22:26:58 CST 2020","59515","","test_onu_gemport","","","","测试mapping-mode为vlan_pri","
+    用例描述
+    测试目的： 测试mapping-mode is vlan+pri, mapping 为vlan2000+pri2时，vlan2000+2和vlan200+3和vlan2001+pri2的报文上下行是否都正常
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:修改gemport配置为vlan 2000
+    步骤4:配置虚端口vlan2000透传，vlan2001透传
+    步骤5:打流测试
+    测试方法：上下行各发送三条流：vlan2000 pri2和 vlan2000 pri3 ；发送vlan 2001 pri2
+    结果：结果：vlan 2000 pri2的上下行都能通；vlan2000 pri3下行能通，vlan2000 pri3上行不通;vlan 2001上下行都不通
+
+    "
+"passed","Thu Jul 09 19:12:50 CST 2020","Thu Jul 09 19:14:04 CST 2020","74770","","test_onu_multicast","","","","测试onu跨组播vlan","
+    用例描述
+    测试目的：ont为snooping模式（mvlan为3000，ip 239.1.1.1）,onu的native-vlan为2000，测试onu的跨组播vlan是否正常的
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:配置onu端口native-vlan为2000
+    步骤4:添加虚端口vlan透传2000
+    步骤5:onu端口绑定组播模板200（mvlan3000 ,ip 239.1.1.1 ,dynamic acl）
+    步骤6:打流测试
+    1）客户端发送report报文加入组播239.1.1.1 ，然后服务端口发送组播239.1.1.1的数据流，10秒后，停止发流
+    预期结果：服务端收到report报文，客户端收到组播数据流239.1.1.1
+    2)服务端发送组播数据流，客户端发送离开报文，离开组播组239.1.1.1
+    预期结果：客户端接收不到数据
+
+    "
+"failed","Thu Jul 09 23:05:39 CST 2020","Thu Jul 09 23:06:38 CST 2020","59388","","test_onu_gemport","","","","测试mapping-mode为port","
+    用例描述
+    测试目的： 测试mapping-mode is port, mapping 为port2时，往onu的port1 上下行发送vlan 2000的报文是否都正常
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:修改gemport配置为vlan 2000
+    步骤4:配置虚端口vlan2000透传
+    步骤5:打流测试
+    测试方法：上下行各发送两条流：vlan2000 pri2和 vlan2000 pri3
+    结果：上下行都不通
+
+    "
+"passed","Thu Jul 09 15:40:08 CST 2020","Thu Jul 09 15:40:50 CST 2020","42024","","test_onu_mac_learn","","","","onu mac地址上报测试","
+    用例描述
+    测试目的： 测试onu端口mac地址学习是否正常
+    测试步骤：
+    步骤1: 发现未注册的ONU
+    步骤2: 在OLT上通过SN的方式将ONU注册上线
+    步骤3: 配置虚端口vlan2000透传
+    步骤4: 打流测试,查看onu端口mac地址表
+    测试方法: 上下行各发送流00:00:00:22:22:21递增5条，在olt上查看onu端口mac地址表
+    预期结果: 上下行正常通，在olt上查看onu端口mac地址表有5条（00:00:00:22:22:21递增5条）
+    "
+"failed","Thu Jul 09 23:34:17 CST 2020","Thu Jul 09 23:35:16 CST 2020","59471","","test_onu_internet_type","","","","DHCP测试","
+    用例描述：
+    测试PC是否可以通过DHCP方式上网。
+    "
+"passed","Thu Jul 09 20:03:13 CST 2020","Thu Jul 09 20:03:23 CST 2020","9838","","test_get_ont_info","","","","查看ONU的信息上报","
+    用例描述：
+    查看ONU上报的基本信息。
+    例如：
+    show ont info 1 1
+    show ont version 1 1
+    show ont capability 1 1
+    show ont optical-info 1 1
+    "
+"passed","Thu Jul 09 20:39:21 CST 2020","Thu Jul 09 20:40:03 CST 2020","41559","","test_onu_auth_type","","","","SN+PASSWORD认证","
+    用例描述：
+    ONU通过SN+PASSWORD的方式认证。
+    例如：
+    ont add 1 1 sn-auth TEST12345678 password-auth 12345678 ont-lineprofile-id 1 ont-srvprofile-id 1
+    "
+"failed","Tue Jul 14 10:21:15 CST 2020","Tue Jul 14 10:22:36 CST 2020","80828","","test_onu_multicast","","","","测试onu组播正常不通的情况","
+    用例描述
+    测试目的：ont为snooping模式（mvlan为3000，ip 239.1.1.1）,onu的native-vlan为3000，测试onu为snooping模式下组播239.2.2.2是否不通
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:配置onu端口native-vlan为3000
+    步骤4:添加虚端口vlan透传3000
+    步骤5:onu端口绑定组播模板200（mvlan3000 ,ip 239.1.1.1 ,dynamic acl）
+    步骤6:打流测试
+    1）客户端发送report报文加入组播239.2.2.2 ，然后服务端口发送组播239.2.2.2的数据流
+    预期结果：服务端口收到report报文收不到，客户端接收不到组播239.2.2.2的组播数据流
+
+    "
+"failed","Thu Jul 09 23:18:51 CST 2020","Thu Jul 09 23:19:50 CST 2020","59473","","test_onu_internet_type","","","","DHCP测试","
+    用例描述：
+    测试PC是否可以通过DHCP方式上网。
+    "
+"failed","Fri Jul 10 09:06:26 CST 2020","Fri Jul 10 09:07:26 CST 2020","59445","","test_onu_limitrate","","","","测试onu端口入口限速","
+    用例描述
+    测试目的： 测试onu端口上行限速是否正常
+    测试步骤：
+    步骤1: 发现未注册的ONU
+    步骤2: 在OLT上通过SN的方式将ONU注册上线
+    步骤3: 配置onu端口的入口的速率（traffic-profile 1:
+           traffic-profile  profile-id 1 profile-name inbound_limit cir 20480 pir 30960 cbs 2000 pbs 2000)
+    步骤4: 配置虚端口vlan2000透传
+    步骤5: 打流测试
+    测试方法: 上下行各发送流：vlan2000 (速率为端口速率的10%)
+    预期结果: 上下行正常通，下行不限速，上行限速30M
+
+    "
+"failed","Thu Jul 09 23:40:53 CST 2020","Thu Jul 09 23:41:52 CST 2020","59419","","test_onu_internet_type","","","","静态IP测试","
+    用例描述：
+    测试PC是否可以通过静态IP的方式上网。
+    "
+"broken","Fri Jul 10 09:19:39 CST 2020","Fri Jul 10 09:21:07 CST 2020","88598","","test_onu_limitrate","","","","测试onu端口入口限速","
+    用例描述
+    测试目的： 测试onu端口上行限速是否正常
+    测试步骤：
+    步骤1: 发现未注册的ONU
+    步骤2: 在OLT上通过SN的方式将ONU注册上线
+    步骤3: 配置onu端口的入口的速率（traffic-profile 1:
+           traffic-profile  profile-id 1 profile-name inbound_limit cir 20480 pir 30960 cbs 2000 pbs 2000)
+    步骤4: 配置虚端口vlan2000透传
+    步骤5: 打流测试
+    测试方法: 上下行各发送流：vlan2000 (速率为端口速率的10%)
+    预期结果: 上下行正常通，下行不限速，上行限速30M
+
+    "
+"failed","Thu Jul 09 22:21:34 CST 2020","Thu Jul 09 22:22:33 CST 2020","59494","","test_onu_gemport","","","","测试mapping-mode为vlan_pri","
+    用例描述
+    测试目的： 测试mapping-mode is vlan+pri, mapping 为vlan2000+pri2时，vlan2000+2和vlan200+3和vlan2001+pri2的报文上下行是否都正常
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:修改gemport配置为vlan 2000
+    步骤4:配置虚端口vlan2000透传，vlan2001透传
+    步骤5:打流测试
+    测试方法：上下行各发送三条流：vlan2000 pri2和 vlan2000 pri3 ；发送vlan 2001 pri2
+    结果：结果：vlan 2000 pri2的上下行都能通；vlan2000 pri3下行能通，vlan2000 pri3上行不通;vlan 2001上下行都不通
+
+    "
+"failed","Thu Jul 09 21:41:52 CST 2020","Thu Jul 09 21:42:52 CST 2020","59689","","test_onu_gemport","","","","测试mapping为transaprent","
+    用例描述
+    测试目的： 测试mapping-mode is vlan , mapping 为transparent时，vlan2000和vlan2001的报文上下行是都正常
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:修改gemport配置为transparent
+    步骤4:配置虚端口vlan2000透传，vlan2001透传
+    步骤5:打流测试
+    1）上下行发vlan2000和vlan2001的报文
+    预期结果：上下行报文正常通
+
+    "
+"broken","Fri Jul 10 09:06:12 CST 2020","Fri Jul 10 09:06:12 CST 2020","0","","test_onu_internet_type","","","","静态IP测试","
+    用例描述：
+    测试PC是否可以通过静态IP的方式上网。
+    "
+"passed","Thu Jul 09 20:34:26 CST 2020","Thu Jul 09 20:35:22 CST 2020","55404","","test_onu_auth_type","","","","SN+PASSWORD认证","
+    用例描述：
+    ONU通过SN+PASSWORD的方式认证。
+    例如：
+    ont add 1 1 sn-auth TEST12345678 password-auth 12345678 ont-lineprofile-id 1 ont-srvprofile-id 1
+    "
+"passed","Thu Jul 09 15:54:48 CST 2020","Thu Jul 09 15:55:39 CST 2020","50375","","test_onu_vlan","","","","测试onu端口vlan为transparent","
+    用例描述
+    测试目的： 测试onu端口为transparent，测试上下行流vlan2000-2001是否正常
+    测试步骤：
+    步骤1: 发现未注册的ONU
+    步骤2: 在OLT上通过SN的方式将ONU注册上线
+    步骤3: 配置onu端口vlan为transparent
+    步骤4: 添加虚端口vlan透传2000,2001
+    步骤5：打流测试
+    1）上下行发vlan2000和2001的流两条
+    预期结果: 上下行vlan2000-2001的流量正常通
+    "
+"broken","Thu Jul 09 23:45:04 CST 2020","Thu Jul 09 23:45:04 CST 2020","0","","test_onu_internet_type","","","","静态IP测试","
+    用例描述：
+    测试PC是否可以通过静态IP的方式上网。
+    "
+"passed","Thu Jul 09 20:29:21 CST 2020","Thu Jul 09 20:30:08 CST 2020","46902","","test_onu_auth_type","","","","SN的PASSWORD认证","
+    用例描述：
+    SN的PASSWORD认证。
+    例如：
+    ont add 1 1 password-auth 12345678 ont-lineprofile-id 1 ont-srvprofile-id 1
+    "
+"failed","Thu Jul 09 22:01:45 CST 2020","Thu Jul 09 22:02:44 CST 2020","59448","","test_onu_gemport","","","","测试mapping-mode为vlan","
+    用例描述
+    测试目的： 测试mapping-mode is vlan , mapping 为vlan2000时，vlan2000的报文上下行是否都正常,vlan2001上下行报文是否不通
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:修改gemport配置为vlan 2000
+    步骤4:配置虚端口vlan2000透传，vlan2001透传
+    步骤5:打流测试
+    测试方法：上下行发流量测试，发送两条流vlan 2000，和vlan2001
+    结果：vlan2000的能通，vlan2001的不通
+
+    "
+"broken","Wed Jul 08 09:41:50 CST 2020","Wed Jul 08 09:42:21 CST 2020","31559","","test_onu_mgt","","","","远程重启ONU","
+    用例描述：
+    在OLT上远程重启ONU。
+    例如：
+    ont reboot 1 1
+    "
+"broken","Fri Jul 10 09:06:12 CST 2020","Fri Jul 10 09:06:12 CST 2020","0","","test_onu_internet_type","","","","静态IP测试","
+    用例描述：
+    测试PC是否可以通过静态IP的方式上网。
+    "
+"passed","Tue Jul 14 10:32:34 CST 2020","Tue Jul 14 10:32:45 CST 2020","11601","","test_get_ont_info","","","","查看ONU的信息上报","
+    用例描述：
+    查看ONU上报的基本信息。
+    例如：
+    show ont info 1 1
+    show ont version 1 1
+    show ont capability 1 1
+    show ont optical-info 1 1
+    "
+"passed","Thu Jul 09 15:58:41 CST 2020","Thu Jul 09 15:59:39 CST 2020","57712","","test_onu_vlan","","","","测试onu端口vlan为transparent","
+    用例描述
+    测试目的： 测试onu端口为transparent，测试上下行流vlan2000-2001是否正常
+    测试步骤：
+    步骤1: 发现未注册的ONU
+    步骤2: 在OLT上通过SN的方式将ONU注册上线
+    步骤3: 配置onu端口vlan为transparent
+    步骤4: 添加虚端口vlan透传2000,2001
+    步骤5：打流测试
+    1）上下行发vlan2000和2001的流两条
+    预期结果: 上下行vlan2000-2001的流量正常通
+    "
+"passed","Wed Jul 08 15:40:37 CST 2020","Wed Jul 08 15:41:16 CST 2020","38457","","test_onu_auth_type","","","","SN的PASSWORD认证","
+    用例描述：
+    SN的PASSWORD认证。
+    例如：
+    ont add 1 1 password-auth 12345678 ont-lineprofile-id 1 ont-srvprofile-id 1
+    "
+"passed","Thu Jul 09 20:30:33 CST 2020","Thu Jul 09 20:31:20 CST 2020","46993","","test_onu_auth_type","","","","SN的PASSWORD认证","
+    用例描述：
+    SN的PASSWORD认证。
+    例如：
+    ont add 1 1 password-auth 12345678 ont-lineprofile-id 1 ont-srvprofile-id 1
+    "
+"failed","Thu Jul 09 22:28:11 CST 2020","Thu Jul 09 22:29:10 CST 2020","59445","","test_onu_gemport","","","","测试mapping-mode为vlan_pri","
+    用例描述
+    测试目的： 测试mapping-mode is vlan+pri, mapping 为vlan2000+pri2时，vlan2000+2和vlan200+3和vlan2001+pri2的报文上下行是否都正常
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:修改gemport配置为vlan 2000
+    步骤4:配置虚端口vlan2000透传，vlan2001透传
+    步骤5:打流测试
+    测试方法：上下行各发送三条流：vlan2000 pri2和 vlan2000 pri3 ；发送vlan 2001 pri2
+    结果：结果：vlan 2000 pri2的上下行都能通；vlan2000 pri3下行能通，vlan2000 pri3上行不通;vlan 2001上下行都不通
+
+    "
+"failed","Thu Jul 09 21:39:40 CST 2020","Thu Jul 09 21:40:40 CST 2020","59752","","test_onu_gemport","","","","测试mapping为transaprent","
+    用例描述
+    测试目的： 测试mapping-mode is vlan , mapping 为transparent时，vlan2000和vlan2001的报文上下行是都正常
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:修改gemport配置为transparent
+    步骤4:配置虚端口vlan2000透传，vlan2001透传
+    步骤5:打流测试
+    1）上下行发vlan2000和vlan2001的报文
+    预期结果：上下行报文正常通
+
+    "
+"broken","Wed Jul 08 11:40:10 CST 2020","Wed Jul 08 11:40:10 CST 2020","0","","test_onu_gemport","","","","test_warn",""
+"broken","Fri Jul 10 09:06:12 CST 2020","Fri Jul 10 09:06:12 CST 2020","0","","test_onu_limitrate","","","","测试onu端口入口限速","
+    用例描述
+    测试目的： 测试onu端口上行限速是否正常
+    测试步骤：
+    步骤1: 发现未注册的ONU
+    步骤2: 在OLT上通过SN的方式将ONU注册上线
+    步骤3: 配置onu端口的入口的速率（traffic-profile 1:
+           traffic-profile  profile-id 1 profile-name inbound_limit cir 20480 pir 30960 cbs 2000 pbs 2000)
+    步骤4: 配置虚端口vlan2000透传
+    步骤5: 打流测试
+    测试方法: 上下行各发送流：vlan2000 (速率为端口速率的10%)
+    预期结果: 上下行正常通，下行不限速，上行限速30M
+
+    "
+"failed","Thu Jul 09 20:57:49 CST 2020","Thu Jul 09 20:58:49 CST 2020","60079","","test_onu_auth_type","","","","LOID认证","
+    用例描述：
+    ONU通过LOID的方式认证。
+    例如：
+    ont add 1 1 loid-auth 12345678 ont-lineprofile-id 1 ont-srvprofile-id 1
+    "
+"passed","Thu Jul 09 20:21:46 CST 2020","Thu Jul 09 20:22:31 CST 2020","45288","","test_onu_auth_type","","","","SN的PASSWORD认证","
+    用例描述：
+    SN的PASSWORD认证。
+    例如：
+    ont add 1 1 password-auth 12345678 ont-lineprofile-id 1 ont-srvprofile-id 1
+    "
+"passed","Thu Jul 09 16:15:37 CST 2020","Thu Jul 09 16:16:59 CST 2020","82552","","test_onu_vlan","","","","测试onu端口vlan为trunk","
+    用例描述
+    测试目的： 测试onu端口为trunk，测试上下行流vlan2000-2007是否正常
+    测试步骤：
+    步骤1: 发现未注册的ONU
+    步骤2: 在OLT上通过SN的方式将ONU注册上线
+    步骤3：配置onu端口vlan为trunk 2000-2007
+    步骤4：添加虚端口vlan透传2000,2001,2002,2003,2004,2005,2006,2007,2008
+    步骤5：打流测试
+    1）上下行发vlan2000-2008的流9条
+    预期结果: 上下行vlan2000-2008的流量正常通,2009流上下行不通
+    步骤6：onu端口vlan恢复为transparent
+    "
+"failed","Thu Jul 09 21:15:26 CST 2020","Thu Jul 09 21:16:26 CST 2020","59891","","test_onu_auth_type","","","","LOID+PASSWORD认证","
+    用例描述：
+    ONU通过SN的方式认证。
+    例如：
+    ont add 1 1 loid-auth 12345678 password-auth 12345678 ont-lineprofile-id 1 ont-srvprofile-id 1
+    "
+"failed","Fri Jul 10 09:08:38 CST 2020","Fri Jul 10 09:09:37 CST 2020","59232","","test_onu_limitrate","","","","测试onu端口入口限速","
+    用例描述
+    测试目的： 测试onu端口上行限速是否正常
+    测试步骤：
+    步骤1: 发现未注册的ONU
+    步骤2: 在OLT上通过SN的方式将ONU注册上线
+    步骤3: 配置onu端口的入口的速率（traffic-profile 1:
+           traffic-profile  profile-id 1 profile-name inbound_limit cir 20480 pir 30960 cbs 2000 pbs 2000)
+    步骤4: 配置虚端口vlan2000透传
+    步骤5: 打流测试
+    测试方法: 上下行各发送流：vlan2000 (速率为端口速率的10%)
+    预期结果: 上下行正常通，下行不限速，上行限速30M
+
+    "
+"broken","Fri Jul 10 09:06:12 CST 2020","Fri Jul 10 09:06:12 CST 2020","0","","test_onu_internet_type","","","","静态IP测试","
+    用例描述：
+    测试PC是否可以通过静态IP的方式上网。
+    "
+"failed","Thu Jul 09 21:06:37 CST 2020","Thu Jul 09 21:07:36 CST 2020","59379","","test_onu_auth_type","","","","LOID+PASSWORD认证","
+    用例描述：
+    ONU通过SN的方式认证。
+    例如：
+    ont add 1 1 loid-auth 12345678 password-auth 12345678 ont-lineprofile-id 1 ont-srvprofile-id 1
+    "
+"passed","Thu Jul 09 17:41:35 CST 2020","Thu Jul 09 17:42:48 CST 2020","73027","","test_onu_multicast","","","","测试onu组播正常通的情况","
+    用例描述
+    测试目的：ont为snooping模式（mvlan为3000，ip 239.1.1.1）,onu的native-vlan为3000，测试onu为snooping模式下组播239.1.1.1是否通
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:配置onu端口native-vlan为3000
+    步骤4:添加虚端口vlan透传3000
+    步骤5:onu端口绑定组播模板200（mvlan3000 ,ip 239.1.1.1 ,dynamic acl）
+    步骤6:打流测试
+    1）服务端发送数据流239.1.1.1，查看onu端口是否收到组播数据流239.1.1.1
+    预期结果:onu端口无法收到组播数据流
+    2）客户端发送report报文加入组播239.1.1.1 ，然后服务端口发送组播239.1.1.1的数据流(带tag3000)，10秒后，停止发流
+    预期结果:服务端收到report报文，客户端收到组播数据流239.1.1.1
+    3)客户端端口发送离开报文，离开组播组239.1.1.1
+    预期结果：客户端接收不到数据
+    "
+"passed","Thu Jul 09 20:15:38 CST 2020","Thu Jul 09 20:16:30 CST 2020","51947","","test_onu_auth_type","","","","SN认证","
+    用例描述：
+    ONU通过SN的方式认证。
+    例如：
+    ont add 1 1 sn-auth TEST12345678 ont-lineprofile-id 1 ont-srvprofile-id 1
+    "
+"failed","Thu Jul 09 21:37:28 CST 2020","Thu Jul 09 21:38:27 CST 2020","59303","","test_onu_gemport","","","","测试mapping为transaprent","
+    用例描述
+    测试目的： 测试mapping-mode is vlan , mapping 为transparent时，vlan2000和vlan2001的报文上下行是都正常
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:修改gemport配置为transparent
+    步骤4:配置虚端口vlan2000透传，vlan2001透传
+    步骤5:打流测试
+    1）上下行发vlan2000和vlan2001的报文
+    预期结果：上下行报文正常通
+
+    "
+"failed","Thu Jul 09 21:04:25 CST 2020","Thu Jul 09 21:05:24 CST 2020","59429","","test_onu_auth_type","","","","LOID+PASSWORD认证","
+    用例描述：
+    ONU通过SN的方式认证。
+    例如：
+    ont add 1 1 loid-auth 12345678 password-auth 12345678 ont-lineprofile-id 1 ont-srvprofile-id 1
+    "
+"passed","Tue Jul 14 10:33:07 CST 2020","Tue Jul 14 10:33:56 CST 2020","48509","","test_onu_gemport","","","","测试mapping为transaprent","
+    用例描述
+    测试目的： 测试mapping-mode is vlan , mapping 为transparent时，vlan2000和vlan2001的报文上下行是都正常
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:修改gemport配置为transparent
+    步骤4:配置虚端口vlan2000透传，vlan2001透传
+    步骤5:打流测试
+    1）上下行发vlan2000和vlan2001的报文
+    预期结果：上下行报文正常通
+
+    "
+"passed","Thu Jul 09 20:43:55 CST 2020","Thu Jul 09 20:44:48 CST 2020","52993","","test_onu_auth_type","","","","LOID认证","
+    用例描述：
+    ONU通过LOID的方式认证。
+    例如：
+    ont add 1 1 loid-auth 12345678 ont-lineprofile-id 1 ont-srvprofile-id 1
+    "
+"passed","Thu Jul 09 16:09:05 CST 2020","Thu Jul 09 16:10:18 CST 2020","72900","","test_onu_vlan","","","","测试onu端口vlan为trunk","
+    用例描述
+    测试目的： 测试onu端口为trunk，测试上下行流vlan2000-2007是否正常
+    测试步骤：
+    步骤1: 发现未注册的ONU
+    步骤2: 在OLT上通过SN的方式将ONU注册上线
+    步骤3：配置onu端口vlan为trunk 2000-2007
+    步骤4：添加虚端口vlan透传2000,2001,2002,2003,2004,2005,2006,2007,2008
+    步骤5：打流测试
+    1）上下行发vlan2000-2008的流9条
+    预期结果: 上下行vlan2000-2008的流量正常通,2009流上下行不通
+    步骤6：onu端口vlan恢复为transparent
+    "
+"broken","Fri Jul 10 09:06:12 CST 2020","Fri Jul 10 09:06:12 CST 2020","0","","test_onu_internet_type","","","","PPPoE拨号测试","
+    用例描述：
+    测试PC是否可以通过PPPoE方式上网。
+    "
+"passed","Tue Jul 14 10:35:23 CST 2020","Tue Jul 14 10:36:04 CST 2020","40740","","test_onu_gemport","","","","测试mapping-mode为vlan_pri","
+    用例描述
+    测试目的： 测试mapping-mode is vlan+pri, mapping 为vlan2000+pri2时，vlan2000+2和vlan200+3和vlan2001+pri2的报文上下行是否都正常
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:修改gemport配置为vlan 2000+pri2
+    步骤4:配置虚端口vlan2000透传，vlan2001透传
+    步骤5:打流测试
+    测试方法：上下行各发送三条流：vlan2000 pri2和 vlan2000 pri3 ；发送vlan 2001 pri2
+    结果：结果：vlan 2000 pri2的上下行都能通；vlan2000 pri3下行能通，vlan2000 pri3上行不通;vlan 2001上下行都不通
+    "
+"failed","Fri Jul 10 09:10:50 CST 2020","Fri Jul 10 09:11:49 CST 2020","59480","","test_onu_limitrate","","","","测试onu端口入口限速","
+    用例描述
+    测试目的： 测试onu端口上行限速是否正常
+    测试步骤：
+    步骤1: 发现未注册的ONU
+    步骤2: 在OLT上通过SN的方式将ONU注册上线
+    步骤3: 配置onu端口的入口的速率（traffic-profile 1:
+           traffic-profile  profile-id 1 profile-name inbound_limit cir 20480 pir 30960 cbs 2000 pbs 2000)
+    步骤4: 配置虚端口vlan2000透传
+    步骤5: 打流测试
+    测试方法: 上下行各发送流：vlan2000 (速率为端口速率的10%)
+    预期结果: 上下行正常通，下行不限速，上行限速30M
+
+    "
+"passed","Thu Jul 09 17:50:09 CST 2020","Thu Jul 09 17:51:19 CST 2020","69876","","test_onu_multicast","","","","测试onu组播正常通的情况","
+    用例描述
+    测试目的：ont为snooping模式（mvlan为3000，ip 239.1.1.1）,onu的native-vlan为3000，测试onu为snooping模式下组播239.1.1.1是否通
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:配置onu端口native-vlan为3000
+    步骤4:添加虚端口vlan透传3000
+    步骤5:onu端口绑定组播模板200（mvlan3000 ,ip 239.1.1.1 ,dynamic acl）
+    步骤6:打流测试
+    1）服务端发送数据流239.1.1.1，查看onu端口是否收到组播数据流239.1.1.1
+    预期结果:onu端口无法收到组播数据流
+    2）客户端发送report报文加入组播239.1.1.1 ，然后服务端口发送组播239.1.1.1的数据流(带tag3000)，10秒后，停止发流
+    预期结果:服务端收到report报文，客户端收到组播数据流239.1.1.1
+    3)客户端端口发送离开报文，离开组播组239.1.1.1
+    预期结果：客户端接收不到数据
+    "
+"passed","Thu Jul 09 19:07:53 CST 2020","Thu Jul 09 19:09:09 CST 2020","75703","","test_onu_multicast","","","","测试onu跨组播vlan","
+    用例描述
+    测试目的：ont为snooping模式（mvlan为3000，ip 239.1.1.1）,onu的native-vlan为2000，测试onu的跨组播vlan是否正常的
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:配置onu端口native-vlan为2000
+    步骤4:添加虚端口vlan透传2000
+    步骤5:onu端口绑定组播模板200（mvlan3000 ,ip 239.1.1.1 ,dynamic acl）
+    步骤6:打流测试
+    1）客户端发送report报文加入组播239.1.1.1 ，然后服务端口发送组播239.1.1.1的数据流，10秒后，停止发流
+    预期结果：服务端收到report报文，客户端收到组播数据流239.1.1.1
+    2)服务端发送组播数据流，客户端发送离开报文，离开组播组239.1.1.1
+    预期结果：客户端接收不到数据
+
+    "
+"passed","Tue Jul 14 10:19:39 CST 2020","Tue Jul 14 10:20:54 CST 2020","75599","","test_onu_multicast","","","","测试onu组播正常通的情况","
+    用例描述
+    测试目的：ont为snooping模式（mvlan为3000，ip 239.1.1.1）,onu的native-vlan为3000，测试onu为snooping模式下组播239.1.1.1是否通
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:配置onu端口native-vlan为3000
+    步骤4:添加虚端口vlan透传3000
+    步骤5:onu端口绑定组播模板200（mvlan3000 ,ip 239.1.1.1 ,dynamic acl）
+    步骤6:打流测试
+    1）服务端发送数据流239.1.1.1，查看onu端口是否收到组播数据流239.1.1.1
+    预期结果:onu端口无法收到组播数据流
+    2）客户端发送report报文加入组播239.1.1.1 ，然后服务端口发送组播239.1.1.1的数据流(带tag3000)，10秒后，停止发流
+    预期结果:服务端收到report报文，客户端收到组播数据流239.1.1.1
+    3)客户端端口发送离开报文，离开组播组239.1.1.1
+    预期结果：客户端接收不到数据
+    "
+"passed","Thu Jul 09 15:57:21 CST 2020","Thu Jul 09 15:58:19 CST 2020","57736","","test_onu_vlan","","","","测试onu端口vlan为transparent","
+    用例描述
+    测试目的： 测试onu端口为transparent，测试上下行流vlan2000-2001是否正常
+    测试步骤：
+    步骤1: 发现未注册的ONU
+    步骤2: 在OLT上通过SN的方式将ONU注册上线
+    步骤3: 配置onu端口vlan为transparent
+    步骤4: 添加虚端口vlan透传2000,2001
+    步骤5：打流测试
+    1）上下行发vlan2000和2001的流两条
+    预期结果: 上下行vlan2000-2001的流量正常通
+    "
+"failed","Thu Jul 09 23:03:27 CST 2020","Thu Jul 09 23:04:27 CST 2020","59933","","test_onu_gemport","","","","测试mapping-mode为port","
+    用例描述
+    测试目的： 测试mapping-mode is port, mapping 为port2时，往onu的port1 上下行发送vlan 2000的报文是否都正常
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:修改gemport配置为vlan 2000
+    步骤4:配置虚端口vlan2000透传
+    步骤5:打流测试
+    测试方法：上下行各发送两条流：vlan2000 pri2和 vlan2000 pri3
+    结果：上下行都不通
+
+    "
+"passed","Thu Jul 09 14:00:01 CST 2020","Thu Jul 09 14:01:23 CST 2020","82404","","test_onu_multicast","","","","测试onu跨组播vlan","
+    用例描述
+    测试目的：ont为snooping模式（mvlan为3000，ip 239.1.1.1）,onu的native-vlan为2000，测试onu的跨组播vlan是否正常的
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:配置onu端口native-vlan为2000
+    步骤4:添加虚端口vlan透传2000
+    步骤5:onu端口绑定组播模板200（mvlan3000 ,ip 239.1.1.1 ,dynamic acl）
+    步骤6:打流测试
+    1）客户端发送report报文加入组播239.1.1.1 ，然后服务端口发送组播239.1.1.1的数据流，10秒后，停止发流
+    预期结果：服务端收到report报文，客户端收到组播数据流239.1.1.1
+    2)服务端发送组播数据流，客户端发送离开报文，离开组播组239.1.1.1
+    预期结果：客户端接收不到数据
+
+    "
+"failed","Thu Jul 09 21:22:03 CST 2020","Thu Jul 09 21:23:03 CST 2020","60081","","test_onu_auth_type","","","","LOID+PASSWORD认证","
+    用例描述：
+    ONU通过SN的方式认证。
+    例如：
+    ont add 1 1 loid-auth 12345678 password-auth 12345678 ont-lineprofile-id 1 ont-srvprofile-id 1
+    "
+"failed","Thu Jul 09 22:45:49 CST 2020","Thu Jul 09 22:46:49 CST 2020","60004","","test_onu_gemport","","","","测试mapping-mode为pri","
+    用例描述
+    测试目的： 测试mapping-mode is pri, mapping 为pri2时，vlan2000+2和vlan2000+3报文上下行是否都正常
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:修改gemport配置为vlan 2000
+    步骤4:配置虚端口vlan2000透传
+    步骤5:打流测试
+    测试方法：上下行各发送两条流：vlan2000 pri2和 vlan2000 pri3
+    结果：pri2的上下行都能通；pri3下行能通，上行不通
+
+    "
+"failed","Thu Jul 09 22:50:14 CST 2020","Thu Jul 09 22:51:14 CST 2020","59414","","test_onu_gemport","","","","测试mapping-mode为pri","
+    用例描述
+    测试目的： 测试mapping-mode is pri, mapping 为pri2时，vlan2000+2和vlan2000+3报文上下行是否都正常
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:修改gemport配置为vlan 2000
+    步骤4:配置虚端口vlan2000透传
+    步骤5:打流测试
+    测试方法：上下行各发送两条流：vlan2000 pri2和 vlan2000 pri3
+    结果：pri2的上下行都能通；pri3下行能通，上行不通
+
+    "
+"passed","Fri Jul 10 09:28:10 CST 2020","Fri Jul 10 09:29:42 CST 2020","92137","","test_onu_limitrate","","","","测试onu端口出口限速","
+    用例描述
+    测试目的： 测试onu端口上行限速是否正常
+    测试步骤：
+    步骤1: 发现未注册的ONU
+    步骤2: 在OLT上通过SN的方式将ONU注册上线
+    步骤3: 配置onu端口的入口的速率（traffic-profile 2:
+           traffic-profile  profile-id 2 profile-name outbound_limit cir 10240 pir 20480 cbs 2000 pbs 2000)
+    步骤4: 配置虚端口vlan2000透传
+    步骤5: 打流测试
+    测试方法: 上下行各发送流：vlan2000 (速率为端口速率的10%)
+    预期结果: 上下行正常通，上行不限速，下行限速20M
+
+    "
+"passed","Thu Jul 09 20:05:29 CST 2020","Thu Jul 09 20:05:40 CST 2020","10906","","test_get_ont_info","","","","查看ONU的信息上报","
+    用例描述：
+    查看ONU上报的基本信息。
+    例如：
+    show ont info 1 1
+    show ont version 1 1
+    show ont capability 1 1
+    show ont optical-info 1 1
+    "
+"failed","Thu Jul 09 22:34:48 CST 2020","Thu Jul 09 22:35:48 CST 2020","60012","","test_onu_gemport","","","","测试mapping-mode为pri","
+    用例描述
+    测试目的： 测试mapping-mode is pri, mapping 为pri2时，vlan2000+2和vlan2000+3报文上下行是否都正常
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:修改gemport配置为vlan 2000
+    步骤4:配置虚端口vlan2000透传
+    步骤5:打流测试
+    测试方法：上下行各发送两条流：vlan2000 pri2和 vlan2000 pri3
+    结果：pri2的上下行都能通；pri3下行能通，上行不通
+
+    "
+"failed","Thu Jul 09 22:23:46 CST 2020","Thu Jul 09 22:24:46 CST 2020","59445","","test_onu_gemport","","","","测试mapping-mode为vlan_pri","
+    用例描述
+    测试目的： 测试mapping-mode is vlan+pri, mapping 为vlan2000+pri2时，vlan2000+2和vlan200+3和vlan2001+pri2的报文上下行是否都正常
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:修改gemport配置为vlan 2000
+    步骤4:配置虚端口vlan2000透传，vlan2001透传
+    步骤5:打流测试
+    测试方法：上下行各发送三条流：vlan2000 pri2和 vlan2000 pri3 ；发送vlan 2001 pri2
+    结果：结果：vlan 2000 pri2的上下行都能通；vlan2000 pri3下行能通，vlan2000 pri3上行不通;vlan 2001上下行都不通
+
+    "
+"passed","Fri Jul 10 09:35:45 CST 2020","Fri Jul 10 09:37:11 CST 2020","86654","","test_onu_limitrate","","","","测试onu端口出口限速","
+    用例描述
+    测试目的： 测试onu端口上行限速是否正常
+    测试步骤：
+    步骤1: 发现未注册的ONU
+    步骤2: 在OLT上通过SN的方式将ONU注册上线
+    步骤3: 配置onu端口的入口的速率（traffic-profile 2:
+           traffic-profile  profile-id 2 profile-name outbound_limit cir 10240 pir 20480 cbs 2000 pbs 2000)
+    步骤4: 配置虚端口vlan2000透传
+    步骤5: 打流测试
+    测试方法: 上下行各发送流：vlan2000 (速率为端口速率的10%)
+    预期结果: 上下行正常通，上行不限速，下行限速20M
+
+    "
+"passed","Thu Jul 09 20:28:02 CST 2020","Thu Jul 09 20:28:56 CST 2020","54154","","test_onu_auth_type","","","","SN的PASSWORD认证","
+    用例描述：
+    SN的PASSWORD认证。
+    例如：
+    ont add 1 1 password-auth 12345678 ont-lineprofile-id 1 ont-srvprofile-id 1
+    "
+"failed","Fri Jul 10 09:13:04 CST 2020","Fri Jul 10 09:14:03 CST 2020","59349","","test_onu_limitrate","","","","测试onu端口入口限速","
+    用例描述
+    测试目的： 测试onu端口上行限速是否正常
+    测试步骤：
+    步骤1: 发现未注册的ONU
+    步骤2: 在OLT上通过SN的方式将ONU注册上线
+    步骤3: 配置onu端口的入口的速率（traffic-profile 1:
+           traffic-profile  profile-id 1 profile-name inbound_limit cir 20480 pir 30960 cbs 2000 pbs 2000)
+    步骤4: 配置虚端口vlan2000透传
+    步骤5: 打流测试
+    测试方法: 上下行各发送流：vlan2000 (速率为端口速率的10%)
+    预期结果: 上下行正常通，下行不限速，上行限速30M
+
+    "
+"failed","Thu Jul 09 21:02:13 CST 2020","Thu Jul 09 21:03:13 CST 2020","59441","","test_onu_auth_type","","","","LOID认证","
+    用例描述：
+    ONU通过LOID的方式认证。
+    例如：
+    ont add 1 1 loid-auth 12345678 ont-lineprofile-id 1 ont-srvprofile-id 1
+    "
+"passed","Thu Jul 09 20:33:06 CST 2020","Thu Jul 09 20:34:02 CST 2020","55629","","test_onu_auth_type","","","","SN+PASSWORD认证","
+    用例描述：
+    ONU通过SN+PASSWORD的方式认证。
+    例如：
+    ont add 1 1 sn-auth TEST12345678 password-auth 12345678 ont-lineprofile-id 1 ont-srvprofile-id 1
+    "
+"passed","Thu Jul 09 19:11:14 CST 2020","Thu Jul 09 19:12:27 CST 2020","73705","","test_onu_multicast","","","","测试onu跨组播vlan","
+    用例描述
+    测试目的：ont为snooping模式（mvlan为3000，ip 239.1.1.1）,onu的native-vlan为2000，测试onu的跨组播vlan是否正常的
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:配置onu端口native-vlan为2000
+    步骤4:添加虚端口vlan透传2000
+    步骤5:onu端口绑定组播模板200（mvlan3000 ,ip 239.1.1.1 ,dynamic acl）
+    步骤6:打流测试
+    1）客户端发送report报文加入组播239.1.1.1 ，然后服务端口发送组播239.1.1.1的数据流，10秒后，停止发流
+    预期结果：服务端收到report报文，客户端收到组播数据流239.1.1.1
+    2)服务端发送组播数据流，客户端发送离开报文，离开组播组239.1.1.1
+    预期结果：客户端接收不到数据
+
+    "
+"failed","Thu Jul 09 20:55:36 CST 2020","Thu Jul 09 20:56:36 CST 2020","59866","","test_onu_auth_type","","","","LOID认证","
+    用例描述：
+    ONU通过LOID的方式认证。
+    例如：
+    ont add 1 1 loid-auth 12345678 ont-lineprofile-id 1 ont-srvprofile-id 1
+    "
+"failed","Wed Jul 08 15:44:06 CST 2020","Wed Jul 08 15:44:17 CST 2020","10608","","test_onu_auth_type","","","","LOID+PASSWORD认证","
+    用例描述：
+    ONU通过SN的方式认证。
+    例如：
+    ont add 1 1 loid-auth 12345678 password-auth 12345678 ont-lineprofile-id 1 ont-srvprofile-id 1
+    "
+"failed","Thu Jul 09 22:03:57 CST 2020","Thu Jul 09 22:04:57 CST 2020","59840","","test_onu_gemport","","","","测试mapping-mode为vlan","
+    用例描述
+    测试目的： 测试mapping-mode is vlan , mapping 为vlan2000时，vlan2000的报文上下行是否都正常,vlan2001上下行报文是否不通
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:修改gemport配置为vlan 2000
+    步骤4:配置虚端口vlan2000透传，vlan2001透传
+    步骤5:打流测试
+    测试方法：上下行发流量测试，发送两条流vlan 2000，和vlan2001
+    结果：vlan2000的能通，vlan2001的不通
+
+    "
+"passed","Thu Jul 09 20:04:57 CST 2020","Thu Jul 09 20:05:08 CST 2020","10940","","test_get_ont_info","","","","查看ONU的信息上报","
+    用例描述：
+    查看ONU上报的基本信息。
+    例如：
+    show ont info 1 1
+    show ont version 1 1
+    show ont capability 1 1
+    show ont optical-info 1 1
+    "
+"failed","Thu Jul 09 23:10:03 CST 2020","Thu Jul 09 23:11:02 CST 2020","59471","","test_onu_gemport","","","","测试mapping-mode为port","
+    用例描述
+    测试目的： 测试mapping-mode is port, mapping 为port2时，往onu的port1 上下行发送vlan 2000的报文是否都正常
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:修改gemport配置为vlan 2000
+    步骤4:配置虚端口vlan2000透传
+    步骤5:打流测试
+    测试方法：上下行各发送两条流：vlan2000 pri2和 vlan2000 pri3
+    结果：上下行都不通
+
+    "
+"passed","Thu Jul 09 16:17:21 CST 2020","Thu Jul 09 16:18:36 CST 2020","75274","","test_onu_vlan","","","","测试onu端口vlan为trunk","
+    用例描述
+    测试目的： 测试onu端口为trunk，测试上下行流vlan2000-2007是否正常
+    测试步骤：
+    步骤1: 发现未注册的ONU
+    步骤2: 在OLT上通过SN的方式将ONU注册上线
+    步骤3：配置onu端口vlan为trunk 2000-2007
+    步骤4：添加虚端口vlan透传2000,2001,2002,2003,2004,2005,2006,2007,2008
+    步骤5：打流测试
+    1）上下行发vlan2000-2008的流9条
+    预期结果: 上下行vlan2000-2008的流量正常通,2009流上下行不通
+    步骤6：onu端口vlan恢复为transparent
+    "
+"passed","Thu Jul 09 17:56:25 CST 2020","Thu Jul 09 17:57:32 CST 2020","66725","","test_onu_multicast","","","","测试onu组播正常通的情况","
+    用例描述
+    测试目的：ont为snooping模式（mvlan为3000，ip 239.1.1.1）,onu的native-vlan为3000，测试onu为snooping模式下组播239.1.1.1是否通
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:配置onu端口native-vlan为3000
+    步骤4:添加虚端口vlan透传3000
+    步骤5:onu端口绑定组播模板200（mvlan3000 ,ip 239.1.1.1 ,dynamic acl）
+    步骤6:打流测试
+    1）服务端发送数据流239.1.1.1，查看onu端口是否收到组播数据流239.1.1.1
+    预期结果:onu端口无法收到组播数据流
+    2）客户端发送report报文加入组播239.1.1.1 ，然后服务端口发送组播239.1.1.1的数据流(带tag3000)，10秒后，停止发流
+    预期结果:服务端收到report报文，客户端收到组播数据流239.1.1.1
+    3)客户端端口发送离开报文，离开组播组239.1.1.1
+    预期结果：客户端接收不到数据
+    "
+"failed","Thu Jul 09 22:08:22 CST 2020","Thu Jul 09 22:09:21 CST 2020","59508","","test_onu_gemport","","","","测试mapping-mode为vlan","
+    用例描述
+    测试目的： 测试mapping-mode is vlan , mapping 为vlan2000时，vlan2000的报文上下行是否都正常,vlan2001上下行报文是否不通
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:修改gemport配置为vlan 2000
+    步骤4:配置虚端口vlan2000透传，vlan2001透传
+    步骤5:打流测试
+    测试方法：上下行发流量测试，发送两条流vlan 2000，和vlan2001
+    结果：vlan2000的能通，vlan2001的不通
+
+    "
+"passed","Thu Jul 09 19:06:17 CST 2020","Thu Jul 09 19:07:32 CST 2020","74689","","test_onu_multicast","","","","测试onu跨组播vlan","
+    用例描述
+    测试目的：ont为snooping模式（mvlan为3000，ip 239.1.1.1）,onu的native-vlan为2000，测试onu的跨组播vlan是否正常的
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:配置onu端口native-vlan为2000
+    步骤4:添加虚端口vlan透传2000
+    步骤5:onu端口绑定组播模板200（mvlan3000 ,ip 239.1.1.1 ,dynamic acl）
+    步骤6:打流测试
+    1）客户端发送report报文加入组播239.1.1.1 ，然后服务端口发送组播239.1.1.1的数据流，10秒后，停止发流
+    预期结果：服务端收到report报文，客户端收到组播数据流239.1.1.1
+    2)服务端发送组播数据流，客户端发送离开报文，离开组播组239.1.1.1
+    预期结果：客户端接收不到数据
+
+    "
+"failed","Thu Jul 09 21:55:08 CST 2020","Thu Jul 09 21:56:08 CST 2020","59685","","test_onu_gemport","","","","测试mapping-mode为vlan","
+    用例描述
+    测试目的： 测试mapping-mode is vlan , mapping 为vlan2000时，vlan2000的报文上下行是否都正常,vlan2001上下行报文是否不通
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:修改gemport配置为vlan 2000
+    步骤4:配置虚端口vlan2000透传，vlan2001透传
+    步骤5:打流测试
+    测试方法：上下行发流量测试，发送两条流vlan 2000，和vlan2001
+    结果：vlan2000的能通，vlan2001的不通
+
+    "
+"broken","Wed Jul 08 11:40:10 CST 2020","Wed Jul 08 11:40:10 CST 2020","0","","test_onu_gemport","","","","test_error",""
+"failed","Thu Jul 09 20:49:00 CST 2020","Thu Jul 09 20:49:59 CST 2020","59478","","test_onu_auth_type","","","","LOID认证","
+    用例描述：
+    ONU通过LOID的方式认证。
+    例如：
+    ont add 1 1 loid-auth 12345678 ont-lineprofile-id 1 ont-srvprofile-id 1
+    "
+"failed","Thu Jul 09 23:21:03 CST 2020","Thu Jul 09 23:22:02 CST 2020","59387","","test_onu_internet_type","","","","DHCP测试","
+    用例描述：
+    测试PC是否可以通过DHCP方式上网。
+    "
+"passed","Thu Jul 09 15:56:01 CST 2020","Thu Jul 09 15:56:59 CST 2020","57418","","test_onu_vlan","","","","测试onu端口vlan为transparent","
+    用例描述
+    测试目的： 测试onu端口为transparent，测试上下行流vlan2000-2001是否正常
+    测试步骤：
+    步骤1: 发现未注册的ONU
+    步骤2: 在OLT上通过SN的方式将ONU注册上线
+    步骤3: 配置onu端口vlan为transparent
+    步骤4: 添加虚端口vlan透传2000,2001
+    步骤5：打流测试
+    1）上下行发vlan2000和2001的流两条
+    预期结果: 上下行vlan2000-2001的流量正常通
+    "
+"skipped","Wed Jul 08 09:42:33 CST 2020","Wed Jul 08 09:42:33 CST 2020","0","","test_onu_mgt","","","","OMCI升级ONU","
+    用例描述：
+    通过OMCI升级ONU。
+    例如：
+    load file tftp 192.168.5.100 FD514GB-G_V1.0.1_190909_1158_X000.bin
+    ont load select 0/0 1 1
+    ont load start 0/0 FD514GB-G_V1.0.1_190909_1158_X000.bin activemode immediate
+    "
+"passed","Fri Jul 10 09:37:38 CST 2020","Fri Jul 10 09:39:12 CST 2020","94052","","test_onu_limitrate","","","","测试onu端口出口限速","
+    用例描述
+    测试目的： 测试onu端口上行限速是否正常
+    测试步骤：
+    步骤1: 发现未注册的ONU
+    步骤2: 在OLT上通过SN的方式将ONU注册上线
+    步骤3: 配置onu端口的入口的速率（traffic-profile 2:
+           traffic-profile  profile-id 2 profile-name outbound_limit cir 10240 pir 20480 cbs 2000 pbs 2000)
+    步骤4: 配置虚端口vlan2000透传
+    步骤5: 打流测试
+    测试方法: 上下行各发送流：vlan2000 (速率为端口速率的10%)
+    预期结果: 上下行正常通，上行不限速，下行限速20M
+
+    "
+"passed","Thu Jul 09 15:35:44 CST 2020","Thu Jul 09 15:36:25 CST 2020","40743","","test_onu_mac_learn","","","","onu mac地址上报测试","
+    用例描述
+    测试目的： 测试onu端口mac地址学习是否正常
+    测试步骤：
+    步骤1: 发现未注册的ONU
+    步骤2: 在OLT上通过SN的方式将ONU注册上线
+    步骤3: 配置虚端口vlan2000透传
+    步骤4: 打流测试,查看onu端口mac地址表
+    测试方法: 上下行各发送流00:00:00:22:22:21递增5条，在olt上查看onu端口mac地址表
+    预期结果: 上下行正常通，在olt上查看onu端口mac地址表有5条（00:00:00:22:22:21递增5条）
+    "
+"passed","Thu Jul 09 18:59:44 CST 2020","Thu Jul 09 19:00:54 CST 2020","70524","","test_onu_multicast","","","","测试onu跨组播vlan","
+    用例描述
+    测试目的：ont为snooping模式（mvlan为3000，ip 239.1.1.1）,onu的native-vlan为2000，测试onu的跨组播vlan是否正常的
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:配置onu端口native-vlan为2000
+    步骤4:添加虚端口vlan透传2000
+    步骤5:onu端口绑定组播模板200（mvlan3000 ,ip 239.1.1.1 ,dynamic acl）
+    步骤6:打流测试
+    1）客户端发送report报文加入组播239.1.1.1 ，然后服务端口发送组播239.1.1.1的数据流，10秒后，停止发流
+    预期结果：服务端收到report报文，客户端收到组播数据流239.1.1.1
+    2)服务端发送组播数据流，客户端发送离开报文，离开组播组239.1.1.1
+    预期结果：客户端接收不到数据
+
+    "
+"passed","Thu Jul 09 20:22:58 CST 2020","Thu Jul 09 20:23:51 CST 2020","53051","","test_onu_auth_type","","","","SN的PASSWORD认证","
+    用例描述：
+    SN的PASSWORD认证。
+    例如：
+    ont add 1 1 password-auth 12345678 ont-lineprofile-id 1 ont-srvprofile-id 1
+    "
+"passed","Thu Jul 09 15:33:22 CST 2020","Thu Jul 09 15:34:15 CST 2020","53211","","test_onu_mac_learn","","","","onu mac地址上报测试","
+    用例描述
+    测试目的： 测试onu端口mac地址学习是否正常
+    测试步骤：
+    步骤1: 发现未注册的ONU
+    步骤2: 在OLT上通过SN的方式将ONU注册上线
+    步骤3: 配置虚端口vlan2000透传
+    步骤4: 打流测试,查看onu端口mac地址表
+    测试方法: 上下行各发送流00:00:00:22:22:21递增5条，在olt上查看onu端口mac地址表
+    预期结果: 上下行正常通，在olt上查看onu端口mac地址表有5条（00:00:00:22:22:21递增5条）
+    "
+"passed","Thu Jul 09 16:00:01 CST 2020","Thu Jul 09 16:01:00 CST 2020","58973","","test_onu_vlan","","","","测试onu端口vlan为transparent","
+    用例描述
+    测试目的： 测试onu端口为transparent，测试上下行流vlan2000-2001是否正常
+    测试步骤：
+    步骤1: 发现未注册的ONU
+    步骤2: 在OLT上通过SN的方式将ONU注册上线
+    步骤3: 配置onu端口vlan为transparent
+    步骤4: 添加虚端口vlan透传2000,2001
+    步骤5：打流测试
+    1）上下行发vlan2000和2001的流两条
+    预期结果: 上下行vlan2000-2001的流量正常通
+    "
+"failed","Thu Jul 09 22:56:51 CST 2020","Thu Jul 09 22:57:51 CST 2020","59384","","test_onu_gemport","","","","测试mapping-mode为port","
+    用例描述
+    测试目的： 测试mapping-mode is port, mapping 为port2时，往onu的port1 上下行发送vlan 2000的报文是否都正常
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:修改gemport配置为vlan 2000
+    步骤4:配置虚端口vlan2000透传
+    步骤5:打流测试
+    测试方法：上下行各发送两条流：vlan2000 pri2和 vlan2000 pri3
+    结果：上下行都不通
+
+    "
+"failed","Thu Jul 09 23:38:41 CST 2020","Thu Jul 09 23:39:40 CST 2020","59619","","test_onu_internet_type","","","","静态IP测试","
+    用例描述：
+    测试PC是否可以通过静态IP的方式上网。
+    "
+"broken","Fri Jul 10 09:06:12 CST 2020","Fri Jul 10 09:06:12 CST 2020","0","","test_onu_internet_type","","","","PPPoE拨号测试","
+    用例描述：
+    测试PC是否可以通过PPPoE方式上网。
+    "
+"failed","Thu Jul 09 21:19:51 CST 2020","Thu Jul 09 21:20:50 CST 2020","59457","","test_onu_auth_type","","","","LOID+PASSWORD认证","
+    用例描述：
+    ONU通过SN的方式认证。
+    例如：
+    ont add 1 1 loid-auth 12345678 password-auth 12345678 ont-lineprofile-id 1 ont-srvprofile-id 1
+    "
+"passed","Wed Jul 08 15:39:29 CST 2020","Wed Jul 08 15:40:13 CST 2020","43913","","test_onu_auth_type","","","","SN认证","
+    用例描述：
+    ONU通过SN的方式认证。
+    例如：
+    ont add 1 1 sn-auth TEST12345678 ont-lineprofile-id 1 ont-srvprofile-id 1
+    "
+"passed","Wed Jul 08 15:42:54 CST 2020","Wed Jul 08 15:43:41 CST 2020","46772","","test_onu_auth_type","","","","LOID认证","
+    用例描述：
+    ONU通过LOID的方式认证。
+    例如：
+    ont add 1 1 loid-auth 12345678 ont-lineprofile-id 1 ont-srvprofile-id 1
+    "
+"broken","Fri Jul 10 09:06:12 CST 2020","Fri Jul 10 09:06:12 CST 2020","0","","test_onu_internet_type","","","","PPPoE拨号测试","
+    用例描述：
+    测试PC是否可以通过PPPoE方式上网。
+    "
+"passed","Wed Jul 08 15:41:42 CST 2020","Wed Jul 08 15:42:29 CST 2020","46834","","test_onu_auth_type","","","","SN+PASSWORD认证","
+    用例描述：
+    ONU通过SN+PASSWORD的方式认证。
+    例如：
+    ont add 1 1 sn-auth TEST12345678 password-auth 12345678 ont-lineprofile-id 1 ont-srvprofile-id 1
+    "
+"failed","Thu Jul 09 22:43:37 CST 2020","Thu Jul 09 22:44:37 CST 2020","59855","","test_onu_gemport","","","","测试mapping-mode为pri","
+    用例描述
+    测试目的： 测试mapping-mode is pri, mapping 为pri2时，vlan2000+2和vlan2000+3报文上下行是否都正常
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:修改gemport配置为vlan 2000
+    步骤4:配置虚端口vlan2000透传
+    步骤5:打流测试
+    测试方法：上下行各发送两条流：vlan2000 pri2和 vlan2000 pri3
+    结果：pri2的上下行都能通；pri3下行能通，上行不通
+
+    "
+"passed","Thu Jul 09 15:42:17 CST 2020","Thu Jul 09 15:42:58 CST 2020","41289","","test_onu_mac_learn","","","","onu mac地址上报测试","
+    用例描述
+    测试目的： 测试onu端口mac地址学习是否正常
+    测试步骤：
+    步骤1: 发现未注册的ONU
+    步骤2: 在OLT上通过SN的方式将ONU注册上线
+    步骤3: 配置虚端口vlan2000透传
+    步骤4: 打流测试,查看onu端口mac地址表
+    测试方法: 上下行各发送流00:00:00:22:22:21递增5条，在olt上查看onu端口mac地址表
+    预期结果: 上下行正常通，在olt上查看onu端口mac地址表有5条（00:00:00:22:22:21递增5条）
+    "
+"passed","Thu Jul 09 16:14:01 CST 2020","Thu Jul 09 16:15:15 CST 2020","73913","","test_onu_vlan","","","","测试onu端口vlan为trunk","
+    用例描述
+    测试目的： 测试onu端口为trunk，测试上下行流vlan2000-2007是否正常
+    测试步骤：
+    步骤1: 发现未注册的ONU
+    步骤2: 在OLT上通过SN的方式将ONU注册上线
+    步骤3：配置onu端口vlan为trunk 2000-2007
+    步骤4：添加虚端口vlan透传2000,2001,2002,2003,2004,2005,2006,2007,2008
+    步骤5：打流测试
+    1）上下行发vlan2000-2008的流9条
+    预期结果: 上下行vlan2000-2008的流量正常通,2009流上下行不通
+    步骤6：onu端口vlan恢复为transparent
+    "
+"failed","Thu Jul 09 21:52:55 CST 2020","Thu Jul 09 21:53:55 CST 2020","60303","","test_onu_gemport","","","","测试mapping-mode为vlan","
+    用例描述
+    测试目的： 测试mapping-mode is vlan , mapping 为vlan2000时，vlan2000的报文上下行是否都正常,vlan2001上下行报文是否不通
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:修改gemport配置为vlan 2000
+    步骤4:配置虚端口vlan2000透传，vlan2001透传
+    步骤5:打流测试
+    测试方法：上下行发流量测试，发送两条流vlan 2000，和vlan2001
+    结果：vlan2000的能通，vlan2001的不通
+
+    "
+"passed","Thu Jul 09 17:48:26 CST 2020","Thu Jul 09 17:49:41 CST 2020","75897","","test_onu_multicast","","","","测试onu组播正常通的情况","
+    用例描述
+    测试目的：ont为snooping模式（mvlan为3000，ip 239.1.1.1）,onu的native-vlan为3000，测试onu为snooping模式下组播239.1.1.1是否通
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:配置onu端口native-vlan为3000
+    步骤4:添加虚端口vlan透传3000
+    步骤5:onu端口绑定组播模板200（mvlan3000 ,ip 239.1.1.1 ,dynamic acl）
+    步骤6:打流测试
+    1）服务端发送数据流239.1.1.1，查看onu端口是否收到组播数据流239.1.1.1
+    预期结果:onu端口无法收到组播数据流
+    2）客户端发送report报文加入组播239.1.1.1 ，然后服务端口发送组播239.1.1.1的数据流(带tag3000)，10秒后，停止发流
+    预期结果:服务端收到report报文，客户端收到组播数据流239.1.1.1
+    3)客户端端口发送离开报文，离开组播组239.1.1.1
+    预期结果：客户端接收不到数据
+    "
+"passed","Thu Jul 09 16:10:41 CST 2020","Thu Jul 09 16:12:02 CST 2020","81415","","test_onu_vlan","","","","测试onu端口vlan为trunk","
+    用例描述
+    测试目的： 测试onu端口为trunk，测试上下行流vlan2000-2007是否正常
+    测试步骤：
+    步骤1: 发现未注册的ONU
+    步骤2: 在OLT上通过SN的方式将ONU注册上线
+    步骤3：配置onu端口vlan为trunk 2000-2007
+    步骤4：添加虚端口vlan透传2000,2001,2002,2003,2004,2005,2006,2007,2008
+    步骤5：打流测试
+    1）上下行发vlan2000-2008的流9条
+    预期结果: 上下行vlan2000-2008的流量正常通,2009流上下行不通
+    步骤6：onu端口vlan恢复为transparent
+    "
+"failed","Thu Jul 09 23:32:05 CST 2020","Thu Jul 09 23:33:04 CST 2020","59471","","test_onu_internet_type","","","","DHCP测试","
+    用例描述：
+    测试PC是否可以通过DHCP方式上网。
+    "
+"passed","Thu Jul 09 20:18:10 CST 2020","Thu Jul 09 20:18:54 CST 2020","44521","","test_onu_auth_type","","","","SN认证","
+    用例描述：
+    ONU通过SN的方式认证。
+    例如：
+    ont add 1 1 sn-auth TEST12345678 ont-lineprofile-id 1 ont-srvprofile-id 1
+    "
+"passed","Thu Jul 09 20:31:46 CST 2020","Thu Jul 09 20:32:41 CST 2020","55256","","test_onu_auth_type","","","","SN+PASSWORD认证","
+    用例描述：
+    ONU通过SN+PASSWORD的方式认证。
+    例如：
+    ont add 1 1 sn-auth TEST12345678 password-auth 12345678 ont-lineprofile-id 1 ont-srvprofile-id 1
+    "
+"passed","Thu Jul 09 20:20:33 CST 2020","Thu Jul 09 20:21:19 CST 2020","46121","","test_onu_auth_type","","","","SN的PASSWORD认证","
+    用例描述：
+    SN的PASSWORD认证。
+    例如：
+    ont add 1 1 password-auth 12345678 ont-lineprofile-id 1 ont-srvprofile-id 1
+    "
+"passed","Tue Jul 14 10:14:03 CST 2020","Tue Jul 14 10:14:53 CST 2020","49384","","test_onu_limitrate","","","","测试onu端口入口限速","
+    用例描述
+    测试目的： 测试onu端口上行限速是否正常
+    测试步骤：
+    步骤1: 发现未注册的ONU
+    步骤2: 在OLT上通过SN的方式将ONU注册上线
+    步骤3: 配置onu端口的入口的速率（traffic-profile 1:
+           traffic-profile  profile-id 1 profile-name inbound_limit cir 20480 pir 30960 cbs 2000 pbs 2000)
+    步骤4: 配置虚端口vlan2000透传
+    步骤5: 打流测试
+    测试方法: 上下行各发送流：vlan2000 (速率为端口速率的10%)
+    预期结果: 上下行正常通，下行不限速，上行限速30M
+
+    "
+"failed","Thu Jul 09 22:30:23 CST 2020","Thu Jul 09 22:31:22 CST 2020","59416","","test_onu_gemport","","","","测试mapping-mode为vlan_pri","
+    用例描述
+    测试目的： 测试mapping-mode is vlan+pri, mapping 为vlan2000+pri2时，vlan2000+2和vlan200+3和vlan2001+pri2的报文上下行是否都正常
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:修改gemport配置为vlan 2000
+    步骤4:配置虚端口vlan2000透传，vlan2001透传
+    步骤5:打流测试
+    测试方法：上下行各发送三条流：vlan2000 pri2和 vlan2000 pri3 ；发送vlan 2001 pri2
+    结果：结果：vlan 2000 pri2的上下行都能通；vlan2000 pri3下行能通，vlan2000 pri3上行不通;vlan 2001上下行都不通
+
+    "
+"failed","Thu Jul 09 16:22:37 CST 2020","Thu Jul 09 16:23:59 CST 2020","82024","","test_onu_vlan","","","","测试onu端口vlan为translate","
+    用例描述
+    测试目的： 测试onu端口为translate，translate100-107 转2000-2007,测试上下行流量是否正常
+    测试步骤：
+    步骤1: 发现未注册的ONU
+    步骤2: 在OLT上通过SN的方式将ONU注册上线
+    步骤3：配置onu端口translate(100-800)转成（2000-2007）
+    步骤4：添加虚端口vlan透传2000,2001,2002, 2003, 2004, 2005, 2006, 2007, 2008
+    步骤5：打流测试
+    1）下行发vlan2000-2008的流，上行发vlan100-108的流
+    预期结果: 下行vlan2000-2007的通，下行vlan2008的不通；上行vlan100-107的通，下行vlan108的不通
+    步骤6：onu端口vlan恢复为transparent
+    "
+"passed","Thu Jul 09 20:03:45 CST 2020","Thu Jul 09 20:03:55 CST 2020","9912","","test_get_ont_info","","","","查看ONU的信息上报","
+    用例描述：
+    查看ONU上报的基本信息。
+    例如：
+    show ont info 1 1
+    show ont version 1 1
+    show ont capability 1 1
+    show ont optical-info 1 1
+    "
+"failed","Thu Jul 09 21:11:01 CST 2020","Thu Jul 09 21:12:01 CST 2020","60110","","test_onu_auth_type","","","","LOID+PASSWORD认证","
+    用例描述：
+    ONU通过SN的方式认证。
+    例如：
+    ont add 1 1 loid-auth 12345678 password-auth 12345678 ont-lineprofile-id 1 ont-srvprofile-id 1
+    "
+"passed","Thu Jul 09 20:04:18 CST 2020","Thu Jul 09 20:04:36 CST 2020","18365","","test_get_ont_info","","","","查看ONU的信息上报","
+    用例描述：
+    查看ONU上报的基本信息。
+    例如：
+    show ont info 1 1
+    show ont version 1 1
+    show ont capability 1 1
+    show ont optical-info 1 1
+    "
+"broken","Wed Jul 08 11:40:10 CST 2020","Wed Jul 08 11:40:10 CST 2020","0","","test_onu_gemport","","","","test_info",""
+"failed","Fri Jul 10 09:17:27 CST 2020","Fri Jul 10 09:18:26 CST 2020","59307","","test_onu_limitrate","","","","测试onu端口入口限速","
+    用例描述
+    测试目的： 测试onu端口上行限速是否正常
+    测试步骤：
+    步骤1: 发现未注册的ONU
+    步骤2: 在OLT上通过SN的方式将ONU注册上线
+    步骤3: 配置onu端口的入口的速率（traffic-profile 1:
+           traffic-profile  profile-id 1 profile-name inbound_limit cir 20480 pir 30960 cbs 2000 pbs 2000)
+    步骤4: 配置虚端口vlan2000透传
+    步骤5: 打流测试
+    测试方法: 上下行各发送流：vlan2000 (速率为端口速率的10%)
+    预期结果: 上下行正常通，下行不限速，上行限速30M
+
+    "
+"failed","Thu Jul 09 22:10:34 CST 2020","Thu Jul 09 22:11:33 CST 2020","59483","","test_onu_gemport","","","","测试mapping-mode为vlan_pri","
+    用例描述
+    测试目的： 测试mapping-mode is vlan+pri, mapping 为vlan2000+pri2时，vlan2000+2和vlan200+3和vlan2001+pri2的报文上下行是否都正常
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:修改gemport配置为vlan 2000
+    步骤4:配置虚端口vlan2000透传，vlan2001透传
+    步骤5:打流测试
+    测试方法：上下行各发送三条流：vlan2000 pri2和 vlan2000 pri3 ；发送vlan 2001 pri2
+    结果：结果：vlan 2000 pri2的上下行都能通；vlan2000 pri3下行能通，vlan2000 pri3上行不通;vlan 2001上下行都不通
+
+    "
+"passed","Fri Jul 10 09:33:53 CST 2020","Fri Jul 10 09:35:19 CST 2020","86616","","test_onu_limitrate","","","","测试onu端口出口限速","
+    用例描述
+    测试目的： 测试onu端口上行限速是否正常
+    测试步骤：
+    步骤1: 发现未注册的ONU
+    步骤2: 在OLT上通过SN的方式将ONU注册上线
+    步骤3: 配置onu端口的入口的速率（traffic-profile 2:
+           traffic-profile  profile-id 2 profile-name outbound_limit cir 10240 pir 20480 cbs 2000 pbs 2000)
+    步骤4: 配置虚端口vlan2000透传
+    步骤5: 打流测试
+    测试方法: 上下行各发送流：vlan2000 (速率为端口速率的10%)
+    预期结果: 上下行正常通，上行不限速，下行限速20M
+
+    "
+"broken","Fri Jul 10 09:06:12 CST 2020","Fri Jul 10 09:06:12 CST 2020","0","","test_onu_internet_type","","","","PPPoE拨号测试","
+    用例描述：
+    测试PC是否可以通过PPPoE方式上网。
+    "
+"passed","Thu Jul 09 20:10:50 CST 2020","Thu Jul 09 20:11:41 CST 2020","50789","","test_onu_auth_type","","","","SN认证","
+    用例描述：
+    ONU通过SN的方式认证。
+    例如：
+    ont add 1 1 sn-auth TEST12345678 ont-lineprofile-id 1 ont-srvprofile-id 1
+    "
+"passed","Fri Jul 10 09:30:09 CST 2020","Fri Jul 10 09:31:34 CST 2020","84691","","test_onu_limitrate","","","","测试onu端口出口限速","
+    用例描述
+    测试目的： 测试onu端口上行限速是否正常
+    测试步骤：
+    步骤1: 发现未注册的ONU
+    步骤2: 在OLT上通过SN的方式将ONU注册上线
+    步骤3: 配置onu端口的入口的速率（traffic-profile 2:
+           traffic-profile  profile-id 2 profile-name outbound_limit cir 10240 pir 20480 cbs 2000 pbs 2000)
+    步骤4: 配置虚端口vlan2000透传
+    步骤5: 打流测试
+    测试方法: 上下行各发送流：vlan2000 (速率为端口速率的10%)
+    预期结果: 上下行正常通，上行不限速，下行限速20M
+
+    "
+"failed","Thu Jul 09 22:48:02 CST 2020","Thu Jul 09 22:49:02 CST 2020","59937","","test_onu_gemport","","","","测试mapping-mode为pri","
+    用例描述
+    测试目的： 测试mapping-mode is pri, mapping 为pri2时，vlan2000+2和vlan2000+3报文上下行是否都正常
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:修改gemport配置为vlan 2000
+    步骤4:配置虚端口vlan2000透传
+    步骤5:打流测试
+    测试方法：上下行各发送两条流：vlan2000 pri2和 vlan2000 pri3
+    结果：pri2的上下行都能通；pri3下行能通，上行不通
+
+    "
+"passed","Thu Jul 09 19:09:30 CST 2020","Thu Jul 09 19:10:50 CST 2020","80469","","test_onu_multicast","","","","测试onu跨组播vlan","
+    用例描述
+    测试目的：ont为snooping模式（mvlan为3000，ip 239.1.1.1）,onu的native-vlan为2000，测试onu的跨组播vlan是否正常的
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:配置onu端口native-vlan为2000
+    步骤4:添加虚端口vlan透传2000
+    步骤5:onu端口绑定组播模板200（mvlan3000 ,ip 239.1.1.1 ,dynamic acl）
+    步骤6:打流测试
+    1）客户端发送report报文加入组播239.1.1.1 ，然后服务端口发送组播239.1.1.1的数据流，10秒后，停止发流
+    预期结果：服务端收到report报文，客户端收到组播数据流239.1.1.1
+    2)服务端发送组播数据流，客户端发送离开报文，离开组播组239.1.1.1
+    预期结果：客户端接收不到数据
+
+    "
+"failed","Thu Jul 09 21:50:43 CST 2020","Thu Jul 09 21:51:42 CST 2020","59826","","test_onu_gemport","","","","测试mapping-mode为vlan","
+    用例描述
+    测试目的： 测试mapping-mode is vlan , mapping 为vlan2000时，vlan2000的报文上下行是否都正常,vlan2001上下行报文是否不通
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:修改gemport配置为vlan 2000
+    步骤4:配置虚端口vlan2000透传，vlan2001透传
+    步骤5:打流测试
+    测试方法：上下行发流量测试，发送两条流vlan 2000，和vlan2001
+    结果：vlan2000的能通，vlan2001的不通
+
+    "
+"passed","Thu Jul 09 19:04:41 CST 2020","Thu Jul 09 19:05:55 CST 2020","73548","","test_onu_multicast","","","","测试onu跨组播vlan","
+    用例描述
+    测试目的：ont为snooping模式（mvlan为3000，ip 239.1.1.1）,onu的native-vlan为2000，测试onu的跨组播vlan是否正常的
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:配置onu端口native-vlan为2000
+    步骤4:添加虚端口vlan透传2000
+    步骤5:onu端口绑定组播模板200（mvlan3000 ,ip 239.1.1.1 ,dynamic acl）
+    步骤6:打流测试
+    1）客户端发送report报文加入组播239.1.1.1 ，然后服务端口发送组播239.1.1.1的数据流，10秒后，停止发流
+    预期结果：服务端收到report报文，客户端收到组播数据流239.1.1.1
+    2)服务端发送组播数据流，客户端发送离开报文，离开组播组239.1.1.1
+    预期结果：客户端接收不到数据
+
+    "
+"broken","Fri Jul 10 09:06:12 CST 2020","Fri Jul 10 09:06:12 CST 2020","0","","test_onu_internet_type","","","","PPPoE拨号测试","
+    用例描述：
+    测试PC是否可以通过PPPoE方式上网。
+    "
+"failed","Thu Jul 09 23:29:52 CST 2020","Thu Jul 09 23:30:52 CST 2020","59898","","test_onu_internet_type","","","","DHCP测试","
+    用例描述：
+    测试PC是否可以通过DHCP方式上网。
+    "
+"passed","Fri Jul 10 09:32:01 CST 2020","Fri Jul 10 09:33:27 CST 2020","85731","","test_onu_limitrate","","","","测试onu端口出口限速","
+    用例描述
+    测试目的： 测试onu端口上行限速是否正常
+    测试步骤：
+    步骤1: 发现未注册的ONU
+    步骤2: 在OLT上通过SN的方式将ONU注册上线
+    步骤3: 配置onu端口的入口的速率（traffic-profile 2:
+           traffic-profile  profile-id 2 profile-name outbound_limit cir 10240 pir 20480 cbs 2000 pbs 2000)
+    步骤4: 配置虚端口vlan2000透传
+    步骤5: 打流测试
+    测试方法: 上下行各发送流：vlan2000 (速率为端口速率的10%)
+    预期结果: 上下行正常通，上行不限速，下行限速20M
+
+    "
+"passed","Thu Jul 09 17:51:45 CST 2020","Thu Jul 09 17:52:51 CST 2020","65705","","test_onu_multicast","","","","测试onu组播正常通的情况","
+    用例描述
+    测试目的：ont为snooping模式（mvlan为3000，ip 239.1.1.1）,onu的native-vlan为3000，测试onu为snooping模式下组播239.1.1.1是否通
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:配置onu端口native-vlan为3000
+    步骤4:添加虚端口vlan透传3000
+    步骤5:onu端口绑定组播模板200（mvlan3000 ,ip 239.1.1.1 ,dynamic acl）
+    步骤6:打流测试
+    1）服务端发送数据流239.1.1.1，查看onu端口是否收到组播数据流239.1.1.1
+    预期结果:onu端口无法收到组播数据流
+    2）客户端发送report报文加入组播239.1.1.1 ，然后服务端口发送组播239.1.1.1的数据流(带tag3000)，10秒后，停止发流
+    预期结果:服务端收到report报文，客户端收到组播数据流239.1.1.1
+    3)客户端端口发送离开报文，离开组播组239.1.1.1
+    预期结果：客户端接收不到数据
+    "
+"failed","Thu Jul 09 22:17:10 CST 2020","Thu Jul 09 22:18:10 CST 2020","59740","","test_onu_gemport","","","","测试mapping-mode为vlan_pri","
+    用例描述
+    测试目的： 测试mapping-mode is vlan+pri, mapping 为vlan2000+pri2时，vlan2000+2和vlan200+3和vlan2001+pri2的报文上下行是否都正常
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:修改gemport配置为vlan 2000
+    步骤4:配置虚端口vlan2000透传，vlan2001透传
+    步骤5:打流测试
+    测试方法：上下行各发送三条流：vlan2000 pri2和 vlan2000 pri3 ；发送vlan 2001 pri2
+    结果：结果：vlan 2000 pri2的上下行都能通；vlan2000 pri3下行能通，vlan2000 pri3上行不通;vlan 2001上下行都不通
+
+    "
+"passed","Thu Jul 09 20:13:14 CST 2020","Thu Jul 09 20:14:05 CST 2020","51662","","test_onu_auth_type","","","","SN认证","
+    用例描述：
+    ONU通过SN的方式认证。
+    例如：
+    ont add 1 1 sn-auth TEST12345678 ont-lineprofile-id 1 ont-srvprofile-id 1
+    "
+"passed","Thu Jul 09 20:45:14 CST 2020","Thu Jul 09 20:46:17 CST 2020","62667","","test_onu_auth_type","","","","LOID认证","
+    用例描述：
+    ONU通过LOID的方式认证。
+    例如：
+    ont add 1 1 loid-auth 12345678 ont-lineprofile-id 1 ont-srvprofile-id 1
+    "
+"passed","Thu Jul 09 20:01:15 CST 2020","Thu Jul 09 20:01:32 CST 2020","16699","","test_get_ont_info","","","","查看ONU的信息上报","
+    用例描述：
+    查看ONU上报的基本信息。
+    例如：
+    show ont info 1 1
+    show ont version 1 1
+    show ont capability 1 1
+    show ont optical-info 1 1
+    "
+"failed","Thu Jul 09 21:30:52 CST 2020","Thu Jul 09 21:31:51 CST 2020","59423","","test_onu_gemport","","","","测试mapping为transaprent","
+    用例描述
+    测试目的： 测试mapping-mode is vlan , mapping 为transparent时，vlan2000和vlan2001的报文上下行是都正常
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:修改gemport配置为transparent
+    步骤4:配置虚端口vlan2000透传，vlan2001透传
+    步骤5:打流测试
+    1）上下行发vlan2000和vlan2001的报文
+    预期结果：上下行报文正常通
+
+    "
+"broken","Fri Jul 10 09:06:12 CST 2020","Fri Jul 10 09:06:12 CST 2020","0","","test_onu_internet_type","","","","静态IP测试","
+    用例描述：
+    测试PC是否可以通过静态IP的方式上网。
+    "
+"passed","Thu Jul 09 17:43:13 CST 2020","Thu Jul 09 17:44:35 CST 2020","81783","","test_onu_multicast","","","","测试onu组播正常通的情况","
+    用例描述
+    测试目的：ont为snooping模式（mvlan为3000，ip 239.1.1.1）,onu的native-vlan为3000，测试onu为snooping模式下组播239.1.1.1是否通
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:配置onu端口native-vlan为3000
+    步骤4:添加虚端口vlan透传3000
+    步骤5:onu端口绑定组播模板200（mvlan3000 ,ip 239.1.1.1 ,dynamic acl）
+    步骤6:打流测试
+    1）服务端发送数据流239.1.1.1，查看onu端口是否收到组播数据流239.1.1.1
+    预期结果:onu端口无法收到组播数据流
+    2）客户端发送report报文加入组播239.1.1.1 ，然后服务端口发送组播239.1.1.1的数据流(带tag3000)，10秒后，停止发流
+    预期结果:服务端收到report报文，客户端收到组播数据流239.1.1.1
+    3)客户端端口发送离开报文，离开组播组239.1.1.1
+    预期结果：客户端接收不到数据
+    "
+"failed","Thu Jul 09 21:48:30 CST 2020","Thu Jul 09 21:49:30 CST 2020","59810","","test_onu_gemport","","","","测试mapping-mode为vlan","
+    用例描述
+    测试目的： 测试mapping-mode is vlan , mapping 为vlan2000时，vlan2000的报文上下行是否都正常,vlan2001上下行报文是否不通
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:修改gemport配置为vlan 2000
+    步骤4:配置虚端口vlan2000透传，vlan2001透传
+    步骤5:打流测试
+    测试方法：上下行发流量测试，发送两条流vlan 2000，和vlan2001
+    结果：vlan2000的能通，vlan2001的不通
+
+    "
+"broken","Wed Jul 08 09:40:54 CST 2020","Wed Jul 08 09:41:25 CST 2020","31489","","test_onu_mgt","","","","去激活ONU","
+    用例描述：
+    再OLT上将ONU去激活后，再重新激活。
+    例如：
+    ont deactivate 1 1
+    ont activate 1 1
+    "
+"passed","Thu Jul 09 20:38:10 CST 2020","Thu Jul 09 20:38:58 CST 2020","47777","","test_onu_auth_type","","","","SN+PASSWORD认证","
+    用例描述：
+    ONU通过SN+PASSWORD的方式认证。
+    例如：
+    ont add 1 1 sn-auth TEST12345678 password-auth 12345678 ont-lineprofile-id 1 ont-srvprofile-id 1
+    "
+"passed","Wed Jul 08 17:07:54 CST 2020","Wed Jul 08 17:08:18 CST 2020","23451","","test_onu_vlan","","","","测试onu端口vlan为transparent","
+    测试： ont port 1 is transparent
+    测试方法：配置onu port  1 transparent,上下行发vlan2000和2001的流两条
+    结果：上下行vlan2000-2001的流量正常通
+    "
+"failed","Thu Jul 09 21:35:16 CST 2020","Thu Jul 09 21:36:16 CST 2020","59662","","test_onu_gemport","","","","测试mapping为transaprent","
+    用例描述
+    测试目的： 测试mapping-mode is vlan , mapping 为transparent时，vlan2000和vlan2001的报文上下行是都正常
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:修改gemport配置为transparent
+    步骤4:配置虚端口vlan2000透传，vlan2001透传
+    步骤5:打流测试
+    1）上下行发vlan2000和vlan2001的报文
+    预期结果：上下行报文正常通
+
+    "
+"passed","Thu Jul 09 17:54:49 CST 2020","Thu Jul 09 17:56:00 CST 2020","70876","","test_onu_multicast","","","","测试onu组播正常通的情况","
+    用例描述
+    测试目的：ont为snooping模式（mvlan为3000，ip 239.1.1.1）,onu的native-vlan为3000，测试onu为snooping模式下组播239.1.1.1是否通
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:配置onu端口native-vlan为3000
+    步骤4:添加虚端口vlan透传3000
+    步骤5:onu端口绑定组播模板200（mvlan3000 ,ip 239.1.1.1 ,dynamic acl）
+    步骤6:打流测试
+    1）服务端发送数据流239.1.1.1，查看onu端口是否收到组播数据流239.1.1.1
+    预期结果:onu端口无法收到组播数据流
+    2）客户端发送report报文加入组播239.1.1.1 ，然后服务端口发送组播239.1.1.1的数据流(带tag3000)，10秒后，停止发流
+    预期结果:服务端收到report报文，客户端收到组播数据流239.1.1.1
+    3)客户端端口发送离开报文，离开组播组239.1.1.1
+    预期结果：客户端接收不到数据
+    "
+"passed","Thu Jul 09 20:25:30 CST 2020","Thu Jul 09 20:26:24 CST 2020","54387","","test_onu_auth_type","","","","SN的PASSWORD认证","
+    用例描述：
+    SN的PASSWORD认证。
+    例如：
+    ont add 1 1 password-auth 12345678 ont-lineprofile-id 1 ont-srvprofile-id 1
+    "
+"failed","Thu Jul 09 23:16:39 CST 2020","Thu Jul 09 23:17:39 CST 2020","59581","","test_onu_internet_type","","","","DHCP测试","
+    用例描述：
+    测试PC是否可以通过DHCP方式上网。
+    "
+"failed","Thu Jul 09 16:25:09 CST 2020","Thu Jul 09 16:25:24 CST 2020","15136","","test_onu_vlan","","","","测试onu端口vlan为translate","
+    用例描述
+    测试目的： 测试onu端口为translate，translate100-107 转2000-2007,测试上下行流量是否正常
+    测试步骤：
+    步骤1: 发现未注册的ONU
+    步骤2: 在OLT上通过SN的方式将ONU注册上线
+    步骤3：配置onu端口translate(100-800)转成（2000-2007）
+    步骤4：添加虚端口vlan透传2000,2001,2002, 2003, 2004, 2005, 2006, 2007, 2008
+    步骤5：打流测试
+    1）下行发vlan2000-2008的流，上行发vlan100-108的流
+    预期结果: 下行vlan2000-2007的通，下行vlan2008的不通；上行vlan100-107的通，下行vlan108的不通
+    步骤6：onu端口vlan恢复为transparent
+    "
+"failed","Thu Jul 09 23:14:27 CST 2020","Thu Jul 09 23:15:27 CST 2020","59688","","test_onu_gemport","","","","测试mapping-mode为port","
+    用例描述
+    测试目的： 测试mapping-mode is port, mapping 为port2时，往onu的port1 上下行发送vlan 2000的报文是否都正常
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:修改gemport配置为vlan 2000
+    步骤4:配置虚端口vlan2000透传
+    步骤5:打流测试
+    测试方法：上下行各发送两条流：vlan2000 pri2和 vlan2000 pri3
+    结果：上下行都不通
+
+    "
+"passed","Wed Jul 08 17:09:05 CST 2020","Wed Jul 08 17:09:39 CST 2020","34920","","test_onu_vlan","","","","测试onu端口vlan为trunk","
+    测试 ont port 1 is trunk
+    测试方法：配置onu port  1 trunk 2000-2007
+    结果：上下行vlan2000-2007的流量正常通，vlan2008的上下行流量不通
+    "
+"failed","Thu Jul 09 20:53:24 CST 2020","Thu Jul 09 20:54:23 CST 2020","59486","","test_onu_auth_type","","","","LOID认证","
+    用例描述：
+    ONU通过LOID的方式认证。
+    例如：
+    ont add 1 1 loid-auth 12345678 ont-lineprofile-id 1 ont-srvprofile-id 1
+    "
+"passed","Thu Jul 09 16:01:21 CST 2020","Thu Jul 09 16:02:20 CST 2020","58577","","test_onu_vlan","","","","测试onu端口vlan为transparent","
+    用例描述
+    测试目的： 测试onu端口为transparent，测试上下行流vlan2000-2001是否正常
+    测试步骤：
+    步骤1: 发现未注册的ONU
+    步骤2: 在OLT上通过SN的方式将ONU注册上线
+    步骤3: 配置onu端口vlan为transparent
+    步骤4: 添加虚端口vlan透传2000,2001
+    步骤5：打流测试
+    1）上下行发vlan2000和2001的流两条
+    预期结果: 上下行vlan2000-2001的流量正常通
+    "
+"passed","Thu Jul 09 15:37:53 CST 2020","Thu Jul 09 15:38:41 CST 2020","47960","","test_onu_mac_learn","","","","onu mac地址上报测试","
+    用例描述
+    测试目的： 测试onu端口mac地址学习是否正常
+    测试步骤：
+    步骤1: 发现未注册的ONU
+    步骤2: 在OLT上通过SN的方式将ONU注册上线
+    步骤3: 配置虚端口vlan2000透传
+    步骤4: 打流测试,查看onu端口mac地址表
+    测试方法: 上下行各发送流00:00:00:22:22:21递增5条，在olt上查看onu端口mac地址表
+    预期结果: 上下行正常通，在olt上查看onu端口mac地址表有5条（00:00:00:22:22:21递增5条）
+    "
+"passed","Thu Jul 09 20:14:34 CST 2020","Thu Jul 09 20:15:17 CST 2020","43269","","test_onu_auth_type","","","","SN认证","
+    用例描述：
+    ONU通过SN的方式认证。
+    例如：
+    ont add 1 1 sn-auth TEST12345678 ont-lineprofile-id 1 ont-srvprofile-id 1
+    "
+"failed","Thu Jul 09 22:12:46 CST 2020","Thu Jul 09 22:13:45 CST 2020","59439","","test_onu_gemport","","","","测试mapping-mode为vlan_pri","
+    用例描述
+    测试目的： 测试mapping-mode is vlan+pri, mapping 为vlan2000+pri2时，vlan2000+2和vlan200+3和vlan2001+pri2的报文上下行是否都正常
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:修改gemport配置为vlan 2000
+    步骤4:配置虚端口vlan2000透传，vlan2001透传
+    步骤5:打流测试
+    测试方法：上下行各发送三条流：vlan2000 pri2和 vlan2000 pri3 ；发送vlan 2001 pri2
+    结果：结果：vlan 2000 pri2的上下行都能通；vlan2000 pri3下行能通，vlan2000 pri3上行不通;vlan 2001上下行都不通
+
+    "
+"passed","Thu Jul 09 15:34:41 CST 2020","Thu Jul 09 15:35:21 CST 2020","40524","","test_onu_mac_learn","","","","onu mac地址上报测试","
+    用例描述
+    测试目的： 测试onu端口mac地址学习是否正常
+    测试步骤：
+    步骤1: 发现未注册的ONU
+    步骤2: 在OLT上通过SN的方式将ONU注册上线
+    步骤3: 配置虚端口vlan2000透传
+    步骤4: 打流测试,查看onu端口mac地址表
+    测试方法: 上下行各发送流00:00:00:22:22:21递增5条，在olt上查看onu端口mac地址表
+    预期结果: 上下行正常通，在olt上查看onu端口mac地址表有5条（00:00:00:22:22:21递增5条）
+    "
+"failed","Thu Jul 09 23:07:51 CST 2020","Thu Jul 09 23:08:50 CST 2020","59444","","test_onu_gemport","","","","测试mapping-mode为port","
+    用例描述
+    测试目的： 测试mapping-mode is port, mapping 为port2时，往onu的port1 上下行发送vlan 2000的报文是否都正常
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:修改gemport配置为vlan 2000
+    步骤4:配置虚端口vlan2000透传
+    步骤5:打流测试
+    测试方法：上下行各发送两条流：vlan2000 pri2和 vlan2000 pri3
+    结果：上下行都不通
+
+    "
+"passed","Thu Jul 09 15:52:17 CST 2020","Thu Jul 09 15:53:13 CST 2020","56027","","test_onu_vlan","","","","测试onu端口vlan为transparent","
+    用例描述
+    测试目的： 测试onu端口为transparent，测试上下行流vlan2000-2001是否正常
+    测试步骤：
+    步骤1: 发现未注册的ONU
+    步骤2: 在OLT上通过SN的方式将ONU注册上线
+    步骤3: 配置onu端口vlan为transparent
+    步骤4: 添加虚端口vlan透传2000,2001
+    步骤5：打流测试
+    1）上下行发vlan2000和2001的流两条
+    预期结果: 上下行vlan2000-2001的流量正常通
+    "
+"failed","Thu Jul 09 21:46:18 CST 2020","Thu Jul 09 21:47:18 CST 2020","60056","","test_onu_gemport","","","","测试mapping为transaprent","
+    用例描述
+    测试目的： 测试mapping-mode is vlan , mapping 为transparent时，vlan2000和vlan2001的报文上下行是都正常
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:修改gemport配置为transparent
+    步骤4:配置虚端口vlan2000透传，vlan2001透传
+    步骤5:打流测试
+    1）上下行发vlan2000和vlan2001的报文
+    预期结果：上下行报文正常通
+
+    "
+"failed","Thu Jul 09 22:37:00 CST 2020","Thu Jul 09 22:38:00 CST 2020","59759","","test_onu_gemport","","","","测试mapping-mode为pri","
+    用例描述
+    测试目的： 测试mapping-mode is pri, mapping 为pri2时，vlan2000+2和vlan2000+3报文上下行是否都正常
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:修改gemport配置为vlan 2000
+    步骤4:配置虚端口vlan2000透传
+    步骤5:打流测试
+    测试方法：上下行各发送两条流：vlan2000 pri2和 vlan2000 pri3
+    结果：pri2的上下行都能通；pri3下行能通，上行不通
+
+    "
+"passed","Tue Jul 14 10:17:07 CST 2020","Tue Jul 14 10:17:51 CST 2020","43850","","test_onu_limitrate","","","","测试dba限速(type4)","
+    用例描述
+    测试目的： 测试dba限速是否正常（type5）
+    测试步骤：
+    步骤1: 发现未注册的ONU
+    步骤2: 在OLT上通过SN的方式将ONU注册上线
+    步骤3: 配置dba模板(type5 fix 10240 assure 20480 max 51200)
+    步骤4: 配置虚端口vlan2000透传
+    步骤5: 打流测试
+    测试方法: 上下行各发送流：vlan2000 (速率为端口速率的10%)
+    预期结果: 上下行正常通，上行不限速，下行限速50M
+    步骤6: 配置dba模板(type4  max 1024000)
+
+    "
+"broken","Fri Jul 10 09:06:12 CST 2020","Fri Jul 10 09:06:12 CST 2020","0","","test_onu_internet_type","","","","PPPoE拨号测试","
+    用例描述：
+    测试PC是否可以通过PPPoE方式上网。
+    "
+"failed","Thu Jul 09 21:00:01 CST 2020","Thu Jul 09 21:01:01 CST 2020","59384","","test_onu_auth_type","","","","LOID认证","
+    用例描述：
+    ONU通过LOID的方式认证。
+    例如：
+    ont add 1 1 loid-auth 12345678 ont-lineprofile-id 1 ont-srvprofile-id 1
+    "
+"failed","Thu Jul 09 20:46:41 CST 2020","Thu Jul 09 20:47:46 CST 2020","64940","","test_onu_auth_type","","","","LOID认证","
+    用例描述：
+    ONU通过LOID的方式认证。
+    例如：
+    ont add 1 1 loid-auth 12345678 ont-lineprofile-id 1 ont-srvprofile-id 1
+    "
+"broken","Fri Jul 10 09:06:12 CST 2020","Fri Jul 10 09:06:12 CST 2020","0","","test_onu_internet_type","","","","PPPoE拨号测试","
+    用例描述：
+    测试PC是否可以通过PPPoE方式上网。
+    "
+"passed","Thu Jul 09 20:26:49 CST 2020","Thu Jul 09 20:27:37 CST 2020","47249","","test_onu_auth_type","","","","SN的PASSWORD认证","
+    用例描述：
+    SN的PASSWORD认证。
+    例如：
+    ont add 1 1 password-auth 12345678 ont-lineprofile-id 1 ont-srvprofile-id 1
+    "
+"failed","Thu Jul 09 21:44:05 CST 2020","Thu Jul 09 21:45:05 CST 2020","59958","","test_onu_gemport","","","","测试mapping为transaprent","
+    用例描述
+    测试目的： 测试mapping-mode is vlan , mapping 为transparent时，vlan2000和vlan2001的报文上下行是都正常
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:修改gemport配置为transparent
+    步骤4:配置虚端口vlan2000透传，vlan2001透传
+    步骤5:打流测试
+    1）上下行发vlan2000和vlan2001的报文
+    预期结果：上下行报文正常通
+
+    "
+"passed","Fri Jul 10 09:21:30 CST 2020","Fri Jul 10 09:22:21 CST 2020","51054","","test_onu_limitrate","","","","测试onu端口入口限速","
+    用例描述
+    测试目的： 测试onu端口上行限速是否正常
+    测试步骤：
+    步骤1: 发现未注册的ONU
+    步骤2: 在OLT上通过SN的方式将ONU注册上线
+    步骤3: 配置onu端口的入口的速率（traffic-profile 1:
+           traffic-profile  profile-id 1 profile-name inbound_limit cir 20480 pir 30960 cbs 2000 pbs 2000)
+    步骤4: 配置虚端口vlan2000透传
+    步骤5: 打流测试
+    测试方法: 上下行各发送流：vlan2000 (速率为端口速率的10%)
+    预期结果: 上下行正常通，下行不限速，上行限速30M
+
+    "
+"passed","Thu Jul 09 20:42:50 CST 2020","Thu Jul 09 20:43:31 CST 2020","41453","","test_onu_auth_type","","","","SN+PASSWORD认证","
+    用例描述：
+    ONU通过SN+PASSWORD的方式认证。
+    例如：
+    ont add 1 1 sn-auth TEST12345678 password-auth 12345678 ont-lineprofile-id 1 ont-srvprofile-id 1
+    "
+"passed","Thu Jul 09 19:03:05 CST 2020","Thu Jul 09 19:04:18 CST 2020","72762","","test_onu_multicast","","","","测试onu跨组播vlan","
+    用例描述
+    测试目的：ont为snooping模式（mvlan为3000，ip 239.1.1.1）,onu的native-vlan为2000，测试onu的跨组播vlan是否正常的
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:配置onu端口native-vlan为2000
+    步骤4:添加虚端口vlan透传2000
+    步骤5:onu端口绑定组播模板200（mvlan3000 ,ip 239.1.1.1 ,dynamic acl）
+    步骤6:打流测试
+    1）客户端发送report报文加入组播239.1.1.1 ，然后服务端口发送组播239.1.1.1的数据流，10秒后，停止发流
+    预期结果：服务端收到report报文，客户端收到组播数据流239.1.1.1
+    2)服务端发送组播数据流，客户端发送离开报文，离开组播组239.1.1.1
+    预期结果：客户端接收不到数据
+
+    "
+"passed","Thu Jul 09 20:40:26 CST 2020","Thu Jul 09 20:41:15 CST 2020","48863","","test_onu_auth_type","","","","SN+PASSWORD认证","
+    用例描述：
+    ONU通过SN+PASSWORD的方式认证。
+    例如：
+    ont add 1 1 sn-auth TEST12345678 password-auth 12345678 ont-lineprofile-id 1 ont-srvprofile-id 1
+    "
+"failed","Thu Jul 09 23:25:28 CST 2020","Thu Jul 09 23:26:27 CST 2020","59342","","test_onu_internet_type","","","","DHCP测试","
+    用例描述：
+    测试PC是否可以通过DHCP方式上网。
+    "
+"passed","Thu Jul 09 15:36:48 CST 2020","Thu Jul 09 15:37:30 CST 2020","41680","","test_onu_mac_learn","","","","onu mac地址上报测试","
+    用例描述
+    测试目的： 测试onu端口mac地址学习是否正常
+    测试步骤：
+    步骤1: 发现未注册的ONU
+    步骤2: 在OLT上通过SN的方式将ONU注册上线
+    步骤3: 配置虚端口vlan2000透传
+    步骤4: 打流测试,查看onu端口mac地址表
+    测试方法: 上下行各发送流00:00:00:22:22:21递增5条，在olt上查看onu端口mac地址表
+    预期结果: 上下行正常通，在olt上查看onu端口mac地址表有5条（00:00:00:22:22:21递增5条）
+    "
+"passed","Thu Jul 09 20:07:14 CST 2020","Thu Jul 09 20:08:04 CST 2020","49674","","test_onu_auth_type","","","","SN认证","
+    用例描述：
+    ONU通过SN的方式认证。
+    例如：
+    ont add 1 1 sn-auth TEST12345678 ont-lineprofile-id 1 ont-srvprofile-id 1
+    "
+"failed","Thu Jul 09 21:17:38 CST 2020","Thu Jul 09 21:18:38 CST 2020","59495","","test_onu_auth_type","","","","LOID+PASSWORD认证","
+    用例描述：
+    ONU通过SN的方式认证。
+    例如：
+    ont add 1 1 loid-auth 12345678 password-auth 12345678 ont-lineprofile-id 1 ont-srvprofile-id 1
+    "
+"passed","Tue Jul 14 10:15:15 CST 2020","Tue Jul 14 10:16:45 CST 2020","90792","","test_onu_limitrate","","","","测试onu端口出口限速","
+    用例描述
+    测试目的： 测试onu端口上行限速是否正常
+    测试步骤：
+    步骤1: 发现未注册的ONU
+    步骤2: 在OLT上通过SN的方式将ONU注册上线
+    步骤3: 配置onu端口的入口的速率（traffic-profile 2:
+           traffic-profile  profile-id 2 profile-name outbound_limit cir 10240 pir 20480 cbs 2000 pbs 2000)
+    步骤4: 配置虚端口vlan2000透传
+    步骤5: 打流测试
+    测试方法: 上下行各发送流：vlan2000 (速率为端口速率的10%)
+    预期结果: 上下行正常通，上行不限速，下行限速20M
+
+    "
+"passed","Thu Jul 09 16:04:01 CST 2020","Thu Jul 09 16:05:21 CST 2020","80383","","test_onu_vlan","","","","测试onu端口vlan为trunk","
+    用例描述
+    测试目的： 测试onu端口为trunk，测试上下行流vlan2000-2007是否正常
+    测试步骤：
+    步骤1: 发现未注册的ONU
+    步骤2: 在OLT上通过SN的方式将ONU注册上线
+    步骤3：配置onu端口vlan为trunk 2000-2007
+    步骤4：添加虚端口vlan透传2000,2001,2002,2003,2004,2005,2006,2007,2008
+    步骤5：打流测试
+    1）上下行发vlan2000-2008的流9条
+    预期结果: 上下行vlan2000-2008的流量正常通,2009流上下行不通
+    步骤6：onu端口vlan恢复为transparent
+    "
+"failed","Thu Jul 09 23:43:05 CST 2020","Thu Jul 09 23:44:04 CST 2020","59397","","test_onu_internet_type","","","","静态IP测试","
+    用例描述：
+    测试PC是否可以通过静态IP的方式上网。
+    "
+"failed","Thu Jul 09 22:39:13 CST 2020","Thu Jul 09 22:40:12 CST 2020","59296","","test_onu_gemport","","","","测试mapping-mode为pri","
+    用例描述
+    测试目的： 测试mapping-mode is pri, mapping 为pri2时，vlan2000+2和vlan2000+3报文上下行是否都正常
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:修改gemport配置为vlan 2000
+    步骤4:配置虚端口vlan2000透传
+    步骤5:打流测试
+    测试方法：上下行各发送两条流：vlan2000 pri2和 vlan2000 pri3
+    结果：pri2的上下行都能通；pri3下行能通，上行不通
+
+    "
+"broken","Fri Jul 10 09:39:24 CST 2020","Fri Jul 10 09:39:24 CST 2020","0","","test_onu_limitrate","","","","测试onu端口出口限速","
+    用例描述
+    测试目的： 测试onu端口上行限速是否正常
+    测试步骤：
+    步骤1: 发现未注册的ONU
+    步骤2: 在OLT上通过SN的方式将ONU注册上线
+    步骤3: 配置onu端口的入口的速率（traffic-profile 2:
+           traffic-profile  profile-id 2 profile-name outbound_limit cir 10240 pir 20480 cbs 2000 pbs 2000)
+    步骤4: 配置虚端口vlan2000透传
+    步骤5: 打流测试
+    测试方法: 上下行各发送流：vlan2000 (速率为端口速率的10%)
+    预期结果: 上下行正常通，上行不限速，下行限速20M
+
+    "
+"failed","Fri Jul 10 09:15:15 CST 2020","Fri Jul 10 09:16:15 CST 2020","59288","","test_onu_limitrate","","","","测试onu端口入口限速","
+    用例描述
+    测试目的： 测试onu端口上行限速是否正常
+    测试步骤：
+    步骤1: 发现未注册的ONU
+    步骤2: 在OLT上通过SN的方式将ONU注册上线
+    步骤3: 配置onu端口的入口的速率（traffic-profile 1:
+           traffic-profile  profile-id 1 profile-name inbound_limit cir 20480 pir 30960 cbs 2000 pbs 2000)
+    步骤4: 配置虚端口vlan2000透传
+    步骤5: 打流测试
+    测试方法: 上下行各发送流：vlan2000 (速率为端口速率的10%)
+    预期结果: 上下行正常通，下行不限速，上行限速30M
+
+    "
+"broken","Fri Jul 10 09:06:12 CST 2020","Fri Jul 10 09:06:12 CST 2020","0","","test_onu_internet_type","","","","PPPoE拨号测试","
+    用例描述：
+    测试PC是否可以通过PPPoE方式上网。
+    "
+"failed","Thu Jul 09 21:08:49 CST 2020","Thu Jul 09 21:09:49 CST 2020","59984","","test_onu_auth_type","","","","LOID+PASSWORD认证","
+    用例描述：
+    ONU通过SN的方式认证。
+    例如：
+    ont add 1 1 loid-auth 12345678 password-auth 12345678 ont-lineprofile-id 1 ont-srvprofile-id 1
+    "
+"passed","Thu Jul 09 20:08:26 CST 2020","Thu Jul 09 20:09:17 CST 2020","50697","","test_onu_auth_type","","","","SN认证","
+    用例描述：
+    ONU通过SN的方式认证。
+    例如：
+    ont add 1 1 sn-auth TEST12345678 ont-lineprofile-id 1 ont-srvprofile-id 1
+    "
+"broken","Wed Jul 08 11:40:10 CST 2020","Wed Jul 08 11:40:10 CST 2020","0","","test_onu_gemport","","","","test_debug",""
+"passed","Thu Jul 09 20:02:34 CST 2020","Thu Jul 09 20:02:51 CST 2020","17542","","test_get_ont_info","","","","查看ONU的信息上报","
+    用例描述：
+    查看ONU上报的基本信息。
+    例如：
+    show ont info 1 1
+    show ont version 1 1
+    show ont capability 1 1
+    show ont optical-info 1 1
+    "
+"passed","Thu Jul 09 20:24:18 CST 2020","Thu Jul 09 20:25:03 CST 2020","45911","","test_onu_auth_type","","","","SN的PASSWORD认证","
+    用例描述：
+    SN的PASSWORD认证。
+    例如：
+    ont add 1 1 password-auth 12345678 ont-lineprofile-id 1 ont-srvprofile-id 1
+    "
+"passed","Thu Jul 09 15:51:01 CST 2020","Thu Jul 09 15:51:49 CST 2020","48448","","test_onu_vlan","","","","测试onu端口vlan为transparent","
+    用例描述
+    测试目的： 测试onu端口为transparent，测试上下行流vlan2000-2001是否正常
+    测试步骤：
+    步骤1: 发现未注册的ONU
+    步骤2: 在OLT上通过SN的方式将ONU注册上线
+    步骤3: 配置onu端口vlan为transparent
+    步骤4: 添加虚端口vlan透传2000,2001
+    步骤5：打流测试
+    1）上下行发vlan2000和2001的流两条
+    预期结果: 上下行vlan2000-2001的流量正常通
+    "
+"passed","Thu Jul 09 20:06:34 CST 2020","Thu Jul 09 20:06:52 CST 2020","18194","","test_get_ont_info","","","","查看ONU的信息上报","
+    用例描述：
+    查看ONU上报的基本信息。
+    例如：
+    show ont info 1 1
+    show ont version 1 1
+    show ont capability 1 1
+    show ont optical-info 1 1
+    "
+"failed","Thu Jul 09 22:52:26 CST 2020","Thu Jul 09 22:53:26 CST 2020","59436","","test_onu_gemport","","","","测试mapping-mode为pri","
+    用例描述
+    测试目的： 测试mapping-mode is pri, mapping 为pri2时，vlan2000+2和vlan2000+3报文上下行是否都正常
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:修改gemport配置为vlan 2000
+    步骤4:配置虚端口vlan2000透传
+    步骤5:打流测试
+    测试方法：上下行各发送两条流：vlan2000 pri2和 vlan2000 pri3
+    结果：pri2的上下行都能通；pri3下行能通，上行不通
+
+    "
+"broken","Fri Jul 10 09:06:12 CST 2020","Fri Jul 10 09:06:12 CST 2020","0","","test_onu_internet_type","","","","静态IP测试","
+    用例描述：
+    测试PC是否可以通过静态IP的方式上网。
+    "
+"failed","Thu Jul 09 21:26:28 CST 2020","Thu Jul 09 21:27:27 CST 2020","59552","","test_onu_gemport","","","","测试mapping为transaprent","
+    用例描述
+    测试目的： 测试mapping-mode is vlan , mapping 为transparent时，vlan2000和vlan2001的报文上下行是都正常
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:修改gemport配置为transparent
+    步骤4:配置虚端口vlan2000透传，vlan2001透传
+    步骤5:打流测试
+    1）上下行发vlan2000和vlan2001的报文
+    预期结果：上下行报文正常通
+
+    "
+"failed","Thu Jul 09 22:59:04 CST 2020","Thu Jul 09 23:00:01 CST 2020","56992","","test_onu_gemport","","","","测试mapping-mode为port","
+    用例描述
+    测试目的： 测试mapping-mode is port, mapping 为port2时，往onu的port1 上下行发送vlan 2000的报文是否都正常
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:修改gemport配置为vlan 2000
+    步骤4:配置虚端口vlan2000透传
+    步骤5:打流测试
+    测试方法：上下行各发送两条流：vlan2000 pri2和 vlan2000 pri3
+    结果：上下行都不通
+
+    "
+"passed","Thu Jul 09 20:09:38 CST 2020","Thu Jul 09 20:10:29 CST 2020","50835","","test_onu_auth_type","","","","SN认证","
+    用例描述：
+    ONU通过SN的方式认证。
+    例如：
+    ont add 1 1 sn-auth TEST12345678 ont-lineprofile-id 1 ont-srvprofile-id 1
+    "
+"failed","Thu Jul 09 22:41:24 CST 2020","Thu Jul 09 22:42:24 CST 2020","59768","","test_onu_gemport","","","","测试mapping-mode为pri","
+    用例描述
+    测试目的： 测试mapping-mode is pri, mapping 为pri2时，vlan2000+2和vlan2000+3报文上下行是否都正常
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:修改gemport配置为vlan 2000
+    步骤4:配置虚端口vlan2000透传
+    步骤5:打流测试
+    测试方法：上下行各发送两条流：vlan2000 pri2和 vlan2000 pri3
+    结果：pri2的上下行都能通；pri3下行能通，上行不通
+
+    "
+"passed","Thu Jul 09 17:44:57 CST 2020","Thu Jul 09 17:46:22 CST 2020","84619","","test_onu_multicast","","","","测试onu组播正常通的情况","
+    用例描述
+    测试目的：ont为snooping模式（mvlan为3000，ip 239.1.1.1）,onu的native-vlan为3000，测试onu为snooping模式下组播239.1.1.1是否通
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:配置onu端口native-vlan为3000
+    步骤4:添加虚端口vlan透传3000
+    步骤5:onu端口绑定组播模板200（mvlan3000 ,ip 239.1.1.1 ,dynamic acl）
+    步骤6:打流测试
+    1）服务端发送数据流239.1.1.1，查看onu端口是否收到组播数据流239.1.1.1
+    预期结果:onu端口无法收到组播数据流
+    2）客户端发送report报文加入组播239.1.1.1 ，然后服务端口发送组播239.1.1.1的数据流(带tag3000)，10秒后，停止发流
+    预期结果:服务端收到report报文，客户端收到组播数据流239.1.1.1
+    3)客户端端口发送离开报文，离开组播组239.1.1.1
+    预期结果：客户端接收不到数据
+    "
+"failed","Wed Jul 08 16:15:43 CST 2020","Wed Jul 08 16:18:12 CST 2020","148929","","test_onu_internet_type","","","","DHCP测试","
+    用例描述：
+    测试PC是否可以通过DHCP方式上网。
+    "
+"passed","Thu Jul 09 16:02:41 CST 2020","Thu Jul 09 16:03:40 CST 2020","58725","","test_onu_vlan","","","","测试onu端口vlan为transparent","
+    用例描述
+    测试目的： 测试onu端口为transparent，测试上下行流vlan2000-2001是否正常
+    测试步骤：
+    步骤1: 发现未注册的ONU
+    步骤2: 在OLT上通过SN的方式将ONU注册上线
+    步骤3: 配置onu端口vlan为transparent
+    步骤4: 添加虚端口vlan透传2000,2001
+    步骤5：打流测试
+    1）上下行发vlan2000和2001的流两条
+    预期结果: 上下行vlan2000-2001的流量正常通
+    "
+"passed","Fri Jul 10 09:26:17 CST 2020","Fri Jul 10 09:27:41 CST 2020","84549","","test_onu_limitrate","","","","测试onu端口出口限速","
+    用例描述
+    测试目的： 测试onu端口上行限速是否正常
+    测试步骤：
+    步骤1: 发现未注册的ONU
+    步骤2: 在OLT上通过SN的方式将ONU注册上线
+    步骤3: 配置onu端口的入口的速率（traffic-profile 2:
+           traffic-profile  profile-id 2 profile-name outbound_limit cir 10240 pir 20480 cbs 2000 pbs 2000)
+    步骤4: 配置虚端口vlan2000透传
+    步骤5: 打流测试
+    测试方法: 上下行各发送流：vlan2000 (速率为端口速率的10%)
+    预期结果: 上下行正常通，上行不限速，下行限速20M
+
+    "
+"failed","Thu Jul 09 21:57:20 CST 2020","Thu Jul 09 21:58:20 CST 2020","60001","","test_onu_gemport","","","","测试mapping-mode为vlan","
+    用例描述
+    测试目的： 测试mapping-mode is vlan , mapping 为vlan2000时，vlan2000的报文上下行是否都正常,vlan2001上下行报文是否不通
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:修改gemport配置为vlan 2000
+    步骤4:配置虚端口vlan2000透传，vlan2001透传
+    步骤5:打流测试
+    测试方法：上下行发流量测试，发送两条流vlan 2000，和vlan2001
+    结果：vlan2000的能通，vlan2001的不通
+
+    "
+"passed","Thu Jul 09 16:12:25 CST 2020","Thu Jul 09 16:13:39 CST 2020","74050","","test_onu_vlan","","","","测试onu端口vlan为trunk","
+    用例描述
+    测试目的： 测试onu端口为trunk，测试上下行流vlan2000-2007是否正常
+    测试步骤：
+    步骤1: 发现未注册的ONU
+    步骤2: 在OLT上通过SN的方式将ONU注册上线
+    步骤3：配置onu端口vlan为trunk 2000-2007
+    步骤4：添加虚端口vlan透传2000,2001,2002,2003,2004,2005,2006,2007,2008
+    步骤5：打流测试
+    1）上下行发vlan2000-2008的流9条
+    预期结果: 上下行vlan2000-2008的流量正常通,2009流上下行不通
+    步骤6：onu端口vlan恢复为transparent
+    "
+"failed","Thu Jul 09 22:14:58 CST 2020","Thu Jul 09 22:15:57 CST 2020","59775","","test_onu_gemport","","","","测试mapping-mode为vlan_pri","
+    用例描述
+    测试目的： 测试mapping-mode is vlan+pri, mapping 为vlan2000+pri2时，vlan2000+2和vlan200+3和vlan2001+pri2的报文上下行是否都正常
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:修改gemport配置为vlan 2000
+    步骤4:配置虚端口vlan2000透传，vlan2001透传
+    步骤5:打流测试
+    测试方法：上下行各发送三条流：vlan2000 pri2和 vlan2000 pri3 ；发送vlan 2001 pri2
+    结果：结果：vlan 2000 pri2的上下行都能通；vlan2000 pri3下行能通，vlan2000 pri3上行不通;vlan 2001上下行都不通
+
+    "
+"failed","Wed Jul 08 16:21:17 CST 2020","Wed Jul 08 16:21:32 CST 2020","14987","","test_onu_internet_type","","","","PPPoE拨号测试","
+    用例描述：
+    测试PC是否可以通过PPPoE方式上网。
+    "
+"passed","Tue Jul 14 10:12:51 CST 2020","Tue Jul 14 10:13:41 CST 2020","49610","","test_onu_gemport","","","","测试mapping-mode为port","
+    用例描述
+    测试目的： 测试mapping-mode is port, mapping 为port2时，往onu的port1 上下行发送vlan 2000的报文是否都正常
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:修改gemport配置为port 2
+    步骤4:配置虚端口vlan2000透传
+    步骤5:打流测试
+    测试方法：上下行各发送两条流：vlan2000 pri2和 vlan2000 pri3
+    结果：上下行都不通
+
+    "
+"broken","Fri Jul 10 09:06:12 CST 2020","Fri Jul 10 09:06:12 CST 2020","0","","test_onu_limitrate","","","","测试onu端口入口限速","
+    用例描述
+    测试目的： 测试onu端口上行限速是否正常
+    测试步骤：
+    步骤1: 发现未注册的ONU
+    步骤2: 在OLT上通过SN的方式将ONU注册上线
+    步骤3: 配置onu端口的入口的速率（traffic-profile 1:
+           traffic-profile  profile-id 1 profile-name inbound_limit cir 20480 pir 30960 cbs 2000 pbs 2000)
+    步骤4: 配置虚端口vlan2000透传
+    步骤5: 打流测试
+    测试方法: 上下行各发送流：vlan2000 (速率为端口速率的10%)
+    预期结果: 上下行正常通，下行不限速，上行限速30M
+
+    "
+"passed","Thu Jul 09 20:01:54 CST 2020","Thu Jul 09 20:02:11 CST 2020","17501","","test_get_ont_info","","","","查看ONU的信息上报","
+    用例描述：
+    查看ONU上报的基本信息。
+    例如：
+    show ont info 1 1
+    show ont version 1 1
+    show ont capability 1 1
+    show ont optical-info 1 1
+    "
+"failed","Thu Jul 09 22:54:39 CST 2020","Thu Jul 09 22:55:38 CST 2020","59430","","test_onu_gemport","","","","测试mapping-mode为port","
+    用例描述
+    测试目的： 测试mapping-mode is port, mapping 为port2时，往onu的port1 上下行发送vlan 2000的报文是否都正常
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:修改gemport配置为vlan 2000
+    步骤4:配置虚端口vlan2000透传
+    步骤5:打流测试
+    测试方法：上下行各发送两条流：vlan2000 pri2和 vlan2000 pri3
+    结果：上下行都不通
+
+    "
+"failed","Thu Jul 09 22:32:36 CST 2020","Thu Jul 09 22:33:35 CST 2020","59451","","test_onu_gemport","","","","测试mapping-mode为pri","
+    用例描述
+    测试目的： 测试mapping-mode is pri, mapping 为pri2时，vlan2000+2和vlan2000+3报文上下行是否都正常
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:修改gemport配置为vlan 2000
+    步骤4:配置虚端口vlan2000透传
+    步骤5:打流测试
+    测试方法：上下行各发送两条流：vlan2000 pri2和 vlan2000 pri3
+    结果：pri2的上下行都能通；pri3下行能通，上行不通
+
+    "
+"passed","Wed Jul 08 17:10:56 CST 2020","Wed Jul 08 17:11:30 CST 2020","34695","","test_onu_vlan","","","","测试onu端口vlan为translate","'
+    测试 ont port 1 is translate
+    测试方法：配置onu port  1 ,translate100-107 转2000-2007，下行发vlan2000-2008的流，上行发vlan100-108的流
+    结果：下行vlan2000-2007的通，下行vlan2008的不通；上行vlan100-107的通，下行vlan108的不通
+    "
+"passed","Fri Jul 17 10:46:21 CST 2020","Fri Jul 17 10:47:03 CST 2020","42226","","test_onu_mac_learn","","","","onu mac地址上报测试","
+    用例描述
+    测试目的： 测试onu端口mac地址学习是否正常
+    测试步骤：
+    步骤1: 发现未注册的ONU
+    步骤2: 在OLT上通过SN的方式将ONU注册上线
+    步骤3: 配置虚端口vlan2000透传
+    步骤4: 打流测试,查看onu端口mac地址表
+    1）上下行各发送流00:00:00:22:22:21递增5条，在olt上查看onu端口mac地址表
+    down_stream_header = (
+        'ethernetII_1.sourceMacAdd=00:00:00:11:11:11 vlan_1.id=2000 ethernetII_1.destMacAdd=00:00:00:22:22:21',
+        'ethernetII_1.sourceMacAdd=00:00:00:11:11:12 vlan_1.id=2001 ethernetII_1.destMacAdd=00:00:00:22:22:22')
+    up_stream_header = (
+        'ethernetII_1.sourceMacAdd=00:00:00:22:22:21 vlan_1.id=2000 ethernetII_1.destMacAdd=00:00:00:11:11:11',
+        'ethernetII_1.sourceMacAdd=00:00:00:22:22:22 vlan_1.id=2001 ethernetII_1.destMacAdd=00:00:00:11:11:12',)
+
+    预期结果: 上下行正常通，在olt上查看onu端口mac地址表有5条（00:00:00:22:22:21递增5条）
+    "
+"passed","Thu Jul 09 19:14:25 CST 2020","Thu Jul 09 19:15:41 CST 2020","75753","","test_onu_multicast","","","","测试onu跨组播vlan","
+    用例描述
+    测试目的：ont为snooping模式（mvlan为3000，ip 239.1.1.1）,onu的native-vlan为2000，测试onu的跨组播vlan是否正常的
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:配置onu端口native-vlan为2000
+    步骤4:添加虚端口vlan透传2000
+    步骤5:onu端口绑定组播模板200（mvlan3000 ,ip 239.1.1.1 ,dynamic acl）
+    步骤6:打流测试
+    1）客户端发送report报文加入组播239.1.1.1 ，然后服务端口发送组播239.1.1.1的数据流，10秒后，停止发流
+    预期结果：服务端收到report报文，客户端收到组播数据流239.1.1.1
+    2)服务端发送组播数据流，客户端发送离开报文，离开组播组239.1.1.1
+    预期结果：客户端接收不到数据
+
+    "
+"broken","Fri Jul 10 09:06:12 CST 2020","Fri Jul 10 09:06:12 CST 2020","0","","test_onu_internet_type","","","","静态IP测试","
+    用例描述：
+    测试PC是否可以通过静态IP的方式上网。
+    "
+"passed","Thu Jul 09 15:39:05 CST 2020","Thu Jul 09 15:39:46 CST 2020","41509","","test_onu_mac_learn","","","","onu mac地址上报测试","
+    用例描述
+    测试目的： 测试onu端口mac地址学习是否正常
+    测试步骤：
+    步骤1: 发现未注册的ONU
+    步骤2: 在OLT上通过SN的方式将ONU注册上线
+    步骤3: 配置虚端口vlan2000透传
+    步骤4: 打流测试,查看onu端口mac地址表
+    测试方法: 上下行各发送流00:00:00:22:22:21递增5条，在olt上查看onu端口mac地址表
+    预期结果: 上下行正常通，在olt上查看onu端口mac地址表有5条（00:00:00:22:22:21递增5条）
+    "
+"passed","Thu Jul 09 20:12:02 CST 2020","Thu Jul 09 20:12:52 CST 2020","50643","","test_onu_auth_type","","","","SN认证","
+    用例描述：
+    ONU通过SN的方式认证。
+    例如：
+    ont add 1 1 sn-auth TEST12345678 ont-lineprofile-id 1 ont-srvprofile-id 1
+    "
+"failed","Thu Jul 09 23:01:13 CST 2020","Thu Jul 09 23:02:13 CST 2020","59904","","test_onu_gemport","","","","测试mapping-mode为port","
+    用例描述
+    测试目的： 测试mapping-mode is port, mapping 为port2时，往onu的port1 上下行发送vlan 2000的报文是否都正常
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:修改gemport配置为vlan 2000
+    步骤4:配置虚端口vlan2000透传
+    步骤5:打流测试
+    测试方法：上下行各发送两条流：vlan2000 pri2和 vlan2000 pri3
+    结果：上下行都不通
+
+    "
+"failed","Thu Jul 09 23:12:15 CST 2020","Thu Jul 09 23:13:14 CST 2020","59474","","test_onu_gemport","","","","测试mapping-mode为port","
+    用例描述
+    测试目的： 测试mapping-mode is port, mapping 为port2时，往onu的port1 上下行发送vlan 2000的报文是否都正常
+    测试步骤：
+    步骤1:发现未注册的ONU
+    步骤2:在OLT上通过SN的方式将ONU注册上线
+    步骤3:修改gemport配置为vlan 2000
+    步骤4:配置虚端口vlan2000透传
+    步骤5:打流测试
+    测试方法：上下行各发送两条流：vlan2000 pri2和 vlan2000 pri3
+    结果：上下行都不通
+
+    "

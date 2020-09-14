@@ -1,0 +1,94 @@
+[INFO] 2020-09-09 16:31:09,662  Receive Msg: listen_port 9002
+
+[INFO] 2020-09-09 16:31:09,759  Renix api initialization finished
+[INFO] 2020-09-09 16:31:24,088  =========ONU MAC地址上报测试=========
+[INFO] 2020-09-09 16:31:54,691  create ports with location:
+[INFO] 2020-09-09 16:31:56,350  StreamPortConfig_1 has lower: InterFrameGapProfile_1
+[INFO] 2020-09-09 16:31:56,357  StreamPortConfig_2 has lower: InterFrameGapProfile_2
+[INFO] 2020-09-09 16:31:56,386  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-09-09 16:31:56,654  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-09-09 16:31:57,384  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-09-09 16:31:57,658  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-09-09 16:31:58,372  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-09-09 16:31:58,644  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-09-09 16:31:59,337  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-09-09 16:31:59,625  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-09-09 16:32:00,350  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-09-09 16:32:00,634  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-09-09 16:32:01,471  PageResultView_1 has lower: ResultQuery_1
+[INFO] 2020-09-09 16:32:17,542  ResultQuery_1 has lower: PortStats_1 PortStats_2
+[INFO] 2020-09-09 16:32:17,672  [test pass] [Port_1] rx packet (550047)is  equal to port2_stats tx packets (550025)
+[INFO] 2020-09-09 16:32:17,679  [test pass] [Port_2] rx packet (55037)is equal to  port1_stats tx packets (55006)
+[INFO] 2020-09-09 16:32:51,938  =========ONU MAC地址上报测试=========
+[INFO] 2020-09-09 16:33:22,508  create ports with location:
+[INFO] 2020-09-09 16:33:27,693  StreamPortConfig_3 has lower: InterFrameGapProfile_3
+[INFO] 2020-09-09 16:33:27,700  StreamPortConfig_4 has lower: InterFrameGapProfile_4
+[INFO] 2020-09-09 16:33:27,730  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-09-09 16:33:27,996  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-09-09 16:33:28,715  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-09-09 16:33:28,978  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-09-09 16:33:29,683  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-09-09 16:33:29,944  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-09-09 16:33:30,656  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-09-09 16:33:30,920  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-09-09 16:33:31,634  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-09-09 16:33:31,907  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-09-09 16:33:32,718  PageResultView_2 has lower: ResultQuery_2
+[INFO] 2020-09-09 16:33:48,783  ResultQuery_2 has lower: PortStats_3 PortStats_4
+[INFO] 2020-09-09 16:33:48,908  [test pass] [Port_3] rx packet (504268)is  equal to port2_stats tx packets (504252)
+[INFO] 2020-09-09 16:33:48,916  [test pass] [Port_4] rx packet (50445)is equal to  port1_stats tx packets (50426)
+[INFO] 2020-09-09 16:34:20,148  =========ONU MAC地址上报测试=========
+[INFO] 2020-09-09 16:34:51,811  create ports with location:
+[INFO] 2020-09-09 16:34:56,465  StreamPortConfig_5 has lower: InterFrameGapProfile_5
+[INFO] 2020-09-09 16:34:56,471  StreamPortConfig_6 has lower: InterFrameGapProfile_6
+[INFO] 2020-09-09 16:34:56,500  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-09-09 16:34:56,754  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-09-09 16:34:57,430  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-09-09 16:34:57,703  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-09-09 16:34:58,391  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-09-09 16:34:58,663  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-09-09 16:34:59,369  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-09-09 16:34:59,639  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-09-09 16:35:00,370  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-09-09 16:35:00,645  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-09-09 16:35:01,476  PageResultView_3 has lower: ResultQuery_3
+[INFO] 2020-09-09 16:35:17,533  ResultQuery_3 has lower: PortStats_5 PortStats_6
+[INFO] 2020-09-09 16:35:17,665  [test pass] [Port_5] rx packet (549021)is  equal to port2_stats tx packets (548996)
+[INFO] 2020-09-09 16:35:17,673  [test pass] [Port_6] rx packet (54938)is equal to  port1_stats tx packets (54901)
+[INFO] 2020-09-09 16:35:47,898  =========ONU MAC地址上报测试=========
+[INFO] 2020-09-09 16:36:19,574  create ports with location:
+[INFO] 2020-09-09 16:36:24,377  StreamPortConfig_7 has lower: InterFrameGapProfile_7
+[INFO] 2020-09-09 16:36:24,383  StreamPortConfig_8 has lower: InterFrameGapProfile_8
+[INFO] 2020-09-09 16:36:24,414  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-09-09 16:36:24,683  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-09-09 16:36:25,372  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-09-09 16:36:25,638  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-09-09 16:36:26,330  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-09-09 16:36:26,588  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-09-09 16:36:27,281  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-09-09 16:36:27,548  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-09-09 16:36:28,293  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-09-09 16:36:28,583  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-09-09 16:36:29,513  PageResultView_4 has lower: ResultQuery_4
+[INFO] 2020-09-09 16:36:45,692  ResultQuery_4 has lower: PortStats_7 PortStats_8
+[INFO] 2020-09-09 16:36:45,845  [test pass] [Port_7] rx packet (498657)is  equal to port2_stats tx packets (498641)
+[INFO] 2020-09-09 16:36:45,853  [test pass] [Port_8] rx packet (49885)is equal to  port1_stats tx packets (49866)
+[INFO] 2020-09-09 16:37:16,125  =========ONU MAC地址上报测试=========
+[INFO] 2020-09-09 16:37:47,893  create ports with location:
+[INFO] 2020-09-09 16:37:53,787  StreamPortConfig_9 has lower: InterFrameGapProfile_9
+[INFO] 2020-09-09 16:37:53,793  StreamPortConfig_10 has lower: InterFrameGapProfile_10
+[INFO] 2020-09-09 16:37:53,817  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-09-09 16:37:54,080  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-09-09 16:37:54,781  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-09-09 16:37:55,073  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-09-09 16:37:55,961  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-09-09 16:37:56,241  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-09-09 16:37:56,995  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-09-09 16:37:57,380  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-09-09 16:37:58,226  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-09-09 16:37:58,508  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-09-09 16:37:59,354  PageResultView_5 has lower: ResultQuery_5
+[INFO] 2020-09-09 16:38:15,372  ResultQuery_5 has lower: PortStats_9 PortStats_10
+[INFO] 2020-09-09 16:38:15,509  [test pass] [Port_9] rx packet (539023)is  equal to port2_stats tx packets (539001)
+[INFO] 2020-09-09 16:38:15,517  [test pass] [Port_10] rx packet (53932)is equal to  port1_stats tx packets (53901)
+[INFO] 2020-09-09 16:38:30,684  close connection to CL

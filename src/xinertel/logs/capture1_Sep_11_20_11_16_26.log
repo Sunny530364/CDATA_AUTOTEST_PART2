@@ -1,0 +1,15 @@
+[INFO] 2020-09-11 11:16:34,807  Receive Msg: listen_port 9003
+
+[INFO] 2020-09-11 11:16:34,903  Renix api initialization finished
+[INFO] 2020-09-11 11:16:37,957  create ports with location:
+[INFO] 2020-09-11 11:16:39,600  StreamPortConfig_1 has lower: InterFrameGapProfile_1
+[INFO] 2020-09-11 11:16:39,606  StreamPortConfig_2 has lower: InterFrameGapProfile_2
+[INFO] 2020-09-11 11:16:39,634  port(//192.168.0.180/1/1) create streams
+[INFO] 2020-09-11 11:16:39,898  port(//192.168.0.180/1/2) create streams
+[INFO] 2020-09-11 11:16:40,554  EthCopper_1 has lower: EthCopperConfig_1
+[INFO] 2020-09-11 11:16:40,558  EthCopper_2 has lower: EthCopperConfig_2
+[INFO] 2020-09-11 11:16:40,561  EthCopper_2 has lower: EthCopperConfig_2
+[INFO] 2020-09-11 11:16:40,563  EthCopper_1 has lower: EthCopperConfig_1
+[INFO] 2020-09-11 11:16:40,718  PageResultView_1 has lower: ResultQuery_1
+[ERROR] 2020-09-11 11:16:43,197  b'_TCLERROR:Unknown property name captureconfigs'
+[INFO] 2020-09-11 11:16:43,199  close connection to CL

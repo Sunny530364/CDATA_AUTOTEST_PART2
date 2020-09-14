@@ -1,0 +1,148 @@
+{
+  "uid" : "e150cef3657f2b24",
+  "name" : "静态IP测试",
+  "fullName" : "test_onu_internet_type#test_static_ip",
+  "historyId" : "8de858b2738c5cc2f970be9c8dc622d4",
+  "time" : {
+    "start" : 1594112598129,
+    "stop" : 1594112598129,
+    "duration" : 0
+  },
+  "description" : "\n    用例描述：\n    测试PC是否可以通过静态IP的方式上网。\n    ",
+  "descriptionHtml" : "<pre><code>用例描述：\n测试PC是否可以通过静态IP的方式上网。\n</code></pre>\n",
+  "status" : "skipped",
+  "statusMessage" : "Skipped: 暂时不执行",
+  "statusTrace" : "('test_onu_internet_type.py', 45, 'Skipped: 暂时不执行')",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "login",
+    "time" : {
+      "start" : 1594112598139,
+      "stop" : 1594112611191,
+      "duration" : 13052
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1594112308923,
+      "stop" : 1594112308923,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1594112308922,
+      "stop" : 1594112308923,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1594112598139,
+      "stop" : 1594112598139,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1594112308922,
+      "stop" : 1594112308922,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "login::0",
+    "time" : {
+      "start" : 1594112616334,
+      "stop" : 1594112624384,
+      "duration" : 8050
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "ONU业务测试"
+  }, {
+    "name" : "story",
+    "value" : "ONU上网方式测试"
+  }, {
+    "name" : "suite",
+    "value" : "test_onu_internet_type"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-2JV12RE"
+  }, {
+    "name" : "thread",
+    "value" : "27272-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_onu_internet_type"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e150cef3657f2b24.json",
+  "parameterValues" : [ ]
+}

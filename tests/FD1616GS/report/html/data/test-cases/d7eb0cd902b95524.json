@@ -1,0 +1,470 @@
+{
+  "uid" : "d7eb0cd902b95524",
+  "name" : "测试mapping-mode为pri",
+  "fullName" : "test_onu_gemport#test_gemport_pri",
+  "historyId" : "dbf42a453f8de6f0b758b3cca56f8175",
+  "time" : {
+    "start" : 1594694187502,
+    "stop" : 1594694229937,
+    "duration" : 42435
+  },
+  "description" : "\n    用例描述\n    测试目的： 测试mapping-mode is pri, mapping 为pri2时，vlan2000+2和vlan2000+3报文上下行是否都正常\n    测试步骤：\n    步骤1:发现未注册的ONU\n    步骤2:在OLT上通过SN的方式将ONU注册上线\n    步骤3:修改gemport配置为pri2\n    步骤4:配置虚端口vlan2000透传\n    步骤5:打流测试\n    测试方法：上下行各发送两条流：vlan2000 pri2和 vlan2000 pri3\n    结果：pri2的上下行都能通；pri3下行能通，上行不通\n\n    ",
+  "descriptionHtml" : "<pre><code>用例描述\n测试目的： 测试mapping-mode is pri, mapping 为pri2时，vlan2000+2和vlan2000+3报文上下行是否都正常\n测试步骤：\n步骤1:发现未注册的ONU\n步骤2:在OLT上通过SN的方式将ONU注册上线\n步骤3:修改gemport配置为pri2\n步骤4:配置虚端口vlan2000透传\n步骤5:打流测试\n测试方法：上下行各发送两条流：vlan2000 pri2和 vlan2000 pri3\n结果：pri2的上下行都能通；pri3下行能通，上行不通\n</code></pre>\n",
+  "status" : "broken",
+  "statusMessage" : "IndexError: list index out of range",
+  "statusTrace" : "gemport_pri_suit = <telnetlib.Telnet object at 0x0000022A78101668>\n\n    @allure.feature(\"gemport测试\")\n    @allure.story(\"gemport测试\")\n    @allure.title(\"测试mapping-mode为pri\")\n    @pytest.mark.run(order=13)\n    def test_gemport_pri(gemport_pri_suit):\n        '''\n        用例描述\n        测试目的： 测试mapping-mode is pri, mapping 为pri2时，vlan2000+2和vlan2000+3报文上下行是否都正常\n        测试步骤：\n        步骤1:发现未注册的ONU\n        步骤2:在OLT上通过SN的方式将ONU注册上线\n        步骤3:修改gemport配置为pri2\n        步骤4:配置虚端口vlan2000透传\n        步骤5:打流测试\n        测试方法：上下行各发送两条流：vlan2000 pri2和 vlan2000 pri3\n        结果：pri2的上下行都能通；pri3下行能通，上行不通\n    \n        '''\n        # tn=login\n        # 修改配置\n        # gemport_pri(tn)\n        cdata_info(\"=========mapping_mode为pri测试=========\")\n        tn = gemport_pri_suit\n        Vlan_list = [2000]\n        with allure.step('步骤1:发现未注册的ONU。'):\n            assert autofind_onu(tn, PonID, OnuID, SN)\n        with allure.step('步骤2:在OLT上通过SN的方式将ONU注册上线。'):\n            assert auth_by_sn(tn, PonID, OnuID, Ont_Lineprofile_ID, Ont_Srvprofile_ID, SN)\n        with allure.step(\"步骤3:修改gemport配置为pri 2\"):\n            assert gemport_pri(tn, ont_lineprofile_id=Ont_Lineprofile_ID)\n        with allure.step(\"步骤4:配置虚端口vlan2000透传\"):\n            assert add_service_port(tn, PonID, OnuID, Gemport_ID, Vlan_list)\n        with allure.step(\"步骤5:打流测试\"):\n            # 清除测试仪的对象，防止影响下个用例的执行\n            time.sleep(5)\n            reset_rom_cmd = ResetROMCommand()\n            reset_rom_cmd.execute()\n    \n            # 发流量测试，发送两条流2000+pri2，和vlan2000+pri3\n            # port_location = ['//192.168.0.180/1/9', '//192.168.0.180/1/10']\n            duration = 10\n            down_stream_header = (\n                'ethernetII_1.sourceMacAdd=00:00:00:11:11:11 vlan_1.id=2000 vlan_1.priority=2 ethernetII_1.destMacAdd=00:00:00:22:22:21',\n                'ethernetII_1.sourceMacAdd=00:00:00:11:11:12 vlan_1.id=2000 vlan_1.priority=3 ethernetII_1.destMacAdd=00:00:00:22:22:22')\n    \n            up_stream_header = (\n                'ethernetII_1.sourceMacAdd=00:00:00:22:22:21 vlan_1.id=2000 vlan_1.priority=2 ethernetII_1.destMacAdd=00:00:00:11:11:11',\n                'ethernetII_1.sourceMacAdd=00:00:00:22:22:22 vlan_1.id=2000 vlan_1.priority=3 ethernetII_1.destMacAdd=00:00:00:11:11:12',\n            )\n            # 获取所有流量的统计值\n            result_stats = unicast_test(port_location=port_location, down_stream_header=down_stream_header,\n                                   up_stream_header=up_stream_header, num=2, dataclassname=StreamBlockStats,\n                                   duration=duration)\n    \n            for i in range(4):\n>               if (result_stats[i].__dict__)['_StreamBlockID']=='sourceMacAdd=00:00:00:11:11:11':\nE               IndexError: list index out of range\n\ntest_onu_gemport.py:428: IndexError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1594694174453,
+      "stop" : 1594694174453,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "gemport_pri_suit",
+    "time" : {
+      "start" : 1594694187502,
+      "stop" : 1594694187502,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1594693941051,
+      "stop" : 1594693941051,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "login",
+    "time" : {
+      "start" : 1594694174453,
+      "stop" : 1594694187501,
+      "duration" : 13048
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1594693941051,
+      "stop" : 1594693941051,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1594693941051,
+      "stop" : 1594693941051,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "__pytest_repeat_step_number",
+    "time" : {
+      "start" : 1594694174453,
+      "stop" : 1594694174453,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n    用例描述\n    测试目的： 测试mapping-mode is pri, mapping 为pri2时，vlan2000+2和vlan2000+3报文上下行是否都正常\n    测试步骤：\n    步骤1:发现未注册的ONU\n    步骤2:在OLT上通过SN的方式将ONU注册上线\n    步骤3:修改gemport配置为pri2\n    步骤4:配置虚端口vlan2000透传\n    步骤5:打流测试\n    测试方法：上下行各发送两条流：vlan2000 pri2和 vlan2000 pri3\n    结果：pri2的上下行都能通；pri3下行能通，上行不通\n\n    ",
+    "status" : "broken",
+    "statusMessage" : "IndexError: list index out of range",
+    "statusTrace" : "gemport_pri_suit = <telnetlib.Telnet object at 0x0000022A78101668>\n\n    @allure.feature(\"gemport测试\")\n    @allure.story(\"gemport测试\")\n    @allure.title(\"测试mapping-mode为pri\")\n    @pytest.mark.run(order=13)\n    def test_gemport_pri(gemport_pri_suit):\n        '''\n        用例描述\n        测试目的： 测试mapping-mode is pri, mapping 为pri2时，vlan2000+2和vlan2000+3报文上下行是否都正常\n        测试步骤：\n        步骤1:发现未注册的ONU\n        步骤2:在OLT上通过SN的方式将ONU注册上线\n        步骤3:修改gemport配置为pri2\n        步骤4:配置虚端口vlan2000透传\n        步骤5:打流测试\n        测试方法：上下行各发送两条流：vlan2000 pri2和 vlan2000 pri3\n        结果：pri2的上下行都能通；pri3下行能通，上行不通\n    \n        '''\n        # tn=login\n        # 修改配置\n        # gemport_pri(tn)\n        cdata_info(\"=========mapping_mode为pri测试=========\")\n        tn = gemport_pri_suit\n        Vlan_list = [2000]\n        with allure.step('步骤1:发现未注册的ONU。'):\n            assert autofind_onu(tn, PonID, OnuID, SN)\n        with allure.step('步骤2:在OLT上通过SN的方式将ONU注册上线。'):\n            assert auth_by_sn(tn, PonID, OnuID, Ont_Lineprofile_ID, Ont_Srvprofile_ID, SN)\n        with allure.step(\"步骤3:修改gemport配置为pri 2\"):\n            assert gemport_pri(tn, ont_lineprofile_id=Ont_Lineprofile_ID)\n        with allure.step(\"步骤4:配置虚端口vlan2000透传\"):\n            assert add_service_port(tn, PonID, OnuID, Gemport_ID, Vlan_list)\n        with allure.step(\"步骤5:打流测试\"):\n            # 清除测试仪的对象，防止影响下个用例的执行\n            time.sleep(5)\n            reset_rom_cmd = ResetROMCommand()\n            reset_rom_cmd.execute()\n    \n            # 发流量测试，发送两条流2000+pri2，和vlan2000+pri3\n            # port_location = ['//192.168.0.180/1/9', '//192.168.0.180/1/10']\n            duration = 10\n            down_stream_header = (\n                'ethernetII_1.sourceMacAdd=00:00:00:11:11:11 vlan_1.id=2000 vlan_1.priority=2 ethernetII_1.destMacAdd=00:00:00:22:22:21',\n                'ethernetII_1.sourceMacAdd=00:00:00:11:11:12 vlan_1.id=2000 vlan_1.priority=3 ethernetII_1.destMacAdd=00:00:00:22:22:22')\n    \n            up_stream_header = (\n                'ethernetII_1.sourceMacAdd=00:00:00:22:22:21 vlan_1.id=2000 vlan_1.priority=2 ethernetII_1.destMacAdd=00:00:00:11:11:11',\n                'ethernetII_1.sourceMacAdd=00:00:00:22:22:22 vlan_1.id=2000 vlan_1.priority=3 ethernetII_1.destMacAdd=00:00:00:11:11:12',\n            )\n            # 获取所有流量的统计值\n            result_stats = unicast_test(port_location=port_location, down_stream_header=down_stream_header,\n                                   up_stream_header=up_stream_header, num=2, dataclassname=StreamBlockStats,\n                                   duration=duration)\n    \n            for i in range(4):\n>               if (result_stats[i].__dict__)['_StreamBlockID']=='sourceMacAdd=00:00:00:11:11:11':\nE               IndexError: list index out of range\n\ntest_onu_gemport.py:428: IndexError",
+    "steps" : [ {
+      "name" : "步骤1:发现未注册的ONU。",
+      "time" : {
+        "start" : 1594694187503,
+        "stop" : 1594694188607,
+        "duration" : 1104
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤2:在OLT上通过SN的方式将ONU注册上线。",
+      "time" : {
+        "start" : 1594694188607,
+        "stop" : 1594694197878,
+        "duration" : 9271
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤3:修改gemport配置为pri 2",
+      "time" : {
+        "start" : 1594694197878,
+        "stop" : 1594694199996,
+        "duration" : 2118
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤4:配置虚端口vlan2000透传",
+      "time" : {
+        "start" : 1594694199996,
+        "stop" : 1594694202002,
+        "duration" : 2006
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤5:打流测试",
+      "time" : {
+        "start" : 1594694202002,
+        "stop" : 1594694229936,
+        "duration" : 27934
+      },
+      "status" : "broken",
+      "statusMessage" : "IndexError: list index out of range\n",
+      "statusTrace" : "  File \"E:\\CDATA\\自动化测试\\Cdata_part11\\tests\\GponSfu\\test_onu_gemport.py\", line 428, in test_gemport_pri\n    if (result_stats[i].__dict__)['_StreamBlockID']=='sourceMacAdd=00:00:00:11:11:11':\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "adf135628c496689",
+      "name" : "log",
+      "source" : "adf135628c496689.txt",
+      "type" : "text/plain",
+      "size" : 2022
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 5,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "gemport_pri_suit::0",
+    "time" : {
+      "start" : 1594694230270,
+      "stop" : 1594694230421,
+      "duration" : 151
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "步骤6:gemport恢复默认配置",
+      "time" : {
+        "start" : 1594694230271,
+        "stop" : 1594694230421,
+        "duration" : 150
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 1,
+    "hasContent" : true
+  }, {
+    "name" : "login::0",
+    "time" : {
+      "start" : 1594694230423,
+      "stop" : 1594694238526,
+      "duration" : 8103
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "gemport测试"
+  }, {
+    "name" : "story",
+    "value" : "gemport测试"
+  }, {
+    "name" : "suite",
+    "value" : "test_onu_gemport"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-2JV12RE"
+  }, {
+    "name" : "thread",
+    "value" : "29004-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_onu_gemport"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "3858186b53959f4f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594692699065,
+        "stop" : 1594692750397,
+        "duration" : 51332
+      }
+    }, {
+      "uid" : "9e0c534cda975353",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594368162897,
+        "stop" : 1594368221489,
+        "duration" : 58592
+      }
+    }, {
+      "uid" : "56036605c2ee3c5b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594276448876,
+        "stop" : 1594276491510,
+        "duration" : 42634
+      }
+    }, {
+      "uid" : "8ae0605ebf22e237",
+      "status" : "skipped",
+      "statusDetails" : "_pytest.outcomes.XFailed: [NOTRUN] yield tests were removed in pytest 4.0 - test_gemport_pri will be ignored",
+      "time" : {
+        "start" : 1594276084670,
+        "stop" : 1594276084670,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "54f61d039c0cc28f",
+      "status" : "skipped",
+      "statusDetails" : "_pytest.outcomes.XFailed: [NOTRUN] yield tests were removed in pytest 4.0 - test_gemport_pri will be ignored",
+      "time" : {
+        "start" : 1594275644349,
+        "stop" : 1594275644349,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "3ba3316cc2700447",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594195158007,
+        "stop" : 1594195184061,
+        "duration" : 26054
+      }
+    }, {
+      "uid" : "f3ff499e9b72e6f2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594187247001,
+        "stop" : 1594187272080,
+        "duration" : 25079
+      }
+    }, {
+      "uid" : "523b30285ee69f8a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594186404344,
+        "stop" : 1594186430458,
+        "duration" : 26114
+      }
+    }, {
+      "uid" : "faeb8ffca8e1f657",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594179864462,
+        "stop" : 1594179890779,
+        "duration" : 26317
+      }
+    }, {
+      "uid" : "18354c8a9fcad52b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594178941794,
+        "stop" : 1594178967896,
+        "duration" : 26102
+      }
+    }, {
+      "uid" : "79c873a07fe3bd9c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594172000233,
+        "stop" : 1594172026967,
+        "duration" : 26734
+      }
+    }, {
+      "uid" : "1888ca9dd155fd09",
+      "status" : "broken",
+      "statusDetails" : "IndexError: list index out of range",
+      "time" : {
+        "start" : 1594170644406,
+        "stop" : 1594170669131,
+        "duration" : 24725
+      }
+    }, {
+      "uid" : "e052013153043db8",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x000002E21D31FD30>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594127014567,
+        "stop" : 1594127014567,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "714415b5cdaf96f4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594122172299,
+        "stop" : 1594122201822,
+        "duration" : 29523
+      }
+    }, {
+      "uid" : "2c4437b779dcf9cc",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = autofind_onu(<telnetlib.Telnet object at 0x0000027E35693C88>, '16', '2', '5A54453171200033')",
+      "time" : {
+        "start" : 1594112545592,
+        "stop" : 1594112545592,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "215c05d819bad245",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = auth_by_sn(<telnetlib.Telnet object at 0x00000208E29166D8>, '16', '2', '200', '200', '5A54453171200033')",
+      "time" : {
+        "start" : 1594034695403,
+        "stop" : 1594034695403,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "e9f6d88b15b9c481",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = auth_by_sn(<telnetlib.Telnet object at 0x00000208E2936AC8>, '16', '2', '200', '200', '5A54453171200033')",
+      "time" : {
+        "start" : 1594034607510,
+        "stop" : 1594034607510,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "191a9b56749d3774",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = auth_by_sn(<telnetlib.Telnet object at 0x00000208E2963B38>, '16', '2', '200', '200', '5A54453171200033')",
+      "time" : {
+        "start" : 1594034518958,
+        "stop" : 1594034518958,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "24cdae8f77a74c03",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593771289049,
+        "stop" : 1593771319245,
+        "duration" : 30196
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "d7eb0cd902b95524.json",
+  "parameterValues" : [ ]
+}

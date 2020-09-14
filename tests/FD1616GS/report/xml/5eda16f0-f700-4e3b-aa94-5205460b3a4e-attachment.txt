@@ -1,0 +1,32 @@
+INFO     CDATA:Cdata_loggers.py:105 =========mapping_mode为vlan_pri测试=========
+INFO     CDATA:Cdata_loggers.py:105 ONU在OLT上被重新被发现。
+INFO     CDATA:Cdata_loggers.py:105 当前ONU_ID没有被占用。
+INFO     CDATA:Cdata_loggers.py:105 ONU在OLT上添加成功。
+INFO     CDATA:Cdata_loggers.py:105 ONU在OLT上通过SN注册成功。
+INFO     CDATA:Cdata_loggers.py:105 配置mapping_mode为vlan+pri
+INFO     CDATA:Cdata_loggers.py:105 线路模板:mapping_mode设置成vlan+pri正常
+INFO     CDATA:Cdata_loggers.py:105 线路模板:配置gem mapping 为vlan 2000+pri2成功
+INFO     CDATA:Cdata_loggers.py:105 SERVICE-PORT添加成功
+INFO     script:renix_common_api.py:84 create ports with location:
+INFO     script:renix_common_api.py:84 StreamPortConfig_5 has lower: InterFrameGapProfile_5
+INFO     script:renix_common_api.py:84 StreamPortConfig_6 has lower: InterFrameGapProfile_6
+INFO     script:renix_common_api.py:84 port(//192.168.0.180/1/9) create streams
+INFO     script:renix_common_api.py:84 port(//192.168.0.180/1/10) create streams
+INFO     script:renix_common_api.py:84 port(//192.168.0.180/1/9) create streams
+INFO     script:renix_common_api.py:84 port(//192.168.0.180/1/10) create streams
+INFO     script:renix_common_api.py:84 port(//192.168.0.180/1/9) create streams
+INFO     script:renix_common_api.py:84 port(//192.168.0.180/1/10) create streams
+INFO     script:renix_common_api.py:84 PageResultView_3 has lower: ResultQuery_3
+INFO     script:renix_common_api.py:84 ResultQuery_3 has lower: StreamBlockStats_9 StreamBlockStats_10 StreamBlockStats_11 StreamBlockStats_12 StreamBlockStats_13 StreamBlockStats_14
+INFO     script:renix_common_api.py:84 [test pass] [sourceMacAdd=00:00:00:11:11:12] rx packet (104959)is  equal to tx packets (104959)
+INFO     script:renix_common_api.py:84 [test Pass] [sourceMacAdd=00:00:00:11:11:13] realtime loss packet (104960)is  equal to  tx packet(104960)
+INFO     script:renix_common_api.py:84 [test pass] [sourceMacAdd=00:00:00:11:11:11] rx packet (104959)is  equal to tx packets (104959)
+INFO     script:renix_common_api.py:84 [test pass] [sourceMacAdd=00:00:00:22:22:21] rx packet (104959)is  equal to tx packets (104959)
+INFO     script:renix_common_api.py:84 [test Pass] [sourceMacAdd=00:00:00:22:22:22] realtime loss packet (104959)is  equal to  tx packet(104959)
+INFO     script:renix_common_api.py:84 [test Pass] [sourceMacAdd=00:00:00:22:22:23] realtime loss packet (104960)is  equal to  tx packet(104960)
+INFO     CDATA:Cdata_loggers.py:105 mapping_mode为vlan+pri测试:打流测试正常
+INFO     CDATA:Cdata_loggers.py:105 配置gemport为transparent
+INFO     CDATA:Cdata_loggers.py:105 线路模板:mapping_mode设置成vlan正常
+INFO     CDATA:Cdata_loggers.py:105 线路模板:配置gemport 1为transparent成功
+INFO     CDATA:Cdata_loggers.py:105 ONU在OLT上删除成功
+INFO     CDATA:Cdata_loggers.py:105 ONU在OLT上被重新被发现。

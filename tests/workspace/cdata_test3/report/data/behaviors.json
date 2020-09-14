@@ -1,0 +1,359 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "信息上报",
+    "children" : [ {
+      "name" : "ONU信息上报",
+      "children" : [ {
+        "name" : "查看ONU的信息上报",
+        "uid" : "305641d399b3a63c",
+        "parentUid" : "6c17aaadf5a5dc5cc195e729d9757e9c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1598272738903,
+          "stop" : 1598272759309,
+          "duration" : 20406
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6c17aaadf5a5dc5cc195e729d9757e9c"
+    } ],
+    "uid" : "25f9a0cf0883bc28930f1f0d066b4567"
+  }, {
+    "name" : "ONU认证",
+    "children" : [ {
+      "name" : "ONU认证方式",
+      "children" : [ {
+        "name" : "Gpon_SN认证",
+        "uid" : "83beefe86e423e8a",
+        "parentUid" : "fcc9f769b54cb9d28e6f9c45b7eaae9f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1598272788588,
+          "stop" : 1598272865658,
+          "duration" : 77070
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Gpon_SN的PASSWORD认证",
+        "uid" : "749a89e48a073370",
+        "parentUid" : "fcc9f769b54cb9d28e6f9c45b7eaae9f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1598272892899,
+          "stop" : 1598272953953,
+          "duration" : 61054
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Gpon_SN+PASSWORD认证",
+        "uid" : "10d051a4251f6a28",
+        "parentUid" : "fcc9f769b54cb9d28e6f9c45b7eaae9f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1598272981183,
+          "stop" : 1598273048901,
+          "duration" : 67718
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "LOID认证",
+        "uid" : "1c3bd276e9a438ef",
+        "parentUid" : "fcc9f769b54cb9d28e6f9c45b7eaae9f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1598273077108,
+          "stop" : 1598273144537,
+          "duration" : 67429
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "LOID+PASSWORD认证",
+        "uid" : "e578f14bb97b9b31",
+        "parentUid" : "fcc9f769b54cb9d28e6f9c45b7eaae9f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1598273172795,
+          "stop" : 1598273240907,
+          "duration" : 68112
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "fcc9f769b54cb9d28e6f9c45b7eaae9f"
+    } ],
+    "uid" : "304415420421bd7c79e38c88ad916110"
+  }, {
+    "name" : "gemport测试",
+    "children" : [ {
+      "name" : "gemport测试",
+      "children" : [ {
+        "name" : "测试mapping为transaprent",
+        "uid" : "76c03d65a93b5b80",
+        "parentUid" : "21340d76d9b4f2e2358345c831b9b8f4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1598273269156,
+          "stop" : 1598273322761,
+          "duration" : 53605
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "测试mapping-mode为vlan",
+        "uid" : "cd34fafd97578b21",
+        "parentUid" : "21340d76d9b4f2e2358345c831b9b8f4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1598273349005,
+          "stop" : 1598273398712,
+          "duration" : 49707
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "测试mapping-mode为vlan_pri",
+        "uid" : "7dd4cf3846f2181a",
+        "parentUid" : "21340d76d9b4f2e2358345c831b9b8f4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1598273428450,
+          "stop" : 1598273487798,
+          "duration" : 59348
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "测试mapping-mode为pri",
+        "uid" : "345691221ddc136e",
+        "parentUid" : "21340d76d9b4f2e2358345c831b9b8f4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1598273517233,
+          "stop" : 1598273566510,
+          "duration" : 49277
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "测试mapping-mode为port",
+        "uid" : "15fb7d19c421d36a",
+        "parentUid" : "21340d76d9b4f2e2358345c831b9b8f4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1598273596964,
+          "stop" : 1598273681216,
+          "duration" : 84252
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "21340d76d9b4f2e2358345c831b9b8f4"
+    } ],
+    "uid" : "3b0e9458ce2057ac73e8982dac971aa6"
+  }, {
+    "name" : "onu端口vlan测试",
+    "children" : [ {
+      "name" : "onu端口vlan测试",
+      "children" : [ {
+        "name" : "测试onu端口vlan为transparent",
+        "uid" : "a2599c6401512c0d",
+        "parentUid" : "9f73c0657d1eee0f2d214441e36bb4db",
+        "status" : "failed",
+        "time" : {
+          "start" : 1598273708537,
+          "stop" : 1598273736939,
+          "duration" : 28402
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "测试onu端口vlan为trunk",
+        "uid" : "b2f39dc510e0dd69",
+        "parentUid" : "9f73c0657d1eee0f2d214441e36bb4db",
+        "status" : "passed",
+        "time" : {
+          "start" : 1598273765218,
+          "stop" : 1598273841776,
+          "duration" : 76558
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "测试onu端口vlan为translate",
+        "uid" : "810f9e72b76c4e63",
+        "parentUid" : "9f73c0657d1eee0f2d214441e36bb4db",
+        "status" : "failed",
+        "time" : {
+          "start" : 1598273877207,
+          "stop" : 1598273976817,
+          "duration" : 99610
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9f73c0657d1eee0f2d214441e36bb4db"
+    } ],
+    "uid" : "0287e8adbb4acb6b396819e1eaa2924f"
+  }, {
+    "name" : "onu mac地址上报测试",
+    "children" : [ {
+      "name" : "onu mac地址上报测试",
+      "children" : [ {
+        "name" : "onu mac地址上报测试",
+        "uid" : "c00951ecb26bd759",
+        "parentUid" : "197f938316c4f587706a6b11ae9cdeae",
+        "status" : "passed",
+        "time" : {
+          "start" : 1598274013247,
+          "stop" : 1598274077532,
+          "duration" : 64285
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "197f938316c4f587706a6b11ae9cdeae"
+    } ],
+    "uid" : "cab77c4b6b78d7b05aa11faf6f4a3484"
+  }, {
+    "name" : "onu限速测试",
+    "children" : [ {
+      "name" : "onu端口限速测试",
+      "children" : [ {
+        "name" : "测试onu端口入口限速",
+        "uid" : "47970119e0559f08",
+        "parentUid" : "b110806b5b5c7d5dfe8dd3acdfbb5f81",
+        "status" : "passed",
+        "time" : {
+          "start" : 1598274108793,
+          "stop" : 1598274158456,
+          "duration" : 49663
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "测试onu端口出口限速",
+        "uid" : "6ba62e5a39110de7",
+        "parentUid" : "b110806b5b5c7d5dfe8dd3acdfbb5f81",
+        "status" : "passed",
+        "time" : {
+          "start" : 1598274188744,
+          "stop" : 1598274290504,
+          "duration" : 101760
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b110806b5b5c7d5dfe8dd3acdfbb5f81"
+    }, {
+      "name" : "dba限速测试",
+      "children" : [ {
+        "name" : "测试dba限速(type4)",
+        "uid" : "91509bf3aac5ffc5",
+        "parentUid" : "32fec321970bb06d21677d0b7208652c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1598274316733,
+          "stop" : 1598274377650,
+          "duration" : 60917
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "32fec321970bb06d21677d0b7208652c"
+    } ],
+    "uid" : "4c1a2673d49b7101e2ab7b8f626a14f2"
+  }, {
+    "name" : "onu 组播测试",
+    "children" : [ {
+      "name" : "onu 组播snooping测试",
+      "children" : [ {
+        "name" : "测试onu组播正常通的情况",
+        "uid" : "f200976bf28d9dff",
+        "parentUid" : "9e0195bda11c4f43314d927deaddeda8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1598274404449,
+          "stop" : 1598274489839,
+          "duration" : 85390
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "测试onu跨组播vlan",
+        "uid" : "84cf678530e6ab3f",
+        "parentUid" : "9e0195bda11c4f43314d927deaddeda8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1598274517133,
+          "stop" : 1598274602225,
+          "duration" : 85092
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9e0195bda11c4f43314d927deaddeda8"
+    } ],
+    "uid" : "6eb954baa393f9595ea5cba8a187e1ba"
+  }, {
+    "name" : "ONU远程管理",
+    "children" : [ {
+      "name" : "远程管理ONU",
+      "children" : [ {
+        "name" : "去激活ONU",
+        "uid" : "43f8a1607f6eda4",
+        "parentUid" : "4d5dd68e0af88303430cb97476bb2ae0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1598274628500,
+          "stop" : 1598274772204,
+          "duration" : 143704
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "远程重启ONU",
+        "uid" : "aeda07b24e866f77",
+        "parentUid" : "4d5dd68e0af88303430cb97476bb2ae0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1598274796444,
+          "stop" : 1598274946400,
+          "duration" : 149956
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "4d5dd68e0af88303430cb97476bb2ae0"
+    } ],
+    "uid" : "cf822ca0fa84327fbe84230847d8dc58"
+  } ]
+}

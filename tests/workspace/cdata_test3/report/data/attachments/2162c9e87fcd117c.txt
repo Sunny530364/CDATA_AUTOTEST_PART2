@@ -1,0 +1,32 @@
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 192.168.0.181 登录成功
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 pon 16 端口使能成功
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 =========mapping_mode为pri测试=========
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU在OLT上被重新被发现。
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 当前ONU_ID没有被占用。
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU在OLT上添加成功。
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU在OLT上通过Gpon_SN注册成功。
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 配置mapping_mode为pri
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 线路模板:mapping_mode设置成pri正常
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 线路模板配置gem mapping 为pri2成功
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 SERVICE-PORT添加成功
+[32mINFO    [0m script:renix_common_api.py:84 create ports with location:
+[32mINFO    [0m script:renix_common_api.py:84 StreamPortConfig_17 has lower: InterFrameGapProfile_17
+[32mINFO    [0m script:renix_common_api.py:84 StreamPortConfig_18 has lower: InterFrameGapProfile_18
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/7) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/8) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/7) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/8) create streams
+[32mINFO    [0m script:renix_common_api.py:84 PageResultView_9 has lower: ResultQuery_9
+[32mINFO    [0m script:renix_common_api.py:84 ResultQuery_9 has lower: StreamBlockStats_27 StreamBlockStats_28 StreamBlockStats_29 StreamBlockStats_30
+[1m[31mERROR   [0m script:renix_common_api.py:74 [test fail] [sourceMacAdd=00:00:00:11:11:11] rx packet (0) or tx packets (99214) is 0
+[1m[31mERROR   [0m script:renix_common_api.py:74 [test fail] [sourceMacAdd=00:00:00:11:11:12] rx packet (0) or tx packets (99214) is 0
+[1m[31mERROR   [0m script:renix_common_api.py:74 [test fail] [sourceMacAdd=00:00:00:22:22:21] rx packet (0) or tx packets (44023) is 0
+[32mINFO    [0m script:renix_common_api.py:84 [test Pass] [sourceMacAdd=00:00:00:22:22:22]rx(0), realtime loss packet (44023)is  equal to  tx packet(44023)
+[1m[31mERROR   [0m CDATA:Cdata_loggers.py:98 mapping_mode为pir测试:打流测试失败
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 配置gemport为transparent
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 线路模板:mapping_mode设置成vlan正常
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 线路模板:配置gemport 1为transparent成功
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU在OLT上删除成功
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU在OLT上被重新被发现。
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 pon 16 端口去使能成功
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 退出登录

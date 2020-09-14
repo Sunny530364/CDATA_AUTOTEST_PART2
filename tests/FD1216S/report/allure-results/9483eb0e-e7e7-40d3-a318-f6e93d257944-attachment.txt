@@ -1,0 +1,39 @@
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 192.168.3.138 登录成功
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 =========去激活ONU=========
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU在OLT上被重新被发现。
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 当前ONU_ID没有被占用。
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU在OLT上添加成功。
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU在OLT上通过MAC注册成功。
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONT Native-vlan配置成功
+[32mINFO    [0m script:renix_common_api.py:84 Create ports with locations:['//192.168.0.180/1/7', '//192.168.0.180/1/8']
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ===========================================================================
+[32mINFO    [0m script:renix_common_api.py:84 EthCopper_27 has lower: EthCopperConfig_27
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 当前端口1的协商速率为：EnumLineSpeed.SPEED_1G
+[32mINFO    [0m script:renix_common_api.py:84 EthCopper_28 has lower: EthCopperConfig_28
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 当前端口2的协商速率为：EnumLineSpeed.SPEED_1G
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ===========================================================================
+[32mINFO    [0m script:renix_common_api.py:84 StreamPortConfig_27 has lower: InterFrameGapProfile_27
+[32mINFO    [0m script:renix_common_api.py:84 StreamPortConfig_28 has lower: InterFrameGapProfile_28
+[32mINFO    [0m script:renix_common_api.py:84 port(['//192.168.0.180/1/7', '//192.168.0.180/1/8']) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(['//192.168.0.180/1/7', '//192.168.0.180/1/8']) create streams
+[32mINFO    [0m script:renix_common_api.py:84 PageResultView_14 has lower: ResultQuery_20
+[32mINFO    [0m script:renix_common_api.py:84 ResultQuery_20 has lower: StreamBlockStats_58 StreamBlockStats_59
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 测试仪发流成功
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU去激活成功。
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU激活成功。
+[32mINFO    [0m script:renix_common_api.py:84 Create ports with locations:['//192.168.0.180/1/7', '//192.168.0.180/1/8']
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ===========================================================================
+[32mINFO    [0m script:renix_common_api.py:84 EthCopper_29 has lower: EthCopperConfig_29
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 当前端口1的协商速率为：EnumLineSpeed.SPEED_1G
+[32mINFO    [0m script:renix_common_api.py:84 EthCopper_30 has lower: EthCopperConfig_30
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 当前端口2的协商速率为：EnumLineSpeed.SPEED_1G
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ===========================================================================
+[32mINFO    [0m script:renix_common_api.py:84 StreamPortConfig_29 has lower: InterFrameGapProfile_29
+[32mINFO    [0m script:renix_common_api.py:84 StreamPortConfig_30 has lower: InterFrameGapProfile_30
+[32mINFO    [0m script:renix_common_api.py:84 port(['//192.168.0.180/1/7', '//192.168.0.180/1/8']) create streams
+[32mINFO    [0m script:renix_common_api.py:84 port(['//192.168.0.180/1/7', '//192.168.0.180/1/8']) create streams
+[32mINFO    [0m script:renix_common_api.py:84 PageResultView_15 has lower: ResultQuery_21
+[32mINFO    [0m script:renix_common_api.py:84 ResultQuery_21 has lower: StreamBlockStats_60 StreamBlockStats_61
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 测试仪发流成功
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU在OLT上删除成功
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU在OLT上被重新被发现。

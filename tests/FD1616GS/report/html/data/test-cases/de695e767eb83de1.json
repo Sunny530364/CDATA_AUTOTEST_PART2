@@ -1,0 +1,258 @@
+{
+  "uid" : "de695e767eb83de1",
+  "name" : "测试onu端口vlan为transparent",
+  "fullName" : "test_onu_vlan#test_onu_transparent",
+  "historyId" : "f897002f82c9b5312a7a572390c6c745",
+  "time" : {
+    "start" : 1594281061072,
+    "stop" : 1594281109520,
+    "duration" : 48448
+  },
+  "description" : "\n    用例描述\n    测试目的： 测试onu端口为transparent，测试上下行流vlan2000-2001是否正常\n    测试步骤：\n    步骤1: 发现未注册的ONU\n    步骤2: 在OLT上通过SN的方式将ONU注册上线\n    步骤3: 配置onu端口vlan为transparent\n    步骤4: 添加虚端口vlan透传2000,2001\n    步骤5：打流测试\n    1）上下行发vlan2000和2001的流两条\n    预期结果: 上下行vlan2000-2001的流量正常通\n    ",
+  "descriptionHtml" : "<pre><code>用例描述\n测试目的： 测试onu端口为transparent，测试上下行流vlan2000-2001是否正常\n测试步骤：\n步骤1: 发现未注册的ONU\n步骤2: 在OLT上通过SN的方式将ONU注册上线\n步骤3: 配置onu端口vlan为transparent\n步骤4: 添加虚端口vlan透传2000,2001\n步骤5：打流测试\n1）上下行发vlan2000和2001的流两条\n预期结果: 上下行vlan2000-2001的流量正常通\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "login",
+    "time" : {
+      "start" : 1594281048001,
+      "stop" : 1594281061071,
+      "duration" : 13070
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1594281048001,
+      "stop" : 1594281048001,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1594281048001,
+      "stop" : 1594281048001,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1594281048001,
+      "stop" : 1594281048001,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1594281048001,
+      "stop" : 1594281048001,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "__pytest_repeat_step_number",
+    "time" : {
+      "start" : 1594281048001,
+      "stop" : 1594281048001,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n    用例描述\n    测试目的： 测试onu端口为transparent，测试上下行流vlan2000-2001是否正常\n    测试步骤：\n    步骤1: 发现未注册的ONU\n    步骤2: 在OLT上通过SN的方式将ONU注册上线\n    步骤3: 配置onu端口vlan为transparent\n    步骤4: 添加虚端口vlan透传2000,2001\n    步骤5：打流测试\n    1）上下行发vlan2000和2001的流两条\n    预期结果: 上下行vlan2000-2001的流量正常通\n    ",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "步骤1:发现未注册的ONU。",
+      "time" : {
+        "start" : 1594281061075,
+        "stop" : 1594281062255,
+        "duration" : 1180
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤2:在OLT上通过SN的方式将ONU注册上线。",
+      "time" : {
+        "start" : 1594281062255,
+        "stop" : 1594281075133,
+        "duration" : 12878
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤3:配置onu端口vlan为transparent",
+      "time" : {
+        "start" : 1594281075133,
+        "stop" : 1594281083194,
+        "duration" : 8061
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤4:添加虚端口vlan透传2000,2001",
+      "time" : {
+        "start" : 1594281083194,
+        "stop" : 1594281086240,
+        "duration" : 3046
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "步骤5:打流测试",
+      "time" : {
+        "start" : 1594281086240,
+        "stop" : 1594281109519,
+        "duration" : 23279
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "61dd99e2d3ec365a",
+      "name" : "log",
+      "source" : "61dd99e2d3ec365a.txt",
+      "type" : "text/plain",
+      "size" : 2250
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 5,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "login::0",
+    "time" : {
+      "start" : 1594281109526,
+      "stop" : 1594281124730,
+      "duration" : 15204
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "onu端口vlan测试"
+  }, {
+    "name" : "story",
+    "value" : "onu端口vlan测试"
+  }, {
+    "name" : "suite",
+    "value" : "test_onu_vlan"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-2JV12RE"
+  }, {
+    "name" : "thread",
+    "value" : "28716-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_onu_vlan"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "__pytest_repeat_step_number",
+    "value" : "0"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "de695e767eb83de1.json",
+  "parameterValues" : [ "0" ]
+}

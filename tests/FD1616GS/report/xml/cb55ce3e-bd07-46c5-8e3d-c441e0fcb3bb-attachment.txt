@@ -1,0 +1,1 @@
+[33mWARNING [0m root:telnet_client.py:50 192.168.5.164 设备连接失败

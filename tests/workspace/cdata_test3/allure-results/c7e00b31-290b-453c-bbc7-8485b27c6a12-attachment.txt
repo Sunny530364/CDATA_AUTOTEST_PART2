@@ -1,0 +1,28 @@
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 192.168.0.181 登录成功
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 pon 16 端口使能成功
+[32mINFO    [0m script:renix_common_api.py:84 =========ONU组播snooping测试:跨组播vlan测试=========
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 =========ONU组播snooping测试:跨组播vlan测试=========
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU在OLT上被重新被发现。
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 当前ONU_ID没有被占用。
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU在OLT上添加成功。
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU在OLT上通过Gpon_SN注册成功。
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONT Native-vlan配置成功
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 SERVICE-PORT添加成功
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 onu端口绑定组播模板成功
+[32mINFO    [0m script:renix_common_api.py:84 create ports with location:
+[32mINFO    [0m script:renix_common_api.py:84 StreamPortConfig_37 has lower: InterFrameGapProfile_37
+[32mINFO    [0m script:renix_common_api.py:84 port(//192.168.0.180/1/7) create streams
+[32mINFO    [0m script:renix_common_api.py:84 PageResultView_19 has lower: ResultQuery_23
+[32mINFO    [0m script:renix_common_api.py:84 ——————————————report test————————————
+[32mINFO    [0m script:renix_common_api.py:84 igmp_client: IgmpTxFrames is 1，IgmpTxV2Reports is 1，IgmpTxLeaveGroups is 0
+[32mINFO    [0m script:renix_common_api.py:84 imgp_client: IgmpRxFrame is 0,IgmpRxGeneralQueries is 0,IgmpRxGroupSpecificQueries is 0
+[32mINFO    [0m script:renix_common_api.py:84 igmp_server:  QuerierTxFrames is 1,QuerierRxFrames is 0
+[1m[31mERROR   [0m script:renix_common_api.py:74 [igmp_report test fail][Stream_239.1.1.1] igmp_server tx igmp packet:722407,igmp_client rx igmp packet:0
+[32mINFO    [0m script:renix_common_api.py:84 ——————————————leave test————————————
+[32mINFO    [0m script:renix_common_api.py:84 igmp_client: IgmpTxFrames is 2，IgmpTxV2Reports is 1，IgmpTxLeaveGroups is 1
+[32mINFO    [0m script:renix_common_api.py:84 [igmp_leave test pass]Stream_239.1.1.1 igmp_client tx leave packet ,result:igmp_server tx:337595,igmp_client rx：0
+[1m[31mERROR   [0m CDATA:Cdata_loggers.py:98 测试onu跨组播vlan的情况:打流测试失败
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU在OLT上删除成功
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU在OLT上被重新被发现。
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 pon 16 端口去使能成功
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 退出登录

@@ -1,0 +1,5 @@
+[INFO] 2020-08-28 16:19:42,317  Receive Msg: listen_port 9003
+
+[INFO] 2020-08-28 16:19:42,402  Renix api initialization finished
+[INFO] 2020-08-28 16:19:57,484  =========ONU组播snooping测试:组播正常通=========
+[INFO] 2020-08-28 16:20:25,272  create ports with location:

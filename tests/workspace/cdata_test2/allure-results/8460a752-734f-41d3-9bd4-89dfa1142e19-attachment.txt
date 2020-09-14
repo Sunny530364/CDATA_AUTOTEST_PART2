@@ -1,0 +1,68 @@
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 192.168.0.181 登录成功
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 pon 16 端口使能成功
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 =========查看onu的信息上报=========
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU在OLT上被重新被发现。
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 当前ONU_ID没有被占用。
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU在OLT上添加成功。
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU在OLT上通过Gpon_SN注册成功。
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ==========================================================
+[32mINFO    [0m CDATA:Cdata_loggers.py:106                ONU的基本信息：
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ==========================================================
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 机箱号和槽位号   ：0/0
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 PON口号          ：16
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU ID           ：2
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 控制标志位       ：active
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 运行状态         ：online
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 配置状态         ：success
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 能力匹配状态     ：match
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 DBA类型          ：SR
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 测距距离         ：0
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 认证方式         ：sn-auth
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 Gpon_SN号             ：CMDC9C110111
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ==========================================================
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 
+
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ==========================================================
+[32mINFO    [0m CDATA:Cdata_loggers.py:106                ONU上报的版本信息：
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ==========================================================
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 硬件版本号       ：RTL960x
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 主分区软件版本号 ：V4.0.0-200730
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 备分区软件版本号 ：V4.0.0-200730
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 Vendor ID        ：RTKG
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 Product ID       ：0000
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 Equipment ID     ：IGD
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ==========================================================
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 
+
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ==========================================================
+[32mINFO    [0m CDATA:Cdata_loggers.py:106                ONU上报的能力集信息：
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ==========================================================
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU类型          ：SFU/HGU 
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 OMCC版本号       ：0x80
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 PON口数量        ：1
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 语音口数量       ：1
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 IP_HOST数量      ：2
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 以太网口数量     ：4
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 VEIP口数量       ：1
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 CATV口数量       ：1
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 Gemport数量      ：127
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 Tcont数量        ：16
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 支持的流控方式   ：PQ
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ==========================================================
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 
+
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ==========================================================
+[32mINFO    [0m CDATA:Cdata_loggers.py:106                ONU上报的光参数信息：
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ==========================================================
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 电压(V)             ：3.38
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 TX光功率(dBm)       ：2.82
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 RX光功率(dBm)       ：-10.55
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 电流(mA)            ：16.65
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 温度(℃)            ：63.38
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 CATV_RX光功率(dBm)  ：--
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ==========================================================
+[32mINFO    [0m CDATA:Cdata_loggers.py:106
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU在OLT上删除成功
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU在OLT上被重新被发现。
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 pon 16 端口去使能成功
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 退出登录

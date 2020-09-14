@@ -1,0 +1,235 @@
+{
+  "uid" : "f67f998cb1631da8",
+  "name" : "测试onu端口vlan为transparent",
+  "fullName" : "test_onu_vlan#test_onu_transparent",
+  "historyId" : "636b26624db9af152cf9fc0959f367fd",
+  "time" : {
+    "start" : 1598273708537,
+    "stop" : 1598273736939,
+    "duration" : 28402
+  },
+  "description" : "\n    用例描述\n    测试目的： 测试onu端口为transparent，测试上下行流vlan2000-2001是否正常\n    测试步骤：\n    步骤1: 发现未注册的ONU\n    步骤2: 在OLT上通过Gpon_SN的方式将ONU注册上线\n    步骤3: 配置onu端口vlan为transparent\n    步骤4: 添加虚端口vlan透传2000,2001\n    步骤5：打流测试\n    1）上下行发vlan2000和2001的流两条\n    down_stream_header = (\n        'ethernetII_1.sourceMacAdd=00:00:00:11:11:11 vlan_1.id=2000  ethernetII_1.destMacAdd=00:00:00:22:22:21',\n        'ethernetII_1.sourceMacAdd=00:00:00:11:11:12 vlan_1.id=2001  ethernetII_1.destMacAdd=00:00:00:22:22:22',)\n    up_stream_header = (\n        'ethernetII_1.sourceMacAdd=00:00:00:22:22:21 vlan_1.id=2000  ethernetII_1.destMacAdd=00:00:00:11:11:11',\n        'ethernetII_1.sourceMacAdd=00:00:00:22:22:22 vlan_1.id=2001  ethernetII_1.destMacAdd=00:00:00:11:11:12',)\n    预期结果: 上下行vlan2000-2001的流量正常通\n    ",
+  "descriptionHtml" : "<pre><code>用例描述\n测试目的： 测试onu端口为transparent，测试上下行流vlan2000-2001是否正常\n测试步骤：\n步骤1: 发现未注册的ONU\n步骤2: 在OLT上通过Gpon_SN的方式将ONU注册上线\n步骤3: 配置onu端口vlan为transparent\n步骤4: 添加虚端口vlan透传2000,2001\n步骤5：打流测试\n1）上下行发vlan2000和2001的流两条\ndown_stream_header = (\n    'ethernetII_1.sourceMacAdd=00:00:00:11:11:11 vlan_1.id=2000  ethernetII_1.destMacAdd=00:00:00:22:22:21',\n    'ethernetII_1.sourceMacAdd=00:00:00:11:11:12 vlan_1.id=2001  ethernetII_1.destMacAdd=00:00:00:22:22:22',)\nup_stream_header = (\n    'ethernetII_1.sourceMacAdd=00:00:00:22:22:21 vlan_1.id=2000  ethernetII_1.destMacAdd=00:00:00:11:11:11',\n    'ethernetII_1.sourceMacAdd=00:00:00:22:22:22 vlan_1.id=2001  ethernetII_1.destMacAdd=00:00:00:11:11:12',)\n预期结果: 上下行vlan2000-2001的流量正常通\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert False\n +  where False = ont_port_transparent(<telnetlib.Telnet object at 0x00000270246BAE48>, '200')",
+  "statusTrace" : "login = <telnetlib.Telnet object at 0x00000270246BAE48>\n\n    @allure.feature(\"onu端口vlan测试\")\n    @allure.story(\"onu端口vlan测试\")\n    @allure.title(\"测试onu端口vlan为transparent\")\n    @pytest.mark.run(order=1617)\n    def test_onu_transparent(login):\n        '''\n        用例描述\n        测试目的： 测试onu端口为transparent，测试上下行流vlan2000-2001是否正常\n        测试步骤：\n        步骤1: 发现未注册的ONU\n        步骤2: 在OLT上通过Gpon_SN的方式将ONU注册上线\n        步骤3: 配置onu端口vlan为transparent\n        步骤4: 添加虚端口vlan透传2000,2001\n        步骤5：打流测试\n        1）上下行发vlan2000和2001的流两条\n        down_stream_header = (\n            'ethernetII_1.sourceMacAdd=00:00:00:11:11:11 vlan_1.id=2000  ethernetII_1.destMacAdd=00:00:00:22:22:21',\n            'ethernetII_1.sourceMacAdd=00:00:00:11:11:12 vlan_1.id=2001  ethernetII_1.destMacAdd=00:00:00:22:22:22',)\n        up_stream_header = (\n            'ethernetII_1.sourceMacAdd=00:00:00:22:22:21 vlan_1.id=2000  ethernetII_1.destMacAdd=00:00:00:11:11:11',\n            'ethernetII_1.sourceMacAdd=00:00:00:22:22:22 vlan_1.id=2001  ethernetII_1.destMacAdd=00:00:00:11:11:12',)\n        预期结果: 上下行vlan2000-2001的流量正常通\n        '''\n    \n        cdata_info(\"=========测试ONU端口vlan为transaprent=========\")\n        Vlan_list = [2000, 2001]\n        tn = login\n        with allure.step('步骤1:发现未注册的ONU。'):\n            assert autofind_onu(tn, Gpon_PonID, Gpon_OnuID, Gpon_SN)\n        with allure.step('步骤2:在OLT上通过Gpon_SN的方式将ONU注册上线。'):\n            assert auth_by_sn(tn, Gpon_PonID, Gpon_OnuID, Ont_Lineprofile_ID, Ont_Srvprofile_ID, Gpon_SN)\n        with allure.step(\"步骤3:配置onu端口vlan为transparent\"):\n>           assert ont_port_transparent(tn, Ont_Srvprofile_ID)\nE           AssertionError: assert False\nE            +  where False = ont_port_transparent(<telnetlib.Telnet object at 0x00000270246BAE48>, '200')\n\nFD1616GS\\test_onu_vlan.py:109: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1598272724833,
+      "stop" : 1598272724833,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1598272724833,
+      "stop" : 1598272724833,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1598272724833,
+      "stop" : 1598272724833,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "__pytest_repeat_step_number",
+    "time" : {
+      "start" : 1598273694542,
+      "stop" : 1598273694542,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1598273694542,
+      "stop" : 1598273694542,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "login",
+    "time" : {
+      "start" : 1598273694542,
+      "stop" : 1598273708536,
+      "duration" : 13994
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "\n    用例描述\n    测试目的： 测试onu端口为transparent，测试上下行流vlan2000-2001是否正常\n    测试步骤：\n    步骤1: 发现未注册的ONU\n    步骤2: 在OLT上通过Gpon_SN的方式将ONU注册上线\n    步骤3: 配置onu端口vlan为transparent\n    步骤4: 添加虚端口vlan透传2000,2001\n    步骤5：打流测试\n    1）上下行发vlan2000和2001的流两条\n    down_stream_header = (\n        'ethernetII_1.sourceMacAdd=00:00:00:11:11:11 vlan_1.id=2000  ethernetII_1.destMacAdd=00:00:00:22:22:21',\n        'ethernetII_1.sourceMacAdd=00:00:00:11:11:12 vlan_1.id=2001  ethernetII_1.destMacAdd=00:00:00:22:22:22',)\n    up_stream_header = (\n        'ethernetII_1.sourceMacAdd=00:00:00:22:22:21 vlan_1.id=2000  ethernetII_1.destMacAdd=00:00:00:11:11:11',\n        'ethernetII_1.sourceMacAdd=00:00:00:22:22:22 vlan_1.id=2001  ethernetII_1.destMacAdd=00:00:00:11:11:12',)\n    预期结果: 上下行vlan2000-2001的流量正常通\n    ",
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert False\n +  where False = ont_port_transparent(<telnetlib.Telnet object at 0x00000270246BAE48>, '200')",
+    "statusTrace" : "login = <telnetlib.Telnet object at 0x00000270246BAE48>\n\n    @allure.feature(\"onu端口vlan测试\")\n    @allure.story(\"onu端口vlan测试\")\n    @allure.title(\"测试onu端口vlan为transparent\")\n    @pytest.mark.run(order=1617)\n    def test_onu_transparent(login):\n        '''\n        用例描述\n        测试目的： 测试onu端口为transparent，测试上下行流vlan2000-2001是否正常\n        测试步骤：\n        步骤1: 发现未注册的ONU\n        步骤2: 在OLT上通过Gpon_SN的方式将ONU注册上线\n        步骤3: 配置onu端口vlan为transparent\n        步骤4: 添加虚端口vlan透传2000,2001\n        步骤5：打流测试\n        1）上下行发vlan2000和2001的流两条\n        down_stream_header = (\n            'ethernetII_1.sourceMacAdd=00:00:00:11:11:11 vlan_1.id=2000  ethernetII_1.destMacAdd=00:00:00:22:22:21',\n            'ethernetII_1.sourceMacAdd=00:00:00:11:11:12 vlan_1.id=2001  ethernetII_1.destMacAdd=00:00:00:22:22:22',)\n        up_stream_header = (\n            'ethernetII_1.sourceMacAdd=00:00:00:22:22:21 vlan_1.id=2000  ethernetII_1.destMacAdd=00:00:00:11:11:11',\n            'ethernetII_1.sourceMacAdd=00:00:00:22:22:22 vlan_1.id=2001  ethernetII_1.destMacAdd=00:00:00:11:11:12',)\n        预期结果: 上下行vlan2000-2001的流量正常通\n        '''\n    \n        cdata_info(\"=========测试ONU端口vlan为transaprent=========\")\n        Vlan_list = [2000, 2001]\n        tn = login\n        with allure.step('步骤1:发现未注册的ONU。'):\n            assert autofind_onu(tn, Gpon_PonID, Gpon_OnuID, Gpon_SN)\n        with allure.step('步骤2:在OLT上通过Gpon_SN的方式将ONU注册上线。'):\n            assert auth_by_sn(tn, Gpon_PonID, Gpon_OnuID, Ont_Lineprofile_ID, Ont_Srvprofile_ID, Gpon_SN)\n        with allure.step(\"步骤3:配置onu端口vlan为transparent\"):\n>           assert ont_port_transparent(tn, Ont_Srvprofile_ID)\nE           AssertionError: assert False\nE            +  where False = ont_port_transparent(<telnetlib.Telnet object at 0x00000270246BAE48>, '200')\n\nFD1616GS\\test_onu_vlan.py:109: AssertionError",
+    "steps" : [ {
+      "name" : "步骤1:发现未注册的ONU。",
+      "time" : {
+        "start" : 1598273708541,
+        "stop" : 1598273709684,
+        "duration" : 1143
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "步骤2:在OLT上通过Gpon_SN的方式将ONU注册上线。",
+      "time" : {
+        "start" : 1598273709684,
+        "stop" : 1598273728877,
+        "duration" : 19193
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "步骤3:配置onu端口vlan为transparent",
+      "time" : {
+        "start" : 1598273728877,
+        "stop" : 1598273736936,
+        "duration" : 8059
+      },
+      "status" : "failed",
+      "statusMessage" : "AssertionError: assert False\n +  where False = ont_port_transparent(<telnetlib.Telnet object at 0x00000270246BAE48>, '200')\n",
+      "statusTrace" : "  File \"E:\\CDATA\\自动化测试\\Cdata_part11\\tests\\FD1616GS\\test_onu_vlan.py\", line 109, in test_onu_transparent\n    assert ont_port_transparent(tn, Ont_Srvprofile_ID)\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "5ae15b82e53b658a",
+      "name" : "log",
+      "source" : "5ae15b82e53b658a.txt",
+      "type" : "text/plain",
+      "size" : 924
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ {
+    "name" : "login::0",
+    "time" : {
+      "start" : 1598273736959,
+      "stop" : 1598273751214,
+      "duration" : 14255
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "onu端口vlan测试"
+  }, {
+    "name" : "story",
+    "value" : "onu端口vlan测试"
+  }, {
+    "name" : "suite",
+    "value" : "test_onu_vlan"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-2JV12RE"
+  }, {
+    "name" : "thread",
+    "value" : "14976-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_onu_vlan"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "f67f998cb1631da8.json",
+  "parameterValues" : [ ]
+}

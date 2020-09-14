@@ -1,0 +1,16 @@
+[INFO] 2020-09-14 11:26:02,430  Receive Msg: listen_port 9002
+
+[INFO] 2020-09-14 11:26:02,521  Renix api initialization finished
+[INFO] 2020-09-14 11:26:05,580  create ports with location:
+[INFO] 2020-09-14 11:26:07,239  StreamPortConfig_1 has lower: InterFrameGapProfile_1
+[INFO] 2020-09-14 11:26:07,246  StreamPortConfig_2 has lower: InterFrameGapProfile_2
+[INFO] 2020-09-14 11:26:07,276  port(//192.168.0.180/1/1) create streams
+[INFO] 2020-09-14 11:26:07,543  port(//192.168.0.180/1/2) create streams
+[INFO] 2020-09-14 11:26:08,386  PageResultView_1 has lower: ResultQuery_1
+[INFO] 2020-09-14 11:26:08,390  EthCopper_1 has lower: EthCopperConfig_1
+[INFO] 2020-09-14 11:26:08,393  EthCopper_2 has lower: EthCopperConfig_2
+[INFO] 2020-09-14 11:26:08,396  EthCopper_2 has lower: EthCopperConfig_2
+[INFO] 2020-09-14 11:26:08,398  EthCopper_1 has lower: EthCopperConfig_1
+[INFO] 2020-09-14 11:26:24,310  ResultQuery_1 has lower: StreamBlockStats_1 StreamBlockStats_2
+[ERROR] 2020-09-14 11:26:24,413  b'_TCLERROR:Capture do not stop.'
+[INFO] 2020-09-14 11:26:24,416  close connection to CL

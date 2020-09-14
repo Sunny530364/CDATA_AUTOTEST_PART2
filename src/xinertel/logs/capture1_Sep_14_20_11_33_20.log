@@ -1,0 +1,17 @@
+[INFO] 2020-09-14 11:33:30,992  Receive Msg: listen_port 9002
+
+[INFO] 2020-09-14 11:33:31,105  Renix api initialization finished
+[INFO] 2020-09-14 11:33:34,179  create ports with location:
+[INFO] 2020-09-14 11:33:35,880  StreamPortConfig_1 has lower: InterFrameGapProfile_1
+[INFO] 2020-09-14 11:33:35,890  StreamPortConfig_2 has lower: InterFrameGapProfile_2
+[INFO] 2020-09-14 11:33:35,926  port(//192.168.0.180/1/1) create streams
+[INFO] 2020-09-14 11:33:36,277  port(//192.168.0.180/1/2) create streams
+[INFO] 2020-09-14 11:33:37,405  PageResultView_1 has lower: ResultQuery_1
+[INFO] 2020-09-14 11:33:37,409  EthCopper_1 has lower: EthCopperConfig_1
+[INFO] 2020-09-14 11:33:37,411  EthCopper_2 has lower: EthCopperConfig_2
+[INFO] 2020-09-14 11:33:37,413  EthCopper_2 has lower: EthCopperConfig_2
+[INFO] 2020-09-14 11:33:37,415  EthCopper_1 has lower: EthCopperConfig_1
+[INFO] 2020-09-14 11:33:53,401  ResultQuery_1 has lower: StreamBlockStats_1 StreamBlockStats_2
+[INFO] 2020-09-14 11:33:55,618  [test pass] [sourceMacAdd=00:00:00:11:11:11] rx packet (10562)is  equal to tx packets (10562)
+[INFO] 2020-09-14 11:33:55,624  [test pass] [sourceMacAdd=00:00:00:22:22:21] rx packet (105620)is  equal to tx packets (105620)
+[INFO] 2020-09-14 11:33:55,625  close connection to CL

@@ -1,0 +1,68 @@
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 192.168.3.138 登录成功
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 =========查看onu的信息上报=========
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU在OLT上被重新被发现。
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 当前ONU_ID没有被占用。
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU在OLT上添加成功。
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU在OLT上通过MAC注册成功。
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ==========================================================
+[32mINFO    [0m CDATA:Cdata_loggers.py:106                ONU的基本信息：
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ==========================================================
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 机箱号和槽位号   ：0/0
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 PON口号          ：5
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU ID           ：1
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 控制标志位       ：active
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 运行状态         ：online
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 配置状态         ：success
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 能力匹配状态     ：match
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 测距距离         ：42m
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 认证方式         ：mac-auth
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 MAC地址          ：E0:67:B3:33:44:55
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ==========================================================
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 
+
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ==========================================================
+[32mINFO    [0m CDATA:Cdata_loggers.py:106                ONU上报的版本信息：
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ==========================================================
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 硬件版本号       ：V1.0.0
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 软件版本号       ：V1.0.9
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 Vendor ID        ：RTKG
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONT_model        ：451R(0x34353152)
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 Extended_model   ：451R
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 芯片Vendor ID    ：0479
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 芯片型号         ：9603
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 芯片revision     ：01
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 芯片evision      ：00.00.02
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 固件版本         ：0x312e312e32 
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ==========================================================
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 
+
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ==========================================================
+[32mINFO    [0m CDATA:Cdata_loggers.py:106                ONU上报的能力集信息：
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ==========================================================
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU类型          ：SFU
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 PON口接口数量    ：1
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 以太网口数量     ：4(3FE+1GE)
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 语音口数量       ：0
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 CATV接口数量     ：1
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 WIFI接口数量     ：0
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 上行队列数量     ：8
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 最大上行队列数量 ：8
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 下行队列数量     ：8
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 最大下行队列数量 ：8
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 LLID数量         ：1
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 是否支持IPV6     ：support
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ==========================================================
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 
+
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ==========================================================
+[32mINFO    [0m CDATA:Cdata_loggers.py:106                ONU上报的光参数信息：
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ==========================================================
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 电压(V)             ：3.35
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 TX光功率(dBm)       ：2.47
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 RX光功率(dBm)       ：-29.21
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 电流(mA)            ：7.95
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 温度(℃)            ：30.50
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ==========================================================
+[32mINFO    [0m CDATA:Cdata_loggers.py:106
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU在OLT上删除成功
+[32mINFO    [0m CDATA:Cdata_loggers.py:106 ONU在OLT上被重新被发现。

@@ -1,0 +1,99 @@
+九月 10, 2020 2:28:06 下午 org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver resolve
+信息: Remoting server accepts the following protocols: [JNLP4-connect, Ping]
+九月 10, 2020 2:39:02 下午 org.eclipse.jgit.util.FS$FileStoreAttributes saveToConfig
+警告: locking FileBasedConfig[C:\Users\ThinkPad\.config\jgit\config] failed after 5 retries
+九月 10, 2020 3:09:12 下午 hudson.Launcher$RemoteLaunchCallable$1 join
+信息: Failed to synchronize IO streams on the channel hudson.remoting.Channel@41598963:JNLP4-connect connection to 192.168.0.182/192.168.0.182:37169
+hudson.remoting.ChannelClosedException: Channel "hudson.remoting.Channel@41598963:JNLP4-connect connection to 192.168.0.182/192.168.0.182:37169": Remote call on JNLP4-connect connection to 192.168.0.182/192.168.0.182:37169 failed. The channel is closing down or has closed down
+	at hudson.remoting.Channel.call(Channel.java:991)
+	at hudson.remoting.Channel.syncIO(Channel.java:1730)
+	at hudson.Launcher$RemoteLaunchCallable$1.join(Launcher.java:1328)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at hudson.remoting.RemoteInvocationHandler$RPCRequest.perform(RemoteInvocationHandler.java:931)
+	at hudson.remoting.RemoteInvocationHandler$RPCRequest.call(RemoteInvocationHandler.java:905)
+	at hudson.remoting.RemoteInvocationHandler$RPCRequest.call(RemoteInvocationHandler.java:857)
+	at hudson.remoting.UserRequest.perform(UserRequest.java:211)
+	at hudson.remoting.UserRequest.perform(UserRequest.java:54)
+	at hudson.remoting.Request$2.run(Request.java:369)
+	at hudson.remoting.InterceptingExecutorService$1.call(InterceptingExecutorService.java:72)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at hudson.remoting.Engine$1.lambda$newThread$0(Engine.java:117)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.nio.channels.ClosedChannelException
+	at org.jenkinsci.remoting.protocol.NetworkLayer.onRecvClosed(NetworkLayer.java:154)
+	at org.jenkinsci.remoting.protocol.impl.BIONetworkLayer.access$1800(BIONetworkLayer.java:48)
+	at org.jenkinsci.remoting.protocol.impl.BIONetworkLayer$Reader.run(BIONetworkLayer.java:264)
+	... 4 more
+
+九月 10, 2020 3:09:12 下午 hudson.remoting.UserRequest perform
+警告: LinkageError while performing UserRequest:UserRPCRequest:hudson.Launcher$RemoteProcess.join[](17)
+java.lang.NoClassDefFoundError: org/jvnet/winp/CtrlCSender
+	at org.jvnet.winp.Native.sendCtrlC(Native.java:89)
+	at org.jvnet.winp.WinProcess.sendCtrlC(WinProcess.java:93)
+	at hudson.util.ProcessTree$WindowsOSProcess.killSoftly(ProcessTree.java:565)
+	at hudson.util.ProcessTree$WindowsOSProcess.killRecursively(ProcessTree.java:544)
+	at hudson.util.ProcessTree.killAll(ProcessTree.java:182)
+	at hudson.Proc$LocalProc.destroy(Proc.java:387)
+	at hudson.Proc$LocalProc.join(Proc.java:360)
+	at hudson.Launcher$RemoteLaunchCallable$1.join(Launcher.java:1321)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at hudson.remoting.RemoteInvocationHandler$RPCRequest.perform(RemoteInvocationHandler.java:931)
+	at hudson.remoting.RemoteInvocationHandler$RPCRequest.call(RemoteInvocationHandler.java:905)
+	at hudson.remoting.RemoteInvocationHandler$RPCRequest.call(RemoteInvocationHandler.java:857)
+	at hudson.remoting.UserRequest.perform(UserRequest.java:211)
+	at hudson.remoting.UserRequest.perform(UserRequest.java:54)
+	at hudson.remoting.Request$2.run(Request.java:369)
+	at hudson.remoting.InterceptingExecutorService$1.call(InterceptingExecutorService.java:72)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at hudson.remoting.Engine$1.lambda$newThread$0(Engine.java:117)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.ClassNotFoundException: org.jvnet.winp.CtrlCSender
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at hudson.remoting.RemoteClassLoader.findClass(RemoteClassLoader.java:173)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 24 more
+
+九月 10, 2020 3:09:12 下午 hudson.remoting.Request$2 run
+信息: Failed to send back a reply to the request hudson.remoting.Request$2@193ebbf6: hudson.remoting.ChannelClosedException: Channel "hudson.remoting.Channel@41598963:JNLP4-connect connection to 192.168.0.182/192.168.0.182:37169": channel is already closed
+九月 10, 2020 3:09:22 下午 org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver resolve
+信息: Remoting server accepts the following protocols: [JNLP4-connect, Ping]
+九月 10, 2020 3:09:31 下午 hudson.remoting.jnlp.GuiListener$1 run
+信息: Protocol JNLP4-connect encountered an unexpected exception
+java.util.concurrent.ExecutionException: org.jenkinsci.remoting.protocol.impl.ConnectionRefusalException: Remote closed connection without specifying reason
+	at org.jenkinsci.remoting.util.SettableFuture.get(SettableFuture.java:223)
+	at hudson.remoting.Engine.innerRun(Engine.java:743)
+	at hudson.remoting.Engine.run(Engine.java:518)
+Caused by: org.jenkinsci.remoting.protocol.impl.ConnectionRefusalException: Remote closed connection without specifying reason
+	at org.jenkinsci.remoting.protocol.impl.ConnectionHeadersFilterLayer.onRecvClosed(ConnectionHeadersFilterLayer.java:440)
+	at org.jenkinsci.remoting.protocol.ProtocolStack$Ptr.onRecvClosed(ProtocolStack.java:816)
+	at org.jenkinsci.remoting.protocol.FilterLayer.onRecvClosed(FilterLayer.java:287)
+	at org.jenkinsci.remoting.protocol.impl.SSLEngineFilterLayer.onRecvClosed(SSLEngineFilterLayer.java:172)
+	at org.jenkinsci.remoting.protocol.ProtocolStack$Ptr.onRecvClosed(ProtocolStack.java:816)
+	at org.jenkinsci.remoting.protocol.NetworkLayer.onRecvClosed(NetworkLayer.java:154)
+	at org.jenkinsci.remoting.protocol.impl.BIONetworkLayer.access$1500(BIONetworkLayer.java:48)
+	at org.jenkinsci.remoting.protocol.impl.BIONetworkLayer$Reader.run(BIONetworkLayer.java:247)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at hudson.remoting.Engine$1.lambda$newThread$0(Engine.java:117)
+	at java.lang.Thread.run(Unknown Source)
+	Suppressed: java.nio.channels.ClosedChannelException
+		... 7 more
+
+九月 10, 2020 3:09:31 下午 hudson.remoting.jnlp.GuiListener$2 run
+严重: The server rejected the connection: None of the protocols were accepted
+java.lang.Exception: The server rejected the connection: None of the protocols were accepted
+	at hudson.remoting.Engine.onConnectionRejected(Engine.java:828)
+	at hudson.remoting.Engine.innerRun(Engine.java:768)
+	at hudson.remoting.Engine.run(Engine.java:518)
+

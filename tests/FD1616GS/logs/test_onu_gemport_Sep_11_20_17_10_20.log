@@ -1,0 +1,111 @@
+[INFO] 2020-09-11 17:10:29,148  Receive Msg: listen_port 9002
+
+[INFO] 2020-09-11 17:10:29,253  Renix api initialization finished
+[INFO] 2020-09-11 17:11:11,632  create ports with location:
+[INFO] 2020-09-11 17:11:13,277  StreamPortConfig_1 has lower: InterFrameGapProfile_1
+[INFO] 2020-09-11 17:11:13,284  StreamPortConfig_2 has lower: InterFrameGapProfile_2
+[INFO] 2020-09-11 17:11:13,312  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-09-11 17:11:13,586  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-09-11 17:11:14,267  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-09-11 17:11:14,528  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-09-11 17:11:15,198  EthCopper_1 has lower: EthCopperConfig_1
+[INFO] 2020-09-11 17:11:15,200  EthCopper_2 has lower: EthCopperConfig_2
+[INFO] 2020-09-11 17:11:15,202  EthCopper_2 has lower: EthCopperConfig_2
+[INFO] 2020-09-11 17:11:15,205  EthCopper_1 has lower: EthCopperConfig_1
+[INFO] 2020-09-11 17:11:15,376  PageResultView_1 has lower: ResultQuery_1
+[INFO] 2020-09-11 17:11:31,395  ResultQuery_1 has lower: StreamBlockStats_1 StreamBlockStats_2 StreamBlockStats_3 StreamBlockStats_4
+[INFO] 2020-09-11 17:11:31,545  [test pass] [sourceMacAdd=00:00:00:11:11:11] rx packet (10670)is  equal to tx packets (10670)
+[INFO] 2020-09-11 17:11:31,552  [test pass] [sourceMacAdd=00:00:00:11:11:12] rx packet (10670)is  equal to tx packets (10670)
+[INFO] 2020-09-11 17:11:31,559  [test pass] [sourceMacAdd=00:00:00:22:22:21] rx packet (106700)is  equal to tx packets (106700)
+[INFO] 2020-09-11 17:11:31,566  [test pass] [sourceMacAdd=00:00:00:22:22:22] rx packet (106700)is  equal to tx packets (106700)
+[INFO] 2020-09-11 17:12:25,808  create ports with location:
+[INFO] 2020-09-11 17:12:29,164  StreamPortConfig_3 has lower: InterFrameGapProfile_3
+[INFO] 2020-09-11 17:12:29,169  StreamPortConfig_4 has lower: InterFrameGapProfile_4
+[INFO] 2020-09-11 17:12:29,200  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-09-11 17:12:29,485  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-09-11 17:12:30,593  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-09-11 17:12:31,219  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-09-11 17:12:32,324  EthCopper_3 has lower: EthCopperConfig_3
+[INFO] 2020-09-11 17:12:32,327  EthCopper_4 has lower: EthCopperConfig_4
+[INFO] 2020-09-11 17:12:32,330  EthCopper_4 has lower: EthCopperConfig_4
+[INFO] 2020-09-11 17:12:42,332  EthCopper_3 has lower: EthCopperConfig_3
+[INFO] 2020-09-11 17:12:42,334  EthCopper_4 has lower: EthCopperConfig_4
+[INFO] 2020-09-11 17:12:42,337  EthCopper_4 has lower: EthCopperConfig_4
+[INFO] 2020-09-11 17:12:42,340  EthCopper_3 has lower: EthCopperConfig_3
+[INFO] 2020-09-11 17:12:42,479  PageResultView_2 has lower: ResultQuery_2
+[INFO] 2020-09-11 17:12:58,483  ResultQuery_2 has lower: StreamBlockStats_5 StreamBlockStats_6 StreamBlockStats_7 StreamBlockStats_8
+[INFO] 2020-09-11 17:12:58,637  [test pass] [sourceMacAdd=00:00:00:11:11:11] rx packet (10719)is  equal to tx packets (10719)
+[INFO] 2020-09-11 17:12:58,643  [test Pass] [sourceMacAdd=00:00:00:11:11:12]rx(0), realtime loss packet (10719)is  equal to  tx packet(10719)
+[INFO] 2020-09-11 17:12:58,649  [test pass] [sourceMacAdd=00:00:00:22:22:21] rx packet (107181)is  equal to tx packets (107181)
+[INFO] 2020-09-11 17:12:58,655  [test Pass] [sourceMacAdd=00:00:00:22:22:22]rx(0), realtime loss packet (107181)is  equal to  tx packet(107181)
+[INFO] 2020-09-11 17:13:57,834  create ports with location:
+[INFO] 2020-09-11 17:14:05,242  StreamPortConfig_5 has lower: InterFrameGapProfile_5
+[INFO] 2020-09-11 17:14:05,247  StreamPortConfig_6 has lower: InterFrameGapProfile_6
+[INFO] 2020-09-11 17:14:05,276  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-09-11 17:14:05,561  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-09-11 17:14:06,670  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-09-11 17:14:06,970  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-09-11 17:14:08,995  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-09-11 17:14:09,893  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-09-11 17:14:11,565  EthCopper_5 has lower: EthCopperConfig_5
+[INFO] 2020-09-11 17:14:11,568  EthCopper_6 has lower: EthCopperConfig_6
+[INFO] 2020-09-11 17:14:11,572  EthCopper_6 has lower: EthCopperConfig_6
+[INFO] 2020-09-11 17:14:21,575  EthCopper_5 has lower: EthCopperConfig_5
+[INFO] 2020-09-11 17:14:21,577  EthCopper_6 has lower: EthCopperConfig_6
+[INFO] 2020-09-11 17:14:21,579  EthCopper_6 has lower: EthCopperConfig_6
+[INFO] 2020-09-11 17:14:21,582  EthCopper_5 has lower: EthCopperConfig_5
+[INFO] 2020-09-11 17:14:21,722  PageResultView_3 has lower: ResultQuery_3
+[INFO] 2020-09-11 17:14:37,717  ResultQuery_3 has lower: StreamBlockStats_9 StreamBlockStats_10 StreamBlockStats_11 StreamBlockStats_12 StreamBlockStats_13 StreamBlockStats_14
+[ERROR] 2020-09-11 17:14:38,027  [test fail] [sourceMacAdd=00:00:00:11:11:12] rx packet (0) or tx packets (9852) is 0
+[INFO] 2020-09-11 17:14:38,033  [test Pass] [sourceMacAdd=00:00:00:11:11:13]rx(0), realtime loss packet (9852)is  equal to  tx packet(9852)
+[INFO] 2020-09-11 17:14:38,041  [test pass] [sourceMacAdd=00:00:00:11:11:11] rx packet (9852)is  equal to tx packets (9852)
+[INFO] 2020-09-11 17:14:38,047  [test pass] [sourceMacAdd=00:00:00:22:22:21] rx packet (98513)is  equal to tx packets (98513)
+[INFO] 2020-09-11 17:14:38,054  [test Pass] [sourceMacAdd=00:00:00:22:22:22]rx(0), realtime loss packet (98513)is  equal to  tx packet(98513)
+[INFO] 2020-09-11 17:14:38,063  [test Pass] [sourceMacAdd=00:00:00:22:22:23]rx(0), realtime loss packet (98513)is  equal to  tx packet(98513)
+[INFO] 2020-09-11 17:15:35,643  create ports with location:
+[INFO] 2020-09-11 17:15:40,625  StreamPortConfig_7 has lower: InterFrameGapProfile_7
+[INFO] 2020-09-11 17:15:40,633  StreamPortConfig_8 has lower: InterFrameGapProfile_8
+[INFO] 2020-09-11 17:15:40,665  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-09-11 17:15:41,298  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-09-11 17:15:42,748  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-09-11 17:15:43,174  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-09-11 17:15:44,659  EthCopper_7 has lower: EthCopperConfig_7
+[INFO] 2020-09-11 17:15:44,662  EthCopper_8 has lower: EthCopperConfig_8
+[INFO] 2020-09-11 17:15:44,666  EthCopper_8 has lower: EthCopperConfig_8
+[INFO] 2020-09-11 17:15:54,668  EthCopper_7 has lower: EthCopperConfig_7
+[INFO] 2020-09-11 17:15:54,670  EthCopper_8 has lower: EthCopperConfig_8
+[INFO] 2020-09-11 17:15:54,673  EthCopper_8 has lower: EthCopperConfig_8
+[INFO] 2020-09-11 17:15:54,677  EthCopper_7 has lower: EthCopperConfig_7
+[INFO] 2020-09-11 17:15:54,808  PageResultView_4 has lower: ResultQuery_4
+[INFO] 2020-09-11 17:16:10,821  ResultQuery_4 has lower: StreamBlockStats_15 StreamBlockStats_16 StreamBlockStats_17 StreamBlockStats_18
+[INFO] 2020-09-11 17:16:10,959  [test pass] [sourceMacAdd=00:00:00:11:11:11] rx packet (9915)is  equal to tx packets (9915)
+[ERROR] 2020-09-11 17:16:10,965  [test fail] [sourceMacAdd=00:00:00:11:11:12] rx packet (0) or tx packets (9915) is 0
+[INFO] 2020-09-11 17:16:10,973  [test pass] [sourceMacAdd=00:00:00:22:22:21] rx packet (99147)is  equal to tx packets (99147)
+[INFO] 2020-09-11 17:16:10,980  [test Pass] [sourceMacAdd=00:00:00:22:22:22]rx(0), realtime loss packet (99147)is  equal to  tx packet(99147)
+[INFO] 2020-09-11 17:17:11,724  create ports with location:
+[INFO] 2020-09-11 17:17:18,598  StreamPortConfig_9 has lower: InterFrameGapProfile_9
+[INFO] 2020-09-11 17:17:18,607  StreamPortConfig_10 has lower: InterFrameGapProfile_10
+[INFO] 2020-09-11 17:17:18,645  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-09-11 17:17:19,101  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-09-11 17:17:19,823  EthCopper_9 has lower: EthCopperConfig_9
+[INFO] 2020-09-11 17:17:19,826  EthCopper_10 has lower: EthCopperConfig_10
+[INFO] 2020-09-11 17:17:19,829  EthCopper_10 has lower: EthCopperConfig_10
+[INFO] 2020-09-11 17:17:19,832  EthCopper_9 has lower: EthCopperConfig_9
+[INFO] 2020-09-11 17:17:19,965  PageResultView_5 has lower: ResultQuery_5
+[INFO] 2020-09-11 17:17:35,894  ResultQuery_5 has lower: StreamBlockStats_19 StreamBlockStats_20
+[INFO] 2020-09-11 17:17:36,013  [test Pass] [sourceMacAdd=00:00:00:11:11:11]rx(0), realtime loss packet (10010)is  equal to  tx packet(10010)
+[INFO] 2020-09-11 17:17:36,019  [test Pass] [sourceMacAdd=00:00:00:22:22:21]rx(0), realtime loss packet (100093)is  equal to  tx packet(100093)
+[INFO] 2020-09-11 17:17:48,212  create ports with location:
+[INFO] 2020-09-11 17:17:53,574  StreamPortConfig_11 has lower: InterFrameGapProfile_11
+[INFO] 2020-09-11 17:17:53,580  StreamPortConfig_12 has lower: InterFrameGapProfile_12
+[INFO] 2020-09-11 17:17:53,607  port(//192.168.0.180/1/7) create streams
+[INFO] 2020-09-11 17:17:53,889  port(//192.168.0.180/1/8) create streams
+[INFO] 2020-09-11 17:17:54,564  EthCopper_11 has lower: EthCopperConfig_11
+[INFO] 2020-09-11 17:17:54,567  EthCopper_12 has lower: EthCopperConfig_12
+[INFO] 2020-09-11 17:17:54,570  EthCopper_12 has lower: EthCopperConfig_12
+[INFO] 2020-09-11 17:17:54,572  EthCopper_11 has lower: EthCopperConfig_11
+[INFO] 2020-09-11 17:17:54,687  PageResultView_6 has lower: ResultQuery_6
+[INFO] 2020-09-11 17:18:10,591  ResultQuery_6 has lower: StreamBlockStats_21 StreamBlockStats_22
+[INFO] 2020-09-11 17:18:10,712  [test pass] [sourceMacAdd=00:00:00:11:11:11] rx packet (10893)is  equal to tx packets (10893)
+[INFO] 2020-09-11 17:18:10,720  [test pass] [sourceMacAdd=00:00:00:22:22:21] rx packet (108930)is  equal to tx packets (108930)
+[INFO] 2020-09-11 17:18:22,976  close connection to CL

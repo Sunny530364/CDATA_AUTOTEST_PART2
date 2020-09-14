@@ -1,0 +1,5 @@
+[INFO] 2020-09-11 10:22:31,202  Receive Msg: listen_port 9003
+
+[INFO] 2020-09-11 10:22:31,298  Renix api initialization finished
+[ERROR] 2020-09-11 10:23:13,743  b'_TCLERROR:No valid CaptureConfig specified'
+[INFO] 2020-09-11 10:23:13,745  close connection to CL

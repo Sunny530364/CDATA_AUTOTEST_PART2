@@ -1,0 +1,13 @@
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 =========gemport为tranparent测试=========
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 ONU在OLT上被重新被发现。
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 当前ONU_ID没有被占用。
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 ONU在OLT上添加成功。
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 ==========================================
+[1m[31mERROR   [0m CDATA:Cdata_loggers.py:97 ===============ERROR!!!===================
+[1m[31mERROR   [0m CDATA:Cdata_loggers.py:97 ONU在OLT上通过SN注册失败。
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 ==========================================
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 ONU在OLT上删除成功
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 ==========================================
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 ===============ERROR!!!===================
+[1m[31mERROR   [0m CDATA:Cdata_loggers.py:97 ONU在OLT上不能被重新被发现
+[32mINFO    [0m CDATA:Cdata_loggers.py:105 ===============ERROR!!!===================

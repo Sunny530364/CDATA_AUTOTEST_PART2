@@ -1,0 +1,9 @@
+[INFO] 2020-08-06 10:33:20,696  Receive Msg: listen_port 9002
+
+[INFO] 2020-08-06 10:33:20,793  Renix api initialization finished
+[INFO] 2020-08-06 10:33:48,015  create ports with location:
+[INFO] 2020-08-06 10:33:49,700  StreamPortConfig_1 has lower: InterFrameGapProfile_1
+[INFO] 2020-08-06 10:33:49,708  StreamPortConfig_2 has lower: InterFrameGapProfile_2
+[INFO] 2020-08-06 10:33:49,744  port(//192.168.0.180/1/7) create streams
+[ERROR] 2020-08-06 10:33:50,011  b"_TCLERROR:Object StreamTemplate_1's property FixedLength cannot accept a value of Ethernet.ethernetII IPv4.ipv4 UDP.udp"
+[INFO] 2020-08-06 10:33:58,920  close connection to CL
